@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"
+        integrity="sha512-8vr9VoQNQkkCCHGX4BSjg63nI5CI4B+nZ8SF2xy4FMOIyH/2MT0r55V276ypsBFAgmLIGXKtRhbbJueVyYZXjA=="
+        crossorigin="anonymous" />
+
+  
+<a class="btn btn--primary btn--small section-header__link" style="background-color: #f1903a;" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Ship Inventory</a>
+<div id="modal">
+<!--   <button class="btn-modal-close" data-izimodal-close="">X</button> -->
+  <button class="btn-modal-close" onclick="closeModal()">X</button>
+</div>
+
+ <script>
+  window.$= SuperJ; 
+  function closeModal(){
+    $("#modal").iziModal('close');
+  }
+  $(document).ready(function () {
+    window.$= SuperJ; 
+  let iframe_base_url = 'https://prolon-pro.vercel.app'
+//   let iframe_base_url = 'http://localhost:8000'
+//   let iframe_base_url = 'https://05834bad7134.ngrok.io'
+  
+  let customer_email = {{customer.email | json}};
+//   let customer_email = {{customer.id}};
+    console.log('customer_email', customer_email);
+  $("#modal").iziModal({
+      iframe: true,
+      width:1000,
+      iframeHeight: 800, 
+      iframeURL: `${iframe_base_url}/customers/create-order?email=${customer_email}&shop=prolon-fmd-2020.myshopify.com`,
+      closeButton: true,
+  });
+  })
+  
+  
+  var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+		
+		// if (e.origin !== 'http://the-trusted-iframe-origin.com') return;
+		
+      if (e.data === "close_modal" || e.message === "close_modal") {
+// 			alert('Message from iframe just came!');
+            $("#modal").iziModal('close');
+      } 
+      if(e.data==='order_created'  || e.message === "close_modal") {
+        alert('Your order was placed, Check your email or main dashboard for order number.')
+      }            
+// 		console.log(e);
+	});
+</script>

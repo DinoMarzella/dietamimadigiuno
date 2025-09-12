@@ -1,0 +1,136 @@
+{% for xtag in customer.tags %}
+{% assign tag = xtag  | downcase %}
+{% if tag == 'approved' %}
+{%assign approved= true %}
+{% endif %}
+{% if tag == 'lhp' or tag == 'provider' or tag == 'hcp' or tag == 'hcr' or tag == 'hcc' or tag == 'hcr-recommender'  %}
+
+{% assign isProvider = true %}
+
+{% endif %} 
+
+
+{% endfor %}
+
+{% if isProvider %}
+<style>
+  .new-terms-popup {
+    position: fixed;
+    top: 0px;
+    display: block;
+    z-index: 99;
+    background: #00000078;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .new-terms-popup .popup-wrapper {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    background: white;
+    height: 560px;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+  }
+
+  .new-terms-popup .popup-wrapper h1 {
+    text-align: center;
+  }
+
+  .new-terms-popup .terms-conditions {
+    height: 60%;
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .footer-bar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #73994a;
+    color: white;
+    margin: 0 -20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer-bar button {
+    background: white;
+    color: black;
+    padding: 10px 30px;
+    /* margin-right: 10px; */
+  }
+</style>
+<div class="new-terms-popup hidden" style="display: none">
+  <div class="backdrop"></div>
+  <div class="popup-wrapper">
+    <h1>Terms of Service Update</h1>
+    <p>
+        A Change in our
+        <a href="/pages/terms-conditions">Terms of Services</a> Takes effect on 1st
+        Jan, 2022. Please read them carefully.
+      </p>   
+    <embed src="https://cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_-_Health_Care_Provider_Terms_and_Conditions_of_Participation.pdf?v=1641384332" width="600" style="width: 100%;" height="375" />   
+    
+    
+    <form class="terms-form">
+      <div class="footer-bar">
+        <div class="footer-validation-check">
+          <input type="checkbox" class="accept-terms" required />
+          I accept the new Terms of Service
+        </div>
+        <button type="submit">Accept</button>
+      </div> 
+    </form>
+  </div>
+</div>
+
+<script>
+      let current_tags = {{customer.tags | json}};
+ 
+
+  $(document).ready(function(){
+ 
+  // let termsStatus= localStorage.getItem('terms_accepted');
+  if(current_tags.includes('terms_accepted')  || localStorage.getItem('terms_accepted_new')==1){
+      $('.new-terms-popup').css('display','none');
+  }
+  else{
+      $('.new-terms-popup').css('display','flex');
+  } 
+  $('.terms-form').submit(function(e){
+      e.preventDefault();
+      let checkedbox= $('.accept-terms');
+
+          if(checkedbox[0].checked)
+          {
+            localStorage.setItem('terms_accepted',1);
+
+            $.post('https://prolon-pro.herokuapp.com/stores/set-customer-tags?shop={{shop.permanent_domain}}&email={{customer.email}}',{tag:'terms_accepted'},function(data){
+ 
+              console.log(`Terms accepted`)
+
+            });
+
+            $('.new-terms-popup').css('display','none');
+
+          }
+          else{
+              alert('Please accept the new terms of service');
+          }
+
+  });
+
+  }); 
+</script>   
+
+{% endif  %}

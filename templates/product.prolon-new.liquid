@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}">
+{% if products.handle contains 'buy-prolon'   %}
+<style> 
+a.site-nav__link[href="/products/buy-prolon"] {DISPLAY: NONE;}
+
+</style>  
+{% endif %} 
+<style> #shopify-section-product-template-narrow .product-single__meta .product-single__description {
+  display: none;  
+} .description-left-placeholder {
+    overflow-x: hidden;
+}
+ 
+.product-single__title {
+    margin: 0;
+}
+
+p.notice-in-red {
+    padding: 0px;
+}
+.product__price.on-sale {
+    color: red;
+}
+  
+span.simple-notice {
+    color: red;
+}  
+
+label[for*="Fasting+Program"]:after {content: "(1 Prolon + 25 Intermittent Fasting Bars)";display: block;font-weight: 100;font-size: 16px;}
+
+.variant-input-radio-wrap[name="Quantity"] .variant-input {
+    padding: 5px 0px;
+}
+.product__price-savings {
+    display: none;
+}
+/* .variant-input-radio-wrap[name="Quantity"]{
+  flex-wrap:wrap!important;
+}  */
+.aos-animate.trust-image {
+    display: none;
+}
+@media(min-width:768px){   
+.product-single__form {margin-top: -20px;}
+}
+@media(max-width:767px){ 
+
+label[for*="Fasting+Program"]:after {display: block;font-weight: 100;font-size: 12px;}
+
+  .variant-input-radio-wrap[name="Quantity"] {
+    margin-left: -11px;
+    /* margin-right: 0; */
+    width: 106%;
+}
+
+.variant-input-radio-wrap[name="Quantity"] .variant-input .input_lable label {
+    font-size: 14px;
+}
+
+.variant-input-radio-wrap[name="Quantity"] .variant-input {
+    display: flex;
+}
+
+
+button#AddToCart-4685945602094  {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+}
+  #subscription_plans {
+    display: none;
+}
+.variant-input.active #subscription_plans {
+    display: block;
+}
+
+
+  
+</style>  
+{% section 'product-template-narrow' %}
+{% section 'product-story-sections' %}
+{% section 'recently-viewed' %}
+
+{% if collection %}
+  <div class="text-center page-content page-content--bottom">
+    <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn btn--small return-link">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+   // $(".variant__input-32593125703726").trigger("click");
+    $('input[name="Quantity"][value*="Subscri"]').click();
+  	$('input[type=radio][name=Quantity]').change(function() {
+		if (this.value.includes('Subscri')) {
+	      addSubscriptionOptions();
+		} else {  
+          //$( "#subscription_plans").remove();
+          $('input,select','.simple-sub-plan').attr('name','')
+		}
+	});
+    $('input[type=radio][name=Quantity]').each(function() {
+      if (this.value.includes('Subscri')) {
+        if($(this).prop('checked')){
+          addSubscriptionOptions();
+        }
+      } else {
+        $('input,select','.simple-sub-plan').attr('name','');
+        //$( "#subscription_plans" ).remove();
+      }
+    });
+  }); 
+    
+  function addSubscriptionOptions() {
+    $('.simple-sub-plan').remove(); 
+    $( `form fieldset[name=Quantity] [data-value*="Subscri"]`).append( 
+		'<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' + 
+      	'<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">'+
+      '<input type="hidden" name="properties[number_charges_until_expiration]" value="">'+
+		'<select name="properties[shipping_interval_frequency]">' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+		'  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' + 
+		'</select>' +
+		'</div>');   
+  }   
+  
+  setTimeout(function(){
+ //   $('.variant-input-radio-wrap[name="Quantity"] input').last().click();
+      // $('.variant__input-4634645430318[value*="Subscribe"]').click();
+      addSubscriptionOptions();
+},50);
+  
+  $(window).load(function(){  
+  //$('input[name="Quantity"][value*="Subscribe & Save"]').click();
+  //$('.variant-input-radio-wrap[name="Quantity"] input').first().click();
+    setTimeout(function(){  
+ //     $('.variant-input-radio-wrap[name="Quantity"] input').last().click();
+  //    $('.variant__input-4634645430318[value*="Subscribe"]').click();
+      addSubscriptionOptions();
+},50);
+  
+  }); 
+</script>{% render 'product_infox' %}
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+

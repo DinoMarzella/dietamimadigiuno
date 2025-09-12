@@ -1,0 +1,23 @@
+<div class="carousel__container header__sticky--navbar">
+      
+  {% for blockCarousel in section.blocks %}
+    {% if blockCarousel.type == 'Carousel' %}
+
+      {% assign carousel = blockCarousel.settings %}
+      
+      <a href="{{ carousel.carousel_url }}" class="carousel__item">
+        {% render 'image' with
+                image: carousel.carousel_image
+                wrapper_class: 'carousel__item'
+                image_class: 'carousel__item__image'
+                preload: true
+                disable_style: true
+                aspect_ratio: 1.0
+              %}
+        <span class="carousel__item__title">{{ carousel.carousel_title}}</span>
+      </a>
+
+    {% endif %}
+  {% endfor %}
+
+</div>

@@ -1,0 +1,62 @@
+{% assign data = section.settings %}
+<!-- TWProlonBenefits -->
+<div class="w-full bg-white" >
+  <div class="max-w-screen-xl px-6 py-12 mx-auto lg:px-8" style="background-color: {{data.background_color}}">
+    <div class="text-center">
+      <p class="mt-2 text-xl font-bold leading-8 tracking-tight md:text-28" style="color:#002500;">{{ data.title }}</p>
+    </div>
+
+    <div class="mt-10">
+      <div class="flex flex-col flex-wrap items-start justify-center md:flex-row">
+        {% assign cards_block = section.blocks | where: 'type', 'cards' %}
+        {% for card in cards_block %}
+          <div class="relative flex flex-row items-start justify-center p-6 md:flex-row md:p-10 md:max-w-md">
+                <img
+                  class="block object-contain object-center"
+                  width="20px"
+                  height="20px"
+                  src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/check_3x_a77bd74c-de03-449d-ab8a-0a84a39bf529.png?v=1610272919"
+                  style="width: 20px; height: 20px; margin: 5px 10px 0px 0px;"
+                >
+            <p class="text-base text-left text-black" style="color:#749550">
+              {{ card.settings.description }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Fasting Group Features TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

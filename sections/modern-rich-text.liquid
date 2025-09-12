@@ -1,0 +1,53 @@
+{% include 'page-block-rich-text' ,block:section %}
+
+
+{% schema %}
+{
+    "name": "Rich text 2.0",
+    "presets": [{ 
+        "name": "RICH TEXT 2.0",
+        "category": "MODERN"
+    }],
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Rich text block"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "narrow_column",
+        "label": "Narrow column",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enlarge_text",
+        "label": "Enlarge text"
+      }
+    ]
+  }
+{% endschema %}

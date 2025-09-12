@@ -1,0 +1,161 @@
+{%- assign data = section.settings -%}
+
+<div>
+  <section
+    class="relative w-full overflow-hidden pl-wrapper-b2b-hero">
+    <img
+      src="{{data.image | img_url: '1800x'}}"
+      alt="{{data.title}}"
+      class="absolute inset-0 !w-full !max-w-full h-full object-cover m:h-[60vh] object-right brightness-50 max-h-[850px]"
+    />
+
+    <div class="w-full  relative  md:py-[20px] md-[50px]">
+      <div class="w-full  relative z-10 flex flex-col justify-center  {{data.min_height}}  max-w-[1600px] mx-auto items-center">
+        <div class="relative w-full mt-[60px] md:mt-[200px] px-[20px]">
+          {%- if data.subtitle.size > 0 -%}
+            <p class="mb-[10px] text-[22px] md:text-[30px] leading-5 text-white font-semibold w-full text-center">
+              {{data.subtitle}}
+            </p>
+          {%- endif -%}
+          <h1
+            class="my-[15px] text-[30px] lg:text-[4vw] xl:text-[46px] text-white text-center font-bold hero__animation-contents !delay-200"
+          >{{data.title}}</h1>
+
+            <p
+              class="text-center mb-8 text-lg md:text-lg lg:text-xl xl:text-2xl text-white max-w-[800px] mx-auto font-medium hero__animation-contents !delay-500"
+            >{{data.description}}</p>
+        </div>
+
+        <div class="w-full mt-[30px] md:mt-[100px] max-w-[1600px] flex flex-wrap lg:flex-nowrap  overflow-x-scroll justify-start md:justify-center items-stretch mx-auto gap-[20px] px-[20px] ">
+          {%- for bar in section.blocks -%}
+            <div class="w-[100%] sm:w-[48%] lg:w-[23%] hero__animation-contents shadow-lg shrink-0 mb-[20px] bg-white">
+              <div
+                class="w-full min-h-[120px] md:min-h-[140px] flex justify-center items-center px-[15px]"
+                style="background-color: {{bar.settings.bg_color}}"
+              >
+                <p class="w-full text-left font-[600] text-[22px] md:text-[26px] {{bar.settings.text_color}}">
+                  {{bar.settings.title}}
+                </p>
+              </div>
+              <div class="mt-[20px] w-full flex justify-center bg-white px-[15px] md:min-h-[200px] mb-[20px] md:mb-[0px]">
+                <div class="w-full text-left font-[500] text-[16px] md:text-[20px]">{{bar.settings.learn_more_description}}</div>
+              </div>
+              {%- if bar.settings.btn_title.size > 0 -%}
+                <a
+                  class="mt-[40px] w-full bg-white flex justify-between items-center px-[15px] py-[20px] cursor-pointer border-t"
+                  href="{{bar.settings.url}}"
+                >
+                  <p class="font-[700] text-[18px] uppercase">{{bar.settings.btn_title}}</p>
+                  
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Plus.png?v=1694449879"
+                      priority={true}
+                      layout="constrained"
+                      width={20}
+                      height={20}
+                      alt={bar.title}
+                      class="w-[20px] object-contain"
+                    />
+                </a>
+                {% else %}
+                
+              {%- endif -%}
+            </div> 
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-b2b-hero');
+  });
+</script>
+  {% schema %}
+  {
+    "name": "PL B2B Hero",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Add Title"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "min_height",
+        "label": "Minimum Height",
+        "default": "md:min-h-[700px]"
+      }        
+    ],
+    "blocks": [
+      {
+        "type": "cards",
+        "name": "Cards",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "textarea",
+            "id": "learn_more_description",
+            "label": "Learn More Description"
+          },
+          {
+            "type": "text",
+            "id": "btn_title",
+            "label": "Button Title"
+          },
+          {
+            "type": "text",
+            "id": "url",
+            "label": "Url",
+            "default": "#shop-programs"
+          },
+          {
+            "type": "text",
+            "id": "bg_color",
+            "label": "Bg Color",
+            "default": "#78A117"
+          },
+          {
+            "type": "text",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "text-white"
+          }
+        ] 
+      }
+    ],
+    "presets": [
+      {
+        "name": "PL B2B Hero",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+  {% endschema %}
+  

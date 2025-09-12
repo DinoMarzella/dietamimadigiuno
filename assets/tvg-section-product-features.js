@@ -1,0 +1,7 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[22],{954:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{
+var _core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(315);var _core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(7);(0,
+_core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__.initSection)(".js-product-features",(section=>{const items=(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findElements)(section,".js-product-features-item")
+;const images=(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findElements)(section,".js-product-features-image");const imagesID=images.map((image=>image.getAttribute("data-feature-item")));items.forEach((item=>{
+item.addEventListener("click",(()=>{items.forEach((i=>{if(i===item)i.classList.add("--is-active");else i.classList.remove("--is-active")}));images.forEach((image=>{
+if(imagesID.includes(item.getAttribute("data-feature-item")))if(image.getAttribute("data-feature-item")===item.getAttribute("data-feature-item"))image.classList.add("--is-active");else image.classList.remove("--is-active")}))}))}));return{
+unload:null}}))}},__webpack_require__=>{var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId);__webpack_require__.O(0,[685],(()=>__webpack_exec__(954)));var __webpack_exports__=__webpack_require__.O()}]);

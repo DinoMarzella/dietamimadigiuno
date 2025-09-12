@@ -1,0 +1,126 @@
+<style>
+  .kick-profile-info-wrapper{
+    width:100%;
+    padding: 50px 0px;
+  }
+  .kick-profile-info-inner{
+    width:100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  .prolfile-pic-warpper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+  }
+  .prolfile-pic-warpper h3{
+    font-family: "interstate", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2f6645;
+    text-align: center;
+  
+  }
+  .prolfile-pic-warpper p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    text-align: center;
+  
+  }
+  .prolfile-pic-warpper img{
+    max-height: 150px;
+  }
+  .kick-profile-main-description{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+  }
+  @media(max-width:767px){
+  
+  .prolfile-pic-warpper{
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
+  .prolfile-pic-warpper h3{
+    font-size: 28px;
+  
+  }
+  .prolfile-pic-warpper p{
+    font-size: 18px;
+  }
+  .prolfile-pic-warpper img{
+    max-height: 150px;
+  }
+  .kick-profile-main-description{
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  } 
+  </style>
+  {% assign prot = section.settings %}
+  <div class="kick-profile-info-wrapper">
+    <div class="kick-profile-info-inner">
+      <div class="prolfile-pic-warpper">
+        <div>
+          <h3>{{section.settings.title}}</h3>
+          <p>{{section.settings.author_name}}</p>
+        </div>
+        <img src="{{ section.settings.profile_image | img_url: '2200x' }}">
+      </div>
+      <p class="kick-profile-main-description">{{section.settings.desccription}}</p>
+    </div>
+  </div>
+  
+  
+  {% schema %}
+  {
+      "name": "Kick Profile Info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "ProLon Benefits"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author Name"
+        },
+        {
+          "type": "textarea",
+          "id": "desccription",
+          "label": "Descreption"
+        },
+        {
+          "type": "image_picker",
+          "id": "profile_image",
+          "label": "Author Image"
+        }
+      ],
+      "presets": [
+      {
+          "name": "Kick Profile Info"
+      }
+          ]
+    }
+  {% endschema %}

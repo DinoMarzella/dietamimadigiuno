@@ -1,0 +1,129 @@
+<section id="{{ section.settings.section_id }}"  class="bg-[#F3F3F2] mx-auto block">
+  <div class="relative max-w-[1600px]">
+    <div class="w-full lg:w-[45%] xl:w-[50%]">
+      {% if section.settings.image %}
+        <img
+          src="{{ section.settings.image | img_url: '2000x' }}"
+          alt="{{ section.settings.heading | strip_html }}"
+          class="object-center w-full object-cover lg:h-[850px] xl:h-[1200px] h-[400px]"
+        >
+      {% endif %}
+    </div>
+    <div class="lg:absolute top-1/2 right-0 lg:transform lg:-translate-x-[-15%] lg:-translate-y-1/2">
+      <div
+        class="max-w-full lg:max-w-[800px] xl:max-w-[980px] px-[20px] lg:px-[50px] xl:px-[140px] lg:bg-white lg:rounded-[20px] xl:rounded-[30px] lg:shadow-2xl pt-[25px] lg:py-[25px] xl:py-[70px]"
+      >
+        <h2 class="text-[20px] md:text-[24px] xl:text-[40px] leading-[1.2] text-left">
+          {{ section.settings.heading }}
+        </h2> 
+        <p class="text-[16px] lg:text-[18px] xl:text-[20px] text-[#323D12] py-[10px] text-left normal-case">
+          {{ section.settings.subheading }}
+        </p>
+        <p class="text-[16px] xl:text-[18px] pt-[10px] md:pt-[15px] text-left">{{ section.settings.paragraph_1 }}</p>
+        <p class="text-[16px] xl:text-[18px] pt-[10px] md:pt-[15px] text-left">{{ section.settings.paragraph_2 }}</p>
+        <p class="text-[16px] xl:text-[18px] pt-[10px] md:pt-[15px] text-[#323D12] text-left">
+          {{ section.settings.paragraph_3 }}
+        </p>
+        <div
+          class="flex flex-wrap md:flex-nowrap md:pt-[30px] max-w-[512px] mx-auto pt-[20px] gap-2 justify-center md:justify-start"
+        >
+          <div class="w-full md:w-[290px] py-1">
+            <a
+              class="inline-block md:h-[55px] h-[45px] md:text-[18px] text-[16px] flex justify-center items-center py-[10px] w-full leading-4 !font-[600] text-center rounded-[6px] shadow-sm bg-[#78A14A] hover:bg-[#1F4036] !text-white border border-gray-300"
+              href="{{ section.settings.button_1_link }}"
+            >
+              {{ section.settings.button_1_text }}
+            </a>
+          </div>
+          <div class="w-full md:w-[290px] py-1">
+            <a
+              class="inline-block md:h-[55px] h-[45px] md:text-[18px] text-[16px] flex justify-center items-center py-[10px] w-full leading-4 !font-[600] text-center rounded-[6px] shadow-sm bg-[#FFFFFF] hover:bg-[#F7F9FB] text-black border border-[#5D7E11]"
+              href="{{ section.settings.button_2_link }}"
+            >
+              {{ section.settings.button_2_text }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Custom Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+      
+    }
+    ,
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Unlock Vitality With a Reduced Bioage Score!"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Learn Why Your Bioage Is the Key to Reverse Aging and Stay Healthier Longer"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "Paragraph 1",
+      "default": "You have 87% chance to acquire and die from one of four age-related conditions: Diabetes, Cancer, Cardiovascular and Alzheimer's diseases. When your cells and metabolism get older, you lose the power of rejuvenation and self-healing, and become prone to chronic conditions."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_2",
+      "label": "Paragraph 2",
+      "default": "Between age 40 and 70 you start experiencing aging symptoms with muscle mass loss, stubborn weight gain, mood and focus change, blood sugar, blood pressure, cholesterol, inflammation, skin changes, etc. Prolon Nutrition helps you ignite the cellular rejuvenation power of your body (a process called autophagy, which was awarded the 2016 Nobel Prize in Medicine), slow down your bio-aging score, and create years of difference between your chronological age and biological age so that you stay healthy today and increase your chances of delaying the onset of age-related conditions."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_3",
+      "label": "Paragraph 3",
+      "default": "A younger you at any age helps your metabolism better fight weight gain, muscle loss, blood sugar, metabolic markers, inflammaging, and other age-related health issues."
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Button 1 Text",
+      "default": "Shop All Products"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Button 2 Text",
+      "default": "Defy Aging"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

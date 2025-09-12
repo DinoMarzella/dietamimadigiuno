@@ -1,0 +1,1178 @@
+<button @click="dkopenModal" type="button" class="w-full mt-4 text-white rounded-md bg-prolon_green"><span
+        class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-"><span
+            class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy"><!--v-if--><span
+                class="font-bold">Start Your Program</span></span></span>
+</button>
+
+
+<Teleport to="body">
+    <div v-if="dkModalOpen"
+        class="fixed hidden inset-0 z-[888]  items-center justify-center bg-black bg-opacity-70 dk-modal-product-popup"
+        :class="{ '!flex': dkModalOpen }">
+
+        <div class="relative bg-[#F1EAE5] w-[100%] h-[100%] overflow-y-scroll  z-100 p-4  shadow-lg">
+
+            <div class="flex justify-between">
+                <div class=" h1 site-header__logo" itemscope="" itemtype="http://schema.org/Organization">
+
+                    <a href="/" itemprop="url" class="site-header__logo-link">
+
+                        <img class="small--hide"
+                            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060"
+                            srcset="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060 1x, https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060 2x"
+                            alt="Prolon Life" itemprop="logo">
+                        <img class="medium-up--hide"
+                            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060"
+                            srcset="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060 1x, https://cdn.shopify.com/s/files/1/0508/0625/9870/files/2025_Prolon_Logo.png?v=1743036060 2x"
+                            alt="Prolon Life">
+                    </a>
+
+                </div>
+                <div class="flex justify-center gap-2">
+                    <a href="{{ routes.cart_url }}"
+                        class="flex items-center justify-center pt-2 site-nav__link site-nav__link--icon js-drawer-open-cart"
+                        aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
+                        <span class="cart-link !block">
+                            {%- if settings.cart_icon == 'cart' -%}
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart"
+                                viewBox="0 0 64 64">
+                                <path fill="none" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3" />
+                                <circle cx="27" cy="53" r="2" />
+                                <circle cx="47" cy="53" r="2" />
+                            </svg>
+                            {%- else -%}
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag"
+                                viewBox="0 0 64 64">
+                                <g fill="none" stroke="#000" stroke-width="2">
+                                    <path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20" />
+                                    <path d="M14.74 18h36.51l3.59 36.73h-43.7z" />
+                                </g>
+                            </svg>
+                            {%- endif -%}
+                            <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                            <span
+                                class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+                        </span>
+                    </a>
+
+
+                    <svg @click="dkcloseModal" id="closeCard" class="my-auto cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 41 41" fill="none">
+                        <path
+                            d="M40.42 4.48072L36.4066 0.467285L20.4952 16.3787L4.58374 0.467285L0.570312 4.48072L16.4817 20.3921L0.570312 36.3035L4.58374 40.317L20.4952 24.4056L36.4066 40.317L40.42 36.3035L24.5086 20.3921L40.42 4.48072Z"
+                            fill="black" fill-opacity="0.89"></path>
+                    </svg>
+                </div>
+
+            </div>
+
+
+
+
+            <div class=" !pt-0    px-[20px] md:px-[0px] ">
+
+                <div
+                    class="md:grid max-w-[1400px] mx-auto  lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-2 md:gap-[30px] lg:gap-[50px] xl:gap-[50px] !mt-0 ">
+
+                    <div class="hidden md:px-4 lg:block md:col-span-4 xl:col-span-4 lg:row-end-1 lg:px-8 2xl:px-0">
+                        <div class="max-w-full mx-auto mt-4" v-cloak v-cloak-hide>
+
+
+
+                            <div  v-for="option in options" :key="option.position">
+
+                                <div v-if="option.name.toLowerCase() === 'soup flavor'">
+
+
+                                <div v-if="selected_options['option_' + option.position] === 'Next Gen'">
+                                    <div class="!grid !grid-cols-2 gap-2">
+                                      
+                                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NG_3.png?v=1752858306"
+                                                alt="Next Gen Image 2" class="" />
+                                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NextGen_1.png?v=1752858306"
+                                                alt="Next Gen Image 4" class="" />
+                                       
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NExtGen2.png?v=1752858306"
+                                            alt="Next Gen Image 3" class="" />
+                                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NG_4.png?v=1752858306"
+                                                alt="Next Gen Image 1" class="" />
+                                      
+                                    </div>
+                                </div>
+
+                                <div v-else>
+                                    <div class="!grid !grid-cols-2 gap-2">
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_3.png?v=1752858306"
+                                            alt="Next Gen Image 2" class="" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_4.png?v=1752858306"
+                                            alt="Next Gen Image 1" class="" />
+                                       
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_2.png?v=1752858306"
+                                            alt="Next Gen Image 3" class="" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_1.png?v=1752858306"
+                                            alt="Next Gen Image 4" class="" />
+                                    </div>
+                                </div>
+                        
+
+
+                                   
+
+                                </div>
+                            </div>
+                            {% comment %} <div v-if="step === 2" v-for="option in options" :key="option.position">
+
+                                <div v-if="option.name.toLowerCase() === 'frequency'">
+
+
+                                    <img v-if="selected_options['option_' + option.position] === 'One Time Order'"
+                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Prolon_PDP_-_Welcome_Kit-single.png?v=1742483936"
+                                        alt="One Time Order Image" class="" />
+
+
+                                    <img v-else
+                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Prolon_PDP_Step_2_-_Next_Gen.png?v=1743170291"
+                                        alt="Subscription Image" class="" />
+
+                                </div>
+                            </div> {% endcomment %}
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="w-full  md:max-w-[750px] mx-auto  mt-4 z-[1] flex justify-center flex-col  md:col-span-3 xl:col-span-5 lg:row-span-2 lg:row-end-2 xl:mt-0  product-details  px-0 md:pr-[15px] lg:pr-[30px] lg:pl-0  2xl:pr-[40px] ">
+
+                        <div class="flex gap-2 ">
+                            <button type="button" class="text-black ag-4qx " v-if="step > 1" @click="backStep">
+                                <svg viewBox="0 0 32 32" fill="none" class="ag-10j w-[32px]" focusable="false"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.8001 16.3115H5.4668M5.4668 16.3115L13.4668 24.3115M5.4668 16.3115L13.4668 8.31152"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                                    </path>
+                                </svg>
+                            </button>
+                            <h2 class="w-full text-center text-[22px] pt-[4px] md:pt-0 !font-semibold text-gray-900 sm:text-[24px] mt-0 md:mt-[8px]"
+                                :class="step === 2 ? 'pr-10' : ''">START YOUR PROLON 5-DAY </h2>
+                        </div>
+
+                        {% comment %} <p class="mt-2 text-lg text-center">Choose your flavor</p> {% endcomment %}
+
+
+                        <div class="w-full max-w-[300px] mx-auto mt-2 mb-3 md:mb-0">
+                            <div class="w-full h-2 overflow-hidden bg-gray-300 rounded-full">
+                                <div class="h-full transition-all duration-500 bg-[#4B9C11]"
+                                    :style="{ width: step === 1 ? '50%' : '100%' }">
+                                </div>
+                            </div>
+                            <p class="mt-2 font-semibold text-center">${ step } of 2</p>
+                        </div>
+
+
+                        <div class="block mb-2 lg:hidden"  v-for="option in options"
+                            :key="option.position">
+
+
+
+                            <div v-if="option.name.toLowerCase() === 'soup flavor'">
+
+
+                            <div v-if="selected_options['option_' + option.position] === 'Next Gen'">
+                                <div class="flex w-full gap-2 overflow-x-scroll overflow-y-hidden aspect-w-1 aspect-h-1 flex-nowrap lg:grid lg:grid-cols-2 lg:justify-center lg:items-center lg:overflow-hidden">
+                                   
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NG_3.png?v=1752858306"
+                                            alt="Next Gen Image 2" class="max-w-[267px] max-h-[350px] object-cover" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NextGen_1.png?v=1752858306"
+                                            alt="Next Gen Image 4" class="max-w-[267px] max-h-[350px] object-cover" />
+                                    
+                                    <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NExtGen2.png?v=1752858306"
+                                        alt="Next Gen Image 3" class="max-w-[267px] max-h-[350px] object-cover" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_NG_4.png?v=1752858306"
+                                            alt="Next Gen Image 1" class="max-w-[267px] max-h-[350px] object-cover" />
+                                   
+                                </div>
+                            </div>
+
+                            <div v-else>
+                                <div class="flex w-full gap-2 overflow-x-scroll overflow-y-hidden aspect-w-1 aspect-h-1 flex-nowrap lg:grid lg:grid-cols-2 lg:justify-center lg:items-center lg:overflow-hidden">
+                                  
+                                    <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_3.png?v=1752858306"
+                                        alt="Next Gen Image 2" class="max-w-[267px] max-h-[350px] object-cover" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_4.png?v=1752858306"
+                                            alt="Next Gen Image 1" class="max-w-[267px] max-h-[350px] object-cover" />
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_2.png?v=1752858306"
+                                            alt="Next Gen Image 3" class="max-w-[267px] max-h-[350px] object-cover" />
+                                           
+                                    <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/PDP_Mobile_-_OG_1.png?v=1752858306"
+                                        alt="Next Gen Image 4" class="max-w-[267px] max-h-[350px] object-cover" />
+                                </div>
+                            </div>
+
+
+                            </div>
+                        </div>
+
+                        {% comment %} <div class="block mb-2 lg:hidden" v-if="step === 2" v-for="option in options"
+                            :key="option.position">
+
+                            <div v-if="option.name.toLowerCase() === 'frequency'">
+
+
+                                <img v-if="selected_options['option_' + option.position] === 'One Time Order'"
+                                    src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Prolon_PDP_-_Welcome_Kit-single.png?v=1742483936"
+                                    alt="One Time Order Image" class="rounded-lg" />
+
+
+                                <img v-else
+                                    src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Step2_mobile.png?v=1743170289"
+                                    alt="Subscription Image" class="" />
+
+                            </div>
+                        </div> {% endcomment %}
+
+                        {% if section.settings.Show_new_design %}
+
+                        <div v-cloak v-cloak-hide class="">
+
+                            <div class="gap-2 my-1 md:my-5 inter"
+                                style="display: flex; flex-direction: {{ section.settings.reverse_layout | default: false | downcase | replace: 'true', 'column-reverse' | replace: 'false', 'column' }};">
+                                <div v-if="step === 1" class="" v-for="option in options">
+                                    <div v-if="option.name.toLowerCase() === 'soup flavor'">
+                                        <div class="flex items-center mb-3 md:mb-6">
+                                            <h2 class="font-bold text-[16px]">Please Choose Your Flavors:</h2>
+                                            <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 md:max-w-[550px] md:mx-auto">
+                                            <div v-for="value in option.values" :key="value"
+                                                @click="selectOption(option.position, value)" :class="{
+                            'w-full border-2 !cursor-pointer text-black bg-white  rounded-md border-black  relative  items-center justify-between': selected_options['option_' + option.position] == value,
+                            'w-full border !cursor-pointer border-gray bg-white  rounded-md border-gray-300 relative  items-center justify-between': selected_options['option_' + option.position] != value
+                            }">
+
+
+
+                                                <div class="flex items-start gap-1 p-5 md:gap-4">
+
+                                                    <div class="flex min-w-5 min-h-5 min-w-5 min-h-5 w-5 h-5 mt-[2px] border rounded-full"
+                                                        :class="selected_options['option_' + option.position] == value ? 'border-[#237D53]' : 'border-gray-300'">
+                                                        <span
+                                                            v-if="selected_options['option_' + option.position] == value"
+                                                            class="inset-0 min-h-[12px] mx-auto my-auto min-w-[12px]  h-[12px] w-[12px] rounded-full"
+                                                            style="background-color: #237D53;">
+                                                        </span>
+
+                                                    </div>
+
+                                                    <div class="flex flex-col w-full">
+
+                                                        <div class="flex justify-between w-full gap-1">
+                                                            <div v-if="value === 'Next Gen'"
+                                                                class="name-value inter text-[14px] sm:text-[18px] font-semibold  text-left whitespace-nowrap">
+                                                                <span
+                                                                    class=" text-[14px] sm:text-[18px]  text-[#4B9C11]">NEW
+                                                                </span> -
+                                                                Next Gen
+
+
+                                                            </div>
+                                                            <div v-if="value === 'Expanded Variety'"
+                                                                class="name-value inter text-[14px] sm:text-[18px] font-semibold  text-left whitespace-nowrap">
+
+                                                                Expanded Variety
+
+
+                                                            </div>
+                                                            <div v-if="value === 'Gen3'"
+                                                                class="name-value inter text-[14px] sm:text-[18px] font-semibold  text-left whitespace-nowrap">
+                                                                Original: Bold Flavors
+                                                            </div>
+
+                                                            <div v-if="value === 'Original'"
+                                                                class="name-value inter text-[14px] sm:text-[18px] font-semibold  text-left whitespace-nowrap">
+                                                                Original: Classic Flavors
+                                                            </div>
+
+                                                            <div
+                                                                class="price-value inter text-[16px] font-semibold text-center">
+                                                                <del class="text-gray-500"
+                                                                    :aria-label="`Original Price ${getCompareAtPrice(option.position, value)}`">${
+                                                                    getCompareAtPrice(option.position, value)}</del>
+                                                                <span class="ml-2"
+                                                                    :aria-label="`Discounted Price ${ getOptionPrice(option.position, value) }`">${
+                                                                    getOptionPrice(option.position, value) }</span>
+                                                            </div>
+
+
+                                                            {% comment %} <div
+                                                                class="text-[11px] pr-2 font-normal flex gap-1 ">
+                                                                <span
+                                                                    class="my-auto border-b border-dashed xl:w-6 "></span>
+                                                                <span
+                                                                    v-if="selected_options.option_2 === 'Subscribe & Save'"
+                                                                    class="my-auto text-gray-600 xl:whitespace-nowrap">Subscribe
+                                                                    & Save</span>
+                                                                <span v-else
+                                                                    class="my-auto text-gray-600 xl:whitespace-nowrap">One
+                                                                    Time Purchase</span>
+                                                            </div> {% endcomment %}
+                                                        </div>
+                                                        <div class="flex gap-2">
+                                                            <div
+                                                                class="sku_descrption text-[12px] mt-[1px]  max-w-[350px] font-normal text-left ">
+                                                                <span
+                                                                    v-html="get_sku_flavor_description(value, product.title)"></span>
+                                                            </div>
+                                                            {% comment %} <p v-if="value === 'Next Gen'"
+                                                                class="min-w-[72px] mx-auto flex justify-center mt-2  inline-block text-center py-1 rounded-md max-h-[27px] px-2 text-[12px] text-white  bg-prolon_green">
+                                                                Pre-Order </p> {% endcomment %}
+                                                        </div>
+
+                                                        <div v-if="value === 'Next Gen'"
+                                                            class="pt-2 mt-2 border-t border-gray-300">
+                                                            <div @click="isOpenNextGen = !isOpenNextGen"
+                                                                class="flex items-center justify-between cursor-pointer">
+                                                                <h2 class="text-[14px] font-normal  ">What's included
+                                                                </h2>
+                                                                <button class="focus:outline-none">
+                                                                    <svg v-if="isOpenNextGen"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        class="border p-[1px] h-5 w-5  border-[#4B9C11] rounded-full  text-[#4B9C11]"
+                                                                        fill="none" viewBox="0 0 24 24"
+                                                                        stroke="currentColor">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round" stroke-width="2"
+                                                                            d="M20 12H4" />
+                                                                    </svg>
+                                                                    <svg v-else xmlns="http://www.w3.org/2000/svg"
+                                                                        class="border p-[1px] h-5 w-5  border-[#4B9C11] rounded-full  text-[#4B9C11]"
+                                                                        fill="none" viewBox="0 0 24 24"
+                                                                        stroke="currentColor">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round" stroke-width="2"
+                                                                            d="M12 4v16m8-8H4" />
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+
+                                                            <transition name="accordion">
+                                                                <div v-show="isOpenNextGen"
+                                                                    class="overflow-hidden text-sm text-gray-700">
+                                                                    <div class="mt-4 text-[14px] ">
+                                                                        <p>This 5-day program provides precise,
+                                                                            scientifically formulated nutrition that
+                                                                            mimics prolonged fasting—activating
+                                                                            cellular rejuvenation, supporting metabolic
+                                                                            health, and promoting longevity. Everything
+                                                                            you need packaged into five
+                                                                            individual day boxes. Our original kit, with
+                                                                            evolved ready to eat soups.</p>
+                                                                        <p class="mt-4 text-[14px] ">
+                                                                            <strong>Soups:</strong> 100% organic
+                                                                            ready-to-eat soups — Tomato, Minestrone,
+                                                                            Artichoke & Yellow Tomato, Broccoli &
+                                                                            Quinoa, Vegetable.
+                                                                        </p>
+                                                                        <p class="text-[14px]"><strong>Snacks:</strong>
+                                                                            Almond & Kale Crackers, Nut Bars, Olives</p>
+                                                                        <p class="text-[14px]"><strong>Drinks:</strong>
+                                                                            Organic teas, L-Drink to preserve lean
+                                                                            muscle</p>
+                                                                        <p class="text-[14px]"><strong>Extras:</strong>
+                                                                            Meal card, instructions, access to register
+                                                                            for daily tips, education, and coach-led
+                                                                            group fasting.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </transition>
+                                                        </div>
+                                                        <div v-if="value === 'Expanded Variety'"
+                                                            class="pt-2 mt-2 border-t border-gray-300">
+                                                            <div @click="isOpenExpanded = !isOpenExpanded"
+                                                                class="flex items-center justify-between cursor-pointer">
+                                                                <h2 class="text-[14px] font-normal ">What's included
+                                                                </h2>
+                                                                <button class="focus:outline-none">
+                                                                    <svg v-if="isOpenExpanded"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        class="border p-[1px] h-5 w-5  border-[#4B9C11] rounded-full  text-[#4B9C11]"
+                                                                        fill="none" viewBox="0 0 24 24"
+                                                                        stroke="currentColor">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round" stroke-width="2"
+                                                                            d="M20 12H4" />
+                                                                    </svg>
+                                                                    <svg v-else xmlns="http://www.w3.org/2000/svg"
+                                                                        class="border p-[1px] h-5 w-5  border-[#4B9C11] rounded-full  text-[#4B9C11]"
+                                                                        fill="none" viewBox="0 0 24 24"
+                                                                        stroke="currentColor">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round" stroke-width="2"
+                                                                            d="M12 4v16m8-8H4" />
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+
+                                                            <transition name="accordion">
+                                                                <div v-show="isOpenExpanded"
+                                                                    class="overflow-hidden text-sm text-gray-700">
+                                                                    <div class="mt-4 text-[14px] ">
+                                                                        <p>This 5-day program provides precise,
+                                                                            scientifically formulated nutrition that
+                                                                            mimics prolonged fasting—activating
+                                                                            cellular rejuvenation, supporting metabolic
+                                                                            health, and promoting longevity. Everything
+                                                                            you need packaged into five
+                                                                            individual day boxes.</p>
+                                                                        <p class="mt-4 text-[14px] ">
+                                                                            <strong>Soups:</strong> A mix of our classic
+                                                                            and bold flavors — Minestrone, Tomato,
+                                                                            Chickpea & Leeks, Carrot Ginger, Red Pepper
+                                                                            & Onion, Lentil
+                                                                            Curry.
+                                                                        </p>
+                                                                        <p class="text-[14px] mt-1">
+                                                                            <strong>EVOO:</strong> Extra virgin olive
+                                                                            oil packets to add to your soups, for added
+                                                                            taste & texture
+                                                                        </p>
+                                                                        <p class="text-[14px] mt-1 ">
+                                                                            <strong>Snacks:</strong> Almond & Kale
+                                                                            Crackers, Nut Bars, Olives
+                                                                        </p>
+                                                                        <p class="text-[14px] mt-1"><strong>Fasting
+                                                                                Bars:</strong> Morning Fasting Bars
+                                                                            (variety) in place of the L-Bar for added
+                                                                            variety</p>
+                                                                        <p class="text-[14px] mt-1">
+                                                                            <strong>Drinks:</strong> Organic teas,
+                                                                            L-Drink to preserve lean muscle, Fasting
+                                                                            Shake (on day one)
+                                                                        </p>
+                                                                        <p class="text-[14px] mt-1">
+                                                                            <strong>Extras:</strong> Meal card,
+                                                                            instructions, access to register for daily
+                                                                            tips, education, and coach-led group
+                                                                            fasting.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </transition>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+
+
+
+
+
+                                                {% comment %} <div
+                                                    v-if="selected_options.option_2 === 'Subscribe & Save' && value === 'Expanded Variety'">
+                                                    <div class="text-[11px] md:text-[13px] text-center pt-1 font-bold">
+                                                        Congratulations! You qualified for <span
+                                                            class="text-prolon_green">free
+                                                            shipping!</span>
+                                                    </div>
+                                                </div> {% endcomment %}
+
+                                                <div v-if="value === 'Expanded Variety'" class="hidden">
+                                                    <span
+                                                        class="show--percentage z-10  px-[6px] lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                        +10% OFF
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div v-if="step === 2" class="" v-for="option in options">
+                                    <div v-if="option.name.toLowerCase() === 'frequency'"
+                                        class="flex flex-col w-full gap-6">
+
+                                        <div class="flex items-center ">
+                                            <h2 class="font-bold text-[16px]">Save Time & Money With Our Recurring Order
+                                                Option
+                                            </h2>
+                                            <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                                        </div>
+
+                                        <div class="single">
+                                            <div v-for="value in option.values.filter(v => v.toLowerCase().includes('subscri'))"
+                                                :key="value" @click="selectOption(option.position, value,'single')"
+                                                :class="{
+                                        'relative w-full border-2 !cursor-pointer text-black bg-white  rounded-md border-black  ': isSelected(option.position, value,'single'),
+                                        'relative w-full border !cursor-pointer border-gray bg-white  rounded-md border-gray-300 ': !isSelected(option.position, value,'single')
+                                        }">
+
+
+                                                <div class="flex flex-col">
+                                                    <div v-if="value === value"
+                                                        class="flex justify-center py-2 font-bold text-white rounded-t-sm bg-[#278879] ">
+                                                        Most Popular
+                                                    </div>
+
+                                                    <div class="flex w-full px-4 pt-4 items-star">
+                                                        <div class="flex flex-grow gap-4 items-star"
+                                                            :class="{ ' !items-start': value?.toLowerCase()?.includes('subscri') }">
+
+                                                            <div class="flex min-w-5 min-h-5 w-5 h-5 mt-[2px] border rounded-full"
+                                                                :class="isSelected(option.position, value,'single') ? 'border-[#237D53]' : 'border-gray-300'">
+                                                                <span v-if="isSelected(option.position, value,'single')"
+                                                                    class="inset-0 min-h-[12px] mx-auto my-auto min-w-[12px]  h-[12px] w-[12px] rounded-full"
+                                                                    style="background-color: #237D53;">
+                                                                </span>
+
+                                                            </div>
+                                                            <div class="flex flex-col justify-center flex-grow ">
+                                                                <div
+                                                                    class="name-value inter my-auto font-semibold text-[15px] px-1 text-left">
+                                                                    Single Subscription
+                                                                </div>
+                                                                <div v-if="value && value.toLowerCase().includes('subscri')"
+                                                                    class="flex flex-col">
+
+                                                                    <p class="font-thin text-[14px] text-left">
+                                                                        Save 14% on all orders, cancel or pause anytime.
+                                                                    </p>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class=" text-[15px] font-semibold  "
+                                                                :data-value="value"
+                                                                :class="{ '!top-[25px]': value?.toLowerCase()?.includes(' subscri') }">
+                                                                ${ getOptionPrice(option.position, value) }
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="sku_descrption text-[12px] pb-4 sm:text-[14px] text-left ml-8 mt-2 pt-2 border-t-2 mr-2">
+                                                        <ul class="space-y-1 text-sm ">
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 w-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                <b>Free Shipping</b>
+                                                            </li>
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 w-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                <b>Free 12ct Fasting Bars</b>
+                                                            </li>
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 w-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                <div class="flex items-center ">
+                                                                    <span
+                                                                        class="!block text-left font-semibold !text-[#73984A] text-[12px]">
+                                                                        Delivers every
+                                                                    </span>
+                                                                    <div
+                                                                        class="font-normal z-10 h-min max-w-[200px] text-[12px] flex items-center ml-2 bg-white">
+                                                                        <select
+                                                                            class="style-select pl-1 md:pl-2 min-w-20 font-semibold !border-0 bg-transparent focus:!outline-none !text-[12px] text-black"
+                                                                            @change="change_subscription_plan($event)"
+                                                                            :value="selected_plan?.id">
+                                                                            <option v-for="plan in selling_plans"
+                                                                                :key="plan.id" :value="plan.id"
+                                                                                :selected="plan.id === selected_plan?.id">
+                                                                                ${ plan.name.replace('Deliver every ',
+                                                                                '').replace('Delivery every ', '') }
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class=" Double">
+                                            <div v-for="value in option.values.filter(v => v.toLowerCase() === '2x prolon')"
+                                                :key="value" @click="selectOption(option.position, value,'double')"
+                                                :class="{
+                                        'relative w-full bg-white border-2 !cursor-pointer text-black  rounded-md border-black  ': isSelected(option.position, value,'double'),
+                                        'relative bg-white w-full border !cursor-pointer border-gray  rounded-md border-gray-300 ': !isSelected(option.position, value,'double')
+                                        }">
+
+
+                                                <div class="flex flex-col">
+                                                    <div
+                                                        class="flex justify-center py-2 font-bold text-white rounded-t-sm bg-[#1D382F] ">
+                                                        Best value
+                                                    </div>
+
+                                                    <div class="flex w-full px-4 pt-4 items-star">
+                                                        <div class="flex flex-grow gap-4 items-star"
+                                                            :class="{ ' !items-start': value?.toLowerCase()?.includes('subscri') }">
+
+
+
+                                                            <div class="flex min-w-5 min-h-5 w-5 h-5 mt-[2px] border rounded-full"
+                                                                :class="isSelected(option.position, value,'double') ? 'border-[#237D53]' : 'border-gray-300'">
+                                                                <span v-if="isSelected(option.position, value,'double')"
+                                                                    class="inset-0 min-h-[12px] mx-auto my-auto min-w-[12px]  h-[12px] w-[12px] rounded-full"
+                                                                    style="background-color: #237D53;">
+                                                                </span>
+
+                                                            </div>
+
+                                                            <div class="flex flex-col justify-center flex-grow ">
+                                                                <div
+                                                                    class="name-value inter my-auto font-semibold text-[15px] px-1 text-left">
+                                                                    Two Box Prolon Bundle
+                                                                </div>
+                                                                <div v-if="value && value.toLowerCase().includes('subscri')"
+                                                                    class="flex flex-col">
+
+                                                                    <p class="font-thin text-[12px] text-left">
+                                                                        Prolon 5-day program for 2 people
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" text-[15px] font-semibold  "
+                                                                :data-value="value"
+                                                                :class="{ '!top-[25px]': value?.toLowerCase()?.includes(' subscri') }">
+                                                                ${ getOptionPrice(option.position, value) }
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="sku_descrption text-[12px] pb-4 sm:text-[14px] text-left ml-8 mt-2 pt-2 border-t-2 mr-2">
+                                                        <ul class="space-y-1 text-sm ">
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 min-w-4 w-4 min-h-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                Free Shipping
+                                                            </li> 
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 min-w-4 w-4 min-h-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                Save 10% when you bundle
+                                                            </li> 
+                                                            <li class="flex items-start">
+                                                                <svg class="border p-[1px] h-4 min-w-4 w-4 min-h-4  border-[#4B9C11] rounded-full  mt-1 mr-2 min-w-4"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                                Fast with a partner, or be ready for your next cycle
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="try one ">
+                                            <div v-for="value in option.values.filter(v => v.toLowerCase() === 'one time order')"
+                                                :key="value"
+                                                @click="selectOption(option.position, 'One Time Order','one-time')"
+                                                :class="{
+                                        'relative w-full border-2 !cursor-pointer text-black  rounded-md bg-white border-black  ': isSelected(option.position, value,'one-time'),
+                                        'relative w-full border !cursor-pointer border-gray  bg-white rounded-md border-gray-300 ': !isSelected(option.position, value,'one-time')
+                                        }">
+
+
+                                                <div class="flex flex-col">
+
+
+                                                    <div class="flex w-full p-4 items-star">
+                                                        <div class="flex flex-grow gap-4 items-star"
+                                                            :class="{ ' !items-start': value?.toLowerCase()?.includes('subscri') }">
+
+
+                                                            <div class="flex min-w-5 min-h-5 w-5 h-5 mt-[2px] border rounded-full"
+                                                                :class="selected_options['option_' + option.position] == value  ? 'border-[#237D53]' : 'border-gray-300'">
+                                                                <span
+                                                                    v-if="selected_options['option_' + option.position] == value "
+                                                                    class="inset-0 min-h-[12px] mx-auto my-auto min-w-[12px]  h-[12px] w-[12px] rounded-full"
+                                                                    style="background-color: #237D53;">
+                                                                </span>
+
+                                                            </div>
+                                                            <div class="flex justify-between flex-grow gap-2 sm:gap-0 ">
+                                                                <div
+                                                                    class="name-value inter my-auto font-semibold text-[15px] px-1 text-left">
+                                                                    Single Purchase
+                                                                </div>
+                                                                <div class=" text-[13px] sm:text-[15px] font-semibold  "
+                                                                    :data-value="value">
+                                                                    ${ getOptionPrice(option.position, value) }
+                                                                </div>
+                                                                {% comment %}
+                                                                <span> (1) Prolon 5-day program </span> {% endcomment %}
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        {% else %}
+
+                        <div v-cloak v-cloak-hide class="">
+
+                            <div class="gap-2 my-1 md:my-5 inter"
+                                style="display: flex; flex-direction: {{ section.settings.reverse_layout | default: false | downcase | replace: 'true', 'column-reverse' | replace: 'false', 'column' }};">
+                                <div v-if="step === 1" class="" v-for="option in options">
+                                    <div v-if="option.name.toLowerCase() === 'soup flavor'">
+                                        <div class="flex items-center mb-3 md:mb-6">
+                                            <h2 class="font-bold text-[16px]">Please Choose Your Flavors:</h2>
+                                            <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 md:max-w-[550px] md:mx-auto">
+                                            <div v-for="value in option.values" :key="value"
+                                                @click="selectOption(option.position, value)" :class="{
+                                                            'w-full border !cursor-pointer text-black  py-4 rounded-md border-prolon_green bg-[#f9fff3] relative  items-center justify-between': selected_options['option_' + option.position] == value,
+                                                            'w-full border !cursor-pointer border-gray  py-4 rounded-md border-gray-300 relative  items-center justify-between': selected_options['option_' + option.position] != value
+                                                            }">
+                                                <div class="">
+
+                                                </div>
+                                                <div
+                                                    class="flex justify-between w-full px-4 font-semibold xl:flex-nowrap">
+                                                    <div class="flex items-center gap-1 md:gap-4">
+                                                        <div class="flex items-center">
+                                                            <span
+                                                                v-if="selected_options['option_' + option.position] == value"
+                                                                class="inset-0 min-h-[20px] min-w-[20px]"
+                                                                style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain;">
+                                                            </span>
+                                                            <span v-else class="inset-0">
+                                                                <div
+                                                                    class="w-5 h-5 border border-gray-300 rounded-full">
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <img v-if="product?.featured_image"
+                                                                class="hidden rounded max-w-12 lg:block max-h-12 md:max-h-20"
+                                                                :src="product?.featured_image" alt="Featured Image" />
+                                                        </div>
+                                                        <div class="flex flex-col max-w-[310px]">
+
+                                                            <div class="flex justify-between w-full gap-1">
+                                                                <div v-if="value === 'Expanded Variety'"
+                                                                    class="name-value inter text-[12px] sm:text-[14px]  text-left whitespace-nowrap">
+                                                                    <span v-if="value === 'Expanded Variety'"
+                                                                        class="px-[5px] py-[1px] mr-[2px] text-[10px] text-white rounded-sm bg-prolon_green">NEW</span>
+
+
+                                                                    Expanded Variety
+
+
+                                                                </div>
+                                                                <div v-if="value === 'Gen3'"
+                                                                    class="name-value inter text-[12px] sm:text-[14px]  text-left whitespace-nowrap">
+                                                                    New Soup Flavor
+                                                                </div>
+
+                                                                <div v-if="value === 'Original'"
+                                                                    class="name-value inter text-[12px] sm:text-[14px]  text-left whitespace-nowrap">
+                                                                    Original Soup Flavor
+                                                                </div>
+
+                                                                {% comment %} <div
+                                                                    class="text-[11px] pr-2 font-normal flex gap-1 ">
+                                                                    <span
+                                                                        class="my-auto border-b border-dashed xl:w-6 "></span>
+                                                                    <span
+                                                                        v-if="selected_options.option_2 === 'Subscribe & Save'"
+                                                                        class="my-auto text-gray-600 xl:whitespace-nowrap">Subscribe
+                                                                        & Save</span>
+                                                                    <span v-else
+                                                                        class="my-auto text-gray-600 xl:whitespace-nowrap">One
+                                                                        Time Purchase</span>
+                                                                </div> {% endcomment %}
+                                                            </div>
+                                                            <div class="sku_descrption text-[12px] text-left">
+                                                                <span
+                                                                    v-html="get_sku_flavor_description(value, product.title)"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-value inter text-[16px] text-center">
+                                                        <del class="text-gray-500"
+                                                            :aria-label="`Original Price ${getCompareAtPrice(option.position, value)}`">${
+                                                            getCompareAtPrice(option.position,
+                                                            value)}</del>
+                                                        <span class="ml-2"
+                                                            :aria-label="`Discounted Price ${ getOptionPrice(option.position, value) }`">${
+                                                            getOptionPrice(option.position, value) }</span>
+                                                    </div>
+
+                                                </div>
+                                                {% comment %} <div
+                                                    v-if="selected_options.option_2 === 'Subscribe & Save' && value === 'Expanded Variety'">
+                                                    <div class="text-[11px] md:text-[13px] text-center pt-1 font-bold">
+                                                        Congratulations! You qualified for <span
+                                                            class="text-prolon_green">free
+                                                            shipping!</span>
+                                                    </div>
+                                                </div> {% endcomment %}
+
+                                                <div v-if="value === 'Expanded Variety'" class="hidden">
+                                                    <span
+                                                        class="show--percentage z-10  px-[6px] lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                        +10% OFF
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div v-if="step === 2" class="" v-for="option in options">
+                                    <div v-if="option.name.toLowerCase() === 'frequency'">
+                                        <div class="flex items-center mb-3 md:mb-6">
+                                            <h2 class="font-bold text-[16px]">Save Time & Money With Our Recurring Order
+                                                Option
+                                            </h2>
+                                            <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 md:max-w-[550px] mx-auto">
+                                            <div v-for="value in option.values" :key="value"
+                                                @click="selectOption(option.position, value)" :class="{
+                                                        'relative w-full border !cursor-pointer text-black min-h-[75px] rounded-md border-prolon_green bg-[#f9fff3] flex items-center': selected_options['option_' + option.position] === value,
+                                                        'relative w-full border !cursor-pointer border-gray min-h-[75px] rounded-md border-gray-300 flex items-center': selected_options['option_' + option.position] !== value
+                                                        }">
+                                                <div class="absolute top-1/2 right-2 transform -translate-y-1/2 text-[15px] font-semibold text-right "
+                                                    :data-value="value" :class="{ '{%- if template == "
+                                                    product.prolon-v2" or template=="product.prolon-v2" or
+                                                    template=="product.prolon-v4" -%}!top-[25px] {%- endif
+                                                    -%} ': value?.toLowerCase()?.includes(' subscri') }">
+                                                    ${ getOptionPrice(option.position, value) }
+                                                </div>
+                                                <div class="flex items-center w-full px-3">
+                                                    <div class="flex items-center flex-grow gap-4"
+                                                        :class="{ '{%- if template == " product.prolon-v2" or
+                                                        template=="product.prolon-v2" or template=="product.prolon-v4"
+                                                        -%} !items-start {%- endif -%}':
+                                                        value?.toLowerCase()?.includes('subscri') }">
+
+                                                        <div class="flex items-center justify-center"
+                                                            :class="{ ' {%- if template == " product.prolon-v2" or
+                                                            template=="product.prolon-v2" or
+                                                            template=="product.prolon-v4" -%} !items-start mt-3 {%-
+                                                            endif -%}': value?.toLowerCase()?.includes('subscri') }">
+                                                            <span
+                                                                v-if="selected_options['option_' + option.position] === value"
+                                                                class="inset-0"
+                                                                style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain; width: 20px; height: 20px;">
+                                                            </span>
+                                                            <span v-else class="inset-0">
+                                                                <div
+                                                                    class="w-5 h-5 border border-gray-300 rounded-full">
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex flex-col justify-center flex-grow py-[10px]">
+                                                            <div
+                                                                class="name-value inter my-auto font-semibold text-[15px] px-1 text-left">
+                                                                ${ value }
+                                                            </div>
+                                                            <div v-if="value && value.toLowerCase().includes('subscri')"
+                                                                class="flex flex-col">
+                                                                {% if handle =='prolon-offer' %}
+                                                                <p class="font-thin text-[12px] text-left">
+                                                                    14% Off all orders. Cancel anytime.
+                                                                </p>
+                                                                {% else %}
+                                                                <p class="font-thin text-[12px] text-left">
+                                                                    10% Off all orders. Cancel anytime.
+                                                                </p>
+                                                                {% endif %}
+                                                                <div class="flex items-center ml-2">
+                                                                    <span
+                                                                        class="!block text-left font-semibold !text-[#73984A] text-[12px]">
+                                                                        Delivers every
+                                                                    </span>
+                                                                    <div
+                                                                        class="font-normal z-10 h-min max-w-[200px] text-[12px] flex items-center ml-2 bg-white">
+                                                                        <select
+                                                                            class="style-select pl-1 md:pl-2 min-w-20 font-semibold !border-0 bg-transparent focus:!outline-none !text-[12px] text-black"
+                                                                            @change="change_subscription_plan($event)"
+                                                                            :value="selected_plan?.id">
+                                                                            <option v-for="plan in selling_plans"
+                                                                                :key="plan.id" :value="plan.id"
+                                                                                :selected="plan.id === selected_plan?.id">
+                                                                                ${ plan.name.replace('Deliver every ',
+                                                                                '').replace('Delivery every ', '') }
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            {%- if template == "product.prolon-v2" or template ==
+                                                            "product.prolon-v3" or template == "product.prolon-v4" -%}
+                                                            <div class="pt-3 pb-2 "
+                                                                v-if="value && value.toLowerCase().includes('subscri')">
+                                                                
+                                                                    <div
+                                                                        class="name-value inter text-[12px] sm:text-[14px] text-left font-semibold whitespace-nowrap">
+                                                                        Free 12ct Fasting Bars </div>
+                                                                    
+                                                           
+                                                               
+                                                            </div>
+
+                                                         
+                                                            {% else %}
+
+                                                            {% comment %} <img
+                                                                v-if="value && value.toLowerCase().includes('subscri')"
+                                                                src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/BFCM_Free_Gift.png?v=1733265986"
+                                                                class="" /> {% endcomment %}
+                                                            {% endif %}
+                                                            {%- if template == "product.prolon-v2" or template ==
+                                                            "product.prolon-v3" or template == "product.prolon-v4" -%}
+                                                            <div
+                                                                v-if="value && value.toLowerCase().includes('subscri')">
+                                                                <span
+                                                                    class="show--percentage z-10  px-[6px] lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                                    FREE GIFT 🎉
+                                                                </span>
+                                                            </div>
+                                                            {% endif %}
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        {% endif %}
+
+
+                        <div class="holiday-order-bump" style="display:none">
+                            <div
+                                class="flex relative items-center p-3 mx-0 md:mx-2 mb-3 md:mt-0 mt-3 md:mb-5 bg-[#f2f3ee] rounded-md shadow-sm ">
+
+
+                                <label for="new_year_bundle_checkbox" class="wps_upsell_bump_checkbox_container">
+                                    <input type="checkbox" name="new_year_bundle_checkbox" id="new_year_bundle_checkbox"
+                                        class="add_offer_in_cart extra-prolon-add-to-cart"><span
+                                        class="checkmark"></span>
+                                </label>
+
+
+                                <div class="flex-grow py-2 ml-4">
+
+                                    <span class="text-[12px] md:text-[14px] block">
+                                        <span class="font-semibold text-prolon_green">Yes, add $125 </span> <b>New Year
+                                            Bundle</b> Post-fast nutrition for continued support and longevity-minded
+                                        eating
+                                        habits.
+                                    </span>
+
+                                    <span class="underline text-[12px] md:text-[14px] cursor-pointer"
+                                        @click="newYearModal = true">Learn
+                                        More</span>
+                                    <div v-cloak v-cloak-hide v-if="newYearModal"
+                                        class="fixed inset-0 flex items-center justify-center mt-28 bg-gray-700 bg-opacity-50 z-[170]">
+                                        <div class=" relative rounded-lg w-[90%] sm:w-[50%] md:w-[40%] lg:w-[25%]  ">
+
+
+                                            <button @click="newYearModal = false"
+                                                class="absolute  font-bold text-[28px] top-0 text-white right-2 z-[200]">
+                                                &times;
+                                            </button>
+
+
+                                            <div class="w-full mb-4 ">
+                                                <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Healthy_Habits_-_New_Year_Bundle.png?v=1735577903"
+                                                    alt="Product Image" class="object-cover w-full h-auto">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <span
+                                    class=" z-10  px-[10px]  lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[12px] absolute !top-0 !right-0 font-bold">
+                                    48% OFF
+                                </span>
+
+
+                            </div>
+                        </div>
+
+
+                        <button v-if="step < 2" @click="nextStep" type="button"
+                            class="w-full text-white  bg-[#4B9C11] rounded-3xl"><span
+                                class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-"><span
+                                    class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy"><!--v-if--><span
+                                        class="font-bold">Next </span>
+                                    <svg class="max-w-[25px]" viewBox="0 0 24 24" fill="none" class="_icon_8sy5x_1"
+                                        focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.09998 12H20.1M20.1 12L14.1 6M20.1 12L14.1 18" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span></span></button>
+
+
+
+                        <div v-if="step === 2" class="md:max-w-[550px] flex  mt-2">
+                            <button type="button" :disabled="!calculatedPrice || isOutOfStock || addingtoCart"
+                                @click="addToCart(selected_variant)"
+                                :class="['w-full rounded-3xl', isOutOfStock ? 'bg-gray-400 !cursor-not-allowed' : 'bg-[#4B9C11]', 'text-white']">
+                                <span
+                                    class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-">
+                                    <span
+                                        class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy">
+                                        <svg v-if="addingtoCart" class="inline w-8 h-8 ml-2 text-white animate-spin "
+                                            viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                                fill="#E5E7EB"></path>
+                                            <path
+                                                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                        <svg v-if="!addingtoCart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                            fill="currentColor" aria-hidden="true" width="18">
+                                            <path fill-rule="evenodd"
+                                                d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="font-bold " v-if="!addingtoCart">
+                                            ${ isOutOfStock ? 'Sold Out' : 'Add to cart' }
+                                        </span>
+                                        {% comment %} <div v-if="!isOutOfStock">
+                                            <span class="mr-2 -ml-2 text-[16px]">.</span>
+                                            <span class="font-semibold text-[16px]">$${calculatedPrice} </span>
+                                        </div> {% endcomment %}
+                                    </span>
+                                </span>
+                            </button>
+
+                        </div>
+                        {% comment %} <div class="" v-if="step === 1" v-for="option in options">
+                            <div v-if="option.name.toLowerCase() === 'soup flavor'">
+
+                                <div class="flex gap-2 mt-4" v-if="selected_options.option_1 == 'Next Gen'">
+                                    <span>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/5952/5952788.png"
+                                            class="max-w-6 min-w-6" alt="" />
+                                    </span>
+                                    <span class="text-[14px]">
+                                        Sold out—but not for long! Order your Next Gen program today to secure your spot
+                                        at the
+                                        front of the line when the next shipment arrives next week.
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div> {% endcomment %}
+
+
+                        <div class="mt-4 border-t-2 border-black border-dotted health-positive-note">
+                            <div class="flex items-center gap-1 mt-4">
+                                <div><img
+                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/833314.png?v=1729852954"
+                                        class="w-[20px] min-w-[20px] pr-1" alt=""></div>
+                                <div class="text-[12px] sm:!text-[15px]"> Did you know, Prolon is cost neutral, but
+                                    <span class="font-bold">health
+                                        positive?</span>
+                                </div>
+                                <div class="relative group"><button class="text-[12px] sm:!text-[15px]">ⓘ</button>
+                                    <div
+                                        class="absolute -right-5 sm:-right-20 top-full z-20 mt-2 w-[200px] sm:w-[260px] md:w-[375px] bg-[#78a14a] p-4 text-xs sm:text-sm text-white group-hover:block hidden shadow-lg">
+                                        <div class="relative p-2">
+                                            <div
+                                                class="absolute -top-3 sm:-top-6 right-8 sm:right-12 h-4 w-4 sm:h-5 sm:w-6 -translate-x-1/2 rotate-45 bg-[#78a14a]">
+                                            </div>
+                                            <div><span class="block font-bold text-center">Meaningful Investment -
+                                                    Balanced
+                                                    Cost</span><span class="block py-2">The average adult spends about
+                                                    $152 on
+                                                    groceries, plus $48/week dining
+                                                    out. One round of Prolon's 5-Day program includes all the food and
+                                                    supplements you need, for
+                                                    5 full days.</span><span class="font-bold">Plus</span> - you are
+                                                making a
+                                                long-term investment in your health and future self. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</Teleport>

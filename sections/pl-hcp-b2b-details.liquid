@@ -1,0 +1,114 @@
+{%- assign data = section.settings -%}
+<div class="w-full bg-[#F7F9FB] my-[30px] md:my-[40px]">
+  <div class="py-[10px] md:py-[20px] bg-[#F7F9FB] overflow-hidden max-w-[1400px] mx-auto px-[20px] pl-wrapper-product-detail-b2b">
+    {%- assign transDelay = 1 | times: 0.5 | plus: 1.0 -%}
+    <div class=" bg-[#F7F9FB] px-[20px] max-w-[1600px] mx-auto">
+      <div class="w-full">
+        <h2
+          class="
+            my-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents
+            !delay-200
+          "
+        >
+          {{ data.title }}
+        </h2>
+        {%- if subtitle.size > 0 -%}
+          <span class="inline-block py-px mb-[15px] text-[18px] md:text-[24px] leading-5 text-[#73994a] font-medium uppercase hero__animation-contents  !delay-100">
+            {{ data.subtitle }}
+          </span>
+        {%- endif -%}
+        <p
+          class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500"
+        >
+          {{ data.description }}
+        </p>
+      </div>
+      <div class="bg-[#F7F9FB] flex items-stretch py-[20px] md:py-[40px] flex-col md:flex-row  {% if data.image_on_left %} flex-col-reverse md:flex-row {% else %} flex-col-reverse md:flex-row-reverse{% endif %}">
+        <div class="w-full md:w-[50%] px-[20px] mb-[40px] md:mb-0">
+          <div>{{ data.custom_html }}</div>
+        </div>
+        <div class="w-full md:w-[50%] px-0 flex justify-center items-center">
+          <img
+            class="relative w-full !delay-300 hero__animation-contents !object-contain"
+            src="{{data.image | img_url: '800x'}}"
+            alt="Feature Image 1"
+          >
+        </div>
+      </div>
+      <div class="w-full my-[30px]  flex justify-center items-center">
+        <a
+          href="{{data.btn_url}}"
+          class="inline-block py-[10px] px-7 text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#77A117] bg-[#77A117] text-white border border-gray-300 max-w-[200px]"
+          q:id="3t"
+        >
+          {{- data.btn_text -}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "PL HCP B2B Detail",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Slow Down Bioage & Age Gracefully</b><br /> ProLon Everyday Nutrition"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "REJUVENATION FROM WITHIN"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_html",
+      "label": "Custom Html"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "GET IN TOUCH"
+    },
+    {
+      "type": "text",
+      "id": "btn_url",
+      "label": "Button Url",
+      "default": "#"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_on_left",
+      "label": "Image on Left",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL HCP B2B Detail",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-product-detail-b2b');
+  });
+</script>

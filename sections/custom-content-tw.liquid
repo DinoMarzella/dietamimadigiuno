@@ -1,0 +1,100 @@
+{% assign data = section.settings %}
+
+<!-- Custom-content-tw ali -->
+
+<div class="flex w-full items-center justify-center">
+    <div class="flex w-full max-w-[1500px] items-center justify-center bg-[{{data.bg-color}}] my-6">
+      <div class="flex flex-col justify-center items-center text-center max-w-[1000px] md:py-14 py-10 px-10">
+        <h3 class="text-[#2F6645] font-[Avenir-Roman] font-bold text-4xl mb-5">{{data.titlepro}}</h3>
+        <p class="top-description w-full max-w-[860px] font-[Avenir-Roman] text-lg">{{data.prodesx}}</p>
+        <div class="numbers-wrapper flex justify-between items-center w-full m-16">
+         {% for block in section.blocks %}
+            <div class="numbers-wrapper-inner flex flex-col justify-center items-center">
+            <div class="circular-wrapper bg-[#2F6645] rounded-full w-20 h-20 flex justify-center items-center text-4xl text-white"><span>{{block.settings.number}}</span></div>
+            <h5 class="mt-5 text-lg font-[Avenir-Roman]">{{block.settings.title}}</h5>
+          </div>
+         {% endfor %}
+        </div>
+        <p class="bottom-description font-[Avenir-Roman]">{{data.setdesc}}</p>
+        <div class="shop-pay-btn-custom w-full max-w-10px mt-10">
+          <a href="{{data.btnurl}}" class="btn text-link rte__image w-full flex justify-center items-center" style="color: white !important; margin-bottom: 0px; background-color: transparent !important;">
+            <img class="w-full max-w-[350px]" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Dynamic_Checkout_Black.jpg?v=1656071444" alt="shop-pay-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+{% schema %}
+{
+  "name": "Custom content tw",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color",
+     "default": "#F4F9E6"
+    },
+    {
+        "type": "html",
+        "id": "titlepro",
+        "label": "title",
+       "default": "Healthy eating should be good for you and the planet."
+    },
+    {
+        "type": "html",
+        "id": "prodesx",
+        "label": "Details",
+       "default": "Healthy eating should be good for you and the planet."
+    },
+    {
+        "type": "html",
+        "id": "setdesc",
+        "label": "Another Details",
+        "default": "Your first payment will be due at checkout. The next 3 remaining installments will be automatically charged every 2 weeks to your card saved on And don't worry, you'll get an email reminder before each payment to keep you in the know."
+    },
+    {
+        "type": "url",
+        "id": "btnurl",
+        "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Box",
+      "settings": [
+      {
+        "type": "text",
+        "id": "number",
+        "label": "Number"
+       },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+         "default": "Your first payment"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom content tw",
+      "blocks": [
+        {
+          "type": "block"
+        },
+        {
+            "type": "block"
+        },
+        {
+            "type": "block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

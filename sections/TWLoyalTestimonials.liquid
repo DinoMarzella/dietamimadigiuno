@@ -1,0 +1,77 @@
+{% assign data = section.settings %}
+<!-- TWLoyalTestimonials -->
+<div class="w-full pb-12 bg-white">
+  <div class="w-full px-4 mx-auto md:w-11/12 sm:px-6 lg:px-8">
+    <div class="flex flex-col flex-wrap items-stretch justify-start md:flex-row">
+      {% assign cards_block = section.blocks | where: 'type', 'cards' %}
+      {% for cardMain in cards_block %}
+        {% assign card = cardMain.settings %}
+        <div class="relative flex p-2 md:w-1/2">
+          <div class="relative flex flex-col justify-start w-full p-6 border border-gray-300 md:flex-row md:p-10 rounded-3xl">
+            <div class="w-full md:w-1/3">
+              <div class="h-auto w-28">
+                <img
+                  class="object-contain object-center w-full h-full"
+                  width="100%"
+                  height="100%"
+                  src="{{ data.image | img_url: '300x' }}"
+                >
+              </div>
+              <p class="mt-2 font-normal text-black text-bas text-start">{{ card.tag }}</p>
+            </div>
+            <div class="w-full md:w-2/3">
+              <div class="flex items-center justify-between w-full">
+                <p class="text-base font-bold leading-9 text-black">{{ card.title }}</p>
+                <p class="text-sm font-normal leading-9 text-black">{{ card.date }}</p>
+              </div>
+              <p class="mt-2 text-base text-black">
+                {{ card.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Loyal Testimonials TW",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

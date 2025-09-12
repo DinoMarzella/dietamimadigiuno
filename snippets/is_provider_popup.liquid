@@ -1,0 +1,19 @@
+{% for xtag in customer.tags %}
+{% assign tag = xtag | downcase %}
+{% if tag == 'approved' %}
+{%assign approved= true %}
+{% endif %}
+{% if tag == 'lhp' or tag == 'provider' or tag == 'hcp' or tag == 'hcr' or tag == 'hcc' or tag == 'hcr-recommender' %}
+
+{% assign isProvider = true %}
+
+{% endif %}
+
+
+{% endfor %} 
+{% if isProvider %}
+<script>
+    window.location.href = "/account"; 
+</script>
+
+{% endif %} 

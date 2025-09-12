@@ -1,0 +1,134 @@
+
+
+<style>
+  #inventory-table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  #inventory-table td,
+  #inventory-table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+  }
+
+  #inventory-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  #inventory-table tr:hover {
+      background-color: #ddd;
+  }
+
+  #inventory-table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #5b7d96;
+      color: white;
+  }
+  .btn-modal-close{
+    position: absolute;
+    top: 0;
+    background: black;
+    right: 0;
+    border: 2px inset white;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .announcement-bar {
+    display: none;}
+</style>
+<div class="page-width page-content">
+<header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+<h1 class="section-header__title">My Account - Virtual Inventory</h1>
+{% include 'create-order' %}
+<a href="/account" class="btn btn--secondary btn--small section-header__link">Account Overview</a>
+<br>
+  <h4 style="margin-bottom: -8px;"><br>Virtual Inventory</h4> <h3 id="total-remaining"
+ 
+    style="display:flex; align-items:center; justify-content:center"> 
+    </h3> 
+</header>
+
+
+<div class="grid">
+<table id="inventory-table">
+</table>
+
+</div>
+ 
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"
+        integrity="sha512-8aOKv+WECF2OZvOoJWZQMx7+VYNxqokDKTGJqkEYlqpsSuKXoocijXQNip3oT4OEkFfafyluI6Bm6oWZjFXR0A=="
+        crossorigin="anonymous"></script>
+<script>
+$(document).ready(function () {
+  let api_url = 'https://prolon-pro.herokuapp.com'
+//   let api_url = 'http://localhost:1337'
+  
+  // jQuery methods go here...
+  console.log('Jquery working') 
+  let customerEmail = {{customer.email |json}};
+  let shop_url = {{shop.permanent_domain|json}};
+//         let api_url = 'http://localhost:1337'
+  $.ajax({
+      url: `${api_url}/customers/customer-inventory-by-email?shop=${shop_url}&email=${customerEmail}`,
+      method: 'GET',
+  }).done((data) => {
+//       console.log('data: ', data);
+      let tableContent = `
+      <thead>
+          <th>Product Title</th>
+          <th>Variant Title</th>
+          <th>Remaining Stock</th>
+      </thead>
+      <tbody>`
+      data.inventory.forEach((rec, i) => {
+          tableContent += `
+              <tr>
+                  <td>${rec.product_title}</td>
+                  <td>${rec.variant_title}</td>
+                  <td>${rec.remaining_stock}</td>
+              </tr>`
+          if (rec.notes && rec.notes.length > 0) {
+              tableContent += `<tr><td colspan="3">`
+          }
+          rec.notes.forEach(note => {
+              tableContent += `
+                  <p colspan="3">${note.date} | ${note.comments} | ${note.action} - ${note.quantity}</p>
+                  `
+          });
+          if (rec.notes && rec.notes.length > 0) {
+              tableContent += `</td></tr>`
+          }
+      });
+      tableContent += `</tbody>`
+      let remainingOutput= ``;
+      // loop thought obejct 
+      if(data.totalRemainingInventory){
+        for (const [key, value] of Object.entries(data.totalRemainingInventory)) {
+            remainingOutput += `<p>${key}: ${value}</p>`
+        } 
+        }
+      if(remainingOutput==''){
+        remainingOutput = data.totalRemaining;
+      } 
+        
+      $('#total-remaining').html(`Total Remaining: <div class="flex" style="
+        display: inline-block;
+        font-size: 22px;
+        text-transform: capitalize;
+        text-align: left;
+        margin-left: 30px;
+    ">${remainingOutput}</div>`)  
+         
+      $('#inventory-table').html(tableContent)
+  }).fail(err => {
+      console.log('err: ', err);
+      $('#inventory-table').html(`No Data Found`);
+  })
+});
+</script>

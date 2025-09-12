@@ -1,0 +1,7 @@
+{% layout none %}
+<meta name="robots" content="noindex" /> 
+ {% if product.metafields.global.redirect_url %}
+ <script>location.href = "{{product.metafields.global.redirect_url}}"</script>
+{%else %}  
+<script>location.href="https://prolon.co.uk/collections/all-products/"</script>
+{%endif %}

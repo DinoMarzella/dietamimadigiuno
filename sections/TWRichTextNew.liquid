@@ -1,0 +1,58 @@
+{% assign data = section.settings %}
+<!-- TWGoldenText -Haider -->
+<div class="    flex justify-center items-center w-full bg-[{{data.bgcolor}}]">
+  <div class="flex flex-col lg:flex-row items-center justify-center w-full py-8 text-center text-white  {{data.container_class}}">
+    {% if data.imagepro %}
+      <div class="flex mt-5 mb-5 md:my-10 {{data.image_class}}">
+        <img src="{{data.imagepro | img_url: '3000x'}}">
+      </div>
+    {% endif %}
+    <div class="{{data.description_class}}">
+      <h1 class="px-5 text-3xl font-bold">{{ data.title }}</h1>
+      <p class="max-w-4xl px-5 pt-4 text-lg">{{ data.details }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{ 
+  "name": "Text with Image 2.0 ",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "label": "Details"
+    },
+    {
+      "type": "image_picker",
+      "id": "imagepro",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "description_class",
+      "label": "Description Class"
+    },
+    {
+      "type": "text",
+      "id": "image_class",
+      "label": "Image Class"
+    },
+    {
+      "type": "text",
+      "id": "container_class",
+      "label": "Container Class"
+    }
+  ]
+}
+{% endschema %}

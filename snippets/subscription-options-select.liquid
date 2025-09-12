@@ -1,0 +1,129 @@
+<script>
+    {%- assign current_variant = product.selected_or_first_available_variant -%} 
+    window.jsProduct = {{ product | json }}
+    window.current_variant = {{ current_variant | json }}
+ 
+    function calcAllPrices() {
+        console.log(`Calculating Prices`);
+        try {
+            let option1 = current_variant.option1;
+            let option2 = current_variant.option2;
+            
+            let OneTimeOption_Product = jsProduct.variants.filter(e => {
+                return e.option1 == option1 && e.option2 == option2 && e.option3 == "One Time Order"
+            });
+            let Subscription_Product = jsProduct.variants.filter(e => {
+                return e.option1 == option1 && e.option2 == option2 && e.option3 == "Subscribe & Save"
+            });
+
+            if (Subscription_Product.length > 0) {
+                let Subscription_Product_Price = (Subscription_Product[0].price / 100).toFixed(2);
+                let Subscription_Product_Price_Compare = (Subscription_Product[0].compare_at_price / 100).toFixed(2);
+
+                $('.rca-subscription-form__button--subscription .product-sale_price-subscription').text(`$${Subscription_Product_Price_Compare}`);
+                $('.rca-subscription-form__button--subscription .product-regular_price-subscription').text(`$${Subscription_Product_Price}`);
+
+                var totalValue = (((Subscription_Product_Price_Compare - Subscription_Product_Price) * 100) / Subscription_Product_Price_Compare).toFixed(0);
+                // | split:")" | first | replace: "("
+                try{
+                let variantQuantity = option2.split(")")[0].replace("(","") 
+                if(variantQuantity>1) 
+                {
+                    $('.subscribe-saving-updated span').text(`$ ${Subscription_Product_Price/variantQuantity}/KIT`);  
+                }else{ 
+                    $('.subscribe-saving-updated span').text(`$ ${Subscription_Product_Price/variantQuantity}/KIT`);
+
+                // $('.subscribe-saving-updated span').text(`${totalValue}% OFF`);
+                }
+                }   
+                catch(ex){
+                      
+                // $('.subscribe-saving-updated span').text(`${totalValue}% OFF`);
+                }
+
+            }
+            if (OneTimeOption_Product.length > 0) {
+                let OneTime_Product_Price = (OneTimeOption_Product[0].price / 100).toFixed(2);
+                let OneTime_Product_Price_Compare = (OneTimeOption_Product[0].compare_at_price / 100).toFixed(2);
+
+
+                $('.rca-subscription-form__button--otp .product-sale_price-subscription').text(`$${OneTime_Product_Price_Compare}`);
+                $('.rca-subscription-form__button--otp .product-regular_price-subscription').text(`$${OneTime_Product_Price}`);
+            }
+
+            let installmentsPrice= ((current_variant.price/4)/100).toFixed(2);
+            $(`.shop-pay-price`).text(`${installmentsPrice}`);  
+            $(`.shopify-installments__learn-more`).attr("data-price",`${installmentsPrice}`);    
+            
+         //   let variantBiggerThen1=  || current_variant.title.includes("(3)");
+            
+            if(current_variant.title.includes("(2)"))
+            {
+                $('.selct-delivery-days option[value="4"]').attr('disabled','disabled');
+                $('.selct-delivery-days option[value="8"]').removeAttr('disabled');
+                // $('.selct-delivery-days option[value="8"]').attr('disabled','disabled');
+                $('.selct-delivery-days').val(12).change();
+            }
+            else if(current_variant.title.includes("(3)"))
+            {
+                $('.selct-delivery-days option[value="4"]').attr('disabled','disabled');
+                $('.selct-delivery-days option[value="8"]').attr('disabled','disabled');
+                $('.selct-delivery-days').val(12).change();
+            }
+            else {
+                $('.selct-delivery-days option[value="4"]').removeAttr('disabled');
+                $('.selct-delivery-days option[value="8"]').removeAttr('disabled');
+                $('.selct-delivery-days').val(4)
+                setTimeout(() => {
+                    $('.selct-delivery-days').change();  
+                }, 10); 
+            }  
+ 
+
+        } 
+        catch (ex) {
+
+        }
+
+    }
+    $(document).ready(function () {
+
+        $('.product-section').on('variantChange', function (e) {
+            window.current_variant = e.variant;
+            calcAllPrices();
+
+        });
+        calcAllPrices();
+
+        $('.rca-subscription-form__button').click(function (e) {
+
+            e.preventDefault();
+            $('.subscription-hidden-params').remove(); 
+            let orderType= $(this).attr('data-type'); 
+            let value= orderType =='recurring' ? 'Subscribe & Save' : 'One Time Order';
+            let deliveryMonthsValue = $('.selct-delivery-days').val();
+            if(orderType =='recurring'){ 
+                  
+             $(`#recharge-subscription`).append(`<input class="subscription-hidden-params" type="hidden" name="properties[shipping_interval_unit_type]" value="Weeks">`);  
+                
+            $(`#recharge-subscription`).append(`<input class="subscription-hidden-params"  type="hidden" name="properties[shipping_interval_frequency]" value="${deliveryMonthsValue}">`); 
+$('.price-shop-pay-new-wrapper').hide();
+            } 
+            else{
+                $('.price-shop-pay-new-wrapper').show();   
+             }
+            $('.rca-subscription-form__button').removeClass('rca-subscription-form__button--selected');
+            $(this).addClass('rca-subscription-form__button--selected'); 
+            $(`input[data-index="option3"][value="${value}"]`).click(); 
+                  
+     
+        }); 
+        $('.selct-delivery-days').change(function (params) {
+            
+            setTimeout(() => {
+                $('.rca-subscription-form__button--selected').click();  
+            }, 10);
+
+        })
+    })
+</script>

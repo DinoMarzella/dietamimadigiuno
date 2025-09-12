@@ -1,0 +1,539 @@
+{%  assign variantPrice = product.selected_or_first_available_variant.price %}
+{%  assign compare_at_price = product.selected_or_first_available_variant.compare_at_price %}
+
+{%- liquid
+  if section.settings.theme_option == 'theme_orange'
+    assign title_class = 'product-title text-2xl  font-avenir  text-gray-900 sm:text-3xl'
+    assign price_class = 'font-bold text-gray-900 text-md'
+    assign option_title_class = 'text-label  block text-sm font-medium text-gray-700'
+    assign option_button_class = 'relative flex-1 block p-2 text-center border cursor-pointer overflow-hidden md:p-4 focus:outline-none single-product-option border-gray-300 bg-white text-xs md:text-sm'
+    assign option_button_selected_class = ' z-10 border-orange-300 bg-orange-50 opacity-100'
+    assign add_to_cart_class = 'add_to_cart_classasdfasd'
+  else
+    assign title_class = 'text-2xl font-bold text-gray-900 sm:text-3xl font-avant'
+    assign price_class = 'font-bold text-gray-900 text-md'
+
+    assign option_title_class = 'text-label  block font-bold font-avant text-lg text-prolon_dark_primary uppercase'
+  
+    assign option_button_class = 'bg-[#f9fff2] bg-white block border border-gray-300 cursor-pointer flex-1 focus:outline-none font-interCondensed  p-2 relative  single-product-option text-center text-sm text-prolon_dark_primary'
+
+    assign option_button_selected_class = 'ring-prolon_green z-10 border-prolon_green ring-1 bg-[#f9fff2] opacity-100' 
+
+    assign add_to_cart_class = 'add_to_cart_classasdfasd'
+  endif
+-%}  
+  
+<script type="text/javascript" class="blocks-data">
+    window.productSection = {{section.settings | json}}
+    window.productSection.blocks = [
+    {%- for block in section.blocks -%}
+     {{-block.settings | json -}}
+    {%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ];
+</script>
+
+{% liquid
+  assign product_handle = section.settings.product
+  if product_handle and product_handle != ''
+  assign product = all_products[product_handle] 
+  endif  
+%}
+ 
+{% assign productImage = product.selected_or_first_available_variant.featured_image | default: product.featured_image  %}
+<!-- product {{product.handle }} -> {{product_handle}}-->
+{% render 'ck-product-option-2-css',
+  option_button_class: option_button_class,
+  option_button_selected_class: option_button_selected_class
+%}  
+  
+<div class="font-avenir {{section.settings.custom_css_class}}" id="ck-product-form" >
+  <div class="px-4 py-4 mx-auto sm:py-4 sm:px-6 lg:max-w-container lg:px-8" id="order">
+    <div class="lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
+      <div class="lg:col-span-3 lg:row-end-1">
+        <div class="flex flex-col">
+          <div class="w-full border aspect-w-1 aspect-h-1">
+            <div>
+              <img
+                alt="Product image"
+                loading="eager"
+                class="w-full"
+                :class="{ 'opacity-50': imageLoading }"
+                sizes="(min-width: 64em) 60vw, (min-width: 48em) 50vw, 90vw"
+                src="{{productImage | img_url: '480x480'}}"
+                width="800"
+                height="800"
+                ref="productImage"
+                @load="imageLoading=false"
+                srcset="
+                  {{productImage | img_url: '480x480'}} 480w,
+                  {{productImage | img_url: '960x960'}} 960w,
+                  {{productImage | img_url: '1440x1440'}} 1440w,
+                  {{productImage | img_url: '1920x1920'}} 1920w,
+                  {{productImage | img_url: '2560x2560'}} 2560w,
+                  {{productImage | img_url: '3840x3840'}} 3840w
+                "
+                decoding="async"
+              >
+            </div>
+          </div>
+          <!-- section.settings.below_image -->
+          {{ section.settings.below_image }}
+        </div>
+      </div>
+      
+      <div class="w-full max-w-2xl mx-auto mt-4 sm:mt-16 lg:col-span-5 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-none product-details lg:sticky lg:-top-[90px]  {% if page.handle == 'prolon-5-day-landing-page' %} lg:max-h-[1120px]{% else %} lg:max-h-[930px]  {% endif %} mh900:top-[100px]">
+        <div class="flex flex-col-reverse">
+          <div class="mt-4 mb-2">
+            <h1
+              class="{{title_class}}"
+              v-text="getProductTitle(`{{product.title}}`)"
+            >
+              {{ product.title }}
+            </h1>
+            <h2 id="information-heading" class="sr-only">Product information</h2>
+            <span class="{{price_class}} product-price" v-text="selectedPrice">{{ variantPrice | money }}</span>
+            {% if product.handle contains 'dr-talks' %} 
+            <s class="pl-3 font-bold text-gray-600 text-md product-price" >{{ compare_at_price | money }}</s>
+            {% endif  %}
+          </div>
+          {% if section.settings.show_reviews %}
+            <div class="tw-reviews">
+              <h3 class="sr-only">Reviews</h3>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="flex-shrink-0 w-5 h-5 text-yellow-400"
+                >
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="flex-shrink-0 w-5 h-5 text-yellow-400"
+                >
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="flex-shrink-0 w-5 h-5 text-yellow-400"
+                >
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                </svg> 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="flex-shrink-0 w-5 h-5 text-yellow-400"
+                >
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="flex-shrink-0 w-5 h-5 text-yellow-400"
+                >
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <p class="sr-only">4.7 out of 5 stars</p>
+            </div>
+          {% endif %}
+        </div>
+
+        {% if section.settings.show_description %}
+          <div
+            class="mt-4 mb-4"
+            v-cloak
+            v-html="getProductDescripton(product.description)"
+          ></div>
+        {% endif %}
+
+        <div class="mt-2 lg:col-start-1 lg:row-start-2 lg:self-start">
+          <section aria-labelledby="options-heading">
+            <h2 id="options-heading" class="sr-only">Product options</h2>
+            {%
+              render 'ck-product-option-2',
+              option_button_class: option_button_class,
+              option_title_class: option_title_class,
+              add_to_cart_class: add_to_cart_class,
+              bgColorSelected: bgColorSelected,
+              product:product
+            %}
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  {% assign selected_variant = product.selected_or_first_available_variant  %}
+  window.default_variant = {{ selected_variant | json }};
+  {% for v in product.variants %}
+    {% assign option1 = v.option1 | downcase %}
+    {% assign option2 = v.option2 | downcase %}
+    {% assign option3 = v.option3 | downcase %}
+    {% if option1 contains 'subscri' or option2 contains 'subscri' or option3 contains 'subscri'  %}
+      {% assign selected_variant = v %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  window.currentProduct= {{product  | json}};
+
+  window.selectedVariant = {{ selected_variant | json }}
+  var url = new URL(location.href); 
+  var variantId = url.searchParams.get("variant");
+  if(variantId && variantId!=''){
+
+    window.selectedVariant = window.currentProduct.variants.find(function(variant){
+      return variant.id == variantId;
+    }) 
+    if(!window.selectedVariant){
+      window.selectedVariant = window.default_variant;
+    } 
+  } 
+
+
+  window.compare_at_prices = {
+    {%- for v in product.variants -%}
+      {% assign compare_at_price = v.compare_at_price %}
+      {% if v.metafields.my_fields.compare_at_price_frontend %}
+        {% assign compare_at_price = v.metafields.my_fields.compare_at_price_frontend |times:100 %}
+      {% endif %}
+      "{{v.id}}" :{{ compare_at_price | json }}
+      {%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  }
+</script>
+{% render 'product-extra-scripts' ,product:product %}
+<!-- Test code -->
+<script src="{{'ck-components.js' | asset_url }}" defer></script>
+<script src="{{'ck-product-options.js' | asset_url }}" defer></script>
+<script> 
+// <![CDATA[
+  try{
+   
+    $(document).on("click", ".single-accordion .question", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+        if(!$(this).hasClass("active")){
+          $(this).closest('.accordion').find('.question').removeClass("active");
+          $(this).addClass("active");
+
+        }
+        else{
+          $(this).closest('.accordion').find('.question').removeClass("active");
+
+        } 
+      
+        
+
+
+    });  
+    
+       
+    } 
+    catch(ex){
+      console.log(ex);
+    }
+    // ]]> 
+
+</script>
+{% schema %}
+{
+  "name": "ProLon Product Section",
+
+  "settings": [
+    {
+          "type": "text",
+          "id": "custom_css_class",
+          "label": "Custom Css Class"
+        },  
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Select a product to display. Default will be the page product"
+    },
+    {
+      "type": "select",
+      "id": "theme_option",
+      "label": "Theme Option",
+      "default": "theme_orange",
+      "options": [
+        {
+          "label": "Theme 1 - Orange",
+          "value": "theme_orange"
+        },
+        {
+          "label": "Theme 2 - Green",
+          "value": "theme_green"
+        },
+        {
+          "label": "Theme 3 - Brown",
+          "value": "theme_brown"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews",
+      "label": "Show Reviews"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_product_title",
+      "label": "Custom Product Title By Variants"
+    },
+    {
+      "type": "html",
+      "id": "product_sub_line",
+      "label": "Product Sub title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_subscription",
+      "label": "Show Subscription Widget Seperately"
+    },
+    {
+      "type": "liquid",
+      "id": "below_image",
+      "label": "Below Image Section"
+    },
+    {
+      "type": "header",
+      "content": "Product Design"
+    },
+    {
+      "type": "text",
+      "id": "option_1_name",
+      "label": "Option 1 name"
+    },
+    {
+      "type": "select",
+      "id": "option_1",
+      "label": "Option 1",
+      "default": "button",
+      "options": [
+        {
+          "label": "Block Buttons",
+          "value": "button"
+        },
+        {
+          "label": "Block Buttons With Images",
+          "value": "image-button"
+        },
+        {
+          "label": "Radio Buttons",
+          "value": "radio-button"
+        },
+        {
+          "label": "Multiple Option Buttons",
+          "value": "multi_button"
+        },
+        {
+          "label": "Subscription Widget New",
+          "value": "subscription-widget-new"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "option_2_name",
+      "label": "Option 2 name"
+    },
+    {
+      "type": "select",
+      "id": "option_2",
+      "label": "Option 2",
+      "default": "button",
+      "options": [
+        {
+          "label": "Block Buttons",
+          "value": "button"
+        },
+        {
+          "label": "Block Buttons With Images",
+          "value": "image-button"
+        },
+        {
+          "label": "Radio Buttons",
+          "value": "radio-button"
+        },
+        {
+        "label": "Subscription Widget New",
+        "value": "subscription-widget-new"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "option_3_name",
+      "label": "Option 3 name"
+    },
+    {
+      "type": "select",
+      "id": "option_3",
+      "label": "Option 3",
+      "default": "button",
+      "options": [
+        {
+          "label": "Block Buttons",
+          "value": "button"
+        },
+        {
+          "label": "Block Buttons With Images",
+          "value": "image-button"
+        },
+        {
+          "label": "Radio Buttons",
+          "value": "radio-button"
+        },
+        {
+          "label": "Subscription Widget",
+          "value": "subscription-widget"
+        },
+        {
+          "label": "Subscription Widget New",
+          "value": "subscription-widget-new"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "name": "Customize Option",
+      "settings": [
+                 
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Display Name"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_option",
+          "label": "Hide Option"
+        },
+        {
+          "type": "header",
+          "content": "Filter Product"
+        },
+        {
+          "type": "text",
+          "id": "option_1",
+          "label": "Option 1 Name",
+          "info": "Use option Name as defined in the product"
+        },
+        {
+          "type": "text",
+          "id": "option_2",
+          "label": "Option 2 Name",
+          "info": "Use option Name as defined in the product"
+        },
+        {
+          "type": "text",
+          "id": "option_3",
+          "label": "Option 3 Name",
+          "info": "Use option Name as defined in the product"
+        },
+        {
+          "type": "header",
+          "content": "Select Product"
+        },
+        {
+          "type": "select",
+          "id": "for_option",
+          "label": "For Product Option",
+
+          "options": [
+            {
+              "label": "Option 1",
+              "value": "1"
+            },
+            {
+              "label": "Option 2",
+              "value": "2"
+            },
+            {
+              "label": "Option 3",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "id": "custom_name",
+          "label": "Custom Option Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Option Image"
+        },
+
+        {
+          "type": "html",
+          "id": "custom_description",
+          "label": "Option Description"
+        },
+
+        {
+          "type": "html",
+          "id": "product_description",
+          "label": "Product Description"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "Faq",
+      "settings": [
+                 
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "html",
+          "id": "description",
+          "label": "Description"
+        }, 
+         {
+          "type": "page",
+          "id": "page",
+          "label": "Description from page"
+        } 
+      ]
+    } 
+    
+  ],
+  "presets": [
+    {
+      "name": "ProLon Product Section - Design 1"
+    }
+  ] 
+}
+{% endschema %}
+
+{%- comment -%}
+{%- endcomment -%}

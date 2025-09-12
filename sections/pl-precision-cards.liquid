@@ -1,0 +1,76 @@
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+{%- assign data = section.settings -%}
+
+<div class="bg-[#F8F9FB] py-[50px] px-[20px] pl-wrapper-precision-cards">
+  <div
+    class="mt-[30px] mb-[60px]  text-[24px] md:text-4xl leading-tight font-normal mx-auto text-center hero__animation-contents delay-300"
+  >
+    {{ data.title }}
+  </div>
+  <div class=" max-w-[1400px] mx-auto !flex flex-wrap justify-center text-center gap-[20px] md:gap-[50px]">
+    {%- for stat in section.blocks -%}
+      <div
+        class="border-b-[3px] border-prolon col-span-1 md:w-[45%] px-[20px] hero__animation-contents max-w-[700px] mx-auto"
+      >
+        <p
+          class="text-[20px] md:text-[22px] font-bold text-prolon text-left"
+        >
+          {{ stat.settings.title }}
+        </p>
+        <p
+          class="py-[20px] text-[18px] md:text-[20px] text-black font-normal  text-left"
+        >
+          {{ stat.settings.description }}
+        </p>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-precision-cards');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Precision Cards",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Why stay younger</b> than your age? "
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Cards",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Stats  Precision Cards",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

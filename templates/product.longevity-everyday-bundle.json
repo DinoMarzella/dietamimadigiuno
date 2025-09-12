@@ -1,0 +1,415 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "Everyday Longevity Bundle",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "",
+            "product_description": "<hr>Quest'anno, invece di sovraccaricarvi di una lista di propositi, adottate un cambiamento di mentalità che vi permetta di concentrarvi su un obiettivo alla volta. <br><br>Incorporando semplici abitudini quotidiane, è possibile apportare gradualmente cambiamenti positivi che si adattano al proprio stile di vita. Per aiutarvi a iniziare il nuovo anno con una solida base, questo pacchetto è stato progettato per fornirvi tutto ciò che vi serve per sostenere un mese di sane abitudini.<br><br>\n<b>Ecco cosa include:  </b>\n<ul class=\"mt-2\">\n<li>L-Protein (12 bustine)</li>\n<li>Fasting Shake (12 bustine) </li>\n<li>Nutrition Bar Variety kit (12 Barrette)</li>\n<li>L-Biome (30 capsule)</li>\n</ul> <small><b></b></small>"
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee"
+      ],
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "everyday-longevity-bundle",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": true,
+        "product_sub_line": "The perfect add on to your Prolon journey",
+        "show_subscription": false,
+        "below_image": "",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli il gusto del {option}",
+        "option_1": "button",
+        "option_2_name": "Scegli il gusto delle {option}",
+        "option_2": "button",
+        "option_3_name": "{option}",
+        "option_3": "button"
+      }
+    },
+    "67611c02-54a7-4d7d-8033-fce9d01b167a": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "e05d9345-40cc-4789-b42f-ce3cdb7bb6c9": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Come usare il bundle? </h2><hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_X9QJeJ": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 800px;\"><p>In combinazione con Prolon 5-Day e i Gruppi di Digiuno, questo pacchetto è stato curato con prodotti che vi aiuteranno a rimanere in carreggiata e a prepararvi per risoluzioni di successo. Il pacchetto Everyday Longevity vi manterrà equilibrati ed energici con questo programma facile da seguire.</p><p style=\"color: #1E4036; font-weight: 600; margin-top: -10px;\">Calendario precedente: \n<a href=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/new_year_bundle_calendar_week_1_compressed.pdf\" alt=\"Calendario prima Settimana\">Settimana 1</a>  | <a href=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/new_year_bundle_calendar_week_2_compressed.pdf\" alt=\"Calendario seconda Settimana\">Settimana 2</a>  | <a href=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/new_year_bundle_calendar_week_3_compressed.pdf\" alt=\"Calendario terza Settimana\">Settimana 3</a>  | <a href=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/new_year_bundle_calendar_week_4_compressed.pdf\" alt=\"Calendario quarta Settimana\">Settimana 4</a> </p></div>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "liquid_gGcpwV": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<a href=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/new_year_bundle_calendar_week_4_compressed.pdf\" alt=\"download the guide\" class=\"btn\" style=\"background-color: #1F4036 !important; border-radius: 50px;letter-spacing: 1; color: white !important;\">Download Week 4 Guide</a>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/new_year_bundle_calendar_week_4_compressed_2.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "e05d9345-40cc-4789-b42f-ce3cdb7bb6c9",
+        "liquid_X9QJeJ",
+        "liquid_gGcpwV",
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-image-1"
+      ],
+      "custom_css": [
+        "{background-color: #fcfcf7; padding-top: 30px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "promo_grid_F63aRN": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner_rWQVKE": {
+          "type": "banner",
+          "settings": {
+            "heading": "Richieda la consulenza gratuita di un nostro esperto certificato",
+            "text": "",
+            "link": "https://prolon.it/pages/consulenza-nutrizionale",
+            "label": "Nutritional coaching",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "banner_rWQVKE"
+      ],
+      "custom_css": [
+        "{background-color: #1f4036; color: white; margin-bottom: 20px;}",
+        ".btn {border-radius: 50px; color: #1f4036; border-radius: 50px; background-color: white !important; font-weight: 600; letter-spacing: 1px;}",
+        ".btn:hover {color: #73914a;}",
+        "p {font-weight: 500;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_eePF6P": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_kpLghb": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=\"padding-top: 30px;\">Cosa contiene il pacchetto?</h2><hr>\n<p>Come ogni prodotto svolge un ruolo e si possono apportare piccole modifiche per rimanere in linea.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_kpLghb"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "facts_accordion_WEhHUQ": {
+      "type": "facts-accordion",
+      "blocks": {
+        "text_VAgXGK": {
+          "type": "text",
+          "settings": {
+            "title": "L-Protein (12 bustine)",
+            "description": "<p>Formulato con 25 g di aminoacidi completi di origine vegetale per sostenere la sintesi e la riparazione muscolare e mantenere basso il livello di IGF-1, una via nota per accelerare l'invecchiamento, per un invecchiamento ottimale. L-Protein è l'unica polvere in attesa di brevetto per un invecchiamento sano. Utilizzatela dopo l'allenamento, come parte di una sana colazione o come spuntino durante la vostra finestra alimentare.</p><h4></h4><ul><li>Proteine ad alto contenuto proteico e a basso contenuto di carboidrati</li><li>Proteine a base vegetale</li><li>21 vitamine e minerali provenienti da frutta e verdura</li><li>A base vegetale e priva di latticini, OGM, soia e silicio</li></ul>",
+            "show_image": true,
+            "image": "shopify://shop_images/Email_Summer_Essentials_Desktop-LProtein.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_Q6JC8p": {
+          "type": "text",
+          "settings": {
+            "title": "Nutrition Bars (12 barrette)",
+            "description": "<p>Intermittent Fasting Bar è <strong>l'unica barretta nutrizionale che si può mangiare durante la Dieta Mima Digiuno senza interrompere lo stato di digiuno</strong>. Basandosi sulla tecnologia nutrizionale della Dieta Mima Digiuno e su oltre 20 anni di ricerca, gli scienziati hanno studiato come miscele uniche di macronutrienti e micronutrienti possano essere consumate senza far uscire il corpo dallo stato di digiuno. </p><h4></h4><ul><li>Clinicamente testato e sviluppato per non interrompere il digiuno</li><li>Proteine a base vegetale</li><li>Senza glutine, senza soia, senza latticini</li><li>Compatibile con i regimi alimentari</li><li>Basso indice glicemico</li></ul>",
+            "show_image": true,
+            "image": "shopify://shop_images/NY_Bundle_-_FB.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_HqbdWK": {
+          "type": "text",
+          "settings": {
+            "title": "Fasting Shake (12 bustine)",
+            "description": "<p>The best from nature, nurtured by Prolon longevity science — a breakthrough in nutrition and healthy aging science. The proprietary blend of Fasting Shake avoids triggering the body's response to food, keeping it in a fasting, fat-burning state for longer!  <br/>.</p><ul><li>Gluten-free, Dairy-free, Soy-free, Vegan</li><li>Extend your fasting window</li><li>Breakdown fat and use it as fuel</li><li>21 Vitamins & minerals</li></ul>",
+            "show_image": true,
+            "image": "shopify://shop_images/NYBundle_-_Shake.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_JgPrbf": {
+          "type": "text",
+          "settings": {
+            "title": "L-Biome (30 capsule)",
+            "description": "<p>L-Biome was developed by leading scientists at the University of Southern California Longevity Institute in collaboration with medical doctors at L-Nutra. </p><h2>.</h2><p><strong>Built to mimic the Prolon 5-Day post-fast microbiome, the L-Biome combines prebiotics, probiotics, and DHA, all in one daily capsule,</strong> thanks to advanced dual-cap technology. The prebiotics used are those present in Prolon’s 5-Day Fasting Nutrition, while the probiotics are those that flourish once the program is complete.</p>",
+            "show_image": true,
+            "image": "shopify://shop_images/New_Year_Bundle_FAQ_Images-biome.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_VAgXGK",
+        "text_Q6JC8p",
+        "text_HqbdWK",
+        "text_JgPrbf"
+      ],
+      "custom_css": [
+        "h3 {font-size: 25px;}",
+        "ul {list-style: disc;}",
+        "li {margin-left: 20px; padding-bottom: 10px;}",
+        "h6 {font-size: 12px; letter-spacing: 0; text-transform: none;}",
+        "h5 {font-size: 12px; letter-spacing: 0; text-transform: none; border-top: 1px dashed gray; padding-top: 10px;}",
+        "h4 {color: #73914a; padding-bottom: 20px;}",
+        "h2 {color: white;}",
+        "p {font-size: 16px; line-height: 1.5em;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 13,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 6,
+        "header": "<h4></h4><h4></h4>",
+        "cta_text": "Learn More",
+        "cta_url": "",
+        "mobile_copy": "Need more information about our programs?"
+      }
+    },
+    "a953bcf8-8e6c-4aee-8d08-5207975a6eec": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16247540154526__a953bcf8-8e6c-4aee-8d08-5207975a6eec-html-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"px-[30px] mx-auto max-w-[1440px] flex w-full flex-col items-center justify-center gap-[30px] md:flex-row md:gap-[50px]\">\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> Healthy Aging</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Cellular Rejuvenation\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Metabolic Support\n      </b>\n    </div>\n  </div>\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> Healthy Aging</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Protect Lean Muscle\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Changed Relationship with Food\n      </b>\n    </div>\n  </div>\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> More Energy</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Mental Clarity\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Rejuvenated Skin\n      </b>\n    </div>\n  </div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16247540154526__a953bcf8-8e6c-4aee-8d08-5207975a6eec-html-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "advanced_content_rr3cew": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_rBK4Cc": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n@media only screen and (min-width: 769px) {\nh3 {font-weight: normal;\nfont-size: 25px;}\nh2 {color: #73914a;\nfont-size: 34px;\nfont-weight: normal;}\np {font-size: 16px;}\n}\n\n@media only screen and (max-width: 768px) {\nh3 {\nfont-size: 18px !important;}\nh2 {font-size: 24px !important; \ncolor: #73914a; font-weight: normal;}\np {font-size: 14px; text-align: left;}\n}\n\n\n#shopify-section-template--17812500185246__advanced_content_zMTtiY {background-color: #fcfcf7;}\n\n.drk-grn {color: #1e4136;}\n\nhr{ border: none;\n  border-top: 2px dotted #999;\n  color: #999;\n  background-color: #fff;\n  height: 1px;\n  margin: 10px 0;}\n\n.btn-small {\n  background-color: white;\n  border: 1px solid #73914a;\n  color: #73914a;\n  padding: 8px 20px;\n  border-radius: 50px;\n  margin-top: 20px;\n  font-weight: 600;\n}\n\n.tvg_facts_accordion_luWxJq_FactsAccordion-container {\n  max-width: 1500px;\n  margin: auto;\n \n}\n.tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {\n  display: none;\n}\n\n#shopify-section-template--17920281247902__main {\n  max-width: 1500px;\n  margin: auto;\n}\n#shopify-section-template--17920281247902__67611c02-54a7-4d7d-8033-fce9d01b167a {background-color: #fcfcf7; padding-top: 50px; padding-bottom: 30px;}\n\n#order > div > div.w-full.max-w-3xl.mx-auto.sm\\:mt-16.md\\:col-span-3.lg\\:col-span-5.lg\\:row-span-2.lg\\:row-end-2.lg\\:mt-0.lg\\:max-w-none.product-details.lg\\:sticky.lg\\:top-\\[70px\\].lg\\:max-h-\\[850px\\].mh900\\:top-\\[100px\\].px-0.md\\:px-\\[15px\\].lg\\:px-\\[30px\\].lg\\:pl-0.\\32 xl\\:px-\\[60px\\] > div.w-full.mt-4.product-description {\n  display: none;\n}\n.benefit-checked {\n    padding: 10px 0 0 30px;\n}\n.benefit-checked li:before {\n  background: url(https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Screenshot_2023-07-31_04.49.26_f9IvVL.png?v=1690807782);\n  content: \" \";\n  background-size: contain;\n  width: 30px;\n  height: 30px;\n  display: block;\n  position: absolute;\n  margin-left: -31px;\n  margin-top: -3px;\n}\n</style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_rBK4Cc"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "pl_video_testimonials_JzcWbj": {
+      "type": "pl-video-testimonials",
+      "blocks": {
+        "cards_PBJQGH": {
+          "type": "cards",
+          "settings": {
+            "benefits": "",
+            "image": "shopify://shop_images/3_2000x_9b379c69-e0be-46d8-9bc9-175206367e36.png",
+            "video": "https://www.youtube.com/watch?v=i6v0FhfzGws"
+          }
+        },
+        "cards_ix6WY8": {
+          "type": "cards",
+          "settings": {
+            "benefits": "",
+            "image": "shopify://shop_images/test-1.jpg",
+            "video": ""
+          }
+        },
+        "cards_nNjnKg": {
+          "type": "cards",
+          "settings": {
+            "benefits": "",
+            "image": "shopify://shop_images/4_2000x_8e6a4e1f-3b1a-4f0d-80c1-1ce540970fef.png",
+            "video": "https://www.youtube.com/watch?v=TRGu1JehI2w"
+          }
+        },
+        "cards_JFtdh4": {
+          "type": "cards",
+          "settings": {
+            "benefits": "",
+            "image": "shopify://shop_images/2_1_2000x_65d9426a-d865-414e-aab0-23be96794984.png",
+            "video": "https://www.youtube.com/watch?v=qy9xwR31XMw"
+          }
+        },
+        "cards_WHYJGz": {
+          "type": "cards",
+          "settings": {
+            "benefits": "",
+            "image": "shopify://shop_images/Prolon_Collection_-_Testimonials-FB.jpg",
+            "video": ""
+          }
+        },
+        "cards_HCfgAR": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Reduced sugar cravings, better portion control",
+            "video": "https://www.youtube.com/watch?v=9ZyhBZxMCLU"
+          }
+        }
+      },
+      "block_order": [
+        "cards_PBJQGH",
+        "cards_ix6WY8",
+        "cards_nNjnKg",
+        "cards_JFtdh4",
+        "cards_WHYJGz",
+        "cards_HCfgAR"
+      ],
+      "custom_css": [
+        "H2 {font-size: 30px;}",
+        ".bg-\\[\\#F8F9FB\\] {background-color: #fcfcf7;}",
+        ".bg-prolon {display: none;}",
+        ".bg-white {background-color: #fcfcf7;}",
+        ".block {display: none;}",
+        ".max-w-\\[1600px\\] {max-width: 1500px;}",
+        ".bg-\\[\\#73994a\\] {--tw-bg-opacity: 1; background-color: #fcfcf7;}"
+      ],
+      "settings": {
+        "title": "Ascoltate cosa dicono gli altri<br><hr>",
+        "subTitle": ""
+      }
+    },
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0": {
+      "type": "pl-newsletter",
+      "disabled": true,
+      "settings": {
+        "description": "<div class=\"flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the ProLon community</p>\n<p> </p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n</div>",
+        "descriptionWidth": "w-full md:w-[60%]",
+        "newsletterWidth": "w-full md:w-[40%]",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "67611c02-54a7-4d7d-8033-fce9d01b167a",
+    "promo_grid_F63aRN",
+    "advanced_content_eePF6P",
+    "facts_accordion_WEhHUQ",
+    "a953bcf8-8e6c-4aee-8d08-5207975a6eec",
+    "advanced_content_rr3cew",
+    "pl_video_testimonials_JzcWbj",
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0"
+  ]
+}

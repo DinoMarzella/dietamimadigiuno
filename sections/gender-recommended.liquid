@@ -1,0 +1,80 @@
+{% assign data = section.settings %}
+
+<div class="w-full py-10">
+    <div class="m-auto flex w-full max-w-[900px] flex-col items-center justify-center text-center">
+        <h3 class="max-w-[700px] text-2xl md:text-4xl text-[#2F6645]">{{data.title}}</h3>
+
+        <div
+            class="flex items-start justify-center md:flex-row flex-col md:gap-y-0 gap-y-10 md:my-0 my-5 gap-x-8 px-6 md:mt-14">
+            {% for block in section.blocks %}
+            <div class="flex flex-col items-center justify-center gap-x-6">
+                <img class="m-auto max-h-[50px] max-w-[43px] object-cover"
+                    src="{{block.settings.aimage | img_url: '3000x'}}" />
+                <p class="mt-4 text-lg mb-4">{{block.settings.title}}</p>
+                <img class="max-w-[340px] object-contain"
+                    src="{{block.settings.bimage | img_url: '3000x'}}" />
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="my-10 text-2xl md:text-2xl font-bold">{{data.stitle}}</div>
+        <img class="max-w-[350px]" src="{{data.image_set | img_url: '3000x'}}" />
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Gender recommended tw",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "stitle",
+        "label": "Second Title"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_set",
+        "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "aimage",
+          "label": "Image"
+        },
+        {
+            "type": "html",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "bimage",
+            "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "Gender recommended tw",
+        "blocks": [
+          {
+            "type": "cards"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}

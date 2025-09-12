@@ -1,0 +1,27 @@
+<section>
+  <div class="p-5 my-0 text-lg text-left text-black normal-case md:p-10 md:my-0" style="background-color: #ffffff">
+    <div class="max-w-3xl py-6 mx-auto text-center font-harmonia">
+      <p class="my-3 text-3xl font-medium md:text-4xl" style="color: #2F6545;">{{ section.settings.text_title }}</p>
+    </div>
+  </div>
+
+</section>
+{% schema %}
+{
+"name": "live-liveintent-Title",
+"settings": [
+
+  {
+  "type": "text",
+  "id": "text_title",
+  "label": "liveintent Title"
+  }
+],
+"presets": [
+{
+"name": "live-liveintent-Title"
+}
+]
+}
+{% endschema %}
+

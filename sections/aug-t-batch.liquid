@@ -1,0 +1,93 @@
+
+
+<section class="bg-contain {% if section.settings.show_desktop == true %} hidden md:block{% else %} block md:hidden{% endif %}" style="background-image:url('{{ section.settings.background_image | img_url: '2000x' }}')" id="{{ settings.section_id }}">
+  <div
+    class="max-w-[1450px] flex lg:flex-row flex-col items-start lg:items-center justify-between mx-auto px-6 py-[30px] md:py-[50px]"
+  >
+    <div class="lg:w-[50%] pb-[20px] lg:pb-0">
+      <h2 class="lg:text-[30px] xl:text-[40px] leading-[1.2]  lg:max-w-[660px] text-[23px] text-white !font-normal mb-4">
+        {{ section.settings.heading_text }}
+      </h2>
+      <p class="leading-[1.2]  lg:max-w-[660px] text-white !font-normal">{{ section.settings.content_text }}</p>
+      <div class="max-w-[245px]  mt-[20px] md:mt-[30px] py-1 md:py-0 md:mr-4">
+        <a
+          class="prerender inline-block md:h-[55px] h-[45px] text-[16px] flex justify-center items-center py-[10px] w-full leading-4 !font-[600] text-center rounded-[6px] shadow-sm bg-[#FFFFFF] hover:bg-[#F7F9FB] text-black border border-[#5D7E11]"
+          href="{{ section.settings.button_link }}"
+        >
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    </div>
+    <div class="lg:w-[50%] flex items-center justify-start md:justify-end gap-[10px]">
+      {% for block in section.blocks %}
+        <img alt="{{ section.settings.heading_text | strip_html }}" class="rounded-[6px] w-[30%] h-auto object-contain" src="{{ block.settings.image |  img_url: '2000x' }}">
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "batch section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+      
+    }
+    , 
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Prolon is the <span class='font-bold'>only nutrition program patented</span> for promoting <span class='font-bold'>longevity, healthspan,</span> and <span class='font-bold'>protecting lean body mass.</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "content_text",
+      "label": "Testo",
+      "default": "Prolon is the <span class='font-bold'>only nutrition program patented</span> for promoting <span class='font-bold'>longevity, healthspan,</span> and <span class='font-bold'>protecting lean body mass.</span>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Read The Science Articles"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_desktop",
+      "label": "Show On desktop",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "batch section"
+    }
+  ]
+}
+{% endschema %}

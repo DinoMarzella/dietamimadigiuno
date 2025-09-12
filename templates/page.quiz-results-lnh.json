@@ -1,0 +1,525 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "advanced_content_peiXd4": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_HE9HN7": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"padding: 0 20px;\">\n<center>\n<h1>Your results are in... </h1>\n<p style=\"max-width: 600px;\">Based on your selections and <b>metabolic concerns</b>, you would be best suited for our medically supervised programs at L-Nutra Health.</p>\n\n<a href=\"#call\" alt=\"Book A Call\" class=\"btn\">Book A Call Now</a>\n</center>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_HE9HN7"
+      ],
+      "custom_css": [
+        "{background-color: #f1eae5; padding-top: 5px; padding-bottom: 5px;}",
+        ".btn {border: 1px solid #1f4036; color: #1f4036; background-color: white !important; border-radius: 50px; letter-spacing: 1px; font-size: 12px; margin-right: 10px; margin-top: 10px;}",
+        "h1 {font-weight: normal; font-size: 40px;}",
+        "b {color: #82a63f;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_RkmV97": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_RfABzR": {
+          "type": "html",
+          "settings": {
+            "code": "<br>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "image_MGWKtU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Prolon_3_ImaegsLNH.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_3Mx3Dc": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 650px; padding: 20px;\" id=\"who\">\n<h2 style=\"color: black;\">Where longevity meets <b>medical support</b>\n</h2>\n<hr>\n<br><p>L-Nutra Health is the medical division of L-Nutra, Prolon’s parent company. While Prolon supports overall health and longevity, <b>L-Nutra Health focuses on chronic conditions like diabetes, obesity, prediabetes, and insulin resistance. </b>Under medical supervision, L-Nutra Health leverages cutting-edge fasting and nutrition science to transform metabolic health management through a low-glycemic patented FMD, personalized nutrition therapy, and comprehensive health tracking - with medically-backed programs designed to improve metabolic health and reduce medication dependence without drastic lifestyle changes.</p>\n<a href=\"#call\" alt=\"Book A Call\" class=\"btn\">Book A Call Now</a>\n</div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_RfABzR",
+        "image_MGWKtU",
+        "html_3Mx3Dc"
+      ],
+      "custom_css": [
+        ".btn {border: 1px solid #1f4036; color: #1f4036; background-color: white !important; border-radius: 50px; letter-spacing: 1px; font-size: 12px; margin-right: 10px;}",
+        "h1 {font-weight: normal; font-size: 40px;}",
+        "b {color: #82a63f;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_qYNgKC": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_GW7igk": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "<h2>By targeting root causes, remission - and even reversal -<b> is possible</b>\n</h2>",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/8452deb62f824ddd970c8acf973ab3e7.mp4",
+            "width": "100",
+            "height": 520,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_GW7igk"
+      ],
+      "custom_css": [
+        "{color: white !important; font-weight: normal; margin-bottom: 30px; margin-top: 0px;}",
+        "h2 {color: white; font-weight: normal; max-width: 600px; margin: auto; font-size: 40px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_LMURgk": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_XHFqwj": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>What <b>programs</b> do they offer?</h2><hr><p style=\"max-width: 700px;\">L-Nutra Health’s structured, clinically-validated, comprehensive programs are designed to improve and potentially reverse metabolic health conditions without drastic lifestyle changes and reduce medication dependence. <b>They provide:</b></p>\n  <div class=\"column\">\n<img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/check_active_prolong.png?v=1706288274\" class=\"check-small\"> Personalized 1-on-1 dietitian consultations<br><br><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/check_active_prolong.png?v=1706288274\" class=\"check-small\"> Comprehensive educational resources to enhance patient outcomes<br><br>\n</div>\n  <div class=\"column\"><p><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/check_active_prolong.png?v=1706288274\" class=\"check-small\"> 360-degree on going support from trained professionals<br><br><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/check_active_prolong.png?v=1706288274\" class=\"check-small\">Low-glycemic 5-Day Fasting Mimicking Diet (FMD) to stabilize glucose levels</p></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_XHFqwj"
+      ],
+      "custom_css": [
+        ".column {float: left; width: 48%; padding: 1%; text-align: left;}",
+        "@media (max-width: 768px) {.column {width: 100%; }}",
+        ".check-small {float: left; margin-right: 10px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "8e3706c0-ad0d-4c6c-82c8-5c00fc4052b2": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "banner_url": "",
+        "desktop_image": "shopify://shop_images/FSAhero.png",
+        "mobile_image": "shopify://shop_images/FSAMobile.png"
+      }
+    },
+    "advanced_content_RFP9pY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_QhtPxC": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 700px; margin: auto; padding: 20px;\" id=\"how\">\n<h2>How it <b>works</b>\n</h2>\n<hr style=\"color: white;\">\n<p>L-Nutra Health programs go beyond symptom management by addressing the underlying causes of metabolic conditions—such as muscle loss, abdominal fat, and cellular aging. Through clinically validated, dietitian-guided comprehensive programs centered around cycles of a low-glycemic FMD, L-Nutra Health programs offer a proactive solution for prevention, management, remission, and even reversal. Learn more</p>\n<p><b>When used as part of a comprehensive program, the FMD has shown:</b>\n</p>\n<ul>\n<li>\n59% reduction in insulin resistance <sup>(1)</sup>\n</li>\n<li>\n22 lbs average fat-focused weight loss while preserving muscle <sup>(1)</sup>\n</li>\n<li>\n1.4% decrease in A1c levels <sup>(1)</sup>\n</li>\n<li>\n67% reduction or elimination of medication reliance <sup>(1)</sup>\n</li>\n<li>\nEstimated savings of $41,613 for patients on two or more medications after following a 3-year FMD program <sup>(2)</sup>\n</li>\n<li>\nReduction in biological age score and improved cardiometabolic markers <sup>(3)</sup>\n</li>\n</ul>\n<p> <a href=\"#call\" alt=\"Book A Call\" class=\"btn\">Book A Call Now</a></p>\n</div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "image_eT4tA7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_2000x_f783924b-0cd1-413c-b65a-dcebe0e0a30f.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "bottom-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_QhtPxC",
+        "image_eT4tA7"
+      ],
+      "custom_css": [
+        "{background-color: #f1eae5; padding-top: 20px; padding-bottom: 20px;}",
+        "ul {list-style: disc; margin-left: 30px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}",
+        ".btn {border: 1px solid #1f4036; color: #1f4036; background-color: white !important; border-radius: 50px; letter-spacing: 1px; font-size: 12px; margin-right: 10px; margin-top: 10px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "d4689970-7d91-47de-aee2-140ff26cae68": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "home_featured_products": "bundles",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "f9ff62b2-e57f-4c9a-9ac1-647171d3d881": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16398436270238__f9ff62b2-e57f-4c9a-9ac1-647171d3d881-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/lnh-12mo.webp",
+            "image_width": 650,
+            "title": "12-Month Diabetes Remission Program",
+            "text": "<br><hr><p> A twelve-month program that includes medical oversight, medication and lab monitoring, and multiple FMD cycles personalized to specific need<br></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16398436270238__f9ff62b2-e57f-4c9a-9ac1-647171d3d881-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/lnh-6mo.webp",
+            "image_width": 650,
+            "title": "Six-Month Metabolic Health Program",
+            "text": "<br><hr><p>A six-month program that includes four FMD cycles paired with Longevity Diet principles to meet your personalized needs<br></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_WhLCQA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/lnh-promete.webp",
+            "image_width": 650,
+            "title": "Promete 5-Day Trial Program",
+            "text": "<br><hr><p>A five day, introductory plan to experience a 5-day FMD that is health coach-guided before committing to a long-term program <br></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16398436270238__f9ff62b2-e57f-4c9a-9ac1-647171d3d881-text_block-1",
+        "template--16398436270238__f9ff62b2-e57f-4c9a-9ac1-647171d3d881-text_block-2",
+        "text_block_WhLCQA"
+      ],
+      "custom_css": [
+        "h2 {text-align: left; margin-bottom: 10px;}",
+        "h3 {font-weight: 500; text-align: left;}",
+        ".section-header {text-align: left;}",
+        ".rte-setting a:not(.rte__image),.rte a:not(.rte__image) {text-decoration: none; color: #73914a; font-weight: 600;}",
+        "p {text-align: left;}",
+        ".index-section {margin-top: 30px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "advanced_content_HEiDDf": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_npt3Y4": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>Prolon or L-Nutra Health: <b>Which is right for you?</b>\n</h2>\n<p style=\"max-width: 700px;\">L-Nutra Health programs and Prolon 5-Day cater to different wellness needs. For detailed guidance on how to decide which program is right for you, <a href=\"https://prolonlife.com/blogs/stories/which-program-is-right-for-you\" alt=\"click here to read our blog\">click here. </a>\n</p><hr>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_npt3Y4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{background-color: #fcfcf7; margin-bottom: 0px; padding-bottom: 0px; padding-top: 30px; padding-bottom: 30px;}",
+        "@media (max-width: 768px) {.mobile-hide {display: none; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "facts_accordion_L8Wkt6": {
+      "type": "facts-accordion",
+      "blocks": {
+        "text_PLpaDQ": {
+          "type": "text",
+          "settings": {
+            "title": "L-Nutra Health Programs",
+            "description": "<p>For those with metabolic conditions like prediabetes, type 2 diabetes, insulin resistance, and obesity, these comprehensive, medically guided programs aim to improve or even reverse metabolic health conditions and reduce or eliminate medication reliance.</p>",
+            "show_image": true,
+            "image": "shopify://shop_images/lnh-6mo_91d59bc1-503f-4bdf-b62a-e0b33c7b10ad.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_9HEWnR": {
+          "type": "text",
+          "settings": {
+            "title": "Prolon 5-Day",
+            "description": "<p>A 5-day self-guided fasting-mimicking cycle for generally healthy individuals focused on longevity, wellness, and weight care. This convenient, research-backed intervention promotes cellular rejuvenation, fat-focused weight loss, and healthy aging. It is recommended to start with three consecutive monthly cycles, followed by three to four cycles yearly.</p>",
+            "show_image": true,
+            "image": "shopify://shop_images/wilnhday1.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_PLpaDQ",
+        "text_9HEWnR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-container {max-width: 1500px; margin: auto;}",
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {display: none;}",
+        "h3 {font-size: 25px; font-weight: normal;}",
+        "h6 {font-size: 12px; letter-spacing: 0; text-transform: none;}",
+        "h5 {font-size: 12px; letter-spacing: 0; text-transform: none; border-top: 1px dashed gray; padding-top: 10px;}",
+        "p {font-size: 16px; line-height: 1.6em;}",
+        " {background-color: #fcfcf7 !important; margin-top: 0px;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 14,
+        "mobile_top_padding": 3,
+        "mobile_bottom_padding": 3,
+        "header": "",
+        "cta_text": "Learn More",
+        "cta_url": "",
+        "mobile_copy": ""
+      }
+    },
+    "promo_grid_jYw7Lz": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_tiT3re": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Struggling with metabolic conditions?",
+            "textarea": "<p>Book a free call with L-Nutra Health and learn how they can help. \n<br></p>",
+            "cta_text1": "Book A Call",
+            "cta_link1": "shopify://collections/fasting-mimicking-diet",
+            "cta_text2": "",
+            "cta_link2": "shopify://collections/shop-all-collection",
+            "image": "shopify://shop_images/lnhfooter.png",
+            "video_url": "",
+            "width": "100",
+            "height": 400,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-right",
+            "focal_point": "center",
+            "color_accent": "#73984a",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_tiT3re"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h1,h2,p {color: white;}",
+        " {margin-top: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "slideshow_DmQdRf": {
+      "type": "slideshow",
+      "blocks": {
+        "image_8W7wma": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h2>Struggling with metabolic conditions?</h2>",
+            "title_size": 49,
+            "subheading": "<p>Book a free call with L-Nutra Health and learn how they can help. \n<br></p>",
+            "link": "#call",
+            "link_text": "Book Call Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#73914a",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/lnhfooter.png",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_8W7wma"
+      ],
+      "custom_css": [
+        "p,h2 {color: white;}",
+        ".btn {color: white !important;}",
+        " {margin-top: 20px;}"
+      ],
+      "settings": {
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "advanced_content_new_Q8RkhX": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "liquid_VAJL3K": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><!-- Calendly inline widget begin -->\n<div class=\"calendly-inline-widget\" id=\"call\" data-url=\"https://calendly.com/d/crs9-m7j-5xy/l-nutra-health-advisor-consult?background_color=f1eae5&primary_color=58a515\" style=\"min-width:320px;height:700px;\"></div>\n<script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\" async></script>\n<!-- Calendly inline widget end --></center><br><br>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_VAJL3K"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "faq_7Mrmb9": {
+      "type": "faq",
+      "blocks": {
+        "question_DkXLfy": {
+          "type": "question",
+          "settings": {
+            "title": "<p>Sources</p>",
+            "text": "<p>1. When used as part of a comprehensive program over six months: https://academic.oup.com/jcem/article/107/8/2167/6576281\n<br><br>\n\n2. As predicted in part of a 10-year modeling evaluation:  https://www.valueinhealthjournal.com/article/S1098-3015(24)02846-8/fulltext\n\n<br><br>\n\n3. After three consecutively monthly cycles:\nhttps://www.nature.com/articles/s41467-024-45260-9\n<br><br></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_DkXLfy"
+      ],
+      "custom_css": [
+        "p {text-align: left;}"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "cf324994-d067-40d2-ae9d-9865e4de2d3f": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16398436270238__cf324994-d067-40d2-ae9d-9865e4de2d3f-html-1": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n\n\n.btn-cta {\n border: 1px solid #73914a;\n  color: #73914a;\n  padding: 8px 20px;\n  margin-top: 10px;\n  border-radius: 50px;\n  text-align: center; text-transform: uppercase; font-size: 13px;letter-spacing: 1px; \n}\n.btn-cta:hover {\n  background-color: #1f4036;\n}\n\n.collapsible-trigger-btn--borders {\n    border-bottom: 1px dotted #78A14A;}\n\n\n\n\n@media only screen and (max-width: 768px) {\n.collapsible-trigger__layout {\nfont-size: .9em; font-weight: 500; letter-spacing: 0px;}\n}\n@media only screen and (min-width: 769px) {\n        h3 {font-weight: normal; font-size: 25px;}\n        h2 {color: #73914a; font-size: 34px;\n        font-weight: normal;}\n        p {font-size: 16px;}\n        }\n\n        @media (max-width: 768px) {\n        h3 {\n        font-size: 18px !important;}\n        h2 {font-size: 24px !important;\n        color: #73914a;\n        text-align: left;\n        font-weight: normal;}\n        p {font-size: 14px;\n        text-align: left;}\n        h1 {font-size: 35px !important;}\n        }\n  .hr { border: none;\n        border-top: 2px dotted #999;\n        color: #999;\n        background-color: transparent;\n        height: 1px;\n        margin: 10px 0;}\n\n.btn {border-radius: 50px;}\n\n.collapsible-trigger-btn  {\n  padding-bottom: 20px;\n  font-weight: normal;\n  text-transform: none;\n  letter-spacing: 0;\n  font-size: 20px !important;\n}\n.collapsible-trigger-btn--borders\n  + .collapsible-content\n  .collapsible-content__inner {\n    font-size: max(calc(var(--typeBaseSize) * 0.7), 12px);\n  border: none;\n  border-color: #f4f4f4;\n  border-color: var(--colorBorder);\n  border-top: 0;\n  padding: 30px;\n}\n\n\n</style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16398436270238__cf324994-d067-40d2-ae9d-9865e4de2d3f-html-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "advanced_content_peiXd4",
+    "advanced_content_RkmV97",
+    "promo_grid_qYNgKC",
+    "advanced_content_LMURgk",
+    "8e3706c0-ad0d-4c6c-82c8-5c00fc4052b2",
+    "advanced_content_RFP9pY",
+    "d4689970-7d91-47de-aee2-140ff26cae68",
+    "f9ff62b2-e57f-4c9a-9ac1-647171d3d881",
+    "advanced_content_HEiDDf",
+    "facts_accordion_L8Wkt6",
+    "promo_grid_jYw7Lz",
+    "slideshow_DmQdRf",
+    "advanced_content_new_Q8RkhX",
+    "faq_7Mrmb9",
+    "cf324994-d067-40d2-ae9d-9865e4de2d3f"
+  ]
+}

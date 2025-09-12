@@ -1,0 +1,14 @@
+<link href="
+https://cdn.jsdelivr.net/npm/vue3-carousel@0.3.1/dist/carousel.min.css
+" rel="stylesheet"> 
+{% if template contains 'test'  %} 
+    <script src="{{"vue.global.js" | asset_url }}" defer></script> 
+    {% else %}    
+<script src="{{"vue.global.prod.js" | asset_url }}" defer></script>
+{% endif %} 
+{%- comment -%} <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.prod.js" defer></script> {%- endcomment -%}
+<script src="{{"axios.min.js" | asset_url}}" defer></script>
+<script src="https://player.vimeo.com/api/player.js" defer></script>  
+<script src="{{'ck-vue-carousel.js' | asset_url }}" defer></script>
+<script src="{{'conversion-king-slide-cart.js' | asset_url }}" defer></script>
+<script src="{{'conversion-king-popups.js' | asset_url }}" defer></script>   

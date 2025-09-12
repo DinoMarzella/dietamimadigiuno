@@ -1,0 +1,69 @@
+<div class="loading-svg w-full h-[400px] flex justify-center items-center"
+  v-if="loadingCart" 
+>
+  <svg aria-hidden="true" class="mr-2 w-8 h-8 text-gray-200 animate-spin  fill-[#73994a]" viewBox="0 0 100 101"
+    fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+      fill="currentColor" />
+    <path
+      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+      fill="currentFill" />
+  </svg>
+</div> 
+<template v-if="cart && cart.items && cart.items.length > 0">
+  <ul class="grid gap-6 m-0 md:gap-6" >
+    <template v-for="(item,index) in cart.items">
+      {% render 'king-cart-single-item-life' %}
+    </template>
+    <div v-if="!isVariantInCart(43035645640862)">
+      <div class="bg-[#F4F7F1] p-4 rounded-md flex">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <svg class="w-5 h-5 text-prolon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="flex-1 ml-3 md:flex md:justify-between">
+            <p class="text-sm font-semibold text-prolon">Vuoi aggiungere la Borraccia ProLon per PasticFree al tuo ordine per <span class="price">{{ 1490 | money }}</span> (risparmi il 25%)?</p>
+            <p class="mt-1 text-xs font-medium text-gray-700">Borraccia ProLon per PasticFree</p>
+          </div>
+        </div>
+    </div>
+    <div class="flex py-2 bg-white md:p-4">
+        <div class="flex-shrink-0 "><img loading="lazy"
+                class="object-cover object-center w-20 h-20 rounded-md sm:h-20 sm:w-20"
+                src="https://cdn.shopify.com/s/files/1/0524/9898/9237/files/prolon-sport-bottle-icon.svg?v=1711119725"
+                alt="ProLon Bottle"></div>
+        <div class="flex flex-col justify-between flex-1 ml-4 sm:ml-6">
+            <div class="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="text-sm">Borraccia ProLon</h3>
+                    </div>
+                    <p class="mt-1 text-sm font-medium text-black"><!----><span data-sku="BO1011">€ 14.90</span></p>
+                </div><a @click="addToCartWithVariantId(47135800525149)"
+                    class="flex items-center cursor-pointer site-nav__link site-nav__link--underline">
+                    <span
+                        class="bg-[#77A117] flex font-medium hover:!no-underline hover:bg-[#77A117] items-center justify-center leading-4 max-w-[140px] md:text-md px-7 py-[10px] rounded-md shadow-sm text-base text-white">
+                        <span v-if="custom_loading">AGGIUNTA...</span>
+                        <span v-else>AGGIUNGI
+
+                </span>
+                </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </ul> 
+ 
+  <button
+    class="hidden font-medium hover:text-gray-500 mt-[30px] text-center text-orange-800 text-right text-xs underline w-full"
+    @click="clearCart"
+  >
+    Svuota il carrello
+  </button>
+</template> 

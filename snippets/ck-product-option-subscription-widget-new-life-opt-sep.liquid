@@ -1,0 +1,267 @@
+<!-- ck-product-option-subscription-widget-new-life-opt-sep -->
+{% assign options_values = option.values %}
+{% assign oIndex = index %}
+<!-- section.settings.theme_option {{section.settings.theme_option}} -->
+{%- liquid
+if section.settings.theme_option == 'theme_orange'
+assign bgColorDark = 'bg-[#73984a]'
+assign lgBgColor = 'bg-orange-50'
+assign darkBorder = 'border-orange-200'
+assign titleColor = 'text-gray-900'
+assign color_name = 'prolon_secondary'
+else
+assign bgColorDark = 'bg-prolon_dark_primary'
+assign lgBgColor = 'bg-[#f9fff2]'
+assign darkBorder = 'border-prolon_dark_primary'
+assign titleColor = 'text-prolon_dark_primary'
+assign color_name = 'prolon_dark_primary'
+endif
+-%}
+
+
+{% liquid
+assign has_Subscription = true
+if options_values
+for option in options_values
+assign optionDownCase = option | downcase
+if optionDownCase contains 'subscri'
+assign subscriptionOptionName = option
+assign has_Subscription = true
+
+else
+assign oneOptionName = option
+endif
+endfor
+endif
+%}
+{% assign selected_variant = product.selected_or_first_available_variant  %}
+
+{%- assign language_code =  shop.locale -%}
+
+{%- if language_code == 'ar' -%}
+  {% assign frequencyText = 'تكرار' %}
+  {% assign sub_saveText = 'الاشتراك وحفظ' %}
+  {% assign deliveryText = 'تسليم كل' %}
+  {% assign purchasThisTimeText = 'الشراء لمرة واحدة فقط' %}
+  {% assign oneTimeText = 'مره واحده' %}
+{%- else -%}
+  {% assign frequencyText = 'Frequency' %}
+  {% assign sub_saveText = 'Subscribe & Save' %}
+  {% assign deliveryText = 'Deliver Every' %}
+  {% assign purchasThisTimeText = 'Purchase this time only' %}
+  {% assign oneTimeText = 'One Time' %}
+
+{%- endif -%}
+
+
+
+  
+<div class="flex gap-2 product-option-wrapper">
+
+<div v-for="o of productOptions"
+@click="select_type(o)"
+  class="flex-1 max-w-full "
+  :data-name="o"
+>
+<div 
+:class='[
+  "mb-5 md:mt-1 rounded-md relative",
+  current_selected_value==o ? "its-checked":"not-checked",
+  o?.toLowerCase()?.includes("subscri") ? "subscription" : "one-time",
+]' 
+
+>
+
+<button
+  :class="[
+     current_selected_value==o ? '': 'normal !bg-transparent has-saving',
+    'w-full option--select text-[12px] md:text-[13px] p-1 uppercase font-semibold text-center block single-pill-button m:min-h-[45px]' 
+  ]"  
+  v-text="o"
+         >
+
+</button>
+
+
+</div>
+ 
+</div>
+
+</div>
+<div  data-name="options" class="gap-2 button-holder-wrapper flex-nowrap">
+  <div class="flex-1" v-for="option in productOptions">
+    
+    <single-option-wrapper
+      :current_selected="current_selected_value"
+      :choosemainvariant="choosemainvariant"
+      :select_type="select_type" 
+      :option_name="option"
+      :option_index="productSettings.subscription_option || 'option1'"
+      :product="product"
+      :current_variant="currentVariant" 
+      :get_sku_flavor="getSKuFlavor"
+      :get_sku_flavor_description="getSKuFlavorDescription"
+      :get_title="getTitle" 
+      :selected_plan="selected_plan"
+      :change_subscription_plan="changeSubscriptionPlan"
+    />   
+  
+  </div>
+
+</div> 
+
+ 
+<div role="radiogroup" class="hidden">
+  <label class="sr-only" role="none"> Subscription Plans </label>
+  {% comment %} <label class="{{option_title_class}} {% if has_Subscription %} block {% else %} hidden{% endif %}" role="none">{{frequencyText}} </label> {% endcomment %}
+  <div class="relative mt-3 -space-y-px bg-white rounded-md testedHere" role="none">
+    <div 
+      class="relative z-10 flex items-center justify-between p-4 mb-2 border-2 rounded-md cursor-pointer md:pl-4 md:pr-6 focus:outline-none subscription-recurring  {% if has_Subscription %} block {% else %} hidden{% endif %}"
+      :class="{'border-[#73984a] bg-[#f9fff1] shadow-lg': plan === 'recurring'}" role="radio"
+      data-option_value="{{subscriptionOptionName }}" ref="recurring" {% if options_values %}
+      @click="setPlan('recurring','option{{oIndex}}','{{ subscriptionOptionName  }}')" {% else %}
+      @click="setPlan('recurring')" {% endif %}>
+
+      <span class="absolute prolon-right-badge bg-[#73984a] !text-[9px]" style="border-top-right-radius: 10px;
+        border-top-left-radius: 10px; right: -66px;">*SUBSCRIBE & SAVE</span>
+      
+      <span class="flex items-start w-full text-sm">
+        <span class="flex items-center justify-center w-8 h-8 border rounded-full"
+          :class="{'bg-[#73984a] border-transparent':  plan === 'recurring'}" aria-hidden="true">
+          <span class="rounded-full bg-white w-2.5 h-2.5"></span>
+        </span>
+        <span class="ml-3 font-bold {{titleColor}} text-xs md:text-sm  flex-1">
+          <span class="flex justify-between">
+            <span class="text-base  mr-[10px] font-semibold text-left block">{{sub_saveText}} <span class="inline p-1 px-3 hidden lg:inline bg-[#ffe667] rounded-sm text-[12px] m:absolute !top-[1px] !right-[6px] font-bold" q:key="4X_1">Save <span class="inline " v-text="moneySave"></span></span></span>
+            
+            <span class="pl-1 ml-6 text-sm text-gray-500 md:ml-0 md:pl-0 md:text-right"><span
+                class="font-bold text-gray-900 text-md" v-text="money(recurringPrice)"></span></span>
+          </span>
+          <p class="!hidden pt-2 box-price">
+            <span>
+              <span class="text-sm font-bold text-gray-900" v-text="money(recurringPricePerBox)"></span>
+            </span> 
+
+            {% if handle contains 'fasting-shake' %}
+            <span class="text-sm font-bold text-gray-900">/ Bag</span>
+            {% elsif handle contains 'longevity-spread' %}
+            <span class="text-sm font-bold text-gray-900">/ Three-jar set</span>
+            
+            {% else  %} 
+            <span class="text-sm font-bold text-gray-900">/ Box</span>
+            {% endif %}
+
+          </p>
+          <hr class="my-2 border-gray-300">
+          {% comment %} <small>ProLon delivered monthly for your 15 day transformation</small> {% endcomment %}
+          {% comment %} <span class="percentage-saving" v-text="recurringAmountSave"></span> {% endcomment %}
+          <div class="font-normal"> {{deliveryText}} : <select :value="selected_plan.id"
+              @change="selected_plan = selling_plans[$event.target.selectedIndex]"
+              class="!appearance-none pl-2 pr-8 ml-1 !text-sm font-bold border-0 border-b-2 text-[#73984a] border-[#73984a] focus:outline-none">
+              <option v-for="(selling_plan,index) in selling_plans" :selected="selling_plan.id==selected_plan.id"
+                :value="selling_plan.id"
+                v-text="selling_plan.name.replace('Deliver every','')">
+                >
+              
+
+              </option>
+
+
+            </select>
+
+          </div>
+          <div class="!hidden relative flex pt-2"><span class="absolute -left-5" aria-hidden="true">
+            <svg
+                xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" width="18" height="14"
+                viewBox="0 0 18 14">
+                <g data-name="Repeat Grid 26" transform="translate(-691 -682)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" transform="translate(687.59 676.41)">
+                  </path>
+                </g>
+              </svg>
+              </span> 
+              <strong  >Save <span v-text="moneySave">$20</span> Per 
+              
+              {% if handle contains 'fasting-shake' %}
+               Bag
+              {% else  %} 
+               Shipment
+              </strong> 
+              {% endif %}
+          </div>
+          <div class="!hidden relative flex "><span class="absolute -left-5" aria-hidden="true"><svg
+                xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" width="18" height="14"
+                viewBox="0 0 18 14">
+                <g data-name="Repeat Grid 26" transform="translate(-691 -682)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" transform="translate(687.59 676.41)">
+                  </path>
+                </g>
+              </svg></span><span class="font-normal">No Commitments, Cancel Anytime
+            </span>
+          </div>
+          <span class="text-[14px] text-gray-600 font-semibold text-left block">{{selected_variant.sku}}</span>
+          <span class="!block text-left  !text-green-900 text-[12px]">
+            Easy renewal, stop anytime.
+          </span>
+
+          <a @click="showBenefits($event)" class="!hidden underline cursor-pointer text-prolon_orange more-benefits ">
+            See more benefits
+          </a>
+
+
+
+
+        </span>
+    </div>
+
+    {% comment %} one time {% endcomment %}
+    <div
+      class="relative flex items-center justify-between p-4 mt-5 border-2 border-gray-200 rounded-md cursor-pointer md:pl-4 md:pr-6 focus:outline-none one-time"
+      :class="{' !border-[#73984a] bg-[#f9fff1] shadow-lg': plan === 'one-time'}" role="radio" ref="onetime"
+      data-option_value="{{ oneOptionName  }}" {% if options_values %}
+      @click="setPlan('one-time','option{{oIndex}}','{{ oneOptionName  }}')" {% else %} @click="setPlan('one-time')" {%
+      endif %}>
+      <span class="flex items-center text-sm">
+        <span class="flex items-center justify-center w-8 h-8 border rounded-full"
+          :class="{'bg-[#73984a] border-transparent':  plan === 'one-time'}" aria-hidden="true">
+          <span class="rounded-full bg-white w-2.5 h-2.5"></span>
+        </span>
+        <span class="flex items-center justify-center hidden w-4 h-4 bg-white border rounded-full"
+          :class="{'{{bgColorDark}}': plan === 'one-time'}" aria-hidden="true"><span
+            class="rounded-full bg-white w-1.5 h-1.5"></span></span><span
+          class="ml-3 text-base  mr-[10px] font-semibold text-left block">{{oneTimeText}}<span
+            class="!hidden block text-xs font-normal">{{purchasThisTimeText}}</span>
+          
+            <span class="text-[14px] text-gray-600 font-semibold text-left block">{{selected_variant.sku}}</span>
+            <span class="!block text-left  !text-green-900 text-[12px]">
+              One time purchase only
+            </span>  
+
+          </span>
+      </span>
+      <span class="pl-1 ml-6 text-sm text-gray-500 md:ml-0 md:pl-0 md:text-right"><span
+          class="font-bold text-gray-900 text-md" v-text="money(oneTimePrice)"></span></span>
+          
+    </div>
+  </div>
+</div>
+
+<div style="display:none"
+    v-if="isShowBenefits"
+  class="fixed inset-0 z-50 items-center justify-center overflow-x-hidden overflow-y-auto outline-none benefit-popup focus:outline-none"
+   :class="{'!flex': isShowBenefits==true}"
+   @click="closeBenefits()"
+  >  
+  <div class="absolute top-0 left-0 w-full h-full bg-gray-500 opacity-75 bg-popup"    @click="closeBenefits()"></div>
+  <div class="popup-wrapper relative w-[600px] z-10">
+    <div class="absolute cursor-pointer close-svg right-7 top-2"
+    @click="closeBenefits()" 
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+
+        class="w-6 h-6 text-white border-2 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg></div><img class="px-5"
+      src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/MicrosoftTeams-image_19.png?v=1681236939">
+  </div>
+</div>

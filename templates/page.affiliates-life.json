@@ -1,0 +1,187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.tw",
+  "sections": {
+    "d796f1e5-a290-4546-9478-7d4149b3ba05": {
+      "type": "pl-hero-v4",
+      "blocks": {
+        "template--15644371386415__d796f1e5-a290-4546-9478-7d4149b3ba05-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "Register Now",
+            "url": "https://prolonlife.superfiliate.com/portal/signUp",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__d796f1e5-a290-4546-9478-7d4149b3ba05-buttons-1"
+      ],
+      "custom_css": [
+        "@media (min-width: 48em) {.md\\:mb-0 {margin-bottom: 0px; padding: 30px; }"
+      ],
+      "settings": {
+        "text_bg_white": true,
+        "title": "<p class=\"font-[600]\">Put <span class=\"text-[#92B141] font-semibold\">purpose</span> behind your <span class=\"text-[#92B141] font-semibold\">partnerships!</span></p>",
+        "subtitle": "PARTNERS",
+        "description": "Join Prolon on our mission to improve life and longevity through science backed nutrition.",
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_42e1bae234494cf1bfb9470efa57b014.jpg",
+        "image_mobile": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_42e1bae234494cf1bfb9470efa57b014.jpg",
+        "bottomDescription": ""
+      }
+    },
+    "6553686e-8da6-4cc3-bb8b-81a067d19c00": {
+      "type": "pl-stats-boxes",
+      "blocks": {
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-1": {
+          "type": "stats",
+          "settings": {
+            "title": "PARTNERSHIPS MADE EASY",
+            "description": "Quick sign up, <b>commission opportunities</b>, & dedicated tracking"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-2": {
+          "type": "stats",
+          "settings": {
+            "title": "PRODUCTS YOU TRUST",
+            "description": "The <b>pioneers of longevity</b> nutrition & increasing human health span"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-3": {
+          "type": "stats",
+          "settings": {
+            "title": "TRAINING & DEVELOPMENT",
+            "description": "Dedicated <b>longevity health coaching</b> & product education"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-1",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-2",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-3"
+      ],
+      "settings": {
+        "data_id": "",
+        "title": "",
+        "bg_color": "#fff",
+        "description": "<span class=\"my-[20px] text-[24px] md:text-5xl leading-tight font-normal w-full text-left hero__animation-contents delay-300\">Whether you are an <b> Influencer, Blogger, Health Coach, Mom, Dad, or Student </b> — we welcome everyone! Our program is tailored to you and will help elevate your success to new heights.  </span> <br><br> <span class=\"mb-8 text-lg md:text-xl text-black  font-medium hero__animation-contents !delay-500\">Take the next step and sign-up today to unleash the power of purpose-driven partnership!</span>"
+      }
+    },
+    "00a6a8b3-5b00-4113-8efe-4736dae2e313": {
+      "type": "pl-features",
+      "blocks": {
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "Register Now",
+            "url": "https://prolonlife.superfiliate.com/portal/signUp",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-1"
+      ],
+      "settings": {
+        "data_id": "affiliates",
+        "main_title": "",
+        "title": "Affiliates, Influencers, & Brand Ambassadors.",
+        "subtitle": "AFFILIATES",
+        "description": "Join ProLon's mission to be a catalyst for change, fostering longevity and vibrant living. Our unique partnership opportunity is not just about collaboration; it's a calling. Our partnership provides a pathway to purpose — tailored to fit your individual role. We've designed it to amplify your success so you can contribute meaningfully to this global movement.\n<br><br>\n Together, we'll create waves of change, empowering individuals to live their healthiest lives. Ready to make an impact? Sign up today!",
+        "image_1": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_4f602bb1518848eb9e2b62b801b7e30b.jpg",
+        "image_2": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_965c2590f4aa4ab881ad93728b539360.jpg",
+        "text_on_left": true,
+        "image_1_title": "",
+        "image_2_title": ""
+      }
+    },
+    "0dc7f90a-7e82-4196-a318-aea6ca51e8e9": {
+      "type": "pl-stats",
+      "blocks": {
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-1": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "€",
+            "value": "34",
+            "suffix": "M",
+            "text": "In research and development"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-2": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "100",
+            "suffix": "+",
+            "text": "Global patents on our nutrition technology"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-3": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "32",
+            "suffix": "",
+            "text": "Clinical trials - scientific results you can trust"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-4": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "18",
+            "suffix": "",
+            "text": "Prestigious University Research Partners"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-1",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-2",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-3",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-4"
+      ],
+      "settings": {
+        "main_title": "",
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "btn_title": "",
+        "btn_url": ""
+      }
+    },
+    "3dd9d8ed-36b8-4ef3-9a69-aa04a93e3efb": {
+      "type": "pl-single-video",
+      "settings": {
+        "title": "ProLon is  <span class=\"text-[#92B141] font-semibold\">the only nutrition program patented</span> for <span class=\"text-[#92B141] font-semibold\">promoting longevity, healthspan</span> & <span class=\"text-[#92B141] font-semibold\">protecting lean body mass.</span>",
+        "video": ""
+      }
+    },
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359": {
+      "type": "pl-newsletter",
+      "settings": {
+        "description": "<div class=\"flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the ProLon community</p>\n<p> </p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n</div>",
+        "descriptionWidth": "w-full md:w-[60%]",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "d796f1e5-a290-4546-9478-7d4149b3ba05",
+    "6553686e-8da6-4cc3-bb8b-81a067d19c00",
+    "00a6a8b3-5b00-4113-8efe-4736dae2e313",
+    "0dc7f90a-7e82-4196-a318-aea6ca51e8e9",
+    "3dd9d8ed-36b8-4ef3-9a69-aa04a93e3efb",
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359"
+  ]
+}

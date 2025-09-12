@@ -1,0 +1,87 @@
+{% assign data = section.settings %}
+
+<div class="relative flex flex-col items-center justify-center w-full bg-tarnspatrent md:flex-row md:items-end">
+  <div class="relative block w-full h-full md:absolute" style="z-index:1;">
+    <img class="relative hidden object-cover w-full h-full md:block" src="{{ data.desktop_image | img_url: '1800x'}}" alt="image">
+    <img class="block object-cover w-full md:hidden" src="{{ data.mobile_image | img_url: '700x'}}" alt="image">
+  </div>
+  <div class="relative w-full md:max-w-[1280px] z-10 mx-auto">
+    <div class="relative w-full flex justify-center  items-center z-10 md:min-h-[360px] {% if data.align_text == 'right' %} md:justify-end{% else %} md:justify-start{% endif  %}">
+      <div class="w-full md:max-w-[50%]">
+        <div class="w-full max-w-[640px] pt-[50px] px-[20px] md:px-[0px] pb-[50px] md:pt-[160px] md:pb-[100px] mx-auto">
+          <h1 class="text-[{{data.text_color}}] font-[700] text-[26px] md:text-[36px] leading-[1.2] font-avant">
+            {{ data.title }}
+          </h1>
+          <p class="mt-[25px] text-[{{data.text_color_description}}] font-[400] text-[18px] md:text-[21px] leading-[1.2] font-avenir">
+            {{ data.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %} 
+{
+  "name": "Fasting Shake Banner",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#754c28"
+    },
+    {
+      "type": "color",
+      "id": "text_color_description",
+      "label": "Description Color",
+      "default": "#754c28"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "right",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fasting Shake Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

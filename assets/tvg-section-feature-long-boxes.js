@@ -1,0 +1,8 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[644],{830:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{
+var _core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(7);var swiper__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(172)
+;var _core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__(315);(0,_core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__.initSection)(".js-feature-long-boxes-section",(section=>{const slider=(0,
+_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_2__.findOneElement)(section,".js-feature-long-boxes");if(null==slider)return{unload:null};let swiper
+;if(window.innerWidth<1024)swiper=new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](slider,{slidesPerView:1.2,spaceBetween:10,autoHeight:false,loop:false,direction:"horizontal",modules:[swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation],
+navigation:{nextEl:(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_2__.findOneElement)(slider,".swiper-button-next"),prevEl:(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_2__.findOneElement)(slider,".swiper-button-prev")}
+});else null===swiper||void 0===swiper?void 0:swiper.destroy();return{unload:()=>{if(swiper)swiper.destroy()}}}))}},__webpack_require__=>{var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId)
+;__webpack_require__.O(0,[351,685],(()=>__webpack_exec__(830)));var __webpack_exports__=__webpack_require__.O()}]);

@@ -1,0 +1,7 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[10],{457:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{var jquery_min=__webpack_require__(606)
+;var jquery_min_default=__webpack_require__.n(jquery_min);var helpers=__webpack_require__(941);const onStateChange=(machine,callback)=>(0,helpers.connect)().with(machine.name).map((function(m){callback(m.state)}))
+;const init=async function(machine){onStateChange(machine,(function updateCartItemCountInHeader(state){if("Ready"!==state.name)return;jquery_min_default()(".js-cart-item-count").attr("data-item-count",state.contents.item_count)}))}
+;var cart=__webpack_require__(570);var lib=__webpack_require__(643);let activated=false;const activateMachineLogger=function(){if(activated)return;lib.Machine.addMiddleware({onStateChanged(){
+const isFailureState=this.state.name.toLowerCase().indexOf("failure")>=0;if(isFailureState)console.warn(`"${this.name}" machine state changed to ${this.state.name}`);if(this.state.error)console.error(this.state.error)}});activated=true}
+;const logErrors=function(err){console.error(err)};const machine=(0,cart.getCartMachine)();activateMachineLogger();machine.init();init(machine).catch(logErrors)}},__webpack_require__=>{
+var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId);__webpack_require__.O(0,[421,448,81,667],(()=>__webpack_exec__(457)));var __webpack_exports__=__webpack_require__.O()}]);

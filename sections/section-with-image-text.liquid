@@ -1,0 +1,59 @@
+
+<div class="contanir max-w-[1420px] mx-auto p-[10px]  md:p-[40px] ">
+<h1 class="font-[500] text-[35px] md:text-[45px] p-2 lg:pb-[40px]  " >{{ section.settings.title }}</h1>
+<div class="card-contanir !grid !grid-cols-1 sm:!grid-cols-2  md:!grid-cols-2 lg:!grid-cols-3">
+    {% for block in section.blocks %}
+<div class="cards   m-2 md:m-0">
+    <div class="img sm:mx-0 mx-auto flex justify-center sm:justify-start m-2 md:mb-[25px]">
+    <img src="{{ block.settings.image | img_url: '600x' }}" alt="">
+</div>
+<p  class="pr-2 sm:text-left text-center" >{{ block.settings.description }}</p>
+
+</div>
+
+{% endfor %}
+
+
+</div>
+
+</div>
+{% schema %}
+{
+"name": "HCP clinical results",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+}
+
+],
+"blocks": [
+{
+"type": "center_section",
+"name": "Blocks Section",
+"settings": [
+
+{
+"type": "textarea",
+"id": "description",
+"label": "Description"
+},
+
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "HCP clinical results",
+"category": "Custom"
+}
+]
+}
+
+{% endschema %}

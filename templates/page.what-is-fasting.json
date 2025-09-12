@@ -1,0 +1,482 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "a5367374-851b-438b-9871-353b68173911": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "632091ac-d61d-4159-a77b-9cb98242312c": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14463578243118__632091ac-d61d-4159-a77b-9cb98242312c-1668347612d50e8163-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "What You Should Know About Fasting",
+            "title_size": 40,
+            "subheading": "The best practice of abstaining from food for a certain period of time.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify://shop_images/intermittent_fasting_2_bed010ac-a547-478a-ad2f-8a8bb8978bbd.webp",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463578243118__632091ac-d61d-4159-a77b-9cb98242312c-1668347612d50e8163-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 510,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "648e84e9-13e7-48b6-85a8-f9b195724e3d": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/fmd_-_canada_900x_900x_ad26cade-97da-46d6-a223-19a16dfa5514.webp",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "What is fasting and what happens to your body while you fast?",
+        "text": "<p>Simply put, fasting is not eating for a set period of time. Prolonged fasts unlock the deepest level of fasting and trigger your body’s natural way of regenerating itself. <br/><br/>Your cells clean and recycle old and damaged parts and renew themselves.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "b0441503-3bb9-49f1-9c84-c4ceaaf160d1": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Fasting_-_if_1080x_900x_900x_2d985a14-dfb2-450f-ae6f-9e80e65bafc1.webp",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "How do you mimic fasting?",
+        "text": "<p>Dr. Valter Longo (the director of the Longevity Institute of the University of Southern California), along with a pool of scientists have discovered, and then clinically tested for over 20 years, that a specific combination of micro- and macro-nutrients can nourish your body without triggering the cells’ nutrient sensors. <br/><br/>And here is how the <a href=\"/pages/fasting-mimicking-diet\"><strong>Fasting Mimicking Diet</strong></a> was born! <br/><br/><br/>It is a mainly plant-based meal programme which enables you to “fast with food” which fine-tunes cells, supports healthy aging, and eliminates the need to do water-only starvation fast, which can have negative side effects.<br/></p>",
+        "button_label": "START YOUR PROLON JOURNEY TODAY",
+        "button_link": "shopify://products/prolon-5-day-kit",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "6dc79ce6-e61a-4152-a967-3e99dfe6c422": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: white; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Convenient.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px;\"><h3>Real Food <br>Premium Ingredients</h3>\n<p style=\"padding-top: 20px;\">ProLon® meals come in 5 small boxes (one for each day) that include plant-based energy bars, functional soups, snacks such as olives and kale crackers, herbal teas, and supplements.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: white; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clean_Up.svg?v=1664301738%22\" style=\"width: 70px; margin-bottom: 8px;\"><h3>Nutrient Sensing Pathways</h3>\n<p style=\"margin-top: 20px;\"> Scientifically identify cellular radars that detect nutrition, called Nutrient Sensing Pathways, and to develop a 5 day Nutrition Program that nourishes the body while the pathways are not triggered and therefore providing the prolonged fasting benefits.  </p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: white; padding: 50px; text-align: left;border-radius: 15px; min-height: 420px;\">\n<b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Mostly Plant Based</b><br><br><hr>\n<br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Gluten Free </b><br><br><hr>\n<br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Low Glycemic Index </b><br><br><hr>\n<br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Non-GMO</b><br><br><hr>\n<br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Premium Sourced Ingredients</b><br>\n</div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-0",
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-1",
+        "template--14463578243118__6dc79ce6-e61a-4152-a967-3e99dfe6c422-1668351352421d7858-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "1"
+      }
+    },
+    "0d9c1c6f-9045-4aae-909f-d0217a3bc196": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "ProLon® provides benefits of Weight Loss, Healthy Aging, Metabolic Health, and More.",
+        "description": "",
+        "text_position": "md:items-end md:justify-end",
+        "content_position": "justify-center text-center",
+        "background_shadow": "bg-transparent",
+        "text_color": "#000000",
+        "under_header": false
+      }
+    },
+    "5a4942ed-dd83-44b5-b5bc-eac869e01d1e": {
+      "type": "TWImageWithText",
+      "blocks": {
+        "bfb0a7fe-c51b-418c-b94e-412fb90373db": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "/products/buy-prolon",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "bfb0a7fe-c51b-418c-b94e-412fb90373db"
+      ],
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "",
+        "description": "<p>ProLon® is a 5-day dietary program carefully designed to nourish and rejuvenate your body while supporting metabolic balance.</p><p>The ProLon FastingMimicking Diet® gives many of the benefits of a fast while letting you eat delicious food to help fight hunger and lose weight while protecting lean body mass. Get a trimmer waistline and many of the associated benefits of fasting without requiring ongoing lifestyle changes, such as long-term dieting.*</p><p><em>*</em> Benefits seen in a clinical study of the 5-day ProLon cycle once a month for three months<em>.</em></p>",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#f4f0e8",
+        "image_max_width": "500px",
+        "tag": ""
+      }
+    },
+    "5767c26d-2d99-45ad-a3c2-2a862c8c0bec": {
+      "type": "TWProlonBenefits",
+      "blocks": {
+        "20cc9cc0-c1d9-4d45-92ac-608508740d82": {
+          "type": "cards",
+          "settings": {
+            "title": "Real Food",
+            "description": "ProLon® meals come in 5 small boxes (one for each day) that include plant-based energy bars, soups, a variety of snacks, drinks, and supplements, all studied and carefully designed to nourish your body, support cellular rejuvenation, and support metabolic and overall health for healthy aging.",
+            "image_overide_url": ""
+          }
+        },
+        "a8243ce2-0712-4c3c-bf01-0ab1e1a77ab0": {
+          "type": "cards",
+          "settings": {
+            "title": "Plant Based Ingredients",
+            "description": "ProLon ingredients are primarily plant-based. It's gluten-free, and non-GMO.",
+            "image_overide_url": ""
+          }
+        },
+        "bfeac980-301f-4c21-9d7b-cc77af4e87f8": {
+          "type": "cards",
+          "settings": {
+            "title": "Experience Fasting Mimicking",
+            "description": "ProLon market research and consumer panels demonstrated:<br><br>\n• Very good taste<br>• Convenient and easy day-by-day packaging<br>• Minimal disruption to daily lifestyle",
+            "image_overide_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "20cc9cc0-c1d9-4d45-92ac-608508740d82",
+        "a8243ce2-0712-4c3c-bf01-0ab1e1a77ab0",
+        "bfeac980-301f-4c21-9d7b-cc77af4e87f8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image_width": "150px",
+        "card_width": "w-1/3",
+        "background_color": "#ffffff",
+        "text_alignment": "text-left",
+        "content_alignment": "items-left",
+        "background_shadow": "bg-transparent"
+      }
+    },
+    "73170c53-40c3-459f-89ac-b6ccc39c3a14": {
+      "type": "TWOnlyImage",
+      "disabled": true,
+      "settings": {
+        "max_height": "",
+        "under_header": false
+      }
+    },
+    "99859af4-9d08-4b2d-b74f-ef698edd4ad5": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Scientific Studies",
+        "description": "<p>Over 20 years of extensive preclinical and clinical studies sponsored by the <a href=\"https://www.nih.gov/\">National Institutes of Health (NIH)</a> and conducted at the <a href=\"http://longevityinstitute.usc.edu/\">Longevity Institute</a> and Diabetes and Obesity Research Institute of The <a href=\"http://dori.usc.edu/\">University of Southern California</a> (USC) resulted in the development of the first FMD® (ProLon®) which:</p>\n<br>\n<p>• Helps kickstart weight loss*, and supports healthy metabolic health and rejuvenation from within.<br>• Triggers autophagy - the clean-up of cellular debris and work out parts.<br>• Helps reduce visceral fat for a trimmer waistline.</p>",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": ""
+      }
+    },
+    "c9f803cf-97ff-4077-8347-3b664686c495": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<div class=\"row\" style=\"text-align: center; font-size: small;\"><p>*In a clinical study, ProLon was shown over three cycles (one per month for three months) to help individuals lose an average of 5.7 lbs and 1.6 inches off their waist circumference. br&gt;<br></p></div>",
+        "bg_color": "#f4f7f2",
+        "add_spacing": false
+      }
+    },
+    "55842049-47d3-4720-8ac1-2b3b798c6d1c": {
+      "type": "TWPageHeroBanner",
+      "blocks": {
+        "eac16ff2-c968-4143-b727-fc113ce24f18": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "/products/buy-prolon",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "eac16ff2-c968-4143-b727-fc113ce24f18"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ready to make a positive change in your life?",
+        "description": "",
+        "text_position": "md:items-end md:justify-end",
+        "content_position": "justify-end text-right",
+        "background_shadow": "bg-transparent",
+        "text_color": "#ffffff",
+        "under_header": false
+      }
+    },
+    "42f6b48a-0276-436d-96f3-dda8636a2c1b": {
+      "type": "promo-grid",
+      "blocks": {
+        "d77e451f-dc4f-4365-afc6-3127f0a55a1a": {
+          "type": "banner",
+          "settings": {
+            "heading": "Backed by 20 years and €35 million in research & development",
+            "text": "",
+            "link": "",
+            "label": "",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "986e96bf-d31f-4a3c-b686-5d9295b6cc68": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50"
+          }
+        },
+        "f7662390-bb1b-4885-a97b-b18da6e9e6e9": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50"
+          }
+        },
+        "2839dfee-6d55-4b61-a7e9-fc2511586c43": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "d77e451f-dc4f-4365-afc6-3127f0a55a1a",
+        "986e96bf-d31f-4a3c-b686-5d9295b6cc68",
+        "f7662390-bb1b-4885-a97b-b18da6e9e6e9",
+        "2839dfee-6d55-4b61-a7e9-fc2511586c43"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "fdffe894-8444-4798-9298-a87b9ffb8b1c": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/ProLon_Square_rounded_-_Science_2160x_cd5d38fb-352f-4715-b6b5-6e454f3aaec9.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Clinical Study Methodology",
+        "text": "<p>Randomized controlled trial of subjects, completed 3 cycles of the ProLon Fasting Nutrition Program either in a randomized (n=39) or after being crossed over from a control diet group to the Fasting Mimicking Program group (N=32). Control subjects continued their normal diet. ProLon participants consumed the fasting mimicking diet for 5 consecutive days per month for three months. Measurements were performed prior to the diet (Before) and during the recovery period after the third cycle (After).</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "f0edbc7e-f9b1-4074-be18-4fa9bf41e70e": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "template--14463578243118__f0edbc7e-f9b1-4074-be18-4fa9bf41e70e-1668348095c7dedc5c-1": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (max-width: 768px) {.hero__title {\n    font-size: 28px !important;}\nh3, .h3 {\n    font-size: calc(var(--typeHeaderSize)*0.6);}\n}\n.type-advanced .rte--block {color: black; text-shadow: none;}\n.type-advanced .promo-grid__content:after {background: none;}\n#shopify-section-template--14463578243118__42f6b48a-0276-436d-96f3-dda8636a2c1b {background-color: #f6f7f3;}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463578243118__f0edbc7e-f9b1-4074-be18-4fa9bf41e70e-1668348095c7dedc5c-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "7eccf762-1ce0-4cf5-8a61-d282ff3dced1": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14463578243118__7eccf762-1ce0-4cf5-8a61-d282ff3dced1-166835981597897088-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Discover",
+            "title_size": 60,
+            "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "template--14463578243118__7eccf762-1ce0-4cf5-8a61-d282ff3dced1-166835981597897088-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Highlight products",
+            "title_size": 60,
+            "subheading": "Repurpose your product photography with our \"Indented\" image option",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463578243118__7eccf762-1ce0-4cf5-8a61-d282ff3dced1-166835981597897088-0",
+        "template--14463578243118__7eccf762-1ce0-4cf5-8a61-d282ff3dced1-166835981597897088-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "9e27c152-fd16-452f-9892-3671a5d918d8": {
+      "type": "slideshow-image",
+      "blocks": {
+        "template--15759442673845__9e27c152-fd16-452f-9892-3671a5d918d8-16748337002b2a8dd5-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/01_en_1.webp",
+            "image_mobile": "shopify://shop_images/01_mobile_en_1.webp"
+          }
+        },
+        "template--15759442673845__9e27c152-fd16-452f-9892-3671a5d918d8-16748337002b2a8dd5-1": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/02_en_1.webp",
+            "image_mobile": "shopify://shop_images/02_mobile_en_1.webp"
+          }
+        },
+        "dfcfca63-0620-457a-b790-54105505339a": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/03_en_1.webp",
+            "image_mobile": "shopify://shop_images/03_mobile_en_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--15759442673845__9e27c152-fd16-452f-9892-3671a5d918d8-16748337002b2a8dd5-0",
+        "template--15759442673845__9e27c152-fd16-452f-9892-3671a5d918d8-16748337002b2a8dd5-1",
+        "dfcfca63-0620-457a-b790-54105505339a"
+      ],
+      "settings": {
+        "full_width": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "a5367374-851b-438b-9871-353b68173911",
+    "632091ac-d61d-4159-a77b-9cb98242312c",
+    "648e84e9-13e7-48b6-85a8-f9b195724e3d",
+    "b0441503-3bb9-49f1-9c84-c4ceaaf160d1",
+    "6dc79ce6-e61a-4152-a967-3e99dfe6c422",
+    "0d9c1c6f-9045-4aae-909f-d0217a3bc196",
+    "5a4942ed-dd83-44b5-b5bc-eac869e01d1e",
+    "5767c26d-2d99-45ad-a3c2-2a862c8c0bec",
+    "73170c53-40c3-459f-89ac-b6ccc39c3a14",
+    "99859af4-9d08-4b2d-b74f-ef698edd4ad5",
+    "c9f803cf-97ff-4077-8347-3b664686c495",
+    "55842049-47d3-4720-8ac1-2b3b798c6d1c",
+    "42f6b48a-0276-436d-96f3-dda8636a2c1b",
+    "fdffe894-8444-4798-9298-a87b9ffb8b1c",
+    "f0edbc7e-f9b1-4074-be18-4fa9bf41e70e",
+    "7eccf762-1ce0-4cf5-8a61-d282ff3dced1",
+    "9e27c152-fd16-452f-9892-3671a5d918d8"
+  ]
+}

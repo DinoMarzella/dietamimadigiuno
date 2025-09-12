@@ -1,0 +1,90 @@
+{%- assign data = section.settings -%}
+
+<div  class="w-full bg-[#F7F9FB] pl-wrapper-custom-content">
+  <div class="w-full max-w-[1600px] mx-auto">
+    <div class="flex flex-col md:flex-row items-start justify-center">
+      <div class="w-full md:w-[40%] px-[20px] mb-[0px] md:mb-0 py-[25px] md:py-[50px] ">
+        <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-prolon font-medium uppercase hero__animation-contents  !delay-100">
+          {{data.subtitle}}
+        </span>
+        <h2
+          class="mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents 
+        !delay-200"
+        >{{data.title}}</h2>
+        <p
+          class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500"
+        >{{data.description}}</p>
+      </div>
+      <div class="w-full md:w-[60%] px-[20px] mb-[40px] md:mb-0">
+          <div class="flex flex-wrap pt-[20px] hero__animation-contents !delay-400">
+            {% for tab in section.blocks %}
+              
+              <div
+                class="w-full {% if forloop.last %} border-b-0 border-transparent {% else %} border-b border-black{% endif %} flex justify-center items-start py-[25px] md:py-[50px] hero__animation-contents"
+              >
+                <p class="w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center">
+                  {{tab.settings.title}}
+                </p>
+                <p class="w-[65%] md:w-[65%] text-[16px] md:text-[18px] text-[#000]">
+                  {{tab.settings.description}}
+                </p>
+              </div>
+            {% endfor %}
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-custom-content');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Custom Content",
+  "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "tabs",
+      "name": "Tabs",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Custom Content",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,144 @@
+<script>
+
+function calcPrices(){
+
+
+
+
+$('.variant-input-radio-wrap .input_lable input').each(function(){
+
+let Quantity=$(this).val();
+
+let Soup= $('.variant-input-wrap input[name="Soup Flavor"]:checked').val();
+
+// let Type= $('.variant-input-wrap input[name="Type"]:checked').val();
+let option = $(`option[data-option1="${Soup}"][data-option2="${Quantity}"]`);
+if(option.length==0)
+  {   
+    option = $(`option[data-option1="${Quantity}"]`);
+  }  
+let price = option.data('price');
+let comparePrice= option.data('compare-at-price')
+$(this).closest('.variant-input').find('.price-wrapper').html(`<div> <s>${comparePrice}</s>${price} </div>`)
+
+    
+ }); 
+}
+let frontendComparePrices={};
+let jsonCompareAt = $('#VariantsJson-metafields').val();
+let jsonDescription = $('#VariantsJson-description').val();
+
+try{
+frontendComparePrices= JSON.parse(jsonCompareAt);
+VariantsDescription= JSON.parse(jsonDescription);
+
+}
+catch(ex){
+
+} 
+    $(document).ready(function(){
+  
+        $(document).on('change','.shipping_interval_frequency',function(e){
+let val= $(this).val();
+if(val==3){
+$('.bsub-widget__text:contains("3 Months")').closest('.bsub-widget__plan').find('input').click();
+}
+else{
+$('.bsub-widget__text:contains("Monthly")').closest('.bsub-widget__plan').find('input').click();
+}
+
+}) 
+$('.bsub-widget__text:contains("Subscribe and save")').closest('.bsub-widget__group').find('input').click();
+// $('.bsub-widget__text:contains("Monthly")').closest('.bsub-widget__group').find('input').click();
+
+
+$('.product-section').on('variantChange',function(d){
+        let variant= d.variant;
+        let originalPrice= variant.price/100;
+        let frontendCompare_at_price = frontendComparePrices[variant.id];
+        let singlevariantDiscription= VariantsDescription[variant.id];
+        if(frontendCompare_at_price &&frontendCompare_at_price!='' ){
+          $('.product__price.on-sale').addClass('v-hidden current-on-sale');
+        setTimeout(() => {  
+        $('.product__price--compare').text(theme.Currency.formatMoney(frontendCompare_at_price*100)).parent().removeClass('hide');  
+        $('.current-on-sale').text(theme.Currency.formatMoney(variant.price)).removeClass('v-hidden');
+        let savings= frontendCompare_at_price - originalPrice;
+         
+        $('.product__price.on-sale').text(theme.Currency.formatMoney(variant.price)).removeClass('v-hidden'); 
+        $('.product__price-savings').text(`Save $${savings.toFixed(2)}`).removeClass('hide'); 
+        }, 0); 
+
+        if( $('.product-original-price').length == 0 ){
+        $('#PDPAddtoCartdiv').append(`<input type="hidden" class="product-original-price" name="properties[_original_price]" value="" />`)
+        }
+        $('.product-original-price').val(frontendCompare_at_price);
+          if(singlevariantDiscription){
+        $('.product-single__description').html(singlevariantDiscription).css({visibility:"visible"}); 
+          } 
+ 
+
+      }
+        calcPrices()
+      }); 
+
+
+
+}); 
+    document.addEventListener('DOMContentLoaded', function() {
+      $(".variant__input-32593125703726").trigger("click"); 
+      // $('.product-single__form').prepend(` 
+      // <input type="hidden" name="properties[+ Free]" value=" 20 minute Health Coach Consultation " > 
+      // `);    
+      let orignalTrustImage=$('.trust-image').data('original-image');
+      let secndImage= "https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Single_Box_Promo.jpg?v=1608823169"; 
+      $('input[name="Quantity"][value*="Subscribe & Save"],input[name="Quantity"][value*="Monthly"]').click();
+        $('input[type=radio][name=Quantity]').change(function() {
+        $('.trust-image img').show().attr('src',orignalTrustImage).removeAttr('srcset');;  
+        if(this.value.includes('Single Prolon Order'))
+        {
+          //$('.trust-image').hide();
+          $('.trust-image img').show().attr('src',secndImage).removeAttr('srcset');
+        } 
+       
+          if (this.value.includes('Subscribe & Save') || this.value.includes('Monthly')) {
+          addSubscriptionOptions();  
+          $('[data-bsub-selling-plan-group] input').click() ;
+      }
+      
+      else { 
+        $('[data-bsub-purchase-option-one-time]').click()
+  
+        //$( "#subscription_plans").remove();
+            $('input,select','.simple-sub-plan').attr('name','')
+          }
+      });
+      $('input[type=radio][name=Quantity]').each(function() {
+        if (this.value.includes('Subscribe') || this.value.includes('Monthly') ) {
+          if($(this).prop('checked')){ 
+            addSubscriptionOptions();
+          }
+        } else {
+          $('input,select','.simple-sub-plan').attr('name','');
+          //$( "#subscription_plans" ).remove();
+        }
+      });
+    });  
+      
+ 
+
+    {% include 'recharge-subscription-options-fn' %}
+
+    setTimeout(function(){
+        $('.variant__input-4634645430318[value*="Subscribe"]').click();
+        addSubscriptionOptions();
+  },50);
+    
+    $(window).load(function(){   
+    $('input[name="Quantity"][value*="Subscribe & Save"],input[name="Quantity"][value*="Monthly"]').click();
+      setTimeout(function(){ 
+        $('.variant__input-4634645430318[value*="Subscribe"]').click();
+        addSubscriptionOptions();
+  },50);
+    
+    }); 
+  </script>

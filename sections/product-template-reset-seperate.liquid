@@ -1,0 +1,674 @@
+{% include 'spurit_po2_section_snippet', product: all_products[section.settings.product_handle], products: null %}
+{% assign restProduct = all_products.reset %}
+
+{{ 'product-style.scss.css' | asset_url | stylesheet_tag }}
+
+<style>
+   .reset-icon {
+     max-height: 55px;}
+
+  @media only screen and (min-width: 1001px){
+    .reset-image {
+       margin-top: -130px;
+     margin-bottom: 10px;
+    max-width: 90%;}
+  #shopify-section-product-sections-template-reset-top > div > div.block-8be04887-a0c2-42bf-a728-64370474cce7 > div > div > div {
+    display: none;}}
+
+   @media only screen and (max-width: 1000px) {
+     .mobile-text-center {
+       text-align: center;}
+   }
+   /*Green section */
+   #shopify-section-product-sections-template-reset-top > div > div.block-6ea28e26-8a67-4286-b43d-59e6fe43b851 > div > div {
+     padding: 20px 0 0px;
+     background-color: #F0F5EE;
+   }
+   .price-wrapper{
+     display: block!important;
+   }
+   /*FAQ SECTION*/
+   #shopify-section-page-faq-template-reset > div > div > div > div {
+     color: #54652E;
+   }
+   #shopify-section-page-faq-template-reset > div {
+
+     padding: 30px;}
+
+   #shopify-section-page-faq-template-reset > div > div > div > div > div:nth-child(2) > div > div > div > div > p,
+   #shopify-section-page-faq-template-reset > div > div > div > div > div:nth-child(13) > div > div > div > div > p,
+   #shopify-section-page-faq-template-reset > div > div > div > div > div:nth-child(24) > div > div > div > div > p,
+   #shopify-section-page-faq-template-reset > div > div > div > div > div:nth-child(17) > div > div > div > div,
+   #shopify-section-page-faq-template-reset > div > div > div > div > div:nth-child(17) > div > div > div > div > {
+     font-weight: normal;
+     /* text-transform: uppercase; */
+    /* color: #73984a;*/
+     padding: 0px;
+     margin-bottom: -22px;
+     font-size: 1.8em;
+   }
+
+   #shopify-section-page-faq-template-reset {
+     background-color: #f7f6f7a6;}
+
+   #shopify-section-product-sections-template-reset-top > div > div.block-92f8033b-661c-40ac-af83-5795b7ed2e04 > div > div > div > div.feature-row__item.feature-row__text.feature-row__text--right > p,
+     #shopify-section-product-sections-template-reset-top > div > div.block-b22e6070-3a58-417b-a9a5-266c4fe98b7b > div > div > div > div.feature-row__item.feature-row__text.feature-row__text--right > p {
+       color:#465A43;}
+
+   #AddToCart-6742215589934 {
+     max-width: 300px;}
+
+   /*HIDE TESTIMONIALS */
+   #ProductSection-6742215589934 > div > div > div > div:nth-child(1) > div.testimonials-wrapper.testedHere {
+     display: none;}
+
+   /* MOBILE CHANGES */
+   @media only screen and (max-width: 1000px) {
+     #shopify-section-product-sections-template-reset-top > div > div.block-6ea28e26-8a67-4286-b43d-59e6fe43b851 {
+       display: none;}
+     #shopify-section-product-sections-template-reset-top > div > div.block-3c2c7e8c-5afa-4e7a-8a62-56e53ce78084 {
+       DISPLAY: NONE;}
+     .column50 {
+   float: left;
+   width: 96%;
+     padding: 2%;
+   text-align: center;}
+
+   #shopify-section-product-sections-template-reset-top > div > div.block-5b1e16d9-edb6-4e56-9b11-5e7895cfc35f {
+     display: none;}
+   .column4a {
+       float: left;
+     width: 96%;
+     padding: 2%;
+     height: fit-content;
+     text-align: center;
+     border-bottom: 1px solid #f0f5ee;
+     padding-bottom: 18px;}
+
+     /* Mobile cart changes
+   #CartContainer > form > div.ajaxcart__inner.ajaxcart__inner--has-fixed-footer.no-sub-product.email-popup-added > div.ajaxcart__product.shopify-cart-product-overflow-wrapper > div.cart-warnings-with-testimonials.slide-in-right.active {
+     display: none !important;}}*/
+
+    /**** END MOBILE CHANGES ****/
+
+   @media only screen and (min-width: 1001px) {
+     #shopify-section-product-sections-template-reset-top > div > div.block-af4118a5-7405-46c8-82cc-1ee7cfd9071a {
+       display: none;}
+     #shopify-section-product-sections-template-reset-top > div > div.block-fe0962dc-c51c-4d1e-be4b-988e42954404 {
+       display: none;}
+   #shopify-section-header > div:nth-child(3) > div.header-sticky-wrapper > div > div > header {
+     padding: 3px;}
+   #shopify-section-product-sections-template-reset-top > div > div.block-0de1b769-de9d-4094-9649-c351b4178096 {
+     display: none;}
+     #shopify-section-product-sections-template-reset-top > div > div.block-af4118a5-7405-46c8-82cc-1ee7cfd9071a {
+       display: none !important;}
+   }
+
+   #shopify-section-product-sections-template-reset-top > div > div.block-af4118a5-7405-46c8-82cc-1ee7cfd9071a > div {
+     background-color: #f0f5ee;}
+   #ProductSection-6742215589934 > div > div > div > div:nth-child(2) > div > div.social-sharing {
+     display: none;}
+</style>
+<style>
+    p.five-day-fast {
+      background: #9fc94f;
+      width: 100px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: inline;
+      width: unset;
+      padding: 2px 10px;
+  } .product__policies.rte.small--text-center {
+      display: none;
+  } .product-single__description.rte.visible {
+      max-width: 537px;
+  }
+  div#ProductSection-7117742014622 {
+      padding-top: 50px;
+  }
+  /* .side-cart__suggestions {
+      display: none!important;
+  }   */
+
+  #ProductSection-6742215589934 > div > div > div > div:nth-child(2) > div > div:nth-child(8) {
+    display: none;}
+
+    #shopify-section-footer {
+      display: none;
+    }
+      a.site-nav__link[href="https://prolonfmd.com/products/prolon"] {
+      display: none;
+  }
+
+    /* CART CHANGES */
+    {%- comment -%} .do-not-show-healthy-commitment #CartContainer > form > div.ajaxcart__footer.ajaxcart__footer--fixed > p.ajaxcart__note.ajaxcart__note--terms {
+      display: none !important;}  {%- endcomment -%}
+    body.do-not-show-healthy-commitment > div.slide-cart-full > div.cart-warnings-with-testimonials.slide-in-right.active {
+      display: none !important;}
+    .do-not-show-healthy-commitment #CartContainer > form > div.ajaxcart__footer.ajaxcart__footer--fixed > p.afterpay-checkout {
+      margin-top: 7px;}
+
+    /* END CART CHANGES */
+    div#PDPAddtoCartdiv p.klarna-payment.klarna-payment {
+      margin-top: 0;
+      margin-left: 0px;
+      margin-bottom: 10px;
+      position: relative;
+      top: -20px;
+  }
+
+
+  button#shopify-installments-cta {
+      margin-left: 10px;
+  }
+
+
+  div#shopify-section-template--15554700935326__16483182273cfca898 .custom-section.green-bg-for-page {  padding-block: 30px;}
+
+
+  @media(max-width:767px){
+  div#PDPAddtoCartdiv p.klarna-payment.klarna-payment {
+      margin-top: 50px;
+      line-height: 1;
+  }
+      #PDPAddtoCartdiv p.klarna-payment svg {position: relative;top: 10px;}
+
+  }
+</style>
+<style>
+  fieldset.variant-input-radio-wrap {
+    max-width: 500px;
+  }
+  .social-sharing {
+    display: none;
+  }
+  .text-divider {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #eff5e3;
+    width: 100%;
+  }
+
+  .text-divider::before,
+  .text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: silver;
+    flex-grow: 1;
+  }
+
+  .text-divider::before {
+    margin-right: var(--text-divider-gap);
+  }
+
+  .text-divider::after {
+    margin-left: var(--text-divider-gap);
+  }
+  shopify-payment-terms {
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 0px;
+  }
+  p.klarna-payment {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px;
+    flex-wrap: wrap;
+    line-height: 1;
+    font-size: 14px;
+    text-align: center !important;
+    /* justify-content: center; */
+  }
+
+  p.klarna-payment svg {
+    width: 66px;
+    margin-left: 10px;
+  }
+
+  span[klarna-payment] {
+    content: '123';
+    display: block;
+    margin-inline: 5px;
+  }
+
+  button#klarna-installments-cta {
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: underline;
+    font-family: 'Harmonia Sans';
+    line-height: 1;
+  }
+  body.show-klarna-popup div#klarna-payment-terms-cover.hidden {
+    display: block !important;
+  }
+  body.show-klarna-popup {
+    overflow: hidden;
+  }
+
+  body.show-shopify-popup div#shopify-terms-cover.hidden {
+    display: block !important;
+  }
+  body.show-shopify-popup {
+    overflow: hidden;
+  }
+  #shopify-terms-cover span {
+    display: inline;
+  }
+  .variant-wrapper + .product-single__description.rte.visible {
+    display: none;
+  }
+
+  a.link-out-fmd {
+    margin-top: 40px;
+  }
+
+  .page-content.page-content--product {
+    padding-bottom: 0px;
+  }
+
+  p.shop-payment svg {
+    width: 66px;
+  }
+
+  p.shop-payment {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  shopify-payment-terms {
+    display: none;
+  }
+  p.klarna-payment svg {
+    order: -1;
+    margin-right: 16px;
+    width: 50px;
+  }
+
+  p.klarna-payment {
+    font-size: 14px;
+  }
+
+  button#klarna-installments-cta {
+    font-size: 12px;
+  }
+  p.klarna-payment {
+    display: inline-flex !important;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    p.klarna-payment svg {
+      width: 42px;
+      height: 24px;
+      text-align: center;
+    }
+
+    p.klarna-payment {
+      justify-content: center;
+      font-size: 13px;
+    }
+    p.shop-payment {
+      font-size: 13px;
+      display: inline;
+    }
+    .page-content--product .grid {
+      margin: 0px;
+    }
+  }
+
+  .block-ddf3e296-5af9-4b24-885b-eebd2f5c54dc,
+  .block-fe0962dc-c51c-4d1e-be4b-988e42954404 {
+    display: none;
+  }
+  .btn.add-to-cart {
+    max-width: 300px;
+  }
+  @media (max-width: 767px) {
+    block-5b1e16d9-edb6-4e56-9b11-5e7895cfc35f,
+    .block-1633a1ab-d979-4ead-9ac2-c035f897d730 {
+      display: none;
+    }
+    .block-ddf3e296-5af9-4b24-885b-eebd2f5c54dc,
+    .block-fe0962dc-c51c-4d1e-be4b-988e42954404 {
+      display: block;
+    }
+  }
+  a.btn.btn--secondary {
+    display: none;
+  }
+  .variant-input-radio-wrap[name='Quantity'] {
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+  }
+
+  @media (min-width: 990px) {
+    #shopify-section-template--15563193516190__16483001848e24a357,
+    div#shopify-section-template--15554700935326__16483001848e24a357 {
+      background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLon_Fast_PDP_-_No_Bars_1.png?v=1648491199');
+      background-repeat: no-repeat;
+      background-size: 51vw;
+      background-position: left;
+      margin: 0px;
+      padding: 100px 0px;
+    }
+    #shopify-section-template--15563193516190__16483001848e24a357 .image-wrap,
+    div#shopify-section-template--15554700935326__16483001848e24a357 .image-wrap {
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .image-specs-wrapper {
+      background: #f0ebdf;
+      height: 700px;
+      width: 50vw;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 0px;
+      padding-inline: 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .image-specs-wrapper {
+      padding-inline: 4vw;
+    }
+  }
+  @media (min-width: 1400px) {
+    .image-specs-wrapper {
+      padding-inline: 8vw;
+    }
+  }
+
+  .image-specs-wrapper {
+    align-items: center;
+  }
+
+  .add-to-cart-section p.klarna-payment.klarna-payment {
+    width: 100%;
+  }
+
+  .add-to-cart-section p.klarna-payment svg {
+    margin: 0px;
+    position: relative;
+    top: 0px;
+  }
+
+  #PDPAddtoCartdiv p.klarna-payment svg {
+    position: relative;
+    top: -1px;
+  }
+  .section-header h2,
+  .column251 h3 {
+    font-family: 'Harmonia Sans';
+  }
+
+  div#shopify-section-template--15554700935326__16483016514ae8fc41 h3 {
+    font-family: 'Harmonia Sans';
+  }
+
+  h1 b {
+    font-family: 'Harmonia Sans';
+  }
+  @font-face {
+    font-family: '';
+    src: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/-RegularCondense.otf?v=1648563448')
+      format('opentype');
+  }
+
+  [data-section-id='7117742014622'] [data-product-images] {
+    display: block;
+  }
+  [data-section-id='7117742014622'] .grid__item.medium-up--one-half {
+    float: left;
+  }
+
+  [data-section-id='7117742014622'] form:not(.product-single__form) .product-single__description.rte.visible {
+    display: none !important;
+  }
+
+  [data-section-id='7117742014622'] div#PDPAddtoCartdiv p.klarna-payment.klarna-payment {
+    display: none !important;
+  }
+
+  [data-section-id='7117742014622'] [data-center-text='true'] .variant-input-wrap label {
+    border-radius: 30px;
+  }
+
+  [data-section-id='7117742014622'] button.add-to-cart {
+    max-width: 500px;
+  }
+
+  [data-section-id='7117742014622'] .variant-input-radio-wrap[name='Quantity'] {
+    padding-left: 0px;
+  }
+
+  [data-section-id='7117742014622'] .product-single__form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  [data-section-id='7117742014622'] .variant-wrapper.variant-wrapper--button.js {
+    width: 100%;
+  }
+
+  [data-section-id='7117742014622'] .product-single__description.rte.visible {
+    display: none !important;
+  }
+
+  [data-section-id='7117742014622'] .product-single__form .product-single__description.rte.visible {
+    display: block !important;
+    order: 100;
+    width: 100%;
+  }
+
+  [data-section-id='7117742014622'] div#PDPAddtoCartdiv {
+    order: 100;
+  }
+
+  [data-section-id='7117742014622'] div#PDPAddtoCartdiv p.klarna-payment.klarna-payment {
+    display: none !important;
+  }
+</style>
+<!-- product-template-reset-seperate.liquid -->
+{% assign product = all_products[section.settings.product_handle] %}
+
+<div id="shopify-section-product-template-reset" class="shopify-section">
+  {% render 'product-template',
+    product: restProduct,
+    description_style: section.settings.description_style,
+    image_position: section.settings.image_position,
+    image_container_width: section.settings.image_size,
+    section_id: restProduct.id,
+    social: section.settings.social_enable,
+    thumbnail_position: section.settings.thumbnail_position,
+    thumbnail_arrows: section.settings.thumbnail_arrows,
+    video_looping: section.settings.enable_video_looping,
+    video_style: section.settings.product_video_style
+  %}
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    	$('input[type=radio][name=Quantity]').change(function() {
+  		if (this.value.includes('Subscribe & Save')) {
+  	      addSubscriptionOptions(this);
+  		} else {
+            $( ".simple-sub-plan" ).remove();
+  		}
+  	});
+
+      $('input[type=radio][name=Quantity]').each(function() {
+        if (this.value.includes('Subscribe & Save')) {
+          if($(this).prop('checked')){
+            addSubscriptionOptions();
+          }
+        } else {
+          $( "#subscription_plans" ).remove();
+        }
+      });
+    });
+
+    function addSubscriptionOptions(context) {
+        $('.simple-sub-plan').remove();
+        if(context){
+
+
+
+          $(context).closest('.variant-input').append(
+  		'<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' +
+
+  		'<select name="selling_plan">' +
+
+        {% for group in product.selling_plan_groups %}
+
+  {% for selling_plan in group.selling_plans %}
+  '  <option value="{{ selling_plan.id }}" data-end="0">Deliver {{ selling_plan.name }}</option>' +
+  {% endfor %}
+
+  {% endfor %}
+  		'</select>' +
+  		'</div>');
+      }
+    }
+
+
+    $(document).on("change",".subscription-interval-option",function(){
+
+
+      let option = $(this).find("option:checked");
+      let type = option.data("type");
+      $(`[name="properties[shipping_interval_unit_type]"]`).val(type);
+    })
+</script>
+{% schema %}
+{
+  "name": "Product pages",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "product",
+      "id": "product_handle",
+      "label": "Product"
+    },
+    {
+      "type": "select",
+      "id": "description_style",
+      "label": "Description position",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Next to media"
+        },
+        {
+          "value": "full",
+          "label": "Below media"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "social_enable",
+      "label": "Enable social sharing",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Position",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Size",
+      "default": "medium",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "thumbnail_position",
+      "label": "Thumbnail position",
+      "default": "beside",
+      "options": [
+        {
+          "value": "beside",
+          "label": "Next to media"
+        },
+        {
+          "value": "below",
+          "label": "Below media"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "thumbnail_arrows",
+      "label": "Show thumbnail arrows"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "Enable video looping",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "product_video_style",
+      "label": "Video style",
+      "default": "muted",
+      "options": [
+        {
+          "value": "muted",
+          "label": "Video without sound"
+        },
+        {
+          "value": "unmuted",
+          "label": "Video with sound"
+        }
+      ],
+      "info": "Video with sound will not autoplay"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+{% assign data = section.settings %}
+
+<div class="flex w-full items-center justify-center">
+    <div class="flex w-full flex-col items-center justify-center py-14 px-8">
+      <div class="flex items-center justify-center gap-4 text-center md:flex-row flex-col-reverse">
+        <div>
+          <h3 class="mb-3 text-4xl tracking-wide text-[#2F6645]">{{data.name}}</h3>
+          <p class="text-xl tracking-wide">{{data.study}}</p>
+        </div>
+        <img class="max-w-[150px]" src="{{data.dp_image | img_url: '3000x'}}" />
+      </div>
+      <div class="flex w-full max-w-[1000px] items-center justify-center text-center px-4 mt-8">
+        <p>{{data.details}}</p>
+      </div>
+    </div>
+  </div>
+  
+   
+{% schema %}
+{
+    "name": "Profile section tw",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "dp_image",
+        "label": "Profile Image"
+      },
+      {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+      },
+      {
+          "type": "text",
+          "id": "study",
+          "label": "Study"
+      },
+      {
+          "type": "html",
+          "id": "details",
+          "label": "Details"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Profile section tw"
+      }
+    ]
+  }
+{% endschema %}

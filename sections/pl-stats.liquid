@@ -1,0 +1,244 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div class="pl-wrapper pl-wrapper-stats bg-white pb-[20px] md:bg-center md:bg-cover md:pb-[30px] max-w-[1600px] mx-auto px-[20px] md:px-[20px] bg-bottom m:bg-no-repeat m:bg-350 m:bg-custom-pos bg-cover bg-no-repeat ">
+  <p class="w-full text-center mt-[25px] text-[7vw] sm:text-4xl md:text-5xl font-normal hero__animation-contents !delay-400">
+    {{ data.main_title }}
+  </p>
+  {%- if section.blocks.size > 0 -%}
+    <div class="!flex flex-wrap justify-center text-center mt-[50px] gap-[20px] md:gap-[0px] max-w-[1280px] mx-auto">
+      {%- for stat in section.blocks -%}
+        <div
+          style="transition-delay: {{forloop.index | times:0.2}}s"
+          class="col-span-1 w-[45%] md:w-1/4 px-[20px] hero__animation-contents"
+        >
+          <h2 class="mb-2 font-extrabold text-3xl md:text-4xl text-[#73994a]">
+            {{ stat.settings.prefix -}}
+            {{- stat.settings.value -}}
+            {{- stat.settings.suffix }}
+          </h2>
+          <p class="text-xs lg:text-lg md:text-xl text-black font-normal">{{ stat.settings.text }}</p>
+        </div> 
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+  <div class="carousel-best-sellers">
+    {% render 'carousel-collection-best-sellers', product: product %}
+  </div>
+  {%- if data.subtitle.size > 0 -%}
+    <div class="w-full flex justify-center items-center flex-col md:flex-row my-[30px] md:my-[30px]">
+      <div class="w-full md:w-[60%] sm:px-5 lg:px-10">
+        <span class="inline-block py-px px-[20px] mb-4 text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents !delay-500 ">
+          {{ data.subtitle }}
+        </span>
+        <h2
+          class="mb-6 text-4xl md:text-5xl leading-tight font-normal hero__animation-contents !delay-700 "
+        >
+          {{ data.title }}
+        </h2>
+        <p
+          class="text-lg md:text-xl text-black font-normal hero__animation-contents !delay-[.8s]"
+        >
+          {{ data.description }}
+        </p>
+        {%- if data.btn_title.size > 0 -%}
+          <div class="w-full flex justify-center md:justify-start items-center mt-[20px] hero__animation-contents !delay-[.8s]">
+            <a
+              class="py-[10px] px-7 w-max text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm bg-[#77A117] hover:bg-[#77A117] text-white hover:text-white border border-gray-300 h-[50px] flex justify-center items-center"
+              href="{{data.btn_url}}"
+              aria-label="{{data.btn_title}}"
+            >
+              {{ data.btn_title }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="w-full md:w-[40%] p-[20px]">
+        <img
+          class="
+            relative !w-full !h-full !object-contain max-w-[400px] mx-auto hero__animation-contents
+            !delay-[1s]
+          "
+          src="{{ data.image | img_url: '600x' }}"
+          alt="{{data.subtitle}}"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-stats');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Stats",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "Leading the science of <span class='font-semibold'>longevity nutrition.</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Precision nutrition for <b>health and longevity.</b>"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Our Story"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Tailored to <b>reverse</b> (5-Day Fasting Nutrition) <b>& slow down</b> (Daily Nutrition) <b>biological age</b>. ProLon Nutritional products are discovered and licensed from the Longevity Institute of the University of Southern California and 18 other university research institutions. Food is the only product we consume every day of our lives. <b>It was time</b> for ethical science, instead of for-profit business, <b>to develop nutrition formulations aimed at enhancing human health</b> and supporting medicine.<br /><br />The Longevity Diet Book summarizes the main discoveries behind Nutrition for Longevity and Food as Medicine. Get your free copy below."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "btn_title",
+      "label": "Button Title",
+      "default": "The Longevity Program"
+    },
+    {
+      "type": "text",
+      "id": "btn_url",
+      "label": "Button Url",
+      "default": "#"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Stats",
+      "name": "Stats",
+      "settings": [
+        {
+          "type": "text",
+          "id": "prefix",
+          "label": "Prefix",
+          "default": "$"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "36"
+        },
+        {
+          "type": "text",
+          "id": "suffix",
+          "label": "Suffix",
+          "default": "MM"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "In research and <br />development"
+        }
+      ]
+    },
+    {
+      "name": "t:sections.carousel-collection-best-seller.blocks.name",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "carousel-product_item",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_item"
+        },
+        {
+          "type": "image_picker",
+          "id": "carousel-product_image",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_image"
+        },
+        {
+          "type": "image_picker",
+          "id": "carousel-product_image_hover",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_image_hover"
+        },
+        {
+          "type": "text",
+          "id": "carousel-product_title",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_title"
+        },
+        {
+          "type": "text",
+          "id": "carousel-product_subtitle",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_subtitle"
+        },
+        {
+          "type": "textarea",
+          "id": "carousel-product_description",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_description"
+        },
+        {
+          "type": "text",
+          "id": "carousel-product_button",
+          "label": "t:sections.carousel-collection-best-seller.blocks.settings.carousel-product_button",
+          "default": "SHOP NOW"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Stats",
+      "blocks": [
+        {
+          "type": "Stats",
+          "settings": {
+            "prefix": "$",
+            "value": "36",
+            "text": "In research and <br />development",
+            "suffix": "MM"
+          }
+        },
+        {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "100",
+            "text": "Global patents on our nutrition technology",
+            "suffix": "+"
+          }
+        },
+        {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "32",
+            "text": "Clinical trials - scientific results you can trust <br />",
+            "suffix": ""
+          }
+        },
+        {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "18",
+            "text": "Prestigious University Research Partners",
+            "suffix": ""
+          }
+        }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

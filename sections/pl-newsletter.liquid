@@ -1,0 +1,43 @@
+{%- assign data = section.settings -%}
+
+<div class="py-[25px] bg-[#73994a] px-[20px] mb-[25px]">
+  <div class="{{data.sectionWidth}} mx-auto items-center">
+      <div class="flex justify-between items-center {{data.descriptionWidth}}">
+        <p class="text-[30px] md:text-[40px] text-white font-normal">{{data.description}}</p>
+      </div>
+  </div>
+</div>
+
+
+  {% schema %}
+  {
+    "name": "PL Newsletter",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "<div class='flex justify-around items-center w-full'><p class='text-[30px] 2xl:text-[40px] text-white font-normal'>Join the ProLon community<p> <p class='text-white font-normal text-[18px] md:text-[22px]'>Education, Community, Resources</p></div>"
+      },
+      {
+        "type": "text",
+        "id": "descriptionWidth",
+        "label": "Description Width",
+        "default":"w-full md:w-[60%]"
+      },
+      {
+        "type": "text",
+        "id": "sectionWidth",
+        "label": "Section Width",
+        "default":"max-w-[1600px]"
+      }
+    ],
+    "presets": [
+      {
+        "name": "PL Newsletter",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+  {% endschema %}
+  

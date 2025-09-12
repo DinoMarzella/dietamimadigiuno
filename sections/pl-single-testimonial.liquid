@@ -1,0 +1,35 @@
+{%- assign data = section.settings -%}
+
+<div class="pl-wrapper py-[25px] bg-[#73994a] px-[20px] pl-wrapper-single-testimonial">
+  <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[10px]">
+    <div class="flex justify-center items-center w-full">
+      <div class="w-full">{{ data.description }}</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-single-testimonial');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Single Testimonial",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "<div class='flex justify-center items-center flex-col md:flex-row max-w-[1500px] mx-auto'><div class='w-full text-center text-[30px] lg:text-[2.3vw] xl:text-[36px] text-white  font-normal text-left md:pl-2'>Free <b>The Longevity Diet</b> eBook download</div><div class='flex justify-center items-center m:w-full'> <div class='klaviyo-form-VGQpAC'></div></div> </div>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Single Testimonial",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

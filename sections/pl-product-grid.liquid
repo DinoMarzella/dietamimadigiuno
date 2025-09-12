@@ -1,0 +1,302 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div
+  id="{{data.id}}"
+  class="pl-wrapper py-[40px] md:py-[80px] bg-white overflow-hidden max-w-[1600px] mx-auto lg:px-[40px] pl-wrapper-product-grid loaded_animation"
+> 
+  <div class="text-center py-[15px] px-[20px] md:py-[30px]">
+    <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents ">
+      {{ data.subtitle }}
+    </span>
+    <h2 class="mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents ">
+      {{ data.title }}
+    </h2>
+  </div> 
+  <div class="items-stretch justify-center grid-cols-1 md:grid md:grid-cols-2 xl:grid-cols-3" data-pppp>
+
+    
+    {%- for product in section.blocks -%}
+
+      {% assign realProduct = all_products[product.settings.handle] %}
+      {% assign firstVariant = realProduct.variants.first %}
+      {% assign compare_at_price = '' %}
+
+      {%- if product.settings.price != blank %}
+        {%- assign price = product.settings.price %}
+        {% else %}
+        {% assign price = firstVariant.price  %}
+      {%- endif %}
+
+      
+      {% if finaldiscountPrice and  finaldiscountPrice>0 %} 
+          {% assign price = finaldiscountPrice | times:100 %}
+          {% assign compare_at_price = firstVariant.compare_at_price |  default: firstVariant.price %} 
+      {% endif %} 
+      
+
+      {% if realProduct.tags contains 'show_compare_at_price' %}
+        {% assign compare_at_price = firstVariant.compare_at_price  %}
+        {% unless compare_at_price %}
+          {% assign compare_at_price= firstVariant.price %}
+        {% endunless %}
+      {% endif  %}
+      
+
+      {% assign priceMoney = price | money %}
+      {% assign compareAtPriceMoney = compare_at_price | money %}
+        
+      {% render 'pl-product-single-grid',
+        index: forloop.index,
+        title:product.settings.title,
+        subtitle:product.settings.subtitle,
+        description:product.settings.description,
+        price:priceMoney, 
+        compare_at_price:compareAtPriceMoney, 
+        image:product.settings.image,
+        btn_text:product.settings.btn_text,
+        btn_color:product.settings.btn_color,
+        btn_url:product.settings.btn_url,
+        handle:product.settings.handle 
+      %}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-product-grid');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Product Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "id",
+      "label": "ID",
+      "default": "shop-products"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Longevity Nutrition</b> Program"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Shop Products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "products",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "<b>Slow Down Bioage & Age Gracefully</b><br /> ProLon Everyday Nutrition"
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "REJUVENATION FROM WITHIN"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "<b>$190</b>"
+        }, 
+        {
+        "type": "text",
+        "id": "compare_at_price",
+        "label": "Compare at Price",
+        "default": "190"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Add to Cart"
+        },
+        {
+          "type": "text",
+          "id": "btn_url",
+          "label": "Button URL",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "btn_color",
+          "label": "Button Color",
+          "default": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Handle",
+          "default": "#"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_direct_prices",
+          "label": "Show Direct Prices From PDP"
+ 
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Product Grid",
+      "blocks": [
+        {
+          "type": "products",
+          "settings": {
+            "title": "ProLon Program",
+            "subtitle": "REJUVENATION FROM WITHIN",
+            "description": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass.",
+            "price": "$190",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "prolon-offer"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "ReSet 1-Day Kit",
+            "subtitle": "24 HOUR MIND & BODY RESET",
+            "description": "One day all-inclusive off-set, detox, and reset with fasting mimicking nutrition.",
+            "price": "$39",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "reset"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "Fasting Bars",
+            "subtitle": "INTERMITTENT FASTING BARS",
+            "description": "Great breakfast that nourishes your body while keeping it in a physiological fasting state.",
+            "price": "$34",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "fasting-bar"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "Fasting Shake",
+            "subtitle": "CHOCOLATE OR VANILLA",
+            "description": "Great breakfast shake that nourishes your body while keeping it in a physiological fasting state",
+            "price": "$70",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "fasting-shake"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "L-Spread ",
+            "subtitle": "APULIAN ALMONDS & COCOA",
+            "description": "Made with 74% Apulian Almonds, plant-based proteins, healthy fats, & low carbs.",
+            "price": "$40",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "longevity-spread"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "L-Pill",
+            "subtitle": "DAILY HEALTHY AGING",
+            "description": "Dual cap technology with a naturally occurring ingredients that support healthy aging of cells & organs.",
+            "price": "$80",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "longevity-pills"
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "L-Drink",
+            "subtitle": "COMPLETE PROTEIN DRINK",
+            "description": "25g complete protein shake. Perfect meal replacement, and addition to your active lifestyle",
+            "price": "$70",
+            "btn_text": "Coming Soon",
+            "btn_url": "#",
+            "btn_color": "text-black hover:text-black bg-white hover:bg-white",
+            "handle": ""
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "L-Biome",
+            "subtitle": "GUT HEALTH",
+            "description": "Dual cap technology with fasting nutrition prebiotics & fasting probiotics, wrapped with vegan DHA",
+            "price": "$50",
+            "btn_text": "Coming Soon",
+            "btn_url": "#",
+            "btn_color": "text-black hover:text-black bg-white hover:bg-white",
+            "handle": ""
+          }
+        },
+        {
+          "type": "products",
+          "settings": {
+            "title": "L-Pill & L-Biome",
+            "subtitle": "DAILY HEALTHY AGING",
+            "description": "30 Day supply of L-Pill & L-Biome to support overall health and wellbeing",
+            "price": "$120",
+            "btn_text": "Coming Soon",
+            "btn_url": "#",
+            "btn_color": "text-black hover:text-black bg-white hover:bg-white",
+            "handle": ""
+          }
+        }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

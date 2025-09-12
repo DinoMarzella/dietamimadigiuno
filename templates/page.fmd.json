@@ -1,0 +1,549 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "97f98d52-06c3-4939-bde6-fda6aaad5698": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14463572934702__97f98d52-06c3-4939-bde6-fda6aaad5698-16683615963b0005cf-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Dieta Mima Digiuno: un approccio innovativo per migliorare la tua salute e il tuo benessere",
+            "title_size": 40,
+            "subheading": "Il segreto per digiunare con il cibo: la tecnologia che imita il digiuno.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Tecnologia_dieta_mima_digiuno.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__97f98d52-06c3-4939-bde6-fda6aaad5698-16683615963b0005cf-0"
+      ],
+      "custom_css": [
+        "{margin-top: 80px;}",
+        "h1 {text-align: center; font-size: 36px; font-weight: 600;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 530,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "8a158880-a27a-4078-a3d9-09abb9d49123": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14463572934702__8a158880-a27a-4078-a3d9-09abb9d49123-1668361826ec190279-0": {
+          "type": "heading",
+          "settings": {
+            "title": "La scoperta della Dieta Mima Digiuno è stata un punto di svolta nel movimento Cibo come Medicina."
+          }
+        },
+        "template--14463572934702__8a158880-a27a-4078-a3d9-09abb9d49123-1668361826ec190279-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Scoperta e sviluppata presso il Longevity Institute della University of Southern California, la nostra tecnologia è un programma alimentare a base vegetale che consente al corpo di entrare in uno stato di digiuno rigenerativo senza attivare i sensori dei nutrienti delle cellule. Come suggerisce il nome, in realtà mima il digiuno... pur consentendo di mangiare cibo. Questo digiuno col cibo è una messa a punto per le cellule, supporta un invecchiamento sano ed elimina la necessità di fare un digiuno a sola acqua, che può avere effetti collaterali negativi.</p>"
+          }
+        },
+        "b4ee5f71-27a4-4d70-b071-94f8e0c9a448": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/prolon",
+            "link_text": "Ordina ProLon + Spedizione Gratuita"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__8a158880-a27a-4078-a3d9-09abb9d49123-1668361826ec190279-0",
+        "template--14463572934702__8a158880-a27a-4078-a3d9-09abb9d49123-1668361826ec190279-1",
+        "b4ee5f71-27a4-4d70-b071-94f8e0c9a448"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px; font-weight: 600; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "9126296c-78c2-4cf7-9bed-843dcace8d86": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clean_Up.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Rigenerazione cellulare\n(Autofagìa)</h3>\n<p style=\"padding-top: 20px;\">La Dieta Mima Digiuno è un miracolo della biologia, indotto dalle più recenti scoperte sul digiuno, fra cui l'autofagia (dal premio Nobel per la medicina nel 2016). La rigenerazione cellulare è fondamentale per migliorare il tuo stato di salute, la tua energia, la lucidità mentale e la longevità.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Weight_Loss.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Perdita di <br>Massa Grassa</h3>\n<p style=\"padding-top: 20px;\">Perdi peso, soprattutto il grasso viscerale, mentre proteggi la massa muscolare magra (particolarmente apprezzata dagli atleti). Il principio fondamentale è l'illusione del corpo di essere a digiuno mentre il corpo continua ad alimentarsi.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Precise_Nutrition.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Cambia il rapporto<br>con il cibo</h3>\n<p style=\"padding-top: 20px;\">In questo percorso di 5 giorni, ProLon ti aiuta a comprendere, evolvere e modificare il tuo rapporto con il cibo. Scoprirai che il tuo corpo può funzionare benissimo anche senza tutti gli eccessi e le calorie di troppo.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "552ca599-bb03-413f-a543-706f5c9b3c3e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Energy.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Migliora il senso<br>di benessere</h3>\n<p style=\"padding-top: 20px;\">Il tuo benessere mentale è un grande beneficio poiché la maggior parte delle persone dopo ProLon affermano di sentirsi meglio rispetto alle altre diete a lungo termine, difficili da seguire. Ritrova la tua vitalità e la lucidità mentale.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5b4fc08b-6220-4b87-8a38-9977e71e88a9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clarity.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Pelle più giovane<br>e più brillante</h3>\n<p style=\"padding-top: 20px;\">Recenti studi hanno dimostrato che dopo 3 cicli di ProLon (15 giorni in totale in un anno), riducono le rughe e gli inestetismi. La pelle si rigenera dall'interno, un aspetto che i nostri clienti apprezzano tantissimo.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "9a7634ff-560a-4a50-b8fb-9e8c2be4f348": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Convenient.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Conveniente, adatto ad ogni stile di vita</h3>\n<p style=\"padding-top: 20px;\">Il bello della Dieta Mima Digiuno è che si basa su clici di 5 giorni. Consigliamo di fare 3 cicli all'anno (solo 15 giorni). Puoi facilmente includere ProLon nella tua routine, anche se hai già uno stile di alimentazione sano.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-0",
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-1",
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-2",
+        "552ca599-bb03-413f-a543-706f5c9b3c3e",
+        "5b4fc08b-6220-4b87-8a38-9977e71e88a9",
+        "9a7634ff-560a-4a50-b8fb-9e8c2be4f348"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px; font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".h3 {font-size: 28px; font-weight: 600;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/come_funziona_laDieta_Mima_Digiuno.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Il potere della rigenerazione cellulare",
+        "text": "<p>Fin dal principio, la ricerca della tecnologia Mima Digiuno si  è focalizzata su un digiuno di cinque giorni seguito da un ritorno a un'alimentazione normale. È un approccio al digiuno chiamato digiuno periodico (o prolungato). I risultati, supportati da anni di ricerca sul digiuno e su questo specifico approccio, sono a dir poco sbalorditivi. Il digiuno periodico attiva i percorsi di protezione cellulare e ringiovanimento noti come autofagìa (l'autofagia è così importante per la salute e la longevità che la ricerca in materia ha ricevuto il Premio Nobel per la medicina 2016). In poche parole, l'autofagia è un sistema naturale del nostro corpo, spesso non sfruttato, per sostituire e rinnovare le componenti cellulari vecchie e logore.<br/><br/><br/><br/>La straordinaria scoperta è stata che la nostra tecnologia di imitazione del digiuno potrebbe innescare e sostenere l'autofagia durante il digiuno, fornendo allo stesso tempo nutrienti essenziali. In altre parole, attiva il potente sistema di ringiovanimento cellulare del corpo per incoraggiare un invecchiamento sano e allo stesso tempo riduce la fame durante il digiuno</p>",
+        "button_label": "Ordina Ora + Spedizione Gratuita",
+        "button_link": "shopify://products/prolon-5-day",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f3497522-49ea-41b4-a24a-f5def5a9b144": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".h3 {font-size: 28px; font-weight: 600;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Dieta_Mima_Digiuno_Longo.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "L'inventore della tecnologia mima digiuno, Valter Longo",
+        "text": "<p>ll Professor Valter Longo è l’inventore della nutri-tecnologia della Dieta Mima Digiuno (DMD). Direttore del Longevity Institute all’University of Southern California, è considerato il leader mondiale nei campi della nutrizione e della longevità. Insieme al suo team di ricerca hanno studiato un regime dietetico che simulasse il digiuno e ne portasse i suoi benefici al nostro corpo.<br/><br/><br/><br/>Il lavoro del professor Longo è stato pubblicato su prestigiose riviste scientifiche come Cell, Nature, Science, Journal of Translational Medicine e coperto da mass media globali come CNN, FOX, BBC, New York Time, Washington Post, tra gli altri. Lo scienziato della longevità è stato inserito dal TIME nella lista dei 50 personaggi più influenti del 2018 nell’ambito della salute.<br/><br/><br/><br/>Per la Dieta Mima Digiuno® (DMD), il Prof. Longo si è aggiudicato il primo brevetto della storia per l'Healthspan. Prima ha scoperto come le cellule percepiscono il cibo, poi ha ideato la formula che imita il digiuno, e infine ha condotto test su topi e umani per testare i benefici per la salute della dieta che imita il digiuno (DMD).<br/><br/>Da questa somma di scoperte deriva la linea di prodotti ProLon. </p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "433babb2-c202-453d-946a-83f2e8bd639b": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Ricercatore medico del Consiglio Nazionale delle Ricerche di Roma (CNR), specialista in Malattie del fegato e del ricambio, dottore di ricerca in Medicina sperimentale: Aterosclerosi, docente presso l’Università “La Sapienza” di Roma, rappresentante della Società Italiana per la Prevenzione Cardiovascolare (SIPREC) all’European Heart Network (EHN) di Bruxelles.</p>",
+            "author": "Prof. Roberto Volpe"
+          }
+        },
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Direttore Cattedra di Cardiologia, Direttore U.O.C. di Cardiologia, Facoltà di Medicina e Chirurgia, Università degli Studi di Roma \"La Sapienza\" Presidente Società Italiana per la Prevenzione Cardiovascolare Società Italiana Medicina Interna Membro Editorial Board di American Journal Hypertension, Journal Hypertension, Italian Heart Journal.</p>",
+            "author": "Prof. Massimo Volpe"
+          }
+        },
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Professore Associato di Medicina Interna presso il Dipartimento di Medicina Clinica, Università Sapienza di Roma; attività assistenziale presso l’unità operativa di Medicina Interna e Nutrizione Clinica dell’Azienda Ospedaliera Universitaria Policlinico Umberto I di Roma; Visiting Professor a SUNY Upstate Medical University, Syracuse, NY, USA; consulente esperto per i Programmi Quadro della Commissione europea a Bruexelles.</p>",
+            "author": "Prof. Alessandro Laviano"
+          }
+        },
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-3": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        },
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-4": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-1",
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-0",
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-2",
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-3",
+        "template--14463572934702__433babb2-c202-453d-946a-83f2e8bd639b-166836517599b789b5-4"
+      ],
+      "custom_css": [
+        "h2 {text-align: center; font-size: 28px; font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "Comitato scientifico",
+        "align_text": "center",
+        "round_images": false,
+        "divider": false
+      }
+    },
+    "1a24f3b0-6b7e-41d6-b11f-6411cb1517df": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14463572934702__1a24f3b0-6b7e-41d6-b11f-6411cb1517df-16683615963b0005cf-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h3>Dr. Amy Savagian, MD</h3><h4 style=\"font-size: 12px; margin-top: 10px; font-weight: 300;\">TRIPLE BOARDED IN INTERNAL, INTEGRATIVE AND OBESITY MEDICINE</h4>",
+            "title_size": 40,
+            "subheading": "“I love the science supporting ProLon, and I love that the science has been published in multiple peer reviewed journals. It allows me to suggest ProLon with confidence. I have used fasting and time restricted eating in my practice for years; ProLon augments this and takes it to the next level.”",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "indent_image": true,
+            "focal_point": "80% 50%",
+            "color_scheme": "2"
+          }
+        },
+        "template--14463572934702__1a24f3b0-6b7e-41d6-b11f-6411cb1517df-16683615963b0005cf-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Highlight products",
+            "title_size": 60,
+            "subheading": "Repurpose your product photography with our \"Indented\" image option",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__1a24f3b0-6b7e-41d6-b11f-6411cb1517df-16683615963b0005cf-0",
+        "template--14463572934702__1a24f3b0-6b7e-41d6-b11f-6411cb1517df-16683615963b0005cf-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "73029347-7b90-4f29-a683-7c5a54b61381": {
+      "type": "TWProlonBenefits",
+      "blocks": {
+        "6ef85315-de2e-45a0-a5c6-afa465a89099": {
+          "type": "cards",
+          "settings": {
+            "title": "Promote Cellular Renewal",
+            "description": "Trigger autophagy, (the clean-up of old and worn out cellular components), and help your body rejuvenate.",
+            "image_overide_url": ""
+          }
+        },
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501": {
+          "type": "cards",
+          "settings": {
+            "title": "Support Metabolic Health",
+            "description": "Helps you maintain healthy systolic blood pressure. *Results based on 3 consecutive monthly cycles.",
+            "image_overide_url": ""
+          }
+        },
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92": {
+          "type": "cards",
+          "settings": {
+            "title": "Enhance Clarity & Performance",
+            "description": "Customers report feeling greater focus, clarity and energy toward the end and after completing the fast.",
+            "image_overide_url": ""
+          }
+        },
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156": {
+          "type": "cards",
+          "settings": {
+            "title": "Fat Focused Weight Loss*",
+            "description": "Kickstart weight loss (on average 5 pounds), especially belly fat, while protecting lean body mass.",
+            "image_overide_url": ""
+          }
+        },
+        "5575b93e-0325-42c1-bf02-c988c1ff138f": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "shopify://collections/all",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "6ef85315-de2e-45a0-a5c6-afa465a89099",
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501",
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92",
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156",
+        "5575b93e-0325-42c1-bf02-c988c1ff138f"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<h3>Key Benefits Fasting Mimicking Technology</h3>",
+        "image_width": "100px",
+        "card_width": "w-1/4",
+        "background_color": "#ffffff",
+        "text_alignment": "text-center",
+        "content_alignment": "items-center",
+        "background_shadow": "bg-transparent"
+      }
+    },
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<div style=\"max-width: 1280px; margin: auto; padding: 30px 0px;\">\n    <h3 style=\"font-size: 34px; text-align: center; font-weight:700;\">\n        Join the health trend of fasting with food™.\n    </h3>\n    <br>\n    <p style=\"font-size: 20px; text-align: center;\">The ProLon Fasting Mimicking Diet is the first and only meal program that has gone through clinical trials at\n        the University of Southern California and been patented for its healthy-aging effects!  This 5-day meal\n        program provides scientifically researched micro- and macro-nutrients in precise quantities and combinations\n        that nourish you, but are not recognized as food by your body and therefore mimics a fasting state! \n    </p>\n</div>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "c7cf97de-37a9-41ff-b006-2950c67f795c": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "The ProLon Fasting Mimicking Diet is your secret to fasting",
+        "description": "",
+        "text_position": "md:items-end md:justify-start",
+        "content_position": "justify-center text-center",
+        "background_shadow": "backdrop-blur-sm bg-white/25",
+        "text_color": "#ffffff",
+        "under_header": false
+      }
+    },
+    "2e036f94-feea-4a01-8025-982c50a5306d": {
+      "type": "TWImageWithBoxText",
+      "disabled": true,
+      "settings": {
+        "tag": "MEET THE CREATOR OF THE FMD",
+        "title": "Dr. Valter Longo, Ph.D",
+        "description": "<p>Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.</p>\n<br>\n<p>For the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).<br><br>It is derived from these findings that we are able to bring you ProLon and </p>",
+        "box_position": "md:justify-start",
+        "add_padding": false
+      }
+    },
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5": {
+      "type": "TWPageHeroBanner",
+      "blocks": {
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "shopify://collections/all",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Healthy Convenience",
+        "description": "Get many of the benefits of a 5-day fast without giving up food with ProLon, the first and only patented 5-Day Fasting Mimicking Diet. ProLon gently guides your body into a fasting state to get many of the health benefits that come from long fasts while enjoying delicious meals and tasty snacks.",
+        "text_position": "md:items-center md:justify-center",
+        "content_position": "justify-center text-center",
+        "background_shadow": "bg-transparent",
+        "text_color": "#000000",
+        "under_header": false
+      }
+    },
+    "6e1a61d6-00f1-4980-b176-025e881e5d99": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<p style=\"text-align:center; font-weight:700; font-size: 34px;\">What the Experts have to Say</p>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Amy Savagian, MD",
+        "description": "“I love the science supporting ProLon, and I love that the science has been published in multiple peer reviewed journals. It allows me to suggest ProLon with confidence. I have used fasting and time restricted eating in my practice for years; ProLon augments this and takes it to the next level.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "TRIPLE BOARDED IN INTERNAL, INTEGRATIVE AND OBESITY MEDICINE"
+      }
+    },
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. William Hsu, M.D",
+        "description": "“ProLon carries so many weight, metabolic and cellular benefits that not only do I recommend it, but I decided to join the company’s mission full time as Chief Medical Officer”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": false,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "CHIEF MEDICAL OFFICER, L-NUTRA, INC  <br>FORMER PROFESSOR OF MEDICINE, HARVARD"
+      }
+    },
+    "835ab035-03ee-444e-9227-8bd33197aa9f": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Maria Tulpan, M.D.",
+        "description": "“Not only do I recommend ProLon as a frequent nutritional intervention, I’ve done it myself numerous times. I love this product so much, I invested in the company.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "ENDOCRINOLOGY, DIABETES & METABOLISM <br>L-NUTRA AMBASSADOR"
+      }
+    },
+    "2169fcb5-9999-4349-90cc-cc5639da5e55": {
+      "type": "TWOnlyImage",
+      "disabled": true,
+      "settings": {
+        "max_height": "450px",
+        "under_header": false
+      }
+    },
+    "8159f268-7f14-4dca-a22b-37a30f459c34": {
+      "type": "rich-text",
+      "blocks": {
+        "78d20e4a-6c53-4901-a926-30e87e897cc7": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/prolon-5-day",
+            "link_text": "Ordina Ora + Spedizione Gratuita"
+          }
+        }
+      },
+      "block_order": [
+        "78d20e4a-6c53-4901-a926-30e87e897cc7"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "97f98d52-06c3-4939-bde6-fda6aaad5698",
+    "8a158880-a27a-4078-a3d9-09abb9d49123",
+    "9126296c-78c2-4cf7-9bed-843dcace8d86",
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02",
+    "f3497522-49ea-41b4-a24a-f5def5a9b144",
+    "433babb2-c202-453d-946a-83f2e8bd639b",
+    "1a24f3b0-6b7e-41d6-b11f-6411cb1517df",
+    "73029347-7b90-4f29-a683-7c5a54b61381",
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778",
+    "c7cf97de-37a9-41ff-b006-2950c67f795c",
+    "2e036f94-feea-4a01-8025-982c50a5306d",
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5",
+    "6e1a61d6-00f1-4980-b176-025e881e5d99",
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa",
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b",
+    "835ab035-03ee-444e-9227-8bd33197aa9f",
+    "2169fcb5-9999-4349-90cc-cc5639da5e55",
+    "8159f268-7f14-4dca-a22b-37a30f459c34"
+  ]
+}

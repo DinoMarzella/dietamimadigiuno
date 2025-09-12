@@ -1,0 +1,848 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "advanced_content_aYpfCB": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_HJzUiN": {
+          "type": "html",
+          "settings": {
+            "code": "<p><br></p>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_e3LARD": {
+          "type": "html",
+          "settings": {
+            "code": "<h1 class=\"h1\" style=\"color: black; font-weight: 500;\">Migliorare la salute attraverso <span style=\"font-weight: 600;\"><br> la Dieta della Longevità</span>\n</h1>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_Y6kyGQ": {
+          "type": "html",
+          "settings": {
+            "code": "<p> La dieta della longevità è più di un semplice piano alimentare: <b>è uno stile di vita scientificamente provato, basato sulle abitudini alimentari e sulle routine di coloro che vivono nei luoghi della longevità del mondo</b>, ovvero i luoghi con la più alta popolazione di persone che vivono in salute fino ai 100 anni.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "html_JXYpJw": {
+          "type": "html",
+          "settings": {
+            "code": "<hr>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_HJzUiN",
+        "html_e3LARD",
+        "html_Y6kyGQ",
+        "html_JXYpJw"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_iNVBpJ": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_LpWWjb": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/ebf67f169b764fa5bc01a200f251e8ad.mp4",
+            "width": "100",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_LpWWjb"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_zMTtiY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_WNLyXp": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 style=\"color: black;\">Basata su oltre 25 anni di ricerca e sviluppata dal rinomato scienziato della longevità <span style=\"color: #78A14A;\"> Valter Longo PhD</span>, la dieta della longevità offre passaggi pratici che possono essere facilmente integrati nella tua routine quotidiana, settimanale, mensile e annuale per migliorare la tua salute, aggiungendo non solo più anni alla tua vita, ma più vita ai tuoi anni!</h2>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "image_w4iWJn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TLD-Side.png",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_WNLyXp",
+        "image_w4iWJn"
+      ],
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; margin-bottom: 40px; padding: 40px 20px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: #fff; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_DgWkyi": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner_Ucr9ap": {
+          "type": "banner",
+          "settings": {
+            "heading": "Free Longevity Diet Guide",
+            "text": "To learn more about the Longevity Diet, download our free guide",
+            "link": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/longevity_style_e-book_ed5aa000-d9c6-40c5-af09-8d204389d7c0.pdf?v=1734465544",
+            "label": "Download",
+            "color_tint": "#1f4036",
+            "color_tint_opacity": 20,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner_Ucr9ap"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".type-banner .promo-grid__container {background: none; background-color: #1f4036; color: white; padding: 20px; text-align: left;}",
+        ".btn {border-radius: 50px; color: white; font-weight: 600; padding: 10px 15px; min-width: 180px; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_87dfdB": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_BJnJDn": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row: padding: 0px 30px;\">\n<h2> Quali sono i <b>principi chiave</b> della dieta della longevità?\n </h2>\n<hr>\n</div>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_HACaUW": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row: padding: 0px 50px;\">\n<p>\n<b>Digiuno</b><br><br>\nGli studi sugli stili di vita dei centenari evidenziano il ruolo importante del digiuno e della riduzione dell'apporto calorico nel promuovere la longevità, supportare la riparazione cellulare e ridurre il rischio di malattie legate all'età.\n\n </p>\n</div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_BJnJDn",
+        "html_HACaUW"
+      ],
+      "custom_css": [
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: #fff; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "facts_accordion_7AyXHd": {
+      "type": "facts-accordion",
+      "blocks": {
+        "text_FphmxQ": {
+          "type": "text",
+          "settings": {
+            "title": "Annuale: Digiuno prolungato",
+            "description": "<p>Il digiuno prolungato annuale (della durata di oltre 72 ore) è una componente fondamentale della dieta della longevità, poiché attiva l'autofagia, il naturale processo di rinnovamento cellulare del corpo, fondamentale per riparare e ringiovanire le cellule ed essenziale per rallentare il processo di invecchiamento e promuovere la longevità.</p><h4>.</h4><p>Formulata scientificamente per offrire i benefici del digiuno, consentendo comunque l'assunzione di alimenti specifici, la dieta mima digiuno (FMD) di 5 giorni di Prolon evita le sfide e i rischi associati al tradizionale digiuno a base di sola acqua. Prolon è l'unico programma brevettato con dati preliminari che mostrano l'attivazione dell'autofagia, progettato per supportare la longevità attraverso il rinnovamento cellulare.</p><h4>.</h4><p>Per risultati ottimali, si consiglia una fase iniziale di assunzione di Prolon di tre cicli mensili consecutivi, seguiti da tre cicli annuali (solo 15 giorni all'anno!) per ottenere benefici duraturi nel tempo.</p>",
+            "show_image": true,
+            "image": "shopify://shop_images/ProLon_Blog_Image-Day5.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_VLd9AA": {
+          "type": "text",
+          "settings": {
+            "title": "Giornaliero: digiuno intermittente (IF) e alimentazione a tempo limitato (TRE)",
+            "description": "<p>I digiuni prolungati come il Prolon sono raccomandati solo periodicamente durante l'anno. Il digiuno intermittente (IF), in particolare il Time Restricted Eating (TRE), che si concentra sulle ore giornaliere dedicate al pasto anziché al digiuno, può essere praticato quotidianamente per aiutare a mantenere i benefici della dieta a digiuno intermittente tra un digiuno e l'altro.</p><h4>.</h4><p>La Dieta della Longevità segue specificamente un modello alimentare circadiano 12:12, che limita l'assunzione di cibo a una finestra di 12 ore, dall'alba al tramonto (ad esempio, dalle 7:00 alle 19:00), allineandosi al ritmo circadiano interno del corpo. Questo approccio supporta i processi naturali, favorendo la digestione, aumentando i livelli di energia e promuovendo la salute generale. Dà inoltre priorità alla colazione per garantire un assorbimento ottimale dei nutrienti, a beneficio delle funzioni vitali degli organi. Nelle zone di longevità, le persone adottano naturalmente questo schema, spesso consumando il pasto più leggero la sera, in armonia con il loro ritmo circadiano.</p><h4>.</h4><p>Le barrette e i frullati per il digiuno di Prolon sono progettati per supportare il digiuno intermittente offrendo al corpo nutrimento senza attivare i percorsi di percezione dei nutrienti, aiutandoti a rimanere in uno stato di digiuno e brucia grassi. Possono essere utilizzati quotidianamente come sostituti di un pasto o di uno spuntino durante la finestra di digiuno, per prolungarla. Il reset di 1 giorno di Prolon offre un rapido reset, utilizzando la stessa tecnologia nutrizionale del Prolon 5-Day per supportare il rinnovamento cellulare e la chetosi (brucia grassi). Può essere utilizzato mensilmente o settimanalmente per integrare i cicli annuali di Prolon, consentendo un digiuno sicuro e regolare di 24 ore, da solo o come parte di una routine di digiuno intermittente.</p>",
+            "show_image": false,
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_FphmxQ",
+        "text_VLd9AA"
+      ],
+      "custom_css": [
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-container {max-width: 1500px; margin: auto;}",
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {display: none;}",
+        "h3 {font-size: 25px;}",
+        "ul {list-style: disc;}",
+        "li {margin-left: 20px; line-height: 1.8rem;}",
+        "h6 {font-size: 12px; letter-spacing: 0; text-transform: none;}",
+        "h5 {font-size: 12px; letter-spacing: 0; text-transform: none; border-top: 1px dashed gray; padding-top: 10px;}",
+        "h4 {color: #ffffff; padding-bottom: 0px;}",
+        "p {font-size: 16px;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 3,
+        "header": "<p>TIPI DI DIGIUNO</p>",
+        "cta_text": "Leggi di più",
+        "cta_url": "",
+        "mobile_copy": ""
+      }
+    },
+    "advanced_content_BCrqaT": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_BKHyka": {
+          "type": "html",
+          "settings": {
+            "code": "<h2> Principi dietetici quotidiani chiave </h2>\n<hr>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_tzf3nT": {
+          "type": "html",
+          "settings": {
+            "code": "<p> Ciò che scegliamo di mangiare durante la nostra finestra alimentare gioca un ruolo significativo nella nostra capacità di invecchiare in salute. La ricerca ha dimostrato che il programma Prolon di 5 giorni è ancora più efficace se abbinato ai seguenti <b> principi chiave della Dieta della Longevità tra un ciclo di digiuno e l'altro: </b><br><br><br></p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_BKHyka",
+        "html_tzf3nT"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_ayF6K7": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_Kck4Dm": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">1<hr></span><p>Follow a daily food intake break down of 55-65% carbohydrates, 30-35% fats and 10-11% protein </p>\n</div>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "html_eUBKNP": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">200</span><p>Issued or pending patents globally on fasting mimicking nutrition.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_Wr3cKF": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">18</span><p>Prestigious University partners in the testing and research of FMD.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_pkrYmE": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">100M</span><p>In funding received to support research and development.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_Kck4Dm",
+        "html_eUBKNP",
+        "html_Wr3cKF",
+        "html_pkrYmE"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; padding: 40px 20px 50px; margin-top: 0px; margin-bottom: 0px;}",
+        ".titlebg {font-size: 55px; color: #67c908;}",
+        ".row-highlight {background-color: #ffff; padding: 30px; border-radius: 20px; text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "text_columns_QJhFjU": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_p4zb3A": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/numbers-1_1080x_c1bf1429-7dc0-471c-bdeb-ebc09a11520e.webp",
+            "image_width": 650,
+            "title": "Analisi nutrizionale giornaliera",
+            "text": "<p><br> Seguire una ripartizione giornaliera dell'assunzione di cibo del 55-65% di carboidrati, 30-35% di grassi e 10-11% di proteine\n\n </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_QkNVRn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_2_1080x_6a310c97-2ba6-4b5f-8599-7361bbc550e9.webp",
+            "image_width": 650,
+            "title": "Cibi freschi",
+            "text": "<p><br> Consumare un'abbondanza di cibi freschi provenienti da fonti vegetali, enfatizzando una varietà di colori e fitonutrienti, verdure e fibre </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_cg3BNG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_3_1080x_ef00d2de-1288-4a94-b32e-f2499d12fa47.webp",
+            "image_width": 650,
+            "title": "Dieta prevalentemente vegana",
+            "text": "<p><br> Seguire una dieta prevalentemente vegana, consumando pesce con moderazione 2-3 volte a settimana (evitando il pesce con un alto contenuto di mercurio). *Per gli over 65 che iniziano a perdere massa muscolare, forza o peso, aumentare l'assunzione di proteine ​​da alimenti di origine animale come pesce, uova, formaggio e yogurt di latte di pecora o di capra.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_jF4rAR": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_4_1080x_976f0153-93da-4bad-95ae-dcc903bbb842.webp",
+            "image_width": 650,
+            "title": "Limitare il cibo lavorato",
+            "text": "<p><br> Limitare l'alcol e gli alimenti trasformati, concentrandosi su quelli che forniscono un nutrimento sostanziale senza zuccheri aggiunti e grassi saturi, idrogenati o trans.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_p4zb3A",
+        "text_block_QkNVRn",
+        "text_block_cg3BNG",
+        "text_block_jF4rAR"
+      ],
+      "custom_css": [
+        ".medium-up--one-half {background-color: white; padding: 30px; border: 20px solid #fcfcf7; border-radius: 20px;}",
+        ".index-section {background-color: #fcfcf7; margin-top: 0px;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "slideshow_9Eg78G": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FKgc43": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h2 style=\"color: white; border-bottom: 1px dashed white; padding-bottom: 10px;;\">Tutti i nostri prodotti alimentari Prolon seguono questi principi, persino il nostro L-Spread al cioccolato!</h2>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p>Scopri il metodo scientificamente provato per beneficiare degli effetti rigeneranti del digiuno, integrando al contempo i nutrienti essenziali. Migliaia di persone hanno già scoperto il potere del programma FMD di Prolon, scientificamente provato e progettato per risultati concreti.</p>",
+            "link": "",
+            "link_text": "Acquista L-Spread",
+            "link_2": "shopify://products/prolon-longevity-spread",
+            "link_text_2": "",
+            "color_accent": "#73984a",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/whtisl-spread.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FKgc43"
+      ],
+      "custom_css": [
+        "p {color: white !important;}",
+        ".btn {color: white !important; border-radius: 50px; letter-spacing: 1px; font-weight: 600;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -30,
+        "mobile_size": 60,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "advanced_content_eBbBea": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_BeFpUR": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 style=\"margin-top: 15px;\"> Cerchi una comodità sana? </h2><hr>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "html_Wz8PTH": {
+          "type": "html",
+          "settings": {
+            "code": "<p> Per saperne di più sull'alimentazione basata sui principi della Dieta della Longevità, scarica il nostro e-book. Per chi cerca maggiore semplicità e praticità, Nutrition for Longevity è un servizio di consegna pasti che segue i principi della Dieta della Longevità e fornisce pasti biologici precotti.\n </p>\n<a href=\"https://nutritionforlongevity.com\" alt=\"Shop at Nutrition For Longevity\" style=\"color: white;\">Acquista Nutrizione per la Longevità →</a>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "image_mgFrwQ": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_BeFpUR",
+        "html_Wz8PTH",
+        "image_mgFrwQ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".custom__item-inner--image {width: 84%;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}",
+        "age-width {padding: 0 40px; background-color: #1f4035;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_LQUrNU": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_8EWPpc": {
+          "type": "html",
+          "settings": {
+            "code": "<br><h2> Bilanciare le <b>proteine</b> ​​per aumentare la durata della vita\n </h2><hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "html_x8zfYd": {
+          "type": "html",
+          "settings": {
+            "code": "<p> Le proteine ​​sono essenziali per l'organismo, ma un consumo eccessivo, soprattutto di origine animale come carne, latticini o siero del latte, può attivare l'IGF-1, un ormone della crescita che può accelerare l'invecchiamento se prodotto in eccesso o in modo non equilibrato. <b>La Dieta della Longevità raccomanda un apporto proteico equilibrato, principalmente da fonti vegetali:</b></p>",
+            "width": "66%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_8EWPpc",
+        "html_x8zfYd"
+      ],
+      "custom_css": [
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "text_columns_8dbaCM": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_9JRXrF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/proteein-side_1080x_13bd8939-4abd-4363-8942-eb491e94e40a.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><br>\n<b> Linee guida sulle proteine::</b><br><br></p><ul>\n<li>\nSotto i 65 anni: puntare a 0,31-0,36 grammi di proteine ​​vegetali per libbra di peso corporeo al giorno\n </li>\n<li>\n\nDopo l'allenamento: consumare 20-30 grammi di proteine ​​vegetali entro un'ora\n</li>\n<li>\n\nOltre i 65 anni: aumentare leggermente l'assunzione di proteine ​​se si perde massa muscolare o peso </li>\n</ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_PhhPd9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_10-L_Protein.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><b>L-Protein</b> è progettato per supportare sia la longevità che la salute muscolare. Con 25 g di proteine ​​vegetali, formulato per mantenere la massa muscolare e bilanciare i livelli di IGF-1 senza accelerare l'invecchiamento, può essere utilizzato dopo l'allenamento, come sostituto del pasto o come spuntino.</p><br><a href=\"/products/l-protein\" alt=\"Acquista L-Protein\" class=\"btn\">Acquista L-Protein</a>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/products/l-protein"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_9JRXrF",
+        "text_block_PhhPd9"
+      ],
+      "custom_css": [
+        "ul {list-style: disc; margin-left: 30px;}",
+        "li {padding-bottom: 10px;}",
+        ".btn {color: white !important; border-radius: 50px; letter-spacing: 1px; font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_WQ6iKd": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_tQLVtH": {
+          "type": "html",
+          "settings": {
+            "code": "<h2> Integratori</h2>\n<hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "html_xFAL9N": {
+          "type": "html",
+          "settings": {
+            "code": "<p> Sebbene la Dieta della Longevità adotti generalmente un approccio \"meno è meglio\" per quanto riguarda gli integratori, la raccomandazione generale è di assumere un multivitaminico ogni tre giorni per colmare le carenze nutrizionali generali. Questo, insieme ad integratori come L-Biome e L-Pill che integrano la Dieta della Longevità, contribuisce a favorire un invecchiamento sano tra i cicli di digiuno.</p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_tQLVtH",
+        "html_xFAL9N"
+      ],
+      "custom_css": [
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: transparent; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "f3497522-49ea-41b4-a24a-f5def5a9b144": {
+      "type": "text-and-image",
+      "custom_css": [
+        "li {margin-left: 30px; text-align: left;}",
+        "ul {list-style-type: disc;}",
+        ".btn {border-radius: 50px; letter-spacing: 1px; font-weight: 600;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pills-supplements_1080x_9b5ddbfe-60f3-4009-b9c0-6af1f109ff5f.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>La ricerca dimostra che i nutrienti chiave legati alla longevità sono spesso carenti nella dieta occidentale, in particolare quelli che supportano aree critiche dell'invecchiamento come la funzione immunitaria, la protezione cellulare e il metabolismo. Gli integratori, se formulati con rigore scientifico e ingredienti sicuri, possono aiutare a colmare queste lacune.</p><p><a href=\"/products/l-pill\" title=\"L-Pill (Antiossidante e Antiage)\"><strong>L-Pill</strong></a><strong> </strong>(Longevity Pill) agisce sulle aree chiave dell'invecchiamento con quattro nutrienti essenziali spesso carenti nelle diete occidentali, supportando la salute immunitaria, la protezione cellulare e la vitalità. Sviluppato dagli scienziati del Longevity Institute dell'USC, ogni ingrediente è selezionato per la sua comprovata capacità di supportare in modo sicuro un invecchiamento armonioso ed è presente nelle diete di chi rientra nelle fasce di età più longeve.</p><p><a href=\"/products/l-biome\" title=\"L-Biome (Salute Intestinale)\"><strong>L-Biome</strong></a>, un probiotico quotidiano, è stato progettato per migliorare la salute intestinale sostenendo il microbioma sviluppato durante la dieta FMD di 5 giorni; la salute intestinale, ben oltre il suo ruolo nella digestione, è anche parte integrante del corretto funzionamento del nostro sistema immunitario e della salute generale, il che può influenzare significativamente la longevità.</p>",
+        "button_label": "Acquista gli integratori",
+        "button_link": "shopify://products/l-biome-l-pill-bundle",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "slideshow_r4f6Rh": {
+      "type": "slideshow",
+      "blocks": {
+        "image_HBjBL4": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h2 style=\"color: white;\">Pronti per iniziare? Scoprite i <b>Kit di Longevità</b>\n</h2>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "shopify://collections/bundle",
+            "link_text": "Acquista Ora",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#56a511",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/What_is_FMD_Tabs_-_benefits-1.jpg",
+            "image_mobile": "shopify://shop_images/What_is_FMD_Tabs_-_benefits-1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_HBjBL4"
+      ],
+      "custom_css": [
+        ".btn {color: white !important; border-radius: 50px; letter-spacing: 1px; font-weight: 600;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "advanced_content_6nCejY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_B9P3wz": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (min-width: 769px) {\n        h3 {font-weight: normal; font-size: 25px;}\n        h2 {color: #73914a; font-size: 34px;\n        font-weight: normal;}\n        p {font-size: 16px;}\n        }\n\n        @media only screen and (max-width: 768px) {\n        h3 {\n        font-size: 18px !important;}\n        h2 {font-size: 24px !important;\n        color: #73914a;\n        text-align: left;\n        font-weight: normal;}\n        p {font-size: 14px;\n        text-align: left;}\n        h1 {font-size: 35px !important;}\n        }\n\n\n        #shopify-section-template--17939095453854__advanced_content_BCrqaT, #shopify-section-template--17939095453854__advanced_content_WQ6iKd {background-color: #fcfcf7;\n        padding-top: 50px; padding-bottom: 0px; margin-bottom: 0px;}\n\n        #shopify-section-template--17939095453854__f3497522-49ea-41b4-a24a-f5def5a9b144 {background-color: #fcfcf7; margin-top: 0px; padding-top: 30px; padding-bottom: 50px; margin-bottom: 0px;}\n\n\n       .hr { border: none;\n        border-top: 2px dotted #999;\n        color: #999;\n        background-color: transparent;\n        height: 1px;\n        margin: 10px 0;}\n\n\n        #shopify-section-template--17939095453854__text_columns_QJhFjU {\n        background-color: #fcfcf7;\n        margin-top: 0px;\n        padding: 0 30px 60px;\n        margin-bottom: 0px;}\n\n     \n        #shopify-section-template--17939095453854__text_columns_QJhFjU { background-color: #fcfcf7 !important; margin-top: 0px;}\n\n#shopify-section-template--17939095453854__text_columns_QJhFjU {background-color: #fcfcf7 !mportant;}\n\ndiv#shopify-section-template--17939095453854__advanced_content_eBbBea {\n   background-color: #1f4036; color: white; padding: 20px;\n}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_B9P3wz"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "73029347-7b90-4f29-a683-7c5a54b61381": {
+      "type": "TWProlonBenefits",
+      "blocks": {
+        "6ef85315-de2e-45a0-a5c6-afa465a89099": {
+          "type": "cards",
+          "settings": {
+            "title": "Promote Cellular Renewal",
+            "description": "Trigger autophagy, (the clean-up of old and worn out cellular components), and help your body rejuvenate.",
+            "image_overide_url": ""
+          }
+        },
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501": {
+          "type": "cards",
+          "settings": {
+            "title": "Support Metabolic Health",
+            "description": "Helps you maintain healthy systolic blood pressure. *Results based on 3 consecutive monthly cycles.",
+            "image_overide_url": ""
+          }
+        },
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92": {
+          "type": "cards",
+          "settings": {
+            "title": "Enhance Clarity & Performance",
+            "description": "Customers report feeling greater focus, clarity and energy toward the end and after completing the fast.",
+            "image_overide_url": ""
+          }
+        },
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156": {
+          "type": "cards",
+          "settings": {
+            "title": "Fat Focused Weight Loss*",
+            "description": "Kickstart weight loss (on average 5 pounds), especially belly fat, while protecting lean body mass.",
+            "image_overide_url": ""
+          }
+        },
+        "5575b93e-0325-42c1-bf02-c988c1ff138f": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "shopify://collections/all",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "6ef85315-de2e-45a0-a5c6-afa465a89099",
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501",
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92",
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156",
+        "5575b93e-0325-42c1-bf02-c988c1ff138f"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<h3>Key Benefits Fasting Mimicking Technology</h3>",
+        "image_width": "100px",
+        "card_width": "w-1/4",
+        "background_color": "#ffffff",
+        "text_alignment": "text-center",
+        "content_alignment": "items-center",
+        "background_shadow": "bg-transparent"
+      }
+    },
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<div style=\"max-width: 1280px; margin: auto; padding: 30px 0px;\">\n    <h3 style=\"font-size: 34px; text-align: center; font-weight:700;\">\n        Join the health trend of fasting with food™.\n    </h3>\n    <br>\n    <p style=\"font-size: 20px; text-align: center;\">The ProLon Fasting Mimicking Diet is the first and only meal program that has gone through clinical trials at\n        the University of Southern California and been patented for its healthy-aging effects!  This 5-day meal\n        program provides scientifically researched micro- and macro-nutrients in precise quantities and combinations\n        that nourish you, but are not recognized as food by your body and therefore mimics a fasting state! \n    </p>\n</div>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "c7cf97de-37a9-41ff-b006-2950c67f795c": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "The ProLon Fasting Mimicking Diet is your secret to fasting",
+        "description": "",
+        "text_position": "md:items-end md:justify-start",
+        "content_position": "justify-center text-center",
+        "background_shadow": "backdrop-blur-sm bg-white/25",
+        "text_color": "#ffffff",
+        "under_header": false
+      }
+    },
+    "2e036f94-feea-4a01-8025-982c50a5306d": {
+      "type": "TWImageWithBoxText",
+      "disabled": true,
+      "settings": {
+        "tag": "MEET THE CREATOR OF THE FMD",
+        "title": "Dr. Valter Longo, Ph.D",
+        "description": "<p>Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.</p>\n<br>\n<p>For the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).<br><br>It is derived from these findings that we are able to bring you ProLon and </p>",
+        "box_position": "md:justify-start",
+        "add_padding": false
+      }
+    },
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "Healthy Convenience",
+        "description": "Get many of the benefits of a 5-day fast without giving up food with ProLon, the first and only patented 5-Day Fasting Mimicking Diet. ProLon gently guides your body into a fasting state to get many of the health benefits that come from long fasts while enjoying delicious meals and tasty snacks.",
+        "text_position": "md:items-center md:justify-center",
+        "content_position": "justify-center text-center",
+        "background_shadow": "bg-transparent",
+        "text_color": "#000000",
+        "under_header": false
+      }
+    },
+    "6e1a61d6-00f1-4980-b176-025e881e5d99": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<p style=\"text-align:center; font-weight:700; font-size: 34px;\">What the Experts have to Say</p>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "2169fcb5-9999-4349-90cc-cc5639da5e55": {
+      "type": "TWOnlyImage",
+      "disabled": true,
+      "settings": {
+        "max_height": "450px",
+        "under_header": false
+      }
+    }
+  },
+  "order": [
+    "advanced_content_aYpfCB",
+    "promo_grid_iNVBpJ",
+    "advanced_content_zMTtiY",
+    "promo_grid_DgWkyi",
+    "advanced_content_87dfdB",
+    "facts_accordion_7AyXHd",
+    "advanced_content_BCrqaT",
+    "advanced_content_ayF6K7",
+    "text_columns_QJhFjU",
+    "slideshow_9Eg78G",
+    "advanced_content_eBbBea",
+    "advanced_content_LQUrNU",
+    "text_columns_8dbaCM",
+    "advanced_content_WQ6iKd",
+    "f3497522-49ea-41b4-a24a-f5def5a9b144",
+    "slideshow_r4f6Rh",
+    "advanced_content_6nCejY",
+    "73029347-7b90-4f29-a683-7c5a54b61381",
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778",
+    "c7cf97de-37a9-41ff-b006-2950c67f795c",
+    "2e036f94-feea-4a01-8025-982c50a5306d",
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5",
+    "6e1a61d6-00f1-4980-b176-025e881e5d99",
+    "2169fcb5-9999-4349-90cc-cc5639da5e55"
+  ]
+}

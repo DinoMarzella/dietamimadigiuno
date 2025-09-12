@@ -1,0 +1,766 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v1",
+      "blocks": {
+        "f9a915c1-73db-48da-a4b4-88ef51f40e17": {
+          "type": "faq",
+          "settings": {
+            "title": "Ingredienti",
+            "description": "<meta charset=\"utf-8\"><p><strong>MANDORLE &amp; CREMA DI CACAO</strong> Ingredienti: <strong>mandorle</strong> tostate (varietà Filippo Cea) 74%, cacao in polvere 14%, zucchero di canna, emulsionante: lecitina di girasole, aroma naturale di vaniglia. Può contenere <strong>Nocciole, Anacardi, Pistacchi.</strong>\nCONSIGLI PER GLI ALLERGENI: per gli allergeni, vedere gli ingredienti in <strong>grassetto</strong>.</p>",
+            "page": ""
+          }
+        },
+        "9328ff22-265d-428c-ba20-480eb1842de1": {
+          "type": "faq",
+          "settings": {
+            "title": "Dichiarazione nutrizionale",
+            "description": "<table id=\"nutrition-declaration\">\n<tbody>\n<tr>\n     <th>Valori per</th>\n     <th>100g</th>\n   </tr>\n   <tr>\n     <td>Energia</td>\n     <td>568 Kcal <br>2363 kJ</td>\n   </tr>\n<tr>\n     <td>Grassi <br>di cui saturi:</td>\n     <td>44g <br>5,1g</td>\n   </tr>\n<tr>\n     <td>Carboidrati <br>di cui zuccheri: </td>\n     <td>20g <br>13g</td>\n   </tr>\n<tr>\n     <td>Fibre</td>\n     <td>12g</td>\n   </tr>\n<tr>\n     <td>Proteine</td>\n     <td>18g</td>\n   </tr>\n<tr>\n     <td>Sale</td>\n     <td>0g</td>\n   </tr>\n</tbody>\n</table>\n<p>CONSERVARE IN LUOGO FRESCO E ASCIUTTO</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "f9a915c1-73db-48da-a4b4-88ef51f40e17",
+        "9328ff22-265d-428c-ba20-480eb1842de1"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "prolon-longevity-spread",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": false,
+        "custom_product_title": false,
+        "product_sub_line": "Fasting Nutrition Plan",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-prolon-spread\" ,blocks:section.blocks\n %}",
+        "option_1_name": "Scegli {option}",
+        "option_1": "button",
+        "option_2_name": "Select {option}",
+        "option_2": "button",
+        "option_3_name": "Select {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "settings": {
+            "title": "What's inside the kit?",
+            "content": "",
+            "page": "whats-inside-your-reset-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "settings": {
+            "title": "Why to add ReSet in your life?",
+            "content": "<p><strong>Reset is the only product that can nourish your body for a full day while your cells think you are not eating and therefore stay in a protective and rejuvenating state.</strong> </p><p>It is a great detox, reboot, and maintenance product that balances your diet and washes the previous days of eating or drinking! </p><p>The goal of reset is to provide you with premium plant-based, clean, low-carb, gluten-free nutrition that prolongs the previous overnight fast for another 24 hours, which has tremendous metabolic and cellular benefits. Reset formed around the Fasting Mimicking Nutri technology developed and tested by 14 global universities and L-Nutra to nourish you with premium quality plant-based food while inducing the cellular, metabolic, and emotional benefits of Prolonged fasting. </p><p><strong>It is a scientific breakthrough that took 2 decades, $48MM in research.  and awarded 40+ patents — </strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>including the only patent in history on a nutrition program to enhance longevity and healthspan</strong></a><strong>. </strong></p>",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Nutrition Fact Information",
+            "content": "",
+            "page": "ingredients-supplement-facts"
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "d:hidden"
+      }
+    },
+    "ef6fd7d5-33e8-4878-8f00-b00625cdcad0": {
+      "type": "modern-custom-html",
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "code": "<style>\n  .spread-benefits img {\n  max-width: 100px;\n  margin: 0px auto;\n  }\n  .spread-benefits {\n  flex: 1 1 0px;\n  text-align: center;\n  min-width: 100px;\n  }\n  .spread-benefits h6 {\n  margin-top: 20px;\n  }\n  @media(max-width: 768px)  {\n  .spread-benefits img {\n  max-width: 70px;\n  }\n  .rowgap-30 {\n      row-gap: 10px;\n  }\n  }\n  @media only screen and (min-width: 769px)  {\n  .no-desktop {\n  display: none;\n  }\n  }\n  </style>\n<div class=\"no-desktop\"><video controls class=\"rounded-lg\">\n  <source src=\"https://cdn.shopify.com/videos/c/o/v/ae0082c1f1e6476caa2415a463efaac6.mp4\" type=\"video/mp4\">\n  Your browser does not support the video tag.\n</source></video></div>\n<div class=\"mt-10 flex jc-center columngap-4 rowgap-30 align-items-baseline\">\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1_copia_8.svg?v=1678962995\">\n<h6> Fonte proteica </h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1_copia_3.svg?v=1678962995\">\n<h6> Senza latte e derivati </h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1_copia_2.svg?v=1678962995\">\n<h6>0% di olio di palma</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1_copia_4.svg?v=1678962995\">\n<h6>Vegana</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1_copia.svg?v=1678962995\">\n<h6>Ricca di vitamina E, calcio e magnesio</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/icone_spalmabile_Tavola_disegno_1.svg?v=1678962995\">\n<h6>Senza Glutine</h6>\n</div>\n</div>"
+      }
+    },
+    "60f07b74-303e-4fd2-b910-a99bea93e8db": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Break.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Take a Break</h3>\n<p style=\"padding-top: 20px;\">Give your body a 1-day breather and allow it to get back on track through active fasting. ReSet mindless snacking & eating.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": "https://www.facebook.com/groups/828169620931662"
+          }
+        },
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Power.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Fresh Start</h3>\n<p style=\"padding-top: 20px;\">Kick off a new starting point to help you achieve your goals. Perfect for intermittent fasting routines.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Break_Cycle.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Balance</h3>\n<p style=\"padding-top: 20px;\">Break over-indulgence with a 1-day ReSet intervention. Embark on a longevity lifestyle & mindful eating routine.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "8b52d242-636c-4f5d-bf98-f50a6662b0a5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-0",
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-1",
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-2",
+        "8b52d242-636c-4f5d-bf98-f50a6662b0a5"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Longevity spread",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "5c0b5357-2c78-4f2b-a6e2-edca1f8d2145": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/ita.png",
+        "image_width": 700,
+        "subtitle": "Longevity Spread - ProLon tutti i giorni",
+        "title": "Crema Spalmabile Mandorle e Cacao",
+        "text": "<p>La nostra spalmabile è un'ottima fonte di proteine, ad alto contenuto di fibre, lavorata con moderne tecnologie che le permettono di non alterare il sapore e di renderla al palato finissima ed avvolgente.\n</p><p>La Longevity spread è composta al 74% da pura mandorla pugliese varietà \"Filippo CEA\", uno degli ingredienti della Longevità, e al 14% da cacao amaro.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "60e0e667-8a7c-41d0-81fb-ab9c42ca2a28": {
+      "type": "hero-video",
+      "settings": {
+        "title": "<span class=\"text-white\">Senza grassi e proteine diversi da quelli naturalmente presenti nelle mandorle e nel cacao</span>",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/9db052d710ac48ba83cfbfac59dddcd6.mp4"
+      }
+    },
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "Rachel",
+            "title": "I'm obsessed with this new product from ProLon...",
+            "title_size": 40,
+            "subheading": "A one-day reset that really has helped me get back on track from periods of over indulgence.",
+            "link": "https://cdn.shopify.com/videos/c/o/v/ad5d9bfbd4844a1e85130de1cc33b026.mp4",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        },
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "I'm 50 years old with 2 small children...",
+            "title_size": 40,
+            "subheading": "I started ProLon and I'm telling you, it worked! I lost 6 pounds, I have no brain fog, I absolutely do not crave sugar right now which is insane and I actually feel amazing, I'm full of energy! I am so proud of myself, my husband did it with me, he lost 5 pounds, says he has never felt better.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "none"
+          }
+        },
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Un Esempio Perfetto di Longevità e Tradizione.",
+            "title_size": 40,
+            "subheading": "La nostra mandorla varietà \"Filippo CEA\" è un prodotto di altissima qualità coltivato in Puglia e conosciuto a livello mondiale. Grazie al sapore e alle proprietà di questo prezioso seme, fonte di acido oleico, vitamina E, Calcio e Magnesio, abbiamo sviluppato una crema spalmabile di alta qualità, che ti consente di mantenere uno stile di vita sano ed equilibrato, promuovendo benessere e longevità.",
+            "link": "https://www.youtube.com/watch?v=UDso337d3gI&feature=youtu.be",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Progetto_senza_titolo_5_1728x_1728x_184ace4e-b807-46d3-85fc-2db709fbb8a5.jpg",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1",
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb",
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "height": 600,
+        "height_mobile": 650,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068": {
+      "type": "promo-grid",
+      "blocks": {
+        "ca549adc-9925-48b5-8520-241b6c7e7307": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Stay Connected & Supported",
+            "text": "Fasting is always better together! Don't forget to join our private Facebook Group.",
+            "link": "",
+            "label": "Join Now"
+          }
+        },
+        "b79aa57d-0384-499d-bea7-947d5ba8d126": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "33"
+          }
+        },
+        "73426572-f5f3-4a13-8dbc-38f13f145846": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "33"
+          }
+        },
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "▸",
+            "cta_link1": "https://cdn.shopify.com/videos/c/o/v/4c385d6485854fba93f3542162aceea5.mp4",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/4c385d6485854fba93f3542162aceea5.mp4",
+            "width": "33",
+            "height": 320,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "e89a779f-a279-4469-b0be-269db64f2de0": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "▸",
+            "cta_link1": "https://player.vimeo.com/video/762795094?controls=1&h=fdacb11a9d&badge=0&autopause=0&player_id=0&app_id=58479%22",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://www.youtube.com/watch?v=GCsPmRfg1RE&t=39s",
+            "width": "100",
+            "height": 400,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "ca549adc-9925-48b5-8520-241b6c7e7307",
+        "b79aa57d-0384-499d-bea7-947d5ba8d126",
+        "73426572-f5f3-4a13-8dbc-38f13f145846",
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1",
+        "e89a779f-a279-4469-b0be-269db64f2de0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    },
+    "2dd826f7-81fe-44c1-aa74-28f5c42251b9": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Who’s It For & How To Use It?",
+        "text": "<p>ProLon ReSet is the only scientifically backed <b>1-day nutrition kit</b> that puts your body in a fasting state, helping you take the time to reset and recharge. You can use it: \n\n</p><p>- As a kick-start for ProLon 5-day: If you don’t feel ready to start directly with prolonged fasting, ideally you can begin by consuming ProLon Reset one day a week (6:1) for 4 consecutive weeks and then gradually prepare your body with a healthy and balanced diet for a week and finally start your journey with ProLon 5-day!\n</p><p>- As a weekly <b>detox</b>: you can use the ReSet kit, once a week <b>(6:1)</b> either to take care of your daily diet (ideally at least for 4 consecutive weeks) or whenever you feel you have had a few days of overindulgence.\n</p><p>- As part of your <b>intermittent fasting</b>: if you follow a <b>5:2</b> pattern, you can use it twice a week to cleanse and nourish your body during the fasting days, using the Fasting Mimicking Technology.  \n</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "5a8542bf-d2c2-4934-89a7-b65cb531ccf3": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Why it works",
+        "text": "<p>Why It Works\n\nProLon ReSet makes it easy to fast for a full day by curbing hunger with precise nutrients to keep your body fasting. Need a quick ReSet from unhealthy eating? Just give us a day.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "233404af-9ae8-408b-9c7a-001cf3500aeb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/menu-removebg.png?v=1653993397\">",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-right",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 10
+      }
+    },
+    "8b77cbe8-16b2-47f9-875e-5b2bf09c82f3": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "",
+            "image": "shopify://shop_images/190103-fs-250x250-bread_copia_360x_47b6d2fd-f4b9-4b31-b5d7-a93704d217dd.png",
+            "author": "Sul pane a colazione"
+          }
+        },
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "",
+            "image": "shopify://shop_images/Bubble_spread_250x250_48e94554-288e-49bd-95db-2739ff28ecfe.png",
+            "author": "Direttamente dal cucchiaio"
+          }
+        },
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "",
+            "image": "shopify://shop_images/190103-fs-250x250-brownies_360x_2ec18495-427e-4d1a-a228-7f0ddcecb622.png",
+            "author": "Cucinare dolci sfiziosi"
+          }
+        }
+      },
+      "block_order": [
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-0",
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-1",
+        "template--15781195251893__8b77cbe8-16b2-47f9-875e-5b2bf09c82f3-167836514913b53795-2"
+      ],
+      "settings": {
+        "title": "Viziati proprio come piace a te.",
+        "align_text": "center",
+        "round_images": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "89a9fb4b-6df6-4855-9f5a-d78873047246": {
+      "type": "tw-animated-review",
+      "blocks": {
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0": {
+          "type": "rowf",
+          "settings": {
+            "title": "I expected to be hungry and then..",
+            "details": "I expected to be hungry and then HANGRY, on this program. I was extremely\nsurprised by the fact that not only was I NOT hungry, I also didn't crave my usual\nnightcap. I really didn't have any cravings for the most part, of course smelling the\nfood I was cooking for my family smells good, but I didn't feel like I NEEDED to eat it.\nWhich was one of the main reasons I wanted to try this program.\nI enjoyed the food.\nI did NOT like the drink we had to sip on. The flavor was just not my jam. But other\nthan that I have been pleased with how I feel.\nI work very hard for a living and I usually need a bit more to eat during the day, NOT\nthis week.",
+            "name": "Sara Snyder"
+          }
+        },
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379": {
+          "type": "rowf",
+          "settings": {
+            "title": "This was my10th Prolon fast",
+            "details": "This was my 10th Prolon fast. I used this one to reset myself due to having long\nCOVID. I can't begin to describe how much better I feel after doing a prolon fast",
+            "name": "Robin Laabs"
+          }
+        },
+        "bf7faaa0-3def-4913-85a6-ee22223514c3": {
+          "type": "rowf",
+          "settings": {
+            "title": "Amazing Program",
+            "details": "This is my second time using Prolon. It is so easy to follow and stay on the fasting\nplan for better health. I lost 6 pounds at the end of five days. I feel great. My bpm\ndropped 5 points and My anxiety level is nonexistent.",
+            "name": "Marie"
+          }
+        },
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8": {
+          "type": "rowf",
+          "settings": {
+            "title": "I use FMD as a reset whenever I fall off the wagon!",
+            "details": "This is my third time trying the fast mimicking diet, and I have learned to go back to it\nwhenever I need a reset. I tend to do great at watching what I eat for a period of time,\nbut then start slipping back into old habits over time. At that point, I find that if I do\nthe fast mimicking diet again, it really does reset my thinking about how much I need\nto eat. Basically if I can get by on 700 to 800 cal per day for five days during the diet,\nthen I can easily bump that up two maybe 1200 calories per day, and keep that going\nfor an extended period of time, once the diet is over.",
+            "name": "bfherrmann"
+          }
+        },
+        "96aec021-7814-4796-a2ef-f43d15c01303": {
+          "type": "rowf",
+          "settings": {
+            "title": "Prolon leaves the guesswork out of..",
+            "details": "Prolon leaves the guesswork out of fasting! The system is super easy to follow and\neven includes a transition day diet. I always feel great during day and have high\nenergy. I sleep so deep! I love that Prolon makes it so simple to take care of my body\non a cellular level... thank you Prolon! Kimberley",
+            "name": "Kimberley M."
+          }
+        },
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e": {
+          "type": "rows",
+          "settings": {
+            "title": "THIS IS FASTING?!? - INCREDIBLE!!!",
+            "details": "I am on a journey to create better health, ProLon was my attempt to reset my body\nafter eating and drinking too many garbage foods. I fasted from 10/2 - 10/6. The fast\nwas easy to follow, The food was surprisingly delicious; I never felt hungry or craved\nany junk foods and wasn't even tempted by foods on tv commercials. My favorite\ndays were the days with the olives. Definitely ready for month 2 and 3 when the time\ncomes. Oh yeah, I lost 8.2 lbs in 5 days.",
+            "name": "R. Pryor"
+          }
+        },
+        "c9a436a2-f630-4eba-a893-49bceda69d36": {
+          "type": "rows",
+          "settings": {
+            "title": "I had such a great experience",
+            "details": "I had such a great experience! Food was great. I had a lot of energy and slept well. I\nalso lost 5 lbs which has been so hard to do! I'll definitely do Prolon again and have\nrecommended it to friends.",
+            "name": "Kristen"
+          }
+        },
+        "42a3821c-f70c-4262-b664-7b52c203fd46": {
+          "type": "rows",
+          "settings": {
+            "title": "ProLon changed my life",
+            "details": "ProLon changed my life. I saw significant results on day three of the 5 day program. It\nteaches you how to eat and more importantly how you are supposed to feel when you\nare eating healthy. It has inspired me continue with this journey towards maintaining\nmy health and well-being.",
+            "name": "Fernando Bobbio"
+          }
+        },
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f": {
+          "type": "rows",
+          "settings": {
+            "title": "Reset Accomplished!",
+            "details": "Clear and easy to follow instructions.\nFood was better than expected\nThe Fastination FB page was helpful and encouraging.",
+            "name": "Karen Steckler"
+          }
+        },
+        "33e95cf9-fbb9-4a12-8078-cb700a252159": {
+          "type": "rows",
+          "settings": {
+            "title": "So much easier than water fasting....",
+            "details": "I've done a few therapeutic water fasts over the years and I absolutely hated every\nminute. I've always had the most miserable time ever. Prolon fasting however is a\ngame changer. Yes it's hard, but there are those times every day that you know you\nare going to eat!! Follow the \"instructions\" for the soups and they shouldn't be hard or\ngritty (some need stove top cooking for 15 mins). I am lucky that I enjoy olives, the\ncrackers and the nut bars were delicious, it's food after all : ) I have just completed\nround 3. It really does get easier with each round. My one criticism - the beautiful\npackaging and plastic bottle are completely unnecessary. I think Prolon should scale\nthat down a bit. THANK YOU Prof Longo for the decades of hard work and study.",
+            "name": "Lesley."
+          }
+        },
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b": {
+          "type": "rowt",
+          "settings": {
+            "title": "I was expecting to be hungry",
+            "details": "I was expecting to be hungry, but was pleasantly surprised. By drinking water through\nout the day and hot herbal tea in the evening I was not hungry. The L-drink flavors\nwere delicious. I had been feeling really bloated, at the end of day 2, it subsided and\nwas gone by day 4. Thank you for making this wonderful product.",
+            "name": "Eileen T"
+          }
+        },
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8": {
+          "type": "rowt",
+          "settings": {
+            "title": "I really liked this fast",
+            "details": "I really liked this fast. It was easy to follow and took the planning out of my day. I\nwasn't really hungry and it made me realize how much mindless eating I was doing. I\nfelt great by the end of day 3!",
+            "name": "Maureen Mittry"
+          }
+        },
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69": {
+          "type": "rowt",
+          "settings": {
+            "title": "This is a beautifully organized.",
+            "details": "This is a beautifully organized package. The support is awesome as well. The best\nfast that I have ever experienced. I am not hungry.",
+            "name": "Michele Williams"
+          }
+        },
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5": {
+          "type": "rowt",
+          "settings": {
+            "title": "A well deserved investment in \"Me\"",
+            "details": "A friend recommended ProLon fasting program to me. This was my first fast. My goal\nwas to reduce stomach inflammation and improve overall gut health. The program is\nwell laid out & easy to follow. I viewed it as a well deserved investment in \"me\"\nProLon did not disappoint, I have more energy, feel great & plan to continue down the\npath of healthier eating behavior for years to come.",
+            "name": "R. Howard"
+          }
+        },
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7": {
+          "type": "rowt",
+          "settings": {
+            "title": "Success after a long journey!!",
+            "details": "I received the Prolon kit right away after ordering. I'm on my 5th day of the fast and I\nfeel great. I never really experienced any hunger, and I've already ordered another kit\nto use in a few months. I feel like after years of being unsuccessful with yo-yo\nDIETING I am now on my way to achieving not only the weight loss I've been longing\nfor, but I'm on my way to much better health via great nutrition and exercise. Thank\nyou, Dr. Longo and your team for all your hard work!!! What a wonderful product! I\nbought the Longevity Diet book and the recipe book is on its way to me!! Thank you\nso much!!",
+            "name": "Sharon Wilson"
+          }
+        },
+        "307c1ffa-72ec-406c-b256-e8d662848b0c": {
+          "type": "rowf",
+          "settings": {
+            "title": "it is a hard program but it works",
+            "details": "it is a hard program but it works. I would not lie, I cannot believe I completed it. I lost\n6 pounds and feel really amazing. I will continue with a modified Keto program\nmoving forward",
+            "name": "Veronica Diaz"
+          }
+        },
+        "869f275d-bf22-438e-a1de-6de73df7cb8b": {
+          "type": "rowf",
+          "disabled": true,
+          "settings": {
+            "title": "My first 5 day Fast",
+            "details": "This was a great experience! I feel amazing, and have so much energy and focus. The\nfood tastes great! I've already recommended to all my friends.",
+            "name": "Julie S"
+          }
+        },
+        "4ab38dac-8804-47b4-b82f-957968381619": {
+          "type": "rows",
+          "disabled": true,
+          "settings": {
+            "title": "This was an amazing experience for me",
+            "details": "This was an amazing experience for me. During the \"fast\" I felt energized and was\nrarely hungry. I was so excited to increase my deep sleep each night reaching 2h53m,\nwhen my typical deep sleep clocks in at 45m. I would highly recommend this\nprogram!",
+            "name": "Kristy Snyder"
+          }
+        },
+        "47e2aba4-f011-484a-86f8-fa4f637153e1": {
+          "type": "rowt",
+          "disabled": true,
+          "settings": {
+            "title": "Amazing",
+            "details": "The easiest way to drop 4 kilos. Was never hungry. Of course you have not signed up\nto a gourmet week but with the weight loss in mind fine it's very palatable\nWell done prolon! Go go go",
+            "name": "carl michaelsen"
+          }
+        }
+      },
+      "block_order": [
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0",
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379",
+        "bf7faaa0-3def-4913-85a6-ee22223514c3",
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8",
+        "96aec021-7814-4796-a2ef-f43d15c01303",
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e",
+        "c9a436a2-f630-4eba-a893-49bceda69d36",
+        "42a3821c-f70c-4262-b664-7b52c203fd46",
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f",
+        "33e95cf9-fbb9-4a12-8078-cb700a252159",
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b",
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8",
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69",
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5",
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7",
+        "307c1ffa-72ec-406c-b256-e8d662848b0c",
+        "869f275d-bf22-438e-a1de-6de73df7cb8b",
+        "4ab38dac-8804-47b4-b82f-957968381619",
+        "47e2aba4-f011-484a-86f8-fa4f637153e1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What our customers say",
+        "detail": "",
+        "color": ""
+      }
+    },
+    "16801324-f6c3-48a2-a4a3-48d411e744df": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Ottimo prodotto, lo uso ogni mattina a colazione.</p>",
+            "author": "Maria Lamanna"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>La consistenza delle mandorle mi ha stupito. Ideale per una colazione salutare a casa. La ricomprerò!</p>",
+            "author": "Roberto"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Ottima crema spalmabile, altissimo contenuto proteico. La mangio spesso prima di andare in palestra. Qualitativamente superiore rispetto alle altre creme in commercio. </p>",
+            "author": "Gianni"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Sono vegana ed è la crema più buona che io abbia mai mangiato! Grazie Prolon!</p>",
+            "author": "Serena"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3"
+      ],
+      "settings": {
+        "title": "From our customers",
+        "align_text": "center",
+        "round_images": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "9ebbf730-3791-4b95-a951-d0239fad74a1": {
+      "type": "simple-image-section",
+      "disabled": true,
+      "settings": {
+        "bgcolor": "",
+        "image_class": "",
+        "container_class": "p-2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "ef6fd7d5-33e8-4878-8f00-b00625cdcad0",
+    "60f07b74-303e-4fd2-b910-a99bea93e8db",
+    "5c0b5357-2c78-4f2b-a6e2-edca1f8d2145",
+    "60e0e667-8a7c-41d0-81fb-ab9c42ca2a28",
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31",
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068",
+    "2dd826f7-81fe-44c1-aa74-28f5c42251b9",
+    "5a8542bf-d2c2-4934-89a7-b65cb531ccf3",
+    "233404af-9ae8-408b-9c7a-001cf3500aeb",
+    "8b77cbe8-16b2-47f9-875e-5b2bf09c82f3",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "89a9fb4b-6df6-4855-9f5a-d78873047246",
+    "16801324-f6c3-48a2-a4a3-48d411e744df",
+    "recommendations",
+    "collection-return",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "9ebbf730-3791-4b95-a951-d0239fad74a1"
+  ]
+}

@@ -1,0 +1,182 @@
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+{%- assign data = section.settings -%}
+<div class="w-full bg-[#f4f4f4]">
+  <div id="{{data.id}}" class="py-12 md:py-[80px]  px-[20px] max-w-[1600px] mx-auto pl-wrapper-features-v2 ">
+    {%- if data.main_title and data.main_title!='' -%}
+      <h2 class=" font-normal leading-[1.2] max-w-[1200px] lg:text-[40px] mx-auto pb-[50px] md:text-[30px] text-center w-full z-10 px-8">
+        {{ data.main_title }}
+      </h2> 
+    {%- endif -%} 
+
+    <div class="flex items-center flex-col {% if data.text_on_left %} md:flex-row {% else %} md:flex-row-reverse {% endif %}">
+      <div class="w-full md:w-[50%] md:px-[20px] mb-[40px] md:mb-0">
+        <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents  !delay-100">
+          {{ data.subtitle }}
+        </span>
+        <h2
+          class="
+            mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents
+            !delay-200
+          "
+        >
+          {{ data.title }}
+        </h2>
+        <p
+          class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500"
+        >
+          {{ data.description }}
+        </p>
+        {% assign button_blocks = section.blocks | where: 'type', 'buttons' %}
+
+        {% if button_blocks.size > 0 %}
+          <div class="flex flex-wrap pt-[20px] hero__animation-contents !delay-700">
+            {%- for button in button_blocks -%}
+              <div class="w-full md:w-[47%] py-1 md:py-0 md:mr-4">
+                <a
+                  class="inline-block py-[10px] px-7 w-full text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:{{button.settings.bg_color}} {{button.settings.bg_color}} {{button.settings.text_color}} border border-gray-300"
+                  href="{{button.settings.url}}"
+                  aria-label="{{button.settings.title}}"
+                >
+                  {{ button.settings.title }}
+                </a>
+              </div>
+            {%- endfor -%}
+          </div>
+        {% endif %}
+      </div>
+      <div class="w-full md:w-[50%] md:px-[20px]">
+        <div class="relative flex justify-center items-start flex-wrap gap-[30px]">
+          {% assign custom_array_blocks = section.blocks | where: 'type', 'custom_html_array' %}
+          {%- for item in custom_array_blocks -%}
+            <div
+              class="w-[45%]"
+            >
+              {{ item.settings.custom_html }}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-features-v2');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Features V2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "data_id",
+      "label": "Section ID",
+      "default": "the-research"
+    },
+    {
+      "type": "textarea",
+      "id": "main_title",
+      "label": "Main Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Why stay younger</b> than your age? "
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Why Prolon"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Close to 90% of humans will die from one of four age related conditions: Diabetes, Cancer, Cardiovascular and Alzheimer's diseases. When your cells and metabolism get older, you lose the power of rejuvenation and healing, and become prone to these conditions. Between age 40 and 70 you start experiencing aging symptoms with muscle mass loss, weight gain, mood and focus change, blood sugar, blood pressure, cholesterol, inflammaging, skin changes, etc.<br /><br /> ProLon helps you create years of difference between your chronological age and biological age so that you stay healthy today and delay the onset of age-related conditions. Read the scientific articles here."
+    },
+    {
+      "type": "checkbox",
+      "id": "text_on_left",
+      "label": "Text On Left",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "5-Day Fasting Nutrition"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "Url",
+          "default": "#shop-programs"
+        },
+        {
+          "type": "text",
+          "id": "bg_color",
+          "label": "Bg Color",
+          "default": "bg-[#77A117] hover:bg-[#77A117]"
+        },
+        {
+          "type": "text",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "text-white"
+        }
+      ]
+    },
+    {
+      "type": "custom_html_array",
+      "name": "Custom Array",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "custom_html",
+          "label": "Custom Html"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Stats  Features V2",
+      "blocks": [
+        {
+          "type": "buttons",
+          "settings": {
+            "title": "5-Day Fasting Nutrition",
+            "url": "#shop-programs",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white"
+          }
+        },
+        {
+          "type": "buttons",
+          "settings": {
+            "title": "Daily Longevity Nutrition",
+            "url": "#shop-products",
+            "bg_color": "bg-[#F7F9FB] hover:bg-[#F7F9FB]",
+            "text_color": "text-black"
+          }
+        }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

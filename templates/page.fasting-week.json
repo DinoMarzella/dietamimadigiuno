@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "e588e54b-3fe6-43b6-ad07-2d5919c8efa3": {
+      "type": "countdown",
+      "blocks": {
+        "template--15759422849205__e588e54b-3fe6-43b6-ad07-2d5919c8efa3-16795895962efcc66a-0": {
+          "type": "content",
+          "settings": {
+            "subheading": "PROLON CHALLENGE 2025",
+            "heading": "Due sfide, un'opportunità unica per tutti!",
+            "heading_size": "h1",
+            "title_tag": "h1",
+            "text": "",
+            "content_alignment": "center"
+          }
+        },
+        "template--15759422849205__e588e54b-3fe6-43b6-ad07-2d5919c8efa3-16795895962efcc66a-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "05",
+            "day": "5",
+            "hour": "00",
+            "minute": "00",
+            "hide_timer": true,
+            "text": "<p>La Fasting challange è inziata</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15759422849205__e588e54b-3fe6-43b6-ad07-2d5919c8efa3-16795895962efcc66a-0",
+        "template--15759422849205__e588e54b-3fe6-43b6-ad07-2d5919c8efa3-16795895962efcc66a-1"
+      ],
+      "settings": {
+        "layout": "hero",
+        "full_width": true,
+        "color_scheme": "3",
+        "background_image": "shopify://shop_images/aaaa.webp",
+        "blur_image": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
+    "d305d170-3939-4d08-a4f0-deea9049cec5": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15759422849205__d305d170-3939-4d08-a4f0-deea9049cec5-16748276830b94edda-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<span class=\"text-white\">Longevity Week</span>",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<style>\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:white;\n  max-width: 600px;\n  margin: 0px auto;\n}\n.day, .hour, .minute, .second {\nfont-size: 3.5rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n</style>\n<div class=\"subtitle_date_banner\">\n<p><span style=\"color:#fff; font-weight:bold;\">Last day to join: April 11</span></p>\n</div>\n<div style=\"max-width:800px; margin: 0px auto\">\n<div class=\"countdown\">\n        <div class=\"container-day\">\n          <h3 class=\"day\">Time</h3>\n          <h3>Day</h3>\n          </div>\n        <div class=\"container-hour\">\n          <h3 class=\"hour\">Time</h3>\n          <h3>Hour</h3>\n          </div>\n        <div class=\"container-minute\">\n          <h3 class=\"minute\">Time</h3>\n          <h3>Minute</h3>\n          </div>\n        <div class=\"container-second\">\n          <h3 class=\"second\">Time</h3>\n          <h3>Second</h3>\n        </div>\n      </div>\n</div>",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15759422849205__d305d170-3939-4d08-a4f0-deea9049cec5-16748276830b94edda-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": -30,
+        "mobile_size": 10,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "6d6e0171-2f6f-429f-a070-4569b0dab298": {
+      "type": "rich-text",
+      "blocks": {
+        "8ee05a52-8f67-4178-a952-cb22d4617bcc": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h3> UTILIZZA IL CODICE SCONTO <span class=\"underline italic text-4xl\">FASTING07</span> PER OTTENERE IL 20% OFF SU PRODOTTI SELEZIONATI\n<br>\n<br>\n<em>Abituati a stare bene e inizia oggi a perseguire i tuoi obiettivi di salute con le fasting challenge di ProLon</em></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "8ee05a52-8f67-4178-a952-cb22d4617bcc"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "92609ce1-44b4-469e-a099-c3de582c7fe6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15759422849205__92609ce1-44b4-469e-a099-c3de582c7fe6-16748281040b211a94-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Cosa sono le Fasting Challenge di ProLon?",
+            "title_tag": "h2",
+            "title_class": ""
+          }
+        },
+        "template--15759422849205__92609ce1-44b4-469e-a099-c3de582c7fe6-16748281040b211a94-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> Che tu sia alle prime armi, un esperto di digiuno,o che tu abbia semlicemente voglia di metterti in gioco con una nuova sfida, abbiamo pensato a tutto per accompagnarti in questa <strong> esperienza di benessere! </strong> </p>\n<br>\nScegli tra le due opzioni e affronta un’esperienza di <strong> digiuno di gruppo </strong> pensata per aiutarti a dare una spinta ai tuoi obiettivi di salute fin da subito."
+          }
+        }
+      },
+      "block_order": [
+        "template--15759422849205__92609ce1-44b4-469e-a099-c3de582c7fe6-16748281040b211a94-0",
+        "template--15759422849205__92609ce1-44b4-469e-a099-c3de582c7fe6-16748281040b211a94-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
+    "modern_custom_html_dm7Hyi": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<style>\n.fw-join-in-step {\nwidth:31%;\n}\n.fw-join-in-step a {\ntext-decoration: none !important;\n}\n.bkg-n {\nbackground-color: #739A4B;\npadding: 10px 15px;\nborder-radius: 25px;\ncolor: #fff\n}\n.fw-join-in-step h4 {\nmargin-top:20px;\n}\n@media only screen and (max-width: 768px)  {\n.fw-join-in-step {\nwidth:100%;\n}\n}\n</style>\n<h2 class=\"text-center\">SCOPRI LE CHALLENGE DI LUGLIO</h2>\n<div class=\"flex-box jc-center columngap-4 rowgap-30 align-items-center justify-evenly \n text-center\">\n<div class=\"fw-join-in-step\">\n<div>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pfc-2025-img-1500x1500.webp?v=1740147938\" title=\"Beginner Fasting Challange\">\n<h3>Beginner Fasting Challenge</h3>\n<p>Il primo passo verso il digiuno intermittente</p>\n<p><b>QUANDO?</b><br>\n07 Luglio - 11 Luglio </p></div>\n</div>\n<div class=\"fw-join-in-step\">\n<div>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/bfc-2025-img-1500x1500.webp?v=1740147938\" title=\"Beginner Fasting Challange\">\n<h3>ProLon Fasting Challenge</h3>\n<p>L'esperienza completa con la Dieta Mima Digiuno</p>\n<p><b>QUANDO?</b><br>\n07 Luglio - 11 Luglio </p></div>\n</div>\n</div>"
+      }
+    },
+    "7aae3722-5a41-4784-b919-32cbb4b644b7": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "template--15759422849205__7aae3722-5a41-4784-b919-32cbb4b644b7-1674828292fc5f6b29-1": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"fw-sign-up\" style=\"margin-top:50px\" class=\"text-center\">\n<h2>Join in and get 15% OFF!</h2>\n<h3> Promotional is expired</h3>\n<h4>Sign up to be notified when the next Fasting Week takes place</h4>\n<div class=\"klaviyo-form-RtEW5g\"></div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15759422849205__7aae3722-5a41-4784-b919-32cbb4b644b7-1674828292fc5f6b29-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "featured_collection_KBGxmg": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Scopri i prodotti perfetti per partecipare alle challenge di Maggio!",
+        "home_featured_products": "challenge-products",
+        "count": 3,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "d02839c5-336d-44ee-8069-0eac9c937d8e": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<style>\n.fw-join-in-step {\nwidth:31%;\n}\n.fw-join-in-step a {\ntext-decoration: none !important;\n}\n.bkg-n {\nbackground-color: #739A4B;\npadding: 10px 15px;\nborder-radius: 25px;\ncolor: #fff\n}\n.fw-join-in-step h4 {\nmargin-top:20px;\n}\n@media only screen and (max-width: 768px)  {\n.fw-join-in-step {\nwidth:100%;\n}\n}\n</style>\n<h2 class=\"text-center\">Come partecipare</h2>\n<p class=\"text-center\">PASSO PER PASSO</p>\n<div class=\"flex-box jc-center columngap-4 rowgap-30 align-items-center text-center\">\n<div class=\"fw-join-in-step\" style=\"background-color: #F5F7F2; padding: 20px; border-radius: 20px\">\n<a href=\"https://prolon.it/discount/FASTING05?redirect=/products/prolon-5-day\">\n<p><span class=\"bkg-n\">1</span></p>\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/buy-prolon-vector-wb-800x800.png?v=1679586147\" title=\"\">\n<h4>Ordina il tuo kit ProLon Dieta Mima Digiuno o il Beginner Bundle prima dell'inizio della FW</h4>\n<p>Utilizza il coupon FASTING07 per uno sconto esclusivo al checkout <br></p></a>\n</div>\n<div class=\"fw-join-in-step\" style=\"background-color: #F5F7F2; padding: 20px; border-radius: 20px\">\n<a href=\"https://www.instagram.com/channel/AbbxSEs_OMLOuiT-/?igsh=MTVjcXZ2ZHRhNXl4Ng==\" target=\"_blank\">\n<p><span class=\"bkg-n\">2</span></p>\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Sign-in-our-FB-group-vector-wb-750x500.png?v=1679586147\" title=\"\">\n<h4>Unisciti al <br>gruppo Instagram </h4>\n<p>Condividi la tua esperienza con <br>altri ProLoners</p></a>\n</div>\n<div class=\"fw-join-in-step\" style=\"background-color: #FEF3E4; padding: 20px; border-radius: 20px\">\n<a href=\"/pages/consulenza-nutrizionale\">\n<p><span class=\"bkg-n\">3</span></p>\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritional-coaching-vector-wb-750x500.png?v=1679586147\" title=\"\">\n<h4>Prenota la tua consulenza  <br>nutrizionale gratuita<br>\n</h4>\n<p>Assistenza<br>durante e dopo i 5 giorni di Mima Digiuno</p></a>\n</div>\n</div>"
+      }
+    },
+    "modern_custom_html_X8kzUk": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "code": "<style>\n#shopify-section-template--15759422849205__main {\ndisplay: none;\n}\n#shopify-section-template--15759422849205__4748b406-7171-4e46-a397-4cf9bee76905 .index-section {\nbackground-color: #fffcf7;\n    padding: 2% 0px;\nmargin-top: 50px;\n}\n.no-margin h2 {\n    margin-top: 0px;\n    margin-bottom: 0px;\n    font-size: calc(var(--typeHeaderSize)*0.65);\n}\n}\n.column2 {\n    float: left;\n    width: 43%;\n    padding: 1%;\n}\n.column4 {\n    float: left;\n    width: 25%;\n    padding: 2%;\n}\n.prln-team-inner h3 {\n    margin-top: 20px;\n    margin-bottom: 5px;\n    font-size: calc(var(--typeHeaderSize)*0.5);\n}\n.prln-team-inner h6 {\n    margin-top: 0px;\n    margin-bottom: 20px;\n    font-size: calc(var(--typeHeaderSize)*0.3);\n}\n@media only screen and (max-width: 768px)  {\n.column4 {\n    width: 100%;\n    padding: 2%;\n}\n}\n.footer__section.footer__section--border {\n  display: none;\n}\n</style>\n<div class=\"scientific-team-section\">\n<div class=\"no-margin\">\n<center>\n<div class=\"enlarge-text\"><p>Assistenza Nutrizionale<br></div>\n<h2 class=\"no-margin\">I nostri esperti di Mima Digiuno</h2>\n</center>\n</div>\n<div class=\"row\">\n<div class=\"column4 prln-team-inner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0001_Carmen_Loverso.jpg\" style=\"width: 400px;\"><h3>Dott.ssa Carmen Loverso</h3>\n<h6>Biologa Nutrizionista</h6>\n<p>Laureata magistrale dal 2017 in Alimentazione e Nutrizione Umana, ama praticare sport e ed è appassionata di cucina salutare. Per Carmen, Longevità significa amare l'unico posto in cui si vivrà per sempre: il proprio corpo.</p>\n</div>\n<div class=\"column4 prln-team-inner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0003_Benedetta_Zenobi.jpg\" style=\"width: 400px;\"><h3>Dott.ssa Benedetta Zenobi</h3>\n<h6>Biologa Nutrizionista</h6>\n<p>Laureata magistrale dal 2018 in Alimentazione e Nutrizione Umana, appassionata di cucina naturale. Per Benedetta, Longevità significa mangiare salutare, pensare positivo a vivere in salute.</p>\n</div>\n<div class=\"column4 prln-team-inner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/Nutrizionista03.jpg?v=1740147127\" style=\"width: 400px;\"><h3>Dott.ssa Alessia Migliore</h3>\n<h6>Biologa Nutrizionista</h6>\n<p>Laureata magistrale dal 2021 in biologia applicata alle scienze della nutrizione e futura naturopata. Appassionata di nutrizione e benessere a 360 gradi. Per Alessia longevità significa avanzare con l’età in salute e rallentare l’invecchiamento biologico naturale invertendo l’orologio biologico.</p>\n</div>\n<div class=\"column4 prln-team-inner\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/Nutrizionista04.jpg?v=1740147126\" style=\"width: 400px;\"><h3>Dott.ssa Giulia Trevisan</h3>\n<h6>Biologa Nutrizionista</h6>\n<p>Biologa nutrizionista dal 2022, con esperienza nel campo del diabete e un forte interesse per l'alimentazione sana e il movimento. Crede che la longevità sia il risultato di scelte quotidiane consapevoli che ci permettono di vivere a lungo, preservando vitalità, benessere e qualità della vita.</p>\n</div>\n</div>\n</div>\n</div>"
+      }
+    },
+    "34d1c0e6-5248-4627-9e1d-c99b5990a219": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "GIORNO 1",
+            "title": "Transizione stato di mima digiuno",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Transizione del corpo in uno stato di digiuno; in questa fase il corpo brucia i grassi e può cominciare il processo di pulizia cellulare.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_1.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 2",
+            "title": "Combustione grassi e chetosi",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "La combustione dei grassi aumenta, contribuendo all'inizio della chetogenesi (produzione di chetoni). Alla fine del secondo giorno (48 ore dall'inizio), può verificarsi la chetosi.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_2.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "a6885bad-68a8-463b-80be-9a222e334076": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 3",
+            "title": "Autofagià / Pulizia Cellulare",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Inizia la pulizia cellulare (autofagia). Aumenta la combustione dei grassi e la produzione/utilizzo dei chetoni.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_3.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "dcba6557-5ea2-4947-9642-1ba6c2ac1c71": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "GIORNO 4",
+            "title": "Rinnovamento Cellulare",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Pulizia/rinnovo cellulare; la combustione dei grassi continua. Le cellule si trasformano in versioni più giovani di se stesse. Sei nel tratto finale.You're in the final stretch.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_4.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "2e378088-65e1-4db9-8913-b0a586089b09": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 5",
+            "title": "Rinnovamento &amp; Cambiamento",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Digiuno Completato, il rinnovamento cellulare continua anche oltre il giorno 5. Può verificarsi il fenomeno della chetosi prolungato.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno5.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-0",
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-1",
+        "a6885bad-68a8-463b-80be-9a222e334076",
+        "dcba6557-5ea2-4947-9642-1ba6c2ac1c71",
+        "2e378088-65e1-4db9-8913-b0a586089b09"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "height": 750,
+        "height_mobile": 490,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "e77f697a-0f27-461f-93ce-fc1ff7da3ccb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15759422849205__e77f697a-0f27-461f-93ce-fc1ff7da3ccb-16748276830b94edda-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "ProLon Challenge Italia",
+            "title": "Perché partecipare?",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Le motivazioni principali sono di tipo psico-emotivo. Affrontare l'esperienza in comunità rende tutto più facile. È possibile condividere costantemente con gli altri ProLoner e sono le nostre nutrizioniste tutte le domande o le curiosità che possono sorgere durante il programma di ProLon Mima Digiuno e l'utilizzo degli altri prodotti ProLon.\n<br>\nRiceverai GRATUITAMENTE un supporto nutrizionale da parte dei nostri nutrizionisti.",
+            "link": "shopify://products/beginner-bundle",
+            "link_text": "ACQUISTA IL BEGINNER BUNDLE",
+            "link_2": "shopify://products/prolon-5-day",
+            "link_text_2": "ACQUISTA PROLON DIETA MIMA DIGIUNO",
+            "color_accent": "#f7931d",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/Fasting-Diet-New_d78289e8-5ed8-4a07-8645-ca6d9ca03b46.webp",
+            "overlay_opacity": 2,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15759422849205__e77f697a-0f27-461f-93ce-fc1ff7da3ccb-16748276830b94edda-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 30,
+        "mobile_size": 90,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e588e54b-3fe6-43b6-ad07-2d5919c8efa3",
+    "d305d170-3939-4d08-a4f0-deea9049cec5",
+    "6d6e0171-2f6f-429f-a070-4569b0dab298",
+    "92609ce1-44b4-469e-a099-c3de582c7fe6",
+    "modern_custom_html_dm7Hyi",
+    "7aae3722-5a41-4784-b919-32cbb4b644b7",
+    "featured_collection_KBGxmg",
+    "d02839c5-336d-44ee-8069-0eac9c937d8e",
+    "modern_custom_html_X8kzUk",
+    "34d1c0e6-5248-4627-9e1d-c99b5990a219",
+    "e77f697a-0f27-461f-93ce-fc1ff7da3ccb"
+  ]
+}

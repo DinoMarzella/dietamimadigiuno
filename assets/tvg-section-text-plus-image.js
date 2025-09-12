@@ -1,0 +1,7 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[946],{571:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{var traversal=__webpack_require__(315)
+;var init_section=__webpack_require__(7);const isPresent=t=>void 0!==t&&null!==t;const isDefined=t=>void 0!==t;const isNotNull=t=>null!==t;const isHTMLElement=t=>t instanceof HTMLElement
+;const isHTMLIFrameElement=t=>t instanceof HTMLIFrameElement;(0,init_section.initSection)(".js-text-plus-image",(section=>{const content=(0,traversal.findOneElement)(section,".js-text-plus-image-content")
+;const text=null===content||void 0===content?void 0:content.innerHTML;const maxHeight=186;if(!isHTMLElement(content))return{unload:null};if(window.innerWidth<768){console.log("mobile");var _text_length
+;if(null!==(_text_length=null===text||void 0===text?void 0:text.length)&&void 0!==_text_length?_text_length:0>maxHeight){content.innerHTML=`${null===text||void 0===text?void 0:text.substring(0,maxHeight)}...<u>see more</u>`
+;content.addEventListener("click",(()=>{content.innerHTML=null!==text&&void 0!==text?text:""}))}}return{unload:null}}))}},__webpack_require__=>{var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId)
+;__webpack_require__.O(0,[685],(()=>__webpack_exec__(571)));var __webpack_exports__=__webpack_require__.O()}]);

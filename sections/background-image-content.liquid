@@ -1,0 +1,50 @@
+<style>
+
+  {{section.settings.content_style}}
+</style>
+
+<div class="custom-section {{section.settings.custom_class}}">
+
+  {{section.settings.content}}
+</div> 
+{% schema %}
+{ 
+  "name": "BG Image with Content",
+  "class": "index-section-background-image-content",
+  "settings": [
+  {  
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+  },  
+  {   
+    "type": "text",
+    "id": "custom_class",
+    "label": "Custom Section Class"
+  },
+  {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+  },
+    {
+      "type": "liquid",
+      "id": "content",
+      "label": "Content"
+ 
+    },
+    {
+      "type": "liquid",
+      "id": "content_style",
+      "label": "Content Style"
+
+    }
+  ], 
+  "presets": [
+    { 
+      "name": "BG Image with Content",
+      "category": "Image"
+    }
+  ]
+} 
+{% endschema %}

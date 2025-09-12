@@ -1,0 +1,346 @@
+<script>
+  $(document).ready(function () {
+    if ($(window).width() > 768) {
+      $('.slider-container-defy').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: $('.prev-slide-defy'),
+        nextArrow: $('.next-slide-defy'),
+        responsive: [
+          {
+            breakpoint: 768, // Mobile breakpoint
+            settings: {
+              slidesToShow: 1, // Show 1 image on mobile
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    }
+  });
+</script>
+<style>
+  .slider-container-defy .slick-track {
+    {% comment %} display: flex;
+    align-items: stretch;
+    justify-content: start;
+    gap: 23px; {% endcomment %}
+  }
+  .slider-container-defy-main .slick-arrow{
+    {% comment %} top: unset !important;
+    transform: unset !important; {% endcomment %}
+  }
+  {% comment %} .slick-track {
+    display: flex;
+    align-items: stretch;
+  } {% endcomment %}
+
+  {% comment %} .slick-slide {
+    height: auto;
+    flex: 1;
+  } {% endcomment %}
+.text-box {
+        position: absolute;
+        top: 35%;
+        left: 68%;
+        transform: translateX(-50%);
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        .text-box {
+            width: 90%; /* Maggiore larghezza su schermi più piccoli */
+            padding: 10px;
+        }
+    }
+</style>
+ <div id="{{ section.settings.section_id }}">
+<div class="border-b border-[#5D7E11] w-full md:hidden text-[24px] px-[20px] py-[25px] bg-white flex justify-between items-center tab-testimonial-header" >
+  <h2 class="text-start text-[16px] font-[600]">
+    {{ section.settings.main_heading }}
+  </h2>
+  <div class="flex items-center justify-center ">
+    <span class="pr-[7px] text-[14px] font-bold">Open</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+      <path d="M1 7L6 12L11 7" stroke="#5D7E11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<section class="bg-[#F3F3F2] slider-container-defy-main tab-testimonial-content hidden md:block">
+  <div class="max-w-[1500px] mx-auto px-6 text-black py-[40px] md:py-[80px] relative">
+    <div class="text-center">
+      <h1 class="text-[21px] md:text-[34px] xl:text-[40px] leading-[1.2]">{{ section.settings.main_heading }}</h1>
+      <p class=" text-[#323D12] leading-[1.2] md:text-[20px] text-[15px] pt-[4px]">
+        {{ section.settings.sub_heading }}
+      </p>
+    </div>
+    <div class="w-full max-w-[1200px] mx-auto ">
+      <div class="w-full flex lg:flex-row flex-col items-center justify-between xl:pt-[60px] pt-[20px] overflow-visible gap-[20px] md:gap-[40px]">
+        <div class="w-full lg:w-[57%] relative">
+          <div class="cursor-pointer prev-slide-defy left-[-20px] !z-10">
+            <svg
+              class="md:w-[80px] w-[60px] h-[60px] md:h-[80px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 80 80"
+              fill="none"
+            >
+              <g filter="url(#filter0_d_203_2291)">
+                  <rect x="69" y="65" width="50" height="50" rx="25" transform="rotate(-180 69 65)"
+                      fill="white" fill-opacity="0.7" shape-rendering="crispEdges"></rect>
+              </g>
+              <path d="M48 32.3667L40.583 40L48 47.65L45.7166 50L36 40L45.7166 30L48 32.3667Z"
+                  fill="#5D7E11"></path>
+              <defs>
+                  <filter id="filter0_d_203_2291" x="0" y="0" width="80" height="80"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                      <feColorMatrix in="SourceAlpha" type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                      </feColorMatrix>
+                      <feOffset dx="-4"></feOffset>
+                      <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
+                      <feComposite in2="hardAlpha" operator="out"></feComposite>
+                      <feColorMatrix type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                      <feBlend mode="normal" in2="BackgroundImageFix"
+                          result="effect1_dropShadow_203_2291"></feBlend>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_203_2291"
+                          result="shape"></feBlend>
+                  </filter>
+              </defs>
+            </svg>
+          </div>
+          <div class="slider-container-defy">
+            {%- for block in section.blocks -%}
+              <div class="relative flex items-center justify-center ">
+                <img
+                  class="w-full xl:max-w-[730px] mx-auto cursor-pointer"
+                  src="{{ block.settings.main_image | img_url: '2000x' }}"
+                  alt="{{ section.settings.main_heading | strip_html }}"
+                >
+                {% if block.settings.text_box != "" %}
+                <div class="text-box">
+                  <p class="h4">{{ block.settings.title_box }}</p>
+                  <p>{{ block.settings.text_box }}</p>
+                </div>
+                  {% endif %}
+              </div>
+            {%- endfor -%}
+          </div>
+          <div class="right-0 !z-10 cursor-pointer next-slide-defy">
+            <svg
+              class="md:w-[80px] w-[60px] h-[60px] md:h-[80px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 80 80"
+              fill="none"
+            >
+              <g filter="url(#filter0_d_203_2288)">
+                  <rect x="19" y="15" width="50" height="50" rx="25" fill="white" fill-opacity="0.7"
+                      shape-rendering="crispEdges"></rect>
+              </g>
+              <path d="M40 47.6333L47.417 40L40 32.35L42.2834 30L52 40L42.2834 50L40 47.6333Z"
+                  fill="#5D7E11"></path>
+              <defs>
+                  <filter id="filter0_d_203_2288" x="0" y="0" width="80" height="80"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                      <feColorMatrix in="SourceAlpha" type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                      </feColorMatrix>
+                      <feOffset dx="-4"></feOffset>
+                      <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
+                      <feComposite in2="hardAlpha" operator="out"></feComposite>
+                      <feColorMatrix type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                      <feBlend mode="normal" in2="BackgroundImageFix"
+                          result="effect1_dropShadow_203_2288"></feBlend>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_203_2288"
+                          result="shape"></feBlend>
+                  </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="lg:w-[40%] lg:pt-0 pt-[30px]">
+          <div
+            class="max-w-[570px] border border-[#5D7E11] mx-auto md:rounded-[30px] rounded-[10px] overflow-hidden "
+          >
+            <div class=" bg-[#F1F5ED] flex flex-col items-center justify-center">
+              <h3 class="md:text-[24px] font-bold text-[20px]">{{ section.settings.sub_block_heading }}</h3>
+              <div class="w-full px-3 py-6 bg-white md:py-14">
+              <h2 class="text-[21px] md:text-[34px] xl:text-[40px] leading-[1.2] text-center ">
+                {{ section.settings.sub_block_main_text }}
+              </h2></div>
+            </div>
+            <div class="xl:px-[50px] px-[20px] pb-[20px] xl:pt-0 pt-2  xl:pb-[50px] bg-white">
+              <p class="md:text-[18px] text-[16px] text-center">{{ section.settings.description_text }}</p>
+              <div class="flex flex-col md:pt-[30px] pt-[20px] gap-2 md:gap-[10px] justify-center md:justify-start">
+                <div class="w-full py-1">
+                  <a
+                    class="inline-block md:h-[55px] h-[45px] md:text-[18px] text-[16px] flex justify-center items-center py-[10px] w-full leading-4 !font-[600] text-center rounded-[6px] shadow-sm bg-[#78A14A] hover:bg-[#1F4036] !text-white border border-gray-300"
+                    href="{{ section.settings.first_button_link }}"
+                  >
+                    {{ section.settings.first_button_text }}
+                  </a>
+                </div>
+                <div class="w-full py-1">
+                  <a
+                    class="inline-block md:h-[55px] h-[45px] md:text-[18px] text-[16px] flex justify-center items-center py-[10px] w-full leading-4 !font-[600] text-center rounded-[6px] shadow-sm bg-[#FFFFFF] hover:bg-[#F7F9FB] text-black border border-[#5D7E11]"
+                    href="{{ section.settings.second_button_link }}"
+                  >
+                    {{ section.settings.second_button_text }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    {% comment %}
+      <div class="absolute md:w-[50%] xl:w-[780px] lg:ml-[-30px] xl:ml-[-50px] w-[90%] top-[50%]">
+        <div class="flex items-center justify-between"></div>
+      </div>
+    {% endcomment %}
+  </div>
+</section>
+</div> 
+{% schema %}
+{
+  "name": "Defy Bioage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+      
+    }
+    ,
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Defy Aging by Reversing Your Bioage"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "Here Is What to Expect During Your 5-Day Prolon Program Fast"
+    },
+    {
+      "type": "text",
+      "id": "sub_block_heading",
+      "label": "Sub Block Heading",
+      "default": "Reduce Bioage"
+    },
+    {
+      "type": "text",
+      "id": "sub_block_main_text",
+      "label": "Sub Block Main Text",
+      "default": "2.5 Years!"
+    },
+    {
+      "type": "textarea",
+      "id": "description_text",
+      "label": "Description Text",
+      "default": "Bioage score shows that 3 cycles of Prolon 5-Day Fasting Program decrease bioage by 2.5 years.\nProlon 5-Day provides everything you need for a complete 5-day cellular rejuvenating fast, with food to nourish your body.\nDon't wait! Start reversing your age today!"
+    },
+    {
+      "type": "text",
+      "id": "first_button_text",
+      "label": "First Button Text",
+      "default": "Shop All Products"
+    },
+    {
+      "type": "url",
+      "id": "first_button_link",
+      "label": "First Button Link"
+    },
+    {
+      "type": "text",
+      "id": "second_button_text",
+      "label": "Second Button Text",
+      "default": "Defy Aging"
+    },
+    {
+      "type": "url",
+      "id": "second_button_link",
+      "label": "Second Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Image"
+        },
+        {
+          "type": "text",
+          "id": "title_box",
+          "label": "Title",
+        },
+        {
+          "type": "text",
+          "id": "text_box",
+          "label": "Text",
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Defy Bioage"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  $(document).ready(function () {
+    $('.tab-testimonial-header').click(function () {
+      // Toggle the visibility of the content section
+      $('.tab-testimonial-content').toggleClass('hidden');
+
+      // Find the span element to change the text
+      var $span = $(this).find('span');
+      var $chevron = $(this).find('svg path');
+
+      // Check if the content is visible
+      if ($span.text() == 'Open') {
+        $('.slider-container-defy').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          prevArrow: $('.prev-slide-defy'),
+          nextArrow: $('.next-slide-defy'),
+          responsive: [
+            {
+              breakpoint: 768, // Mobile breakpoint
+              settings: {
+                slidesToShow: 1, // Show 1 image on mobile
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+        // Change the text to 'Close' and rotate the chevron to point up
+        $span.text('Close');
+        $chevron.attr('d', 'M1 12L6 7L11 12'); // Change chevron to up
+      } else {
+        $('.slider-container-defy').slick('unslick');
+
+        // Change the text back to 'Open' and rotate the chevron to point down
+        $span.text('Open');
+        $chevron.attr('d', 'M1 7L6 12L11 7'); // Change chevron to down
+      }
+    });
+  });
+</script>

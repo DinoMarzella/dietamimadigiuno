@@ -1,0 +1,150 @@
+
+.registration-custom-content{
+    h1{
+    font-size: 34px ; text-align: center;
+    color: #1755ba;
+    margin: 0px;
+    
+    }
+    div.text-content{
+        h3{
+    color: #91b6d3;
+    font-size: 20px;text-align: center;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    margin: 20px;
+    margin-bottom: 30px;
+    }
+    .custom-membership_form.custom-membership_form{
+      h1.header {
+        display: none;
+        }
+.form-group {
+    margin-bottom: 20px;
+    // width: 49%;
+}
+select{
+    background: none;
+}
+input[type="text"],  input[type="search"],  input[type="password"],  input[type="email"],  input[type="file"],  input[type="number"],  input[type="tel"],  textarea,select
+{
+    max-height: 50px;
+    height: 40px;
+}
+.radio-group,.checkbox-group{
+    label{
+        font-weight: 400;
+    }
+}
+
+
+      .stick-top {
+    position: sticky;
+    top: 90px;
+    background: white;
+    height: 50px;
+/*     border: 1px solid; */
+    padding-top: 10px;
+    z-index: 999;
+    /* border-bottom: 1px solid #d8d8d8; */
+}
+@media(max-width:767px){
+    .stick-top {
+        top:60px;
+        
+    }
+}
+hr.aaadivider {
+    display: none;
+}
+
+.membership-submit {
+    position: sticky;
+    bottom: 0;
+}
+
+.form-group.membership-submit {
+    position: sticky;
+    bottom: 0px;
+    width: 100%!important;
+    padding: 20px 0px;
+    background: white;
+    z-index: 9999;
+}
+      
+      
+    }
+}
+.custom-membership_form .form-group.membership-submit .loader {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    right: 0px;
+}
+ 
+
+.custom-membership_form .success {
+    position: relative;
+}
+
+@media(min-width:767px){
+.registration-custom-content{
+    padding-top: 50px;
+    h1{
+    font-size: 50px ;
+    color: #1755ba;
+    margin: 0px;
+    
+    }
+    div.text-content{
+        h3{
+    color: #91b6d3;
+    font-size: 30px;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    margin: 20px;
+    margin-bottom: 30px;
+    }
+    .custom-membership_form.custom-membership_form{
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        h1.header {
+        display: none;
+        }
+        &>div{
+            width:100%;
+        }
+.form-group {
+    margin-bottom: 20px;
+    width: 49%;
+}
+select{
+    background: none;
+}
+input[type="text"],  input[type="search"],  input[type="password"],  input[type="email"],  input[type="file"],  input[type="number"],  input[type="tel"],  textarea,select
+{
+    max-height: 50px;
+    height: 50px;
+}
+.radio-group,.checkbox-group{
+    label{
+        font-weight: 400;    display: inline;
+ 
+    }
+}
+.field-text-1603819509034.form-group,.field-text-1603877353181{
+    width: 100%;
+}
+.field-text-1603819292681,.field-text-1603819313360 ,.field-text-1603819331151{
+    width: 32%;
+}
+
+    }
+}
+}

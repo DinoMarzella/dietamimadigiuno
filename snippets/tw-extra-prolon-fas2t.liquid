@@ -1,0 +1,597 @@
+
+
+
+<div class="{% if mobile %}block lg:hidden {% else %}hidden lg:block {% endif %}">
+  {%- comment -%}
+     <div class="max-w-full lg:max-w-[70%] mx-auto">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Fastbar_Smart_Way.png?v=1666353353"
+        class=" rounded-lg"
+      >
+    </div>
+  {%- endcomment -%}
+  <div class="grid grid-cols-1 lg:grid-cols-2  lg:gap-4 mt-4 m:max-w-[90%] m:mx-auto">
+    <img
+      loading="lazy"
+      src="https://cdn.shopify.com/s/files/1/0569/1654/1632/files/NUTRIZIONE_DI_PRECISIONE_SCIENTIFICAMENTE_TESTATA.png?v=1673437085"
+      class=" rounded-lg"
+    >
+
+    <div class="overflow-hidden relative rounded-lg bg-prolon_primary">
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe
+            class="m:min-h-500"
+            src="https://player.vimeo.com/video/799071452?h=7c18ea9b73&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%22"
+            frameborder="0"
+            allowfullscreen=""
+            data-dashlane-frameid="19690"
+          ></iframe>
+          <div style="padding:56.25% 0 0 0;position:relative;"></div><script src="https://player.vimeo.com/api/player.js"></script>
+        
+        </div>
+      </div>
+    </div>
+
+    <img
+      loading="lazy"
+      src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_grid_image_2_1_600x.png?v=1666382471"
+      class=" rounded-lg"
+    >
+    <div class="overflow-hidden relative rounded-lg bg-prolon_primary">
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe
+            class="m:min-h-500"
+            src="https://player.vimeo.com/video/799069681?h=8eee770d14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%22"
+            frameborder="0"
+            allowfullscreen=""
+            data-dashlane-frameid="19690"
+          ></iframe>
+          <div style="padding:56.25% 0 0 0;position:relative;"></div><script src="https://player.vimeo.com/api/player.js"></script>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap {%if mobile  %} only-mobile {% endif %}" v-cloak>
+    <div class="py-8 w-full">
+      <div class="md:max-w-2xl ml-auto">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full single-accordion"
+            :class="
+              {
+                 'is-open': isAccordionOpen.includes(1)
+              }
+            "
+          >
+            <div class="pb-5 border-b border-gray-300">
+              <div class="flex flex-wrap -m-1.5">
+                <div class="w-auto p-1.5">
+                  <svg
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="flex-1 p-1.5">
+                  <h3
+                    class=" font-avenir font-semibold leading-normal cursor-pointer text-[17px]"
+                    @click="toggleAccordion(1)"
+                    :class=" 
+                      {
+                         'mb-4': isAccordionOpen.includes(1)
+                      }
+                    "
+                  >
+                    Cosa trovi nel Kit?
+                  </h3>
+                  <div
+                    class="mb-5 text-gray-600 font-medium leading-relaxed"
+                    :class="
+                      {
+                          'block': isAccordionOpen.includes(1),
+                          'hidden': !isAccordionOpen.includes(1)
+                      }
+                    "
+                  >
+                    <div class="text-black rte">
+        
+               
+                      <style>
+        .inside-img { margin-right: 10px; border-radius: 8px;}</style>
+        <meta charset="utf-8">
+        <p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p>
+        <p><strong>Gusto originale:</strong>&nbsp;Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro&nbsp;<strong>— oppure —</strong></p>
+        <p><strong>Gusto nuovo sapore:</strong>&nbsp;Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/soup1_160x160.png?v=1667751467" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>Zuppe:</strong>&nbsp;Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-lbar.png?v=1667838709%20" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>Barrette alle noci:</strong>&nbsp;Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-snacks.png?v=1667838709" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>Snacks:</strong>&nbsp;Snacks&nbsp;come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-Supplements.png?v=1667837500" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>Integratori:</strong>&nbsp;Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Ldrink.png?v=1667837499" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>L-Drink:</strong>&nbsp;Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p>
+        <p><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Tea.png?v=1667837499" class="inside-img" alt="" style="float: left;" width="58" height="46"><strong>Tisane:</strong>&nbsp;Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>
+                    
+              </div> 
+                  </div>
+                </div>
+                <div class="w-auto p-1.5">
+                  <a>
+                    <svg
+                      class="relative top-1"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="
+                        {
+                            'block': isAccordionOpen.includes(1),
+                            'hidden': !isAccordionOpen.includes(1)
+                        }
+                      "
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z" fill="black"></path>
+                    </svg>
+                    <svg
+                      :class="
+                        {
+                            'block': !isAccordionOpen.includes(1),
+                            'hidden': isAccordionOpen.includes(1)
+                        }
+                      "
+                      class="relative top-1"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z" fill="black"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full single-accordion"
+            :class="
+              {
+                 'is-open': isAccordionOpen.includes(2)
+              }
+            "
+          >
+            <div class="block border-b border-gray-300">
+              <div class="flex flex-wrap justify-between py-7 -m-1.5">
+                <div class="flex-1 p-1.5">
+                  <div class="flex flex-wrap -m-1.5">
+                    <div class="w-auto p-1.5">
+                      <svg
+                        class="relative top-1"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1 p-1.5">
+                      <h3 
+                        class="font-avenir font-semibold leading-normal cursor-pointer text-[17px]"
+                        @click="toggleAccordion(2)"
+                        :class="
+                          {
+                             'mb-4': isAccordionOpen.includes(2)
+                          }
+                        "
+                      >
+                        
+      Perchè aggiungere ProLon alla tua vita?
+
+                      </h3>
+                      <div
+                        class="w-full"
+                        :class="
+                          {
+                              'block': isAccordionOpen.includes(2),
+                              'hidden': !isAccordionOpen.includes(2)
+                          }
+                        "
+                      >
+                        <div class="collapsible-content__inner rte">
+        
+                          <p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato. </p>
+                          <p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong>
+                          <a href="https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>. </strong></p><p>Il digiuno prolungato (>2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina. </p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno "stress positivo" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità. </p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule. </p>
+                          
+                        
+                  </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-auto p-1.5">
+                  <svg
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    :class="
+                      {
+                          'block': isAccordionOpen.includes(2),
+                          'hidden': !isAccordionOpen.includes(2)
+                      }
+                    "
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z" fill="black"></path>
+                  </svg>
+                  <svg
+                    :class="
+                      {
+                          'block': !isAccordionOpen.includes(2),
+                          'hidden': isAccordionOpen.includes(2)
+                      }
+                    "
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z" fill="black"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full single-accordion"
+            :class="
+              {
+                 'is-open': isAccordionOpen.includes(3)
+              }
+            "
+          >
+            <div class="block border-b border-gray-300">
+              <div class="flex flex-wrap justify-between py-7 -m-1.5">
+                <div class="flex-1 p-1.5">
+                  <div class="flex flex-wrap -m-1.5">
+                    <div class="w-auto p-1.5">
+                      <svg
+                        class="relative top-1"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1 p-1.5">
+                      <h3
+                        class="font-avenir font-semibold leading-normal cursor-pointer text-[17px]"
+                        @click="toggleAccordion(3)"
+                        :class="
+                          {
+                             'mb-4': isAccordionOpen.includes(3)
+                          }
+                        "
+                      >
+                      
+      Informazioni Nutrizionali
+
+                      </h3>
+                      <div
+                        class="mb-5 text-gray-600 font-medium leading-relaxed"
+                        :class="
+                          {
+                              'block': isAccordionOpen.includes(3),
+                              'hidden': !isAccordionOpen.includes(3)
+                          }
+                        "
+                      >
+                        <div class="collapsible-content__inner rte">
+        
+              
+                          <style><!--
+            .acc-site-new{
+              position:relative;
+              margin-bottom:25px;
+            }
+            .accordion-site {
+              min-height: 0;
+              min-width: 220px;
+              width: 100%;
+              height: 100%;
+              margin: 0px!important;
+            }
+            .accordion-site .ac-label {
+              font-family: 'Harmonia sans';
+              padding: 20px 20px;
+              position: relative;
+              display: block;
+              height: auto;
+              cursor: pointer;
+              color: black;
+              line-height: 33px;
+              font-size: 19px;
+              background: #F6F6F6;
+              margin: 0px;
+              text-align: center;
+            }
+            
+            .accordion-site input + .ac-label  {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+            .accordion-site input.ac-input {
+              display: none;
+            }
+            .accordion-site .article {
+              background: rgb(240, 240, 240);
+              overflow: hidden;
+              height: 0px;
+              max-height: auto;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+            .accordion-site input:checked ~ .article i {
+              -webkit-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out;
+              -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+            }
+            .accordion-site input:checked ~ .article.ac-content {
+              height: auto;
+              background-color:white;
+              padding: 20px 0px;
+            }
+            .accordion-site input:checked ~ .ac-label:after{
+              content:"-"
+            }
+            
+            @media (max-width: 550px) {
+              .accordion-site .ac-label {
+              font-family: 'Harmonia sans';
+              padding: 15px 20px;
+              position: relative;
+              display: block;
+              height: auto;
+              cursor: pointer;
+              color: black;
+              font-size: 12px;
+              background: #F6F6F6;
+            }
+            }
+            
+            .ac-label:after{
+                  content: "+";
+                  width: 1em;
+                  height: 1em;
+                  text-align: center;
+                  transition: all .35s;
+                  font-size: 20px;
+                  font-weight: 400;
+                  font-family: 'Brandon';
+                  position:absolute;
+                  right:10px;
+            }
+            
+            .prolon-acc .accordion {
+                margin:0 auto;
+                max-width: 800px;
+            }
+            
+            .prolon-acc .question {  
+                padding:10px 0px;
+                padding-bottom:20px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                position:relative;
+                font-family:futura;
+                cursor: help;
+                border-bottom:1px solid #d3d3d3;
+                cursor:pointer;
+              text-align:center;
+            }
+            
+            .prolon-acc .question:after {
+                content: "+";
+                color:black;
+              position:absolute;
+              right:20px;
+            }
+            
+            .prolon-acc .question.active:after {
+                content: "-";
+                color:black;
+              position:absolute;
+              right:20px;
+            }
+            
+            .prolon-acc .answer {
+                display: none;
+            }
+            
+            .prolon-acc .answer p{
+              font-family:futura;
+              font-size:16px;
+              font-weight:500;
+            }
+            
+            .prolon-acc .active+.answer {
+                display: block;
+            }
+            .prolon-acc .faqs-title{
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              text-align:center;
+            }
+            .prolon-acc .faqs-title span{
+              font-family:futura;
+              font-size:30px;
+              padding:30px 0px;
+            }
+            .prolon-acc{
+              padding:10px;
+            }
+            .new__prolon_row{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            width:100%;
+            }
+            .section .column6 {
+              width: 100%;
+              float: unset;
+              }.prolon-acc img:hover {
+                transform: scale(1.5);
+                transition: all .31s ease;
+                cursor: pointer;
+                 background:white;
+            z-index: 9;
+                position: relative;
+            }
+            @media(max-width:767px){
+            .new__prolon_row{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            width:100%;
+            }
+            }
+            --></style>
+            <div class="section">
+            <div class="row">
+            <div class="prolon-acc">
+            <div class="accordion">
+            <div class="question active" id="section1">Soups</div>
+            <div class="answer">
+            <div class="row new__prolon_row">
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Vegetable_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Tomato_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Mushroom_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_MinQuinoa_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Minestrone_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/white_bean_soup_SV2.png?v=1626243158"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/black_bean_soup_SV2.png?v=1626243157"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squach_soup_SV2.png?v=1626243158"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squash_quinoa_soup_SV2.png?v=1626243158"></div>
+            </div>
+            </div>
+            <div class="question" id="section2">Snacks</div>
+            <div class="answer">
+            <div class="row new__prolon_row">
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Nut-Based_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/kale_crackers_SV1.png?v=1626242794"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Choco_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/22_PL_Nutrition_Facts-AlmondKale-03.png?v=1641919104"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_Herbs_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_SeaSalt_Nutrition_Facts.png?v=1641376531"></div>
+            </div>
+            </div>
+            <div class="question" id="section3">Drinks</div>
+            <div class="answer">
+            <div class="row new__prolon_row">
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Berry_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Orange_Nutrition_Facts.png?v=1641376531"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Teas_Nutrition_Facts.png?v=1641376531"></div>
+            </div>
+            </div>
+            <div class="question" id="section4">Supplements</div>
+            <div class="answer"> 
+            <div class="row new__prolon_row">
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Ingredients_-_NR1.jpg?v=1650376162"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/NR1_DS1018_-_ProLon.png?v=1650376790"></div>
+            <div class="column6"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Algal_Oil_DS1023_-_ProLon.png?v=1650376790"></div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <script>// <![CDATA[
+            try{
+            $(document).on('click','.question',toggle);
+             
+            function toggle() {
+                this.classList.toggle("active")
+              
+            document.querySelectorAll(".question").forEach(question => {
+                    if (question != this) {
+                        question.classList.remove("active")
+                    }
+                })
+            }
+            
+            }
+            catch(ex){}
+            // ]]></script>
+                         
+                  </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-auto p-1.5">
+                  <svg
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    :class="
+                      {
+                          'block': isAccordionOpen.includes(3),
+                          'hidden': !isAccordionOpen.includes(3)
+                      }
+                    "
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z" fill="black"></path>
+                  </svg>
+                  <svg
+                    :class="
+                      {
+                          'block': !isAccordionOpen.includes(3),
+                          'hidden': isAccordionOpen.includes(3)
+                      }
+                    "
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z" fill="black"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

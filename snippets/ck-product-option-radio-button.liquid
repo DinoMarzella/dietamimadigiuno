@@ -1,0 +1,102 @@
+<div role="radiogroup" v-cloak>
+  <label class="block mb-4 text-sm font-medium text-gray-700 text-label" role="none"
+  
+  >{{- option.name -}}</label> 
+  <div class="relative -space-y-px overflow-hidden bg-white rounded-md" role="none">
+    {% for value in option.values %}
+      {% assign dowValue = value | downcase %} 
+      {% if forloop.first %}
+        {% assign roundedClass = "rounded-tl-md rounded-tr-md" %}
+      {% endif %} 
+      {% if forloop.last %}
+        {% assign roundedClass = "rounded-bl-md rounded-br-md" %}
+      {% endif %} 
+      <div
+        class="relative z-10 flex items-center justify-between p-4 border cursor-pointer {{roundedClass}} md:pl-4 md:pr-6 focus:outline-none subscription-recurring single-radio-option" 
+        :class="{'border-orange-200 bg-orange-50': option{{index}} === '{{ value }}'}"
+        role="radio"
+        {% if dowValue contains 'subscri' %}
+          @click="setOption('option{{index}}','{{value}}')"
+        {% else %} 
+          @click="setOption('option{{index}}','{{ value  }}')"
+        {% endif %}
+      >
+        <span class="flex items-center text-sm"
+          ><span
+            class="flex items-center justify-center w-4 h-4 min-w-[15px] min-h-[15px] border rounded-full"
+            :class="{'bg-prolon_secondary border-transparent': option{{index}} === '{{ value }}'}"
+            aria-hidden="true"
+            > 
+            <span class="rounded-full bg-white w-1.5 h-1.5"></span>
+            </span>
+          <span class="ml-3 text-xs font-bold text-gray-900 md:text-sm">
+            <span class="t -d"
+                 v-html="optionText('option_{{index}}','{{value}}',{{index}})"
+            >
+            
+            </span>
+            <span  
+            class="leading-[1.5] prolon-flavor-text pt-2 pr-1 text-xs md:text-sm font-normal hidden"
+            v-if="optionDescription('option_{{index}}','{{value}}',{{index}})"
+            v-html="optionDescription('option_{{index}}','{{value}}',{{index}})"
+           >
+           </span>
+            <span class="block mt-1 rounded-md shadow-sm isolate" v-if="isSubscriptionOption('{{value}}')">
+              <div class="flex">
+                <div role="radiogroup">
+                  <label
+                    class="text-xs font-light text-label"
+                    role="none"
+                    v-text="`Frequency: ${selected_plan && selected_plan.name?selected_plan.name :''}`"
+                  >
+                  </label>
+                  <div
+                    class="flex mt-2 -space-y-px rounded-md"
+                    role="none"
+                  >
+                    <template v-for="(selling_plan,index) in selling_plans">
+                      <div
+                        class="relative inline-flex items-center px-2 py-2 text-sm font-medium leading-none text-center text-gray-700 bg-white border outline-none md:text-left md:px-8 hover:border-prolon_secondary hover:ring-1 hover:ring-prolon_secondary hover:z-10"
+                        @click="selected_plan = selling_plan"
+                        :class="
+                          {
+                            'border-prolon_secondary !bg-prolon_secondary ring-1 ring-prolon_secondary z-10': selected_plan && selling_plan.id === selected_plan.id, 
+                            'border-gray-300': selected_plan && selling_plan.id !== selected_plan.id,
+                            'rounded-l-md' : index === 0,
+                            'rounded-r-md' : index === selling_plans.length - 1
+                          }
+                        "
+                      >
+                        <span class="flex text-[10px] xl:text-sm "
+                          :class="
+                          {
+                            'text-white': selected_plan && selling_plan.id === selected_plan.id
+                          }"
+
+                          ><span> ${selling_plan && selling_plan.name.replace('Deliver every','')}</span>
+                        </span>
+                      </div>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+            <span
+              class="block pt-2 text-xs font-normal"
+              v-if="isSubscriptionOption('{{value}}')"
+              >Pause, skip, or cancel anytime.
+            </span> 
+          </span></span
+        >
+        <span class="pl-1 ml-6 text-sm text-orange-700 md:ml-0 md:pl-0 md:text-right"
+          >
+          <span class="font-bold text-gray-900 text-md inner-price"  v-text="money(optionPrice('option{{index}}','{{ value  }}'))">
+          </span> 
+          <!-- value {{value }} -->
+          <span v-if="'{{value}}'.includes('Cycle Program')" class="font-bold text-gray-900 text-md" > /mo </span>
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</div>

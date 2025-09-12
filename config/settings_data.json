@@ -1,0 +1,483 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_button": "#56a511",
+    "color_cart_dot": "#56a511",
+    "color_large_image_bg": "#ffffff",
+    "color_header": "rgba(0,0,0,0)",
+    "color_header_text": "#ffffff",
+    "color_footer_text": "#111",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#111",
+    "color_drawer_border": "#dadada",
+    "color_drawer_button": "#56a511",
+    "color_modal_overlays": "#ffffff",
+    "color_image_overlay": "#ffffff",
+    "color_image_overlay_opacity": 0,
+    "color_image_overlay_text_shadow": 0,
+    "font_custom_1": "avenir_next_n4",
+    "type_header_font_family": "avenir_next_n4",
+    "type_base_font_family": "avenir_next_n4",
+    "favicon": "shopify://shop_images/ProLon_133858ab-951d-4a21-92d6-c27f6ab107c9.png",
+    "search_enable": false,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "logo_GKUAPJ": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify://shop_images/prolon-logo-2025.webp",
+              "logo-inverted": "shopify://shop_images/prolon-logo-2025-white_200x_2x_4722de6d-665e-4287-a057-16a6b768f27a.avif",
+              "desktop_logo_width": 200,
+              "mobile_logo_width": 140
+            }
+          },
+          "carousel_zFqCj7": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>ProLon<br/>5-Day</p>",
+              "carousel_url": "shopify://products/prolon-5-day-kit"
+            }
+          },
+          "megamenu_tBdTnK": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "Scienza & Benefici",
+              "megamenu_image": "shopify://shop_images/Component_5.webp",
+              "megamenu_description": "",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_GUmNPx": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "Chi siamo",
+              "megamenu_image": "shopify://shop_images/Nav_-_LBar.png",
+              "megamenu_description": "",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_NwnR8P": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® Kit Dieta Mima Digiuno",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Prolon.png",
+              "megamenu_description": "5 giorni per un benessere duraturo. L'unica DMD scientificamente testata.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_HcikhE": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® Next Gen",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-NextGen.png",
+              "megamenu_description": "Nuove zuppe biologiche pronte da gustare, per una maggiore praticità.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_WUY9Tb": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® ReSet - Kit 1 giorno",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Reset.png",
+              "megamenu_description": "Kit di 1 giorno per mantenere il tuo corpo in uno stato di digiuno.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_3t7qJT": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® Nutrition Bar",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Nutrition-Bar.webp",
+              "megamenu_description": "Mantieni il tuo stato di digiuno con proteine vegetali adatte alla dieta",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_URG8xq": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® Fasting Shake",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Fasting_Shake_copia.webp",
+              "megamenu_description": "Fornisci energia al tuo corpo con fibre prebiotiche senza ingrassare.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_A7gxw4": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "Longevity Protein Bar (12 x 45gr)",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-protein-bar.webp",
+              "megamenu_description": "Una barretta proteica studiata per garantire forza e un invecchiamento sano",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_PxPxkE": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon L-Protein",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-protein.webp",
+              "megamenu_description": "Proteine vegetali di alta qualità per riparare i muscoli e migliorare le prestazioni.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "megamenu_CdcU7z": {
+            "type": "Megamenu",
+            "settings": {
+              "megamenu_type": "ProLon® Crema Spalmabile",
+              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-spread.webp",
+              "megamenu_description": "Ricca di proteine vegetali, grassi sani e pochi carboidrati.",
+              "label_text": "",
+              "megamenu_url": "",
+              "megamenu_text_url": ""
+            }
+          },
+          "carousel_KBz4d4": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>Reset<br/>1-Day Kit </p>",
+              "carousel_url": "shopify://products/reset"
+            }
+          },
+          "carousel_eNzPbK": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>Nutrition<br/>Bars</p>",
+              "carousel_url": "shopify://products/prolon-fasting-bar"
+            }
+          },
+          "carousel_Krh9Vp": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>Longevity<br/>Spread</p>",
+              "carousel_url": "shopify://products/longevity-spread"
+            }
+          },
+          "carousel_GmBThQ": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>L-Biome</p>",
+              "carousel_url": "shopify://products/l-biome"
+            }
+          },
+          "carousel_VmGHK6": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>L-Pill</p>",
+              "carousel_url": "shopify://products/l-pill"
+            }
+          },
+          "carousel_kN3G7g": {
+            "type": "Carousel",
+            "settings": {
+              "carousel_title": "<p>L-Biome<br/>& L-Pill</p>",
+              "carousel_url": "shopify://products/l-biome-l-pill"
+            }
+          },
+          "announcement_8rgHWk": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "<strong>Welcome Summer Promo</strong>: up to 30% off until June 30",
+              "link_text": "",
+              "link": "shopify://collections/summer-promo",
+              "show_on": ""
+            }
+          },
+          "announcement_Anqjmd": {
+            "type": "announcement",
+            "settings": {
+              "text": "Spedizione gratuita su ordini a partire da 99 €",
+              "link_text": "",
+              "link": "shopify://collections/tutti-i-prodotti",
+              "show_on": ""
+            }
+          },
+          "announcement_kgkDRU": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p class=\"flex justify-center\">Acquista ora e paga in 3 rate con Klarna, PayPal o Scalapay senza interessi</p>",
+              "link_text": "",
+              "link": "",
+              "show_on": ""
+            }
+          },
+          "announcement_xAWzLq": {
+            "type": "announcement",
+            "settings": {
+              "text": "<div style=\"text-align: center; font-family: 'Open Sans', sans-serif;\">\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/signature/it-IT/4/5c46dc3e20d18f000126579a/text.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Punteggio Trustpilot Eccellente\">\n  </a>\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/signature/it-IT/4/5c46dc3e20d18f000126579a/stars.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Trustpilot 5 Stelle\">\n  </a>\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/brand/s/4/logo.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Trustpilot Logo\">\n  </a>\n</div>",
+              "link_text": "",
+              "link": "",
+              "show_on": ""
+            }
+          },
+          "countdowntimer_ce9pwE": {
+            "type": "countdowntimer",
+            "disabled": true,
+            "settings": {
+              "show_timer": true,
+              "end_date": "2024-11-01",
+              "left_text": "<span style=\"letter-spacing: 1px; font-weight: 600;\" class=\"text-black\">Discover the new ProLon 5 Day Next Gen at a special price of €199 with subscription</span>",
+              "right_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "logo_GKUAPJ",
+          "carousel_zFqCj7",
+          "megamenu_tBdTnK",
+          "megamenu_GUmNPx",
+          "megamenu_NwnR8P",
+          "megamenu_HcikhE",
+          "megamenu_WUY9Tb",
+          "megamenu_3t7qJT",
+          "megamenu_URG8xq",
+          "megamenu_A7gxw4",
+          "megamenu_PxPxkE",
+          "megamenu_CdcU7z",
+          "carousel_KBz4d4",
+          "carousel_eNzPbK",
+          "carousel_Krh9Vp",
+          "carousel_GmBThQ",
+          "carousel_VmGHK6",
+          "carousel_kN3G7g",
+          "announcement_8rgHWk",
+          "announcement_Anqjmd",
+          "announcement_kgkDRU",
+          "announcement_xAWzLq",
+          "countdowntimer_ce9pwE"
+        ],
+        "custom_css": [],
+        "settings": {
+          "main_menu_link_list": "",
+          "main_menu": "main-menu",
+          "mega_menu_link_list": "megamenu",
+          "mega_menu_link_list_mobile": "",
+          "mega_menu_url_shop_prolon": "shopify://products/prolon-5-day",
+          "mega_menu_link_partners": "",
+          "mega_menu_url_practitioners": "",
+          "mega_menu_images": false,
+          "linka_benefit_url": "",
+          "science_support_url": "",
+          "main_menu_alignment": "left",
+          "header_style": "normal",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "announcement_compact": true,
+          "announcement_above_header": false,
+          "toolbar_menu": "",
+          "toolbar_social": false,
+          "show_locale_selector": false,
+          "show_currency_selector": true,
+          "show_currency_flags": false
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "blocks": {
+          "footer-promotions-0": {
+            "type": "promotion",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "title": "Site-wide promotion",
+              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+              "button_label": "Optional button",
+              "button_link": ""
+            }
+          },
+          "footer-promotions-1": {
+            "type": "promotion",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "title": "Site-wide promotion",
+              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+              "button_label": "Optional button",
+              "button_link": ""
+            }
+          },
+          "footer-promotions-2": {
+            "type": "promotion",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "title": "Site-wide promotion",
+              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+              "button_label": "Optional button",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-promotions-0",
+          "footer-promotions-1",
+          "footer-promotions-2"
+        ],
+        "settings": {
+          "hide_homepage": false,
+          "image_size": "wide"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "",
+              "container_width": 25
+            }
+          },
+          "menu_ftXNNi": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
+              "menu": "",
+              "container_width": 25
+            }
+          },
+          "custom_wxnM3G": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Disclaimers",
+              "text": "<p><em>ProLon is not intended to diagnose, treat, cure or prevent any disease. </em></p>",
+              "container_width": 25
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "menu_ftXNNi",
+          "custom_wxnM3G"
+        ],
+        "settings": {
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false,
+          "show_payment_icons": true,
+          "show_copyright": true,
+          "copyright_text": "- Powered by L-Nutra Uk LTD<br>19 Leyden Street, London, England, E1 7LE<br>Company No: 15493283. VAT No:<br><a href=\"/pages/privacy-policy\">Privacy Policy</a> - <a href=\"/pages/terms-conditions\">Terms & Conditions</a> -"
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>",
+          "close_text": "No thanks",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "button_link": "",
+          "enable_button": false
+        }
+      },
+      "page-what-is-fasting-mimicking-template": {
+        "type": "page-what-is-fasting-mimicking-template",
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10605408327587305396": {
+        "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "disabled": false,
+        "settings": {
+          "version": "v3"
+        }
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": false,
+        "settings": {}
+      },
+      "14826766009936288847": {
+        "type": "shopify://apps/discounty/blocks/sdk/d65eb522-0d94-499f-9831-d4b3301f5340",
+        "disabled": false,
+        "settings": {}
+      },
+      "1877152918344802950": {
+        "type": "shopify://apps/intelligems-a-b-testing/blocks/intelligems-script/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19",
+        "disabled": false,
+        "settings": {}
+      },
+      "3025095097329806407": {
+        "type": "shopify://apps/accessibility-ada-eaa-wcag/blocks/accessibility-widget/c6a985d2-00b3-4b2b-9007-2ea254259712",
+        "disabled": false,
+        "settings": {
+          "widget_position": "bottom-right",
+          "branding_color": "#263f36",
+          "vertical_position": 20,
+          "horizontal_position": 20,
+          "widget_size": "medium",
+          "custom_widget_size": 60,
+          "icon_color": "#09875e"
+        }
+      },
+      "18387101310985349768": {
+        "type": "shopify://apps/progus-store-locator/blocks/app-embed/d7896016-8cc9-45e0-860e-ba85ba3d5be4",
+        "disabled": true,
+        "settings": {
+          "show_title": false,
+          "our_locations": "Our locations",
+          "text_color": "#ffffff",
+          "bg_color": "#000000",
+          "icon": "map-marker",
+          "icon_color": "#ffffff",
+          "size": "2",
+          "shape": "2",
+          "position": "2"
+        }
+      },
+      "2766656906679212237": {
+        "type": "shopify://apps/quinn-shoppable-reel/blocks/app-embed-legacy/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
+        "disabled": false,
+        "settings": {}
+      },
+      "14167655181940180261": {
+        "type": "shopify://apps/quinn-shoppable-reel/blocks/app-embed/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}

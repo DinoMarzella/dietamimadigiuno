@@ -1,0 +1,1128 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-new-life",
+      "blocks": {
+        "7f292dfd-ae5a-44c1-91da-48ad29cec92d": {
+          "type": "html",
+          "settings": {
+            "title": "Complete Summer Pack",
+            "hide_option": false,
+            "option_1": "Complete Summer Pack",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex justify-between\">\n<div class=\"flex justify-start item-center gap-2\">\n<div class=\"circle w-5 h-5 min-w-5 border border-gray-300 rounded-full\"></div>\n<div>\n<b>Complete Summer Pack</b><br>\n<b>Include: ProLon 5 giorni, Reset, Nutrition Bar, L-Protein, L-Pill.</b>\n</div>\n</div>\n<div class=\"hidden md:block\">\n<b>269,50 €</b>\n</div>\n</div>",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "d5b732e0-bb54-48aa-8ab9-9803acf58b8c": {
+          "type": "html",
+          "settings": {
+            "title": "Light Summer Pack",
+            "hide_option": false,
+            "option_1": "Light Summer Pack",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex justify-between\">\n<div class=\"flex justify-start item-center gap-2\">\n<div class=\"circle w-5 h-5 min-w-5 border border-gray-300 rounded-full\"></div>\n<div>\n<b>Light Summer Pack</b><br>\n<b>Include: Reset, Nutrition Bar, L-Protein, L-Pill.</b>\n</div>\n</div>\n<div class=\"hidden md:block\">\n<b>144,20 €</b>\n</div>\n</div>",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "f9a915c1-73db-48da-a4b4-88ef51f40e17": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel Kit ReSet?",
+            "description": "All'interno del Kit ReSet troverai Zuppe, Barrette e Snacks, Bevande e Integratori.",
+            "page": "whats-inside-your-reset-kit"
+          }
+        },
+        "9328ff22-265d-428c-ba20-480eb1842de1": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè funziona?",
+            "description": "ProLon ReSet rende il Digiuno  semplice e sicuro attenuando il senso di fame grazie a precisi nutrienti che mantengono il corpo in uno stato di digiuno. Senti il bisogno di ripristinare l'organismo a causa di uno stile di vita poco sano? Dacci solo un giorno.",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f292dfd-ae5a-44c1-91da-48ad29cec92d",
+        "d5b732e0-bb54-48aa-8ab9-9803acf58b8c",
+        "f9a915c1-73db-48da-a4b4-88ef51f40e17",
+        "9328ff22-265d-428c-ba20-480eb1842de1"
+      ],
+      "custom_css": [
+        ".border-prolon_secondary {color: #000; font-weight: bold;}"
+      ],
+      "settings": {
+        "custom_css_class": "acquista-ora",
+        "product": "complete-summer-travel-pack",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "",
+        "show_subscription": false,
+        "below_image": "{% render \"tw-extra-summer-travel-bundle\" ,blocks:section.blocks\n %}",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli il tuo {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "settings": {
+            "title": "Cosa c'è nel Kit ReSet?",
+            "content": "<p>All'interno del Kit ReSet troverai Zuppe, Barrette e Snacks, Bevande e Integratori.</p>",
+            "page": "whats-inside-your-reset-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "settings": {
+            "title": "Perchè funziona?",
+            "content": "<p>ProLon ReSet rende il Digiuno  semplice e sicuro attenuando il senso di fame grazie a precisi nutrienti che mantengono il corpo in uno stato di digiuno. Senti il bisogno di ripristinare l'organismo a causa di uno stile di vita poco sano? Dacci solo un giorno.</p>",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Nutrition Fact Information",
+            "content": "",
+            "page": "ingredients-supplement-facts"
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "settings": {
+        "max_width": true,
+        "custom_class": "d:hidden"
+      }
+    },
+    "174540217124a535af": {
+      "type": "apps",
+      "blocks": {
+        "quinn_shoppable_reel_app_cards_block_BqWanP": {
+          "type": "shopify://apps/quinn-shoppable-reel/blocks/app-cards-block/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
+          "settings": {
+            "custom_metaobject_handle": "null",
+            "background_color": "#1f4036",
+            "margin_desktop": "10px 0px 0px 0px",
+            "margin_mobile": "5px 0px 0px 0px",
+            "padding_desktop": "10px 10px 10px 10px",
+            "padding_mobile": "10px 5px 10px 5px"
+          }
+        }
+      },
+      "block_order": [
+        "quinn_shoppable_reel_app_cards_block_BqWanP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{background-color: #1e4036; padding: 50px 20px; color: white;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "60f07b74-303e-4fd2-b910-a99bea93e8db": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Break.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Prenditi una meritata pausa</h3>\n<p style=\"padding-top: 20px;\">Concedi al tuo corpo 1 giorno di ReSet e riparti grazie al Digiuno Attivo.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Power.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Resetta l'organismo</h3>\n<p style=\"padding-top: 20px;\">Dai il via a nuove abitudini sane e raggiungi il tuo obiettivo di salute. Perfetto per cominciare un Digiuno Intermittente.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 320px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Icons_-_Break_Cycle.png?v=1667842446\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Ritrova l'equilibrio</h3>\n<p style=\"padding-top: 20px;\">Spezza la spirale di indulgenza a tavola con il prezioso contributo del ReSet di 1 giorno.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-0",
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-1",
+        "template--14460982657070__60f07b74-303e-4fd2-b910-a99bea93e8db-166846511265ed064b-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Programma Nutrizionale di 24h di Digiuno con il cibo",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068": {
+      "type": "promo-grid",
+      "blocks": {
+        "ca549adc-9925-48b5-8520-241b6c7e7307": {
+          "type": "banner",
+          "settings": {
+            "heading": "Ottieni supporto",
+            "text": "Il digiuno è più facile insieme! Non dimenticarti di partecipare al gruppo",
+            "link": "https://www.facebook.com/groups/853604435897380",
+            "label": "Entra nel GRUPPO"
+          }
+        },
+        "b79aa57d-0384-499d-bea7-947d5ba8d126": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Reset_grid_image_2_540x_99b6b9c5-820f-4ab7-adeb-f5b1e1032c48.webp",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "73426572-f5f3-4a13-8dbc-38f13f145846": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nutrizione_di_precisione.png",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/NUTRIZIONE_DI_PRECISIONE_SCIENTIFICAMENTE_TESTATA_5.png",
+            "video_url": "",
+            "width": "33",
+            "height": 320,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "e89a779f-a279-4469-b0be-269db64f2de0": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "▸",
+            "cta_link1": "https://player.vimeo.com/video/762795094?controls=1&h=fdacb11a9d&badge=0&autopause=0&player_id=0&app_id=58479%22",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://www.youtube.com/watch?v=GCsPmRfg1RE&t=39s",
+            "width": "100",
+            "height": 400,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "ca549adc-9925-48b5-8520-241b6c7e7307",
+        "b79aa57d-0384-499d-bea7-947d5ba8d126",
+        "73426572-f5f3-4a13-8dbc-38f13f145846",
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1",
+        "e89a779f-a279-4469-b0be-269db64f2de0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    },
+    "2dd826f7-81fe-44c1-aa74-28f5c42251b9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/travel-pills_2000x_0907718d-ac83-4960-a441-33c6e1529fd2.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Rimani in pista quest'estate,\nsenza stress",
+        "text": "<p>Con prodotti comodi e adatti ai viaggi, pensati per stare in borsa (e anche nelle giornate più impegnative), il Summer Travel Pack ti aiuta a proteggere la tua salute e a raggiungere i tuoi obiettivi senza perdere un colpo.\n<br><br>\nDa nutrienti proteine e snack adatti al digiuno, a integratori per rafforzare il sistema immunitario e semplici reset, questo pacchetto è la tua arma segreta per sentirti al meglio, durante e dopo il viaggio.\n</p>\n<ul>\n<li>Nutrizione di precisione che non aumenta i fattori pro-invecchiamento ogni volta che mangi.</li>\n<li>Prodotto secondo standard qualitativi eccezionali: senza glutine, senza latticini, senza silice, a base vegetale e non OGM.</li>\n<li>Contiene ingredienti noti per favorire un invecchiamento sano.</li>\n</ul>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "dk_timeline_section_JCb3Ed": {
+      "type": "dk-timeline-section",
+      "blocks": {
+        "timeline_item_b63AXc": {
+          "type": "timeline_item",
+          "settings": {
+            "day_label": "PROLON 5 GIORNI",
+            "image": "shopify://shop_images/bfc-2025-img-1500x1500.webp",
+            "title": "",
+            "description": "Prima di partire — Ripristina il tuo metabolismo ed elimina il grasso in eccesso prima della partenza."
+          }
+        },
+        "timeline_item_FYtmEy": {
+          "type": "timeline_item",
+          "settings": {
+            "day_label": "L-PILL",
+            "image": "shopify://shop_images/l-pill_1b3abc01-cbef-4896-9c77-7171920050a4.png",
+            "title": "",
+            "description": "Rafforza il sistema immunitario e aumenta l'energia con una protezione cellulare ricca di antiossidanti."
+          }
+        },
+        "timeline_item_dxwcnL": {
+          "type": "timeline_item",
+          "settings": {
+            "day_label": "NUTRITION BAR",
+            "image": "shopify://shop_images/nutrition_bars.png",
+            "title": "",
+            "description": "Frena la voglia, prolunga il tuo digiuno intermittente o usalo come spuntino nutriente o come sostituto del pasto, sempre e ovunque."
+          }
+        },
+        "timeline_item_AcKtw6": {
+          "type": "timeline_item",
+          "settings": {
+            "day_label": "L-PROTEIN",
+            "image": "shopify://shop_images/l-protein.png",
+            "title": "",
+            "description": "Mantieniti in forze anche in viaggio con proteine vegetali pulite in bustine adatte al viaggio, ideali per pasti veloci, spuntini o come supporto al recupero."
+          }
+        },
+        "timeline_item_YYdkpE": {
+          "type": "timeline_item",
+          "settings": {
+            "day_label": "1-DAY RESET",
+            "image": "shopify://shop_images/reset.png",
+            "title": "",
+            "description": "Al ritorno — Ripristina rapidamente le tue energie dopo il viaggio, aiutando a ricalibrare digestione, energia e routine. Questa versione di un giorno del nostro programma brevettato Prolon 5 giorni offre una pausa di un giorno, permettendo al tuo corpo di entrare in chetosi pur continuando a ricevere nutrimento. Ripristina una volta alla settimana o al mese per supportare l'equilibrio metabolico e rinfrescare il tuo sistema."
+          }
+        }
+      },
+      "block_order": [
+        "timeline_item_b63AXc",
+        "timeline_item_FYtmEy",
+        "timeline_item_dxwcnL",
+        "timeline_item_AcKtw6",
+        "timeline_item_YYdkpE"
+      ],
+      "custom_css": [
+        "{background-color: #f1eae5;}",
+        ".bg-\\[\\#1F4139\\] {background-color: #f1eae5;}",
+        "@media only screen and (max-width: 768px) {h2 {padding-top: 30px; color: inherit; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "<div class=\"row\" style=\"max-width: 600px; padding-bottom: 30px;\">\n <h1 class=\"w-full text-start text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px]\">\n   Cosa è incluso nel kit\ne come utilizzarlo    </h1>\n<p><br> Con il summer Travel Pack, il cibo può essere un investimento quotidiano per il tuo futuro. Ogni prodotto nella scatola è pensato per aiutare il tuo corpo a funzionare meglio oggi, gettando le basi per una vita lunga e sana.\n</p>\n</div>"
+      }
+    },
+    "5c0b5357-2c78-4f2b-a6e2-edca1f8d2145": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Stocksy_txp00c2733eiAu300_Large_4860424_02_1_2000x_c6ff45fd-1a96-4c9a-b593-8023fec78dcb.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Nutrizione che funziona con il tuo corpo e con la tua vita",
+        "text": "<p>Il pacchetto completo da viaggio estivo è perfetto per:</p>\n\n  <ul>\n    <li>Rimani in pista ovunque: prodotti comodi e adatti ai viaggi, adatti alla tua routine estiva e al tuo bagaglio a mano.</li>\n    <li>Alimenta il tuo corpo con un'alimentazione sana e scientificamente provata: Riprendersi rapidamente dopo uno sgarro — Aiuta a ricalibrare la digestione, l'energia e la routine al ritorno.</li>\n\n  </ul>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "5a8542bf-d2c2-4934-89a7-b65cb531ccf3": {
+      "type": "text-and-image",
+      "custom_css": [
+        "{background-color: #f7f0e9; padding-bottom: 30px; padding-top: 30px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/prolon-summer-travel-pack-asset-0002.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Con il Summer Travel Pack è tutto più semplice. Nessuna regola rigida. Solo scelte più intelligenti.",
+        "text": "<p><b> Inizia subito e risparmia il 30% su questo kit.</b></p>",
+        "button_label": "Ordina Ora",
+        "button_link": "#acquista-ora",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "233404af-9ae8-408b-9c7a-001cf3500aeb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/1_Fast_Bar_Noci_e_Miele_3.png?v=1653562302\">",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/secnd_1_1600x_1600x_ead9b2bc-d290-4cf3-9af1-531dc9110644.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 20,
+        "mobile_size": 60,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 10
+      }
+    },
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Whitney",
+            "title": "Get the benefits of ProLon's new 1-day ReSet...",
+            "title_size": 40,
+            "subheading": "A one day mental and physical reset. A bunch of other benefits I know you'll enjoy.",
+            "link": "https://cdn.shopify.com/videos/c/o/v/9d2c38560bcc4428996b2dedf87c9c59.mp4",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        },
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Rachel",
+            "title": "I'm obsessed with this new product from ProLon...",
+            "title_size": 40,
+            "subheading": "A one-day reset that really has helped me get back on track from periods of over indulgence.",
+            "link": "https://cdn.shopify.com/videos/c/o/v/ad5d9bfbd4844a1e85130de1cc33b026.mp4",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        },
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "I'm 50 years old with 2 small children...",
+            "title_size": 40,
+            "subheading": "I started ProLon and I'm telling you, it worked! I lost 6 pounds, I have no brain fog, I absolutely do not crave sugar right now which is insane and I actually feel amazing, I'm full of energy! I am so proud of myself, my husband did it with me, he lost 5 pounds, says he has never felt better.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0",
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1",
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "height": 600,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "89a9fb4b-6df6-4855-9f5a-d78873047246": {
+      "type": "tw-animated-review",
+      "blocks": {
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0": {
+          "type": "rowf",
+          "settings": {
+            "title": "I expected to be hungry and then..",
+            "details": "I expected to be hungry and then HANGRY, on this program. I was extremely\nsurprised by the fact that not only was I NOT hungry, I also didn't crave my usual\nnightcap. I really didn't have any cravings for the most part, of course smelling the\nfood I was cooking for my family smells good, but I didn't feel like I NEEDED to eat it.\nWhich was one of the main reasons I wanted to try this program.\nI enjoyed the food.\nI did NOT like the drink we had to sip on. The flavor was just not my jam. But other\nthan that I have been pleased with how I feel.\nI work very hard for a living and I usually need a bit more to eat during the day, NOT\nthis week.",
+            "name": "Sara Snyder"
+          }
+        },
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379": {
+          "type": "rowf",
+          "settings": {
+            "title": "This was my10th Prolon fast",
+            "details": "This was my 10th Prolon fast. I used this one to reset myself due to having long\nCOVID. I can't begin to describe how much better I feel after doing a prolon fast",
+            "name": "Robin Laabs"
+          }
+        },
+        "bf7faaa0-3def-4913-85a6-ee22223514c3": {
+          "type": "rowf",
+          "settings": {
+            "title": "Amazing Program",
+            "details": "This is my second time using Prolon. It is so easy to follow and stay on the fasting\nplan for better health. I lost 6 pounds at the end of five days. I feel great. My bpm\ndropped 5 points and My anxiety level is nonexistent.",
+            "name": "Marie"
+          }
+        },
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8": {
+          "type": "rowf",
+          "settings": {
+            "title": "I use FMD as a reset whenever I fall off the wagon!",
+            "details": "This is my third time trying the fast mimicking diet, and I have learned to go back to it\nwhenever I need a reset. I tend to do great at watching what I eat for a period of time,\nbut then start slipping back into old habits over time. At that point, I find that if I do\nthe fast mimicking diet again, it really does reset my thinking about how much I need\nto eat. Basically if I can get by on 700 to 800 cal per day for five days during the diet,\nthen I can easily bump that up two maybe 1200 calories per day, and keep that going\nfor an extended period of time, once the diet is over.",
+            "name": "bfherrmann"
+          }
+        },
+        "96aec021-7814-4796-a2ef-f43d15c01303": {
+          "type": "rowf",
+          "settings": {
+            "title": "Prolon leaves the guesswork out of..",
+            "details": "Prolon leaves the guesswork out of fasting! The system is super easy to follow and\neven includes a transition day diet. I always feel great during day and have high\nenergy. I sleep so deep! I love that Prolon makes it so simple to take care of my body\non a cellular level... thank you Prolon! Kimberley",
+            "name": "Kimberley M."
+          }
+        },
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e": {
+          "type": "rows",
+          "settings": {
+            "title": "THIS IS FASTING?!? - INCREDIBLE!!!",
+            "details": "I am on a journey to create better health, ProLon was my attempt to reset my body\nafter eating and drinking too many garbage foods. I fasted from 10/2 - 10/6. The fast\nwas easy to follow, The food was surprisingly delicious; I never felt hungry or craved\nany junk foods and wasn't even tempted by foods on tv commercials. My favorite\ndays were the days with the olives. Definitely ready for month 2 and 3 when the time\ncomes. Oh yeah, I lost 8.2 lbs in 5 days.",
+            "name": "R. Pryor"
+          }
+        },
+        "c9a436a2-f630-4eba-a893-49bceda69d36": {
+          "type": "rows",
+          "settings": {
+            "title": "I had such a great experience",
+            "details": "I had such a great experience! Food was great. I had a lot of energy and slept well. I\nalso lost 5 lbs which has been so hard to do! I'll definitely do Prolon again and have\nrecommended it to friends.",
+            "name": "Kristen"
+          }
+        },
+        "42a3821c-f70c-4262-b664-7b52c203fd46": {
+          "type": "rows",
+          "settings": {
+            "title": "ProLon changed my life",
+            "details": "ProLon changed my life. I saw significant results on day three of the 5 day program. It\nteaches you how to eat and more importantly how you are supposed to feel when you\nare eating healthy. It has inspired me continue with this journey towards maintaining\nmy health and well-being.",
+            "name": "Fernando Bobbio"
+          }
+        },
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f": {
+          "type": "rows",
+          "settings": {
+            "title": "Reset Accomplished!",
+            "details": "Clear and easy to follow instructions.\nFood was better than expected\nThe Fastination FB page was helpful and encouraging.",
+            "name": "Karen Steckler"
+          }
+        },
+        "33e95cf9-fbb9-4a12-8078-cb700a252159": {
+          "type": "rows",
+          "settings": {
+            "title": "So much easier than water fasting....",
+            "details": "I've done a few therapeutic water fasts over the years and I absolutely hated every\nminute. I've always had the most miserable time ever. Prolon fasting however is a\ngame changer. Yes it's hard, but there are those times every day that you know you\nare going to eat!! Follow the \"instructions\" for the soups and they shouldn't be hard or\ngritty (some need stove top cooking for 15 mins). I am lucky that I enjoy olives, the\ncrackers and the nut bars were delicious, it's food after all : ) I have just completed\nround 3. It really does get easier with each round. My one criticism - the beautiful\npackaging and plastic bottle are completely unnecessary. I think Prolon should scale\nthat down a bit. THANK YOU Prof Longo for the decades of hard work and study.",
+            "name": "Lesley."
+          }
+        },
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b": {
+          "type": "rowt",
+          "settings": {
+            "title": "I was expecting to be hungry",
+            "details": "I was expecting to be hungry, but was pleasantly surprised. By drinking water through\nout the day and hot herbal tea in the evening I was not hungry. The L-drink flavors\nwere delicious. I had been feeling really bloated, at the end of day 2, it subsided and\nwas gone by day 4. Thank you for making this wonderful product.",
+            "name": "Eileen T"
+          }
+        },
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8": {
+          "type": "rowt",
+          "settings": {
+            "title": "I really liked this fast",
+            "details": "I really liked this fast. It was easy to follow and took the planning out of my day. I\nwasn't really hungry and it made me realize how much mindless eating I was doing. I\nfelt great by the end of day 3!",
+            "name": "Maureen Mittry"
+          }
+        },
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69": {
+          "type": "rowt",
+          "settings": {
+            "title": "This is a beautifully organized.",
+            "details": "This is a beautifully organized package. The support is awesome as well. The best\nfast that I have ever experienced. I am not hungry.",
+            "name": "Michele Williams"
+          }
+        },
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5": {
+          "type": "rowt",
+          "settings": {
+            "title": "A well deserved investment in \"Me\"",
+            "details": "A friend recommended ProLon fasting program to me. This was my first fast. My goal\nwas to reduce stomach inflammation and improve overall gut health. The program is\nwell laid out & easy to follow. I viewed it as a well deserved investment in \"me\"\nProLon did not disappoint, I have more energy, feel great & plan to continue down the\npath of healthier eating behavior for years to come.",
+            "name": "R. Howard"
+          }
+        },
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7": {
+          "type": "rowt",
+          "settings": {
+            "title": "Success after a long journey!!",
+            "details": "I received the Prolon kit right away after ordering. I'm on my 5th day of the fast and I\nfeel great. I never really experienced any hunger, and I've already ordered another kit\nto use in a few months. I feel like after years of being unsuccessful with yo-yo\nDIETING I am now on my way to achieving not only the weight loss I've been longing\nfor, but I'm on my way to much better health via great nutrition and exercise. Thank\nyou, Dr. Longo and your team for all your hard work!!! What a wonderful product! I\nbought the Longevity Diet book and the recipe book is on its way to me!! Thank you\nso much!!",
+            "name": "Sharon Wilson"
+          }
+        },
+        "307c1ffa-72ec-406c-b256-e8d662848b0c": {
+          "type": "rowf",
+          "settings": {
+            "title": "it is a hard program but it works",
+            "details": "it is a hard program but it works. I would not lie, I cannot believe I completed it. I lost\n6 pounds and feel really amazing. I will continue with a modified Keto program\nmoving forward",
+            "name": "Veronica Diaz"
+          }
+        },
+        "869f275d-bf22-438e-a1de-6de73df7cb8b": {
+          "type": "rowf",
+          "disabled": true,
+          "settings": {
+            "title": "My first 5 day Fast",
+            "details": "This was a great experience! I feel amazing, and have so much energy and focus. The\nfood tastes great! I've already recommended to all my friends.",
+            "name": "Julie S"
+          }
+        },
+        "4ab38dac-8804-47b4-b82f-957968381619": {
+          "type": "rows",
+          "disabled": true,
+          "settings": {
+            "title": "This was an amazing experience for me",
+            "details": "This was an amazing experience for me. During the \"fast\" I felt energized and was\nrarely hungry. I was so excited to increase my deep sleep each night reaching 2h53m,\nwhen my typical deep sleep clocks in at 45m. I would highly recommend this\nprogram!",
+            "name": "Kristy Snyder"
+          }
+        },
+        "47e2aba4-f011-484a-86f8-fa4f637153e1": {
+          "type": "rowt",
+          "disabled": true,
+          "settings": {
+            "title": "Amazing",
+            "details": "The easiest way to drop 4 kilos. Was never hungry. Of course you have not signed up\nto a gourmet week but with the weight loss in mind fine it's very palatable\nWell done prolon! Go go go",
+            "name": "carl michaelsen"
+          }
+        }
+      },
+      "block_order": [
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0",
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379",
+        "bf7faaa0-3def-4913-85a6-ee22223514c3",
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8",
+        "96aec021-7814-4796-a2ef-f43d15c01303",
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e",
+        "c9a436a2-f630-4eba-a893-49bceda69d36",
+        "42a3821c-f70c-4262-b664-7b52c203fd46",
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f",
+        "33e95cf9-fbb9-4a12-8078-cb700a252159",
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b",
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8",
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69",
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5",
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7",
+        "307c1ffa-72ec-406c-b256-e8d662848b0c",
+        "869f275d-bf22-438e-a1de-6de73df7cb8b",
+        "4ab38dac-8804-47b4-b82f-957968381619",
+        "47e2aba4-f011-484a-86f8-fa4f637153e1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<center><h3>What our customers say</h3></center>",
+        "detail": "",
+        "color": ""
+      }
+    },
+    "16801324-f6c3-48a2-a4a3-48d411e744df": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>This is my third time trying the fast mimicking diet, and I have learned to go back to it whenever I need a reset. I tend to do great at watching what I eat for a period of time, but then start slipping back into old habits over time. At that point, I find that if I do the fast mimicking diet again, it really does reset my thinking about how much I need to eat. </p>",
+            "author": "bfherrmann"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>This was my 10th Prolon fast. I used this one to reset myself due to having long COVID. I can't begin to describe how much better I feel after doing a prolon fast</p>",
+            "author": "Robin Laabs"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>This is my second time using Prolon. It is so easy to follow and stay on the fasting plan for better health. I lost 6 pounds at the end of five days. I feel great. My bpm dropped 5 points and My anxiety level is nonexistent.</p>",
+            "author": "Marie"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>This was a great experience! I feel amazing, and have so much energy and focus. The food tastes great! I've already recommended to all my friends.</p>",
+            "author": "Julie S."
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-4": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Prolon leaves the guesswork out of fasting! The system is super easy to follow and even includes a transition day diet. I always feel great during day and have high energy. I sleep so deep! I love that Prolon makes it so simple to take care of my body on a cellular level... thank you Prolon! </p>",
+            "author": "Kimberly"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "From our customers",
+        "align_text": "center",
+        "round_images": true
+      }
+    },
+    "944efbb9-81da-41ff-b131-722adde5d9d2": {
+      "type": "faq",
+      "blocks": {
+        "6247ea9f-fd1b-4766-b49a-cf4f8ba3bfbf": {
+          "type": "rich-text",
+          "settings": {
+            "title": "FAQs",
+            "text": "<p>Digiuno & ProLon ReSet - Informazioni Generali</p>",
+            "align_text": "center"
+          }
+        },
+        "c290e3a7-b7d3-47bd-855b-3a2dac829b71": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Cos'è e come si usa?",
+            "text": "Un giorno di pausa che aiuta a depurarti dall'interno come un giorno di digiuno a sola acqua, mantiene il tuo corpo in uno stato di digiuno, basandosi sulla Tecnologia Mima Digiuno e dona al tuo corpo una pausa dalle esagerazioni, attivando un ReSet attraverso il digiuno attivo.",
+            "align_text": "center"
+          }
+        },
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0": {
+          "type": "question",
+          "settings": {
+            "title": "Cos'è il ProLon ReSet e come si usa?",
+            "text": "<p>ProLon ReSet è un programma nutrizionale di Digiuno simulato che utilizza una specifico bilanciamento di alimenti appositamente brevettato per fornire tutti i nutrienti di cui necessita il corpo, pur inibendo il sistema di rilevamento del cibo. ProLon ReSet è specificamente pensato per persone interessate a seguire un Digiuno Intermittente, o più semplicemente per concedere al corpo un meritato Reset dall'alimentazione inconsapevole e da Diete ricche di zuccheri e carboidrati, con un programma alimentare che offre i benefici di un completo digiuno ad acqua.\n\nIn breve, il ReSet Kit introduce chi lo utilizza al mondo del Digiuno, concedendo al corpo un giorno di break e di ripristino dell'organismo. ProLon ReSet aiuta a gestire il senso di fame con il Kit di 1 giorno, vivendo un'intera giornata a Digiuno senza soffrire la fame.\n\nIn che modo ProLon ReSet supporta il digiuno?\n\nProLon ReSet contribuisce a modificare le abitudini alimentari grazie al Digiuno con il cibo.*. Mentre si segue ProLon ReSet è possibile mangiare senza che il corpo rilevi il cibo, questo perché la combinazione di alimenti, scientificamente testata, non attiva i percorsi di rilevamento dei nutrienti. Durante il Digiuno di 1 giorno, il livello di chetoni nel corpo aumenterà non appena il corpo comincerà a scomporre le riserve di grasso per ricavare energia e il livello di glucosio rimarrà inalterato, proprio come succede quando si digiuna.\n</p><p><em>*Studi basati sulla tecnologia Mima Digiuno di ProLon.</em> </p>"
+          }
+        },
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1": {
+          "type": "question",
+          "settings": {
+            "title": "Chi può usare ProLon ReSet",
+            "text": "<p>ProLon ReSet è pensato per coloro che sono interessati a scoprire i benefici del digiuno intermittente, o semplicemente per chi vuole concedere al proprio corpo una pausa dall'alimentazione inconsapevole e dalle diete ipercaloriche, ricche di zuccheri e carboidrati. Questo programma nutrizionale offre i benefici di un'intera giornata di digiuno ad acqua.​ ProLon ReSet Kit fa al caso tuo se:  \n<br><br>\n• Vuoi concedere al tuo corpo una pausa di 1 giorno da un'alimentazione inconsapevole e da una dieta ipercalorica con zuccheri e carboidrati per ottenere un ripristino dell'organismo attraverso il digiuno attivo.\n<br><br>\n  <em> *Se hai il diabete o stai assumendo farmaci che influiscono sulla glicemia, consulta uno specialista prima di seguire il digiuno o una dieta ipocalorica. Si consiglia di consultare un medico prima di iniziare qualsiasi programma alimentare.</em> </p>"
+          }
+        },
+        "910be383-f543-43a2-be67-fb6e7ddf7a75": {
+          "type": "question",
+          "settings": {
+            "title": "Come si usa ProLon ReSet?",
+            "text": "<p>ProLon ReSet semplifica il Digiuno per un'intera giornata, ti fornisce nutrimento ed energia, limita il senso di fame e mantiene il corpo in uno stato di digiuno.\n<br><br>\nE' specificamente creato per seguire un Digiuno Intermittente. Il Digiuno Intermittente (Intermittent Fasting) può essere definito come un digiuno che dura meno di 2 giorni. Sebbene ci sia un'ampia varietà di Digiuni Intermittenti, sono tutti accomunati da schemi alimentari in cui si intervallano fasi di digiuno e fasi in cui si mangia. La routine di Digiuno Intermittente più popolare è la dieta 5:2, la quale prevede il digiuno durante determinati giorni della settimana. Con questo approccio, gli individui limitano le loro calorie per due giorni (non consecutivi) della settimana e poi riprendono la loro dieta normale per gli altri cinque giorni.</p>"
+          }
+        },
+        "48c96854-2f13-4edc-af9a-d41158e8a33c": {
+          "type": "question",
+          "settings": {
+            "title": "Quanto spesso si può seguire?",
+            "text": "<p>Con ProLon ReSet si puà sperimentare un digiuno di 1 giorno per scoprire se si è adatti al digiuno, oppure si può scegliere di usarlo ogni volta che si ritiene di aver bisogno di un ripristino dell'organismo. Puoi utilizzare ProLon ReSet per:\n \n</p><ol>\n<li>Migliorare il tuo stato di salute utilizzandolo 2 volte a settimana per massimizzare i benefici della purificazione.</li>\n \n<li>Inserirlo in una routine di Digiuno Intermittente 5:2. Di pari passo con la dieta 5:2, puoi utilizzare il ProLon ReSet durante i 2 giorni di Digiuno seguendo una Dieta Tradizionale durante gli altri 5 giorni della settimana. Ad esempio, se scegliessi di seguire una routine 5:2 per 3 settimane ogni mese, utilizzerai 6 ReSet al mese.\n</li>\n \n</ol>\nSe sei alla ricerca dei benefici del Digiuno Prolungato, tra cui l'autofagia e il ringiovanimento, la Dieta Mima Digiuno di 5 giorni è stata ampiamente testata e seguita da centinaia di migliaia di consumatori (generalmente sani). Inoltre, è stata clinicamente testata per fornire molti benefici per la salute metabolica se utilizzata in più cicli consecutivi. Come per qualsiasi dieta, è opportuno consultare il tuo medico, il quale potrebbe consigliarti di fare dei cicli mensili di Dieta Mima Digiuno per raggiungere i tuoi obiettivi individuali, per poi ripeterla ogni 3-6 mesi per massimizzarne i benefici. Per ulteriori informazioni visita <a href=\"https://prolon.it/\">prolon.it/</a>. <p></p>"
+          }
+        },
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369": {
+          "type": "question",
+          "settings": {
+            "title": "Qual è la ricerca scientifica alla base del Kit ReSet?",
+            "text": "<p>ProLon ReSet è progettato con la stessa tecnologia della Dieta Mima Digiuno®. La nostra tecnologia è il risultato di oltre 20 anni di test preclinici e clinici, ispirati dalla scienza di scienziati premi Nobel e finanziati per oltre 36 milioni di dollari in ricerca e sviluppo da importanti istituzioni tra cui l'Unione Europea.</p>"
+          }
+        },
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1": {
+          "type": "question",
+          "settings": {
+            "title": "Quali cibi o bevande posso aggiungere al ProLon ReSet?",
+            "text": "<p>Sebbene si sconsiglia vivamente di aggiungere cibi e bevande per ridurre il rischio di rompere il digiuno, puoi scegliere di aggiungere:</p><p>• Tisane (senza zucchero e caffeina) <br>• Acqua frizzante (senza dolcificanti)<br>• 1 Tazzina di caffè al giorno: (senza zucchero o dolcificante)•<br> 1 cucchiaio di erbe o spezie (secche) al giorno per le zuppe o altri alimenti per esaltarne il sapore (preferibilmente non trasformati come le scaglie di peperoncino)<br>• 1 cucchiaino di sale marino (purchè non ci siano controindicazioni per la salute) <br>• Fino a 2 fette di limone al giorno (spremuto, non mangiato), indipendetemente dal fatto che si utilizzi nelle zuppe, nelle tisane o nell'acqua<br>• Fino a 2 gomme da masticare (senza zucchero) </p><p>Per quanto riguarda il cibo, è consigliabile aggiungerlo solo come ultima risorsa se la fame si fa sentire al punto tale da desiderare di rompere il digiuno. In questo caso si consiglia di optare per una o due fette di mela, un gambo di sedano o un cetriolo.</p>"
+          }
+        },
+        "e27809a1-47ef-4cf0-af45-cabea8961e16": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon ReSet può essere utilizzato per il digiuno periodico prolungato?",
+            "text": "<p>ProLon ReSet è appositamente pensato per supportare il Digiuno Intermittente (digiuni notturni e/o digiuni di durata inferiore a due giorni) come parte integrante di abitudini alimentari sane nel quotidiano. Se sei alla ricerca dei benefici di un Digiuno Periodico Prolungato (più di 2 giorni) che include il supporto nella perdita di peso e di grasso, oltre ad un miglioramento della salute metabolica e delle abitudini alimentari, ti consigliamo di provare la Dieta Mima Digiuno ProLon di 5 giorni .</p>"
+          }
+        },
+        "1ee03744-9b17-49e4-a84b-0ccaa6461c6e": {
+          "type": "question",
+          "settings": {
+            "title": "Qual è la differenza fra ProLon ReSet e ProLon Dieta Mima Digiuno?",
+            "text": "<p>ProLon ReSet è il Kit di Digiuno di 1 giorno che deriva dalla scienza alla base della Dieta Mima Digiuno di 5 giorni. ProLon ReSet è appositamente pensato per supportare il Digiuno Intermittente (Digiuni Notturni, e Digiuni di durata inferiore a 2 giorni) come parte integrante di abitudini alimentari sane nel quotidiano.  </p><p>Se sei alla ricerca dei benefici di un Digiuno Prolungato (più di 2 giorni), che includono il supporto alla perdita di peso e grasso, il ringiovanimento cellulare, il ripristino del metabolismo, ti consigliamo di provare la Dieta Mima Digiuno di 5 giorni. Grazie alla durata più estesa, il Digiuno Prolungato va ben oltre la perdita di peso e la diminuzione del grasso viscerale perché promuove il digiuno biologico e un processo conosciuto come <em>Autofagìa</em> che rallenta l'invecchiamento e il ringiovanimento delle cellule.</p>"
+          }
+        },
+        "20ee40f3-d26d-4b56-91fb-92d6551aff78": {
+          "type": "question",
+          "settings": {
+            "title": "Posso utilizzare ProLon ReSet per estendere la mia Dieta Mima Digiuno di 5 giorni?",
+            "text": "<p>ProLon ReSet è specificamente pensato per persone interessate a seguire un Digiuno Intermittente, o più semplicemente per concedere al corpo un meritato Reset dall'alimentazione inconsapevole e da Diete ricche di zuccheri e carboidrati, con un programma alimentare che offre i benefici di un completo digiuno ad acqua. Si sconsiglia di aggiungere il ProLon ReSet prima o dopo aver completato i 5 giorni di ProLon poiché questo utilizzo non è stato testato e può essere pericoloso per alcuni individui.  </p>"
+          }
+        },
+        "85d0879e-58a1-4d36-b208-64a27fe71c5d": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Valori Nutrizionali ed Ingredienti",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "b80dbcc3-b96b-4370-a8a1-c3249ab11464": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "Valori Nutrizionali ed Ingradienti",
+            "text": "<a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_ReSet_-_Nutrition_Information.pdf?v=1682089035\" target=\"_blank\">ProLon ReSet Informazioni Nutrizionali</a>",
+            "align_text": "center"
+          }
+        },
+        "b9458d1d-481c-4be6-a77b-90a4e7f80bb7": {
+          "type": "question",
+          "settings": {
+            "title": "Quali sono i valori nutrizionali di ReSet e quali ingredienti contiene?",
+            "text": "<a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_ReSet_-_Nutrition_Information.pdf?v=1682089035\" target=\"_blank\">ProLon ReSet Informazioni Nutrizionali</a>"
+          }
+        },
+        "482f01d6-512e-4a0f-bde9-0607f83e4654": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Zuppe",
+            "text": "<div class=\"row\">\n<div class=\"column501\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/tom_soup.png?v=1643753084\"></div>\n<div class=\"column501\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squach_soup_SV2_9b57bb46-00e6-4544-a5b1-ba717b677ef5.png?v=1643752631\"></div>\n</div>"
+          }
+        },
+        "955c2f39-a133-4545-89b3-41217de58926": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Barrette e Snacks",
+            "text": "<div class=\"row\">\n<div class=\"column301\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/FB_Facts_-_Honey_720x_869140b7-9f94-432e-8748-7d26f8cd406e.png?v=1643752631\" style=\"background-color: white;\"></div>\n<div class=\"column301\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/IF_Bar_Facts.png?v=1643753960\"></div>\n<div class=\"column301\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Almond-Kale_Crackers.png?v=1643753960\"></div>\n<div class=\"column301\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Olives_-_SeaSalt.png?v=1643753960\"></div>\n</div>"
+          }
+        },
+        "4c925bb3-67f8-47bf-836a-b6ef61d07810": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Bevande",
+            "text": "<div class=\"row\">\n<div class=\"column501\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Teas_Nutrition_Facts_d6b752c7-018c-484b-b91c-e83eea64f175.png?v=1643752631\" style=\"background-color: white;\"></div>\n</div>"
+          }
+        },
+        "c74b79bd-f97f-4bea-8700-bac08bf578d4": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Integratori",
+            "text": "<div class=\"row\">\n<div class=\"column501\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/NR-1.png?v=1643753960\"></div>\n<div class=\"column501\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Algal_Oil.png?v=1643753960\"></div>\n</div>"
+          }
+        },
+        "3a8b296d-7a7c-46d5-8b4c-ccdea20ff890": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Allergeni ed intolleranze",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "9f0ec6db-809e-4f30-8cf4-db609d9151fc": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa contiene il Kit ReSet?",
+            "text": "<p>ProLon ReSet è composto da zuppe, barrette, snack, tisane e integratori a base vegetale, appositamente progettati per aiutare a sostenere il digiuno. Il menù suggerisce quali cibi mangiare per colazione, pranzo e cena, ma l'ordine in cui consumare il cibo dipende dall'utente. Si consiglia fortemente di mangiare e bere solo ciò che è contenuto nel kit, ad eccezione di acqua e tisane.</p>"
+          }
+        },
+        "70b4087e-f734-45ee-bbc3-050624b7b744": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon ReSet è vegano?",
+            "text": "<p>ProLon ReSet è vegetariano, ma non vegano. Le nostre barrette contengono miele.</p>"
+          }
+        },
+        "2e13abd7-af89-4960-ac60-e298a8d1c26a": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon ReSet contiene glutine?",
+            "text": "<p>ProLon ReSet  è senza glutine. Tuttavia i nostri prodotti sono lavorati in impianti che producono anche il grano, quindi si raccomanda di leggere attentamente la lista degli ingredienti: <a href=\"#nutritional-facts\"> Informazioni Nutrizionali</a> </p><p>L-Nutra è molto attenta alle contaminazioni alimentari e prende sul serio la qualità dei prodotti. Pertanto, soddisfiamo o superiamo le buone prassi di fabbricazione e gli standard normativi. Si prega di leggere le nostre<a href=\"#nutritional-facts%E2%80%99\"> Informazioni Nutrizionali </a> per ulteriori informazioni su potenziali allergeni.</p>"
+          }
+        },
+        "f7ba4738-9ed2-41f3-8fb2-3ddfcb6ca5b8": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon ReSet contiene soia?",
+            "text": "<p>ProLon ReSet non è progettato con ingredienti che contengono soia. Tuttavia, alcuni degli articoli sono prodotti in strutture che lavorano anche la soia. </p><p>L-Nutra è molto attenta alle contaminazioni alimentari e prende sul serio la qualità dei prodotti. Pertanto, soddisfiamo o superiamo le buone prassi di fabbricazione e gli standard normativi. Si prega di leggere le nostre<a href=\"#nutritional-facts\"> Informazioni Nutrizionali </a> per ulteriori informazioni su potenziali allergeni.</p>"
+          }
+        },
+        "f2fb606d-372b-4393-8c0a-b9b9ddd88afb": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon ReSet contiene lattosio?",
+            "text": "<p>ProLon ReSet non è progettato con ingredienti che contengono latticini. Tuttavia, alcuni degli articoli sono prodotti in strutture che lavorano anche i latticini. </p><p>L-Nutra è molto attenta alle contaminazioni alimentari e prende sul serio la qualità dei prodotti. Pertanto, soddisfiamo o superiamo le buone prassi di fabbricazione e gli standard normativi. Si prega di leggere le nostre<a href=\"#nutritional-facts\"> Informazioni Nutrizionali </a> per ulteriori informazioni su potenziali allergeni.</p>"
+          }
+        },
+        "887ffd8d-bd7f-4d1a-9e47-6d143c006fc3": {
+          "type": "question",
+          "settings": {
+            "title": "Quante calorie contiene ProLon ReSet?",
+            "text": "<p>Ogni kit contiene 765 calorie totali. Per ulteriori informazioni sul contenuto calorico di ogni articolo contenuto nel Kit ReSet, leggi le <a href=\"#nutritional-facts\"> informazioni nutrizionali</a>.</p>"
+          }
+        },
+        "da28d246-fa6a-44d9-bdb5-170ba3b384d3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Digiuno Intermittente",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "bd31a398-5045-45bd-af2b-dbd1a31a41ed": {
+          "type": "question",
+          "settings": {
+            "title": "Cos'è il Digiuno Intermittente?",
+            "text": "<p>Il Digiuno Intermittente può essere definito come un Digiuno che dura meno di 2 giorni. I Digiuni in determinati archi temporali (ad esempio il Digiuno Notturno di 12-16 ore), la Dieta 5:2 e il Digiuno Alternato, sono tutti tipi di Digiuno Intermittente. Sebbene ci sia un'ampia varietà di Digiuni Intermittenti, sono tutti accomunati da schemi alimentari in cui si intervallano fasi di digiuno e fasi in cui si mangia.</p>"
+          }
+        },
+        "519f5068-b85f-4a88-a77c-3ac53f9accc3": {
+          "type": "question",
+          "settings": {
+            "title": "Quali sono i benefici del Digiuno Intermittente?",
+            "text": "<p>Le persone scelgono di seguire il digiuno intermittente per molte ragioni, tra cui la perdita di peso e ulteriori potenziali benefici per la salute. In termini di perdita di peso, accorciando la finestra temporale durante la quale il cibo viene consumato, generalmente si consumano meno calorie, il che può comportare una perdita di peso che varia da individuo a individuo. Ci sono anche altri potenziali benefici per la salute associati alla sincronizzazione della finestra di digiuno con il ciclo del sonno (ad esempio non mangiare dopo cena). I vantaggi che si possono ottenere utilizzando ReSet variano da individuo a individuo e dipendono dallo stile di vita, incluso l'esercizio fisico, l'assunzione di cibo nei giorni senza digiuno e altre scelte alimentari quotidiane.</p>"
+          }
+        },
+        "2896e1a3-0903-4574-8060-ceeffb68b277": {
+          "type": "question",
+          "settings": {
+            "title": "Qual è la differenza fra Digiuno Intermittente e Digiuno Prolungato?",
+            "text": "<p>Il Digiuno Intermittente (IF) può essere definito come un digiuno che dura meno di 2 giorni. Sebbene ci sia un'ampia varietà di Digiuni Intermittenti, sono tutti accomunati da schemi alimentari in cui si intervallano fasi di digiuno e fasi in cui si mangia. La routine di Digiuno Intermittente più popolare è la dieta 5:2, la quale prevede il digiuno durante determinati giorni della settimana. Con questo approccio, gli individui limitano le loro calorie per due giorni (non consecutivi) della settimana e poi riprendono la loro dieta normale per gli altri cinque giorni.</p>\n\n<p>Il Digiuno Prolungato è un tipo di Digiuno che dura più di due giorni, di solito va da tre a sette giorni consecutivi. Grazie alla sua lunga durata, tale Digiuno va oltre la perdita di peso e la riduzione del grasso, promuovendo il digiuno biologico e un processo noto come autofagìa, la rigenerazione cellulare. Tali effetti di pulizia cellulare, rinnovamento e ringiovanimento possono essere raggiunti solo attraverso un digiuno prolungato come la Dieta Mima Digiuno ProLon di 5 giorni.</p><p></p>"
+          }
+        },
+        "4f09d6bb-7bef-42ac-ae7f-783ceabe73a0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Informazioni di tipo medico",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "6c6b5428-e0a4-4f81-99a4-e2a53318b1e2": {
+          "type": "question",
+          "settings": {
+            "title": "Il Digiuno è sano e sicuro?",
+            "text": "<p>A causa della natura del Digiuno, ci sono effetti collaterali ad esso associati tra cui affaticamento, mal di testa, vertigini/stordimento, dolori muscolo-scheletrici, nausea e difficoltà di concentrazione durante il periodo di digiuno. Tali sintomi sono lievi e tollerabili per la maggior parte delle persone. </p><p>ProLon ReSet è un programma alimentare. Qualsiasi cambiamento significativo nella dieta (compresa l'assunzione di fibre) può contribuire a cambiamenti nell'intestino come gonfiore, crampi, gassosità, stitichezza o diarrea. </p><p>Sebbene ProLon ReSet sia progettato per ridurre molti di questi rischi del digiuno fornendo macro e micronutrienti specifici, poiché è anche una dieta ipocalorica, ti invitiamo a parlarne con il tuo medico, specie se si hanno particolari condizioni di salute. Si prega di evitare quanto segue durante il programma di 1 giorno:   </p><p>• Qualsiasi esercizio faticoso o attività che potrebbero consumare molte calorie. <br>• Ambienti a temperature estreme come vasche idromassaggio e saune, o guidare per lunghe distanze sotto forte esposizione al sole o al calore. </p><p>Poiché ProLon ReSet è un programma alimentare,  si consiglia di interrompere il prodotto in caso di reazioni allergiche come eruzioni cutanee, alterazioni della voce, gonfiore o febbre. </p><p>Se ti senti stordito e rischi di svenire, non esitare a mangiare qualcosa, bere succhi di frutta o consumare una bevanda con zucchero. Se i sintomi non scompaiono, contatta il tuo medico e se ritieni che si tratti di un'emergenza pericolosa per la vita, chiama il servizio di emergenza sanitaria. </p>"
+          }
+        },
+        "c61b6943-db82-46bf-8bbc-a95020f01432": {
+          "type": "question",
+          "settings": {
+            "title": "Sto seguendo ProLon e sto riscontrando complicanze",
+            "text": "<p>Ci dispiace molto per la tua esperienza. Se in qualsiasi momento ti sentissi in pericolo o avvertissi strani sintomi, spezza il digiuno e consuma del cibo. Se ritieni che in qualsiasi momento la tua salute sia in pericolo o se credi di aver bisogno di cure mediche immediate, rivolgiti al tuo medico.</p>"
+          }
+        },
+        "0540716c-993b-409b-8854-002426664ab1": {
+          "type": "question",
+          "settings": {
+            "title": "Sto sperimentando effetti collaterali (mal di testa, affaticamento...) cosa dovrei fare?",
+            "text": "<p>Ogni individuo sperimenta il digiuno in modo diverso, il che può dipendere da diversi fattori. Se non sei in grado di tollerare gli effetti collaterali sopra descritti e ritieni che la tua salute sia in pericolo in qualsiasi momento, ti consigliamo di consultare il tuo medico di base. In caso di dubbi e domande, ti consigliamo di prenotare una Consulenza con il nostro Ufficio Scientifico (<a href=\"https://prolon.it/pages/consulenza-nutrizionale\" target=\"_blank\"><span style=\"text-decoration:underline\">Prenota Consulenza</span></a><span style=\"text-decoration:underline\">).</span></p>"
+          }
+        },
+        "e79d6c57-cb1c-4469-9c23-8165153ad7ca": {
+          "type": "question",
+          "settings": {
+            "title": "Posso seguire ProLon con particolari condizioni di salute?",
+            "text": "<p>Se soffri di Diabete o stai assumendo farmaci che influiscono sulla glicemia, consulta il tuo medico specialista prima di provare il Digiuno.</p><p>Sebbene il digiuno per brevi periodi sia sicuro per la maggior parte delle persone, è preferibile parlare con il proprio medico prima di iniziare qualsiasi dieta o programma dietetico. Chiunque abbia una condizione preesistente o stia assumendo farmaci da prescrizione, dovrebbe consultare il proprio medico specialista prima di digiunare.</p><p>Non digiunare o utilizzare prodotti per il digiuno se: </p><p>• Hai la febbre, tosse, diarrea, sintomi di un'infezione in corso o sei a rischio di infezioni.<br>• Sei molto sottopeso, stai allattando, o sei in dolce attesa;<br>•Hai restrizioni dietetiche, <br>• Ti è stato diagnosticato un disturbo dell'alimentazione<br>• Hai meno di 18 anni o più di 70 anni (a meno che tu non sia sotto la supervisione di un operatore sanitario.)</p>"
+          }
+        }
+      },
+      "block_order": [
+        "6247ea9f-fd1b-4766-b49a-cf4f8ba3bfbf",
+        "c290e3a7-b7d3-47bd-855b-3a2dac829b71",
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0",
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1",
+        "910be383-f543-43a2-be67-fb6e7ddf7a75",
+        "48c96854-2f13-4edc-af9a-d41158e8a33c",
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369",
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1",
+        "e27809a1-47ef-4cf0-af45-cabea8961e16",
+        "1ee03744-9b17-49e4-a84b-0ccaa6461c6e",
+        "20ee40f3-d26d-4b56-91fb-92d6551aff78",
+        "85d0879e-58a1-4d36-b208-64a27fe71c5d",
+        "b80dbcc3-b96b-4370-a8a1-c3249ab11464",
+        "b9458d1d-481c-4be6-a77b-90a4e7f80bb7",
+        "482f01d6-512e-4a0f-bde9-0607f83e4654",
+        "955c2f39-a133-4545-89b3-41217de58926",
+        "4c925bb3-67f8-47bf-836a-b6ef61d07810",
+        "c74b79bd-f97f-4bea-8700-bac08bf578d4",
+        "3a8b296d-7a7c-46d5-8b4c-ccdea20ff890",
+        "9f0ec6db-809e-4f30-8cf4-db609d9151fc",
+        "70b4087e-f734-45ee-bbc3-050624b7b744",
+        "2e13abd7-af89-4960-ac60-e298a8d1c26a",
+        "f7ba4738-9ed2-41f3-8fb2-3ddfcb6ca5b8",
+        "f2fb606d-372b-4393-8c0a-b9b9ddd88afb",
+        "887ffd8d-bd7f-4d1a-9e47-6d143c006fc3",
+        "da28d246-fa6a-44d9-bdb5-170ba3b384d3",
+        "bd31a398-5045-45bd-af2b-dbd1a31a41ed",
+        "519f5068-b85f-4a88-a77c-3ac53f9accc3",
+        "2896e1a3-0903-4574-8060-ceeffb68b277",
+        "4f09d6bb-7bef-42ac-ae7f-783ceabe73a0",
+        "6c6b5428-e0a4-4f81-99a4-e2a53318b1e2",
+        "c61b6943-db82-46bf-8bbc-a95020f01432",
+        "0540716c-993b-409b-8854-002426664ab1",
+        "e79d6c57-cb1c-4469-9c23-8165153ad7ca"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": ""
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (min-width: 769px) {\nh3 {font-weight: normal;\nfont-size: 25px;}\nh2 {color: #73914a;\nfont-size: 34px;\nfont-weight: normal;}\np {font-size: 16px;}\n}\n\n@media only screen and (max-width: 768px) {\nh3 {\nfont-size: 18px !important;}\nh2 {font-size: 24px !important; \ncolor: #73914a; font-weight: normal;}\np {font-size: 14px; text-align: left;}\n}\n\n\n#shopify-section-template--17812500185246__advanced_content_zMTtiY {background-color: #fcfcf7;}\n\n.drk-grn {color: #1e4136;}\n\nhr{ border: none;\n  border-top: 2px dotted #999;\n  color: #999;\n  background-color: #fff;\n  height: 1px;\n  margin: 10px 0;}\n\n.btn-small {\n  background-color: white;\n  border: 1px solid #73914a;\n  color: #73914a;\n  padding: 8px 20px;\n  border-radius: 50px;\n  margin-top: 20px;\n  font-weight: 600;\n}\n\n.tvg_facts_accordion_luWxJq_FactsAccordion-container {\n  max-width: 1500px;\n  margin: auto;\n \n}\n.tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {\n  display: none;\n}\n\n#shopify-section-template--17920281247902__main {\n  max-width: 1500px;\n  margin: auto;\n}\n#shopify-section-template--17920281247902__67611c02-54a7-4d7d-8033-fce9d01b167a {background-color: #fcfcf7; padding-top: 50px; padding-bottom: 30px;}\n\n#order > div > div.w-full.max-w-3xl.mx-auto.sm\\:mt-16.md\\:col-span-3.lg\\:col-span-5.lg\\:row-span-2.lg\\:row-end-2.lg\\:mt-0.lg\\:max-w-none.product-details.lg\\:sticky.lg\\:top-\\[70px\\].lg\\:max-h-\\[850px\\].mh900\\:top-\\[100px\\].px-0.md\\:px-\\[15px\\].lg\\:px-\\[30px\\].lg\\:pl-0.\\32 xl\\:px-\\[60px\\] > div.w-full.mt-4.product-description {\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  h2 {\n    font-size: 18px !important;\n  }\n  h1 {\n    font-size: 28px !important;\n  }\n}\n.highlight {\n  background-color: #1E4036;\n  color: white;\n  text-transform: uppercase;\n  font-weight: 600;\n  padding: 5px 8px;\n  border-radius: 0px;\n  text-align: center;\n}\n.\\!font-semibold {\n  font-weight: 500 !important;\n}\nh1 {\n  font-size: 30px;\n}\ndiv.price-value.inter.text-\\[16px\\].text-center {\n  display: none;\n}\ndiv.flex.items-center.gap-1.md\\:gap-4 > div:nth-child(2) > img {\n  display: none;\n}\n#order > div > div.w-full.max-w-3xl.mx-auto.sm\\:mt-16.md\\:col-span-3.lg\\:col-span-5.lg\\:row-span-2.lg\\:row-end-2.lg\\:mt-0.lg\\:max-w-none.product-details.lg\\:sticky.lg\\:top-\\[70px\\].lg\\:max-h-\\[850px\\].mh900\\:top-\\[100px\\].px-0.md\\:px-\\[15px\\].lg\\:px-\\[30px\\].lg\\:pl-0.\\32 xl\\:px-\\[60px\\] > div.flex.flex-col-reverse > div > div {display: none;}\n.benefit-checked {\n    padding: 10px 0 0 30px;\n}\n.benefit-checked li:before {\n  background: url(https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Screenshot_2023-07-31_04.49.26_f9IvVL.png?v=1690807782);\n  content: \" \";\n  background-size: contain;\n  width: 30px;\n  height: 30px;\n  display: block;\n  position: absolute;\n  margin-left: -31px;\n  margin-top: -3px;\n}\n.product-option-input:checked + .single-product-option .circle {\n    background-color: #56a512; /* green-500 */\n  }\n\n.product-option-input:checked + .single-product-option .circle::after {\n    content: \"✔\";\n    color: white;\n    font-size: 12px;\n    position: relative;\n    left: 25%;\n    transform: translate(-50%, -50%);\n}\n@media only screen and (max-width: 768px) {\n.product-option-input:checked + .single-product-option .circle::after {\ntop:15%;\n}\n}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "9ebbf730-3791-4b95-a951-d0239fad74a1": {
+      "type": "simple-image-section",
+      "disabled": true,
+      "settings": {
+        "bgcolor": "",
+        "imagepro": "shopify://shop_images/ReSet_Lander_Hero_V7_3024x_2200x_4be84c15-3099-4dd9-8b56-0e6ed861c38f.png",
+        "image_class": "",
+        "container_class": "p-2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "174540217124a535af",
+    "60f07b74-303e-4fd2-b910-a99bea93e8db",
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068",
+    "2dd826f7-81fe-44c1-aa74-28f5c42251b9",
+    "dk_timeline_section_JCb3Ed",
+    "5c0b5357-2c78-4f2b-a6e2-edca1f8d2145",
+    "5a8542bf-d2c2-4934-89a7-b65cb531ccf3",
+    "233404af-9ae8-408b-9c7a-001cf3500aeb",
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "89a9fb4b-6df6-4855-9f5a-d78873047246",
+    "16801324-f6c3-48a2-a4a3-48d411e744df",
+    "944efbb9-81da-41ff-b131-722adde5d9d2",
+    "recommendations",
+    "collection-return",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "9ebbf730-3791-4b95-a951-d0239fad74a1"
+  ]
+}

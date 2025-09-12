@@ -1,0 +1,24 @@
+<div class="mt-1">
+  <div class="flex justify-between mb-1" v-if="gotFreeShippingMessage==''">
+    <span class="text-xs font-medium text-prolon_green"
+    v-html="freeShippingMessage"
+    ></span>
+    <span class="text-xs font-medium text-prolon_green"
+    v-html="awayFreeShippingMessage"
+    > </span>
+  </div>
+  <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+    <div
+      class="bg-prolon h-2.5 rounded-full max-w-full transition duration-300 ease-in-out"
+      :style="
+        `    transition: all .5s;
+        width:${remaingShippingPercetange}%`
+      "
+    ></div>
+  </div> 
+  <div class="mt-1 text-center">
+    <span class="text-sm font-semibold text-gray-700"
+    v-html="gotFreeShippingMessage"
+    ></span>
+  </div>
+</div>

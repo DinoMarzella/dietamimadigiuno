@@ -1,0 +1,38 @@
+{%- assign transDelay = index | times: 0.5 | plus: 1.0 -%}
+<div
+  class=" bg-white px-[20px] max-w-[1600px] mx-auto product-tabs-detail-inner tab-detail-{{index}} {% if index == 1 %} block{% else %} hidden{% endif %}"
+>
+  <div
+    class="bg-[#F7F9FB] flex items-stretch border-t-[8px] border-[#73994a] py-[20px] md:py-[40px] flex-col-reverse md:flex-row-reverse "
+  >
+    <div class="w-full md:w-[50%] px-0 flex justify-center items-center">
+      {% if show_image == true %}
+        <img
+          class="relative !h-full !w-full max-h-[585px]  !delay-300 hero__animation-contents {%- if image_contain -%} !object-contain {% else %} object-cover {%- endif -%}"
+          src="{{image | img_url: '1600x'}}"
+          alt="Feature Image 1"
+        >
+      {% else %}
+        <div>{{ custom_html }}</div>
+      {% endif %}
+    </div>
+    <div class="w-full md:w-[50%] px-[20px] mb-[40px] md:mb-0">
+      <h2
+        class="
+          my-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents
+          !delay-200
+        "
+      >
+        {{ title }}
+      </h2>
+      <span class="inline-block py-px mb-[15px] text-[18px] md:text-[24px] leading-5 text-[#73994a] font-medium uppercase hero__animation-contents  !delay-100">
+        {{ subtitle }}
+      </span>
+      <p
+        class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500"
+      >
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</div>

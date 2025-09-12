@@ -1,0 +1,173 @@
+<style>
+  .kick-heart-info-wrapper{
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .kick-heart-info-inner{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  .kick-heart-info-cards{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 40px;
+    padding: 50px 0px;
+  }
+  .kick-heart-info-single{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .kick-heart-info-single .kick-heart-info-single-image{
+    max-height: 50px;
+    max-width: 43px;
+    object-fit: contain;
+    margin: auto;
+
+  }
+  .kick-heart-info-single .kick-heart-info-single-image-bottom{
+    max-width: 340px;
+    object-fit: contain;
+    margin: auto;
+
+  }
+  .kick-heart-info-single p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .kick-heart-top-title{
+    font-family: "interstate", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2f6645;
+  }
+  .kick-heart-bottom-title{
+    font-family: Avenir, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  }
+  .kick-heart-bottom-image{
+    max-width: 360px;
+    object-fit: contain;
+    margin: auto;
+    padding-top: 30px;
+  }
+@media(max-width:767px){
+  .kick-heart-info-cards{
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 50px 0px;
+  }
+
+  .kick-heart-info-single p{
+    font-size: 18px;
+  }
+  .kick-heart-top-title{
+  font-size: 28px;
+  }
+  .kick-heart-bottom-title{
+  font-size: 22px;
+  }
+  .kick-heart-bottom-image{
+    max-width: 280px;
+  }
+  .kick-heart-info-single .kick-heart-info-single-image-bottom{
+    max-width: 280px;
+  }
+} 
+</style>
+
+<div class="kick-heart-info-wrapper">
+  <div class="kick-heart-info-inner">
+    <h3 class="kick-heart-top-title">{{section.settings.title}}</h3>
+
+    <div class="kick-heart-info-cards">
+      {%- for block in section.blocks -%}
+      <div class="kick-heart-info-single">
+        <img class="kick-heart-info-single-image" src="{{ block.settings.image | img_url: '200x' }}">
+        <p>{{block.settings.description}}</p>
+        <img class="kick-heart-info-single-image-bottom" src="{{ block.settings.bottom_image | img_url: '400x' }}">
+      </div>
+      {%- endfor -%}
+    </div>
+
+    <div class="kick-heart-bottom-title">{{section.settings.title_bottom}}</div>
+    <img class="kick-heart-bottom-image" src="{{ section.settings.bottom_image | img_url: '2200x' }}">
+  </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Kick Heart Association",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "ProLon Benefits"
+      },
+      {
+        "type": "text",
+        "id": "title_bottom",
+        "label": "Bottom Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "bottom_image",
+        "label": "Bottom Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "cards",
+        "name": "Heart Card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "image_picker",
+            "id": "bottom_image",
+            "label": "Bottom Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+        "name": "Kick Heart Association"
+    }
+        ]
+  }
+{% endschema %}

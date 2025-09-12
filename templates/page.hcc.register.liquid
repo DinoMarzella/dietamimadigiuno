@@ -1,0 +1,1032 @@
+ {{ 'registration.scss.css' | asset_url | stylesheet_tag }}
+ {% include 'aaa_mem_helper' with 'page' %}<div class="page-width page-content">
+
+   {%- render 'breadcrumbs' -%}
+
+   <div class="grid">
+     <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth registration-custom-content">
+
+       <div class="rte rte--nomargin">
+         {{ page.content }}
+       </div>
+       <form method="post" action="" class="custom-membership_form registration-form" enctype="multipart/form-data">
+         <input type="hidden" name="container_id" value=""><input type="hidden" name="form_id" value="4505"><input
+           type="hidden" name="form_domain" value="prolon-pro.myshopify.com"><input type="hidden" name=""
+           value="Thank You!" class="success_msg"><input type="hidden" name="" value=""
+           class="aaa_thankyoupageurl"><input type="hidden" name="type" value="HCC">
+         <div class="">
+           <h1 type="h1" class="header" name="" id="" style="color: rgb(0, 0, 0);">HEALTHCARE COACH EXPERT</h1>
+         </div>
+         <div class="">
+           <hr type="hr" class="aaadivider" name="" id="">
+         </div>
+         <div class="">
+           <h3 type="h3" class="header" name="" id="" style="color: rgb(0, 0, 0);">1. BEGIN REGISTRATION</h3>
+         </div>
+         <div class="membership-text form-group field-first-name"><label for="First Name" class="membership-text-label"
+             style="color: rgb(0, 0, 0);">First Name <span class="required">*</span> </label> <input type="text"
+             required="" class="form-control" name="First Name" id="First Name" aria-required="true"></div>
+         <div class="membership-text form-group field-last-name"><label for="Last Name" class="membership-text-label"
+             style="color: rgb(0, 0, 0);">Last Name <span class="required">*</span> </label> <input type="text"
+             required="" class="form-control" name="Last Name" id="Last Name" aria-required="true"></div>
+         <div class="membership-email form-group field-replyemail"><label for="Email Address"
+             class="membership-email-label" style="color: rgb(0, 0, 0);">Email Address <span class="required">*</span>
+           </label> <input type="email" required="" class="form-control" name="Email Address" id="Email Address"
+             aria-required="true"></div>
+         <div class="membership-password form-group field-customer-password"><label for="Password"
+             class="membership-password-label" style="color: rgb(0, 0, 0);">Password <span class="required">*</span>
+           </label> <input type="password" required="" class="form-control" name="Password" id="Password"
+             aria-required="true"></div>
+         <div class="membership-select form-group field-aaa-form-builder-country"><label for="Country"
+             class="membership-select-label" style="color: rgb(0, 0, 0);">Country  <span class="required">*</span></label><select type="select"
+             class="form-control" name="Country" id="Country" required>
+             <option value="Canada">Canada</option>
+             <option value="United States" selected="true">United States</option>
+             <option value="United Kingdom">United Kingdom</option>
+             <option value="Afghanistan">Afghanistan</option>
+             <option value="Albania">Albania</option>
+             <option value="Algeria">Algeria</option>
+             <option value="Andorra">Andorra</option>
+             <option value="Angola">Angola</option>
+             <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+             <option value="Argentina">Argentina</option>
+             <option value="Armenia">Armenia</option>
+             <option value="Aruba">Aruba</option>
+             <option value="Australia">Australia</option>
+             <option value="Austria">Austria</option>
+             <option value="Azerbaijan">Azerbaijan</option>
+             <option value="Bahamas">Bahamas</option>
+             <option value="Bahrain">Bahrain</option>
+             <option value="Bangladesh">Bangladesh</option>
+             <option value="Barbados">Barbados</option>
+             <option value="Belarus">Belarus</option>
+             <option value="Belgium">Belgium</option>
+             <option value="Belize">Belize</option>
+             <option value="Benin">Benin</option>
+             <option value="Bermuda">Bermuda</option>
+             <option value="Bhutan">Bhutan</option>
+             <option value="Bolivia">Bolivia</option>
+             <option value="Bosnia And Herzegovina">Bosnia And Herzegovina</option>
+             <option value="Botswana">Botswana</option>
+             <option value="Brazil">Brazil</option>
+             <option value="Brunei">Brunei</option>
+             <option value="Bulgaria">Bulgaria</option>
+             <option value="New Caledonia">New Caledonia</option>
+             <option value="Cambodia">Cambodia</option>
+             <option value="Republic of Cameroon">Republic of Cameroon</option>
+             <option value="Cayman Islands">Cayman Islands</option>
+             <option value="Chile">Chile</option>
+             <option value="Colombia">Colombia</option>
+             <option value="Comoros">Comoros</option>
+             <option value="Congo">Congo</option>
+             <option value="Congo  The Democratic Republic Of The">Congo, The Democratic Republic Of The</option>
+             <option value="Costa Rica">Costa Rica</option>
+             <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+             <option value="Croatia">Croatia</option>
+             <option value="Curaçao">Curaçao</option>
+             <option value="Cyprus">Cyprus</option>
+             <option value="Czech Republic">Czech Republic</option>
+             <option value="Denmark">Denmark</option>
+             <option value="Dominica">Dominica</option>
+             <option value="Dominican Republic">Dominican Republic</option>
+             <option value="Ecuador">Ecuador</option>
+             <option value="Egypt">Egypt</option>
+             <option value="El Salvador">El Salvador</option>
+             <option value="Estonia">Estonia</option>
+             <option value="Ethiopia">Ethiopia</option>
+             <option value="Equatorial Guinea">Equatorial Guinea</option>
+             <option value="Faroe Islands">Faroe Islands</option>
+             <option value="Fiji">Fiji</option>
+             <option value="Finland">Finland</option>
+             <option value="France">France</option>
+             <option value="Gabon">Gabon</option>
+             <option value="Gambia">Gambia</option>
+             <option value="Georgia">Georgia</option>
+             <option value="Germany">Germany</option>
+             <option value="Ghana">Ghana</option>
+             <option value="French Polynesia">French Polynesia</option>
+             <option value="Gibraltar">Gibraltar</option>
+             <option value="Greece">Greece</option>
+             <option value="Greenland">Greenland</option>
+             <option value="Grenada">Grenada</option>
+             <option value="Guadeloupe">Guadeloupe</option>
+             <option value="Guatemala">Guatemala</option>
+             <option value="Guernsey">Guernsey</option>
+             <option value="Guyana">Guyana</option>
+             <option value="Haiti">Haiti</option>
+             <option value="Honduras">Honduras</option>
+             <option value="Hong Kong">Hong Kong</option>
+             <option value="Hungary">Hungary</option>
+             <option value="Iceland">Iceland</option>
+             <option value="India">India</option>
+             <option value="Indonesia">Indonesia</option>
+             <option value="Ireland">Ireland</option>
+             <option value="Isle Of Man">Isle Of Man</option>
+             <option value="Israel">Israel</option>
+             <option value="Italy">Italy</option>
+             <option value="Jamaica">Jamaica</option>
+             <option value="Japan">Japan</option>
+             <option value="Jersey">Jersey</option>
+             <option value="Jordan">Jordan</option>
+             <option value="Kazakhstan">Kazakhstan</option>
+             <option value="Kenya">Kenya</option>
+             <option value="Kosovo">Kosovo</option>
+             <option value="Kuwait">Kuwait</option>
+             <option value="Kyrgyzstan">Kyrgyzstan</option>
+             <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+             <option value="Latvia">Latvia</option>
+             <option value="Lebanon">Lebanon</option>
+             <option value="Lesotho">Lesotho</option>
+             <option value="Liberia">Liberia</option>
+             <option value="Liechtenstein">Liechtenstein</option>
+             <option value="Lithuania">Lithuania</option>
+             <option value="Luxembourg">Luxembourg</option>
+             <option value="Macao">Macao</option>
+             <option value="Macedonia  Republic Of">Macedonia, Republic Of</option>
+             <option value="Madagascar">Madagascar</option>
+             <option value="Malawi">Malawi</option>
+             <option value="Malaysia">Malaysia</option>
+             <option value="Maldives">Maldives</option>
+             <option value="Malta">Malta</option>
+             <option value="Martinique">Martinique</option>
+             <option value="Mauritius">Mauritius</option>
+             <option value="Mexico">Mexico</option>
+             <option value="Moldova  Republic of">Moldova, Republic of</option>
+             <option value="Monaco">Monaco</option>
+             <option value="Mongolia">Mongolia</option>
+             <option value="Montenegro">Montenegro</option>
+             <option value="Morocco">Morocco</option>
+             <option value="Mozambique">Mozambique</option>
+             <option value="Myanmar">Myanmar</option>
+             <option value="Namibia">Namibia</option>
+             <option value="Nepal">Nepal</option>
+             <option value="Netherlands Antilles">Netherlands Antilles</option>
+             <option value="Netherlands">Netherlands</option>
+             <option value="New Zealand">New Zealand</option>
+             <option value="Nicaragua">Nicaragua</option>
+             <option value="Niger">Niger</option>
+             <option value="Nigeria">Nigeria</option>
+             <option value="Norway">Norway</option>
+             <option value="Oman">Oman</option>
+             <option value="Pakistan">Pakistan</option>
+             <option value="Palestinian Territory  Occupied">Palestinian Territory, Occupied</option>
+             <option value="Panama">Panama</option>
+             <option value="Papua New Guinea">Papua New Guinea</option>
+             <option value="Paraguay">Paraguay</option>
+             <option value="Peru">Peru</option>
+             <option value="Philippines">Philippines</option>
+             <option value="Poland">Poland</option>
+             <option value="Portugal">Portugal</option>
+             <option value="Qatar">Qatar</option>
+             <option value="Reunion">Reunion</option>
+             <option value="Romania">Romania</option>
+             <option value="Russia">Russia</option>
+             <option value="Rwanda">Rwanda</option>
+             <option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+             <option value="Saint Lucia">Saint Lucia</option>
+             <option value="Saint Martin">Saint Martin</option>
+             <option value="Sao Tome And Principe">Sao Tome And Principe</option>
+             <option value="Samoa">Samoa</option>
+             <option value="Saudi Arabia">Saudi Arabia</option>
+             <option value="Senegal">Senegal</option>
+             <option value="Serbia">Serbia</option>
+             <option value="Seychelles">Seychelles</option>
+             <option value="Singapore">Singapore</option>
+             <option value="Sint Maarten">Sint Maarten</option>
+             <option value="Slovakia">Slovakia</option>
+             <option value="Slovenia">Slovenia</option>
+             <option value="Solomon Islands">Solomon Islands</option>
+             <option value="South Africa">South Africa</option>
+             <option value="South Korea">South Korea</option>
+             <option value="Spain">Spain</option>
+             <option value="Sri Lanka">Sri Lanka</option>
+             <option value="St. Vincent">St. Vincent</option>
+             <option value="Sudan">Sudan</option>
+             <option value="Suriname">Suriname</option>
+             <option value="Sweden">Sweden</option>
+             <option value="Switzerland">Switzerland</option>
+             <option value="Syria">Syria</option>
+             <option value="Taiwan">Taiwan</option>
+             <option value="Tanzania  United Republic Of">Tanzania, United Republic Of</option>
+             <option value="Thailand">Thailand</option>
+             <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+             <option value="Tunisia">Tunisia</option>
+             <option value="Turkey">Turkey</option>
+             <option value="Turkmenistan">Turkmenistan</option>
+             <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+             <option value="Uganda">Uganda</option>
+             <option value="Ukraine">Ukraine</option>
+             <option value="United Arab Emirates">United Arab Emirates</option>
+             <option value="Uruguay">Uruguay</option>
+             <option value="Uzbekistan">Uzbekistan</option>
+             <option value="Vanuatu">Vanuatu</option>
+             <option value="Venezuela">Venezuela</option>
+             <option value="Vietnam">Vietnam</option>
+             <option value="Virgin Islands  British">Virgin Islands, British</option>
+             <option value="Yemen">Yemen</option>
+             <option value="Zambia">Zambia</option>
+             <option value="Zimbabwe">Zimbabwe</option>
+             <option value="Aland Islands">Aland Islands</option>
+             <option value="Anguilla">Anguilla</option>
+             <option value="Bouvet Island">Bouvet Island</option>
+             <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+             <option value="Burkina Faso">Burkina Faso</option>
+             <option value="Burundi">Burundi</option>
+             <option value="Cape Verde">Cape Verde</option>
+             <option value="Central African Republic">Central African Republic</option>
+             <option value="Chad">Chad</option>
+             <option value="Christmas Island">Christmas Island</option>
+             <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+             <option value="Cook Islands">Cook Islands</option>
+             <option value="Cuba">Cuba</option>
+             <option value="Djibouti">Djibouti</option>
+             <option value="Eritrea">Eritrea</option>
+             <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+             <option value="French Guiana">French Guiana</option>
+             <option value="French Southern Territories">French Southern Territories</option>
+             <option value="Guinea">Guinea</option>
+             <option value="Guinea Bissau">Guinea Bissau</option>
+             <option value="Heard Island And Mcdonald Islands">Heard Island And Mcdonald Islands</option>
+             <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+             <option value="Iran  Islamic Republic Of">Iran, Islamic Republic Of</option>
+             <option value="Iraq">Iraq</option>
+             <option value="Kiribati">Kiribati</option>
+             <option value="Korea  Democratic People's Republic Of">Korea, Democratic People's Republic Of</option>
+             <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+             <option value="Mali">Mali</option>
+             <option value="Mauritania">Mauritania</option>
+             <option value="Mayotte">Mayotte</option>
+             <option value="Montserrat">Montserrat</option>
+             <option value="Nauru">Nauru</option>
+             <option value="Niue">Niue</option>
+             <option value="Norfolk Island">Norfolk Island</option>
+             <option value="Pitcairn">Pitcairn</option>
+             <option value="Saint Barthélemy">Saint Barthélemy</option>
+             <option value="Saint Helena">Saint Helena</option>
+             <option value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
+             <option value="San Marino">San Marino</option>
+             <option value="Sierra Leone">Sierra Leone</option>
+             <option value="Somalia">Somalia</option>
+             <option value="South Georgia And The South Sandwich Islands">South Georgia And The South Sandwich
+               Islands
+             </option>
+             <option value="Svalbard And Jan Mayen">Svalbard And Jan Mayen</option>
+             <option value="Swaziland">Swaziland</option>
+             <option value="Tajikistan">Tajikistan</option>
+             <option value="Timor Leste">Timor Leste</option>
+             <option value="Togo">Togo</option>
+             <option value="Tokelau">Tokelau</option>
+             <option value="Tonga">Tonga</option>
+             <option value="Tuvalu">Tuvalu</option>
+             <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+             <option value="Wallis And Futuna">Wallis And Futuna</option>
+             <option value="Western Sahara">Western Sahara</option>
+           </select></div>
+         <div class="membership-select form-group field-select-1603876171104"><label for="Language Preference"
+             class="membership-select-label" style="color: rgb(0, 0, 0);">Language Preference <span
+               class="required">*</span> </label><select type="select" required="" class="form-control"
+             name="Language Preference" id="Language Preference" aria-required="true">
+             <option selected="true">--</option>
+             <option value="English">English</option>
+           </select></div>
+         <div class="membership-radio form-group field-radio-group-1603876215072"><label for="WILL THERE BE MORE THAN ONE PERSON IN
+            THE BUSINESS?*" class="membership-radio-group-label" style="color: rgb(0, 0, 0);">WILL THERE BE MORE
+             THAN
+             ONE PERSON IN
+             THE
+             BUSINESS? <span class="required">*</span> </label>
+           <div class="radio-group"><input value="No" type="radio" required="" class="radio-group"
+               name="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*"
+               id="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*-0" aria-required="true" checked="">
+             <label for="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*-0"
+               style="color: rgb(0, 0, 0);">No</label><br><input value="Yes" type="radio" required=""
+               class="radio-group" name="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*"
+               id="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*-1" aria-required="true"> <label
+               for="WILL THERE BE MORE THAN ONE PERSON IN THE BUSINESS?*-1" style="color: rgb(0, 0, 0);">Yes</label><br>
+           </div>
+         </div>
+         <div class="">
+           <h3 type="h3" class="header" name="" id="" style="color: rgb(0, 0, 0);">2. ACCOUNT INFORMATION</h3>
+         </div>
+         <div class="membership-text form-group field-text-1603876447927"><label for="BUSINESS NAME"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">BUSINESS NAME <span class="required">*</span>
+           </label> <input type="text" required="" class="form-control" name="BUSINESS NAME" id="BUSINESS NAME"
+             aria-required="true"></div>
+         <div class="membership-text form-group field-text-1603876466896"><label for="RESELLER PERMIT/TAX ID #"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">RESELLER PERMIT/TAX ID # <span
+               class="required">*</span> </label> <input type="text" required="" class="form-control"
+             name="RESELLER PERMIT/TAX ID #" id="RESELLER PERMIT/TAX ID #" aria-required="true"></div>
+         <div class="membership-text form-group field-text-1603876478576"><label for="RESALE LICENSE #"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">RESALE LICENSE # <span class="required">*</span>
+           </label> <input type="text" required="" class="form-control" name="RESALE LICENSE #" id="RESALE LICENSE #"
+             aria-required="true"></div>
+         <div class="membership-file form-group field-file-1603887227770"><label for="RESALE CERTIFICATE"
+             class="membership-file-label" style="color: rgb(0, 0, 0);">RESALE CERTIFICATE <span
+               class="required">*</span> </label> <input type="file" class="form-control"
+             name="RESALE CERTIFICATE" id="RESALE CERTIFICATE" required ></div>
+         <div class="membership-text form-group field-text-1603874991732"><label for="TYPE OF PRACTICE"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">TYPE OF PRACTICE <span class="required">*</span>
+           </label> <input type="text" required="" class="form-control" name="TYPE OF PRACTICE" id="TYPE OF PRACTICE"
+             aria-required="true"></div>
+         <div class="membership-number form-group field-number-1603876505799"><label for="Phone"
+             class="membership-number-label" style="color: rgb(0, 0, 0);">Phone <span class="required">*</span>
+           </label>
+           <input type="number" required="" class="form-control" name="Phone" id="Phone" aria-required="true"></div>
+         <div class="">
+           <h3 type="h3" class="header" name="" id="" style="color: rgb(0, 0, 0);">Office Address</h3>
+         </div>
+         <div class="membership-text form-group field-text-1603818259115"><label for="Street Address"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Street Address  <span class="required">*</span></label> <input type="text"
+             class="form-control" name="Street Address" id="Street Address" required></div>
+         <div class="membership-text form-group field-text-1603818270548"><label for="Address Line 2"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Address Line 2 </label> <input type="text"
+             class="form-control" name="Address Line 2" id="Address Line 2"></div>
+         <div class="membership-text form-group field-text-2020102725622"><label for="City"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">City  <span class="required">*</span></label> <input type="text"
+             class="form-control" name="City" id="City" required></div>
+         <div class="membership-text form-group field-text-1603818400859"><label for="State / Province / Region"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">State / Province / Region <span class="required">*</span> </label> <input
+             type="text" class="form-control" name="State / Province / Region" id="State / Province / Region" required></div>
+         <div class="membership-text form-group field-text-1603818439230"><label for="Zip / Postal Code"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Zip / Postal Code <span class="required">*</span> </label> <input type="text"
+             class="form-control" name="Zip / Postal Code" id="Zip / Postal Code" required></div>
+         <div class="membership-select form-group field-aaa-form-builder-country"><label for="Address Country"
+             class="membership-select-label" style="color: rgb(0, 0, 0);">Country <span class="required">*</span> </label><select type="select"
+             class="form-control" name="Address Country" id="Address Country" required>
+             <option value="Canada">Canada</option>
+             <option value="United States" selected="true">United States</option>
+             <option value="United Kingdom">United Kingdom</option>
+             <option value="Afghanistan">Afghanistan</option>
+             <option value="Albania">Albania</option>
+             <option value="Algeria">Algeria</option>
+             <option value="Andorra">Andorra</option>
+             <option value="Angola">Angola</option>
+             <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+             <option value="Argentina">Argentina</option>
+             <option value="Armenia">Armenia</option>
+             <option value="Aruba">Aruba</option>
+             <option value="Australia">Australia</option>
+             <option value="Austria">Austria</option>
+             <option value="Azerbaijan">Azerbaijan</option>
+             <option value="Bahamas">Bahamas</option>
+             <option value="Bahrain">Bahrain</option>
+             <option value="Bangladesh">Bangladesh</option>
+             <option value="Barbados">Barbados</option>
+             <option value="Belarus">Belarus</option>
+             <option value="Belgium">Belgium</option>
+             <option value="Belize">Belize</option>
+             <option value="Benin">Benin</option>
+             <option value="Bermuda">Bermuda</option>
+             <option value="Bhutan">Bhutan</option>
+             <option value="Bolivia">Bolivia</option>
+             <option value="Bosnia And Herzegovina">Bosnia And Herzegovina</option>
+             <option value="Botswana">Botswana</option>
+             <option value="Brazil">Brazil</option>
+             <option value="Brunei">Brunei</option>
+             <option value="Bulgaria">Bulgaria</option>
+             <option value="New Caledonia">New Caledonia</option>
+             <option value="Cambodia">Cambodia</option>
+             <option value="Republic of Cameroon">Republic of Cameroon</option>
+             <option value="Cayman Islands">Cayman Islands</option>
+             <option value="Chile">Chile</option>
+             <option value="Colombia">Colombia</option>
+             <option value="Comoros">Comoros</option>
+             <option value="Congo">Congo</option>
+             <option value="Congo  The Democratic Republic Of The">Congo, The Democratic Republic Of The</option>
+             <option value="Costa Rica">Costa Rica</option>
+             <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+             <option value="Croatia">Croatia</option>
+             <option value="Curaçao">Curaçao</option>
+             <option value="Cyprus">Cyprus</option>
+             <option value="Czech Republic">Czech Republic</option>
+             <option value="Denmark">Denmark</option>
+             <option value="Dominica">Dominica</option>
+             <option value="Dominican Republic">Dominican Republic</option>
+             <option value="Ecuador">Ecuador</option>
+             <option value="Egypt">Egypt</option>
+             <option value="El Salvador">El Salvador</option>
+             <option value="Estonia">Estonia</option>
+             <option value="Ethiopia">Ethiopia</option>
+             <option value="Equatorial Guinea">Equatorial Guinea</option>
+             <option value="Faroe Islands">Faroe Islands</option>
+             <option value="Fiji">Fiji</option>
+             <option value="Finland">Finland</option>
+             <option value="France">France</option>
+             <option value="Gabon">Gabon</option>
+             <option value="Gambia">Gambia</option>
+             <option value="Georgia">Georgia</option>
+             <option value="Germany">Germany</option>
+             <option value="Ghana">Ghana</option>
+             <option value="French Polynesia">French Polynesia</option>
+             <option value="Gibraltar">Gibraltar</option>
+             <option value="Greece">Greece</option>
+             <option value="Greenland">Greenland</option>
+             <option value="Grenada">Grenada</option>
+             <option value="Guadeloupe">Guadeloupe</option>
+             <option value="Guatemala">Guatemala</option>
+             <option value="Guernsey">Guernsey</option>
+             <option value="Guyana">Guyana</option>
+             <option value="Haiti">Haiti</option>
+             <option value="Honduras">Honduras</option>
+             <option value="Hong Kong">Hong Kong</option>
+             <option value="Hungary">Hungary</option>
+             <option value="Iceland">Iceland</option>
+             <option value="India">India</option>
+             <option value="Indonesia">Indonesia</option>
+             <option value="Ireland">Ireland</option>
+             <option value="Isle Of Man">Isle Of Man</option>
+             <option value="Israel">Israel</option>
+             <option value="Italy">Italy</option>
+             <option value="Jamaica">Jamaica</option>
+             <option value="Japan">Japan</option>
+             <option value="Jersey">Jersey</option>
+             <option value="Jordan">Jordan</option>
+             <option value="Kazakhstan">Kazakhstan</option>
+             <option value="Kenya">Kenya</option>
+             <option value="Kosovo">Kosovo</option>
+             <option value="Kuwait">Kuwait</option>
+             <option value="Kyrgyzstan">Kyrgyzstan</option>
+             <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+             <option value="Latvia">Latvia</option>
+             <option value="Lebanon">Lebanon</option>
+             <option value="Lesotho">Lesotho</option>
+             <option value="Liberia">Liberia</option>
+             <option value="Liechtenstein">Liechtenstein</option>
+             <option value="Lithuania">Lithuania</option>
+             <option value="Luxembourg">Luxembourg</option>
+             <option value="Macao">Macao</option>
+             <option value="Macedonia  Republic Of">Macedonia, Republic Of</option>
+             <option value="Madagascar">Madagascar</option>
+             <option value="Malawi">Malawi</option>
+             <option value="Malaysia">Malaysia</option>
+             <option value="Maldives">Maldives</option>
+             <option value="Malta">Malta</option>
+             <option value="Martinique">Martinique</option>
+             <option value="Mauritius">Mauritius</option>
+             <option value="Mexico">Mexico</option>
+             <option value="Moldova  Republic of">Moldova, Republic of</option>
+             <option value="Monaco">Monaco</option>
+             <option value="Mongolia">Mongolia</option>
+             <option value="Montenegro">Montenegro</option>
+             <option value="Morocco">Morocco</option>
+             <option value="Mozambique">Mozambique</option>
+             <option value="Myanmar">Myanmar</option>
+             <option value="Namibia">Namibia</option>
+             <option value="Nepal">Nepal</option>
+             <option value="Netherlands Antilles">Netherlands Antilles</option>
+             <option value="Netherlands">Netherlands</option>
+             <option value="New Zealand">New Zealand</option>
+             <option value="Nicaragua">Nicaragua</option>
+             <option value="Niger">Niger</option>
+             <option value="Nigeria">Nigeria</option>
+             <option value="Norway">Norway</option>
+             <option value="Oman">Oman</option>
+             <option value="Pakistan">Pakistan</option>
+             <option value="Palestinian Territory  Occupied">Palestinian Territory, Occupied</option>
+             <option value="Panama">Panama</option>
+             <option value="Papua New Guinea">Papua New Guinea</option>
+             <option value="Paraguay">Paraguay</option>
+             <option value="Peru">Peru</option>
+             <option value="Philippines">Philippines</option>
+             <option value="Poland">Poland</option>
+             <option value="Portugal">Portugal</option>
+             <option value="Qatar">Qatar</option>
+             <option value="Reunion">Reunion</option>
+             <option value="Romania">Romania</option>
+             <option value="Russia">Russia</option>
+             <option value="Rwanda">Rwanda</option>
+             <option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+             <option value="Saint Lucia">Saint Lucia</option>
+             <option value="Saint Martin">Saint Martin</option>
+             <option value="Sao Tome And Principe">Sao Tome And Principe</option>
+             <option value="Samoa">Samoa</option>
+             <option value="Saudi Arabia">Saudi Arabia</option>
+             <option value="Senegal">Senegal</option>
+             <option value="Serbia">Serbia</option>
+             <option value="Seychelles">Seychelles</option>
+             <option value="Singapore">Singapore</option>
+             <option value="Sint Maarten">Sint Maarten</option>
+             <option value="Slovakia">Slovakia</option>
+             <option value="Slovenia">Slovenia</option>
+             <option value="Solomon Islands">Solomon Islands</option>
+             <option value="South Africa">South Africa</option>
+             <option value="South Korea">South Korea</option>
+             <option value="Spain">Spain</option>
+             <option value="Sri Lanka">Sri Lanka</option>
+             <option value="St. Vincent">St. Vincent</option>
+             <option value="Sudan">Sudan</option>
+             <option value="Suriname">Suriname</option>
+             <option value="Sweden">Sweden</option>
+             <option value="Switzerland">Switzerland</option>
+             <option value="Syria">Syria</option>
+             <option value="Taiwan">Taiwan</option>
+             <option value="Tanzania  United Republic Of">Tanzania, United Republic Of</option>
+             <option value="Thailand">Thailand</option>
+             <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+             <option value="Tunisia">Tunisia</option>
+             <option value="Turkey">Turkey</option>
+             <option value="Turkmenistan">Turkmenistan</option>
+             <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+             <option value="Uganda">Uganda</option>
+             <option value="Ukraine">Ukraine</option>
+             <option value="United Arab Emirates">United Arab Emirates</option>
+             <option value="Uruguay">Uruguay</option>
+             <option value="Uzbekistan">Uzbekistan</option>
+             <option value="Vanuatu">Vanuatu</option>
+             <option value="Venezuela">Venezuela</option>
+             <option value="Vietnam">Vietnam</option>
+             <option value="Virgin Islands  British">Virgin Islands, British</option>
+             <option value="Yemen">Yemen</option>
+             <option value="Zambia">Zambia</option>
+             <option value="Zimbabwe">Zimbabwe</option>
+             <option value="Aland Islands">Aland Islands</option>
+             <option value="Anguilla">Anguilla</option>
+             <option value="Bouvet Island">Bouvet Island</option>
+             <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+             <option value="Burkina Faso">Burkina Faso</option>
+             <option value="Burundi">Burundi</option>
+             <option value="Cape Verde">Cape Verde</option>
+             <option value="Central African Republic">Central African Republic</option>
+             <option value="Chad">Chad</option>
+             <option value="Christmas Island">Christmas Island</option>
+             <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+             <option value="Cook Islands">Cook Islands</option>
+             <option value="Cuba">Cuba</option>
+             <option value="Djibouti">Djibouti</option>
+             <option value="Eritrea">Eritrea</option>
+             <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+             <option value="French Guiana">French Guiana</option>
+             <option value="French Southern Territories">French Southern Territories</option>
+             <option value="Guinea">Guinea</option>
+             <option value="Guinea Bissau">Guinea Bissau</option>
+             <option value="Heard Island And Mcdonald Islands">Heard Island And Mcdonald Islands</option>
+             <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+             <option value="Iran  Islamic Republic Of">Iran, Islamic Republic Of</option>
+             <option value="Iraq">Iraq</option>
+             <option value="Kiribati">Kiribati</option>
+             <option value="Korea  Democratic People's Republic Of">Korea, Democratic People's Republic Of</option>
+             <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+             <option value="Mali">Mali</option>
+             <option value="Mauritania">Mauritania</option>
+             <option value="Mayotte">Mayotte</option>
+             <option value="Montserrat">Montserrat</option>
+             <option value="Nauru">Nauru</option>
+             <option value="Niue">Niue</option>
+             <option value="Norfolk Island">Norfolk Island</option>
+             <option value="Pitcairn">Pitcairn</option>
+             <option value="Saint Barthélemy">Saint Barthélemy</option>
+             <option value="Saint Helena">Saint Helena</option>
+             <option value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
+             <option value="San Marino">San Marino</option>
+             <option value="Sierra Leone">Sierra Leone</option>
+             <option value="Somalia">Somalia</option>
+             <option value="South Georgia And The South Sandwich Islands">South Georgia And The South Sandwich
+               Islands</option>
+             <option value="Svalbard And Jan Mayen">Svalbard And Jan Mayen</option>
+             <option value="Swaziland">Swaziland</option>
+             <option value="Tajikistan">Tajikistan</option>
+             <option value="Timor Leste">Timor Leste</option>
+             <option value="Togo">Togo</option>
+             <option value="Tokelau">Tokelau</option>
+             <option value="Tonga">Tonga</option>
+             <option value="Tuvalu">Tuvalu</option>
+             <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+             <option value="Wallis And Futuna">Wallis And Futuna</option>
+             <option value="Western Sahara">Western Sahara</option>
+           </select></div>
+         <div class="membership-select form-group field-select-1603818481919"><label
+             for="WHAT IS YOUR PREFERRED METHOD OF COMMUNICATION" class="membership-select-label"
+             style="color: rgb(0, 0, 0);">WHAT IS YOUR PREFERRED METHOD OF COMMUNICATION <span class="required">*</span>
+           </label><select type="select" required="" class="form-control"
+             name="WHAT IS YOUR PREFERRED METHOD OF COMMUNICATION" id="WHAT IS YOUR PREFERRED METHOD OF COMMUNICATION"
+             aria-required="true">
+             <option value="E-Mail" selected="true">E-Mail</option>
+             <option value="Fax">Fax</option>
+             <option value="Phone">Phone</option>
+             <option value="Text">Text</option>
+             <option value="Other">Other</option>
+           </select></div>
+         <div class="">
+           <h3 type="h3" class="header" name="" id="" style="color: rgb(0, 0, 0);">2. PROLON IN YOUR PRACTICE</h3>
+         </div>
+         <div class="membership-select form-group field-select-1603818905469"><label for="HOW DID YOU HEAR ABOUT US?"
+             class="membership-select-label" style="color: rgb(0, 0, 0);">HOW DID YOU HEAR ABOUT US? <span
+               class="required">*</span> </label><select type="select" required="" class="form-control"
+             name="HOW DID YOU HEAR ABOUT US?" id="HOW DID YOU HEAR ABOUT US?" aria-required="true">
+             <option value="L-Nutra Employee" selected="true">L-Nutra Employee</option>
+           <option value="A4M">A4M</option>
+             <option value="BioTE">BioTE</option>
+             <option value="Colleague">Colleague</option>
+             <option value="Trade show">Trade show</option>
+             <option value="Podcasts/ Interviews">Podcasts/ Interviews</option>
+             <option value="The Longevity Diet Book">The Longevity Diet Book</option>
+             <option value="Emerson - Wellevate">Emerson - Wellevate</option>
+             <option value="Fasting Documentary">Fasting Documentary</option>
+             <option value="Webinar">Webinar</option>
+             <option value="Patient">Patient</option>
+             <option value="Social Media">Social Media</option>
+             <option value="Get Healthy Store">Get Healthy Store</option>
+             <option value="MDVIP Member">MDVIP Member</option>
+             <option value="Sachin Patel">Sachin Patel</option>
+             <option value="Mark Hyman Podcast">Mark Hyman Podcast</option>
+             <option value="Athena Health/Epocrates">Athena Health/Epocrates</option>
+             <option value="ReachMD">ReachMD</option>
+             <option value="Print Ad">Print Ad</option>
+             <option value="Article">Article</option>
+             <option value="Today's Dietitian">Today's Dietitian</option>
+             <option value="Other">Other</option>
+           </select></div>
+         <div class="membership-radio form-group field-radio-group-1603819052996"><label
+             for="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?" class="membership-radio-group-label"
+             style="color: rgb(0, 0, 0);">DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE? <span
+               class="required">*</span> </label>
+           <div class="radio-group"><input value="yes" type="radio" required="" class="radio-group"
+               name="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?"
+               id="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?-0" aria-required="true"> <label
+               for="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?-0"
+               style="color: rgb(0, 0, 0);">Yes</label><br><input value="no" type="radio" required=""
+               class="radio-group" name="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?"
+               id="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?-1" aria-required="true"> <label
+               for="DO YOU CURRENTLY RECOMMEND PRODUCTS IN YOUR PRACTICE?-1" style="color: rgb(0, 0, 0);">No</label><br>
+           </div>
+         </div>
+         <div class="membership-radio form-group field-radio-group-1603819080414"><label
+             for="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?" class="membership-radio-group-label"
+             style="color: rgb(0, 0, 0);">DO
+             YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE? <span class="required">*</span> </label>
+           <div class="radio-group"><input value="yes" type="radio" required="" class="radio-group"
+               name="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?"
+               id="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?-0" aria-required="true"> <label
+               for="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?-0"
+               style="color: rgb(0, 0, 0);">Yes</label><br><input value="no" type="radio" required=""
+               class="radio-group" name="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?"
+               id="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?-1" aria-required="true"> <label
+               for="DO YOU CURRENTLY SELL PRODUCTS (BUY-AND-BILL) IN YOUR PRACTICE?-1"
+               style="color: rgb(0, 0, 0);">No</label><br></div>
+         </div>
+         <div class="membership-radio form-group field-radio-group-1603819106589"><label
+             for="WHY DID YOU DECIDE TO REGISTER TODAY?*" class="membership-radio-group-label"
+             style="color: rgb(0, 0, 0);">WHY DID YOU DECIDE TO REGISTER TODAY?*
+             <span class="required">*</span> </label>
+           <div class="radio-group"><input value="TO ACCESS EDUCATION" type="radio" required="" class="radio-group"
+               name="WHY DID YOU DECIDE TO REGISTER TODAY?*" id="WHY DID YOU DECIDE TO REGISTER TODAY?*-0"
+               aria-required="true" checked="">
+             <label for="WHY DID YOU DECIDE TO REGISTER TODAY?*-0" style="color: rgb(0, 0, 0);">TO ACCESS
+               EDUCATION</label><br><input value="PERSONAL USE ONLY" type="radio" required="" class="radio-group"
+               name="WHY DID YOU DECIDE TO REGISTER TODAY?*" id="WHY DID YOU DECIDE TO REGISTER TODAY?*-1"
+               aria-required="true"> <label for="WHY DID YOU DECIDE TO REGISTER TODAY?*-1"
+               style="color: rgb(0, 0, 0);">PERSONAL USE ONLY</label><br><input
+               value="TO VERBALLY RECOMMEND PROLON TO MY PATIENTS OR REFER THEM TO A PROLON WEBSITE (EXCLUDES SELLING PROLON)"
+               type="radio" required="" class="radio-group" name="WHY DID YOU DECIDE TO REGISTER TODAY?*"
+               id="WHY DID YOU DECIDE TO REGISTER TODAY?*-2" aria-required="true"> <label
+               for="WHY DID YOU DECIDE TO REGISTER TODAY?*-2" style="color: rgb(0, 0, 0);">TO VERBALLY RECOMMEND
+               PROLON TO MY PATIENTS OR REFER THEM TO A PROLON
+               WEBSITE (EXCLUDES SELLING PROLON)</label><br><input
+               value="TO OFFER PROLON FOR SALE TO MY PATIENTS IN MY PRACTICE (EXCLUDES VERBAL RECOMMENDATION OR REFERRAL TO A PROLON WEBSITE)"
+               type="radio" required="" class="radio-group" name="WHY DID YOU DECIDE TO REGISTER TODAY?*"
+               id="WHY DID YOU DECIDE TO REGISTER TODAY?*-3" aria-required="true"> <label
+               for="WHY DID YOU DECIDE TO REGISTER TODAY?*-3" style="color: rgb(0, 0, 0);">TO OFFER PROLON FOR SALE
+               TO MY PATIENTS IN MY PRACTICE (EXCLUDES VERBAL
+               RECOMMENDATION OR REFERRAL TO A PROLON WEBSITE)</label><br></div>
+         </div>
+         <div class="membership-checkbox form-group field-checkbox-group-1603819160365"><label
+             for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?" class="membership-checkbox-group-label"
+             style="color: rgb(0, 0, 0);">HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON? </label>
+           <div class="checkbox-group"><input value="PRIVATE WEBINARS WITH L-NUTRA STAFF" type="checkbox"
+               class="checkbox-group" name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-0" checked=""> <label
+               for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-0" style="color: rgb(0, 0, 0);"> PRIVATE
+               WEBINARS WITH L-NUTRA STAFF</label><br><input value="GROUP WEBINARS WITH L-NUTRA STAFF" type="checkbox"
+               class="checkbox-group" name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-1"> <label
+               for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-1" style="color: rgb(0, 0, 0);"> GROUP
+               WEBINARS WITH L-NUTRA STAFF</label><br><input value="GROUP WEBINARS WITH KEY OPINION LEADERS"
+               type="checkbox" class="checkbox-group" name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-2"> <label
+               for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-2" style="color: rgb(0, 0, 0);"> GROUP
+               WEBINARS WITH KEY OPINION
+               LEADERS</label><br><input value="IN-OFFICE WITH LOCAL L-NUTRA STAFF" type="checkbox"
+               class="checkbox-group" name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-3">
+             <label for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-3" style="color: rgb(0, 0, 0);"> IN-OFFICE
+               WITH LOCAL L-NUTRA
+               STAFF</label><br><input value="ROUND TABLE DINNER DISCUSSIONS" type="checkbox" class="checkbox-group"
+               name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-4">
+             <label for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-4" style="color: rgb(0, 0, 0);"> ROUND
+               TABLE DINNER
+               DISCUSSIONS</label><br><input value="OTHER" type="checkbox" class="checkbox-group"
+               name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-5"> <label
+               for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-5"
+               style="color: rgb(0, 0, 0);">OTHER</label><br><input value="N/A" type="checkbox" class="checkbox-group"
+               name="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?[]"
+               id="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-6"> <label
+               for="HOW WOULD YOU PREFER TO LEARN MORE ABOUT PROLON?-6" style="color: rgb(0, 0, 0);">N/A</label><br>
+           </div>
+         </div>
+         <div class="membership-radio form-group field-radio-group-1603880521023"><label
+             for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+             class="membership-radio-group-label" style="color: rgb(0, 0, 0);">APPROXIMATELY HOW MANY PATIENTS DO YOU
+             SEE IN YOU ON A NORMAL DAY?* <span class="required">*</span> </label>
+           <div class="radio-group"><input value="0-5" type="radio" required="" class="radio-group"
+               name="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+               id="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-0" aria-required="true"
+               checked=""> <label for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-0"
+               style="color: rgb(0, 0, 0);">0-5</label><br><input value="6-10" type="radio" required=""
+               class="radio-group" name="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+               id="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-1" aria-required="true"> <label
+               for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-1"
+               style="color: rgb(0, 0, 0);">6-10</label><br><input value="11-30" type="radio" required=""
+               class="radio-group" name="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+               id="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-2" aria-required="true"> <label
+               for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-2"
+               style="color: rgb(0, 0, 0);">11-30</label><br><input value="31-50" type="radio" required=""
+               class="radio-group" name="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+               id="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-3" aria-required="true"> <label
+               for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-3"
+               style="color: rgb(0, 0, 0);">31-50</label><br><input value="51+" type="radio" required=""
+               class="radio-group" name="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*"
+               id="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-4" aria-required="true"> <label
+               for="APPROXIMATELY HOW MANY PATIENTS DO YOU SEE IN YOU ON A NORMAL DAY?*-4"
+               style="color: rgb(0, 0, 0);">51+</label><br></div>
+         </div>
+         <div class="">
+           <p type="p" class="paragraph" name="" id="" style="color: rgb(0, 0, 0);">IF YOU’D LIKE TO ADD SOMEONE ON YOUR
+             TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT
+             UPDATES, ENTER THEIR DETAILS BELOW.
+           </p>
+         </div>
+         <div class="membership-text form-group field-text-1603819457354"><label
+             for="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (NAME)"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Name </label> <input type="text"
+             class="form-control"
+             name="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (NAME)"
+             id="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (NAME)">
+         </div>
+         <div class="membership-text form-group field-text-1603819458336"><label
+             for="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (TITLE)"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Title </label> <input type="text"
+             class="form-control"
+             name="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (TITLE)"
+             id="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (TITLE)">
+         </div>
+         <div class="membership-text form-group field-text-1603819459159"><label
+             for="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (EMAIL)"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Email </label> <input type="text"
+             class="form-control"
+             name="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (EMAIL)"
+             id="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (EMAIL)">
+         </div>
+         <div class="membership-text form-group field-text-1603819459751"><label
+             for="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (PHONE #)"
+             class="membership-text-label" style="color: rgb(0, 0, 0);">Phone # </label> <input type="text"
+             class="form-control"
+             name="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (PHONE #)"
+             id="IF YOU’D LIKE TO ADD SOMEONE ON YOUR TEAM TO BE NOTIFIED ABOUT SPECIAL PRICING OFFERS, EDUCATIONAL EVENTS, MARKETING OPTIONS, OR OTHER RELEVANT UPDATES, ENTER THEIR DETAILS BELOW. (PHONE #)">
+         </div>
+         <div class="membership-text form-group field-text-1603819509034"><label
+             for="TO HELP US BEST SUPPORT YOU AND YOUR PRACTICE PLEASE LET US KNOW IF THERE IS ANYTHING THAT YOU’D LIKE OUR ACCOUNT MANAGEMENT TEAM TO FOLLOW-UP ON BEFORE WE REACH OUT TO YOU."
+             class="membership-text-label" style="color: rgb(0, 0, 0);">TO HELP US BEST SUPPORT YOU AND YOUR PRACTICE
+             PLEASE LET US KNOW IF THERE IS ANYTHING THAT YOU’D LIKE OUR ACCOUNT MANAGEMENT TEAM TO FOLLOW-UP ON
+             BEFORE WE REACH OUT TO YOU. </label> <input type="text" class="form-control"
+             name="TO HELP US BEST SUPPORT YOU AND YOUR PRACTICE PLEASE LET US KNOW IF THERE IS ANYTHING THAT YOU’D LIKE OUR ACCOUNT MANAGEMENT TEAM TO FOLLOW-UP ON BEFORE WE REACH OUT TO YOU."
+             id="TO HELP US BEST SUPPORT YOU AND YOUR PRACTICE PLEASE LET US KNOW IF THERE IS ANYTHING THAT YOU’D LIKE OUR ACCOUNT MANAGEMENT TEAM TO FOLLOW-UP ON BEFORE WE REACH OUT TO YOU.">
+         </div>
+         <div class="membership-submit form-group field-button-1497336985158"><button type="submit"
+             class="button-input btn btn-primar btn-registration-submit" id="button-1497336985158">Submit</button>
+         </div>
+       </form>
+       <style type="text/css">
+         .custom-membership_form .membership-submit button {
+           background-color: #000000 !important;
+         }
+
+         .custom-membership_form .membership-submit button {
+           color: #FFFFFF !important;
+         }
+
+         .custom-membership_form .membership-submit button {
+           font-size: 14px !important;
+         }
+       </style>
+       <style>
+         .custom-membership_form input[type="text"],
+         .custom-membership_form input[type="search"],
+         .custom-membership_form input[type="password"],
+         .custom-membership_form input[type="email"],
+         .custom-membership_form input[type="file"],
+         .custom-membership_form input[type="number"],
+         .custom-membership_form input[type="tel"],
+         .custom-membership_form textarea,
+         .custom-membership_form select {
+           width: 100% !important;
+           margin: 0;
+           border: 1px solid #ccc;
+         }
+       </style>
+       <div class="agreement-header">
+         <h3 class="header">4. Agreement </h3>
+       </div>
+      <div class="Aggreement">
+
+         <em>Thank you for your interest in ProLon®, the first Fasting Mimicking &amp; Enhancing® Diet (FMD®) from
+           L-Nutra. L-Nutra is pleased to offer ProLon® to you and your customers. Because of how unique ProLon® is,
+           there are some considerations to keep in mind as it may not be appropriate for all customer. In exchange for
+           providing you ProLon® for use in your business, you (“Reseller”) agree that your purchase of ProLon® is
+           subject to the following terms and conditions:</em><br /><br /><strong><em>1. Use of ProLon®
+             Responsibilities</em></strong>
+         <ol>
+           <li><em><u>Marketing of the ProLon® Product</u>. Reseller understands that ProLon® is marketed as a
+               conventional food and not approved by the U.S. Food and Drug Administration for the treatment or
+               prevention of any disease or condition. Reseller will not communicate, directly or indirectly, to any
+               consumers that ProLon® has any such effect.</em></li>
+           <li><em><u>ProLon® Self-Assessment Administration.</u> Prior to reselling ProLon® to a consumer, regardless
+               if it is the consumer’s first time purchasing ProLon®, Reseller agrees: (i) It will require the consumer
+               to complete the disclaimer and ProLon Release at: <a
+                 href="https://prolonprofessional.com/hcr-disclaimer/" target="_blank"
+                 rel="noopener noreferrer">https://prolonprofessional.com/hcr-disclaimer</a>. (ii) It will only sell
+               ProLon® to consumers who do not have any conditions presented in the disclaimer as preclusions to using
+               ProLon and have indicated this by checking off and completing the disclaimer and ProLon Release without
+               being recommended to work with a health care provider based on having any past or present medical
+               condition(s).</em></li>
+         </ol>
+         <strong><em>2. Indemnification</em></strong>
+         <ol>
+           <li>Reseller agrees to indemnify, defend, and hold harmless L-Nutra and its directors, officers, employees,
+             agents, and affiliates from and against any and all actions, proceedings, claims, lawsuits, disputes, costs
+             and expenses (including attorneys’ fees and costs), judgments, investigations, damages, fines, losses,
+             settlements, and liability whatsoever, whether or not involving a third party claim, which arise out of or
+             relate to the failure, or alleged failure,<u> </u>of Reseller to comply with the requirements of this
+             Agreement.</li>
+           <li>NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, TO THE MAXIMUM EXTENT PERMITTED BY LAW,
+             L-NUTRA SHALL NOT BE RESPONSIBLE FOR ANY INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL, PUNITIVE, OR
+             EXEMPLARY DAMAGES OF ANY KIND, INCLUDING DAMAGES FOR LOST GOODWILL, LOST PROFITS, LOST BUSINESS OR OTHER
+             INDIRECT ECONOMIC DAMAGES, WHETHER SUCH CLAIM IS BASED ON CONTRACT, NEGLIGENCE, TORT (INCLUDING STRICT
+             LIABILITY) OR OTHER LEGAL THEORY, AS A RESULT OF A BREACH OF ANY TERM OF THIS AGREEMENT, AND REGARDLESS OF
+             WHETHER L-NUTRA WAS ADVISED OR HAD REASON TO KNOW OF THE POSSIBILITY OF SUCH DAMAGES IN ADVANCE.</li>
+         </ol>
+         <strong><em>3. Term &amp; Termination</em></strong>
+         <ol>
+           <li>The term of this Agreement shall be for a period of one (1) year and shall commence on the date of
+             execution. Thereafter, the term of this Agreement shall automatically renew for successive one (1) year
+             periods unless earlier terminated by the parties in accordance with this Agreement. This Agreement may be
+             terminated at any time upon the written mutual consent of the parties. L-Nutra may terminate this Agreement
+             at any time by giving written notice via certified mail.</li>
+           <li>Reseller acknowledges and agrees that the statements and representations made in this Agreement apply to
+             each and every purchase of ProLon® that he/she makes.</li>
+         </ol>
+         <strong><em>4. Additional Terms</em></strong>
+         <ol>
+           <li><em><u>Choice of Law &amp; Venue</u>. This Agreement shall be construed in accordance with and governed
+               by the internal laws of the State of California, except choice of law rules that would require the
+               application of the laws of any other jurisdiction. The parties agree that the County of Los Angeles,
+               California shall be the only proper venue for disputes related to this Agreement.</em></li>
+           <li><em><u>Waiver, Modification and Amendment</u>. No provision of this Agreement may be waived unless in
+               writing signed by all Parties hereto. Waiver of any one provision shall not be deemed to be a waiver of
+               any other provision hereof. This Agreement may not be altered, amended or otherwise changed or modified,
+               except in writing signed by both of the Parties.</em></li>
+           <li><em><u>Severability</u>. If any part of this Agreement is void or otherwise invalid and hence,
+               unenforceable, such invalid or void portion shall be deemed to be separate and severable from the balance
+               of this Agreement, which shall be given full force and effect as though the void or invalid provision had
+               never been a part of this Agreement.</em></li>
+           <li><em><u>Counterparts and Signatures</u>. This Agreement may be executed in one or more counterparts, each
+               of which shall be deemed to be an original, but all of which together shall constitute one and the same
+               instrument. An electronic, facsimile, or photocopy copy shall be as effective as a signed original.
+               Electronic, telecopied, and scanned email signatures shall be deemed originals.</em></li>
+         </ol>
+         <br /><strong>AGREED &amp; ACCEPTED</strong><br /><br />By: <span
+           class="doctor-name"></span><br /><br />License Number: <span class="license-no"></span><br /><br />Date:
+         <span class="current-date"></span><br />
+         <meta charset="utf-8" />
+
+       </div>
+       <div class="hcg-header">
+         <h3 class="header">5. HEALTHCARE GUIDELINES </h3>
+       </div>
+       <div class="health-care-guidlines ">
+
+         <strong>Tips, Precautions &amp; Side Effect Discussion Points</strong><br />
+         <ul>
+           <li>Do not consume ProLon® if you are allergic to any of the ingredients (such as nuts).</li>
+           <li>Stay well hydrated by drinking at least 8 cups (64 fl. Oz) of water. Also drink the drink in ProLon®
+             throughout the day as indicated in instruction card.</li>
+           <li>It is preferable that you do not consume caffeinated beverages; however, 1 cup of decaffeinated coffee or
+             tea without sweeteners and without additives like cream may be consumed daily, if necessary. It is highly
+             recommended to not consume soda or other sweet beverages, even if they are “diet.”</li>
+           <li>Things to avoid include: alcohol consumption, strenuous activities including exercise, and exposure to
+             high or low temperature environments, such as saunas, spas, jacuzzis, and swimming.</li>
+           <li>Due to nature of fasting, there are common complaints associated with it including fatigue, headache, dizziness, and difficulty with concentration during the fasting period.  Complaints are mild and tolerated for most people. 
+			Although ProLon is designed to mitigate many of these risks of fasting by providing specific macro- and micro-nutrients, it is still a low calorie diet, so precautions about water intake, strenuous activity, and heat/cold exposure are important to follow.</li>
+           <li>If you feel very drowsy or very weak, you should simply break the fast with juice or food and then do it
+             another time. If this does not help or if you notice rash or allergy symptoms then stop the product
+             immediately and talk to your physician or seek urgent help by calling 911.</li>
+         </ul>
+         <strong>HEALTHCARE GUIDELINES FOR APPROVAL &amp; SUPERVISION</strong><br /><strong>WHAT IS
+           PROLON®?</strong><strong>Prolon is the first and only scientifically developed and clinically tested Fasting
+           Mimicking Diet (FMD™). With ProLon, consumers are biologically fasting for 5 consecutive days while consuming
+           food.</strong> The purpose of mimicking a 5-day fasting state is to induce the body’s natural protective
+         &amp; regenerative capabilities; FMDs have been proven by the Longevity Institute at the University of Southern
+         California (USC) to clinically induce multiple healthy systemic, metabolic and cellular effects.<sup>1,2</sup>
+         <p>Based on the identification of the genes and pathways that regulate aging and cellular protection, ProLon
+           promotes rejuvenative changes, including effects on a wide range of markers that contribute
+           to aging, such as cholesterol, inflammation, and fasting glucose. It has been clinically tested and found to
+           promote beneficial effects in a variety of conditions ranging from excess weight to growth factors associated
+           with DNA damage, when used in multiple consecutive monthly cycles.</p>
+         <p>ProLon contains 66 unique ingredients that have been studied for over a decade at USC, under the sponsorship
+           of the NIH, to inactivate nutrient sensing pathways while providing nourishment for the body (macronutrients,
+           micronutrients, minerals and vitamins) as well as mimicking and enhancing a fasting state. ProLon is
+           plant-based and comes in a compact box which contains 5 smaller boxes (one for each day). A typical day box
+           contains a variety of bars, soups, snacks, drinks, and supplements. Day 1 is 1100 calories while each of the
+           other 4 days are around 770 calories. While total calories are one dimension of the product, the most
+           important dimension is the proprietary and patented formulation that mimics and enhances a fasting state.
+           Additionally, ProLon is Gluten and Dairy Free.</p>
+         <p>ProLon mitigates the burden and danger of water-only fasting, while responding to the unmet need of having a
+           readily consumable, proven and safe dietary program that does not require ongoing lifestyle changes, such as
+           long-term dieting.</p>
+         <strong>The body identifies the presence of food through nutrient-sensing pathways</strong>
+         <ul>
+           <li>IGF-1, MTOR (Mechanistic Target of Rapamycin), and PKA (Protein Kinase A) are 3 key nutrient-sensing
+             pathways that recognize the presence of protein, carbohydrates (sugars)</li>
+           <li>These nutrient-sensing pathways are pro-growth and pro-aging, and lead to many common health problems
+             including heart disease and cancer</li>
+           <li><strong>ProLon down-regulates these pathways, enhancing a fasting mode and activating cellular
+               regeneration and rejuvenation</strong></li>
+         </ul>
+         <strong>* ProLon allows you to eat while tricking your body into acting like it’s fasting
+           *</strong><strong>WHAT IS PROLON FOR?</strong>
+         <p>ProLon promotes rejuvenative changes, including effects on a wide range of markers that
+           contribute to aging. In clinical trials, three or more consecutive cycles of ProLon have been found to:</p>
+         <strong>Maintain Healthy Levels of:</strong>
+         <ul>
+           <li>Fasting blood glucose</li>
+           <li>Cholesterol</li>
+           <li>systolic blood pressure</li>
+           <li>Triglycerides</li>
+           <li>C-reactive protein</li>
+           <li>Insulin like Growth Factor-1 (IGF-1)</li>
+         </ul>
+         <strong>Other Significant Findings:</strong>
+         <ul>
+           <li>Induces ‘Regenerative Weight Loss’ primarily driven by visceral fat loss</li>
+           <li>Maintains lean body mass</li>
+           <li>Improves energy levels</li>
+           <li>Improves skin appearance</li>
+         </ul>
+         <strong></strong><strong>Pre-Tests &amp; Post-Tests</strong>It is ultimately up to the healthcare practitioner
+         to determine whether there is a need and which tests to perform before and after ProLon. However there are
+         several health factors that were measured and recorded in clinical trials before and after 3 cycles of ProLon:
+          <strong>ProLon Blood Panel:</strong>
+         <ul>
+           <li>Complete Blood Count &amp; Chemistry Panel</li>
+           <li>Cholesterol (Total, HDL, LDL)</li>
+           <li>Triglycerides</li>
+           <li>Fasting Blood Glucose and HbA1C</li>
+           <li>hs-CRP</li>
+           <li>IGF-1</li>
+         </ul>
+         <strong></strong><strong>Baseline Measurements:</strong>
+         <ul>
+           <li>Total body weight</li>
+           <li>Abdominal Circumference</li>
+           <li>Body composition and/or body fat %</li>
+           <li>Blood Pressure</li>
+         </ul>
+          <strong>EXCLUSION CRITERIA</strong><strong>Who should NOT be on ProLon?</strong>
+         <ul>
+           <li>Children under the age of 18</li>
+           <li>Women who are pregnant or breastfeeding.</li>
+           <li>Individuals who are allergic to nuts, celeriac/celery, oats, sesame (see nutrition statement for complete contents).</li>
+           <li>Underweight individuals</li>
+           <li>Individuals diagnosed with a serious medical condition or disease, unless approved by an appropriate healthcare provider.</li>
+           <li>Individuals who, in the opinion of a healthcare provider should not fast or using fasting products for fasting purposes.</li>
+           <li>Individuals with a known, suspected, or diagnosed eating disorder, unless otherwise determined by an appropriate healthcare provider.</li>
+           <li>Individuals with a history of syncope (fainting) with calorie restriction or other medical co-morbidities
+           </li>
+           <li>Individuals with special dietary needs that are incompatible with the ProLon meal plan</li>
+           <li>Individuals with a history of cancer, diabetes type 1 or 2, congestive heart failure, or syncope (fainting) unless approved by an appropriate healthcare professional.</li>
+         </ul>
+         <strong>HOW OFTEN SHOULD INDIVIDUALS USE PROLON?</strong>Ultimately it is up to the Healthcare Provider to
+         determine the number of times their patients should consume ProLon. Our clinical trials followed a protocol of 3-4 consecutive cycles of ProLon (5 days per month for 3-4 consecutive months). This may serve as a good way to
+         start your consumers on the protocol; depending on the results they could potentially continue to use ProLon
+         once per month. For individuals interested in ProLon for age and wellness-related purposes and/or looking to
+         maintain the benefits of the initial FMD cycles, you may choose to recommend one cycle of ProLon every every 3-4 months (3-4 times per year). For others looking for a more significant impact for metabolic health reasons, you
+         may elect to recommend ProLon once every 1-2 months (6-12 times per year).
+       </div>
+
+     </div>
+
+     {% include 'registration-js' %}
+     <script>
+       jQuery(document).ready(function ($) {
+
+
+
+         $('.agreement-header').insertBefore('.membership-submit');
+         $('.Aggreement').insertBefore('.membership-submit');
+         $('.hcg-header').insertBefore('.membership-submit');
+         $('.health-care-guidlines').insertBefore('.membership-submit');
+
+
+       });
+     </script>

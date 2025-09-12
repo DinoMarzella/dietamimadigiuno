@@ -1,0 +1,78 @@
+{% assign data = section.settings %}
+
+<!-- banner-with-text-tw ali -->
+
+<div class="relative flex w-full items-center justify-center h-full">
+    <div class="flex w-full flex-col items-center justify-center md:flex-row h-full">
+        <div class="backdrop-image hidden w-full md:block">
+            <img class="w-full" width="100%" height="500px" src="{{data.dp_image | img_url: '3000x'}}" alt="ProLon Fast" />
+        </div>
+        <div class="backdrop-image block w-full md:hidden">
+            <img width="100%" height="500px" class="w-full" src="{{data.mb_image | img_url: '3000x'}}" alt="ProLon Fast" />
+        </div>
+        <div class="absolute w-full top-0 h-full">
+            <div class="flex {% if data.mobtop %}flex-col-reverse{% else %} flex-col{% endif %} w-full h-full {% if data.textleft %}md:flex-row-reverse{% else %} md:flex-row{% endif %}">
+                <div class="image-col flex w-full items-center justify-center invisible h-full{% if data.centertxt %} hidden{%  endif %}">
+                </div>
+                <div class="relative z-10 content-col flex w-full items-center justify-center h-full">
+                    <div class="px-5">
+                       {{data.content_space}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+{% schema %}
+{
+    "name": "Banner with text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "dp_image",
+        "label": "Desktop Image",
+        "info": "Desktop Banner Image"
+      },
+      {
+          "type": "image_picker",
+          "id": "mb_image",
+          "label": "Mobile Image",
+          "info": "Mobile Banner Image"
+      },
+      {
+          "type": "html",
+          "id": "content_space",
+          "label": "Content Space",
+          "info": "For Content Code"
+      },
+      {
+        "type": "checkbox",
+        "id": "centertxt",
+        "label": "Center All Content",
+        "default": false,
+        "info": "Center Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "textleft",
+      "label": "Content Postion",
+      "default": false,
+      "info": "Align Content On Left Side Center"
+  },
+  {
+    "type": "checkbox",
+    "id": "mobtop",
+    "label": "Content Postion Mobile",
+    "default": false,
+    "info": "Align Content On Top Side Center"
+}
+    ],
+    "presets": [
+      {
+        "name": "Banner with text"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,24 @@
+<quick-shop-now-with-product 
+handle="{{settings.product_item}}"
+:settings='{  
+    "title": "{{settings.product_title}}",
+    "subtitle":  "{{settings.product_subtitle}}",
+    "description": {{settings.product_description | json}},
+    "price": {{settings.product_price | json}},
+    "btn_text": "Shop Now",
+    "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+    "image": "{{settings.product_image | img_url: '1500x'}}",
+    "image_hover": "{{settings.product_image_hover |  img_url: '1500x'}}",
+    "handle": "{{settings.product_item}}",  
+    "quick_view_description":  {{settings.product_description | json}},
+    "one_time_only": false,
+    "subscription_option": "option2",
+    "quick_view_media": {{settings.product_item.metafields.quickview.quick_view_media | json }},
+    
+
+}'
+>   
+<a  class="product__button">
+    SHOP NOW
+</a> 
+</quick-shop-now-with-product> 

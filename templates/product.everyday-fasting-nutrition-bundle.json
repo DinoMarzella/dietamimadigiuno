@@ -1,0 +1,367 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "ProLon 5-Day Gusti Originali",
+            "hide_option": false,
+            "option_1": "Gusto Original",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "<b>Gusto delle Zuppe:</b> Verdure, Minestrone Verdure, Minestrone Quinoa, Funghi, Pomodoro",
+            "product_description": ""
+          }
+        },
+        "f288be84-69f7-4373-992e-d96662476937": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "ProLon 5-Day Varietà 2",
+            "hide_option": false,
+            "option_1": "Varietà 2",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "<b>Gusto delle Zuppe:</b> Pomodoro, Zucca Violina, Fagioli Neri, Zucca Violina e Quinoa, Spinaci e Fagioli Bianchi",
+            "product_description": ""
+          }
+        },
+        "html_ETjGdE": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "ProLon 5-Day Varietà 3",
+            "hide_option": false,
+            "option_1": "Varietà 3",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "<b>Gusto delle Zuppe:</b> Zenzero e Carota, Lenticchie e Curry, Piselli ed Erba Cipollina, Peperoni e Cipolla, Ceci e Porri.",
+            "product_description": ""
+          }
+        },
+        "html_kaAPJT": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "ProLon 5-Day Expanded Variety 4",
+            "hide_option": false,
+            "option_1": "Expanded Variety 4",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "<b>Nuova selezione di varietà! Le nostre migliori zuppe, le barrette per il digiuno, il frullato per il digiuno e l'olio extravergine.</b><br> \n<b>Gusto delle Zuppe:</b> Minestrone, Zuppa di piselli verdi ed erba cipollina, Zuppa di ceci e porri, Zuppa di lenticchie al curry, Zuppa di peperoni rossi e cipollotti, Zuppa di pomodoro, Zuppa di carote e zenzero.",
+            "product_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "f288be84-69f7-4373-992e-d96662476937",
+        "html_ETjGdE",
+        "html_kaAPJT"
+      ],
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "everyday-fasting-nutrition",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": true,
+        "product_sub_line": "Ringiovanimento cellulare | Brucia grassi | Forza e tono muscolare",
+        "show_subscription": false,
+        "below_image": "",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli il gusto del {option}",
+        "option_1": "button",
+        "option_2_name": "Scegli il gusto delle {option}",
+        "option_2": "button",
+        "option_3_name": "{option}",
+        "option_3": "button"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p><p><strong>Gusto originale:</strong> Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro <strong>— oppure —</strong></p><p><strong>Gusto nuovo sapore:</strong> Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p><p><strong>Zuppe:</strong> Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p><p><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p><p><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p><p><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p><p><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p><p><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "<a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_DRS_-_L-Biome_uk_2.pdf?v=1703670611\" target=\"_blank\" Download=\"Informazioni nutrizionali\">Informazioni nutrizionali</a>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c": {
+      "type": "promo-grid",
+      "blocks": {
+        "5e857927-5599-4277-b57e-0e2cdf6246b9": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di Mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "5e857927-5599-4277-b57e-0e2cdf6246b9"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"section\" style=\" max-width: 1100px; margin: auto;padding: 20px;\"><p><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/scheda_1v2.jpg?v=1721148130\" alt=\"Daily Plan\"><br><b>Note:</b> Il consumo della barretta non comporta la rottura del digiuno e mantiene i chetoni elevati! La biotecnologia nutrizionale utilizzata per creare la barretta del digiuno è la stessa delle formulazioni utilizzate nel Prolon 5-Day FMD. Ciò significa che l'uso come sostituto della colazione o della cena vi aiuterà a prolungare il digiuno notturno o a iniziare il digiuno di notte.\n<br><br>\n<span style=\"border-left: 4px solid orange; padding-left: 20px;\">Il prodotto è sufficiente per 4 settimane.</span><br></p></div>"
+      }
+    },
+    "text_columns_GWFzMT": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_NG3zTr": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-5-day-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Kit Dieta Mima Digiuno",
+            "text": "<p>Prolon è stato progettato e testato clinicamente da 18 università di tutto il mondo per nutrire il vostro corpo inducendo i benefici cellulari, metabolici ed emotivi del digiuno prolungato. Con tre cicli di 5 giorni di ProLon, potrete alimentare il vostro corpo verso il ringiovanimento, la longevità e una vita sana.</p>\n<ul>\n<li>· Ringiovanimento cellulare</li>\n<li>· Salute metabolica</li>\n<li>· Perdita di peso focalizzata sui grassi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-5-day"
+          }
+        },
+        "text_block_UH6Djk": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon_Life_PDP_Square_Images_-_ReSet.png",
+            "image_width": 650,
+            "title": "ReSet - kit 1 giorno",
+            "text": "<p>ProLon Reset offre un giorno completo di una formula nutrizionale innovativa, scientificamente testata e brevettata per nutrire il corpo mantenendolo in uno stato di digiuno fisiologico. Questo programma nutrizionale induce l'organismo a scomporre i grassi e a utilizzarli come combustibile, in modo simile a quando si pratica il digiuno idrico.</p>\n<ul>\n<li>· Prenditi una pausa</li>\n<li>· Fai un reset</li>\n<li>· Riduci gli eccessi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/reset"
+          }
+        },
+        "text_block_gPfH8w": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-nutrition-bars-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Nutrition Bars",
+            "text": "<p>Intermittent Fasting Bar è l'unica barretta nutrizionale che si può mangiare durante la finestra di digiuno senza interrompere lo stato di digiuno. Basandosi sulla tecnologia nutrizionale del Fasting Mimicking Nutrition e su oltre 20 anni di ricerca, gli scienziati hanno studiato come miscele uniche di macronutrienti e micronutrienti possano essere consumate senza far uscire il corpo dallo stato di digiuno.</p>\n<ul>\n<li>· Testato e sviluppato clinicamente</li>\n<li>· Proteine di origine vegetale</li>\n<li>· Senza glutine, senza soia e senza latticini</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-nutrition-bar"
+          }
+        },
+        "text_block_F7EiBC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/fasting_shake_asset_01_1-1.webp",
+            "image_width": 650,
+            "title": "Fasting Shake",
+            "text": "<p>Il meglio dalla natura, nutrito dalla scienza della longevità di ProLon - un'innovazione nella nutrizione e nella scienza dell'invecchiamento sano. La miscela brevettata di Fasting Shake evita di innescare la risposta dell'organismo al cibo, mantenendolo più a lungo in uno stato di digiuno e di combustione dei grassi!</p>\n<ul>\n<li>· Prolunga lo stato di digiuno</li>\n<li>· Nutre il corpo</li>\n<li>· Gusto vaniglia</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-fasting-shake-14-bustine"
+          }
+        },
+        "text_block_cUJzBC": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/l-protein-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "L-Protein",
+            "text": "<p>Formulato con 25 g di aminoacidi completi di origine vegetale per sostenere la sintesi e la riparazione muscolare e mantenere basso il livello di IGF-1, una via nota per accelerare l'invecchiamento, per un invecchiamento ottimale. L-Protein è l'unica polvere in attesa di brevetto per un invecchiamento sano.</p>\n<ul>\n<li>· Supporta muscoli e corpo</li>\n<li>· 25 g di proteine e pochi carboidrati</li>\n<li>· 21 vitamine e minerali</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-l-protein"
+          }
+        },
+        "text_block_qNndf7": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/l-pill-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "L-Pill",
+            "text": "<p>Sviluppato da scienziati e medici leader nel campo della longevità in collaborazione con il Longevity Institute della University of Southern California. Tecnologia a doppia capsula che favorisce un invecchiamento sano delle cellule e degli organi del corpo.</p>\n<ul>\n<li>· Energia sostenuta</li>\n<li>· Salute del cervello</li>\n<li>· Salute cardiovascolare </li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/l-pill"
+          }
+        },
+        "text_block_FeUUgr": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/l-biome-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "L-Biome",
+            "text": "<p>Sviluppato da scienziati e medici leader nel campo della longevità in collaborazione con il Longevity Institute della University of Southern California. L-Biome è un integratore studiato per il mantenimento del microbioma sano della Longevità.</p>\n<ul>\n<li>· Ricco di Pre e Probiotici</li>\n<li>· Supporta una sana digestione</li>\n<li>· Promuove una barriera intestinale sana </li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/l-biome"
+          }
+        },
+        "text_block_mz9Q8t": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-sprean-crema-spalmabile-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Crema Spalmabile",
+            "text": "<p>La prima crema spalmabile al cioccolato per la longevità. Una crema spalmabile deliziosa e salutare! L-Spread contiene il 74% di mandorle pugliesi - mandorle provenienti da zone di longevità in Italia. </p>\n<ul>\n<li>· Contiene il 74% di mandorle pugliesi</li>\n<li>· Senza glutine, senza latticini, senza soia, vegano</li>\n<li>· A base vegetale, grassi sani, fibre prebiotiche</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-longevity-spread"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NG3zTr",
+        "text_block_UH6Djk",
+        "text_block_gPfH8w",
+        "text_block_F7EiBC",
+        "text_block_cUJzBC",
+        "text_block_qNndf7",
+        "text_block_FeUUgr",
+        "text_block_mz9Q8t"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!-- Font Awesome Icon Library -->\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n<style>\n.product-description ul li:before {\nbackground: url(https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Screenshot_2023-07-31_04.49.26_f9IvVL.png?v=1690807782);\ncontent: \" \";\nbackground-size: contain;\nwidth: 30px;\nheight: 30px;\ndisplay: block;\nposition: absolute;\nmargin-left: -31px;\nmargin-top: -3px;\n}\n\n\n@media only screen and (max-width: 768px) {\n.benefits-title {font-size: 20px;}\ndiv.flex-grid__item.flex-grid__item--33.flex-grid__item--template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1.type-advanced{ display: none;}\n}\n@media only screen and (min-width: 769px){\ndiv.flex-grid__item.flex-grid__item--100.flex-grid__item--e89a779f-a279-4469-b0be-269db64f2de0.type-advanced  {display: none;}\n}\n#shopify-section-template--14460584165422__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc, #shopify-section-template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc {background-color: #f6f7f3; padding: 5% 0 5%;}\n@media only screen and (max-width: 768px) {\nh2, h3, .h3 {\n    font-size: calc(var(--typeHeaderSize)*0.57);\n}\n#shopify-section-template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--b79aa57d-0384-499d-bea7-947d5ba8d126.type-image, #shopify-section-template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--73426572-f5f3-4a13-8dbc-38f13f145846.type-image, #shopify-section-template--14460584165422__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--73426572-f5f3-4a13-8dbc-38f13f145846.type-image, #shopify-section-template--14460584165422__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--b79aa57d-0384-499d-bea7-947d5ba8d126.type-image {flex: 0 1 50%}\n}\n.checked {\n  color: #facc14;\n}\ndiv.product__thumbs.product__thumbs--below.product__thumbs-placement--left.small--hide{display: none;}\n.text-with-icons__block-icon { display: none;}\n#shopify-section-template--14460584165422__2af03405-2868-4348-ad7e-527b7b588c42 > div > div.scheme-minimal-wave {background-image: none;}\n#shopify-section-template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d {max-width: 85%; margin: auto;}\n#shopify-section-template--14460584165422__89a9fb4b-6df6-4855-9f5a-d78873047246 {background-color: #f6f7f3;}\n.fill-\\[\\#00b77a\\] {\n    fill: #f6931d;}\n.benefits-title {font-size: 25px;}\n.benefit-checked {\npadding: 10px 0 0 30px;\n}\n.benefit-checked li:before {\nbackground: url(https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Screenshot_2023-07-31_04.49.26_f9IvVL.png?v=1690807782);\ncontent: \" \";\nbackground-size: contain;\nwidth: 30px;\nheight: 30px;\ndisplay: block;\nposition: absolute;\nmargin-left: -31px;\nmargin-top: -3px;\n}\n.main-content p {\n    margin: 0 0 15px 0 !important;\n}\n.product-ref ol, .product-ref ul {\n    margin: 0 0 15px 30px;\nlist-style-type: disc;\n}\n.product-ref ul ul {\n    list-style-type: circle;\n    margin-block-start: 0px;\n    margin-block-end: 0px;\n}\n.main-content p {\n    margin: 0 0 15px 0 !important;\n}\n.product-ref ol, .product-ref ul {\n    margin: 0 0 15px 30px;\nlist-style-type: disc;\n}\n.product-ref ul ul {\n    list-style-type: circle;\n    margin-block-start: 0px;\n    margin-block-end: 0px;\n}\n</style>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "text_columns_GWFzMT",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "recommendations",
+    "collection-return"
+  ]
+}

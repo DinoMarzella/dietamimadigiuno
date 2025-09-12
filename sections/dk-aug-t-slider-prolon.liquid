@@ -1,0 +1,98 @@
+<style>
+  .slider-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .slider-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 40px;
+    /* Adjust gap between logos */
+    align-items: center;
+    padding: 10px 0;
+    min-width: max-content;
+  }
+
+  .slider-track img {
+    width: 114px;
+    height: 33px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 767px) {
+    .slider-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .slider-title {
+      margin-bottom: 1rem;
+    }
+
+    .slider-track {
+      gap: 20px;
+      justify-content: flex-start;
+    }
+  }
+</style>
+
+<section class="bg-[#F1EAE5] md:px-0 px-[16px]">
+  <div class="w-[2px]  md:mx-auto block h-[50px] bg-[#1F4139]"> </div>
+ 
+  <div class="max-w-[1400px] mx-auto py-4 md:py-10 px-4 flex slider-section md:flex-row flex-col items-center justify-center">
+    <!-- Title -->
+    <div class="w-full md:w-[20%] slider-title">
+      <p class="text-[16px] font-[600] uppercase">PARLANO DI NOI</p>
+    </div>
+
+    <!-- Logos -->
+    <div class="w-full md:w-[80%] slider-wrapper">
+      <div class="sm:justify-between slider-track">
+        {% for block in section.blocks %}
+        <div>
+          <img src="{{ block.settings.img | img_url: '400x' }}" alt="Partner logo">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="justify-center hidden md:flex ">
+    <div class="h-[50px] md:w-1/2   lg:border-r-2 lg:border-[#1F4139] "></div>
+    <div class=" md:w-1/2"></div>
+  </div>
+  <div class="w-[2px] md:mx-auto block lg:hidden h-[50px] bg-[#1F4139]"> </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "slider",
+"settings": [],
+"blocks": [
+{
+"type": "list_item",
+"name": "Feature",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "slider"
+}
+]
+}
+{% endschema %}

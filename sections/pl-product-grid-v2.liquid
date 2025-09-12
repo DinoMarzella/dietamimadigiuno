@@ -1,0 +1,270 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div
+  id="{{data.id}}"
+  class="py-[10px] md:py-[20px] bg-white overflow-hidden max-w-[1600px] mx-auto px-[20px] pl-wrapper-product-grid-v2 ">
+  <div class="text-center py-[15px] px-[20px] md:py-[30px]">
+    <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents ">
+      {{data.subtitle}}
+    </span>
+    <h2
+      class="mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents "
+    >{{data.title}}</h2>
+  </div>
+  <div class="w-full grid grid-cols-2 xl:grid-cols-4  justify-center items-stretch mx-auto">
+    {% assign products_block = section.blocks | where: 'type', 'products' %}
+
+    {%- for product in products_block -%}
+      {% render 'pl-product-single-grid-v2',
+        index: forloop.index,
+        title:product.settings.title,
+        subtitle:product.settings.subtitle,
+        description:product.settings.description,
+        price:product.settings.price,
+        image:product.settings.image,
+        btn_text:product.settings.btn_text,
+        btn_color:product.settings.btn_color,
+        btn_url:product.settings.btn_url,
+        handle:product.settings.handle 
+      %}
+    {%- endfor -%}
+
+    {% comment %} {data.productGrid.map((product, index) => (
+      <ProductSingleV7
+        key={index}
+        index={index}
+        title={product.title}
+        subTitle={product.subTitle}
+        image={product.image}
+        handle={product.handle}
+        currentTab={currentTab}
+        handleButtonTap$={(tab_id) => {
+          on_button_tap(tab_id);
+        }}
+        // on_button_tap={$((tab_id:string) => alert('Hello ' + tab_id))}
+      />
+    ))} {% endcomment %}
+  </div>
+
+  
+    <div class="product-tabs-detail">
+      {% assign product_detail_block = section.blocks | where: 'type', 'product_detail' %}
+      {% for product in product_detail_block %}
+        {% render 'pl-product-single-detail-v2',
+          index:forloop.index,
+          title:product.settings.title,
+          description:product.settings.description,
+          subtitle:product.settings.subtitle,
+          image:product.settings.image,
+          image_on_left:product.settings.image_on_left,
+          image_contain:product.settings.image_contain,
+          show_image:product.settings.show_image,
+          custom_html:product.settings.custom_html
+        %}
+        {% endfor %}
+    </div>
+</div>
+{% comment %} <div
+  id="{{data.id}}"
+  class="pl-wrapper py-[40px] md:py-[80px] bg-white overflow-hidden max-w-[1600px] mx-auto lg:px-[40px] pl-wrapper-product-grid"
+>
+  <div class="text-center py-[15px] px-[20px] md:py-[30px]">
+    <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents ">
+      {{ data.subtitle }}
+    </span>
+    <h2 class="mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents ">
+      {{ data.title }}
+    </h2>
+  </div>
+  <div class="md:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  justify-center items-stretch">
+    
+    {%- for product in section.blocks -%}
+      {% render 'pl-product-single-grid',
+        index: forloop.index,
+        title:product.settings.title,
+        subtitle:product.settings.subtitle,
+        description:product.settings.description,
+        price:product.settings.price,
+        image:product.settings.image,
+        btn_text:product.settings.btn_text,
+        btn_color:product.settings.btn_color,
+        btn_url:product.settings.btn_url,
+        handle:product.settings.handle 
+      %}
+    {%- endfor -%}
+  </div>
+</div> {% endcomment %}
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-product-grid-v2');
+    $('.pl-product-detail-btn').click(function () {
+      let tab_id = $(this).data('tab_id');
+      $(`.${tab_id}`).siblings().addClass('hidden').removeClass('block');
+      $(`.${tab_id}`).addClass('block').removeClass('hidden');
+      {% comment %} $('.pl-product-detail-btn img').attr('src', "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Plus-white.png?v=1694454701"); {% endcomment %}
+      {% comment %} $(this).find('img').attr('src', 'https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Plus_69a09e5d-d1e2-4b0d-91bb-2b287b615fa6.png?v=1694512621'); // Replace with your desired image URL {% endcomment %}
+
+
+      $('.pl-product-detail-btn').removeClass('scale-[1.1]');
+      {% comment %} $('.pl-product-detail-btn').addClass('scale-[1.2]'); {% endcomment %}
+      {% comment %} $(this).removeClass('scale-[1.2]'); {% endcomment %}
+      $(this).addClass('scale-[1.1]');
+
+      // Close other accordion items
+      {% comment %} $('.accordion-content').not($(this).siblings('.accordion-content')).addClass('hidden'); {% endcomment %}
+      
+  });
+    {% comment %} pl-product-detail-btn {% endcomment %}
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Product Grid V2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "id",
+      "label": "ID",
+      "default": "shop-products"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Longevity Nutrition</b> Program"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Shop Products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "products",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "<b>Slow Down Bioage & Age Gracefully</b><br /> ProLon Everyday Nutrition"
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "REJUVENATION FROM WITHIN"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "<b>$190</b>"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Add to Cart"
+        },
+        {
+          "type": "text",
+          "id": "btn_url",
+          "label": "Button URL",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "btn_color",
+          "label": "Button Color",
+          "default": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Handle",
+          "default": "#"
+        }
+      ]
+    },
+    {
+      "type": "product_detail",
+      "name": "Product Details",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "<b>Slow Down Bioage & Age Gracefully</b><br /> ProLon Everyday Nutrition"
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "REJUVENATION FROM WITHIN"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_on_left",
+          "label": "Image on Left",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "image_contain",
+          "label": "Image Contain",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "label": "Show Image",
+          "default": true
+        },
+        {
+          "type": "textarea",
+          "id": "custom_html",
+          "label": "Custom Html"
+        }
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Product Grid V2",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

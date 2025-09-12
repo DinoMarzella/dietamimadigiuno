@@ -1,0 +1,176 @@
+  
+  <style>
+    .faq-about-wrapper{
+      width:100%;
+      background: #F5F9EA;
+      overflow: hidden ; 
+    }  
+    .faq-about-wrapper-inner{
+      width:100%;
+      margin: auto;
+      padding:100px 0; 
+      max-width: 925px; 
+    }
+    .faq-about-wrapper-inner h3{
+
+      font-family: 'Harmonia Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #869F86;
+
+    }
+
+    .about-faq-accord-header{
+      font-family: 'Harmonia Sans'; 
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 120%;
+      color: #465A43;
+    }
+    .about-faq-accord-header{
+      border-top: 1px solid #869F86;
+      padding: 35px 0px;
+      margin-bottom:0px;
+    }
+    .about-faq-accord-content{
+      padding-bottom: 35px;
+      font-family: 'Harmonia Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #002500;
+    }
+
+    .about-faq-accord-header:after {
+      color: #73984a;
+    font-family: 'Harmonia Sans';
+    position: relative;
+    display: block;
+    left: 98%;
+    content: "-";
+    font-weight: 100;
+    font-size: 40px;
+    transition: all .25s ease;
+    margin-top: -25px;
+}
+.about-faq-accord-header.active:after{
+  content: "+" !important;
+  margin-top: -25px;
+  font-size: 30px;
+  left: 98%;
+}
+@media(max-width:767px) {
+    .faq-about-wrapper-inner{
+      padding:50px 20px;
+    }
+    .faq-about-wrapper-inner h3{
+
+      font-size: 20px;
+
+    }
+
+    .about-faq-accord-header{
+      font-size: 18px;
+    }
+    .about-faq-accord-header{
+      padding: 20px 0px;
+    }
+    .about-faq-accord-content{
+      padding-bottom: 20px;
+    }
+
+    .about-faq-accord-header:after {
+    left: 90%;
+    content: "-";
+    font-weight: 100;
+    font-size: 40px;
+    transition: all .25s ease;
+    margin-top: -25px;
+    width:20px;
+ }
+.about-faq-accord-header.active:after{
+  content: "+" !important;
+  margin-top: -25px;
+  font-size: 30px;
+  left: 90%;
+}
+
+}
+  </style>
+  
+  <div class="faq-about-wrapper">
+    <div class="faq-about-wrapper-inner">
+          <h3 class="main-faq-title">{{section.settings.title}}</h3>
+          <div class="faq-question-wrapper">
+            {% for block in section.blocks %} 
+                <p class="about-faq-accord-header">{{block.settings.question}}</p>
+                <div class="about-faq-accord-content" style="display:none">
+                  <p>{{block.settings.answer}}</p>
+                </div>
+            {% endfor %}
+          </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(".about-faq-accord-header").on("click", function () {
+        if (!$(this).hasClass("active")) {
+          $(".about-faq-accord-header").removeClass("active");
+        }   
+        $(this).toggleClass("active");
+        $(this).next(".about-faq-accord-content").slideToggle("active");
+      });
+    });
+  </script>
+
+  {% schema %} 
+  {
+    "name": "About FAQs",
+    "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": {
+        "en": "Title"
+      }
+    }
+    ],
+    "blocks": [
+    {
+      "type": "faq",
+      "name": {
+        "en": "Faq"
+      },
+      "settings": [
+      {
+        "type": "textarea",
+        "id": "question",
+        "label": {
+          "en": "Question"
+        }
+      },
+      {
+        "type": "textarea",
+        "id": "answer",
+        "label": {
+          "en": "Answer"
+        }
+      }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "About FAQs"
+      }
+    ]
+  }
+{% endschema %} 

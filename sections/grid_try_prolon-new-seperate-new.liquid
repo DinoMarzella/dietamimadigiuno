@@ -1,0 +1,1009 @@
+{% include 'spurit_po2_section_snippet', product: all_products[section.settings.product_handle], products: null %}
+
+{% assign product= all_products['prolon-april-offer'] %} 
+{% if section.settings.product_handle %}
+{% assign product= all_products[section.settings.product_handle] %} 
+{% endif %}  
+<div id="prolon-offer-pdp">
+  {% render 'product-template-narrow-new',
+    product: product, 
+    description_style: section.settings.description_style,
+    image_position: section.settings.image_position,
+    image_container_width: section.settings.image_size,
+    section_id: product.id,
+    social: section.settings.social_enable,
+    thumbnail_position: section.settings.thumbnail_position, 
+    thumbnail_arrows: section.settings.thumbnail_arrows,
+    video_looping: section.settings.enable_video_looping,
+    video_style: section.settings.product_video_style,
+    seo_title:seo_title
+  %} 
+</div>
+ 
+   
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}" />
+{{product.metafields.global.overide_custom_css}} 
+<style>
+  @media  (min-width:767px) {
+    .grid--product-images-right .product-single__meta{
+    padding-left: 45px;
+  }         
+  } 
+          
+  /* .intemittant-badge.intemittant-badge {display: none;}  */
+a[href="https://prolonfast.com/products/special-offer-bfcm"] {
+    display: none;
+}   
+.intemittant-badge{
+  font-weight: 100;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+    background: #fec91c;
+    padding: 5px 15px;
+    text-align: left;
+    padding-left: 0px; 
+    padding-right: 0px; 
+    max-width: 212px; 
+    padding-left: 0px;
+    padding-right: 0px;
+    white-space: nowrap;
+}     
+@media screen and (max-width:767px){
+
+  .intemittant-badge{
+    font-size:10px;
+  }span.intemittant-badge.top-badge {
+    text-align: center;
+    margin: 0 auto;
+    max-width: unset;
+    display: inline-block;
+    padding-inline: 20px;
+    text-align: center;
+}
+} 
+  
+  #ProductSection-6712605442094 > div > div > div > div:nth-child(2) > div > h3 {
+    display: none;}
+</style>   
+ <style>
+   .CountDown__CountDownContainer-sc-1h24pt2-0.ghVzCA.cbCountdownContainer {
+    max-width: 100%!important;
+}
+
+.SjonF.SjonF {
+    max-width: 100%;
+}
+
+.SjonF.SjonF {
+    font-size: 20px;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+   
+ </style>
+  
+{% if product.handle contains 'prolon' %}
+<style>
+  a.site-nav__link[href="/products/buy-prolon"] {
+    display: none; 
+  }
+  {% if product.handle contains 'prolon-special' or product.handle contains 'prolon-michael' %}
+  .announcement-bar {
+    display: none; 
+    
+}
+{% endif %} 
+  
+  {% if product.handle == 'special-offer' %}
+  .announcement-bar {
+    display: none !important;}
+  {% endif %}   
+  
+.block-1600351337843 .column2x{ 
+    float: right;
+    background-color: white;
+    width: calc(50% - 40px); 
+    padding: 3%;
+    border: 1px solid #73994a;
+  
+}
+.block-1600351337843 .column2y{
+  background-color: white;
+
+  border: 1px solid #73994a;
+
+}
+  
+.block-1600351337843 .page-width {width: 100%;padding: 0px;}
+ @media  (min-width:767px) {
+   
+ 
+.block-1600351337843 .column2y {
+    min-height: 500px;
+} 
+
+.block-1600351337843 .column2x {
+    min-height: 500px;
+}
+}
+@media(max-width:767px){
+  .block-1600351337843 .column2x {
+  width:100%;
+  }
+  #ProductSection-6595092774958 .grid__item {
+    padding: 0px;
+} 
+
+.block-1600351337843 {
+    margin-top: -50px;
+}
+}
+
+@media (min-width:767px){
+  .block-1600351337843 {
+    margin-top: -90px;
+}   
+}
+ 
+p.major-banner-coaching.major-banner-coaching { 
+  display: none!important;
+  background:none!important;
+  padding-left:0px;
+  border:unset; 
+}
+@media(max-width:767px){ 
+
+  p.major-banner-coaching.major-banner-coaching{
+    white-space: unset!important;
+  } 
+}
+p.five-day-fast {
+    background: #9fc94f;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline;
+    width: unset;
+    padding: 2px 10px;
+}
+.page-width .grid {
+    max-width: 1450px;
+} 
+
+#ProductSection-6595092774958 .page-content.page-content--product {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.slideshow__slide--1600351383959 .hero__title {
+    position: relative;
+    left: 40px;
+    background: #ffffff54;
+    padding: 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(2.8px);
+}
+
+
+@media(max-width:767px){
+.slideshow__slide--1600351383959 .hero__title {
+    left: unset;
+}
+
+}  
+</style>
+{% endif %} 
+<style>.toolbar + .header-sticky-wrapper .site-header {
+  padding-bottom: 10px;
+}
+
+.product__photos img {
+  object-fit: contain;
+  object-position: unset;
+}
+ 
+
+.variant-input-radio-wrap[name=Quantity] {
+  padding: 0px;
+}
+
+.variant-input-radio-wrap[name=Quantity] .variant-input div.price-wrapper {
+  color: black;
+}
+
+
+a.btn.c-btn--full {
+  background: #73984a;
+}
+
+.ajaxcart__inner.no-sub-product+.ajaxcart__footer {
+  height: 280px!important;
+}
+
+span.btn {
+  background: #73984a;
+  border-radius: 40px;
+}
+
+.product__price-savings {
+  color: black;
+}
+ 
+#shopify-section-product-template-narrow .product-single__meta form.product-single__form button.btn.btn.add-to-cart {
+  border-radius: 40px;width: 505px; max-width: 100%;;
+}
+.description-left-placeholder {
+    display: none;
+} 
+.text-divider {
+display: flex;
+align-items: center;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+background: #eff5e3;
+width: 100%;
+}
+
+.text-divider::before, .text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
+
+ .text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+ .text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+
+
+
+.variant-input-radio-wrap[name=Quantity] {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+
+i.one-fsting {
+  border: 1px solid #d8d8d8;
+  padding: 2px;
+  border-radius: 20px;
+  width: 18px;
+  display: inline-flex;
+  height: 18px;
+  font-size: 12px;
+  justify-content: center;
+  padding: 0px;
+  align-items: center;
+  background: lightgray;
+}
+
+fieldset.variant-input-radio-wrap {
+  max-width: 520px; 
+}   
+@media(min-width:767px){
+.variant-input-radio-wrap[name=Quantity] .variant-input .input_lable label {
+    max-width: 340px; 
+}      }   
+.variant-input.variant-input div input:checked+label:before {
+  background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgb(154 202 55) 46%,  rgb(154 202 55) 100%);
+  border: black; 
+}
+
+.variant-input.variant-input div label:before {
+  border: 2px solid #73984a;
+}
+  
+/* .prolon-pricing {
+  display: none;  
+}  */
+.intemittant-badge.intemittant-badge{
+  background: transparent ;
+}p.klarna-payment {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px;
+    flex-wrap: wrap;
+    line-height: 1;
+    font-size: 14px;
+    text-align: center!important;
+    /* justify-content: center; */
+}
+
+p.klarna-payment svg {
+    width: 66px;
+    margin-left: 10px;
+}
+
+span[klarna-payment] {
+    content: "123";
+    display: block;
+    margin-inline: 5px;
+}
+
+button#klarna-installments-cta {
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: underline;
+    font-family: 'Harmonia Sans';
+    line-height: 1;
+}
+shopify-payment-terms{ 
+  padding-bottom: 20px ;
+}
+
+@media(max-width:767px){
+p.klarna-payment svg {
+    width: 42px;
+    height: 24px;
+    text-align: center;
+}
+
+p.klarna-payment {
+    justify-content: center;
+    font-size: 13px;
+}
+
+p.major-banner-coaching {
+    /* font-size: 12px; */
+    text-align: center;
+    margin: 0px;
+    padding-right: 0px;
+}
+
+
+
+p.major-banner-coaching br {
+    display: none;
+}
+
+p.major-banner-coaching.major-banner-coaching {
+    font-size: 13px;
+}} body.show-klarna-popup div#klarna-payment-terms-cover.hidden {
+    display: block!important;
+}
+body.show-klarna-popup{
+ overflow:hidden;
+}
+body.show-reset-info-popup div#reset-terms-cover.hidden {
+    display: block!important;
+}   
+body.show-reset-info-popup{
+ overflow:hidden;
+} 
+#klarna-payment-terms-cover span {
+    display: inline;
+}  #shopify-section-product-story-sections > div > div:nth-child(2) > div {
+    background: none;
+}
+
+body.template-product .main-content {
+    box-shadow: none;
+}
+
+.block-59ce6c55-4bfd-49a8-a2d4-a1a235c1fd8d >div {
+    margin: 0px;
+}small.reset-preorder {
+    max-width: 520px;
+    width: 100%;
+} 
+
+.block-a5d58633-e5f2-44c9-834d-9da4fafa8601>div {
+    margin-bottom: 0px;
+}  
+
+.block-59ce6c55-4bfd-49a8-a2d4-a1a235c1fd8d img,.block-a5d58633-e5f2-44c9-834d-9da4fafa8601 img {
+    border: 1px solid #73984a;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 387px;
+    object-fit: contain;
+}
+
+.page-blocks>div:first-child .index-section {
+    margin-bottom: 40px;
+} 
+.block-59ce6c55-4bfd-49a8-a2d4-a1a235c1fd8d .image-wrap,
+.block-a5d58633-e5f2-44c9-834d-9da4fafa8601 .image-wrap {margin-bottom:20px;padding-bottom: 88%!Important;overflow: hidden;}
+.product__photos ul.slick-dots {bottom: 10px;z-index: 9999;position: relative;}
+ 
+.product__photos .slick-dots li button:before {
+  background: black;
+} 
+div#PDPAddtoCartdiv .major-banner-coaching {
+    display: none!important;
+} p.klarna-payment svg {
+    order: -1;
+    margin-right: 16px;
+    width: 50px;
+}
+  
+p.klarna-payment {
+    font-size: 15px;
+}
+
+button#klarna-installments-cta {
+    font-size: 12px;
+}  p.klarna-payment {
+    display: inline-flex!important;
+    margin-top: -10px;
+    margin-bottom: 10px;
+} 
+@media(max-width:767px){
+p.klarna-payment svg {
+    width: 42px;
+    height: 24px;
+    text-align: center;
+}
+
+p.klarna-payment {
+    justify-content: center;
+    font-size: 13px;
+}
+p.shop-payment {
+    font-size: 13px;
+    display: inline;
+}
+}   
+@media  (max-width: 767px) {
+  
+.product__photo-dots.product__photo-dots--6750409818158 {
+    display: none ;
+}      
+}
+</style>
+
+<style>
+  div#ProductSection-6742215589934 {
+    margin-top: 90px;
+}
+
+p.major-banner-coaching {
+    display: none;
+}
+
+.grid.grid--product-images-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 60px;
+}
+
+.product-single__description-full.rte {
+    display: none;
+}
+
+.product__main-photos.aos-init.aos-animate {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+div#ProductThumbs-6758198083630 {
+    display: none;
+}
+div#ProductThumbs-6780846342190 {
+      display: none !important;
+  }
+.grid.grid--product-images-right .grid__item {
+    float: none!important;
+    flex-grow: 1;
+    flex: 1;
+    width: 60%;
+}
+
+.testimonials-wrapper.testedHere {
+    max-width: 840px;
+}   .grid.grid--product-images-right .grid__item:nth-child(2) {
+    display: none;
+}  
+.feature-row__item a.btn {
+    background: #d42222;
+}
+
+button#AddToCart-6758198083630 {
+    background: #d42222;
+}
+
+.testimonials-wrapper.testedHere .testimonials-slider{
+  display: none; 
+}
+@media(min-width:768px){
+div#PDPAddtoCartdiv {
+    margin-top: 80px;
+}  
+.product__photos.product__photos-6758198083630.product__photos--beside {
+    margin-bottom: 10px;
+}
+
+
+
+.product__main-photos.aos-init.aos-animate {
+    max-width: 692px;
+}  
+}
+@media(max-width:767px){ 
+.grid.grid--product-images-right {
+    flex-direction: column!important;
+} 
+.grid.grid--product-images-right .grid__item{
+    width:100%!important;
+}  
+} 
+</style>
+<div class="ultimate-countdown"></div> 
+
+
+<script>
+    
+    function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}  
+let cProduct ={{product | json}}; 
+let variant= getParameterByName('variant');
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    $(".variant__input-32593125703726").trigger("click");
+    let orignalTrustImage = $(".trust-image").data("original-image");
+    let secndImage =
+      "https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Single_Box_-_50_off.png?v=1609968321";
+    $('input[name="Quantity"][value*="Subscribe & Save"],input[name="Quantity"][value*="mon"]').click();
+    $("input[type=radio][name=Quantity]").change(function () {
+      // $('shopify-payment-terms').addClass('active');
+
+      $(".trust-image img")
+        .show()
+        .attr("src", orignalTrustImage)
+        .removeAttr("srcset");
+      if (this.value.includes("Single Prolon Order")) {
+        //$('.trust-image').hide();
+        $(".trust-image img")
+          .show()
+          .attr("src", secndImage)
+          .removeAttr("srcset");
+      } 
+      let fastBarWording = $(this).closest('.variant-input').find('.intemittant-badge').text();
+      let sprice= $(this).closest('.variant-input').find('.t-price').attr('data-price').replace('$','');
+      let sixMonthprice= sprice/6;
+      let FourInstallmentprice= sprice/4; 
+       $('.super-klarna-btn').remove();
+      if (this.value.includes("Subscribe & Save") || this.value.includes("Monthly") ) {
+        $('shopify-payment-terms').removeClass('active'); 
+        addSubscriptionOptions();
+          
+      } else {   
+
+        //$( "#subscription_plans").remove();  
+      //  $('#PDPAddtoCartdiv').prepend(klarnapaymenttextt.replaceAll('XXX',sixMonthprice.toFixed(2)));
+        $("input,select", ".simple-sub-plan").attr("name", "");
+      }
+    
+
+      $('.intermitant-badge-input').remove();$('.reset-preorder').remove(); 
+      $('.klarna-input-hidden,.shopify-input-hidden').remove(); 
+     // $('#PDPAddtoCartdiv').append(`<input name="properties[${fastBarWording}]" value="yes" class="intermitant-badge-input" type="hidden" />`);     
+      if( this.value.includes("ProLon Boxes") ||  this.value.includes("Single") ){      
+    //  $('#PDPAddtoCartdiv').append(`<input name="properties[*Pay With Klarna]" value="As low as $ ${sixMonthprice.toFixed(2)} / Month for 6 Months" class="klarna-input-hidden" type="hidden" />`) ;
+    // $('#PDPAddtoCartdiv').append(`<input name="properties[*Pay With Shop Pay]" value="4 Interest-free installments of ${FourInstallmentprice.toFixed(2)}" class="shopify-input-hidden" type="hidden" />`) ;  
+//      $(`<small class="reset-preorder" style="
+//     margin-top: 10px;
+// ">Due to huge demand & global supply chain disruptions the Prolon Reset component will ship on the Week of March 14th</small>`).insertAfter(`#PDPAddtoCartdiv .add-to-cart`);
+      }     
+               
+      //if() 
+    //   if (this.value.includes("Fast Bar")) {
+    //     $(`<span class="intemittant-badge top-badge" style="
+      
+    //  ">(includes 30ct Intermittant Fasting bars)</span>`).insertAfter('h3.h3.product-single__title')
+    //   } else {  
+    //     //$( "#subscription_plans").remove();
+    //     $("input,select", ".simple-sub-plan").attr("name", "");
+    //     $('.top-badge').remove();
+    //   }
+
+    });
+
+    let klarnapaymenttextt =`<p class="klarna-payment super-klarna-btn" style="/* display:none */margin-top: -10px;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="40.4494" viewBox="0 0 100 40.4494"><defs><style>.cls-1{fill:#ffb3c7;}</style></defs><g id="Lager_2" data-name="Lager 2"><g id="Layer_1" data-name="Layer 1"><rect class="cls-1" width="100" height="40.4494" rx="11.7384"></rect><path d="M80.0772,17.7235a6.194,6.194,0,1,0,0,10.2373v.75h3.5145V16.9727H80.0772Zm-3.1964,8.1388a3.0243,3.0243,0,1,1,3.1849-3.02A3.1059,3.1059,0,0,1,76.8808,25.8623Z"></path><rect x="28.2027" y="11.7416" width="3.678" height="16.9694"></rect><path d="M64.1542,16.6569a4.2694,4.2694,0,0,0-3.62,1.6383V16.9733h-3.5V28.711h3.5421V22.5424a2.4754,2.4754,0,0,1,2.6383-2.6591c1.5447,0,2.4325.9228,2.4325,2.6348V28.711h3.5107V21.2464C69.1577,18.5146,66.9857,16.6569,64.1542,16.6569Z"></path><path d="M43,17.7235a6.194,6.194,0,1,0,0,10.2373v.75h3.5145V16.9727H43Zm-3.1965,8.1388a3.0243,3.0243,0,1,1,3.1845-3.02A3.1058,3.1058,0,0,1,39.8034,25.8623Z"></path><path d="M51.9513,18.5017V16.9728H48.353V28.7111h3.606v-5.48c0-1.8491,2.0042-2.843,3.3949-2.843.014,0,.0276.0014.0417.0015V16.9735A4.3821,4.3821,0,0,0,51.9513,18.5017Z"></path><path d="M87.323,24.5476a2.2059,2.2059,0,1,0,2.206,2.2059A2.2057,2.2057,0,0,0,87.323,24.5476Z"></path><path d="M25.6675,11.7384H21.8558a9.7488,9.7488,0,0,1-3.9412,7.8678l-1.51,1.131,5.8513,7.9792h4.8106l-5.3837-7.342A13.5049,13.5049,0,0,0,25.6675,11.7384Z"></path><rect x="12.1204" y="11.7384" width="3.8185" height="16.9773"></rect></g></g></svg>* Pay as low as <span klarna-payment="">$XXX</span> every month for next 6 months <button aria-haspopup="dialog" class="klarna-installments__learn-more" data-price="XXX"  id="klarna-installments-cta">Learn&nbsp;more</button> </p>`;
+
+    let shoppaymenttext =`<p class="shop-payment" style="position: relative;top: -10px;padding-top: 10px;"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="shop-pay-logo" viewBox="0 0 424 102" fill="none" style="
+    padding-right: 10px;    width: 65px;
+
+">
+      <path d="M108.665 32.87c-3.402-7.136-9.852-11.746-19.57-11.746a19.48 19.48 0 00-15.303 7.868l-.355.432V1.454a.61.61 0 00-.61-.61h-13.74a.61.61 0 00-.599.61v80.23a.598.598 0 00.598.598h14.717a.61.61 0 00.609-.598V47.475c0-6.648 4.433-11.358 11.525-11.358 7.757 0 9.718 6.383 9.718 12.888v32.679a.598.598 0 00.599.598h14.682a.609.609 0 00.61-.598v-34.63c0-1.185 0-2.349-.155-3.48a30.617 30.617 0 00-2.726-10.704zM35.184 44.76s-7.491-1.76-10.25-2.47c-2.76-.71-7.58-2.217-7.58-5.863 0-3.646 3.89-4.81 7.834-4.81 3.945 0 8.334.954 8.677 5.331a.632.632 0 00.632.576l14.505-.055a.618.618 0 00.587-.414.62.62 0 00.034-.251C48.725 22.797 36.436 17.788 25.1 17.788c-13.442 0-23.271 8.865-23.271 18.64 0 7.136 2.017 13.829 17.874 18.483 2.782.809 6.56 1.862 9.863 2.781 3.967 1.109 6.105 2.782 6.105 5.42 0 3.058-4.432 5.185-8.787 5.185-6.305 0-10.782-2.338-11.148-6.538a.632.632 0 00-.632-.554l-14.472.067a.631.631 0 00-.632.654C.665 75.145 13.431 82.27 25.332 82.27c17.73 0 25.743-9.973 25.743-19.315.022-4.388-.987-14.384-15.891-18.196zm186.611-23.658c-7.369 0-13.542 4.078-17.52 8.998v-8.422a.597.597 0 00-.587-.599h-13.763a.601.601 0 00-.599.599v78.678a.598.598 0 00.599.587h14.727a.587.587 0 00.587-.587V74.492h.222c2.338 3.568 8.732 7.846 17.087 7.846 15.714 0 28.812-13.032 28.812-30.64.011-16.9-13.021-30.596-29.565-30.596zm-1.363 46.242a15.613 15.613 0 1115.226-15.647 15.4 15.4 0 01-4.362 10.987 15.404 15.404 0 01-10.864 4.66zm-74.689-49.7c-13.73 0-20.578 4.666-26.075 8.4l-.166.11a1.364 1.364 0 00-.41 1.807l5.43 9.353a1.373 1.373 0 00.964.665 1.342 1.342 0 001.108-.3l.433-.354c2.825-2.372 7.358-5.54 18.328-6.405 6.106-.488 11.381 1.108 15.27 4.743 4.278 3.945 6.838 10.316 6.838 17.043 0 12.378-7.292 20.157-19.005 20.312-9.652-.055-16.135-5.086-16.135-12.522 0-3.945 1.785-6.516 5.264-9.087a1.349 1.349 0 00.41-1.728l-4.876-9.22a1.42 1.42 0 00-.853-.687 1.371 1.371 0 00-1.108.144c-5.474 3.247-12.19 9.186-11.824 20.6.443 14.528 12.522 25.62 28.224 26.075h1.862c18.661-.61 32.136-14.462 32.136-33.245 0-17.242-12.566-35.704-35.815-35.704z" fill="rgb(90, 49, 244)"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M281.734 1.044h125.652c8.672 0 15.703 7.03 15.703 15.703V85.54c0 8.672-7.031 15.702-15.703 15.702H281.734c-8.672 0-15.702-7.03-15.702-15.702V16.747c0-8.673 7.03-15.703 15.702-15.703zm28.191 54.488c10.483 0 17.985-7.647 17.985-18.362 0-10.66-7.502-18.351-17.985-18.351h-18.506a.829.829 0 00-.831.83v50.787a.84.84 0 00.831.831h6.959a.831.831 0 00.831-.83V56.362a.83.83 0 01.832-.831h9.884zm-.532-29c5.696 0 9.896 4.498 9.896 10.638 0 6.15-4.2 10.638-9.896 10.638h-9.352a.83.83 0 01-.832-.82V27.363a.844.844 0 01.832-.831h9.352zm20.567 34.995a9.875 9.875 0 014.123-8.467c2.704-2.028 6.892-3.08 13.109-3.324l6.593-.222v-1.95c0-3.89-2.615-5.54-6.815-5.54s-6.848 1.484-7.469 3.911a.793.793 0 01-.797.576h-6.505a.816.816 0 01-.807-.588.815.815 0 01-.024-.354c.975-5.762 5.74-10.14 15.902-10.14 10.793 0 14.682 5.02 14.682 14.606v20.368a.823.823 0 01-.239.595.835.835 0 01-.592.247h-6.571a.836.836 0 01-.592-.247.833.833 0 01-.239-.595v-1.518a.619.619 0 00-.783-.65.62.62 0 00-.325.218c-1.962 2.138-5.153 3.69-10.239 3.69-7.458.022-12.412-3.879-12.412-10.616zm23.825-4.433V55.52l-8.532.444c-4.499.232-7.126 2.105-7.126 5.252 0 2.848 2.405 4.433 6.594 4.433 5.696 0 9.064-3.08 9.064-8.544v-.011zm14.772 23.626v5.928a.854.854 0 00.609.864c1.159.316 2.357.462 3.558.433 6.371 0 12.189-2.327 15.514-11.392l14.627-39.018a.847.847 0 00-.112-.753.848.848 0 00-.675-.355h-6.815a.829.829 0 00-.798.576l-8.056 24.712a.854.854 0 01-1.596 0l-9.286-24.778a.855.855 0 00-.787-.543h-6.649a.841.841 0 00-.786 1.108l13.674 35.128a.82.82 0 010 .565l-.432 1.363a7.877 7.877 0 01-7.945 5.618 16.45 16.45 0 01-3.048-.288.839.839 0 00-.918.472.826.826 0 00-.079.36z" fill="rgb(90, 49, 244)"></path>
+    </svg> * Pay as low as <span style="padding-inline: 5px;">$XXX</span>in 4 interest-free installments <button aria-haspopup="dialog" data-price="XXX" class="shopify-installments__learn-more" id="shopify-installments-cta" style="
+    display: inline;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Harmonia Sans'; 
+    text-decoration: underline;
+">Learn&nbsp;more</button></p>`;
+    setTimeout(() => {
+      
+    
+    
+    $("input[type=radio][name=Quantity]:checked").change(); 
+    $("input[type=radio][name=Quantity]:checked").each(function () {
+  
+      let sprice = $(this).closest('.variant-input').find('.t-price').attr('data-price').replace('$','');
+      let sixMonthprice= sprice/6;
+      let fourInstallmentprice= sprice/4;
+      if (this.value.includes("Subscribe & Save") || this.value.includes("Monthly")) {
+        if ($(this).prop("checked")) {
+          addSubscriptionOptions();
+        }
+      } else {
+        $("input,select", ".simple-sub-plan").attr("name", "");
+        //$( "#subscription_plans" ).remove();
+      } 
+    if($(this).val().includes("2 ProLon Boxes") || $(this).val().includes("3 ProLon Boxes") || $(this).val().includes("Single") ){
+
+        let el= $(this).closest(`.variant-input`); 
+    
+      //  $(klarnapaymenttextt).insertBefore(el)
+      ///$(klarnapaymenttextt.replaceAll('XXX',sixMonthprice.toFixed(2))).insertBefore(el)
+        $(shoppaymenttext.replaceAll('XXX',fourInstallmentprice.toFixed(2))).insertBefore(el)
+   
+    }    
+
+//     if($(this).val().includes("3 Prolon Boxes")){
+
+// let el= $(this).closest(`.variant-input`)  
+     
+//         $(klarnapaymenttextt.replaceAll('70.00','129.17')).insertBefore(el)
+        
+//     }  
+
+      
+
+
+
+    });
+    }, 100);
+    
+
+    if(variant && variant!=''){
+
+let validVariant= cProduct.variants.filter(e=>e.id==variant);
+  let validHandle= cProduct.handle;
+if(validVariant && validVariant.length>0){
+
+  let currentVariant= validVariant[0];
+
+  if(currentVariant)
+  {
+    let option1= currentVariant.option1;;
+    let option2= currentVariant.option2;
+
+    $(`[data-index="option1"][data-value="${option1}"] input`).click()
+    setTimeout(() => { 
+      $(`[data-index="option2"][data-value="${option2}"] input`).click()
+
+    }, 10);
+
+    let schemaScript= $(`[data-product="${validHandle}"]`).html();
+    let schema;
+    try{
+    schema= JSON.parse(schemaScript);
+    }catch(ex){}
+    if(schema && schema.offers){
+      schema.offers.price = currentVariant.price/100;
+      $(`[data-product="${validHandle}"]`).html(JSON.stringify(schema)); 
+ 
+    }  
+  }  
+
+
+}
+
+
+
+$('[data-product="reset"]').remove(); 
+}
+
+
+  });
+
+  function addSubscriptionOptions() {
+    $(".simple-sub-plan").remove();
+    $(`form fieldset[name=Quantity] [data-value*="Subscribe"],form fieldset[name=Quantity] [data-value*="Monthly"]`).append(
+      '<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' +
+        '<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">' +
+        '<input type="hidden" name="properties[number_charges_until_expiration]" value="">' +
+        '<select name="properties[shipping_interval_frequency]">' +
+          '  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+          '  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' +
+        
+        "</select>" +
+        "</div>"  
+    ); 
+  } 
+  if(!variant){
+  setTimeout(function () {
+    $('.variant__input-4634645430318[value*="Subscribe"]').click();
+    addSubscriptionOptions();
+  }, 50);
+  }
+ 
+  $(window).load(function () { 
+ 
+    if(!variant) {
+    $('input[name="Quantity"][value*="Subscribe & Save"],input[name="Quantity"][value*="Monthly"]').click();
+    setTimeout(function () {
+      $('.variant__input-4634645430318[value*="Subscribe"]').click();
+      addSubscriptionOptions();
+    }, 50);
+    } 
+  });
+</script> 
+{% render 'product_infox' %}
+
+<script>
+  $(document).ready(function () {
+    $('[for="ProductSelect-6712605442094-option-quantity-Single+ProLon+Order+%2B+30ct+Fast+Bar"]').append(`<span class="intemittant-badge" style="
+    
+">(includes 30ct Intermittent Fasting bars)</span>`) ;
+  
+  });  
+</script>
+
+ 
+<script type="text/javascript" class="prolon-extended-script">
+
+$(document).ready(function(){
+
+ 
+  $(`[data-product-images]`).prepend(`<p class="major-banner-coaching">All ProLon purchases include a 20 minute health coach consultation<b style="
+    color: red;
+"> — an additional $74 Value!</b></p>`) 
+    
+  $('.block-1600351337843').insertBefore('.faq__item');  
+  $(`<div class="text-divider">FIRST TIME FASTER</div>`).insertAfter(`[data-value="Single ProLon Box"]`);
+  $(`<div class="text-divider">INTERMIDIATE FASTER</div>`).insertAfter(`[data-value*="1 ProLon Box"]`)     
+  $(`<div class="text-divider">FASTING LIFESTYLE</div>`).insertAfter(`[data-value*="3 ProLon Boxes"]`);
+  $(`<div class="text-divider">FASTING LIFESTYLE</div>`).insertAfter(`[data-value*="2 Box Bundle & Save"]`);
+  
+  $(`<div class="text-divider">ADVANCED FASTING</div>`).insertAfter(`[data-value*="2 ProLon Boxes"]`);
+  
+  $('.variant-input-radio-wrap[name=Quantity] .variant-input input[name="Quantity"]').change(function(){
+
+    let context= $(this).closest('.product-section');
+let val = $(this).val();     
+
+ if(val.toLowerCase().includes('reset')){
+    let price= $(this).closest('.variant-input').find('.t-price').attr('data-price').replace('$','');
+    if(price>0){
+      let pricePerMonth= price/12;  
+      //$(`span[klarna-payment]`).text(`$${pricePerMonth.toFixed(2)}`);
+      $('.klarna-payment',context).show();    
+
+    }
+    
+ }else{
+
+     $('.klarna-payment',context).hide(); 
+ }
+
+    
+});
+    
+$(document).on("click",'.klarna-installments__learn-more',function(e){
+e.preventDefault();
+$(".klarna-pop-pay-price").text($(this).attr('data-price'));
+ 
+$('body').addClass('show-klarna-popup');
+    
+});     
+
+
+
+
+$('.btn__close--icon,div#klarna-payment-terms-cover .btn__close').click(function(e){
+  $('body').removeClass('show-klarna-popup');
+});    
+ 
+  
+$('img.reset-info').click(function(e){
+e.preventDefault();
+$('body').addClass('show-reset-info-popup');
+});
+
+
+
+$('.btn__close--icon, div#reset-terms-cover .btn__close').click(function(e){
+  $('body').removeClass('show-reset-info-popup');
+});      
+ 
+
+setTimeout(() => {
+  try{
+  $(".product__main-photos [id*=ProductPhotos]").slick("unslick");
+  }
+  catch(ex){}
+  try{
+  $(".product__main-photos [id*=ProductPhotos]").slick({
+dots: true,
+infinite: false,
+speed: 300,arrows:true,
+slidesToShow: 1,
+autoplay: false,    
+autoplaySpeed: 3000,
+slidesToScroll: 1,
+});   
+  }
+  catch(ex){
+     
+  }
+}, 1000);
+
+})  
+</script>  
+{% include 'klarna-popup', paymentText:"6" %}
+{% include 'reset-info-popup' %}  
+{% schema %} 
+{
+    "name": "Grid Try Prolon New",
+    "settings": [ 
+    {
+      "type": "image_picker", 
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    }, 
+    {
+      "type": "text",  
+      "id": "custom_class",
+      "label": "Custom Class"
+    }, 
+    {
+      "type": "product", 
+      "id": "product_handle",
+      "label": "Product"
+    }
+    ],  
+    "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+      {
+        "type":"text",
+        "id":"variant_id",
+        "label":"Variant ID"
+      } ,
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "fastbar_message",
+        "label": "Fastbar Message"
+      },
+      {
+        "type": "textarea",
+        "id": "message",
+        "label": "Message"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "textarea",
+        "id": "subDescription",
+        "label": "Sub Description"
+      },
+      {
+        "type": "textarea",
+        "id": "price_class",
+        "label": "Price Class"
+      },
+      {
+        "type": "text",
+        "id":    "per_box_price_text",
+        "label": "Per Box Price Text"
+      }, 
+      {
+        "type": "text",
+        "id": "price",
+        "label": "Price"
+      },
+      {
+        "type": "text",
+        "id": "comp_price",
+        "label": "Price Compare"
+      },
+       
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2", 
+        "label": "Image 2"
+      },
+      {
+        "type": "html",
+        "id": "below_add_to_cart",
+        "label": "Below Add to Cart"
+      }   
+      
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "Grid Try Prolon New",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% include 'klarna-popup', paymentText:"6" %}
+{% include 'reset-info-popup' %}  
+{% include 'shopify-popup'  %}
+ 
+
+<script>
+
+$(document).ready(function(){  
+  $('.product-section .testimonials-wrapper').append(`<img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Fast_-_Testimonials.png?v=1648837125" class="testimonilas-reviews" / >`) ;
+  $('#ProductSection-6758198083630 [name="Quantity"] .variant__button-label').append(`<span class="intemittant-badge" style="">+ Free Signature Water Bottle</span>`)   
+  $('.btn__close--icon,div#klarna-payment-terms-cover .btn__close,div#shopify-terms-cover .btn__close').click(function(e){     
+      $('body').removeClass('show-klarna-popup'); 
+      $('body').removeClass('show-shopify-popup');
+
+    });    
+
+  $(document).on("click",'.shopify-installments__learn-more',function(e){
+  e.preventDefault(); e.stopPropagation()
+$(".shopify-shop-pay-price").text($(this).attr('data-price'));
+    
+$('body').addClass('show-shopify-popup');
+    
+}); 
+ 
+$('.flavour-description').html(`<p style="
+    margin-top: 20px;
+"><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+    $('.flavor-type').click(function(){
+
+      let currentFlavour= $(this).closest('.add-to-cart-section').find('.flavor-type:checked').val(); 
+      if(currentFlavour=='Original')
+      {  
+        $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+    margin-top: 20px;
+"><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+      }  
+      else{ 
+        $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+    margin-top: 20px;
+"><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p>`);
+        
+      } 
+
+    });  
+
+ 
+  })
+
+</script>

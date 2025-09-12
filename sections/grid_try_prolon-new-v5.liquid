@@ -1,0 +1,1670 @@
+<!-- grid_try_prolon-new-v5 -->
+<div id="product-choice" class="!grid grid-cols-1 product-choise md:grid-cols-2 xl:grid-cols-3 gap-x-3 gap-y-5"> 
+  <style>
+    ul.site-nav.site-navigation.small--hide {
+      display: none !important;
+    } 
+    .t-e-reset-patient {
+        justify-content: space-between;
+        max-width: 80%;
+    }
+    .product-choise {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1050px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      padding: 10px 0px;
+      column-gap: 20px;
+    }
+
+    .hero-banner.pointer {
+      cursor: pointer;
+    }
+
+    .single-product-wrapper {
+      /* width: 32%; */
+      margin: 0 auto;
+      min-width: 340px;
+      text-align: center;
+      box-shadow: -1px 6px 8px #d8d8d887;
+      margin-bottom: 20px;
+      flex: 1;
+      max-width: 420px;
+      border-radius: 20px;
+      background-color: #f9fafb;
+      min-height: 764px;
+
+    }
+
+    .choose-susbcription .flex.inline-wrapper {
+      justify-content: center !important;
+    }
+
+    .single-product-wrapper h3.title-line {
+      font-size: 17px;
+      text-align: center;
+      padding: 10px;
+      background: var(--colorCartDot);
+      color: white;
+      margin: 0px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .single-product-wrapper i.sub-heading {
+      border-bottom: 1px solid #d7d7d7;
+      display: block;
+      padding: 6px;
+    }
+
+    .single-product-wrapper img {
+      width: 100%;
+
+    }
+
+    .single-product-wrapper .price-box {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #d7d7d7;
+      margin-top: 0;
+    }
+
+    .single-product-wrapper p.main-price {
+      margin: 0px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .single-product-wrapper .description {
+      font-size: 16px;
+      padding: 20px;
+
+    }
+
+    .single-product-wrapper .sub-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: white !important;
+      height: 150px !important;
+    }
+
+    .single-product-wrapper .sub-desc p {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .single-product-wrapper[data-v="37391319433374"] {
+      order: -1;
+    }
+
+    .single-product-wrapper {
+      cursor: pointer;
+    }
+
+    .single-product-wrapper[data-v="37391319433374"] .price-box:after {
+      transition: all 0.51s ease;
+      content: "Perfect for First Time Faster";
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      background: red;
+      bottom: -36px;
+      padding: 5px 0px;
+      color: white;
+      opacity: 0;
+      font-weight: bold;
+    }
+
+    div.variant-input span label {
+      white-space: nowrap;
+    }
+
+    .single-product-wrapper[data-v="37391319433374"]:hover .price-box:after {
+      opacity: 1;
+    }
+
+    .price-box.do-add-to-cart {
+      position: relative;
+    }
+
+    p.shop-payment svg {
+      width: 66px;
+    }
+
+    p.shop-payment {
+      font-size: 14px;
+      display: block;
+      align-items: center;
+    }
+
+    p.klarna-payment.klarna-payment {
+      margin-top: 7px;
+      margin-bottom: 28px;
+    }
+
+    p.shop-payment {
+      display: block;
+      text-align: center !important;
+    }
+
+    body.show-shopify-popup div#shopify-terms-cover.hidden {
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    body.show-shopify-popup {
+      overflow: hidden;
+    }
+
+    //.single-product-wrapper[data-v="41640431222942"] .choose-flavor .variant-input span:last-child{display:none}  
+
+
+    @media (min-width: 767px) {
+      .single-product-wrapper .description {
+        height: 250px;
+        padding: 0px;
+        padding-inline: 5px;
+
+      }
+
+      .single-product-wrapper .sub-desc {
+        height: 90px;
+      }
+    }
+
+    .single-product-wrapper .sub-desc {
+      border-bottom: 1px solid #d7d7d7;
+    }
+
+    h2.av-special-heading-tag {
+      font-size: 28px;
+    }
+
+    p.main-price.green-price {
+      color: #73984a;
+    }
+
+    .choose-susbcription .flex.inline-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .choose-susbcription .flex.inline-wrapper span {
+      display: flex;
+      align-items: center;
+    }
+
+    .choose-susbcription .flex.inline-wrapper span label {
+      margin: 0px;
+    }
+
+    @media(max-width:767px) {
+      .single-product-wrapper {
+        min-width: 300px;
+      }
+    }
+  </style>
+
+  <style>
+    div.variant-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    div.variant-input span {
+      display: flex;
+      padding: 5px 20px;
+    }
+
+    div.variant-input span label {
+      margin: 0px;
+    }
+
+    div.variant-input span input {
+      margin: 3px 10px;
+    }
+
+    div.variant-input span label:before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      left: -27px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      border: 2px solid #73994a;
+      background: white;
+    }
+
+    div.variant-input span input:checked+label:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -21.9px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    div.variant-input span label {
+      position: relative;
+    }
+
+    div.variant-input span input:checked+label:before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      left: -27px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#73984a), to(#73984a));
+      background-image: linear-gradient(to bottom right, #73984a, #73984a);
+    }
+
+    div.variant-input span input:checked+label:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -21.9px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    div.variant-input span label {
+      position: relative;
+    }
+
+    div.variant-input span input {
+      opacity: 0px;
+    }
+  </style>
+
+  <style>
+    p.klarna-payment svg {
+      /* order: -1; */
+      margin-right: 16px;
+      width: 50px;
+      position: relative;
+      top: 8px;
+      margin-right: 3px;
+    }
+
+    p.klarna-payment {
+      font-size: 14px;
+    }
+
+    button#klarna-installments-cta {
+      font-size: 12px;
+    }
+
+    p.klarna-payment {
+      display: block;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      line-height: 1;
+      padding: 0px;
+      line-height: 1;
+      padding-left: 50px;
+      position: relative;
+      margin-top: 0px;
+    }
+
+    @media(max-width: 767px) {
+      p.klarna-payment svg {
+        width: 42px;
+        height: 24px;
+        text-align: center;
+
+      }
+
+      p.klarna-payment {
+        justify-content: center;
+        font-size: 13px;
+      }
+
+      p.shop-payment {
+        font-size: 13px;
+        display: inline;
+      }
+    }
+
+    /* 
+  p.klarna-payment svg {
+      display: inline;
+      position: absolute;
+      left: 4px; 
+      top: 0px;
+      height: 20px;
+  } */
+
+    p.klarna-payment span {
+      text-align: left;
+    }
+
+    body.show-klarna-popup div#klarna-payment-terms-cover.hidden {
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    body.show-klarna-popup {
+      overflow: hidden;
+    }
+
+    body.show-reset-info-popup div#reset-terms-cover.hidden {
+      display: block !important;
+      visibility: visible !important
+    }
+
+    body.show-reset-info-popup {
+      overflow: hidden;
+    }
+
+    .klarna-installments__learn-more {
+      text-decoration: underline;
+    }
+
+    @media(max-width:767px) {
+      .product-choise {
+        padding-inline: 20px;
+      }
+    }
+  </style>
+  <style>
+    .price-box .variant-input {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 10px;
+      padding-bottom: 0px;
+    }
+
+    .price-box .price-wrapper {
+      display: block;
+    }
+
+    .price-box .input_lable {
+      text-align: left;
+      width: 60%;
+    }
+
+    label.variant__button-label {
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+
+    .price-box .variant-input span.intemittant-badge {
+      padding: 0px;
+      font-weight: 100;
+      white-space: nowrap;
+    }
+
+    .price-box .t-price {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    .price-box .t-price s {
+      font-weight: 100;
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    button#klarna-installments-cta {
+      font-family: 'Harmonia Sans';
+    }
+
+    p.klarna-payment.klarna-payment {
+      margin-bottom: 10px;
+      padding-left: 0px;
+      margin-left: 10px;
+      margin-top: -8px;
+      ;
+    }
+
+    p.shop-payment {
+      text-align: left;
+      font-size: 14px !important;
+    }
+
+    button#shopify-installments-cta img,
+    #klarna-installments-cta img {
+      width: 16px;
+      border: 0px solid;
+      position: relative;
+      top: 4px;
+    }
+
+    @media (min-width: 767px) {
+      p.shop-payment {
+        /* white-space: nowrap; */
+      }
+
+      button#shopify-installments-cta {
+        padding: 0px;
+      }
+
+      p.klarna-payment.klarna-payment {
+        /* white-space: nowrap; */
+        padding-left: 0px;
+      }
+
+      p.klarna-payment svg {
+        padding: 0px;
+        height: 26px;
+      }
+    }
+
+    @media(max-width:440px) {
+      p.klarna-payment.klarna-payment {
+        text-align: center;
+        max-width: 94%;
+        /* flex-wrap: nowrap; */
+        /* display: flex; */
+      }
+
+      p.shop-payment {
+        line-height: 1.4 !important;
+        display: block;
+        height: 30px;
+        text-align: center;
+        max-width: 95.1%;
+      }
+
+      button#klarna-installments-cta {
+        padding-left: 0px;
+        margin: 0px !Important;
+        padding: 0px;
+      }
+
+
+
+      .price-box .t-price s {
+        position: absolute;
+        top: -20px;
+        right: -8px;
+      }
+
+      .price-wrapper {
+        position: relative;
+      }
+
+      .price-box .variant-input {
+        padding-top: 20px;
+      }
+
+      .price-box .price-wrapper {
+        position: relative;
+        top: 5px;
+      }
+
+      button#shopify-installments-cta {
+        padding: 0px;
+      }
+    }
+
+
+    .ed-container {
+      max-width: 1500px !important;
+      width: 100%;
+    }
+
+    .ed-container .product-choise {
+      max-width: 1580px;
+    }
+
+    .ed-container .prolon-product-section .single-product-wrapper {
+      min-width: 330px;
+    }
+  </style>
+  {% for block in section.blocks %}
+
+  {% assign productVariants= product.variants %}
+  <!-- block.variant_id {{block.settings.variant_id}} -->
+  {% for variant in product.variants %}
+
+  {% if block.settings.variant_id contains variant.id %}
+  {% assign v = variant %}
+  <!-- variant ID {{v.id}} -->
+  {% break %}
+  {% endif %}
+  {% endfor %}
+
+  {% assign customProducthandle = block.settings.product_handle %}
+  {% if customProducthandle and customProducthandle !='' %}
+  {% assign customProduct = all_products[customProducthandle] %}
+  {% assign productVariants= customProduct.variants %}
+  {% for variant in customProduct.variants %}
+
+  {% if block.settings.variant_id contains variant.id %}
+  {% assign v = variant %}
+  <!-- variant ID {{v.id}} -->
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  {% else %}
+  {% assign customProduct = "" %}
+
+  {% endif %}
+  <!-- customerProducthandle {{customProduct.handle }} -->
+
+
+
+  <div class="single-product-wrapper !border-white h-full relative m:!min-h-0" data.option="{{ v.option1 }}" data.option2="{{ v.option2 }}" 
+    data.option3="{{ v.option3 }}" data-v="{{ v.id }}" data-product="{{ customProducthandle }}">
+    <script type="text/json" style="display:none" class="custom-variants">
+    {{productVariants | json}}
+  </script>
+    {{ block.settings.title }}
+    <!-- <i class="sub-heading do-add-to-cart">
+      {{ block.settings.message }} <br />
+      {{ block.settings.fastbar_message }}
+    </i> -->
+
+    <div class="ribbon ">
+      <img src="{{ block.settings.image | img_url: '1000x' }}"
+        class="do-add-to-cart  !max-w-[418px] !rounded-t-[20px]" />
+    </div> 
+
+    <!-- <div class="price-box do-add-to-cart tez 32">
+      <p class="main-price {{ block.settings.price_class }}">
+     {{v.price | money}} 
+     {% if block.settings.per_box_price_text %} <small style="
+    font-size: 14px;
+    display: inline;
+    font-weight: 100;
+    color:black;
+    ">{{block.settings.per_box_price_text}}</small>{% endif %}
+  
+      </p>  
+      
+    </div> -->
+    {% if block.settings.image2 %}
+    <div class="ribbon">
+      <img src="{{ block.settings.image2 | img_url: '1000x' }}" class="do-add-to-cart" />
+    </div>
+    {% endif %}
+
+    <div class="price-box tez  {{ block.settings.price_class }}">
+
+      <div class="variant-input">
+        <div class="input_lable">
+          <label class="variant__button-label"> {{ block.settings.message }}
+
+            <!-- badge badge_2 <span class="intemittant-badge" style="">+20ct Intermittent Fasting bars</span> -->
+            {% comment %} <div class="price-wrapper">
+              <div class="t-price" data-price="$340.00" data-compare-price="$498"> <s style="display: none;">
+                  {{v.compare_at_price | money}}</s> {{v.price | money}} </div>
+            </div> {% endcomment %}
+            {%- if block.settings.card_type == 'bundle' -%}
+            {% comment %} <label class="variant__button-label"> {{v.price | money}}</label> {% endcomment %}
+            {%- else -%}
+            <div class="price-wrapper">
+              <div class="t-price">{{ block.settings.perbox_price }}</div>
+            </div>
+            {%- endif -%}
+            <span class="intemittant-badge" style=""> {{ block.settings.fastbar_message }}</span>
+
+
+          </label>
+        </div>
+        <div>
+          {%- if block.settings.card_type == 'bundle' -%}
+          <div class="price-wrapper">
+            <div class="t-price">{{ block.settings.perbox_price }}</div>
+          </div>
+          {%- else -%}
+          <div class="price-wrapper">
+            <div class="t-price">{{v.price | money}}</div>
+          </div>
+          {%- endif -%}
+
+          {% comment %} <label class="variant__button-label"> </label> {% endcomment %}
+        </div>
+        {% comment %} <div class="price-wrapper">
+          <div class="t-price" data-price="$340.00" data-compare-price="$498"> <s style="display: none;">
+              {{v.compare_at_price | money}}</s> {{v.price | money}} </div>
+        </div> {% endcomment %}
+      </div>
+      <!-- <p class="main-price {{ block.settings.price_class }}">
+       
+        {{v.price | divided_by: 4 | money}}<small style="
+        font-size: 14px;
+        display: inline;
+        font-weight: 100;color:black;
+      
+        "> per installment</small>
+      </p> -->
+
+
+      {% include 'price-klarna-new',price: v.price %}
+    </div>
+
+    <div class="description">
+      {{ block.settings.description }}
+
+    </div>
+
+    <div class="flex flex-col p-2 my-2 ssub-desc justify center do-add-to-cart !font-normal md:min-h-[112px]">
+      {{ block.settings.subDescription }}
+    </div>
+    
+    {% if block.settings.custom_add_to_cart %}
+      
+    {{ block.settings.custom_add_to_cart_html }}
+ 
+    {% else %}  
+
+        {% if block.settings.bundle_add_to_cart %}
+
+            {% render 'bundle_add_to_cart', setting: block.settings  %}
+
+          {% else  %}
+          <div
+            class="add-to-cart-section flex flex-col justify-between !min-h-0 md:!min-h-[210px] {% if block.settings.enable_feature == true %} hidden {% endif %}"
+            >
+            <div class="choose-flavor ">
+              <div class="variant-input" data-index="option1">
+
+
+                {% if customProduct and customProduct !='' %}
+                <!-- in custom product -->
+                {% for option in customProduct.options_with_values %}
+
+                {% if forloop.index == 1 %}
+                {% assign optionSize = option.values | size %}
+                <div class="flex flex-wrap t-e-{{customProduct.handle}}" {% if optionSize< 3 %} style="
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      flex-wrap: wrap;
+                  " {% endif %}>
+                  {% for opt in option.values %}
+      
+                  <span data-v-id="{{v.id}}">
+                    <input id="{{ customProducthandle }}-{{v.id}}-{{opt |handleize}}" type="radio" name="variant-{{v.id}}"
+                      class="flavor-type" value="{{opt}}" {% if forloop.index==1 %} checked {% endif %} />
+                    <label for="{{ customProducthandle }}-{{v.id}}-{{opt |handleize}}">{{opt}}</label>
+                  </span>
+
+                  {% endfor %}
+                </div>
+                {% endif %}
+                {%endfor %}
+                {% else %}
+                <!-- out custom product -->
+                {% for option in product.options_with_values %}
+
+                {% if forloop.index == 2 %}
+                <div class="flex flex-wrap" style="display:flex; justify-content:space-between">
+                  {% for opt in option.values %}
+
+                  <span data-v-id="{{v.id}}" >
+                    <input id="{{ customProducthandle }}-{{v.id}}-{{opt |handleize}}" type="radio" name="variant-{{v.id}}"
+                      class="flavor-type" value="{{opt}}" {% if forloop.index==2 %} checked {% endif %} />
+                    <label for="{{ customProducthandle }}-{{v.id}}-{{opt |handleize}}">{{opt}}</label>
+                  </span>
+
+                  {% endfor %}
+                </div>
+                {% endif %}
+                {%endfor %}
+                {% endif %}
+
+              </div>
+            </div>
+            {% if block.settings.show_custom_flavor_description %}
+            <div class="m:mb-2 flavour-description"></div>
+            {% endif %}
+            
+            <a data-variant-id="{{ v.id }}" data-option-2="{{ v.option2 }}"
+              class="select-product-and-process pointer site-nav__link site-nav__link--underline flex justify-center rounded-2xl w-full max-w-[92%] !mx-auto text-lg md:text-xl leading-6  font-medium text-center text-white hover:text-white bg-[#73994a]  cursor-pointer open-quick-view ">
+              <span class="flex items-center justify-center text-white max-w-prose inherit text-copy">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="18">
+                  <path fill-rule="evenodd"
+                    d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="mr-2 font-bold btn !mb-0">Add To Cart</span>
+            </a>
+          
+
+            {{ block.settings.below_add_to_cart }}
+            {% include 'price-shop-pay-new',price: v.price %}
+          </div> 
+
+
+      {% endif %}
+    {% endif %}
+  </div>
+
+  {% endfor %}
+</div>
+
+
+
+
+<style>
+  /*.single-product-wrapper[data-v="41071369584798"] {
+  order: 1;
+}
+
+.single-product-wrapper[data-v="41071369552030"] {
+  order: 0;
+}
+.single-product-wrapper[data-v="41071369617566"] {
+  order: 2;
+}*/
+  .custom-side-cart-discount.tbtDiscountCombine.inSlide {
+    display: none;
+  }
+
+  .hcp-code-wrapper .custom-side-cart-discount.tbtDiscountCombine.inSlide {
+    display: block;
+  }
+
+  .hcp-code-wrapper p.saved-value {
+    display: none;
+  }
+</style>
+{% if handle == 'prolon-professionals' %}
+<style>
+  .ss-shopify_cart .ajaxcart-progress.ajaxcart-progress {
+    display: none !important;
+  }
+</style>
+{% endif %}
+<script class="prolon-extended-script">
+
+
+  $(document).ready(function () {
+    //$('[data-v="41071369617566"] .sub-heading').html(`Single box order + <b>30ct Fast Bar</b>`);
+
+    $(document).on("click", '.klarna-installments__learn-more', function (e) {
+      e.preventDefault();
+      // e.preventDefault(); 
+      $(".klarna-pop-pay-price").text($(this).attr('data-price'));
+
+      $('body').addClass('show-klarna-popup');
+
+    });
+
+
+
+    $('.btn__close--icon,div#klarna-payment-terms-cover .btn__close').click(function (e) {
+      $('body').removeClass('show-klarna-popup');
+    });
+
+
+    $('img.reset-info').click(function (e) {
+      e.preventDefault();
+      $('body').addClass('show-reset-info-popup');
+    });
+
+
+
+    $('.btn__close--icon, div#reset-terms-cover .btn__close').click(function (e) {
+      $('body').removeClass('show-reset-info-popup');
+    });
+
+  });
+</script>
+<style>
+  #MainContent>div.main-content-inner {
+    display: none;
+  }
+
+  #MainContent {
+    max-width: 1500px !important;
+  }
+
+  #product-choice {
+    max-width: 1300px !important;
+    margin-top: -70px;
+
+  }
+
+  /*HIDE FORM DURING $30 OFF SALE */
+  .form-section {
+    display: none !important;
+  }
+
+  .select-a-plan {
+    text-align: center;
+  }
+
+  .select-a-plan h3 {
+    font-size: 42px;
+    max-width: 481px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .select-a-plan p {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .single-plan {
+    height: auto;
+  }
+
+  @media(min-width:768px) {
+
+    .single-plan>p {
+      height: 270px;
+    }
+
+    .plan-details h2.av-special-heading-tag {
+      height: 120px;
+    }
+
+    .single-plan {
+      position: relative;
+      height: 720px;
+    }
+
+  }
+
+  .plan-details .plan-wrapper-atc {
+    /* width: 100%; */
+    margin: 0px 0px;
+    text-align: center;
+    padding: 0px;
+    margin-left: -20px;
+    margin-right: -20px !important;
+    display: block;
+  }
+
+  .plan-details .sub-desc.do-add-to-cart {
+    height: 80px;
+    padding: 0px 10px;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .plan-details .add-to-cart-section {
+    border-top: 1px solid #d8d8d8;
+  }
+
+  .plan-details .plan-wrapper-atc .price-box.do-add-to-cart p.main-price {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+
+  .plan-details .plan-wrapper-atc .price-box.do-add-to-cart {
+    border-top: 1px solid #d8d8d8;
+  }
+
+  .flavour-description {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+
+  @media(max-width:767px) {
+    .plan-details {
+      margin-top: 0px;
+    }
+
+    .select-a-plan {
+      padding-top: 0px;
+    }
+
+    .single-plan {
+      padding: 10px;
+    }
+
+    .plan-details .plan-wrapper-atc {
+      margin-left: -10px;
+      margin-right: -10px !important;
+    }
+
+    .select-a-plan h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  </><style class="overide-custom-css">
+
+  /*:root {
+  --colorBtnPrimary: #73994a;
+  --colorBtnPrimaryLight: #fd8c42;
+  --colorBtnPrimaryDim: #f06002;
+  --colorBtnPrimaryText: #ffffff;
+  --colorCartDot: #73984a;
+  --colorLink: #002500;
+  --colorTextBody: white;
+  --colorPrice: white;
+  --colorTextSavings: #ff0000;
+  --colorSaleTag: #73984a;
+  --colorSaleTagText: #ffffff;
+  --colorBody: black;
+  --colorBodyDim: #f2f2f2;
+  --colorFooter: black;
+  --colorFooterText: white;
+  --colorBorder: #f4f4f4;
+  --colorNav: black;
+  --colorNavText: white;
+  --colorAnnouncement: #fec91c;
+  --colorAnnouncementText: #111111;
+  --colorHeroText: #002500;
+  --colorModalBg: rgba(0,0,0,0);
+  --colorImageOverlay: #000000;
+  --colorImageOverlayOpacity: 0.0;
+  --colorImageOverlayTextShadow: 0.0;
+  --colorSmallImageBg: rgba(0,0,0,0);
+  --colorLargeImageBg: rgba(0,0,0,0);
+  --colorGridOverlay: #000000;
+  --colorGridOverlayOpacity: 0.1;
+  --colorDrawers: #ffffff;
+  --colorDrawersDim: #f2f2f2;
+  --colorDrawerBorder: #f4f4f4;
+  --colorDrawerText: #111111;
+  --colorDrawerTextDark: #000000;
+  --colorDrawerButton: #73994a;
+  --colorDrawerButtonText: #ffffff;
+}*/
+  .column2y {
+    background: transparent;
+  }
+
+  .column2x {
+    border: 1px solid #9ec83c;
+    margin-left: 0px;
+    width: 47%;
+    float: right;
+    min-height: 521px;
+  }
+
+
+  body.template-product div#PageContainer {
+    background: transparent !important;
+  }
+
+  body.template-product .main-content {
+    background-color: transparent !important;
+  }
+
+  .grid__item.medium-up--one-half {
+    float: right;
+  }
+
+  h1.h2.product-single__title.mobile-only {
+    text-align: center;
+    display: block;
+
+  }
+
+  h1.h2.product-single__title {
+    display: none;
+  }
+
+  .price-wrapper {
+    display: none;
+  }
+
+  .variant-input-wrap input[name*=Soup]:checked+label {
+    border-color: white;
+    border-radius: 0px;
+  }
+
+  main#MainContent {
+    box-shadow: none !important;
+  }
+
+  @media(min-width:767px) {
+    h1.h2.product-single__title {
+      display: block;
+    }
+
+    h1.h2.product-single__title.mobile-only {
+      text-align: center;
+      display: none;
+
+    }
+
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  @media(max-width:767px) {
+    .mobile-only {
+      display: block;
+    }
+  }
+
+  @media(min-width:990px) {
+    main#MainContent {
+
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: 60vw;
+      background-position: top right;
+    }
+
+    main#MainContent.image-added {
+      background-image: var(--desktop-banner-image);
+    }
+
+    main#MainContent {
+      max-width: unset !important;
+    }
+
+    [data-product-images] {
+      display: none;
+    }
+
+    .testimonials-wrapper {
+      display: none;
+    }
+  }
+
+  @media(max-width:990px) {
+    h3.h3.product-single__title.mobile-only {
+      text-align: center;
+    }
+
+    .testimonials-wrapper {
+      display: none;
+    }
+
+    .product__main-photos .slick-list {
+      padding: 0px;
+    }
+
+
+    .column2x {
+      width: 100%;
+      min-height: unset;
+    }
+
+    .grid__item {
+      padding: 0px !important;
+    }
+
+    .small-prom-icons {
+      justify-content: center;
+    }
+  }
+
+  .slide-cart-full .cart-testimonials {
+    color: black;
+  }
+
+  .slide-cart-full ul.ul2 li {
+    color: black;
+  }
+
+  .slide-cart-full p.rte.text-spacing {
+    color: black;
+  }
+
+  .slide-cart-full .testimonials-wrapper {
+    display: block
+  }
+
+
+
+  top-header {
+    /*  background: #b1b0b0; */
+  }
+
+  .prolon-top-section {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .single-product-wrapper {
+    box-shadow: none;
+    border: 1px solid #7d7d7d;
+  }
+
+  .single-product-wrapper .price-box,
+  .single-product-wrapper i.sub-heading,
+  .single-product-wrapper img,
+  .single-product-wrapper .description,
+  .single-product-wrapper .sub-desc {
+    border-color: #7d7d7d;
+  }
+
+  i.sub-heading.do-add-to-cart {}
+
+  .embed-ingredients {
+    max-width: 1286px;
+    margin: 0 auto;
+  }
+
+  .accordion-site .ac-label.ac-label {
+    /* //  background: unset;
+  // border: 1px solid #7d7d7d;
+  //  color: white; */
+  }
+
+  .accordion-site input:checked~.article.ac-content {
+    background: white;
+    /* //   filter: brightness(0.7); */
+  }
+</style>
+<script>
+  let currentProduct = {{ product | json}};
+
+  async function do_AddTotCart(item, context) {
+
+    await jQuery.post('/cart/add.js', {
+      items: [
+        item
+      ]
+    });
+
+    SuperCart.ShowCartfn()
+    context.find(".btn").text("AGGIUNGI AL CARRELLO");
+
+
+  }
+
+
+  $(document).ready(function () {
+
+
+    // $('.single-product-wrapper').each(function(i,e){
+
+    // let subDesc= $(this).find(`.sub-desc`).clone();
+    // subDesc=subDesc[0]. outerHTML;
+    // let pricing= $(this).find('.price-box.do-add-to-cart')[0].outerHTML;
+    // let addtoCartSection= $(this).find(`.add-to-cart-section`).clone()[0]. outerHTML;
+    // addtoCartSection=addtoCartSection.replace(/original-flavor/g,'s-original-flavor').replace(/new-flavor/g,'s-new-flavor').replace(/name="variant/g,'name="s-variant');;
+
+    // let Wrapp= $(`<div/ >`).addClass('plan-wrapper-atc');
+    // let singlePlan = $('.plan-details .single-plan')[i];
+    // if(singlePlan){
+    // $(Wrapp).append(pricing);
+
+    // $(Wrapp).append(subDesc);
+    // $(Wrapp).append(addtoCartSection);
+    // $(singlePlan).append(Wrapp)
+    // }
+
+    // });
+
+
+
+    $(document).on('click', ".select-product-and-process", async function () {
+      //code test 2  
+      let context = $(this); let FourInstallmentprice;
+      try {
+        let mainsection = context.closest('.add-to-cart-section');
+        let productWrapper = $(this).closest('.single-product-wrapper')
+        let option = $(this).closest('.single-product-wrapper').attr("data.option");
+        let option2 = $(this).closest('.single-product-wrapper').attr("data.option2");
+        context.find(".btn").text("Adding...");
+        let flavor = mainsection.find('.flavor-type:checked').val();
+        if (!flavor) {
+          flavor = mainsection.find('.flavor-type').first().val();
+        }
+        let currentVariants = productWrapper.find('.custom-variants').html();
+        if (currentVariants && currentVariants != '') {
+          try {
+            currentVariants = JSON.parse(currentVariants);
+          }
+          catch (ex) {
+            currentVariants = currentProduct.variants
+          }
+        }
+        let variants = currentVariants.filter(e => {
+          return e.option1 == option && e.option2 == flavor;
+        });
+
+        if (!variants || variants.length == 0) {
+          variants = currentVariants.filter(e => {
+            return e.option1 == flavor
+          })
+        }
+
+        let variantId;
+        if (variants && variants.length > 0) {
+        variantId = variants[0].id;
+        FourInstallmentprice = variants[0].price;
+
+          if (FourInstallmentprice) {
+            FourInstallmentprice = (FourInstallmentprice / 4).toFixed(2);
+          }
+          
+        }
+
+
+
+
+
+        let item = {
+          quantity: 1,
+          id: variantId,
+          // properties: {
+          //     '*Pay With Shop Pay': `4 Interest-free installments of $${FourInstallmentprice/100}`
+          // }     
+        };
+
+
+
+        if (option.toLowerCase().includes('subscri')) {
+          if (currentProduct.selling_plan_groups && currentProduct.selling_plan_groups.length > 0) {
+            let selling_plan = currentProduct.selling_plan_groups[0].selling_plans.filter(e => e.name == 'Monthly')
+            item.selling_plan = selling_plan[0].id;
+          }
+        }
+
+        let directPatient = getParameterByName('direct_patient');
+        if (directPatient && directPatient != '' && directPatient != 'null' && !window.discountCode) {
+          window.last_selected_variant = {
+            item,
+            context
+          };
+          $('body').addClass('popup-patient-email-popup');
+        }
+        else {
+          do_AddTotCart(item, context);
+        }
+
+      } catch (ex) {
+        // console.log(ex);
+        let errorEx = JSON.parse(ex.responseText);
+        let error = errorEx.description;
+        alert(error);
+        // console.log({error});
+        context.find(".btn").text("AGGIUNGI AL CARRELLO");
+
+      }
+    });
+
+
+    $('.do-add-to-cart').click(function () {
+      $(this).closest('.single-product-wrapper').find(".select-product-and-process").click();
+    });
+  });
+</script>
+
+
+
+<script>
+
+  $(document).ready(function () {
+    $('#enable_feature').change(function () {
+      if ($(this).is(':checked')) {
+        $('.hiddenDiv').addClass('!hidden');
+      }
+      else {
+        $('.hiddenDiv').removeClass('!hidden');
+      }
+    });
+
+  })
+
+  $(document).ready(function () {
+
+    //$('.featured-on').attr('src','https://cdn.shopify.com/s/files/1/0126/2921/3243/files/21_ProLon_PDP_logos_76be70b1-7ec5-4230-95bf-54240ca3e4c8.png?v=1636141096')
+
+  })</script>
+
+
+
+{% schema %}
+{
+"name": "Grid Try Prolon V5",
+"settings": [
+{
+"type": "image_picker",
+"id": "desktop_image",
+"label": "Desktop Image"
+}
+],
+"blocks": [
+{
+"type": "card",
+"name": "Card",
+"settings": [
+{
+"type": "select",
+"id": "card_type",
+"label": "Card Type",
+"default": "bundle",
+"options": [
+{
+"value": "bundle",
+"label": "Bundle"
+},
+{
+"value": "normal",
+"label": "Normal"
+}
+]
+},
+{
+"type":"text",
+"id":"product_handle",
+"label":"Product Handle"
+},
+{
+"type": "checkbox",
+"id": "show_custom_flavor_description",
+"label": "Show Flavor Description",
+"default": true
+},
+{
+"type":"text",
+"id":"variant_id",
+"label":"Variant ID"
+} ,
+{
+"type": "textarea",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "textarea",
+"id": "fastbar_message",
+"label": "Fastbar Message"
+},
+{
+"type": "textarea",
+"id": "perbox_price",
+"label": "Per Box Price"
+},
+{
+"type": "textarea",
+"id": "message",
+"label": "Message"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "textarea",
+"id": "subDescription",
+"label": "Sub Description"
+},
+{
+"type": "textarea",
+"id": "price_class",
+"label": "Price Class"
+},
+{
+"type": "text",
+"id": "per_box_price_text",
+"label": "Per Box Price Text"
+},
+{
+"type": "text",
+"id": "price",
+"label": "Price"
+},
+{
+"type": "text",
+"id": "comp_price",
+"label": "Price Compare"
+},
+
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image2",
+"label": "Image 2"
+},
+{
+"type": "html",
+"id": "below_add_to_cart",
+"label": "Below Add to Cart"
+},
+{
+"type": "checkbox",
+"id": "custom_add_to_cart",
+"label": "Custom Aggiungi al carrello"
+},
+{
+"type": "liquid",
+"id": "custom_add_to_cart_html",
+"label": "Custom Aggiungi al carrello HTML"
+},
+{
+"type": "checkbox",
+"id": "bundle_add_to_cart",
+"label": "Quick View Add To Cart (For Bundles)"
+},
+{ 
+"type": "header",
+"content": "Quick View Settings"
+},
+{
+"type": "html",
+"id": "quick_view_description",
+"label": "Quick View Description"
+},
+{
+"type": "liquid",
+"id": "quick_view_media",
+"label": "Quick View Media Images"
+}
+
+]
+}
+],
+"presets": [
+{
+"name": "Grid Try Prolon V2",
+"category": "Custom"
+}
+]
+}
+{% endschema %}
+
+{% include 'klarna-popup', paymentText:"6" %}
+{% include 'reset-info-popup' %}
+{% include 'shopify-popup' %}
+
+
+<script class="prolon-extended-script">
+
+  const FlavorsDescriptionBYSKUS = {
+    
+     PR039:
+      "Red Bell Pepper & Onion, Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger",
+    // PR039: "Gen3 FMD Soup Blend Option",
+    PR001: " Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+    PR038: "Green Pea & Chives, Chickpea & Leeks - All new flavors!",
+    PR020: "Tomato, Butternut Squash",
+    PR055: "Tomato, Minestrone & Quinoa",
+    PR056: "Vegetable, Red Bell Pepper & Onion",
+    PR057: "Carrot Ginger, Lentil Curry"
+ 
+  };
+  function updatePricing(context) {
+
+    let FourInstallmentprice;
+    try {
+      let mainsection = context.closest('.add-to-cart-section');
+      let wrapper = context.closest('.single-product-wrapper');
+      let option = context.closest('.single-product-wrapper').attr("data.option");
+      let option2 = context.closest('.single-product-wrapper').attr("data.option2");
+      let flavor = mainsection.find('.flavor-type:checked').val();
+      wrapper.attr('data-select-flavor', flavor);
+
+
+      let variants = currentProduct.variants.filter(e => {
+        return e.option1 == option && e.option2 == flavor;
+      })
+      let variantId;
+      if (variants && variants.length > 0) {
+        variantId = variants[0].id;
+        FourInstallmentprice = variants[0].price;
+        if (FourInstallmentprice) {
+          FourInstallmentprice = (FourInstallmentprice / 4).toFixed(2);
+        }
+        let price = (variants[0].price / 100).toFixed(2);
+        let klarnaPaymentPrice = price / 6;
+        $('[klarna-payment]', wrapper).text(`Pay $${klarnaPaymentPrice.toFixed(2)}`);
+
+        wrapper.find('.single-price').each(function () {
+          let priceEl = $(this);
+          let perBox = priceEl.attr('per_box');
+          let divided_by = priceEl.attr('divided_by');
+          let totalDividedBy = perBox * divided_by;
+          let priceTemplate = priceEl.attr('price_template');
+
+          priceTemplate = priceTemplate && priceTemplate.replace('{price}', `$${(price / totalDividedBy).toFixed(0)}`);
+          $(this).text(priceTemplate);
+
+        });
+
+        wrapper.find('.t-price').text(`$${(variants[0].price / 100).toFixed(2)}`);
+
+
+      }
+    }
+    catch (ex) {
+
+      console.log(ex);
+
+
+    }
+
+
+  }
+
+  $(document).ready(function () {
+    $('.btn__close--icon,div#klarna-payment-terms-cover .btn__close,div#shopify-terms-cover .btn__close').click(function (e) {
+      $('body').removeClass('show-klarna-popup');
+      $('body').removeClass('show-shopify-popup');
+
+    });
+
+    $(document).on("click", '.shopify-installments__learn-more', function (e) {
+      e.preventDefault(); e.stopPropagation()
+      $(".shopify-shop-pay-price").text($(this).attr('data-price'));
+
+      $('body').addClass('show-shopify-popup');
+
+    });
+
+    $('.flavour-description').html(`<p style="
+    margin-top: 20px; 
+"><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;Mushroom, Tomato</p>`);
+
+    $('[data-v="41640431222942"] .flavour-description').html(`<p style="
+    margin-top: 20px; 
+"><strong>Soups:</strong> Tomato, Butternut Squash </p><br>`);
+    $('[data-v="43059694108830"] .flavour-description').html(`<p style="
+      margin-top: 20px;
+      "><strong>Soups:</strong> Green Pea &amp; Chives, Chickpea &amp; Leeks - All new flavors!</p>`)
+    $('.flavor-type').click(function () {
+
+      let context = $(this);
+      let mainsection = context.closest('.add-to-cart-section');
+      let productWrapper = $(this).closest('.single-product-wrapper')
+      let option = $(this).closest('.single-product-wrapper').attr("data.option");
+      let option2 = $(this).closest('.single-product-wrapper').attr("data.option2");
+      // context.find(".btn").text("Adding...");
+      let flavor = mainsection.find('.flavor-type:checked').val();
+      if (!flavor) {
+        flavor = mainsection.find('.flavor-type').first().val();
+      }
+      let currentVariants = productWrapper.find('.custom-variants').html();
+      if (currentVariants && currentVariants != '') {
+        try {
+          currentVariants = JSON.parse(currentVariants);
+        }
+        catch (ex) {
+          currentVariants = currentProduct.variants
+        }
+      }
+      let variants = currentVariants.filter(e => {
+        return e.option1 == option && e.option2 == flavor;
+      });
+
+      if (!variants || variants.length == 0) {
+        variants = currentVariants.filter(e => {
+          return e.option1 == flavor
+        })
+      }
+
+      let variantId,variant;
+      if (variants && variants.length > 0) {
+        variantId = variants[0].id;
+        variant=variants[0];
+      }
+  
+      let description = FlavorsDescriptionBYSKUS[variant.sku];
+
+      
+      if(description){
+      $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+      margin-top: 20px;
+      "><strong>Soups:</strong> ${description}</p><br>`); 
+      return ;
+      } 
+
+
+
+
+
+      if ($(this).closest('[data-v="41640431222942"]').length > 0) {
+        return;
+      }
+      if (currentFlavour == 'Original') {
+        $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+        margin-top: 20px;
+        "><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;Mushroom, Tomato</p>`);
+      }
+      else if (currentFlavour == 'Gen3') {
+          $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+          margin-top: 20px;
+          ">
+          <b>NEW Gen3: Inspired by ProLon users, bold in taste and sure to please.</b><br>
+          Red Bell Pepper & Onion, Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger
+          </p>`);
+      }
+
+
+      else {
+        $(this).closest('.single-product-wrapper').find('.flavour-description').html(`<p style="
+    margin-top: 20px;
+"><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p>`);
+
+      }
+
+      setTimeout(() => {
+        // updatePricing($(this));
+      }, 10);
+
+    });
+  })
+
+</script>
+{% render 'popup-for-patient' %}

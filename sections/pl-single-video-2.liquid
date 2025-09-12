@@ -1,0 +1,57 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div class="w-full py-[20px] md:py-[40px] pl-wrapper-singe-video ">
+  <div class="w-full max-w-[1600px] mx-auto px-[20px] md:px-[0px]">
+    {%- if data.title.size > 0-%}
+      <div class="w-full max-w-[1440px] mx-auto">
+        <h2
+          class="mt-[10px] md:mt-[20px] mb-[30px] md:mb-[50px] text-[20px]   md:text-[30px] text-black font-[600] max-w-[1280px] mx-auto text-center px-[20px] md:px-[80px] lg:px-[130px] xl:!px-[180px]"
+        >{{data.title}}</h2>
+      </div>
+    {%- endif -%}
+    {%- if data.video.size > 0 -%}
+    <iframe  src="https://www.youtube.com/embed/vPUHbto1FsM" class="mx-auto w-[400px] h-[200px]  md:w-[860px] md:h-[515px]" title="YouTube video player"
+      frameborder="0" allowfullscreen></iframe>
+        
+        </a>
+    
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-singe-video');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Single Video 2",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Dr Gersh's recommends Prolon's Women's Health Bundle, now 20% regular price for a limited time only!"
+    },
+   
+    {
+      "type": "textarea",
+      "id": "video",
+      "label": "Video Url",
+      "default": "https://youtu.be/vPUHbto1FsM?si=F593CADfbzdLJOdO"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Single Video 2",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

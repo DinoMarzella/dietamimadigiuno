@@ -1,0 +1,320 @@
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}" />
+{% if products.handle contains 'buy-prolon' %}
+<style>
+  a.site-nav__link[href="/products/buy-prolon"] {
+    display: NONE;
+  }.hero-banner.pointer {
+    cursor: pointer;
+} 
+.prolon-top-section {
+    text-align: center;
+}
+
+</style>
+{% endif %} {% assign seo_title=true %}
+
+{{product.metafields.global.top_section_banner}}
+  <style>
+  img.featured-on {
+    max-width: 1300px !important;
+}.ultimate-countdown {
+    padding-top: 20px;
+}
+{% if handle contains 'prolon-special' %}
+.announcement-bar{
+  display: none;
+}
+{% endif %}
+h3.purchase-notice {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}.prolon-top-section {
+    text-align: center;
+}    
+
+.only-mb{
+  display: none;
+} 
+
+img.featured-on {
+    width: 100%;
+}
+@media(max-width:767px){ 
+.only-dp{
+  display: none;
+}
+.only-mb{
+  display: block;
+}
+}
+</style>
+<div class="prolon-top-section">
+  
+  <br>
+  <p class="h3">
+    Prolon’s Brand Purpose
+  </p>
+  <p>To deliver many of the benefits of fasting with convenience and ease with a complete 5 day Fast, while empowering you to take control of your own health</p>
+  <div class="section-top-message">ProLon® is a 5-day dietary program carefully designed to nourish and rejuvenate your body while supporting metabolic balance.
+ 
+    The ProLon Fasting Mimicking Diet® gives many of the benefits of a fast while letting you eat delicious food to help fight hunger and lose weight while protecting lean body mass.* Get a trimmer waistline and many of the associated benefits of fasting without requiring ongoing lifestyle changes, such as long-term dieting.
+    <br><small style="font-color: #333333;"><br>*Benefits seen when using multiple consecutive cycles of ProLon.</small>
+    </div>
+    <div class="featured-on-section">
+      
+      <img class="featured-on only-dp" alt="featured-on" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/321_ProLon_FMD_logos.png?v=1633448710"/>
+
+      <img class="featured-on only-mb" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLon_Icons_-_2022_Landing_Page.svg?v=1648659043" />
+    </div>
+   
+    <h3 class="purchase-notice" t2>All ProLon purchases include a 20 minute health coach consultation — an additional <span style="color:red">$74 Value!</span></h3>
+</div> 
+<!-- <div class="ultimate-countdown"></div>  -->
+{% include 'product-choice' %}
+ 
+<div class="form-section"><div class="klaviyo-form-X6dF4V"></div></div>
+<div class="main-content-inner">
+  {% section 'product-template-narrow' %} {%include 'bottom-section-prolon' %}
+  {% section 'recently-viewed' %}
+</div>
+{% if collection %}
+<div class="text-center page-content page-content--bottom">
+  <a
+    href="{% if collection.handle == 'frontpage' %}/{% else %}{{
+      collection.url
+    }}{% endif %}"
+    class="btn btn--small return-link"
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      role="presentation"
+      class="icon icon--wide icon-arrow-left"
+      viewBox="0 0 50 15"
+    >
+      <path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z" />
+    </svg>
+    {{ "products.general.collection_return" | t: collection:collection.title }}
+  </a>
+</div>
+{% endif %} {% include 'prolon-scripts' %} {% render 'product_infox' %}
+
+<style>
+  .aos-animate.trust-image {
+    display: none !important;
+  }
+
+  body.template-product .main-content {
+    padding: 0px;
+  }
+  .atc-shop-now {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000000;
+  }
+
+  .hero-banner {
+    position: relative;
+  }
+
+  .atc-shop-now a.shopnow-btn.btn {
+    display: none;
+
+    top: -31px;
+    left: -478px;
+  }
+  .plan-details {
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    column-gap: 20px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+
+  .single-plan {
+    min-width: 300px;
+    width: 32%;
+    padding: 20px;
+    border: 1px solid;
+    height: 530px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .page-content.page-content--product {
+    display: none;
+  }
+  .header-item.header-item--navigation.text-center {
+    display: none;
+} 
+  @media (max-width: 767px) {
+    .hero__text-content {
+      height: 100px;
+    }
+
+    .select-a-plan {
+      padding: 20px;
+    }
+    .slideshow__slide.slideshow__slide--9142942d-0f4e-4c09-8bdc-f0fe91901060.slick-slide.slick-current.slick-active {
+      height: 300px;
+      padding: 10px;
+    }
+
+    div[data-section-id="9142942d-0f4e-4c09-8bdc-f0fe91901060"] {
+      padding: 10px;
+      height: 300px;
+    }
+  }
+  body.template-product .main-content-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding-top: 20px;
+    box-shadow: none;
+  }
+  body.template-product .main-content {
+    max-width: 100%;
+    background: transparent;
+    box-shadow: none;
+    padding: 0px !important;
+  }
+
+  .flavour-description {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+  @media (min-width: 767px) {
+    .toolbar + .header-sticky-wrapper .site-header {
+    padding: 5px;
+}
+
+.header-item.header-item--icons {
+    top: 15px!important;
+}
+    .header-item.header-item--logo {
+      justify-self: center;
+    }
+    .header-layout {
+      justify-content: center;
+      width: 100%;
+    }
+    .header-item.header-item--icons {
+      position: absolute;
+      right: 10%;
+      top: 30px;
+    }
+  }
+
+  .single-product-wrapper p.main-price {
+    line-height: 1;
+}
+
+.single-product-wrapper .price-box {
+    padding-bottom: 9px;
+    padding-top: 9px;
+
+}
+</style>
+{{ product.metafields.global.custom_css }}
+{% section 'product-story-section-fmd' %}
+
+
+<div class="embed-ingredients">
+  {% include 'prolon-ingredients' %}
+</div>
+
+
+
+<script>
+  $(document).ready(function () {
+    $(".hero-banner").click(function () {
+      $("html, body").animate(
+        { scrollTop: $("#product-choice").offset().top-50  }, 
+        300 
+      );
+    });
+
+    $(document).on('click',".select-product-and-process",function () {
+      //code test 2
+      let context = $(this); 
+      let mainsection = context.closest('.add-to-cart-section');
+      let option2 = $(this).attr("data-option-2");
+      context.find(".btn").text("Adding...");
+      let flavor= mainsection.find('.flavor-type:checked').val();
+      $(`input[data-index="option1"][value="${flavor}"]`).click();
+ 
+      $(
+        `.variant-input-radio-wrap input[name="Quantity"][value="${option2}"],.variant-input-wrap input[name="Quantity"][value="${option2}"]`
+      ).click();
+  
+      setTimeout(function () {
+        $(".add-to-cart").click();
+      }, 50);
+      setTimeout(function () {
+        context.find(".btn").text("AGGIUNGI AL CARRELLO");
+      }, 1000);
+    });
+
+
+    $('.do-add-to-cart').click(function(){
+      $(this).closest('.single-product-wrapper').find(".select-product-and-process").click();
+    });  
+    $('[name="subscription_cart"]').click(function () {
+      let val = $(this).val();
+
+      $("select.shipping_interval_frequency").val(val).change();
+    });
+ 
+    $('.flavour-description').html(`<p><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+    $('.flavor-type').click(function(){
+
+      let currentFlavour= $(this).closest('.add-to-cart-section').find('.flavor-type:checked').val(); 
+      if(currentFlavour=='Original')
+      { 
+        $(this).closest('.add-to-cart-section').find('.flavour-description').html(`<p><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+      }
+      else{ 
+        $(this).closest('.add-to-cart-section').find('.flavour-description').html(`<p><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p>`);
+        
+      }
+
+    }); 
+ 
+ });
+</script>
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>

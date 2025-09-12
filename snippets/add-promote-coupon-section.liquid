@@ -1,0 +1,5 @@
+{% if section.settings.coupon_code != "" %}
+<div id="coupon-promo" class="mt-8 full flex gap-4 items-center p-2 border rounded-md">
+<p>{{section.settings.coupon_text}}</p> <a href="https://prolon.it/discount/{{section.settings.coupon_code}}?redirect={{product.url}}" class="bg-red-600 py-2 px-4 rounded-full text-white animate-[shadow-pulse_1.5s_infinite]">Applica</a>
+</div>
+{% endif %}

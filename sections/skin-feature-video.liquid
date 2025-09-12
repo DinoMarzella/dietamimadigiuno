@@ -1,0 +1,234 @@
+<style>
+  .main-skin-feature-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    overflow: hidden ;
+    background: #f2f3f7;
+  }
+  .main-skin-feature-right{
+    width: 50%;
+  }
+  .main-skin-feature-left{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-skin-feature-left h3{
+    font-family: 'interstate', sans-serif;
+    font-stretch: condensed;
+    letter-spacing: 1.22px;
+    color: #3a8dde;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .main-skin-feature-left p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05px;
+    color: #000;
+  }
+  .main-skin-feature-left-inner{
+    padding: 1.125rem;
+    max-width: 33.75rem;
+    position: relative;
+  }
+  .main-skin-feature-right .product-feature-image{
+    height: 100%; 
+    width:100%; 
+    object-fit: cover;
+  }
+  .main-skin-feature-right {
+    min-height: 600px;
+    max-height: 600px;
+  }
+  .revrse-row-image{
+    flex-direction: row-reverse;
+  }
+  @media (max-width: 767px) {
+    .main-skin-feature-right {min-height: auto;} 
+    .main-skin-feature-wrapper{
+    flex-direction: column;
+  }
+  .main-skin-feature-right{
+    width: 100%;
+  }
+  .main-skin-feature-left{
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .main-skin-feature-left h3{
+    font-size: 28px;
+  }
+  .main-skin-feature-left p{
+    font-size: 16px;
+  }
+  .main-skin-feature-left-inner{
+    padding: 8px;
+  }
+  }
+</style> 
+
+<div class="main-skin-feature-wrapper {% if section.settings.image_on_right == false %}revrse-row-image {% endif %} {{section.settings.custom_class}}" style=" background-color:{{section.settings.bg_color}}; "> 
+  <div class="main-skin-feature-left ">
+    <div class="main-skin-feature-left-inner">
+      <h3>{{section.settings.title}}</h3>
+      <div class="main-skin-feature-left-description">{{section.settings.description}}</div>
+    </div>
+  </div> 
+  <div class="main-skin-feature-right " style="padding: 50px 0px 50px 0px; max-height:500px; min-height:unset;"> 
+    <img loading="lazy" width="100%" height="500px" data-video-url="{{section.settings.video_url}}"  class="product-feature-image lets-play-image" style="object-fit: contain; cursor: pointer;" src={{ section.settings.image | img_url: '1000x' }} alt="main vid url">
+  </div>
+</div>  
+
+<script> 
+  
+
+  function videoIdNew(button) {
+  var $videoUrl = button.attr("data-video-url");
+  if ($videoUrl !== undefined) {
+    var $videoUrl = $videoUrl.toString();
+    var srcVideo;
+
+    if ($videoUrl.indexOf("youtube") !== -1) {
+      var et = $videoUrl.lastIndexOf("&");
+      if (et !== -1) {
+        $videoUrl = $videoUrl.substring(0, et);
+      }
+      var embed = $videoUrl.indexOf("embed");
+      if (embed !== -1) {
+        $videoUrl =
+          "https://www.youtube.com/watch?v=" +
+          $videoUrl.substring(embed + 6, embed + 17);
+      }
+
+      srcVideo =
+        "https://www.youtube.com/embed/" +
+        $videoUrl.substring($videoUrl.length - 11, $videoUrl.length) +
+        "?autoplay=true&loop=1&playlist=" +
+        $videoUrl.substring($videoUrl.length - 11, $videoUrl.length) +
+        "";
+    } else if ($videoUrl.indexOf("youtu") !== -1) {
+      var et = $videoUrl.lastIndexOf("&");
+      if (et !== -1) {
+        $videoUrl = $videoUrl.substring(0, et);
+      }
+      var embed = $videoUrl.indexOf("embed");
+      if (embed !== -1) {
+        $videoUrl =
+          "https://youtu.be/" + $videoUrl.substring(embed + 6, embed + 17);
+      }
+
+      srcVideo =
+        "https://www.youtube.com/embed/" +
+        $videoUrl.substring($videoUrl.length - 11, $videoUrl.length) +
+        "?autoplay=true&loop=1&playlist=" +
+        $videoUrl.substring($videoUrl.length - 11, $videoUrl.length) +
+        "";
+    } else if ($videoUrl.indexOf("vimeo") !== -1) {
+      srcVideo =
+        "https://player.vimeo.com/video/" +
+        $videoUrl
+          .substring($videoUrl.indexOf(".com") + 5, $videoUrl.length)
+          .replace("/", "") +
+        "?autoplay=1";
+    } else {
+      alert(
+        "The video assigned is not from Youtube, Vimeo or MP4, remember to enter the correct complete video link .\n - Youtube: https://www.youtube.com/watch?v=43ngkc2Ejgw\n - Vimeo: https://vimeo.com/111939668\n - MP4 https://server.com/file.mp4"
+      );
+      return false;
+    }
+    return (
+      '<iframe src="' +
+      srcVideo +
+      '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    );
+  } else {
+    alert("No video assigned.");
+    return false;
+  }
+}
+ $(".lets-play-image").click(function (e) {
+   e.preventDefault();
+   var $theVideo = videoIdNew($(this));
+   if ($theVideo) {
+     $("body")
+       .append(
+         '<div class="active" id="video-wrap"><span class="video-overlay"></span><div class="video-container">' +
+           $theVideo + 
+           '</div><button class="close-video"></button></div>'
+       )
+       .addClass("active");
+   }
+ });
+ 
+ $(document).on("click", ".close-video, .video-overlay", function () {
+   $("#video-wrap").remove();
+ });
+ 
+ </script>
+ 
+
+{% schema %}
+  {
+    "name": "Skin Feature Video",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": {
+          "en": "Image"
+        }
+      },
+        {
+          "type": "checkbox",
+          "id": "image_on_right",
+          "label": "Image on Right",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#F3F8FD"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Custom Class"
+        },
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video Url"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Skin Feature Video"
+      }
+    ]
+  }
+{% endschema %} 
+  

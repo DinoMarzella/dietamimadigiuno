@@ -1,0 +1,118 @@
+<section class="bg-[#f1eae5]">
+    <div class="max-w-[1600px] mx-auto py-[30px] px-4 md:px-[20px] md:py-[50px] flex lg:flex-row flex-col lg:gap-[40px] gap-[10px]">
+        <div class="lg:w-[50%] w-full">
+            <div class="max-w-[608px] lg:mx-auto flex flex-col gap-[10px] lg:gap-[14px]">
+                <h2 class="text-[30px] md:text-[40px] leading-[1.2] font-normal ">
+                    {{ section.settings.title }}
+                </h2>
+                <p class="text-[12px] text-start  lg:text-[17px] leading-[1.2] text-[#757575]">
+                    {{ section.settings.description }}
+                </p>
+            </div>
+        </div>
+    <div class="lg:w-[50%] w-full">
+        <div class="md:space-y-4">
+            {% for block in section.blocks %}
+            <div class="border-b border-gray-200">
+                <button class="flex items-center justify-between w-full py-4 text-left accordion focus:outline-none"
+                    data-target="#faq-{{ forloop.index }}">
+                    <span class="text-[16px] font-medium text-black">{{ block.settings.heading }}</span>
+                    <span class="text-2xl text-black">+</span>
+                </button>
+                <div id="faq-{{ forloop.index }}" class="hidden py-2 text-black text-gray-600 panel">
+                    {{ block.settings.content }}
+                </div>
+            </div>
+            {% endfor %} 
+        </div>
+    </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        // Ensure all panels are initially hidden
+        $('.panel').addClass('hidden').hide();
+
+        $('.accordion').on('click', function () {
+            const $panel = $(this).next('.panel');
+            const $icon = $(this).find('span:last-child');
+            const isHidden = $panel.hasClass('hidden');
+
+            if (isHidden) {
+                // Close all panels and reset icons
+                $('.panel').slideUp(300).addClass('hidden');
+                $('.accordion span:last-child').text('+');
+
+                // Open the clicked panel with animation
+                $panel.removeClass('hidden').slideDown(300);
+                $icon.text('-');
+            } else {
+                // If the panel is already open, just close it
+                $panel.slideUp(300, function () {
+                    $(this).addClass('hidden');
+                });
+                $icon.text('+');
+            }
+        });
+    });
+</script>
+
+
+
+
+{% schema %}
+{
+"name": "FAQ Section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title",
+"default": "We are serious about vitality, ask away"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description",
+"default": "Have more questions? Visit our"
+},
+{
+"type": "url",
+"id": "help_center_link",
+"label": "Help Center Link"
+},
+{
+"type": "text",
+"id": "email",
+"label": "Customer Service Email",  
+"default": "customerservice@l-nutra.com"
+}
+],
+"blocks": [
+{
+"type": "faq",
+"name": "FAQ Item",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Heading",
+"default": "Reviews & Testimonials"
+},
+{
+"type": "textarea",
+"id": "content",
+"label": "Content",
+"default": "Content for Reviews & Testimonials."
+}
+]
+}
+],
+"presets": [
+{
+"name": "FAQ Section",
+"category": "Custom Sections"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,201 @@
+
+<style>
+    @media only screen and (max-width: 767px) {
+  .bg-mobile-scroll {
+    background-attachment: scroll !important;
+    background-size: auto 100% !important;
+  }
+}
+
+</style>
+<section class="">
+    <div class="w-full h-auto bg-[#263F36] bg-center bg-cover bg-mobile-scroll" style="
+         {% if section.settings.background_image %}
+           background-image: url('{{ section.settings.background_image | img_url: '2000x' }}');
+         {% endif %}
+         background-attachment: fixed;
+       ">
+
+        <div class="flex justify-start gap-4 px-4 md:block max-w-[1600px] mx-auto 
+                sm:bg-[length:auto_100%] sm:bg-no-repeat sm:bg-center sm:bg-scroll">
+
+            <!-- vertical lines -->
+            <div class="flex items-center justify-center md:hidden ">
+                <div class="w-[2px] h-full bg-white"> </div> 
+            </div>
+
+            <div class="items-center justify-center hidden md:flex ">
+                <div class="w-[2px] mr-[2px] h-[90px] md:h-[132px] bg-white"> </div>
+            </div>
+
+            <!-- content -->
+            <div class="text-white md:pt-[35px] py-[45px] md:py-0">
+              <div class="max-w-[370px] md:max-w-[750px] mx-auto md:px-[25px]">
+              <h4
+                    class="mx-auto md:text-center text-left text-[14px] md:text-[17px] leading-[1.2] font-bold text-[#56a511] pb-0 mb-[5px] mt-0 pt-0 uppercase">
+                    {{ section.settings.subheading_above }}
+                </h4>  
+              <h1
+                    class="text-[30px] md:text-center text-left lg:text-[36px] xl:text-[40px] text-white leading-[1.2] font-[500]">
+                    {{ section.settings.heading }}
+                </h1>
+
+                <p
+                    class="mx-auto md:text-center text-left font-semibold pt-[11px] text-[14px] md:text-[17px] leading-[1.2]">
+                    {{ section.settings.subheading }}
+                </p>
+
+              <p
+                    class="mx-auto md:text-center text-left pt-[11px]">
+                    {{ section.settings.paragraph }}
+                </p>
+
+              </div>
+              {% if section.settings.show_html %}
+                 <div class="">{{ section.settings.content_html }}</div>
+            {% endif %}
+              <div class="max-w-[370px] md:max-w-[750px] mx-auto md:px-[25px]">
+                {% if section.settings.show_form %}
+                <div class="w-full max-w-md mx-auto">
+                    <form class="flex overflow-hidden bg-transparent border border-white rounded-full">
+                        <input type="email" placeholder="Email"
+                            class="flex-1 px-4 py-1 text-white placeholder-white bg-transparent md:py-2 focus:outline-none" />
+                        <button type="submit"
+                            class="px-6 py-1 md:py-2 font-bold !text-black transition-all !bg-white hover:bg-gray-200">
+                            ISCRIVITI
+                        </button>
+                    </form>
+                </div>
+                {% if section.settings.show_paragraph_after_form %}
+                 <div class="">{{ section.settings.paragraph_after_form }}</div>
+                {% endif %}
+
+
+                {% else %}
+
+                {% if section.settings.button_text != blank %}
+                {% if section.settings.button_text_2 == blank %}
+                <div class="flex items-center gap-4 md:justify-center justify-start pt-[16px] md:pt-[22px]">
+                    <a href="{{ section.settings.button_link }}">
+                        <span
+                            class="uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-white text-[#263F36] font-[700] text-[14px]">
+                            {{ section.settings.button_text }}
+                        </span>
+                    </a>
+                </div>
+                {% endif %}
+
+                {% if section.settings.button_text_2 != blank %}
+                <div class="flex md:pt-[10px] md:flex-nowrap flex flex-wrap gap-2 md:max-w-[540px]">
+                    <div class="w-full lg:w-[290px] py-1 md:py-0">
+                        <a class="prerender inline-block md:h-[45px] px-2 h-[35px] md:text-[18px] text-[13px] rounded-full flex justify-center items-center md:py-[10px] w-full leading-4 font-[400] md:!font-[600] text-center hover:text-black shadow-sm bg-white text-black border border-gray-300"
+                            href="{{ section.settings.button_link }}">
+                            {{ section.settings.button_text }}
+                        </a>
+                    </div>
+                    <div class="w-full lg:w-[290px] py-1 md:py-0">
+                        <a class="prerender inline-block md:h-[45px] px-2 h-[35px] md:text-[18px] text-[13px] rounded-full flex justify-center items-center md:py-[10px] w-full leading-4 font-[400] md:!font-[600] text-center shadow-sm border border-white text-white whitespace-nowrap"
+                            href="{{ section.settings.button_link_v2 }}">
+                            {{ section.settings.button_text_2 }}
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                {% endif %}
+                {% endif %}
+
+                <div class="md:flex hidden items-center justify-center pt-[30px] md:pt-[60px]">
+                    <div class="w-[2px] mr-[2px] h-[90px] md:h-[132px] bg-white"> </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+"name": "dk bg image text",
+"settings": [
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background Image"
+},
+{
+"type": "textarea",
+"id": "heading",
+"label": "Heading",
+"default": "Explore the benefits to help you <br> <span class='font-bold'>promote longevity</span>"
+},
+{
+"type": "text",
+"id": "subheading_above",
+"label": "Subheading above the title",
+},
+{
+"type": "textarea",
+"id": "subheading",
+"label": "Subheading",
+"default": "Backed by 25+ years of science, our patented nutrition<br> technology triggers cellular repair and rejuvenation"
+},
+{
+"type": "textarea",
+"id": "paragraph",
+"label": "Paragraph",
+},
+{
+"type": "checkbox",
+"id": "show_form",
+"label": "Show Form"
+},
+{
+"type": "checkbox",
+"id": "show_paragraph_after_form",
+"label": "Show paragraph after form"
+},
+{
+"type": "textarea",
+"id": "paragraph_after_form",
+"label": "Paragraph after form",
+},
+{
+"type": "checkbox",
+"id": "show_html",
+"label": "Show content HTML"
+},
+{
+"type": "textarea",
+"id": "content_html",
+"label": "Content HTML",
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button Link"
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "Button Text",
+"default": "EXPLORE NOW"
+},
+{
+"type": "url",
+"id": "button_link_v2",
+"label": "Button Link 2"
+},
+{
+"type": "text",
+"id": "button_text_2",
+"label": "Button Text 2"
+}
+],
+"presets": [
+{
+"name": "dk bg image text"
+}
+]
+}
+{% endschema %}

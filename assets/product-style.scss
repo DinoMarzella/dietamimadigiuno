@@ -1,0 +1,187 @@
+.variant-input-wrap input[name*='Soup']:checked+label {
+    background: #73994a;
+    color: white;
+    box-shadow: none!important;
+    
+}
+
+.variant-input-radio-wrap[name="Quantity"]{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  border:none;
+  padding: 0px 10px 15px;
+
+    .variant-input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+      @media (max-width:767px){
+          font-size: 16px;
+      }
+        padding: 10px 0px;
+        flex-wrap:wrap;
+        width:100%;
+        .input_lable{
+            display: flex;
+            align-items: center;
+        label{
+            margin: 0px;
+        }
+        }
+                
+        div.price-wrapper {
+        color:#ff0000;
+        s{
+            font-weight: 100;
+            padding: 0px 10px;
+            color:black;
+        }
+        }
+        #subscription_plans{
+            width:100%;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+    }
+    
+}
+
+.section-top-message {
+  max-width: 91%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-choise {
+  padding-top: 10px;
+}
+
+.ribbon3{
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  position: absolute;
+  left: -8px;
+  top: 0px;
+  background: #73984a;
+  color: white;
+  font-weight: bold;
+  }
+
+.ribbon3:before, .ribbon3:after {
+  content: "";
+  position: absolute;
+} 
+.ribbon3:after{
+  height: 0;
+  width: 0;
+  right: -14.5px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 15px solid #73984a;
+}
+.ribbon3:before{
+  height: 0;
+  width: 0;
+  top: -8.5px;
+  left: 0.1px;
+  border-bottom: 9px solid black;
+  border-left: 9px solid transparent;
+}
+
+ 
+
+.ribbon {
+  position: relative;
+}
+
+div.variant-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+span {
+display: flex;	padding: 0px 20px;
+label{
+    margin: 0px;
+}
+
+input {
+	margin: 3px 10px;
+}
+}
+}
+ 
+
+
+div.variant-input span label:before {
+
+  content: " ";position: absolute;top: -1px;left: -27px;display: block
+  ;
+  width: 20px;height: 20px;border-radius: 20px;
+  border:2px solid #73994a;
+  background:white;
+  }
+div.variant-input span input:checked+label:after{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -21.9px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: white;
+  }
+
+
+div.variant-input span label {
+  position: relative;
+}
+
+
+div.variant-input span input:checked+label:before {content: " ";position: absolute;top: -1px;left: -27px;display: block;width: 20px;height: 20px;border-radius: 20px;background-image: -webkit-gradient(linear,left top,right bottom,from(#fa9e47),to(#73984a));background-image: linear-gradient(to bottom right,#fa9e47,#73984a);}
+div.variant-input span input:checked+label:after{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -21.9px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: white;
+  }
+
+
+div.variant-input span label {
+  position: relative;
+}
+
+div.variant-input span input {
+  opacity: 0px;
+}
+
+
+@media (max-width:767px){
+  .page-content.page-content--product .grid__item.medium-up--one-half {
+    padding: 0px;
+  }
+  .variant-input-radio-wrap[name=Quantity] .variant-input .input_lable label {
+    max-width: 185px;
+}   
+}   
+.embed-ingredients{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}

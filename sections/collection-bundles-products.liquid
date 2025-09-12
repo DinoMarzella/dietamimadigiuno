@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="{{ 'collection-bundles.css' | asset_url }}">
+
+<div class="product__container">
+  {% for item in section.blocks %}   
+    {% assign settings = item.settings %}
+    {% assign product = settings.product_item %}
+    {% assign variant = product.variants | last %}
+
+    {% assign price_discount = product.compare_at_price |  money_without_trailing_zeros %}
+    {% assign price_original = product.price |  money_without_trailing_zeros %}
+
+
+    {% assign image = settings.product_image | image_url %}
+    {% assign image_hover = settings.product_image_hover | image_url %}
+
+    
+    <style>
+      .product__image--{{ product.id }} {
+        background-image: url({{ image }});
+      }
+
+      .product__item:hover div > .product__image--{{ product.id }}, .preload {
+        background-image: url({{ image_hover }});
+      }
+
+      @media screen and (max-width: 750px) {
+        .product__item:hover div > .product__image--{{ product.id }} {
+          background-image: url({{ image }});
+        }
+      }
+    </style>
+    
+    <div class="product__item">
+      <div class="product__info">
+        <div class="product__image product__image--{{ product.id }}"></div>
+        <div class="product__info_item">
+          <h3 class="product__title">{{ settings.product_title }}</h3>
+          {% if settings.product_subtitle != blank %}
+            
+            <h4 class="product__subtitle">{{ settings.product_subtitle }}</h4>
+          {% endif %}
+          <span class="product__price">
+              {{ price_original }}
+            {% if product.compare_at_price %}
+            <span class="product__price-discount">{{ price_discount }}</span>
+            {% endif %}
+          </span>
+          {% if settings.product_description != blank %}
+            <p class="product__description">{{ settings.product_description }}</p>
+          {% endif %}
+        </div>
+      </div>
+        <a href="{{ product.url }}" class="product__button product__button--version-A">
+          {{ section.settings.product_button | upcase }}
+        </a>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.collection-best-seller-products.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "product_button",
+      "label": "t:sections.collection-best-seller-products.settings.product_button"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "t:sections.collection-best-seller-products.blocks.name",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product_item",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_item"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_image"
+        },
+        
+        {
+          "type": "image_picker",
+          "id": "product_image_hover",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_image_hover"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_title"
+        },
+        {
+          "type": "text",
+          "id": "product_subtitle",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_subtitle"
+        },
+        {
+          "type": "text",
+          "id": "product_price",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price"
+        },
+        {
+          "type": "text",
+          "id": "product_price_discount",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price_discount"
+        },
+        {
+          "type": "text",
+          "id": "product_price_no_sub",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price_no_sub"
+        },
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

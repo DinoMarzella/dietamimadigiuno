@@ -1,0 +1,607 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.speed",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-pl-bundle",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "Beginner Bundle ",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "check_items": "<b>Ecco cosa è incluso:</b>\n<ul class=\"mt-2\">\n<li>ProLon ReSet - kit 1 giorno (x1) \n</li>\n<li>Nutrition Bar (x12)</li>\n<li>L-Protein (x12)</li>\n<li>Crema spalmabile L-Spread (x1)</li>\n</ul> <small><b></b></small>",
+            "custom_name": "<h3 class=\"button-plan-option font-bold text-md\">5-Day Fasting Kit\n</h3><p class=\"bg-prolon_secondary bg-red font-normal inline-block prolon-flavor-text px-3 md:px-4 text-[10px] text-white\"><strong>MOST POPULAR</strong>\n</p>",
+            "custom_description": "<b>Cellular Rejuvenation</b>, Healthy Aging &amp; Longevity and Metabolic Health",
+            "product_description": "<p>Vuoi sentirti meglio, ma non sai da dove cominciare? Il pacchetto per principianti di Prolon è quello che fa per te! Fai un primo passo verso il digiuno provando il nostro programma 1-Day Reset, i frullati e le barrette per il digiuno come parte della tua routine quotidiana! </p>"
+          }
+        },
+        "5bd0963c-6f22-45d0-aa3d-8e0d730dd835": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "FMD Soup Blend Options",
+            "description": "<div class=\"w-full pt-[30px]\">\n<p>\n<strong>Original Soup Flavors:</strong> Vegetable, Minestrone, Minestrone Quinoa, Mushroom, Tomato.  <strong>— or—</strong>\n</p>\n<p> </p>\n<p>\n<strong>Gen3:</strong> Red Bell Pepper &amp; Onion, Green Pea &amp; Chives, Lentil Curry, Chickpea &amp; Leeks, Carrot Ginger\n</p>\n</div>",
+            "page": ""
+          }
+        },
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "What's inside the kit?",
+            "description": "<p><strong>With ProLon, you get everything you need pre-packaged and ready to go. Each kit comes with five boxes which are labeled by day so you know what to eat each day.</strong></p>\n        <p><strong>GEN3 Soup Flavors:</strong> Red Bell Pepper &amp; Onion, Green Pea &amp; Chives, Lentil Curry, Chickpea &amp; Leeks, Carrot Ginger</p>\n       \n<p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/soup1_160x160.png?v=1667751467\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Soups:</strong> A variety of easy-to-prepare soups made with a proprietary mix of all-natural, plant-based ingredients</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-lbar.png?v=1667838709%20\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Nut Bars:</strong> Cold-pressed, delicious nut bars with whole ingredients like almonds, macadamia nuts, and pecans</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-snacks.png?v=1667838709\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Snacks:</strong> Snacks like olives from the South of Spain where olive consumption is associated with longevity, and kale crackers enriched with plant-based protein.</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-Supplements.png?v=1667837500\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Supplements:</strong> Dietary supplement packed with multivitamins, amino-acids, minerals and omega-3 fatty acid to provide the body with nourishment</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Ldrink.png?v=1667837499\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>L-Drink:</strong> Fruit-flavored, proprietary glycerol mix designed to fuel and protect muscles throughout the fast</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Tea.png?v=1667837499\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Herbal Teas:</strong> Caffeine-free herbal teas loaded with healthy antioxidants, and will keep you hydrated during your week.</p>",
+            "page": ""
+          }
+        },
+        "9344d915-e31e-4901-8182-46abdde8b6ab": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Why to add ProLon in your life?",
+            "description": "<p>ProLon is a 5 days only nutrition program that was designed and tested by 14 global universities to nourish you with premium quality plant based food, while inducing the cellular, metabolic, and emotional benefits of prolonged fasting. </p>\n                          <p><strong>It is a scientific breakthrough that took 2 decades, $48MM in research.  and awarded 40+ patents — </strong>\n                          <a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>including the only patent in history on a nutrition program to enhance longevity and healthspan</strong></a><strong>. </strong></p><p>Prolonged fasting (&gt;2-3 days) has unique benefits such as autophagy or cellular rejuvenation which was awarded the 2016 Nobel prize in Medicine. </p><p>Indeed, the first 2-3 days of fasting, the body burns fat to compensate this first stage of calorie deficit but thereafter fasting becomes a positive stress on each of your body’s cells which then goes through rejuvenation and autophagy, a key miracle of our human biology that is critical healthy aging and longevity. </p><p>You are as healthy (body, mind, and soul) and vibrant as your cells are. Add ProLon to your everyday lifestyle and rejuvenate your cells. </p>",
+            "page": ""
+          }
+        },
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Nutrition Fact Information",
+            "description": "<style>\n              \n            .acc-site-new{\n              position:relative;\n              margin-bottom:25px;\n            }\n            .accordion-site {\n              min-height: 0;\n              min-width: 220px;\n              width: 100%;\n              height: 100%;\n              margin: 0px!important;\n            }\n            .accordion-site .ac-label {\n              font-family: 'Harmonia sans';\n              padding: 20px 20px;\n              position: relative;\n              display: block;\n              height: auto;\n              cursor: pointer;\n              color: black;\n              line-height: 33px;\n              font-size: 19px;\n              background: #F6F6F6;\n              margin: 0px;\n              text-align: center;\n            }\n            \n            .accordion-site input + .ac-label  {\n              -webkit-transition: all 0.3s ease-in-out;\n              -moz-transition: all 0.3s ease-in-out;\n              -o-transition: all 0.3s ease-in-out;\n              -ms-transition: all 0.3s ease-in-out;\n              transition: all 0.3s ease-in-out;\n            }\n            .accordion-site input.ac-input {\n              display: none;\n            }\n            .accordion-site .article {\n              background: rgb(240, 240, 240);\n              overflow: hidden;\n              height: 0px;\n              max-height: auto;\n              -webkit-transition: all 0.3s ease-in-out;\n              -moz-transition: all 0.3s ease-in-out;\n              -o-transition: all 0.3s ease-in-out;\n              -ms-transition: all 0.3s ease-in-out;\n              transition: all 0.3s ease-in-out;\n            }\n            .accordion-site input:checked ~ .article i {\n              -webkit-transition: all 0.5s ease-in-out;\n              -moz-transition: all 0.5s ease-in-out;\n              -o-transition: all 0.5s ease-in-out;\n              -ms-transition: all 0.5s ease-in-out;\n              transition: all 0.5s ease-in-out;\n            }\n            .accordion-site input:checked ~ .article.ac-content {\n              height: auto;\n              background-color:white;\n              padding: 20px 0px;\n            }\n            .accordion-site input:checked ~ .ac-label:after{\n              content:\"-\"\n            }\n            \n            @media (max-width: 550px) {\n              .accordion-site .ac-label {\n              font-family: 'Harmonia sans';\n              padding: 15px 20px;\n              position: relative;\n              display: block;\n              height: auto;\n              cursor: pointer;\n              color: black;\n              font-size: 12px;\n              background: #F6F6F6;\n            }\n            }\n            \n            .ac-label:after{\n                  content: \"+\";\n                  width: 1em;\n                  height: 1em;\n                  text-align: center;\n                  transition: all .35s;\n                  font-size: 20px;\n                  font-weight: 400;\n                  font-family: 'Brandon';\n                  position:absolute;\n                  right:10px;\n            }\n            \n            .prolon-acc .accordion {\n                margin:0 auto;\n                max-width: 800px;\n            }\n            \n            .prolon-acc .question {  \n                padding:10px 0px;\n                padding-bottom:20px;\n                text-transform: uppercase;\n                margin-bottom: 10px;\n                position:relative;\n                font-family:futura;\n                cursor: help;\n                border-bottom:1px solid #d3d3d3;\n                cursor:pointer;\n              text-align:center;\n            }\n            \n            .prolon-acc .question:after {\n                content: \"+\";\n                color:black;\n              position:absolute;\n              right:20px;\n            }\n            \n            .prolon-acc .question.active:after {\n                content: \"-\";\n                color:black;\n              position:absolute;\n              right:20px;\n            }\n            \n            .prolon-acc .answer {\n                display: none;\n            }\n            \n            .prolon-acc .answer p{\n              font-family:futura;\n              font-size:16px;\n              font-weight:500;\n            }\n            \n            .prolon-acc .active+.answer {\n                display: block;\n            }\n            .prolon-acc .faqs-title{\n              display:flex;\n              justify-content:center;\n              align-items:center;\n              text-align:center;\n            }\n            .prolon-acc .faqs-title span{\n              font-family:futura;\n              font-size:30px;\n              padding:30px 0px;\n            }\n            .prolon-acc{\n              padding:10px;\n            }\n            .new__prolon_row{\n            display:grid;\n            grid-template-columns:1fr 1fr 1fr 1fr;\n            width:100%;\n            }\n            .section .column6 {\n              width: 100%;\n              float: unset;\n              }.prolon-acc img:hover {\n                transform: scale(1.5);\n                transition: all .31s ease;\n                cursor: pointer;\n                 background:white;\n            z-index: 9;\n                position: relative;\n            }\n            @media(max-width:767px){\n            .new__prolon_row{\n            display:grid;\n            grid-template-columns:1fr 1fr;\n            width:100%;\n            }\n            }\n            </style>\n            <div class=\"section\">\n            <div class=\"row\">\n            <div class=\"prolon-acc\">\n            <div class=\"accordion\">\n            <div class=\"question active\" id=\"section1\">Soups</div>\n            <div class=\"answer\">\n            <div class=\"row new__prolon_row\">\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Vegetable_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Tomato_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Mushroom_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_MinQuinoa_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Minestrone_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/white_bean_soup_SV2.png?v=1626243158\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/black_bean_soup_SV2.png?v=1626243157\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squach_soup_SV2.png?v=1626243158\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squash_quinoa_soup_SV2.png?v=1626243158\"></div>\n            </div>\n            </div>\n            <div class=\"question\" id=\"section2\">Snacks</div>\n            <div class=\"answer\">\n            <div class=\"row new__prolon_row\">\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Nut-Based_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/kale_crackers_SV1.png?v=1626242794\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Choco_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/22_PL_Nutrition_Facts-AlmondKale-03.png?v=1641919104\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_Herbs_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_SeaSalt_Nutrition_Facts.png?v=1641376531\"></div>\n            </div>\n            </div>\n            <div class=\"question\" id=\"section3\">Drinks</div>\n            <div class=\"answer\">\n            <div class=\"row new__prolon_row\">\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Berry_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Orange_Nutrition_Facts.png?v=1641376531\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Teas_Nutrition_Facts.png?v=1641376531\"></div>\n            </div>\n            </div>\n            <div class=\"question\" id=\"section4\">Supplements</div>\n            <div class=\"answer\"> \n            <div class=\"row new__prolon_row\">\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Ingredients_-_NR1.jpg?v=1650376162\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/NR1_DS1018_-_ProLon.png?v=1650376790\"></div>\n            <div class=\"column6\"><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Algal_Oil_DS1023_-_ProLon.png?v=1650376790\"></div>\n            </div>\n            </div>\n            </div>\n            </div>\n            </div>\n            </div>\n            <script>// <![CDATA[\n            try{\n            $(document).on('click','.question',toggle);\n             \n            function toggle() {\n                this.classList.toggle(\"active\")\n              \n            document.querySelectorAll(\".question\").forEach(question => {\n                    if (question != this) {\n                        question.classList.remove(\"active\")\n                    }\n                })\n            }\n            \n            }\n            catch(ex){}\n            // ]]></script>",
+            "page": ""
+          }
+        },
+        "images_3dVFiE": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/beginner_copia.jpg",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "0ca2dab4-2558-41af-a716-7d4298517d3e": {
+          "type": "images",
+          "disabled": true,
+          "settings": {
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/Reset_Lander_Images_-_Updated_Bar_1080x_2798f611-72f4-4d26-99ca-86e1103dbff4.png",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "a1130c1d-ef09-4b50-868d-90efd691e541": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/nutrition-bar-asset-1600x1600.webp",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/asset-l-protein-life-0004-2000x.webp",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "3249540d-84c9-4229-877c-a0d4369db659": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/asset-l-spread-life-0001_2000x_8250eab5-b847-4483-9bd5-0ad8f830376b.webp",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff": {
+          "type": "images",
+          "disabled": true,
+          "settings": {
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_7HMppC": {
+          "type": "images",
+          "disabled": true,
+          "settings": {
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "5bd0963c-6f22-45d0-aa3d-8e0d730dd835",
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512",
+        "9344d915-e31e-4901-8182-46abdde8b6ab",
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b",
+        "images_3dVFiE",
+        "0ca2dab4-2558-41af-a716-7d4298517d3e",
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5",
+        "a1130c1d-ef09-4b50-868d-90efd691e541",
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3",
+        "3249540d-84c9-4229-877c-a0d4369db659",
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff",
+        "images_7HMppC"
+      ],
+      "settings": {
+        "custom_css_class": "md:!mb-[0px]",
+        "product": "beginner-bundle",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "custom_product_title": true,
+        "sub_title": "Digiuno facile | Sicuro per tutti | Salute migliorata",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option2",
+        "option_1_name": "Scegli {option}",
+        "option_1": "subscription-widget-new-v2",
+        "option_2_name": "Seleziona {option}",
+        "option_2": "subscription-widget-new-v2",
+        "option_3_name": "Seleziona {option}",
+        "option_3": "subscription-widget-new-v2"
+      }
+    },
+    "67611c02-54a7-4d7d-8033-fce9d01b167a": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "24bb6e98-9069-438c-83cf-458d09d1334f": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section\" style=\"background-color: #f4f7f1; color: black; text-align: center; padding: 30px; margin-bottom: 40px; margin-top: 20px;\"><h3 class=\"h2\"><b>Coaching Gratuito</b></h3><p>Continua il tuo percorso di Mantenimento! <a href=\"https://calendly.com/prolonitalia/prenotazione-consulenza-prolon\" alt=\"Coaching gratuito\" style=\"font-weight: 600;\">Scopri di più</a></p></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-liquid-1": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"section\" style=\" max-width: 1100px; margin: auto;padding: 20px;\"><h3 style=\"font-weight: 500;\">How to incorporate these into your everyday life:</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/beginner_bundle.png?v=1700666115\" alt=\"Daily Plan\"><br><b>Notes:</b> The nutrition biotechnology used to create the 1-Day Reset, Fasting Shake and Fasting Bar are the same as the formulations used in the Prolon 5-Day Program.  \n<br><br>\nConsuming the Fasting Shake or Fasting Bar will not count as breaking your fast! The Fasting Shake and Fasting Bars can be used as a breakfast or post-dinner snack on the other days of the week to help you to either elongate your overnight fast or begin your fast at night.  \n<br><br>\nThe 1-Day Reset will allow you to follow a guided, full-day fast using our science backed nutrition formulations. <br><br>The L-Spread is a delicious longevity treat that you can enjoy during your feeding window as part of a whole breakfast or a nutrient-dense snack. <br><br><span style=\"border-left: 4px solid green; padding-left: 20px;\">You'll have enough product for 4 weeks.</span><br></p></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "24bb6e98-9069-438c-83cf-458d09d1334f",
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-image-1",
+        "template--16451892609182__67611c02-54a7-4d7d-8033-fce9d01b167a-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "11a20c1d-219c-4629-96b6-7512b21d0dd1": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/ProLon_Life_PDP_Square_Images_-_ReSet.png",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "1-Day Reset",
+        "text": "<p>ProLon Reset<strong> </strong>provides a complete day of innovative nutrition formula that was scientifically tested and patented to feed your body while keeping it in a physiological fasting state. This Nutrition Program induces your body to breakdown fat and use it as fuel, similar to when you water fast.</p><ul><li>• Take a break</li><li>• Get a fresh start</li><li>• Balance out over-indulgence</li></ul><p></p>",
+        "button_label": "Learn More",
+        "button_link": "https://prolonlife.com/products/reset",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "999ae3b3-afb3-4db5-8cf9-c418ba74a7bf": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Fasting Shake",
+        "text": "<p>The best from nature, nurtured by ProLon longevity science — a breakthrough in nutrition and healthy aging science. The proprietary blend of Fasting Shake avoids triggering the body's response to food, keeping it in a fasting, fat-burning state for longer! </p><ul><li>• Extend your fasting window</li><li>• Chocolate or Vanilla </li><li>• Nourish your body</li></ul><p></p>",
+        "button_label": "Learn More",
+        "button_link": "https://prolonlife.com/products/fasting-shake",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "b851439b-52df-43eb-822a-d30b87b87791": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Fasting Bars",
+        "text": "<p>Intermittent Fasting Bar is the only nutrition bar you can eat during your fasting window without taking you out of a fasting state. Based on the nutrition technology of Fasting Mimicking Nutrition, and with over 20 years of research, scientists studied how unique blends of macronutrients and micronutrients could be consumed without kicking your body out of a fasting state. </p><ul><li>• Clinically tested & developed</li><li>• Plant based protein </li><li>• Gluten-free, Soy-free, Dairy-Free</li></ul><p></p>",
+        "button_label": "Learn More",
+        "button_link": "https://prolonlife.com/products/fasting-bar",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "9d007a4c-c77c-47f5-9ea1-2791ec1a6244": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Longevity Spread",
+        "text": "<p>The first ever longevity chocolate spread. A delicous and health minded chocolate spread! L-Spread contains 74% Apulian Almonds — almonds that are sourced from longevity areas in Italy.   </p><ul><li>• Contains 74% Alpulian Almonds</li><li>• Gluten-free, Dairy-free, Soy-free, Vegan </li><li>• Plant-based, healthy fats, prebiotic fiber</li></ul><p></p>",
+        "button_label": "Learn More",
+        "button_link": "https://prolonlife.com/products/longevity-spread",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "d28cc7bf-d2d9-4b39-a3bd-195d33cab9f4": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "template--16323206709406__d28cc7bf-d2d9-4b39-a3bd-195d33cab9f4-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section\" style=\"background-color: #f9fff1; color: black; text-align: center; padding: 30px; margin-bottom: 40px;\"><h3>FSA/HSA Eligiable</h3><p style=\"margin-top: -1%;\">ProLon is eligable for purchase and reimbursment wiht FSA/HSA — partnered with TrueMed. See our <a href=\"/pages/hsa-fsa-faqs\" alt=\"FAQs on FSA/HSA\" style=\"font-weight: 600;\">FAQs</a></p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16323206709406__d28cc7bf-d2d9-4b39-a3bd-195d33cab9f4-liquid-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "text_columns_GWFzMT": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_NG3zTr": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-5-day-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Kit Dieta Mima Digiuno",
+            "text": "<p>Prolon è stato progettato e testato clinicamente da 18 università di tutto il mondo per nutrire il vostro corpo inducendo i benefici cellulari, metabolici ed emotivi del digiuno prolungato. Con tre cicli di 5 giorni di ProLon, potrete alimentare il vostro corpo verso il ringiovanimento, la longevità e una vita sana.</p>\n<ul>\n<li>· Ringiovanimento cellulare</li>\n<li>· Salute metabolica</li>\n<li>· Perdita di peso focalizzata sui grassi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-5-day"
+          }
+        },
+        "text_block_UH6Djk": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon_Life_PDP_Square_Images_-_ReSet.png",
+            "image_width": 650,
+            "title": "ReSet - kit 1 giorno",
+            "text": "<p>ProLon Reset offre un giorno completo di una formula nutrizionale innovativa, scientificamente testata e brevettata per nutrire il corpo mantenendolo in uno stato di digiuno fisiologico. Questo programma nutrizionale induce l'organismo a scomporre i grassi e a utilizzarli come combustibile, in modo simile a quando si pratica il digiuno idrico.</p>\n<ul>\n<li>· Prenditi una pausa</li>\n<li>· Fai un reset</li>\n<li>· Riduci gli eccessi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/reset"
+          }
+        },
+        "text_block_gPfH8w": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-nutrition-bars-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Nutrition Bars",
+            "text": "<p>Intermittent Fasting Bar è l'unica barretta nutrizionale che si può mangiare durante la finestra di digiuno senza interrompere lo stato di digiuno. Basandosi sulla tecnologia nutrizionale del Fasting Mimicking Nutrition e su oltre 20 anni di ricerca, gli scienziati hanno studiato come miscele uniche di macronutrienti e micronutrienti possano essere consumate senza far uscire il corpo dallo stato di digiuno.</p>\n<ul>\n<li>· Testato e sviluppato clinicamente</li>\n<li>· Proteine di origine vegetale</li>\n<li>· Senza glutine, senza soia e senza latticini</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-nutrition-bar"
+          }
+        },
+        "text_block_F7EiBC": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-fasting-shake-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Fasting Shake",
+            "text": "<p>Il meglio dalla natura, nutrito dalla scienza della longevità di ProLon - un'innovazione nella nutrizione e nella scienza dell'invecchiamento sano. La miscela brevettata di Fasting Shake evita di innescare la risposta dell'organismo al cibo, mantenendolo più a lungo in uno stato di digiuno e di combustione dei grassi!</p>\n<ul>\n<li>· Prolunga lo stato di digiuno</li>\n<li>· Nutre il corpo</li>\n<li>· Gusto vaniglia</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-fasting-shake-14-bustine"
+          }
+        },
+        "text_block_cUJzBC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/l-protein-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "L-Protein",
+            "text": "<p>Formulato con 25 g di aminoacidi completi di origine vegetale per sostenere la sintesi e la riparazione muscolare e mantenere basso il livello di IGF-1, una via nota per accelerare l'invecchiamento, per un invecchiamento ottimale. L-Protein è l'unica polvere in attesa di brevetto per un invecchiamento sano.</p>\n<ul>\n<li>· Supporta muscoli e corpo</li>\n<li>· 25 g di proteine e pochi carboidrati</li>\n<li>· 21 vitamine e minerali</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-l-protein"
+          }
+        },
+        "text_block_mz9Q8t": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-sprean-crema-spalmabile-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Crema Spalmabile",
+            "text": "<p>La prima crema spalmabile al cioccolato per la longevità. Una crema spalmabile deliziosa e salutare! L-Spread contiene il 74% di mandorle pugliesi - mandorle provenienti da zone di longevità in Italia. </p>\n<ul>\n<li>· Contiene il 74% di mandorle pugliesi</li>\n<li>· Senza glutine, senza latticini, senza soia, vegano</li>\n<li>· A base vegetale, grassi sani, fibre prebiotiche</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-longevity-spread"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NG3zTr",
+        "text_block_UH6Djk",
+        "text_block_gPfH8w",
+        "text_block_F7EiBC",
+        "text_block_cUJzBC",
+        "text_block_mz9Q8t"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "2143ed9d-281a-466a-9b0c-1334c77ed582": {
+      "type": "pl-features",
+      "blocks": {
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-1": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Cellular Rejuvenation"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-2": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Metabolic Health"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-3": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Fat-Focused Weight Loss"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-4": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Lean Muscle Protection"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-5": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Healthier, younger skin"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-1": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Clarity & Focus"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-2": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Confidence & Success"
+          }
+        },
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-3": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Overall Sense of Well-being"
+          }
+        }
+      },
+      "block_order": [
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-1",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-2",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-3",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-4",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-first_image_description-5",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-1",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-2",
+        "template--15646559174703__2143ed9d-281a-466a-9b0c-1334c77ed582-second_image_description-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "data_id": "the-research",
+        "main_title": "<span class=\"font-normal leading-[1.2] max-w-[1200px] lg:text-[40px] mx-auto pb-[50px] text-[18px] md:text-[30px] text-center w-full z-10\">ProLon is <span class=\"text-[#92B141] font-semibold\">the only nutrition program patented</span> for <span class=\"text-[#92B141] font-semibold\">promoting longevity, healthspan & protecting lean body mass.</span>\n</span>",
+        "title": "Nutrition that <b>induces cellular rejuvenation</b> & multiple <b>metabolic changes</b> within the body.",
+        "subtitle": "The Facts",
+        "description": "Dr. Valter Longo, top 50 most influential people in health, uncovered a nutritional formulation that <b>induce cellular rejuvenation and multiple unique metabolic changes within the body.</b> In addition to the fasting-like nutrition, called the ProLon 5-Day and to be done three times per year for most, the complete Longevity Nutrition Program includes as well ProLon Everyday products that are precision nutrition sourced from around the world and <b>tailored to not spike aging factors and to help cells and organs age gracefully.</b>",
+        "text_on_left": false,
+        "image_1_title": "Healthy aging benefits",
+        "image_2_title": "Social & emotional benefits"
+      }
+    },
+    "37430430-0a82-42df-860d-fc51747b278d": {
+      "type": "advanced-content",
+      "blocks": {
+        "b981f1f1-ef1f-4584-befb-5611d637d4aa": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"contanir-1 max-w-[1300px] mx-auto font-avenir px-[10px] md:px-[20px] lg:px-[50px]\">\n<div class=\"heading\">\n<h1 class=\" text-gray-700  font-bold  text-3xl my-3 w-full\"> WEEK 1  </h1>\n</div>\n    <div class=\"grid grid-cols-2  md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 w-full\">\n        <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#77A117] p-2 \">Day 1\n         </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Prolon</span> <span class=\"block font-bold\">  5-day FMD</span> <span>(Day 1)</span>\n</h1>\n      \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-[#77A117] p-2 \">Day 2\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Prolon</span> <span class=\"block font-bold\"> 5-day FMD</span> <span>(Day 2)</span>\n</h1>\n        \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-[#77A117] p-2 \">Day 3\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Prolon</span> <span class=\"block font-bold\"> 5-day FMD</span> <span>(Day 3)</span>\n</h1>\n        \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-[#77A117] p-2 \">Day 4\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Prolon</span> <span class=\"block font-bold\"> 5-day FMD</span> <span>(Day 4)</span>\n</h1>\n        \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-[#77A117] p-2 \">Day 5\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Prolon</span> <span class=\"block font-bold\"> 5-day FMD</span> <span>(Day 5)</span>\n</h1>\n        \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-gray-400 p-2 \">Day 6\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Refeeding</span> <span class=\"block font-bold\"> day </span> <span>(No Prolon Products)</span>\n</h1>\n        \n        \n        </div>\n        <div class=\"border border-gray-300  \">\n            <div class=\"text-center font-bold text-2xl text-white bg-gray-400 p-2 \">Day 7\n            </div>\n            <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Break Day</span> <span class=\"block font-bold\"> </span> <span>(Normal Eating)</span>\n</h1>\n        \n        \n        </div>\n      \n    </div>\n\n<div class=\"heading w-full mt-6\">\n    <h1 class=\" text-gray-700  font-bold  text-3xl my-3 w-full\"> WEEK 2-4 </h1>\n</div>\n<div class=\"grid grid-cols-2  md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 w-full\">\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-gray-400 p-2 \">Day 1\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Break Day</span> <span class=\"block font-bold\"> </span> <span>(Normal Eating)</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 2\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 3\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 4\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 5\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 6\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n    <div class=\"border border-gray-300  \">\n        <div class=\"text-center font-bold text-2xl text-white bg-[#8ab736] p-2 \">Day 7\n        </div>\n        <h1 class=\"text-2xl text-center text-gray-500 p-2 \"> <span class=\"block font-bold\">Fasting</span> <span class=\"block font-bold\">  Shake(x1)</span> <span>+ normal eating</span>\n</h1>\n\n\n    </div>\n\n</div>\n\n\n\n    </div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "b981f1f1-ef1f-4584-befb-5611d637d4aa"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "a953bcf8-8e6c-4aee-8d08-5207975a6eec": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16247540154526__a953bcf8-8e6c-4aee-8d08-5207975a6eec-html-1": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"px-[30px] mx-auto max-w-[1440px] flex w-full flex-col items-center justify-center gap-[30px] md:flex-row md:gap-[50px]\">\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> Healthy Aging</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Cellular Rejuvenation\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Metabolic Support\n      </b>\n    </div>\n  </div>\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> Healthy Aging</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Protect Lean Muscle\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Changed Relationship with Food\n      </b>\n    </div>\n  </div>\n  <div class=\"w-full md:w-[30%]\">\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\"> More Energy</b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Mental Clarity\n      </b>\n    </div>\n    <div class=\"mb-[10px] flex\">\n      <b class=\"flex items-center justify-start pb-3\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;\">\n        Rejuvenated Skin\n      </b>\n    </div>\n  </div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16247540154526__a953bcf8-8e6c-4aee-8d08-5207975a6eec-html-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"section\" style=\" max-width: 1100px; margin: auto;padding: 20px;\">\n<h3 style=\"font-weight: 500;\">Ecco come implementare il programma:</h3>\n<div class=\"my-4\">\n<h2 class=\"text-lg font-bold text-muted-foreground\">SETTIMANE 1 - 4</h2>\n<div class=\"grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7\">\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 1</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\"> ProLon ReSet - kit 1 giorno </div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 2</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 3</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Fasting Shake (x1)</div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 4</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 5</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Fasting Shake (x1)</div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 6</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n</div>\n<div class=\"border\">\n<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 7</div>\n<div class=\"bg-primary text-primary-foreground p-2 text-center\">Fasting Shake (x1)</div>\n</div>\n</div>\n</div>\n<p class=\"my-4\"><b>Note:</b> Le biotecnologie nutrizionali utilizzate per creare il Reset di 1 giorno, il Fasting Shake e la Fasting Bar sono le stesse utilizzate nel Programma Prolon di 5 giorni.  \n<br><br>\nIl consumo del frullato o della barretta del digiuno non comporta la rottura del digiuno! Il Fasting Shake e la Fasting Bar possono essere utilizzati come colazione o spuntino post-cena negli altri giorni della settimana per allungare il digiuno notturno o per iniziare il digiuno la sera.\n<br><br>\nIl Reset di 1 giorno vi permetterà di seguire un digiuno guidato di un giorno intero utilizzando le nostre formulazioni nutrizionali sostenute dalla scienza.\n<br><br>\nL'L-Spread è un delizioso snack per la longevità che si può consumare durante la finestra di alimentazione come parte di una colazione completa o di uno spuntino ricco di nutrienti.\n<br><br>\n<span style=\"border-left: 4px solid orange; padding-left: 20px;\">Il prodotto è sufficiente per 4 settimane.</span><br></p>\n</div>"
+      }
+    },
+    "ae4317b1-5640-4365-acf9-72e4b15c46d1": {
+      "type": "pl-faqs",
+      "blocks": {
+        "c89833c7-062c-4926-8ea8-048949a22e8d": {
+          "type": "faqs",
+          "settings": {
+            "question": "How many times do I do ProLon each year?",
+            "answer": "<p>The amazing part about ProLon is it can easily fit into your lifestylle and is  only a 5 day change to your normal life. </p><p><em>Suggested consumption by Dr. Valter Longo, head of the Longevity Institute at University of Southern California and Author of the Longevity Diet.</em></p><p>• If you have a health or metabolic objective in mind and want to achieve faster the metabolic and rejuvenative successes of ProLon, then you can do ProLon every month for 3 or 4 months and then do it once every 3 months to maintain the benefits. </p><p>• 2 times only per year for Healthy Aging (10 days out of 365 days!)</p><p>• 3 times per year for Healthy Aging and added Weight Loss (15 days out of 365 days!)</p><p>Some people do ProLon once a month for reasons that are in line with therapeutic effects of fasting that we are also researching and will launch under a dietitian guided program in 2023. </p>"
+          }
+        },
+        "7e88369e-9ad2-4ad9-89a3-1bc0824e9706": {
+          "type": "faqs",
+          "settings": {
+            "question": "How should the ProLon program be used?",
+            "answer": "<p>The diet should be used for five consecutive days, after which the individual will transition on the 6th day and then resume their normal diet. The program provides a meal card that recommends how to consume the items for each day, but each day’s items can be consumed in any order you wish, as long as you only eat each day’s items during that day (do not carry them over to the next).</p>"
+          }
+        },
+        "e6882ae8-748a-46e2-82fc-87b1dad5da6c": {
+          "type": "faqs",
+          "settings": {
+            "question": "What are the food pathways affected by ProLon?",
+            "answer": "<p>While there are many different signaling factors in the “nutrient-sensing pathways” involved with cellular fasting, the 3 primary nutrient-sensing pathways that ProLon and fasting down-regulate are IGF-1, mTOR, and PKA. The process is complex, and each pathway can interact with other pathways, but in general, PKA responds primarily to sugar and carbohydrates, while IGF-1 is primarily responsive to protein (and more strongly triggered by animal protein), and mTOR is triggered by IGF-1 and amino acids. Sugar and carbohydrates (and to some extent caffeine) will activate PKA. These nutrient-sensing pathways all help regulate the cells’ growth cycles and stress-resistant “fasting” state.</p>"
+          }
+        },
+        "6555fd45-102a-47de-a0cb-eb390bd1be2b": {
+          "type": "faqs",
+          "settings": {
+            "question": "What happens to my body during the fasting mimicking program?",
+            "answer": "<p>ProLon provides the body with a scientifically developed, naturally occurring combination of macronutrients (fats, carbohydrates, proteins) and micronutrients (essential vitamins and minerals) designed to keep the body nourished while going through the rejuvenating process of the fasting state. </p><p>WHAT HAPPENS ON DAYS 1 TO 5 ON MY PROLON FAST?</p><p>Day 1: Transforming to a Fasting State: Your body is transitioning to a fasting state and fat- burning mode, and begins preparation for cellular clean-up.</p><p>Day 2: Fat Burning & Ketogenesis: Fast Burning & Ketogenesis: Fat-Burning ramps up, contributing to the initiation of ketogenesis (ketone production). By the end of this day (48 hours), ketosis may occur.</p><p>Day 3: Autophagy Clean Up State: Cellular clean-up (autophagy) Fat-burning and ketone production/utilization continues and increases.</p><p>Day 4: Cellular Rejuvenation:Cellular cleaning/renewal & fat-burning You’re in the final stretch.</p><p>Day 5: Renewal & Change: Fast completed, cellular renewal continues beyond Day 5.</p>"
+          }
+        },
+        "442a4b15-5917-4f3c-8bab-10f7130eaf52": {
+          "type": "faqs",
+          "settings": {
+            "question": "How much weight am I expect to lose?",
+            "answer": "<p>While the purpose of the ProLon diet is to trigger rejuvenation, weight loss may occur. Everyone is different, and weight loss depends on a number of factors. In a clinical study of participants who completed a 5-day ProLon cycle once a month for three months, the average weight loss at the end of the study was about 5.7 pounds. This was primarily abdominal fat, while lean body mass was preserved.</p>"
+          }
+        },
+        "c7ffae26-00cd-4664-8f9b-2bc241d1219a": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is the daily caloric intake during ProLon?",
+            "answer": "<p>Day 1 has about 1100 calories (kcals), while Days 2-5 have between 700 and 800 calories (kcals) per day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c89833c7-062c-4926-8ea8-048949a22e8d",
+        "7e88369e-9ad2-4ad9-89a3-1bc0824e9706",
+        "e6882ae8-748a-46e2-82fc-87b1dad5da6c",
+        "6555fd45-102a-47de-a0cb-eb390bd1be2b",
+        "442a4b15-5917-4f3c-8bab-10f7130eaf52",
+        "c7ffae26-00cd-4664-8f9b-2bc241d1219a"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_title": "",
+        "main_description": "",
+        "title": "Questions?"
+      }
+    },
+    "1711034423e4ec4010": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0": {
+      "type": "pl-newsletter",
+      "disabled": true,
+      "settings": {
+        "description": "<div class=\"flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the ProLon community</p>\n<p> </p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n</div>",
+        "descriptionWidth": "w-full md:w-[60%]",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "67611c02-54a7-4d7d-8033-fce9d01b167a",
+    "11a20c1d-219c-4629-96b6-7512b21d0dd1",
+    "999ae3b3-afb3-4db5-8cf9-c418ba74a7bf",
+    "b851439b-52df-43eb-822a-d30b87b87791",
+    "9d007a4c-c77c-47f5-9ea1-2791ec1a6244",
+    "d28cc7bf-d2d9-4b39-a3bd-195d33cab9f4",
+    "text_columns_GWFzMT",
+    "2143ed9d-281a-466a-9b0c-1334c77ed582",
+    "37430430-0a82-42df-860d-fc51747b278d",
+    "a953bcf8-8e6c-4aee-8d08-5207975a6eec",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "ae4317b1-5640-4365-acf9-72e4b15c46d1",
+    "1711034423e4ec4010",
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0"
+  ]
+}

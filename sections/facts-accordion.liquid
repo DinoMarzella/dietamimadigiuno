@@ -1,0 +1,444 @@
+{%- comment %} Compiled from _js/sections/facts-accordion/section.liquid {% endcomment -%}
+
+<style>
+.tvg_facts_accordion_luWxJq_FactsAccordion{position:relative}
+.tvg_facts_accordion_luWxJq_FactsAccordion-container{grid-template:"tvg_facts_accordion_luWxJq_title""tvg_facts_accordion_luWxJq_accordion""tvg_facts_accordion_luWxJq_cta"/minmax(0,1fr);padding-left:.9375rem;padding-right:.9375rem;display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-header{text-align:center;grid-area:tvg_facts_accordion_luWxJq_title;width:100%;margin-bottom:1.5625rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-header h2{font-family:Avenir;font-size:1.75rem;font-style:normal;font-weight:400;line-height:2.0625rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta{flex-direction:column;grid-area:tvg_facts_accordion_luWxJq_cta;place-self:center;align-items:center;gap:.9375rem;padding:3.75rem 4.625rem 0;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta .cta-button{background:#77a117}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta .cta-button a{color:#fff}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta .cta-button svg{stroke:#fff}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta__copy{text-align:center;display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-grid{grid-area:tvg_facts_accordion_luWxJq_accordion}
+.tvg_facts_accordion_luWxJq_FactsAccordion-description{--tvg_facts_accordion_luWxJq_max-height:v.vw-calc(0 300);width:100%;max-height:0;transition:max-height .5s;display:none;overflow:hidden}
+.tvg_facts_accordion_luWxJq_FactsAccordion-description.--is-active{max-height:var(--tvg_facts_accordion_luWxJq_max-height);padding-top:.9375rem;display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-items{width:100%;height:-moz-fit-content;height:fit-content;position:relative}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item{border-top:.0625rem solid #8a8a8a}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item:last-child{border-bottom:.0625rem solid #8a8a8a}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__accordion{flex-direction:column;padding:.9375rem 0;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title{cursor:pointer;border-bottom:none;justify-content:space-between;align-items:center;gap:.625rem;width:100%;padding:0;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title.--is-active h3{color:#0a0a0a}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title.--is-active span{color:#77a117}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title h3{color:#8a8a8a;gap:.625rem;font-family:Avenir;font-size:1.125rem;font-style:normal;font-weight:800;line-height:140%;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title span{color:#8a8a8a;font-family:Avenir;font-size:1.125rem;font-style:normal;font-weight:800;line-height:140%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__description p{font-family:Avenir;font-size:1.125rem;font-style:normal;font-weight:400;line-height:140%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__plus{width:25px;height:25px;display:block} 
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__plus svg {
+    width: 25px;
+    height: 25px;
+} 
+.--is-active .tvg_facts_accordion_luWxJq_FactsAccordion-item__plus{display:none}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__minus{width:1.875rem;height:1.875rem;display:none}
+.--is-active .tvg_facts_accordion_luWxJq_FactsAccordion-item__minus{display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats{display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats{flex-direction:column-reverse;gap:1.5625rem;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats.no-image{flex-direction:column-reverse;gap:1.5625rem;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats.no-image>.tvg_facts_accordion_luWxJq_FactsAccordion-stats__wrapper{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:.625rem;margin-top:1.5625rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.no-stats{grid-template-columns:minmax(0,1fr);display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats__wrapper{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:1.6875rem;display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stat{flex-direction:column;display:flex}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stat__value{color:#77a117;letter-spacing:-.0375rem;font-family:Avenir;font-size:1.875rem;font-weight:500;line-height:140%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stat__label{letter-spacing:-.0375rem;width:100%;font-family:Avenir;font-size:1rem;font-style:normal;font-weight:400;line-height:120%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image{margin-top:1.5625rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.small img{object-fit:cover;border-radius:.1875rem;width:100%;height:100%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.large img{object-fit:cover;border-radius:.1875rem;width:100%;height:100%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.image{display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.no-image{display:none}
+@media print,screen and (min-width:64em){.tvg_facts_accordion_luWxJq_FactsAccordion-container{grid-template-rows:.4fr 4.5fr;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"tvg_facts_accordion_luWxJq_title tvg_facts_accordion_luWxJq_cta""tvg_facts_accordion_luWxJq_accordion tvg_facts_accordion_luWxJq_accordion""tvg_facts_accordion_luWxJq_accordion tvg_facts_accordion_luWxJq_accordion";gap:1.6875rem 0;padding-left:3.75rem;padding-right:3.75rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-header{text-align:left;margin-top:0;margin-bottom:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-header h2{font-size:2.5rem;line-height:3rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta{place-self:flex-end;padding:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta .cta-button{height:3.125rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-cta__copy{display:none}
+.tvg_facts_accordion_luWxJq_FactsAccordion-description{width:50%;max-height:100%;position:absolute;top:0;right:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-description.--is-active{padding-top:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item{border-top:none;border-bottom:none}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item:last-child{border-bottom:none}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__accordion{padding:0;display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title{border-bottom:.0625rem solid #8a8a8a;width:38%;padding:1.5625rem 0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__title h3{font-size:1.5rem;display:block}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__description p{font-size:1.125rem;line-height:1.875rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-item__plus{display:none}
+.--is-active .tvg_facts_accordion_luWxJq_FactsAccordion-item__minus{display:none}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats{grid-template-columns:minmax(0,2fr) minmax(0,1fr);margin-top:2.5rem;display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats.no-image{grid-template-columns:minmax(0,1fr);margin-top:2.5rem;display:grid}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.stats.no-image>.tvg_facts_accordion_luWxJq_FactsAccordion-stats__wrapper{row-gap:2.5rem;margin-top:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats.no-stats{margin-top:2.5rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stats__wrapper{row-gap:2.5rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stat__value{letter-spacing:-.0625rem;font-size:3.125rem;line-height:140%}
+.tvg_facts_accordion_luWxJq_FactsAccordion-stat__label{width:8.3125rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image{margin-top:0}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.small img{border-radius:.3125rem;width:12.5rem;height:12.5rem}
+.tvg_facts_accordion_luWxJq_FactsAccordion-image.large img{border-radius:.3125rem;width:100%;height:12.5rem}
+}
+@media print,screen and (min-width:75em){.tvg_facts_accordion_luWxJq_FactsAccordion-item__title{width:31.875rem}
+}
+</style>
+
+{% liquid
+  assign desktop_top_padding = section.settings.desktop_top_padding
+  assign desktop_bottom_padding = section.settings.desktop_bottom_padding
+  assign mobile_top_padding = section.settings.mobile_top_padding
+  assign mobile_bottom_padding = section.settings.mobile_bottom_padding
+  assign header = section.settings.header
+  assign cta_text = section.settings.cta_text
+  assign cta_url = section.settings.cta_url
+  assign mobile_copy = section.settings.mobile_copy
+%}
+
+<style>
+  .tvg_facts_accordion_luWxJq_FactsAccordion-container {
+    padding-top: {{ desktop_top_padding }}rem;
+    padding-bottom: {{ desktop_bottom_padding }}rem;
+
+    @media (max-width: 1024px) {
+      padding-top: {{ mobile_top_padding }}rem;
+      padding-bottom: {{ mobile_bottom_padding }}rem;
+    }
+  }
+</style>
+
+<div class="tvg_facts_accordion_luWxJq_FactsAccordion-container js-accordion-facts">
+
+  <div class="tvg_facts_accordion_luWxJq_FactsAccordion-header">
+    <h2>
+      {{ header }}
+    </h2>
+  </div>
+
+  {% if cta_url != blank and cta_text != blank %}
+    <div class="tvg_facts_accordion_luWxJq_FactsAccordion-cta">
+      <p class="tvg_facts_accordion_luWxJq_FactsAccordion-cta__copy">
+        {{ mobile_copy }}
+      </p>
+
+      {% liquid
+        render 'cta-button', cta_link: cta_url, cta_text: cta_text
+        render 'cta-button-stylesheet'
+      %}
+    </div>
+  {% endif %}
+
+  <div class="tvg_facts_accordion_luWxJq_FactsAccordion-grid">
+    <div class="tvg_facts_accordion_luWxJq_FactsAccordion-items">
+
+      {% for block in section.blocks %}
+        {% liquid
+          assign title = block.settings.title
+          assign description = block.settings.description
+          assign image = block.settings.image
+          assign show_stats = block.settings.show_stats
+          assign show_image = block.settings.show_image
+
+          if image != blank
+            capture image_sizes
+              render 'print-responsive-image', wide_image: image, narrow_image: image, breakpoiåt: 1024
+            endcapture
+          endif
+        %}
+        <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item" >
+          <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item__accordion">
+            <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item__title js-accordion-facts-item {% if forloop.first %}--is-active{% endif %}" data-accordion-item="{{ forloop.index }}">
+              <h3>
+                <span>{{ forloop.index | append: '.' }}</span> {{ title }}
+              </h3>
+              <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item__plus">
+                {% render 'svg-plus-icon' %}
+              </div>
+              <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item__minus">
+                {% render 'svg-minus-icon' %}
+              </div>
+            </div>
+
+            <div class="tvg_facts_accordion_luWxJq_FactsAccordion-description js-accordion-facts-description {% if forloop.first %}--is-active{% endif %}" data-accordion-item="{{ forloop.index }}">
+              <div class="tvg_facts_accordion_luWxJq_FactsAccordion-item__description">
+                {{ description }}
+              </div>
+
+              <div class="tvg_facts_accordion_luWxJq_FactsAccordion-stats {% if show_stats %} stats {% else %} no-stats {% endif %} {% if show_image == false %} no-image {% endif %}">
+                <div class="tvg_facts_accordion_luWxJq_FactsAccordion-stats__wrapper">
+                  {% if show_stats %}
+
+                    {% for stat in (1..6) %}
+                      {% capture stat_key %}stat_{{ stat }}{% endcapture %}
+                      {% capture stat_value_key %}stat_{{ stat }}{% endcapture %}
+                      {% capture stat_label_key %}stat_{{ stat }}_label{% endcapture %}
+                      {% assign stat_value = block.settings[stat_value_key] %}
+                      {% assign stat_label = block.settings[stat_label_key] %}
+
+                        <div class="tvg_facts_accordion_luWxJq_FactsAccordion-stat">
+                          <span class="tvg_facts_accordion_luWxJq_FactsAccordion-stat__value">{{ stat_value }}</span>
+                          <span class="tvg_facts_accordion_luWxJq_FactsAccordion-stat__label">{{ stat_label }}</span>
+                        </div>
+                    {% endfor %}
+
+                  {% endif %}
+                </div>
+                {% if image != blank %}
+                  <picture
+                    data-feature-item="{{ forloop.index }}"
+                    class= "tvg_facts_accordion_luWxJq_FactsAccordion-image js-product-features-image {% if show_stats %} small {% else %} large {% endif %} {% if show_image %} image {% else %} no-image {% endif %}"
+                  >
+                    {{ image_sizes }}
+                  </picture>
+                {% endif %}
+              </div>
+
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+if(window.innerWidth < 768){
+
+
+$('.js-accordion-facts-item').removeClass('--is-active');
+$('.js-accordion-facts-description').removeClass('--is-active');
+
+}  
+
+})
+
+</script>
+{% schema %}
+  {
+    "name": "Facts Accordion",
+    "tag": "section",
+    "class": "js-accordion-facts-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Desktop Section Top and Bottom Padding"
+      },
+      {
+        "type": "range",
+        "id": "desktop_top_padding",
+        "label": "Top Padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "rem",
+        "default": 7
+      },
+      {
+        "type": "range",
+        "id": "desktop_bottom_padding",
+        "label": "Bottom Padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "rem",
+        "default": 7
+      },
+      {
+        "type": "header",
+        "content": "Mobile Section Top and Bottom Padding"
+      },
+      {
+        "type": "range",
+        "id": "mobile_top_padding",
+        "label": "Top Padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "rem",
+        "default": 3
+      },
+      {
+        "type": "range",
+        "id": "mobile_bottom_padding",
+        "label": "Bottom Padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "rem",
+        "default": 3
+      },
+      {
+        "type": "header",
+        "content": "Section Header"
+      },
+      {
+        "type": "richtext",
+        "id": "header",
+        "label": "Header",
+        "default": "<p>Nutrition solutions for better metabolic health</p>"
+      },
+      {
+        "type": "header",
+        "content": "Section CTA"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA URL"
+      },
+      {
+        "type": "header",
+        "content": "Mobile Copy Above CTA"
+      },
+      {
+        "type": "text",
+        "id": "mobile_copy",
+        "label": "Mobile Copy CTA",
+        "default": "Need more information about our programs?",
+        "info": "This text will be displayed above the CTA on mobile and tablet devices."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Accordion",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Accordion Content"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Accordion Title",
+            "default": "Accordion Title"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Accordion Description",
+            "default": "<p>Accordion Description</p>"
+          },
+          {
+            "type": "header",
+            "content": "Want to display image?"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_image",
+            "label": "Show Image",
+            "default": true,
+            "info": "Check this box if you want to have 4 stats plus image or just one large image."
+          },
+          {
+            "type": "header",
+            "content": "Accordion Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Accordion Image",
+            "info": "if Show Stats checkbox is checked, it will display small image otherwise it will display large image"
+          },
+          {
+            "type": "header",
+            "content": "Want to display stats?"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_stats",
+            "label": "Show Stats",
+            "default": false,
+            "info": "Check this box if you want to display stats for this accordion item."
+          },
+          {
+            "type": "header",
+            "content": "Accordion Stats"
+          },
+          {
+            "type": "text",
+            "id": "stat_1",
+            "label": "Stat 1",
+            "default": "1.4"
+          },
+          {
+            "type": "text",
+            "id": "stat_1_label",
+            "label": "Stat 1 Label",
+            "default": "IHBA1C Reduction"
+          },
+          {
+            "type": "text",
+            "id": "stat_2",
+            "label": "Stat 2",
+            "default": "22 lbs"
+          },
+          {
+            "type": "text",
+            "id": "stat_2_label",
+            "label": "Stat 2 Label",
+            "default": "Average weight loss"
+          },
+          {
+            "type": "text",
+            "id": "stat_3",
+            "label": "Stat 3",
+            "default": "67%"
+          },
+          {
+            "type": "text",
+            "id": "stat_3_label",
+            "label": "Stat 3 Label",
+            "default": "Medication reliance reduction"
+          },
+          {
+            "type": "text",
+            "id": "stat_4",
+            "label": "Stat 4",
+            "default": "95%"
+          },
+          {
+            "type": "text",
+            "id": "stat_4_label",
+            "label": "Stat 4 Label",
+            "default": "Insulin resistance reduction"
+          },
+          {
+            "type": "text",
+            "id": "stat_5",
+            "label": "Stat 5"
+          },
+          {
+            "type": "text",
+            "id": "stat_5_label",
+            "label": "Stat 5 Label"
+          },
+          {
+            "type": "text",
+            "id": "stat_6",
+            "label": "Stat 6"
+          },
+          {
+            "type": "text",
+            "id": "stat_6_label",
+            "label": "Stat 6 Label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Facts Accordion",
+        "category": "Features",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+
+<script class="json-portable-section-assets" type="application/json">
+{"sectionName":"facts-accordion"}
+</script>

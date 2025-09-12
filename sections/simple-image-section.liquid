@@ -1,0 +1,52 @@
+{% assign data = section.settings %}
+<!-- Simple-Image-Section -Haider -->
+<div class="w-full {{data.container_class}}">
+  <picture  
+    class="{{data.image_class}}"
+   
+    style="
+    width: 100%;
+    display: block;
+  ">
+    <source srcset="{{data.imagepro | img_url: '2200x'}}" media="(min-width: 991px)"> 
+  
+    <source srcset="{{data.image_mobile  | img_url: '1200x'}}" media="(max-width: 990px)">
+
+    <img srcset="{{data.imagepro  | img_url: '2200x'}}" style="width: 100%;">
+  </picture> 
+
+  
+</div>
+ 
+{% schema %}
+{
+  "name": "Image Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    } ,
+    {
+      "type": "image_picker",
+      "id": "imagepro",
+      "label": "Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "text",
+      "id": "image_class",
+      "label": "Image Class"
+    },
+    {
+      "type": "text",
+      "id": "container_class",
+      "label": "Container Class"
+    }
+  ]
+}
+{% endschema %}

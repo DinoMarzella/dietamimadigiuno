@@ -1,0 +1,45 @@
+<div class="bs_footer__container">
+  {% if section.settings.footer_testimonial_1 != blank %}
+    <div class="bs_footer__testimonial--primary">
+      {{ section.settings.footer_testimonial_1 }}
+    </div>
+  {% endif %}
+
+  {% if section.settings.footer_testimonial_2 != blank %}
+    <div class="bs_footer__testimonial--secondary">
+      {{ section.settings.footer_testimonial_2 }}
+  
+      <a href="{{ section.settings.footer_button_url }}" class="bs_footer__button">
+        {{ section.settings.footer_button_text | upcase }}
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.collection-best-seller-footer.name",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "footer_testimonial_1",
+      "label": "t:sections.collection-best-seller-footer.settings.footer_testimonial_1"
+    }, 
+    {
+      "type": "richtext",
+      "id": "footer_testimonial_2",
+      "label": "t:sections.collection-best-seller-footer.settings.footer_testimonial_2"
+    }, 
+    {
+      "type": "text",
+      "id": "footer_button_text",
+      "label": "t:sections.collection-best-seller-footer.settings.footer_button_text"
+    }, 
+    {
+      "type": "url",
+      "id": "footer_button_url",
+      "label": "t:sections.collection-best-seller-footer.settings.footer_button_url"
+    }
+  ]
+}
+{% endschema %}

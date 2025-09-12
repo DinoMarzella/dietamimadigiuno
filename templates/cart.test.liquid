@@ -1,0 +1,539 @@
+{% layout "theme.tw"  %}
+<style>
+
+  [v-cloak] {
+    opacity: 0.1;
+  }
+  [v-cloak][v-cloak-hide] {
+   display:none;
+ } 
+</style>
+<div id="cart-with-header">
+  <div class="max-w-[1600px] w-full p-8">
+    <h2 class="text-[30px] mb-3 font-medium">Shopping Cart </h2>
+    <div class="flex flex-col w-full gap-4 lg:flex-row">
+      <div class="lg:w-7/12">
+        <div class="lg:p-10 bg-cart">
+           
+          {% render 'king-cart-items-life' %}
+          {% render 'king-empty-cart' %}
+        </div>  
+        <div class="flex flex-col items-center mt-2 ">
+          
+          <div class="flex items-center mb-4 lg:mb-8 w-[100%]">
+          {% 
+            render 'king-cart-recommendations'
+           %} 
+          </div>
+        </div>
+      </div>
+      <div class=" lg:w-5/12 lg:pl-5">
+        <div class="mb-4 lg:mb-8">
+          <h2>Summary</h2>
+          {% render 'king-free-shipping-bar' %}
+          <div class="flex flex-col">
+            <div class="flex justify-between mb-1 lg:mb-2">
+              <p>Sub Total </p>
+              <p class="text-[20px] font-bold" v-text='cartTotal>0? money(cartTotal) : "-"'></p> 
+            </div>
+          </div> 
+          <div class="flex flex-col">
+            <div class="flex justify-between mb-1 lg:mb-2">
+              <p>Shipping</p>
+              
+              <p class="text-sm"
+                    v-if="gotFreeShippingMessage!=''"
+                    v-text="gotFreeShippingMessage"
+              ></p>
+              <p class="text-sm"
+                    v-else
+              >Shipping will be calculated at checkout</p> 
+            </div>
+          </div>
+          <div class="pt-2 border-t">
+            <p class="mt-0.5 text-[11px] text-gray-500 block">Cliccando sul pulsante di checkout qui sotto, dichiaro di accettare <a
+                href="http://prolonfmd.com/pages/terms-conditions" target="_blank"
+                class="text-gray-700 underline terms-link js-no-transition">Terms</a>&nbsp; &amp; &nbsp; <a
+                href="http://prolonfmd.com/pages/healthy-start-commitment" target="_blank"
+                class="text-gray-700 underline terms-link js-no-transition">Healthy Start Commitment</a>.</p>
+          </div>
+       
+          <form v-if="cartTotal>0" class="w-full pt-2 mt-5 border-t " @submit.prevent="applyDiscount()">
+              <div v-if="ShowDiscountFailedMessage" class="py-3 text-center " v-cloak >
+                <div class="px-3 text-black animated flash last-minute-coupon sm:px-6">
+                  Sorry <b>"${discountCode}"</b> is not a valid code.<br>
+                </div>   
+              </div>
+              <div class="flex items-center justify-between mb-1 lg:mb-2" v-if="provider_code">
+                <h3 class="leading-3 whitespace-nowrap"><a class="text-sm">HCP CODE
+                
+                  </a></h3> 
+                <p class="text-[20px] font-bold" >
+                  <span v-text='provider_code'></span>
+                  <span >(20% OFF)</span>
+                  <button class="" @click.prevent="clearProviderCode" >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  </button>
+                </p>
+                
+              </div> 
+              <div class="flex items-center justify-between mb-1 lg:mb-2" v-if="provider_code">
+                <h3 class="leading-3 whitespace-nowrap"><a class="text-sm">TOTAL
+              
+                  </a></h3>
+                <p class="text-[20px] font-bold"  >
+                  <s v-text='cartTotal>0? money(cartTotal) : "-"' class="mr-2 text-gray-400" >
+                  </s> 
+                  <span
+                    v-text='cartTotal>0? money(cartTotal*.8) : "-"'>
+                  </span>
+                </p>
+              </div>
+              <div v-else >
+            <h3 class="mb-2 leading-3 whitespace-nowrap" ><a class="text-sm">Enter your Discount here.
+          
+              </a></h3>
+            <div class="flex w-full">
+          
+              <input type="text" name="discount_code" id="discount_code"
+                class="block border-gray-300 rounded-none p-0 px-1 px-1.5 py-0 py-1 py-10 py-12 py-14 py-2 py-3 py-4 py-5 focus:outline-none py-[ py-[10 py-[10px] py-[8px] shadow-sm sm:text-sm w-full"
+                placeholder="Code ex: COUPON12" v-model="discountCode">
+          
+              <button type="submit"
+                class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-white border border-transparent shadow-sm backdrop-blur-lg bg-prolon_secondary focus:outline-none focus:ring-2 focus:ring-prolon focus:ring-offset-2 hover:bg-prolon sm:mt-0 sm:text-sm sm:w-auto"
+                data-dashlane-rid="0d87ba6748658402">
+                <svg v-if="addingDiscount" class="inline w-4 h-4 ml-2 mr-2 text-white animate-spin " viewBox="0 0 100 101"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                    fill="black"></path>
+                  <path
+                    d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                    fill="currentColor"></path>
+                </svg>
+                <span v-else>
+                  Apply</span>
+              </button>
+            </div>
+            </div>
+          </form>
+          {% comment %} <button :disabled="cartTotal<=0 || checkoutLoading" @click="openCheckout" type="button"
+            class="w-full px-4 py-3 mt-2 text-base font-bold text-white uppercase border border-transparent rounded-md shadow-sm bg-prolon hover:text-black font-avant focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-50 disabled:opacity-50 sm:hidden">
+          
+            <svg v-if="checkoutLoading" class="inline w-4 h-4 ml-2 mr-2 text-white animate-spin " viewBox="0 0 100 101"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                fill="black"></path>
+              <path
+                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                fill="currentColor"></path>
+            </svg>
+            <span ref="checkoutBtnText">
+              Checkout
+            </span>
+          
+          </button> {% endcomment %}
+          <div class="bottom-0 m:p-4 md:my-4 m:bg-white m:fixed m:w-full m:left-0">
+     
+            <button 
+                :disabled="cartTotal<=0 || checkoutLoading"
+                @click="openCheckout"
+                type="button" 
+                class="w-full px-4 py-3 text-base  text-white border border-transparent rounded-md shadow-sm !bg-prolon hover:text-black font-avant focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-50 disabled:opacity-50 font-bold uppercase"
+                
+                >
+                
+        <svg v-if="checkoutLoading" class="inline w-4 h-4 ml-2 mr-2 text-white animate-spin " viewBox="0 0 100 101" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="black"></path>
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentColor"></path>
+        </svg>
+        <span ref="checkoutBtnText">
+          Checkout
+        </span>
+
+              </button>
+     
+          </div>
+          <div class="flex items-center gap-2 mx-auto mt-3 text-xs w-fit"><svg width="12" height="16" version="1.1"
+              viewBox="0 0 12 16">
+              <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                <g fill="#000" fill-rule="nonzero">
+                  <g>
+                    <g>
+                      <g
+                        transform="translate(-477.000000, -652.000000) translate(135.000000, 530.000000) translate(0.000000, 118.000000) translate(342.000000, 5.000000)">
+                        <rect width="11.9" height="8" x="0" y="7"></rect>
+                        <path
+                          d="M3.7498702,7.08711199 L2.2501298,7.05920661 C2.27924205,5.494604 2.34035434,4.41892725 2.43830565,3.80558458 C2.83500881,1.3215447 4.1252253,-0.05 6.21161738,-0.05 C8.28375518,-0.05 9.57206936,1.30400453 9.9771451,3.75764982 C10.0789988,4.37460345 10.1520569,5.4635569 10.2010462,7.05001054 L8.70176082,7.09630806 C8.65474387,5.57372518 8.58497393,4.53378227 8.4971779,4.00197968 C8.20230687,2.21587197 7.47359164,1.45 6.21161738,1.45 C4.94088484,1.45 4.20930351,2.22769622 3.91953568,4.0421382 C3.83590055,4.56583703 3.7777324,5.58969222 3.7498702,7.08711199 Z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p>Payments are processed securely.</p>
+          </div> 
+        </div>
+        <div>
+          <h3 class="mb-2 m:text-lg">What our customers are saying </h3>
+          <div class="flex flex-col gap-4 t">
+            <div
+              class="mt-[15px] flex flex-col md:justify-center items-start  md:flex-col max-w-[1600px] mx-auto gap-[20px] md:gap-[40px] m:max-w-full overflow-x-scroll overscroll-y-hidden">
+              <div style="transition-delay:500ms"
+                class="flex flex-col justify-start items-start w-full  rounded-[15px]  p-[2px]   "><img width="130"
+                  height="24" class="w-[100px] object-contain"
+                  src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-yellow-stars.png?v=1690623037"
+                  alt="yellow stars">
+                <h3 class="text-[14px] md:text-[16px] font-semibold py-[15px]">Well deserved investment in me!</h3>
+                <p class="text-[14px] md:text-[14px]">A friend recommended ProLon to me. My goal was to reduce stomach
+                  inflammation and improve overall gut health. The program is well laid out &amp; easy to follow. I viewed
+                  it as a well deserved investment in "me" Prolon did not disappoint, I have more energy, feel great &amp;
+                  plan to continue down the path of healthier eating behavior for years tocome.</p>
+                <p class="pt-[15px] text-[12px] md:text-[14px]">- Nancy S.</p>
+              </div>
+              <div style="transition-delay:800ms"
+                class="flex flex-col justify-start items-start w-full  rounded-[15px]  p-[2px]   "><img width="130"
+                  height="24" class="w-[100px] object-contain"
+                  src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-yellow-stars.png?v=1690623037"
+                  alt="yellow stars">
+                <h3 class="text-[14px] md:text-[16px] font-semibold py-[15px]">I had such a great experience!</h3>
+                <p class="text-[14px] md:text-[14px]">Food was great. I had a lot of energy and slept well. I also lost 5
+                  lbs which has been so hard to do! I'll definitely do Prolon again and have recommended it to friends.
+                </p>
+                <p class="pt-[15px] text-[12px] md:text-[14px]">- Sarah S.</p>
+              </div>
+              <div style="transition-delay:1100ms"
+                class="flex flex-col justify-start items-start w-full  rounded-[15px]  p-[2px]   "><img width="130"
+                  height="24" class="w-[100px] object-contain"
+                  src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-yellow-stars.png?v=1690623037"
+                  alt="yellow stars">
+                <h3 class="text-[14px] md:text-[16px] font-semibold py-[15px]">ProLon changed my life!</h3>
+                <p class="text-[14px] md:text-[14px]">ProLon changed my life. I saw significant results on day three of
+                  the 5 day program. It teaches you how to eat and more importantly how you are supposed to feel when you
+                  are eating healthy. It has inspired me continue with this journey towards maintaining my health and
+                  well-being.</p>
+                <p class="pt-[15px] text-[12px] md:text-[14px]">- Fernando H.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  {% render 'king-slide-cart' %}
+</div>    
+
+
+
+
+{% comment %} <div className="max-w-[1600px] w-full p-8">
+  <h2 className="text-[30px] mb-3 font-medium">Shopping Cart </h2>
+
+  <div className="flex flex-col w-full gap-4 lg:flex-row">
+    <div className="lg:w-7/12">
+      <div className="lg:p-10 bg-cart">
+        {loading &&
+        <Loader />}
+
+        {!loading && lines?.length == 0 && (
+        <div className="flex items-center justify-center p-4 bg-white">
+          <p className="text-prolon">Your Cart is Empty!</p>
+        </div>
+        )}
+
+        {lines?.map(line => {
+
+
+
+
+
+
+        return <CartLineProvider line={line}>
+          <div key={"cart-"+line.id} className="flex p-4 bg-white">
+            <div className="flex-shrink-0">
+              <img src={line?.merchandise?.image?.url || "" } alt={line?.merchandise?.product?.title}
+                className="object-cover object-center w-24 h-24 rounded-md sm:h-48 sm:w-48" width={96} height={96} />
+            </div>
+
+            <div className="flex flex-col justify-between flex-1 ml-4 sm:ml-6">
+              <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
+                <div>
+                  <div className="flex justify-between">
+                    <h3 className="text-sm">
+                      <a className="font-medium text-gray-700 hover:text-gray-800">
+                        {line?.merchandise?.product.title}
+                      </a>
+                    </h3>
+                  </div>
+                  <div>
+                    <p className="mt-1 text-xs font-medium text-gray-700">
+                      {line?.merchandise?.title}
+                    </p>
+                  </div>
+
+                  <p className="mt-1 text-xs font-medium text-gray-500">
+                    {line?.sellingPlanAllocation?.sellingPlan
+                    ?.name || ""}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-gray-00">
+                    {formatPrice(
+                    line?.cost?.totalAmount?.amount
+                    )}
+                  </p>
+                </div>
+
+                <div className="mt-4 sm:mt-0 sm:pr-9">
+                  <label for={`quantity-${line?.id}`} className="sr-only">
+                    Quantity, {line?.quantity || 1}
+                  </label>
+                  {line?.cost?.totalAmount?.amount > 0 &&
+                  <div className="flex items-center border rounded w-fit">
+
+                    <CartLineQuantityAdjustButton adjust="decrease" disabled={loading} type="button"
+                      aria-label="Decrease quantity"
+                      className="w-8 h-8 transition text-primary/50 hover:text-primary disabled:cursor-wait">
+                      −
+                    </CartLineQuantityAdjustButton>
+                    <div className="px-2 text-center">
+                      {line?.quantity}
+                    </div>
+                    <CartLineQuantityAdjustButton adjust="increase" disabled={loading} type="button"
+                      aria-label="Increase quantity"
+                      className="w-8 h-8 transition text-primary/50 hover:text-primary disabled:cursor-wait">
+                      +
+                    </CartLineQuantityAdjustButton>
+                  </div>
+                  }
+                  {line?.cost?.totalAmount?.amount == 0 && <div>{line?.quantity}</div>}
+                  <div className="absolute top-0 right-0">
+                    <CartLineQuantityAdjustButton adjust="remove" disabled={loading} type="button"
+                      className="inline-flex p-2 -m-2 text-gray-400 hover:text-gray-500 disabled:cursor-wait">
+                      <span className="sr-only">Remove</span>
+                      <XMarkIcon className="w-5 h-5" aria-hidden="true" />
+                    </CartLineQuantityAdjustButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CartLineProvider>
+        }
+        )}
+        {/* lines.edges */}
+      </div>
+
+      <div className="flex flex-col items-center mt-16 ">
+        <div className="flex flex-col items-start lg:items-center lg:mb-8 lg:p-6 border-b border-[#00000029]">
+          <div className="flex items-center mb-2 ">
+            <h2>Frequently bought together</h2>
+          </div>
+          <div>
+            <p className="m-0">Continue your longevity journey</p>
+          </div>
+        </div>
+
+        <div className="flex items-center mb-4 lg:mb-8 ">
+          <div className="grid grid-cols-2 gap-4 mt-4 lg:grid-cols-3 lg:mt-0">
+            {upsell_products?.map( (product, index) => {
+
+            const variant = product?.variants;
+
+
+            const image = product?.images[0];
+            console.log()
+            if (isInCart(variant[0]?.id)){
+            return null
+            }
+
+
+            return (
+
+            <div key={"ts" + index} type="button"
+              className="flex flex-col justify-center items-center bg-[#f2f1f58f] p-4 pb-6 rounded-lg">
+              <div className="w-20 h-20">
+                <img src={image?.src || "" } width={image?.width} height={image?.height} alt="" />
+              </div>
+
+              <p className="pt-4 text-center">{product?.title}</p>
+              <p className="pb-4 text-xs text-gray-600"> {variant[0]?.title?.replace("Default Title",'')}</p>
+              <div className="w-40">
+                <button onClick={()=> {
+                  addVariantToCart(variant[0]?.id, 1);
+                  } }
+                  className="flex flex-col justify-center h-10 px-8 bg-white text-prolon rounded-3xl">
+
+                  <div className="flex items-center justify-center cursor-pointer">
+
+                    <span className="text-xs font-bold">
+                      Add — {"$"}
+                      {variant[0]?.price}
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            );
+            })}
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div className=" lg:w-5/12 lg:pl-5">
+      <div className="mb-4 lg:mb-8">
+        <h2>Summary</h2>
+        <div className="">
+          <div className="mt-1">
+            <div className="flex justify-between mb-1">
+              <span className="text-xs font-medium text-prolon_green">
+                {freeShippingMessage()}
+              </span>
+              <span className="text-xs font-medium text-prolon_green">
+                {awayFreeShippingMessage()}
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2.5">
+              <div className="bg-prolon h-2.5 rounded-full max-w-full transition duration-300 ease-in-out"
+                style={ { "transition" : "all 0.5s ease 0s" , "width" : `${remainingShippingPercentage()}%` } }></div>
+            </div>
+            <div className="mt-1 mb-3 text-left">
+              <span className="text-sm font-bold text-gray-700">
+                {gotFreeShippingMessage()}
+              </span>
+            </div>
+          </div>
+        </div> 
+        <div className="flex flex-col">
+          <div className="flex justify-between mb-1 lg:mb-2">
+            <p>Sub Total </p>
+            <p>
+
+              {formatPrice(
+              Number.parseFloat(
+              estimatedCost?.subtotalAmount?.amount || "0"
+              )
+              )}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col">
+          <div className="flex justify-between mb-1 lg:mb-2">
+            <p>Shipping</p>
+            <p className="text-sm">
+              {gotFreeShippingMessage() != '' ? gotFreeShippingMessage() :"Shipping will be calculated at checkout"}
+            </p>
+          </div>
+        </div>
+
+
+        {/* <div className="mb-6 w-full bg-black opacity-[0.16] rounded-none h-[1px] my-4"></div> */}
+
+        {/*
+        <DiscountCodeForm store={store} containerStyles="pt-0" /> */}
+
+        <div className="pt-2 border-t">
+          <p className="mt-0.5 text-[11px] text-gray-500">
+            Cliccando sul pulsante di checkout qui sotto, dichiaro di accettare
+            <a href="/pages/condizioni-di-vendita" target="_blank"
+              className="text-gray-700 underline terms-link js-no-transition">
+              Termini e condizioni
+            </a>{" "}
+            &amp;{" "}
+            <a href="/pages/avvertenze-per-i-consumatori" target="_blank"
+              className="text-gray-700 underline terms-link js-no-transition">
+              Avvertenze per i consumatori
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="bottom-0 p-4 md:my-4 m:bg-white m:fixed m:w-full m:left-0">
+          {estimatedCost?.subtotalAmount?.amount > 0 ?
+          <a href={checkoutUrl}>
+            <button disabled={ loading } type="button"
+              className="w-full px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-prolon hover:text-black font-avant focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-50">
+              Checkout
+            </button>
+          </a> : <a>
+            <button disabled={ true } type="button"
+              className="w-full px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm opacity-50 bg-prolon hover:text-black font-avant focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-50">
+              Checkout
+            </button>
+          </a> }
+        </div>
+
+        <div className="flex items-center gap-2 mx-auto mt-3 text-xs w-fit">
+          <svg width="12" height="16" version="1.1" viewBox="0 0 12 16">
+            <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+              <g fill="#000" fillRule="nonzero">
+                <g>
+                  <g>
+                    <g
+                      transform="translate(-477.000000, -652.000000) translate(135.000000, 530.000000) translate(0.000000, 118.000000) translate(342.000000, 5.000000)">
+                      <rect width="11.9" height="8" x="0" y="7"></rect>
+                      <path
+                        d="M3.7498702,7.08711199 L2.2501298,7.05920661 C2.27924205,5.494604 2.34035434,4.41892725 2.43830565,3.80558458 C2.83500881,1.3215447 4.1252253,-0.05 6.21161738,-0.05 C8.28375518,-0.05 9.57206936,1.30400453 9.9771451,3.75764982 C10.0789988,4.37460345 10.1520569,5.4635569 10.2010462,7.05001054 L8.70176082,7.09630806 C8.65474387,5.57372518 8.58497393,4.53378227 8.4971779,4.00197968 C8.20230687,2.21587197 7.47359164,1.45 6.21161738,1.45 C4.94088484,1.45 4.20930351,2.22769622 3.91953568,4.0421382 C3.83590055,4.56583703 3.7777324,5.58969222 3.7498702,7.08711199 Z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p>Payments are processed securely.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 className="mb-2 m:text-lg">What our customers are saying </h3>
+
+        <div className="flex flex-col gap-4 t">
+          <div
+            className="mt-[15px] flex flex-col md:justify-center items-start  md:flex-col max-w-[1600px] mx-auto gap-[20px] md:gap-[40px] m:max-w-full overflow-x-scroll overscroll-y-hidden">
+            {reviews?.map((testimonial, index) => (
+            <div key={index} style={ { transitionDelay: `${index * 300 + 500}ms` } }
+              className="flex flex-col justify-start items-start w-full  rounded-[15px]  p-[2px]   ">
+              <img width="130" height="24" className="w-[100px] object-contain"
+                src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-yellow-stars.png?v=1690623037"
+                alt="yellow stars" />
+              <h3 className="text-[14px] md:text-[16px] font-semibold py-[15px]">
+                {testimonial.title}
+              </h3>
+              <p className="text-[14px] md:text-[14px]">
+                {testimonial.description}
+              </p>
+              <p className="pt-[15px] text-[12px] md:text-[14px]">
+                {testimonial.name}
+              </p>
+            </div>
+            ))}
+          </div>
+          {/* {FEATURES?.map((feature) => (
+          <div key={feature.id} className="flex justify-start gap-4">
+            <span className="w-8 h-8">{feature.icon}</span>
+            <div>
+              <p className="font-bold text-prolon_green">{feature.title}</p>
+              <p className="text-sm">{feature.description}</p>
+            </div>
+          </div>
+          ))} */}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endcomment %}

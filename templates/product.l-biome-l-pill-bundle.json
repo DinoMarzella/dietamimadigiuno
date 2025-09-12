@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "custom_css": [],
+      "settings": {
+        "custom_css_class": "",
+        "product": "l-biome-l-pill-bundle",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "Mantenimento",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-l-biome-bundle\" \n %}",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli i {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona la {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona la {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Bifidobacterium breve B-3",
+            "content": "<p>Bifidobacterium breve B-3 supporta la riduzione del peso e grasso corporeo e aiuta inoltre a mantenere i livelli di glucosio, insulina e colesterolo nel sangue entro un intervallo normale. Questo è uno dei microbioti essenziali che fiorisce dopo ProLon 5 Giorni Mima Digiuno.</p>",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": false,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "810f2a51-b7bb-4fbf-befb-a73dffa14a02": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https://vimeo.com/891476499",
+        "divider": false
+      }
+    },
+    "ef6fd7d5-33e8-4878-8f00-b00625cdcad0": {
+      "type": "modern-custom-html",
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<style>\n  .spread-benefits img {\n  max-width: 100px;\n  margin: 0px auto;\n  }\n  @media(max-width: 768px)  {\n  .spread-benefits img {\n  max-width: 70px;\n  }\n  </style>\n<div class=\"grid md:flex jc-center columngap-4 rowgap-30 align-items-baseline text-[16px] md:text-[20px] text-center grid-cols-2 md:flex-nowrap\">\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_microbioma_x256_f517dfdc-5079-4a35-8463-0a473555851d.png?v=1700568766\">\n<h6 class=\"!mt-2\">Ricco di Pre e Probiotici</h6>\n</div>\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_salute_intestinale_x256_a108af31-1163-4462-88e2-5f2ba5256a0d.png?v=1700568766\">\n<h6 class=\"!mt-2\">Aiuta a digerire meglio</h6>\n</div>\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_flora_batterica_v2_x256_a4691f46-0907-4a59-91a7-2408506b5a36.png?v=1700827363\">\n<h6 class=\"!mt-2\">Stimola la flora batterica intestinale</h6>\n</div>\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_invecchiamento_sano_x256_e235313e-a013-42c9-ad0e-4c6632538684.png?v=1700570013\">\n<h6 class=\"!mt-2\">Promuove un invechiamento sano</h6>\n</div>\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_protezione_cellulare_x256_c7ddb50c-b1b2-4642-89c5-b5b3c6cbf42b.png?v=1700570012\">\n<h6 class=\"!mt-2\">Aumenta la protezione cellulare</h6>\n</div>\n<div class=\"spread-benefits flex-1\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_sistema_immunitario_x256_315e5391-9885-4e7c-a6ad-b31dea2f4384.png?v=1700569221\">\n<h6 class=\"!mt-2\">Rafforza il sistema immunitario</h6>\n</div>\n</div>"
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"py-[25px] bg-[#73994a] px-[20px]\">\n  <div class=\"max-w-[1600px] mx-auto flex flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[10px]\">\n    <div class=\"flex justify-center items-center w-full\">\n      <div class=\"w-full\"><style>\n  .max-w-\\[110px\\]{\n    max-width:110px;\n  }\n.quotation{\n    position: relative;\n    top: -30px;\n    width: 60px;\n    margin-right: 10px;\n}\n\n@media(max-width:767px){\n  .quotation {\n    position: absolute;\n    left: 0px;\n    width: 41px;\n    margin-right: 10px;\n    top: 10px;\n}\n}\n  </style>\n<div class=\"flex justify-center items-center flex-col md:flex-row\">\n\n  <div class=\"w-full md:w-[80%] text-[26px] md:text-[36px] text-white font-normal text-center flex items-center justify-center m:!flex-col\">\n  <!-- <img width='279' height='138' class='ml-4 quotation' src='https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Quote_-_LPILL.png?v=1691175271' alt='star' />    -->\n    <span>La salute dell'intestino è essenziale per una vita sana. L-Biome sostiene il vostro percorso</span>\n  <img width=\"279\" height=\"138\" class=\"max-w-[110px] ml-4\" src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/biome_2x_563159be-dc78-48f2-85bd-7f70a39d004c.png?v=1693580228\" alt=\"star\"> </div>\n  \n</div></div>\n    </div>\n  </div>\n</div>"
+      }
+    },
+    "d6f94f93-cc06-4a7e-95a0-1a417b314df1": {
+      "type": "advanced-content",
+      "blocks": {
+        "2f7d9388-59e5-48e0-812b-7e84a45b812d": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal hero__animation-contents\n         !delay-200\"><b>L-BIOME</b> per una ottimale <b>salute intestinale</b></h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">Il\n<b>lactobacillus rhamnosus HN001</b> e il <b>bifidumbacte-\nrium Breve B3</b> contribuiscono al <b>riequilibrio della\nflora batterica intestinale supportando il sistema\nintestinale-immunitario favorendo il metabolismo</b>.\nL’inulina contribuisce a fornire il nutrimento dei\nceppi probiotici. Il <b>DHA e la lisina promuovono l’integrità e il buon funzionamento dei tessuti</b>, come\nquello intestinal</p>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pills_2_1500x900_2bfdaca8-6da0-4bf8-a917-2162b357ccd8.webp?v=1700494475\" alt=\"L-Biome\">",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "template--19874577383773__d6f94f93-cc06-4a7e-95a0-1a417b314df1-liquid-1": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Bifidobacterium breve B-3</h4>\n<p>Test clinici hanno dimostrato che l’assunzione di B. breve B-3 ha ridotto la massa grassa dei soggetti adulti con tendenza all’obesità. È stato osservato un possibile miglioramento della reazione infiammatoria sistemica mediante la somministrazione di B. breve B-3.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lactobacillus Rhamnosus Hn001</h4>\n<p>È un probiotico particolarmente resistente all'azione della bile. Grazie a questa funzionalità, è in grado di colonizzare la parte superiore dell'intestino tenue e il colon. Numerosi studi dimostrano che L. rhamnosus HN001 ha un impatto benefico sulla funzione della barriera intestinale.</p>\n</div>\n\n<div id=\"elem-3\" class=\"mt-10 box-elem md:text-left text-center\">\n\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Inulina</h4>\n<p>è una fibra insolubile. Sebbene i cibi raffinati forniscano gusto ed energia, essi sono carenti di fibre e il loro consumo a lungo termine può portare a diversi disturbi. Diversi studi dimostrano che l’inulina agisce come un prebiotico e può <strong>supportare la crescita delle specie Bifidobacteria e Lactobacillus</strong> nel tratto intestinale, promuovendo una buona salute dell'apparato digerente.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "18391cac-f91b-467f-b878-46b9b5eca3c6": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-4\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">DHA</h4>\n<p>È un acido grasso polinsaturo omega-3 essenziale, componente dei fosfolipidi in vari organi, tra cui cuore, cervello e retina. L'assunzione di <strong>DHA contribuisce  a conservare la fisiologica funzione cerebrale ed al mantenimento della capacità visiva</strong> normale. Studi dimostrano che le popolazioni europee consumano pochi alimenti contenenti DHA, creando situazioni di carenza che possono essere affrontate attraverso l'integrazione.</p>\n</div>\n\n<div id=\"elem-5\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lisina</h4>\n<p>È un aminoacido essenziale per l’uomo e deve quindi essere assunto attraverso la dieta. La lisina svolge diversi ruoli negli esseri umani, soprattutto nella <strong>proteinogenesi</strong>, ma anche nella reticolazione dei polipeptidi del <strong>collagene</strong>.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "2f7d9388-59e5-48e0-812b-7e84a45b812d",
+        "template--19874577383773__d6f94f93-cc06-4a7e-95a0-1a417b314df1-liquid-1",
+        "18391cac-f91b-467f-b878-46b9b5eca3c6"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "c7d86dd0-6395-4b6a-a634-e195f68facff": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"w-full bg-[#F7F9FB] pl-wrapper-custom-content caricato_animazione\">\n   <div class=\"w-full max-w-[1600px] mx-auto\">\n     <div class=\"flex flex-col md:flex-row items-start aware-center\">\n       <div class=\"w-full md:w-[40%] px-[20px] mb-[0px] md:mb-0 py-[25px] md:py-[50px] \">\n         <span class=\"inline-block py-px px-[20px] mb-[15px] text-xs leader-5 testo-bianco bg-prolon font-medium maiuscolo hero__animazione-contenuti !delay-100\">\n         </span>\n         <h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal hero__animation-contents\n         !delay-200\">Ingredienti per una ottimale <b>salute intestinale</b></h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">La ricerca ha dimostrato gli effetti benefici dei programmi di digiuno prolungato sul microbioma , favorendo la crescita di microbi benefici. Il prodotto L-Biome integra fibre prebiotiche e due probiotici essenziali, rispecchiando il microbioma post-digiuno. In linea con la nostra etica di ProLon, L-Biome incorpora anche DHA per supportare un invecchiamento sano di vari organi e sistemi.</p>\n       </div>\n       <div class=\"w-full md:w-[60%] px-[20px] mb-[40px] md:mb-0\">\n           <div class=\"flex flex-wrap pt-[20px] hero__animation-contents !delay-400\">\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Bifidobacterium breve B-3\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Bifidobacterium breve B-3 supporta la riduzione del peso e grasso corporeo e aiuta inoltre a mantenere i livelli di glucosio, insulina e colesterolo nel sangue entro un intervallo normale. Questo è uno dei microbioti essenziali che fiorisce dopo ProLon 5 Giorni Mima Digiuno.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Lactobacillus Rhamnosus Hn001\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                  Lactobacillus Rhamnosus Hn001 supporta una sana funzione digestiva e intestinale, promuove una sana integrità della barriera intestinale, supporta la salute del sistema intestino-immunitario e incoraggia il comfort digestivo e regolare assorbimento dei nutrienti. Questo è uno dei microbioti essenziali che fiorisce dopo ProLon 5 Giorni Mima Digiuno.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                  Radice<br>di cicoria: Prebiotico\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   L-Biome contiene anche prebiotici come la radice di cicoria, che può supportare la sana funzione del tratto gastrointestinale, promuovere la produzione benefica di acidi grassi a catena corta da parte del microbiota intestinale sano e fornisce prebiotici funzionali che possono aiutare la crescita delle specie Bifidobatteri e Lactobacilli nella microflora intestinale.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   DHA\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Con i claims approvati dall'EFSA per promuovere la salute cardiovascolare, la salute del cervello e la salute degli occhi nel range di normalità in tutte le fasi della vita. Il DHA è un componente strutturale del cervello umano e della retina dell'occhio. Il DHA può anche influenzare positivamente la salute del sistema intestino-cervello, promuovendo l’integrità della parete intestinale e sostenere la salute immunitaria del corpo.\n                 </p>\n               </div>\n            \n<div class=\"w-full border-b-0 border-transparent flex aware-center items-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Lisina\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Lisina E' un'aminoacido essenziale per tutta la durata della vita. Stimola i processi di costruzione dei tessuti, e ha un ruolo fondamentale nei momenti di stress (impegno fisico intenso, lesioni, ferite, ustioni, interventi chirurgici). E' indispensabile per molte regolazioni biochimiche, ma sopratutto per lo sviluppo corporeo e la crescita delle masse muscolari. Trova particolare indicazione la supplementazione con questo aminoacido in caso di Herpes acuto e ricorrente.\n                 </p>\n               </div>\n            \n\n\n           </div>\n       </div>\n     </div>\n   </div>\n</div>"
+      }
+    },
+    "ae094bbe-ea50-46ab-ac65-e8b1852a1786": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"py-[25px] bg-[#73994a] px-[20px]\">\n  <div class=\"max-w-[1600px] mx-auto flex flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[10px]\">\n    <div class=\"flex justify-center items-center w-full\">\n      <div class=\"w-full\"><style>\n  .max-w-\\[110px\\]{\n    max-width:110px;\n  }\n.quotation{\n    position: relative;\n    top: -30px;\n    width: 60px;\n    margin-right: 10px;\n}\n\n@media(max-width:767px){\n  .quotation {\n    position: absolute;\n    left: 0px;\n    width: 41px;\n    margin-right: 10px;\n    top: 10px;\n}\n}\n  </style>\n<div class=\"flex justify-center items-center flex-col md:flex-row\">\n\n  <div class=\"w-full md:w-[80%] text-[26px] md:text-[36px] text-white font-normal text-center flex items-center justify-center m:!flex-col\">\n  <img width=\"279\" height=\"138\" class=\" ml-4 quotation\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Quote_-_LPILL.png?v=1691175271\" alt=\"star\">   \n    <span>L-Pill è l'<span class=\"font-medium italic\">unico integratore</span> che prenderei. <span class=\"text-base font-medium m:block\">- Dr. Valter Longo</span></span>\n  <img width=\"279\" height=\"138\" class=\"max-w-[110px] ml-4\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Valter_-_testimonial.png?v=1691175272\" alt=\"star\"> </div>\n  \n</div></div>\n    </div>\n  </div>\n</div>"
+      }
+    },
+    "630f66d5-88af-470d-9d68-5c9d4cb2f86f": {
+      "type": "advanced-content",
+      "blocks": {
+        "07eec200-748e-46a8-b385-9017633d4238": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal hero__animation-contents\n         !delay-200\"><b>L-PILL</b> per un invecchiamento <b>sano</b></h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">La qualità e il ritmo della nostra età biologica sono i principali determinanti per una vita lunga e sana. La forza di L-Pill risiede nella sua combinazione unica di quattro ingredienti naturali studiati per i loro potenziali benefici nel sostenere un invecchiamento sano con funzione <strong>antiossidante e tonico</strong>.</p>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pills_1500x900_4bc959b7-52e2-4fe6-80b6-ec9663f45521.webp?v=1700492637\" alt=\"L-Pill\">",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "174fde96-e348-413e-9e50-774c03260db3": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-4\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">DHA</h4>\n<p>È un acido grasso polinsaturo omega-3 essenziale, componente dei fosfolipidi in vari organi, tra cui cuore, cervello e retina. L'assunzione di <strong>DHA contribuisce  a conservare la fisiologica funzione cerebrale ed al mantenimento della capacità visiva</strong> normale. Studi dimostrano che le popolazioni europee consumano pochi alimenti contenenti DHA, creando situazioni di carenza che possono essere affrontate attraverso l'integrazione.</p>\n</div>\n\n<div id=\"elem-5\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lisina</h4>\n<p>È un aminoacido essenziale per l’uomo e deve quindi essere assunto attraverso la dieta. La lisina svolge diversi ruoli negli esseri umani, soprattutto nella <strong>proteinogenesi</strong>, ma anche nella reticolazione dei polipeptidi del <strong>collagene</strong>.</p>\n</div>\n\n<div id=\"elem-5\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Estratto di Wasabi Japonica ricco in isotiocianati</h4>\n<p><strong>Gli isotiocianati</strong> derivano dall'idrolisi dei glucosinolati, composti contenenti zolfo dal caratteristico odore, presenti nelle verdure crucifere molto noti per la loro funzione digestiva.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "9c7c9a31-928e-42e8-8798-84336aa7036b": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Estratto di zucchero canna ricco in polifenoli e flavonoidi</h4>\n<p>I <strong>polifenoli</strong> costituiscono un ampio gruppo di sostanze organiche naturali\nSostanze tra cui ftavonoidi. Numerosi studi hanno trovato un legame tra il consumo di <strong>flavonoidi</strong>, l'azione <strong>anti-invecchiamento</strong> e la capacità di eliminare i <strong>radicali liberi</strong> mediante processi di trasferimento di elettroni.</p>\n</div>\n\n<div id=\"elem-3\" class=\"mt-10 box-elem md:text-left text-center\">\n\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Estratto di Tè verde (catechine, caffeina) </h4>\n<p>L'estratto di foglie di Camellia sinensis, come da linee guida del Ministero della salute, contribuisce al drenaggio dei liquidi corporei, all’equilibrio del peso corporeo, alla normale funzionalita intestinale, tonico e antiossidante.\n</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "07eec200-748e-46a8-b385-9017633d4238",
+        "174fde96-e348-413e-9e50-774c03260db3",
+        "9c7c9a31-928e-42e8-8798-84336aa7036b"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "a2f8eb87-d2c1-4a1c-a73a-26df393761a9": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"w-full bg-[#F7F9FB] pl-wrapper-custom-content caricato_animazione\">\n   <div class=\"w-full max-w-[1600px] mx-auto\">\n     <div class=\"flex flex-col md:flex-row items-start aware-center\">\n       <div class=\"w-full md:w-[40%] px-[20px] mb-[0px] md:mb-0 py-[25px] md:py-[50px] \">\n         <span class=\"inline-block py-px px-[20px] mb-[15px] text-xs leader-5 testo-bianco bg-prolon font-medium maiuscolo hero__animazione-contenuti !delay-100\">         </span>\n         <h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal hero__animation-contents\n         !delay-200\">Ingredienti per un invecchiamento sano</h2>\n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">La qualità e il ritmo della nostra età biologica sono i principali determinanti per una vita lunga e sana. La forza di L-Pill risiede nella sua combinazione unica di quattro ingredienti naturali che sono stati consumati da milioni di persone e studiati per i loro potenziali benefici nel sostenere un invecchiamento sano.</p>\n       </div>\n       <div class=\"w-full md:w-[60%] px-[20px] mb-[40px] md:mb-0\">\n           <div class=\"flex flex-wrap pt-[20px] hero__animation-contents !delay-400\">\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   DHA\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Con i claims approvati dall'EFSA per promuovere la salute cardiovascolare, la salute del cervello e la salute degli occhi nel range di normalità in tutte le fasi della vita. Il DHA è un componente strutturale del cervello umano e della retina dell'occhio. Il DHA può anche influenzare positivamente la salute del sistema intestino-cervello, promuovendo l’integrità della parete intestinale e sostenere la salute immunitaria del corpo.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Wasabi<br>Japonica\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   È noto che il rizoma/radice di Wasabi japonica prende di mira in modo naturale una rete di regolamentazione genetica coinvolta nella protezione delle cellule e nel supporto della salute e della disintossicazione del fegato, della sana funzione immunitaria e della salute del cervello.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Estratto di zucchero canna\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Molto ricco di polifenoli, flavonoidi e proantociani, favorisce la salute metabolica (supporta livelli di glucosio), promuove un sano stato antiossidante di lipidi, proteine e mitocondri e una sana immunomodulazione secondaria all'attività quotidiana, all'esercizio fisico e all'invecchiamento.\n                 </p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Estratto di Tè verde\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   L'estratto di foglie di tè verde di Camellia sinensis, che include catechine contenenti ECGC e caffeina e supporta l'energia percepita sostenuta, può promuovere un sano stato antiossidante, incoraggia la protezione cellulare, la funzione metabolica e la salute cardiovascolare e incoraggia la salute del cervello e la funzione del sistema immunitario.\n                 </p>\n               </div>\n</div>\n            \n<div class=\"w-full border-b-0 border-transparent flex aware-center items-start py-[25px] md:py-[50px] hero__animation-contents\">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Lisina\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                   Lisina E' un'aminoacido essenziale per tutta la durata della vita. Stimola i processi di costruzione dei tessuti, e ha un ruolo fondamentale nei momenti di stress (impegno fisico intenso, lesioni, ferite, ustioni, interventi chirurgici). E' indispensabile per molte regolazioni biochimiche, ma sopratutto per lo sviluppo corporeo e la crescita delle masse muscolari. Trova particolare indicazione la supplementazione con questo aminoacido in caso di Herpes acuto e ricorrente.\n                 </p>\n               </div>\n            \n           </div>\n       </div>\n     </div>\n   </div>"
+      }
+    },
+    "9ad313b2-be01-443d-b2e0-3a1675b19707": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_61c35b35a52f450c9e53e6442d2a2f6b.jpg",
+        "image_width": 700,
+        "subtitle": "PERCHÈ L-BIOME & L-PILL",
+        "title": "L'innovazione incontra la natura.",
+        "text": "<p>Il nostro L-Biome, garantisce un dosaggio ottimale di questi ingredienti in modo sicuro ed efficace. Il DHA e gli altri ingredienti sono racchiusi in modo sicuro all'interno, rilasciando gradualmente i loro potenziali benefici nel tempo.</p>\n\n<p>La nostra L-Pill, garantisce un dosaggio ottimale di questi ingredienti in modo sicuro ed efficace. Il DHA è legato all'aminoacido essenziale L-lisina formando un sale, che rende il DHA più facilmente assimilabile dall'organismo aumentandone l'efficacia.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "right",
+        "divider": true
+      }
+    },
+    "33a23363-5d8f-4509-90fb-6e26373ac191": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/assets_l-biome_img3_1000x_e623d2df-3a46-439f-a4e8-f3d99072949a.webp",
+        "image_width": 700,
+        "subtitle": "COME FUNZIONA",
+        "title": "Come e quando si usa",
+        "text": "<p>L-Biome: Può essere utilizzato quotidianamente da chiunque abbia un'età compresa tra i 18 e gli 80 anni. L'uso migliore è quello di assumerlo dopo aver fatto uno dei prodotti ProLon per la nutrizione del digiuno: 5 Days Fasting Mimicking Diet, One Day Reset Nutrition, Fast Bar oFasting Shake. È possibile interrompere e ricominciare in qualsiasi momento a proprio piacimento. Se si è affetti da patologie, consultare il proprio medico prima di assumere L-Biome. Non assumere L-Biome in caso di allergia a uno dei suoi ingredienti.</p>\n<p>L-Pill: Assumere due capsule al giorno prima o durante un pasto. È possibile interrompere e riprendere l'assunzione in qualsiasi momento di gradimento. lSe si soffre di una condizione di salute, consultare il medico prima di assumere la L-Pillola. Non assumere L-Pill se si è allergici a uno dei suoi ingredienti.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1337cd0b-ea23-4662-b9f3-189d448b6eed": {
+      "type": "promo-grid",
+      "blocks": {
+        "b04c15c5-a1d8-41e0-a2fe-a4b6e34b559a": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora"
+          }
+        }
+      },
+      "block_order": [
+        "b04c15c5-a1d8-41e0-a2fe-a4b6e34b559a"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "74663a54-a1c8-4132-8096-4d3c28f82466": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<div class=\"custom-content \">\n  \n    \n    <div class=\"custom__item small--one-whole one-quarter align--center\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <p class=\"accent-subtitle text-center no-margin\">Esperti di nutrizione clinica</p>\n<p class=\"h3 text-center no-margin\">Coaching Gratuito</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n    \n    <div class=\"custom__item small--one-whole one-third align--top-middle\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0001_Carmen_Loverso_1d0b06b1-1db1-496d-a366-fc0cb45acd7c.jpg?v=1676879198\" title=\"Carmen Loverso\">\n<h4 class=\"small-margin\"><b>Carmen Loverso</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p><p>Laureata magistrale dal 2017 in Alimentazione e Nutrizione Umana, ama praticare sport e ed è appassionata di cucina salutare. Longevità significa amare l’unico posto in cui vivrai per sempre: il tuo corpo.</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n    \n    <div class=\"custom__item small--one-whole one-third align--top-middle\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0003_Benedetta_Zenobi_d470f2c8-a6ad-4799-9d8c-c22b56c93312.jpg?v=1676879198\" title=\"Benedetta Zenobi\">\n<h4 class=\"small-margin\"><b>Benedetta Zenobi</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p><p>Laureata magistrale dal 2018 in Alimentazione e Nutrizione Umana, appassionata di cucina naturale. Per Benedetta, Longevità significa mangiare salutare, pensare positivo a vivere in salute.</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n  \n  </div>"
+      }
+    },
+    "b4f5c3b1-2c34-435f-bfc3-999621e63421": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19864274862429__b4f5c3b1-2c34-435f-bfc3-999621e63421-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<style>\n.d-open[open] summary {\n  padding-bottom: 20px;\n}\n</style>\n<div class=\"product-ref\">\n<details class=\"d-open\"> \n<summary><b>Riferimenti</b></summary>\n\n<p><strong>Bifidumbacterium breve B-3:</strong></p>\n\n\n\n<ul>\n<li>Minami, J.I., Kondo, S., Yanagisawa, N., et al., 2015. <strong>Oral administration of <em>Bifidobacterium breve</em> B-3 modifies metabolic functions in adults with obese tendencies in a randomised controlled trial.</strong> <em>Journal of Nutritional Science</em>, 4.</li>\n\n\n\n<li>Minami, J., Iwabuchi, N., Tanaka, M., et al., 2018. Effects of <em>Bifidobacterium breve</em> B-3 on body fat reductions in pre-obese adults: a randomized, double-blind, placebo-controlled trial. <em>Bioscience of Microbiota, Food and Health</em>, pp.18-001.</li>\n\n\n\n<li>Inoue T, Kobayashi Y, Mori N, Sakagawa M, et al., 2018. Effect of combined bifidobacteria supplementation and resistance training on cognitive function, body composition and bowel habits of healthy elderly subjects. <em>Benef Microbes</em>. 2018 Dec 7;9.</li>\n</ul>\n\n\n\n<p><strong>&nbsp;</strong><strong>Lactobacillus rhamnosus HN001:</strong></p>\n\n\n\n<ul>\n<li>González-Hernández LA, Jave-Suarez LF, Fafutis-Morris M, Montes-Salcedo KE, Valle-Gutierrez LG, Campos-Loza AE, Enciso-Gómez LF, Andrade-Villanueva JF (2012) Synbiotic therapy decreases microbial translocation and inflammation and improves immunological status in HIV-infected patients: a double-blind randomized controlled pilot trial. <em>Nutr J</em> 11:90.</li>\n\n\n\n<li>Mokkala K, Pussinen P, Houttu N, Koivuniemi E, Vahlberg T, Laitinen K. (2018) The impact of probiotics and n-3 long-chain polyunsaturated fatty acids on intestinal permeability inpregnancy: a randomised clinical trial. <em>Beneficial Microbes</em> 9(2): 199-208</li>\n\n\n\n<li>Kruger MC, Fear A, Chua WH, Plimmer GG, Schollum LM (2009) The effect of <em>Lactobacillus rhamnosus</em> on mineral absorption and bone health in growing male and ovariectomised female rats. <em>Dairy Science &amp; Technology</em> 89:219-231.</li>\n\n\n\n<li>Tannock GW, Taylor C, Lawley B, Loach D, Gould M, Dunn AC, McLellan AD, Black MA, McNoe L, Dekker J, Gopal P, Collett MA (2014) Altered transcription of murine genes induced in the small bowel by administration of probiotic strain <em>Lactobacillus rhamnosus</em> HN001. <em>Applied and Environmental Microbiology</em> 80:2851-2859</li>\n\n\n\n<li>Miller LE, Ouwehand AC (2013) Probiotic supplementation decreases intestinal transit time: Meta- HN019, analysis of randomized controlled trials. <em>World Journal of Gastroenterology</em> 19:4718-4725</li>\n</ul>\n\n\n\n<p><strong>Inulina :</strong></p>\n\n\n\n<ul>\n<li>Shah BR, Li B, Al Sabbah H, Xu W, Mráz J. <strong>Effects of prebiotic dietary fibers and probiotics on human health</strong>: With special focus on recent advancement in their encapsulated formulations. <em>Trends Food Sci Technol</em>. 2020 Aug;102:178-192.</li>\n\n\n\n<li>den Besten G., van Eunen K., Groen A.K., Venema K., Reijngoud D.-J., Bakker B.M. <strong>The role of short-chain fatty acids in the interplay between diet, gut microbiota, and host energy metabolism</strong>. <em>Journal of Lipid Research</em>. 2013;54(9):2325–2340.</li>\n\n\n\n<li>Dewulf E., Cani P., Claus S., Neyrinck A., Puylaert P., Glenn G.…Delzenne N. INULIN-TYPE fructans with prebiotic properties lessen endotoxemia and modulate host metabolism by changing gut microbiota composition in obese women: 749 accepted poster. <em>Obesity Facts</em>. 2012;5:200–201.</li>\n\n\n\n<li>Dewulf E.M., Cani P.D., Neyrinck A.M., Possemiers S., Van Holle A., Muccioli G.G.…Sohet F.M. Inulin-type fructans with prebiotic properties counteract GPR43 overexpression and PPARγ-related adipogenesis in the white adipose tissue of high-fat diet-fed mice. <em>The Journal of Nutritional Biochemistry</em>. 2011;22(8):712–722.</li>\n\n\n\n<li>Nicolucci A.C. Prebiotics reduce body fat and alter intestinal microbiota in children who are overweight or with obesity. <em>Gastroenterology</em>. 2017;153(3):711–722</li>\n</ul>\n\n\n\n<p>&#xFEFF;</p>\n\n\n\n<p><strong>Algal Oil DHA</strong></p>\n\n\n\n<ul>\n<li>Costantini L, Molinari R, Farinon B, Merendino N. <strong>Impact of Omega-3 Fatty Acids on the Gut Microbiota.</strong> <em>Int J Mol Sci</em>. 2017 Dec 7;18(12):2645 <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/</a></li>\n</ul>\n\n\n\n<ul>\n<li>Jayapala H, Lim SY. N-3 Polyunsaturated Fatty Acids and Gut Microbiota. <em>Comb Chem High Throughput Screen</em>. 2022 Jul 1. doi: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35786331/\" target=\"_blank\" rel=\"noreferrer noopener\">https://pubmed.ncbi.nlm.nih.gov/35786331/</a></li>\n\n\n\n<li>Rousseau G. Microbiota, a New Playground for the <strong>Omega-3 Polyunsaturated Fatty Acids in Cardiovascular Diseases</strong>. <em>Mar Drugs</em>. 2021 Jan 23;19(2):54. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/</a></li>\n\n\n\n<li>Stillwell W, Wassall SR. Docosahexaenoic acid: membrane properties of a unique fatty acid. <em>Chem Phys Lipids</em>. 2003;126(1):1-27.</li>\n\n\n\n<li>Serhan CN. Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology. <em>Nature</em>. 2014 Jun 5; 510(7503): 92–101.</li>\n\n\n\n<li>Kotani S, Sakaguchi E, Warashina S, et al. <strong>Dietary supplementation of arachidonic and docosahexaenoic acids improves cognitive dysfunction</strong>. <em>Neurosci Res</em> 2006;56(2):159-64.</li>\n\n\n\n<li>Innes JK, Calder PC. Marine <strong>Omega-3 (N-3) Fatty Acids for Cardiovascular Health</strong>: An Update for 2020. <em>Int J Mol Sci</em>. 2020 Feb 18;21(4):1362.</li>\n\n\n\n<li>SanGiovanni JP, Chew EY. The role of omega-3 long-chain polyunsaturated fatty acids in health and disease of the retina. <em>Prog Retin Eye Res</em>. 2005;24(1):87-138</li>\n</ul>\n\n\n\n<p><strong>Wasabi Japonica</strong></p>\n\n\n\n<ul>\n<li>6-(methylsulfinyl)hexyl isothiocyanate (6-MITC) from Wasabia japonica alleviates inftammatory bowel disease (IBD) by potential inhibition of glycogen synthase kinase 3 beta (GSK-3b)_European Journal of Medicinal Chemistry _2021.<ul><li>Anti-Diabetic Obesity Effects of Wasabia Japonica Matsum Leaf Extract on 45% Kcal High-Fat Diet-Fed Mice_Nutrients_2021</li></ul><ul><li>Anti-oxidant and Anti-hypercholesterolemic Activities of Wasabia japonica_eCAM_2010_IF2.6. 9</li></ul><ul><li>Anticancer and Anti-Neuroinftammatory Constituents Isolated from the Roots of Wasabia japonica_an- tioxidants_2022</li></ul><ul><li>Bactericidal activity of wasabi (Wasabia japonica) against Helicobacter pylori_International Journal of Food Microbiology_2004</li></ul><ul><li>Inhibitory effects of Japanese horseradish (Wasabia japonica) on the formation and genotoxicity of a potent carcinogen, acrylamide_J Sci Food Agric_2017</li></ul><ul><li>Wasabi leaf extracts attenuate adipocyte hypertrophy through PPARγ and AMPK_Bioscience, Biotechnolo- gy, and Biochemistry_2016</li></ul><ul><li>Molecular Mechanisms Underlying Anti-Inftammatory Actions of 6-(Methylsulfinyl)hexyl Isothiocyanate Derived from Wasabi (Wasabia japonica )_Advances in Pharmacological Sciences_2012</li></ul><ul><li>Neuroprotective and Anti-Inftammatory Activities of Allyl Isothiocyanate through Attenuation of JNK/NF-κ</li></ul><ul><li>Anti-angiogenic effects of dietary isothiocyanates/ Mechanisms of action and implications for human health_Biochemical Pharmacology_2011</li></ul>\n<ul>\n<li>Anti-inftammatory potential of allyl-isothiocyanate – role of Nrf2, NF-(k)B and microRNA-155_J. Cell. Mol.</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>Med._2012</p>\n\n\n\n<ul>\n<li>Neuroprotective and Anti-Inftammatory Activities of Allyl Isothiocyanate through Attenuation of JNK/NF-κ B/TNF-α Signaling_Int. J. Mol. Sci_2017_</li>\n</ul>\n\n\n\n<p><strong>Flavonoidi e polifenoli da estratto di zucchero di canna</strong></p>\n\n\n\n<ul>\n<li>Antithrombotic activity of ftavonoids and polyphenols rich plant speciesMIRZA BOJIĆ ; University of Zagreb Faculty of Pharmacy and Biochemistry, Department of Medicinal Chemistry, HR-10000 Zagreb, Croatia<ul><li>Raúl Arcusa, Juan Ángel Carillo, Begoña Cerdá, Thierry Durand, Ángel Gil-Izquierdo, Sonia Medina, Jean-Marie Galano, María Pilar Zafrilla, Javier Marhuenda, Ability of a Polyphenol-Rich Nutraceutical to Reduce Central Nervous System Lipid Peroxidation by Analysis of Oxylipins in Urine: A Randomized, Double-Blind, Place- bo-Controlled Clinical Trial, Antioxidants, 10.3390/antiox12030721, 12, 3, (721), (2023).</li></ul><ul><li>Michael Aviram, Bianca Fuhrman,Polyph enolic ftavonoids inhibit macrophage-mediated oxidation of LDL and attenuate atherogenesis,Atherosclerosis</li></ul><ul><li>Postprandial insulin and glucose levels are reduced in healthy subjects when a standardised breakfast meal is supplemented with a filtered sugarcane molasses concentrate_EurJnutr_2015</li></ul><ul><li>Antioxidant and Anti-Diabetic Functions of a Polyphenol-Rich Sugarcane Extract_JAmerCollofNutr_2019_</li></ul><ul><li>A polyphenol rich sugarcane extract as a modulator for inftammation and T neurological disorders_Phar- maNutr_2020</li></ul><ul><li>Immunomodulatory Properties of Polyphenol-Rich Sugarcane Extract on Human Monocytes_Biologic- s_2021</li></ul><ul><li>Age-Deterring and Skin Care Function of a Polyphenol Rich Sugarcane Concentrate_Cosmetics_2020</li></ul><ul><li>Antioxidant activity and polyphenol composition of sugarcane molasses extract_JFoodChem_2020_</li></ul>\n<ul>\n<li>Phytochemical profile of sugarcane and its potential health aspects_PhcogRev_2015_I</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p><strong>Catechine e caffeina da Estratto di the verde</strong></p>\n\n\n\n<ul>\n<li>Luis Goya, Ricardo San Román, Sonia de Pascual-Teresa, Polyphenols’ Effect on Cerebrovascular Health, Current Medicinal Chemistry, 10.2174/0929867328666211129123459, 29, 6, (1029-1044), (2022).<ul><li>Sally C. Duplantier, Christopher D. Gardner, A Critical Review of the Study of Neuroprotective Diets to Reduce Cognitive Decline, Nutrients, 10.3390/nu13072264, 13, 7, (2264), (2021).</li></ul>\n<ul>\n<li>Bradley J. McEwen, Impact of cardiometabolic disease on cognitive function, Nutraceuticals in Brain Health and Beyond, 10.1016/B978-0-12-820593-8.00025-2, (357-368), (2021).</li>\n</ul>\n</li>\n</ul>\n\n\n\n<ul>\n<li>Chacko SM, Thambi PT, Kuttan R, Nishigaki I. Beneficial effects of green tea: a literature review. Chin Med. 2010 Apr 6;5:13. doi: 10.1186/1749-8546-5-13. PMID: 20370896; PMCID: PMC2855614.<ul><li>Prasanth MI, Sivamaruthi BS, Chaiyasut C,Tencomnao T. A Review of the Role of Green Tea (Camellia sinen- sis) in Antiphotoaging, Stress Resistance, Neuroprotection, and Autophagy. Nutrients. 2019 Feb 23;11(2):474. doi: 10.3390/nu11020474. PMID: 30813433; PMCID: PMC6412948.</li></ul>\n<ul>\n<li>Mengyuan Si, Zhongyuan Liu, Yingchao Dou, Guanyu Yang, Synthesis of Catechol Thioethers through Gallic Acid/Fe2(SO4)3 Catalyzed Aerobic Oxidative Coupling of Thiols and Catechol Derivatives, ChemistrySelect, 10.1002/slct.202103752, 6, 48, (13781-13785), (2021).</li>\n</ul>\n</li>\n</ul>\n</details>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19864274862429__b4f5c3b1-2c34-435f-bfc3-999621e63421-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "810f2a51-b7bb-4fbf-befb-a73dffa14a02",
+    "ef6fd7d5-33e8-4878-8f00-b00625cdcad0",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "d6f94f93-cc06-4a7e-95a0-1a417b314df1",
+    "c7d86dd0-6395-4b6a-a634-e195f68facff",
+    "ae094bbe-ea50-46ab-ac65-e8b1852a1786",
+    "630f66d5-88af-470d-9d68-5c9d4cb2f86f",
+    "a2f8eb87-d2c1-4a1c-a73a-26df393761a9",
+    "9ad313b2-be01-443d-b2e0-3a1675b19707",
+    "33a23363-5d8f-4509-90fb-6e26373ac191",
+    "1337cd0b-ea23-4662-b9f3-189d448b6eed",
+    "74663a54-a1c8-4132-8096-4d3c28f82466",
+    "b4f5c3b1-2c34-435f-bfc3-999621e63421",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "recommendations",
+    "collection-return"
+  ]
+}

@@ -1,0 +1,521 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme",
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true,
+        "parallax_direction": "top"
+      }
+    },
+    "2f359ad2-0da7-47e9-9ed2-e8e447a23720": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "fd8b5800-458f-4e1d-896d-776f17599cda": {
+      "type": "pl-product-grid",
+      "blocks": {
+        "products_D4Vxna": {
+          "type": "products",
+          "settings": {
+            "product": "complete-summer-travel-pack",
+            "title": "Summer Travel Pack",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -30%</span>",
+            "description": "Include: 1x ProLon ReSet - kit 1 giorno, 12x Nutrition Bar, 12x L-Protein, L-Pill (x30), 1x ProLon 5 Giorni",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<small>a partire da</small><span class=\"text-red-600\">144,20€</span>",
+            "price_red": false,
+            "discount": "",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]",
+            "image": "shopify://shop_images/01_back.png",
+            "handle": "complete-summer-travel-pack"
+          }
+        },
+        "products_rrmiLV": {
+          "type": "products",
+          "settings": {
+            "product": "",
+            "title": "Longevity Nutrition Program",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -24%</span>",
+            "description": "Include: 1x ProLon ReSet - kit 1 giorno, 12x Nutrition Bar, 12x L-Protein, L-Pill (x30), 1x Crema spalmabile",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del>207,90€</del> <span class=\"text-red-600\">158€</span>",
+            "price_red": false,
+            "discount": "",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]",
+            "image": "shopify://shop_images/LongevityNutritionProgram.png",
+            "handle": "longevity-nutrition-program"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1": {
+          "type": "products",
+          "settings": {
+            "product": "beginner-bundle",
+            "title": "Beginner Bundle",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: 1x ProLon ReSet - kit 1 giorno, 12x Nutrition Bar, 12x L-Protein, 1x Crema spalmabile",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del>188,90€</del> <span class=\"text-red-600\">151€</span>",
+            "price_red": true,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/beginner_copia.jpg",
+            "handle": "beginner-bundle"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2": {
+          "type": "products",
+          "settings": {
+            "product": "everyday-longevity-nutrition",
+            "title": "Longevity Bundle",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: Kit Dieta Mima Digiuno (x1), L-Protein (x12), L-Pill (x30), Crema spalmabile (x1)",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del>348,90€</del> <span class=\"text-red-600\">279,12€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Acquista ora",
+            "btn_url": "",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/longevity_copia.jpg",
+            "handle": "longevity-bundle"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-nutrition-bar",
+            "title": "Intermittent Fasting Bundle",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: Kit Dieta Mima Digiuno (x1), Nutrition Bar (x12), ProLon ReSet - kit 1 giorno (x2), L-Biome (x30)",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del>356€</del> <span class=\"text-red-600\">284,80€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/INTERMITTENT_FASTING_BUNDLE_copia.jpg",
+            "handle": "intermittent-fasting-bundle"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7": {
+          "type": "products",
+          "settings": {
+            "product": "everyday-longevity-nutrition",
+            "title": "Everyday Longevity Nutrition",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: L-Protein (x12), L-Pill (x30), Crema spalmabile (x1)",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del> 197€</del> <span class=\"text-red-600\">158€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Shop Now",
+            "btn_url": "/products/everyday-longevity-nutrition",
+            "btn_color": "text-white hover:text-black bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/everyday_copia.jpg",
+            "handle": "everyday-longevity-nutrition"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5": {
+          "type": "products",
+          "settings": {
+            "product": "everyday-fasting-nutrition",
+            "title": "Everyday Fasting Nutrition",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: Fasting Shake (x14), L-Biome (x30), Crema spalmabile (x1)",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del> 169,90€</del> <span class=\"text-red-600\">136€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/everydayfastingnutrition.jpg",
+            "handle": "performance-bundle"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6": {
+          "type": "products",
+          "disabled": true,
+          "settings": {
+            "product": "summer-essentials-bundle",
+            "title": "Summer Essentials Bundle",
+            "subtitle": "<span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Include: Nutrition Bar (x12), L-Protein (x12), ProLon ReSet - kit 1 giorno (x3), L-Biome (x30)",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del> 229€</del> <span class=\"text-red-600\">183€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -20%",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/SummerEssentialsBundle.jpg",
+            "handle": "summer-essentials-bundle"
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9": {
+          "type": "products",
+          "settings": {
+            "product": "l-biome-l-pill-bundle",
+            "title": "L-Pill & L-Biome",
+            "subtitle": "PER UN INVECCHIAMENTO SANO<br><span class=\"bg-red-600 text-white py-1 px-4 rounded-md whitespace-nowrap\">OFFERTA -20%</span>",
+            "description": "Kit per 30 giorni di L-Pill e L-Biome per favorire la salute e il benessere generale.",
+            "compare_at_price": "<del>$190</del>",
+            "price": "<del> 128€</del> <span class=\"text-red-600\">99€</span>",
+            "price_red": false,
+            "discount": "OFFERTA -23%",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/assets_l-biome-l-pill-bundle_1600x_1920x1920_800x_7fed1772-3e4a-4304-acbd-6eba572fc87b.webp",
+            "handle": "l-biome-l-pill-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "products_D4Vxna",
+        "products_rrmiLV",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9"
+      ],
+      "custom_css": [],
+      "settings": {
+        "id": "shop-products",
+        "title": "<span style=\"font-weight: 600;\">Fate il pieno di energia con i nostri kit per il digiuno</span>",
+        "subtitle": "Prodotti ProLon"
+      }
+    },
+    "7372cee1-d623-4613-8599-d62f659ac166": {
+      "type": "TWImageWithTextV2",
+      "disabled": true,
+      "settings": {
+        "tag": "Final Hours",
+        "title": "Cyber Savings",
+        "description": "<p style=\"margin-left: 20px; text-align:left;\">\n• ProLon - $150 or $175/box<br>\n• ReSet - $25 or $35/box<br>\n• New Fasting Shake<br>\n• New Bundles<br>\n</p>\n<br>\n<p style=\"text-align:left;\"><b>Use code <u>BFCM</u> at checkout</b>.</p>"
+      }
+    },
+    "d6493d46-f7ea-4dca-868f-6457d1e3f3d4": {
+      "type": "promo-grid",
+      "blocks": {
+        "62b99f0b-aa4f-44e9-8600-80b0ada58c11": {
+          "type": "banner",
+          "settings": {
+            "heading": "FREE Fast Bar with orders $100+",
+            "text": "This weekend only - Cyber Weekend Savings",
+            "link": "",
+            "label": "",
+            "color_scheme": "none"
+          }
+        },
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-0": {
+          "type": "simple",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-1": {
+          "type": "simple",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300
+          }
+        }
+      },
+      "block_order": [
+        "62b99f0b-aa4f-44e9-8600-80b0ada58c11",
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-0",
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "a1b70797-2f50-4085-af8d-646224f00410": {
+      "type": "TWProductGrid",
+      "blocks": {
+        "cbcf7a69-69da-4fe3-aac7-74b9fca3306c": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>GEN3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1.rem !important;\">Red Bell Pepper & Onion,  Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$175 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "42252150472862",
+            "subscription_variant_id": "42252150505630"
+          }
+        },
+        "7ef3f6a0-15f9-4c6c-9dad-f1cf31bfaed2": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>Original Soups<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$150 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "41951788564638",
+            "subscription_variant_id": "41951788597406"
+          }
+        },
+        "prolon-5-day-new-flavor": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>Soup Variety 2<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Black Bean, Tomato, Spinach & White Bean, Butternut Squash Quinoa, Butternut Squash</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$150 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "41951788662942",
+            "subscription_variant_id": "41951788695710"
+          }
+        },
+        "reset-gen3": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Gen3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Soup: Green Pea & Chives, Chickpea & Leeks<br>Tea: Hibiscus</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$105 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=42255515844766",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "42255515844766",
+            "subscription_variant_id": "42255515877534"
+          }
+        },
+        "aa5a94a5-cd30-4c13-80bd-d1f959502cda": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Original Soups<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Soup: Tomato, Butternut Squash<br>Tea: Lemon Spearmint</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=41454724251806",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "41454724251806",
+            "subscription_variant_id": "41703468826782"
+          }
+        },
+        "reset-new": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Soup Variety 2<br>\n<span style=\"font-weight:400; line-height: 1rem;\">Soup: Vegetable, Black Bean<br>Tea: Hibiscus</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=41793571848350",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "41793571848350",
+            "subscription_variant_id": "41793571881118"
+          }
+        },
+        "b01534ae-8e43-456a-8b80-1e7ca2eca2e4": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon + Fasting Shake",
+            "description": "<small>GEN3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1.rem !important;\">Red Bell Pepper & Onion,  Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$199 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/prolon-fasting-shake",
+            "handle": "prolon-fasting-shake",
+            "product_id": "7393693532318",
+            "variant_id": "42256905699486",
+            "subscription_variant_id": ""
+          }
+        },
+        "prolon-5-day-gen3": {
+          "type": "cards",
+          "settings": {
+            "title": "Fasting Shake + ReSet",
+            "description": "<small>(3x) Gen3 ReSets + New Fasting Shake<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Soup: Green Pea & Chives, Chickpea & Leeks<br>Shake Mix: Vanilla</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$164 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset-fasting-shake",
+            "handle": "reset-fasting-shake",
+            "product_id": "7393747435678",
+            "variant_id": "42257032347806",
+            "subscription_variant_id": ""
+          }
+        },
+        "42428f13-b84d-463a-b6f3-6a17a972dbc9": {
+          "type": "cards",
+          "settings": {
+            "title": "Fasting Shake + ReSet",
+            "description": "<small>(1) ReSet + New Fasting Shake<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Soup: Tomato, Butternut Squash<br>Shake Mix: Vanilla</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/fasting-shake-reset",
+            "handle": "fasting-shake-reset",
+            "product_id": "7395342024862",
+            "variant_id": "42264434442398",
+            "subscription_variant_id": ""
+          }
+        },
+        "d8452caa-db56-41b7-bb3b-31d4f7acf78b": {
+          "type": "cards",
+          "settings": {
+            "title": "NEW - Fasting Shake",
+            "description": "<small>(1) Pouch = 14 Sachet<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Latest breakthrough in nutrition and <br>healthy aging science. Vanilla Flavor.</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$55 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/fasting-shake",
+            "handle": "fasting-shake",
+            "product_id": "7393863106718",
+            "variant_id": "42257287512222",
+            "subscription_variant_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "cbcf7a69-69da-4fe3-aac7-74b9fca3306c",
+        "7ef3f6a0-15f9-4c6c-9dad-f1cf31bfaed2",
+        "prolon-5-day-new-flavor",
+        "reset-gen3",
+        "aa5a94a5-cd30-4c13-80bd-d1f959502cda",
+        "reset-new",
+        "b01534ae-8e43-456a-8b80-1e7ca2eca2e4",
+        "prolon-5-day-gen3",
+        "42428f13-b84d-463a-b6f3-6a17a972dbc9",
+        "d8452caa-db56-41b7-bb3b-31d4f7acf78b"
+      ],
+      "disabled": true,
+      "settings": {
+        "container_class": "",
+        "grid_text_color": "#000000",
+        "grid_background_color": "#f5f7f2",
+        "desktop_columns": 3,
+        "mobile_columns": 1,
+        "show_quick_view": true,
+        "show_add_to_cart": true
+      }
+    },
+    "9f72f53c-d51a-4dd1-a309-21e7f3c2f8b2": {
+      "type": "TWImageWithTextV1",
+      "disabled": true,
+      "settings": {
+        "title": "New Soup Flavors",
+        "description": "<b>Lentil Curry<br>\nCarrot Ginger<br>\nChickpea & Leeks <br>\nGreen Pea & Chives<br>\nRed Bell Pepper & Onion<br>\n</b>"
+      }
+    },
+    "88d5f465-eb19-4f4d-be50-9543638b634c": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16045366280350__88d5f465-eb19-4f4d-be50-9543638b634c-166904596621ee7255-0": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "<blank></blank>",
+            "width": "50",
+            "height": 460
+          }
+        },
+        "11783840-c60d-49fe-b5a3-516b1e3414e1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "New Soup Flavors",
+            "textarea": "<b>Lentil Curry\nCarrot Ginger\nChickpea & Leeks \nGreen Pea & Chives\nRed Bell Pepper & Onion\n</b>",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 380,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--16045366280350__88d5f465-eb19-4f4d-be50-9543638b634c-166904596621ee7255-0",
+        "11783840-c60d-49fe-b5a3-516b1e3414e1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "029d20bb-38fd-4e9f-aa13-f246ff5c209b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16045366280350__029d20bb-38fd-4e9f-aa13-f246ff5c209b-16690456052324829b-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n@media only screen and (max-width: 768px){\nh3, .h3 {\n    font-size: calc(var(--typeHeaderSize)*0.5)}\n}\n.type-advanced .promo-grid__content:after {\n  background: none;\n}\n  .type-advanced .rte--block {\n    color: black;\n    text-shadow:none; }\n#shopify-section-footer-promotions > div > div {display: none;\n}\ndiv.relative.flex.flex-col.items-center.justify-start.w-full.h-full.px-4.py-4.pt-6.rounded-md.cursor-pointer.bg-\\[\\#f5f7f2\\].font-avenir > a.flex.flex-col.items-center.justify-center.px-4 > h4 {\ntext-transform: none !important; font-weight: 300 !important;\n}\n.top-12 {\n    top: 1rem;}\n.px-4 {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n}\n.py-8 {\n    padding-top: 2rem;\n    padding-bottom: 1rem;\n}\ndiv.relative.flex.flex-col.items-center.justify-center.w-full.h-full.px-4.py-8.rounded-md.cursor-pointer.bg-\\[\\#f5f7f2\\] > button {\nmargin-top: 8px;\n}\n.bg-\\[\\#f5f7f2\\] {\n background-color: #f8f8f8;}\n.left-5 {\n    left: auto;\n}\n@media only screen and (max-width: 1000px){\nh2 {\n    font-size: 1.6rem;}\n}\n.py-12 {\n    padding-top: 0rem;\n} \n@media only screen and (max-width: 1000px) {\n#shopify-section-template--16045366280350__7372cee1-d623-4613-8599-d62f659ac166 {padding: 0 20px;\n}\n@media (min-width: 96em) .\\32xl\\:text-base {\n  font-size: 12px !important;\n}\n</style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16045366280350__029d20bb-38fd-4e9f-aa13-f246ff5c209b-16690456052324829b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "7d4e9982-095c-46ed-9ac8-3c5bd98cd06e": {
+      "type": "faq-about",
+      "disabled": true,
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "2f359ad2-0da7-47e9-9ed2-e8e447a23720",
+    "fd8b5800-458f-4e1d-896d-776f17599cda",
+    "7372cee1-d623-4613-8599-d62f659ac166",
+    "d6493d46-f7ea-4dca-868f-6457d1e3f3d4",
+    "a1b70797-2f50-4085-af8d-646224f00410",
+    "9f72f53c-d51a-4dd1-a309-21e7f3c2f8b2",
+    "88d5f465-eb19-4f4d-be50-9543638b634c",
+    "029d20bb-38fd-4e9f-aa13-f246ff5c209b",
+    "7d4e9982-095c-46ed-9ac8-3c5bd98cd06e"
+  ]
+}

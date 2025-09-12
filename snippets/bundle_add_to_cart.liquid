@@ -1,0 +1,11 @@
+<!-- bundle_add_to_cart  -->
+  
+
+<div class="absolute bottom-0 self-end w-full mb-4 collection-with-vue" bundle_add_to_cart>
+     
+<quick-shop-now-with-product btnclass="rounded-2xl max-w-[92%] w-full mx-auto " handle="{{ setting.product_handle }}"    :settings='{"template_type":"bundle-style","product":"{{ setting.product_handle }}","title":{{setting.title |  json }},"subtitle":"","price":"$195","btn_text":"Shop Now" ,"btn_color":"text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]","handle":"{{ setting.product_handle }}","quick_view_description":{{ setting.quick_view_description |  json}},"subscription_option":"option1",
+    "quick_view_media":{{setting.quick_view_media | json}}
+    }'>
+    <div class="bg-gray-200 h-[60px] mx-auto rounded-xl w-[90%] w-full animate-pulse"></div>
+</quick-shop-now-with-product> 
+</div>  

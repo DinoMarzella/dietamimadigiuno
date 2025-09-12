@@ -1,0 +1,84 @@
+{%- assign data = section.settings -%}
+<div class="w-full py-[20px] md:py-[40px] bg-[#fff] pl-wrapper-fatsing-bar-grid">
+  <div class="max-w-[1600px] mx-auto">
+    <div class="flex flex-wrap justify-center text-center max-w-[1600px] mx-auto">
+      {% for bar in section.blocks %}
+        <div class="w-full md:w-[30%] px-[20px] pb-[20px] hero__animation-contents">
+          <div class="w-full" style="background-color: {{bar.settings.bg_color}}">
+            <div class="w-full">
+              <img
+                src="{{bar.settings.image | img_url: '1600x'}}"
+                alt="{{bar.settings.title}}"
+                class="w-full h-full max-h-[405px] object-cover"
+              />
+            </div>
+            <div class="w-full max-w-[85%] mx-auto pb-[30px]">
+              <div class="w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]">
+                <div class="w-[15%]">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485"
+                    alt="{bar.{settings.title}}"
+                    class="!hidden w-[15px] h-[15px] object-contain"
+                  />
+                </div>
+                <p class="w-full text-left font-[500]">{{bar.settings.title}}</p>
+              </div>
+              <div class="w-full">{{bar.settings.description}}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-fatsing-bar-grid');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Fastingbar Grid",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "tabs",
+      "name": "Tabs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "COCONUT MACADAMIA"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description"
+        },
+        {
+          "type": "text",
+          "id": "bg_color",
+          "label": "Bg Color",
+          "default": "#FAD7AA"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Fastingbar Grid",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

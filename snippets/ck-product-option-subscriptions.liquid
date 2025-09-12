@@ -1,0 +1,112 @@
+{%- liquid
+  if section.settings.theme_option == 'theme_orange'
+    assign bgColorDark = 'bg-[#73984a]'
+    assign lgBgColor = 'bg-[#f9fff2]'
+    assign darkBorder = 'bg-[#73984a]'
+    assign titleColor = 'text-gray-900'
+    assign color_name = 'bg-[#73984a]'
+    assign selected = 'selected'
+  elsif section.settings.theme_option == 'theme_brown'
+    assign bgColorDark = 'bg-prolon_brown'
+    assign lgBgColor = 'bg-prolon_light_brown'
+    assign darkBorder = 'border-prolon_brown'
+    assign titleColor = 'text-gray-900'
+    assign color_name = 'prolon_brown'
+  else 
+    assign bgColorDark = 'bg-prolon_dark_primary'
+    assign lgBgColor = 'bg-[#f9fff2]'
+    assign darkBorder = 'border-prolon_dark_primary'
+    assign titleColor = 'text-prolon_dark_primary'
+    assign color_name = 'prolon_dark_primary'
+  endif
+-%}
+
+<div role="radiogroup">
+  <label class="sr-only" role="none"> Piani di abbonamento </label>
+  {%- comment -%} <label class="block mb-4 text-sm font-medium text-gray-700" role="none">Frequency</label> {%- endcomment -%}
+  <div class="relative -space-y-px bg-white rounded-md" role="none">
+    <div
+      class="relative flex items-center justify-between p-4 border border-gray-200 cursor-pointer rounded-bl-md rounded-br-md md:pl-4 md:pr-6 focus:outline-none one-time"
+      :class="{'{{lgBgColor }} {{darkBorder}} {{selected}}': plan === 'one-time'}"
+      role="radio"
+      ref="onetime"
+      @click="setPlan('one-time')"
+    >
+      <span class="flex items-center text-sm">
+        <span 
+          class="flex items-center justify-center w-4 h-4 bg-white border rounded-full hidden"
+          :class="{'{{bgColorDark}}': plan === 'one-time'}"
+          aria-hidden="true"
+          ><span class="rounded-full bg-white w-1.5 h-1.5"></span></span
+        >
+        <span class="radio-box"></span>
+        <span class="ml-3 font-bold text-gray-900 text-xs md:text-sm"
+          >Acquisto singolo<span class="block text-xs font-normal">Acquisto solo per questa volta</span></span   
+        ></span
+      ><span class="pl-1 ml-6 text-sm text-gray-500 md:ml-0 md:pl-0 md:text-right"
+        ><span class="font-bold text-gray-900 text-md" v-text="currentPrice"></span
+      ></span>
+    </div>
+        <div
+      class="relative z-10 flex items-center justify-between p-4 border cursor-pointer rounded-tl-md rounded-tr-md md:pl-4 md:pr-6 focus:outline-none subscription-recurring"
+      :class="{'{{lgBgColor }} {{darkBorder}} {{selected}}': plan === 'recurring'}"
+      role="radio"
+      @click="setPlan('recurring')"
+    >
+      <span class="flex items-center text-sm">
+        
+        <span
+          class="flex items-center justify-center w-4 h-4 border rounded-full hidden"
+          :class="{'{{bgColorDark}}': plan === 'recurring'}"
+          aria-hidden="true"
+          >
+          <span class="rounded-full bg-white w-1.5 h-1.5"></span></span
+        >
+        <span class="radio-box"></span>
+        <span class="ml-3 font-bold text-gray-900 text-xs md:text-sm">
+          <span class="flex justify-between">
+            <span>Abbonati e Risparmia <span class="percentage-saving" v-text="percentageSave"></span></span>
+            <span class="pl-1 ml-6 text-sm text-orange-700 md:ml-0 md:pl-0 md:text-right"><span class="font-bold text-gray-900 text-md" v-text="subscriptionPrice"></span></span>
+          </span>
+          <span class="block mt-1 rounded-md shadow-sm isolate">
+            <div class="flex">
+              <div role="radiogroup">
+                <label
+                  class="text-xs font-light"
+                  role="none"
+                  v-text="`Frequenza: ${selected_plan && selected_plan.name?selected_plan.name :''}`"
+                >
+                </label>
+                <div class="flex mt-2 -space-y-px rounded-md" role="none">
+                  <template v-for="(selling_plan,index) in selling_plans">
+                    <div
+                      class="relative inline-flex items-center px-2 py-2 text-sm font-medium leading-none text-center  bg-white border outline-none md:text-left md:px-8 "
+                      @click="selected_plan = selling_plan"
+                      :class="
+                        {
+                          'border-{{color_name}} ring-1 {{bgColorDark}} text-white ring-{{color_name}} z-10': selected_plan && selling_plan.id === selected_plan.id && plan==='recurring',
+                          'border-gray-600 text-gray-700 bg-gray-100 ring-1 ring-gray-300 z-10': selected_plan && selling_plan.id === selected_plan.id && plan!='recurring',
+                          'border-gray-300 text-gray-700 bg-white': selected_plan && selling_plan.id !== selected_plan.id,
+                          'rounded-l-md' : index === 0,
+                          'rounded-r-md' : index === selling_plans.length - 1
+                        }
+                      "
+                    >
+                      <span class="flex text-[10px] xl:text-sm  "
+                        ><span> ${selling_plan && selling_plan.name.replace('Deliver every','')}</span>
+                      </span>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </span>
+          <span class="block text-xs font-normal pt-2"
+          >Metti in pausa, salta o annulla in qualsiasi momento.</span
+        >
+          <img src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/abbonati_e_risparmia_Offer.webp?v=1733248011" alt="Abbonati e Risparmia: 5% extra sconto + un regalo in omaggio" class="!hidden">
+          </span>
+      </span>  
+    </div>
+  </div>
+</div>

@@ -1,0 +1,489 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.speed",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "disabled": true,
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}",
+        "#Video_LProtein {object-fit: cover; width: 100%; height: auto; aspect-ratio: 286 / 375;}",
+        ".border-prolon_secondary {color: #000; font-weight: bold;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "l-protein-bar",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "Ogni scatola contiene 12 barrette da 45gr ciascuna.",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-l-protein-bar\" \n %}",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli i {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona la {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona la {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p><p><strong>Gusto originale:</strong> Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro <strong>— oppure —</strong></p><p><strong>Gusto nuovo sapore:</strong> Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p><p><strong>Zuppe:</strong> Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p><p><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p><p><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p><p><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p><p><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p><p><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "content_html": "",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "content_html": "",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "",
+            "content_html": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "dk_product_dynamic_v1_F3Ycrq": {
+      "type": "dk-product-dynamic-v1",
+      "blocks": {
+        "images_8BpCdC": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/02_efe77a2b-437c-440a-b6fa-2dbe25cea40e.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_NBYCYp": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/01_734b3851-0754-4134-8a0d-ccd78a840b6e.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_Cxm3PK": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/09.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "faq_YitcfD": {
+          "type": "faq",
+          "settings": {
+            "title": "Come si usa",
+            "description": "<div class=\"pb-6 pr-8 leading-relaxed text-gray-700\">\n<p><b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Alimenta la tua giornata e il tuo futuro</font></font></b><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> con le proteine ​​Prolon per:</font></font><br></p>\n<ul>\n<li>\n<b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Dopo il digiuno</font></font></b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> – Ricaricarsi delicatamente senza aumentare l’IGF-1</font></font><hr class=\"border-t border-black mt-1\">\n</li>\n<li>\n<b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Colazione</font></font></b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> : un inizio pulito che supporta la salute metabolica</font></font><hr class=\"border-t border-black mt-1\">\n</li>\n<li>\n<b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Pre o post allenamento</font></font></b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> : nutri i muscoli senza accelerare l'invecchiamento</font></font><hr class=\"border-t border-black mt-1\">\n</li>\n<li>\n<b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">In movimento</font></font></b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> : proteine ​​comode e longeve da portare ovunque</font></font><hr class=\"border-t border-black mt-1\">\n</li>\n</ul>\n<p></p>\n<p><br></p>\n</div>",
+            "page": ""
+          }
+        },
+        "faq_eFAQxM": {
+          "type": "faq",
+          "settings": {
+            "title": "Informazioni nutrizionali",
+            "description": "<a href=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/l-protein_bar_tabelle_nutrizionali_rev1.pdf?v=1753803955\" class=\"underline\" target=\"_blank\">Visualizza le Informazioni Nutrizionali di L-Protein Bar</a>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "images_8BpCdC",
+        "images_NBYCYp",
+        "images_Cxm3PK",
+        "faq_YitcfD",
+        "faq_eFAQxM"
+      ],
+      "custom_css": [
+        ".Soup.Flavor {display: none;}",
+        "h1 {font-size: 33px; line-height: 45px; font-weight: 600 !important;}",
+        ".w-full.mt-4.product-description {display: block !important;}",
+        ".py-2.option-show-button {display: none;}",
+        ".bg-\\[\\#73984a\\] {--tw-bg-opacity: 1; background-color: rgb(86 165 18); border-radius: 50px;}",
+        ".bg-\\[\\#98ca3c\\] {background-color: rgb(29 64 53); border-radius: 50px;}",
+        "button.w-full.rounded-md.bg-\\[\\#56A512\\].text-white {border-radius: 40px;}",
+        ".name-value {display: none;}"
+      ],
+      "name": "dk-product-dynamic-1",
+      "settings": {
+        "selected_product": "l-protein-bar",
+        "margin_mb": "",
+        "show_star": true,
+        "price_for_bar": true,
+        "title": "Longevity Protein Bar",
+        "description": "<br> \n<div class=\"text-[#1F4139]\">\n  <!-- Top Text -->\n  <p class=\"\">Scopri la nostra nuova <strong>barretta L-Protein</strong>: l'unica barretta proteica creata da scienziati della longevità per nutrire i muscoli senza accelerare l'invecchiamento. Sostieni il tuo futuro, non solo il tuo prossimo allenamento.\n\nProteine ​​della longevità: progettate per la forza e un invecchiamento sano</p>\n  <p class=\" mb-6\">Proteine ​​della longevità: progettate per la forza e un invecchiamento sano</p>\n\n  <!-- Features -->\n  <div class=\"space-y-4\">\n    <div>\n      <p class=\"font-semibold \"> Supporta la forza senza aumentare i fattori di invecchiamento </p>\n      <hr class=\"border-t border-black mt-1\">\n    </div>\n    <div>\n      <p class=\"font-semibold \"> Profilo completo degli amminoacidi </p>\n      <hr class=\"border-t border-black mt-1\">\n    </div>\n    <div>\n      <p class=\"font-semibold \"> Supportato da 25 anni di scienza della longevità </p>\n      <hr class=\"border-t border-black mt-1\">\n    </div>\n    <div>\n      <p class=\"font-semibold \">\n        Proteine ​​vegane veramente pulite: senza OGM, soia, dolcificanti artificiali o coloranti artificiali\n      </p>\n      <br>\n    </div>\n  </div>\n</div>",
+        "reverse_layout": false,
+        "show_new": true
+      }
+    },
+    "modern_custom_html_D7Eqjg": {
+      "type": "modern-custom-html",
+      "name": "CUSTOM HTML 2.0",
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "code": "<!-- TrustBox widget - Horizontal -->\n<div class=\"trustpilot-widget\" data-locale=\"it-IT\" data-template-id=\"5406e65db0d04a09e042d5fc\" data-businessunit-id=\"5c46dc3e20d18f000126579a\" data-style-height=\"28px\" data-style-width=\"100%\" data-font-family=\"Open Sans\">\n  <a href=\"https://it.trustpilot.com/review/prolon.it\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->"
+      }
+    },
+    "dk_protein_bar_ad_qHyrFe": {
+      "type": "dk-protein-bar-ad",
+      "name": "dk Protein Bar Ad",
+      "settings": {
+        "heading": "Abbiamo rivoluzionato il concetto di proteine sane.",
+        "image": "shopify://shop_images/protein-hand_1_fb5efc51-3593-416d-95ce-f6dbb9b4b1c4.webp",
+        "paragraph1": "<p>Le proteine sono essenziali per la vita e per la protezione e crescita muscolare. Tuttavia, alcuni tipi di proteine possono aumentare i livelli di ormoni pro-invecchiamento come l'IGF-1, e molti prodotti proteici contengono additivi che possono compromettere la salute. La L-Protein Bar è diversa.</p>",
+        "paragraph2": "<p><strong>Formulata dagli scienziati della longevità creatori della dieta mima-digiuno Prolon di 5 giorni (FMD)</strong>, questa barretta fornisce proteine vegetali complete e pulite che nutrono la tua forza e vitalità, senza gli elementi che favoriscono l’invecchiamento.<br/><br/></p>"
+      }
+    },
+    "8200e398-3bf8-4b80-aca9-360bfed1af37": {
+      "type": "promo-grid",
+      "blocks": {
+        "ebbcfd2e-2d3d-42c8-81f2-f25262378dae": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "ebbcfd2e-2d3d-42c8-81f2-f25262378dae"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "dk_image_with_text_line_AkrdRH": {
+      "type": "dk-image-with-text-line",
+      "custom_css": [],
+      "name": "dk image with text line",
+      "settings": {
+        "section_id": "",
+        "hide_mobile_line": false,
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "false",
+        "line_change": "!pt-0",
+        "bg-color": "",
+        "subheading_text_tab_1": "",
+        "heading_text": "",
+        "paragraph_1": "<div class=\"md:pb-0 pb-8\">\n  <h1 class=\"w-full text-start text-[30px] leading-[1.2] font-[500] md:text-[34px] xl:text-[40px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Costruito per durare a lungo</font></font></h1>\n\n  <div class=\"!grid !grid-cols-1 gap-6 py-6 md:py-8 md:!grid-cols-2 md:gap-8\">\n    <!-- Row 1 -->\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Progettato per durare a lungo</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Formulato per supportare i muscoli senza accelerare l'invecchiamento</font></font></p>\n    </div>\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Pulizia senza compromessi</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Vegano, senza soia, glutine, latticini, OGM e zuccheri aggiunti</font></font></p>\n    </div>\n\n    <!-- Row 2 -->\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Proteine &ZeroWidthSpace;&ZeroWidthSpace;complete</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Proteine &ZeroWidthSpace;&ZeroWidthSpace;vegane che rivaleggiano con le proteine &ZeroWidthSpace;&ZeroWidthSpace;animali senza gli svantaggi che favoriscono l'invecchiamento</font></font></p>\n    </div>\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Nutrizione intelligente</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Ricco di fibre e ferro, studiato per favorire livelli sani di zucchero nel sangue.</font></font></p>\n    </div>\n\n    <!-- Row 3 -->\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Fatto con olio extravergine di oliva</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Un grasso sano per il cuore che si è dimostrato associato ad una maggiore longevità</font></font></p>\n    </div>\n    <div>\n      <p class=\"text-lg mb-2 border-b border-black pb-1 font-semibold md:text-[18px]\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Basato su 25 anni di ricerca</font></font></p>\n      <p class=\"text-sm md:text-md\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Formulato dagli scienziati della longevità dietro il programma FMD di 5 giorni</font></font></p>\n    </div>\n  </div>\n\n  <div class=\"mt-6 flex flex-wrap gap-4 sm:flex-nowrap\">\n\n    <a href=\"#acquista-ora\" class=\"w-full sm:w-[210px]\">\n      <span class=\"flex justify-center rounded-full bg-[#56A511] px-[30px] py-[5px] text-[14px] font-[700] text-white uppercase\"> Ordina ora </span>\n    </a>\n  </div>\n</div>",
+        "hero_image": "shopify://shop_images/Image_4_800x_f143dd28-2882-477a-a624-c39dde8dfec6.webp",
+        "video_url": "",
+        "html_v": "md:!my-[134px]",
+        "html_line": ""
+      }
+    },
+    "hero_video_D8VHWT": {
+      "type": "hero-video",
+      "custom_css": [
+        "{max-width: 1600px; margin: auto; border-radius: 8px;}"
+      ],
+      "name": "Video hero",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "Guarda il video",
+        "link": "",
+        "color_accent": "#56a511",
+        "text_align": "vertical-bottom horizontal-right",
+        "video_url": "https://youtu.be/OwV5IwLw4rE",
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "dk_product_comparison_fG3eqa": {
+      "type": "dk-product-comparison",
+      "name": "dk Product Comparison",
+      "settings": {}
+    },
+    "dk_image_with_text_line_Ekch7g": {
+      "type": "dk-image-with-text-line",
+      "custom_css": [
+        "{padding-bottom: 50px;}"
+      ],
+      "name": "dk image with text line",
+      "settings": {
+        "section_id": "",
+        "hide_mobile_line": true,
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "false",
+        "line_change": "!pt-0",
+        "bg-color": "bg-[#F1EAE5]",
+        "subheading_text_tab_1": "",
+        "heading_text": "",
+        "paragraph_1": "<div class=\"\">\n    <h1 class=\"w-full text-start text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px]\">\n      Un modo smart per dare energia alla tua giornata e alla tua routine.\n    </h1>\n  \n     <p class=\"pt-4\">\n      Provala come sostituto di un pasto, snack pre o post allenamento, parte di una dieta quotidiana per la longevità o ogni volta che desideri forza ed energia senza compromessi.\n    </p>\n    <div class=\"pb-6 pt-4 \">\n  <p class=\"text-lg md:text-xl font-bold mb-4\">\n        Valori nutrizionali (per barretta):\n      </p>\n\n      <div class=\"\">\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">14g di proteine vegetali</span>\n        </div>\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">150 Calorie</span>\n        </div>\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">Formula a basso indice glicemico</span>\n        </div>\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">Ricca di fibre e ferro</span>\n        </div>\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">Senza zuccheri aggiunti</span>\n        </div>\n        <div class=\"border-b border-black py-2\">\n          <span class=\"font-bold\">\n            Con vero cioccolato, non olio di palma\n          </span>\n        </div>\n      </div>\n</div>\n\n    <div class=\"flex flex-wrap gap-4 md:mb-0 mb-4 sm:flex-nowrap\">\n      <a href=\"#acquista-ora\" class=\"w-full sm:w-[210px]\">\n        <span class=\"flex justify-center rounded-full bg-[#56A511] px-[30px] py-[8px] text-[14px] font-[700] text-white uppercase\"> ORDINA ORA </span>\n      </a>\n    </div>\n</div>",
+        "hero_image": "shopify://shop_images/Image_3_4_800x_12969dbd-64ad-487d-82bf-8e2341f3b39b.webp",
+        "video_url": "",
+        "html_v": "md:!my-[134px]",
+        "html_line": ""
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
+    },
+    "faq_QtQwaq": {
+      "type": "faq",
+      "blocks": {
+        "question_9hdTCw": {
+          "type": "question",
+          "settings": {
+            "title": "Posso assumere L-Protein a digiuno?",
+            "text": "<p>No, la L-Protein non fa parte della nostra linea di prodotti per il digiuno intermittente. È destinato a essere consumato durante la finestra di alimentazione come parte dell'obiettivo giornaliero di calorie e proteine.</p>"
+          }
+        },
+        "question_jeBWz3": {
+          "type": "question",
+          "settings": {
+            "title": "Con quale frequenza posso utilizzare L-Protein?",
+            "text": "<p>L-Protein può essere utilizzato quotidianamente per raggiungere i tuoi obiettivi proteici giornalieri complessivi. Assicurati di consumare questa proteina durante la finestra di alimentazione.</p>"
+          }
+        },
+        "question_eVTRrP": {
+          "type": "question",
+          "settings": {
+            "title": "Qual è la differenza tra ProLon Fasting Shake e L-Protein?",
+            "text": "<p>Il nostro Fasting Shake fa parte della nostra linea di prodotti per il digiuno intermittente. È destinato a essere consumato durante la finestra di digiuno, poiché non interromperà il digiuno né influenzerà i livelli di chetoni durante l'alimentazione per un tempo limitato (TRF). Inoltre, il Fasting Shake è anche intenzionalmente povero di proteine ​​per rimanere al di sotto dei percorsi di rilevamento dei nutrienti del nostro corpo. L-Protein viene consumata quando si mangia cibo. Fornisce calorie e un'elevata dose di proteine. Può essere utilizzato come carburante dopo l'allenamento, come parte di una sana colazione o pranzo quando si interrompe il digiuno, oppure può essere semplicemente utilizzato come integratore per aumentare l'apporto proteico complessivo ogni giorno.</p>"
+          }
+        },
+        "question_MCtCBQ": {
+          "type": "question",
+          "settings": {
+            "title": "In cosa si differenzia L-Protein dalle altre proteine ​​in polvere vegane?",
+            "text": "<p>A differenza di altre proteine in polvere vegane, L-Protein utilizza piselli, fagioli neri e ceci come parte della sua composizione proteica complessiva anziché proteine a base di cereali come riso integrale o polvere di avena, il che aiuta a mantenere la nostra composizione a un basso contenuto di carboidrati. I legumi che utilizziamo sono noti per supportare un invecchiamento sano e fanno parte dei nostri protocolli dietetici salutari, apportando una sana dose di fibre vegetali alla tua dieta.</p>"
+          }
+        },
+        "question_EPiUjz": {
+          "type": "question",
+          "settings": {
+            "title": "L-Protein è ​​Keto friendly?",
+            "text": "<p>La nostra formula è considerata a basso contenuto di carboidrati (~6g di carboidrati netti per porzione). Tuttavia, il livello di chetosi dipenderà dalla persona e da come usa la nostra polvere in combinazione con altri alimenti durante la giornata.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_9hdTCw",
+        "question_jeBWz3",
+        "question_eVTRrP",
+        "question_MCtCBQ",
+        "question_EPiUjz"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {[data-view=\"scrollable\"] .grid-item {flex: 0 0 25%; max-width: 500px; }}",
+        "@media only screen and (max-width: 768px) {[data-view=\"scrollable\"] .grid-item {flex: 0 0 50%; max-width: 500px; }}",
+        ".section-header__title {text-align: center;}"
+      ],
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Prodotti già visti o che potrebbero interessarti",
+        "related_count": 4
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_new_YPRwTT": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "liquid_Prjpjm": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"\" style=\"padding: 10px;\">\n    <h1 class=\"w-full text-start text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px]\" style=\"margin-bottom: -10px;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">\n      Perché le proteine &ZeroWidthSpace;&ZeroWidthSpace;della longevità?\n    </font></font></h1>\n     <p class=\"pt-4\">\n      <b><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">I tuoi muscoli sono importanti.</font></font></b><br><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"> \n\nNon modellano solo il tuo corpo; possono plasmare la tua vita, svolgendo un ruolo fondamentale nella gestione del peso, nella prevenzione delle malattie e nel benessere generale. E a partire dai 40 anni circa, la massa muscolare diminuisce naturalmente del 3-8% ogni decennio, rendendo le proteine &ZeroWidthSpace;&ZeroWidthSpace;di qualità essenziali per proteggere la massa magra.\n </font></font><br><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">\nEcco il problema: indipendentemente dall'età, la maggior parte dei prodotti proteici che si basano su fonti animali come il siero del latte può accelerare l'invecchiamento. E spesso contengono additivi nascosti come silice e aromi artificiali che non devono nemmeno comparire sull'etichetta. \n    </font></font></p>\n    \n    </div>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "image_8yb9gr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/whyprotein_1600x_de0ca1ed-145b-4b58-ad3b-5076e1bcdb29.webp",
+            "link": "",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_Prjpjm",
+        "image_8yb9gr"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "advanced_content_new_c4q4dU": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "image_cYKi8T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/graphe-optial_1600x_7d7a4b30-7cac-44d1-9074-f4fb50ef09b2.webp",
+            "link": "",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "liquid_AgV6aF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"\" style=\"padding: 10px;\">\n    <h1 class=\"w-full text-start text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px]\" style=\"margin-bottom: -10px;\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">\n      IGF-1: l'equilibrio è tutto \n    </font></font></h1>\n     <p class=\"pt-4\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">\n     \n\nIl consumo di proteine &ZeroWidthSpace;&ZeroWidthSpace;influisce sui livelli di un ormone chiave chiamato fattore di crescita insulino-simile 1, o IGF-1. Un consumo eccessivo di alcuni tipi di proteine &ZeroWidthSpace;&ZeroWidthSpace;animali (come quelle spesso presenti in molte barrette e polveri proteiche) può aumentare i livelli di IGF-1. Una sovrastimolazione dell'IGF-1 può accelerare l'invecchiamento e aumentare il rischio di malattie. Un apporto proteico insufficiente può essere altrettanto dannoso per la salute e accelerare di per sé l'invecchiamento. \n </font></font><br><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">\nLa chiave è l'equilibrio: ottenere la quantità ottimale di proteine &ZeroWidthSpace;&ZeroWidthSpace;da fonti che supportano la massa muscolare senza innescare questa cascata di invecchiamento. Sulla base di decenni di ricerca in ambito nutrizionale e dei nostri studi sui livelli ottimali di IGF-1, abbiamo sviluppato le nostre proteine &ZeroWidthSpace;&ZeroWidthSpace;per la longevità per supportare la massa muscolare, senza innescare percorsi pro-invecchiamento.\n\n    </font></font></p>\n      <div class=\"flex flex-wrap gap-4 md:mb-0 mb-4 sm:flex-nowrap\">\n      <a href=\"#\" class=\"w-full sm:w-[210px] text-link\">\n        <span class=\"flex justify-center rounded-full bg-[#56A511] px-[30px] py-[5px] text-[14px] font-[700] text-white uppercase\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">ORDINA ORA</font></font></span>\n      </a>  \n    </div>\n              </div>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_cYKi8T",
+        "liquid_AgV6aF"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "slideshow_pXYTWa": {
+      "type": "slideshow",
+      "blocks": {
+        "hero_qUaXz3": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<span style=\"color: white;\">Non invecchiare mentre mangi</span>",
+            "title_size": 48,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<span style=\"color: white;\">Scopri oggi stesso i benefici di L-Protein Bar</span>",
+            "link": "#acquista-ora",
+            "link_text": "Ordina Ora",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/Screenshot_2025-07-25_at_2.40.12_PM_1728x_fe6b0b92-063b-42da-bdc6-d9bba2c94358.webp",
+            "image_mobile": "shopify://shop_images/Screenshot_2025-07-25_at_2.40.12_PM_1728x_fe6b0b92-063b-42da-bdc6-d9bba2c94358.webp",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "hero_qUaXz3"
+      ],
+      "custom_css": [
+        "{padding-bottom: 50px;}"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slides.name",
+      "settings": {
+        "full_width": false,
+        "desktop_size": -20,
+        "mobile_size": 70,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "dk_product_dynamic_v1_F3Ycrq",
+    "modern_custom_html_D7Eqjg",
+    "dk_protein_bar_ad_qHyrFe",
+    "8200e398-3bf8-4b80-aca9-360bfed1af37",
+    "dk_image_with_text_line_AkrdRH",
+    "hero_video_D8VHWT",
+    "dk_product_comparison_fG3eqa",
+    "dk_image_with_text_line_Ekch7g",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "faq_QtQwaq",
+    "recommendations",
+    "collection-return",
+    "advanced_content_new_YPRwTT",
+    "advanced_content_new_c4q4dU",
+    "slideshow_pXYTWa"
+  ]
+}

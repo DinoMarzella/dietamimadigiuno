@@ -1,0 +1,42 @@
+
+<style>
+
+    .div-with-icons {
+        /* display: flex; */
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .small-prom-icons {
+        display: flex;
+        /* justify-content: center; */
+        width: 100%;
+    }
+    
+    .small-prom-icons img {
+        width: 70px;
+    } 
+    
+    
+    @media(max-width:767px){
+    
+        .small-prom-icons {
+        justify-content: center;
+    }      
+    } 
+    </style>
+    <div class="gmo-icons"><div class="small-prom-icons">
+    
+        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/PL_Icon_Plant-Based-01_1.svg?v=1633445774">
+        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/PL_Icon_Non-GMO-03_83.svg?v=1633445774">
+        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_Icons_-_Gluten_Free.svg?v=1644346800">
+     
+    </div><div class="div-with-icons">
+    {% assign gmodays = 5 %}  
+    {% if product.handle == 'reset-lander' %}
+    {% assign gmodays = 1 %}
+    {% endif %}
+    <p class="five-day-fast" style="white-space:nowrap;">All-Inclusive {{gmodays}}-Day Fast</p>
+        
+    
+    </div></div> 

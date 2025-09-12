@@ -1,0 +1,178 @@
+<style>
+  .prolon-benefit-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    max-width: 90%;
+    margin: 0 auto;;
+  }
+  .prolon-benefit-child{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+    padding:100px 0px; 
+  }
+  .solo-main-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    width:100%;
+  }
+  .solo-main-title .h2-title{
+    /* font-family:"Harmonia Sans"; */
+    font-family: "interstate", sans-serif !important;
+    color:#2f6645; 
+    font-weight: 500 !important;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .solo-main-title p{
+    font-family:"Harmonia Sans";
+    color:#2f6645;
+    margin-top:0px;
+  }
+  .row-of-benefit-cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    flex-wrap:wrap;
+    padding-top:40px;
+  }
+  .single-card-b{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    max-width:300px;
+    margin:0px 30px;
+  }
+  .image-wrapper-b{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    max-width:130px;
+  }
+  .image-wrapper-b img{
+    width:100%;
+    height:100px;
+    object-fit: contain;
+  }
+  .details-card-b h3{ 
+    font-size: 26px;
+    color:#2f6645;
+    margin-top:25px;
+    font-weight:500;
+  }
+  .details-card-b p{
+    padding-top:0px;
+    line-height: 22px;
+  }
+    
+  /* .details-card-b p {
+    //  font-weight: bold;
+  } */
+  
+  .solo-main-title p {font-family: 'Avenir Next', sans-serif; font-size: 21px;}
+  
+  body {--typeHeaderPrimary: 'Avenir Next', sans-serif;}  
+  @media(max-width:767px){
+    .solo-main-title .h2-title{
+      font-size: 28px;
+    }
+      .single-card-b{
+          margin:20px 30px;
+      }
+      .row-of-benefit-cards{
+          padding-top:0px;
+      }
+      .prolon-benefit-child{
+        padding: 70px 0px;  
+      }
+  } 
+  </style>
+  {% assign prot = section.settings %}
+  <div class="prolon-benefit-wrapper">
+    <div class="prolon-benefit-child">
+      <div class="solo-main-title">
+        <div class="h2-title">{{prot.title}}</div>
+        <p>{{prot.desc}}</p>
+      </div>
+      <div class="row-of-benefit-cards">
+  {% for block in section.blocks %}
+        <div class="single-card-b">
+          <div class="image-wrapper-b">
+            <img src="{{ block.settings.img_hand | img_url: '2200x' }}">
+          </div>
+          <div class="details-card-b">
+            <h3>{{block.settings.maintitle}}</h3>
+            <p>{{block.settings.card_desc}}</p>
+          </div>
+        </div>
+  {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  
+  {% schema %}
+  {
+      "name": "prolon-benefit-section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "ProLon Benefits"
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "One line Descreption",
+          "default": "ProLon is a revolutionary clean up your body faster and easier."
+        }
+      ],
+      "blocks": [
+        {
+          "type": "benefit-section",
+          "name": "Benefit Card",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "img_hand",
+              "label": "Add Image"
+            },
+            {
+              "type": "text",
+              "id": "maintitle",
+              "label": "Add Card Title",
+              "default": "Clean Up Your Body Faster"
+            },
+            {
+              "type": "html",
+              "id": "card_desc",
+              "label": "Add Card Description",
+              "default": "ProLon is a revolutionary clean up your body faster and easier."
+            }
+          ]
+        }
+      ],
+      "presets": [{
+          "name": "prolon-benefit-section",
+          "blocks": [
+            {
+              "type": "benefit-section"
+            }
+          ]
+      }
+          ]
+    }
+  {% endschema %}

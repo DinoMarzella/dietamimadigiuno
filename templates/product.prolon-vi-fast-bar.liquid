@@ -1,0 +1,725 @@
+{% include 'restrict-content' ,type:'product' , allowed:'providers' %}
+
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}" />
+{% if products.handle contains 'buy-prolon' %}
+<style>
+  a.site-nav__link[href="/products/buy-prolon"] {
+    display: NONE;
+  }
+</style>
+
+{% endif %}
+
+
+
+<style>
+  .testimonials-wrapper {
+    display: none;
+}
+   .announcement-bar {
+    display: none;}
+  
+  #ProductSection-6791079755934 > div > div > div > div:nth-child(1) > div.testimonials-wrapper {
+    display: none;}
+  
+   #ProductSelect-6791079755934-option-0 > div:nth-child(3) > label {
+    color: #73984a;
+    font-weight: 600;}
+  
+  
+body.template-product .main-content {
+    box-shadow: none;
+    padding-bottom: 20px;
+} 
+  .faq-wrapper > .grid__item {
+    max-width: 800px;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  } 
+
+  .faq-wrapper {
+    display: block;
+    width: 100%;
+  } 
+  [data-product-handle*="prolon-provider"] fieldset[data-index="option1"], fieldset#ProductSelect-6791079755934-option-0 ,fieldset#ProductSelect-6865992155294-option-0 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+ 
+  div.variant-input {
+    width: 400px;
+    text-align: left;
+    min-width: 400px;
+    margin: 0px;
+    padding: 0px;
+  }  
+ 
+  .variant-input-wrap input[type="radio"] + label[for*="-option-type-"] {
+    width: 100%;
+  } 
+
+  .variant-input-wrap label {
+    border: 1px solid #dbe6f0;
+    border-right: 10px solid #dbe6f0;
+  }
+
+  .variant-input-wrap
+    input[type="radio"]:checked
+    + label[for*="-option-type-"] {
+    border: 2px solid #5e7e97;
+    border-right: 10px solid #5e7e97;
+    background: transparent;
+    color: black;
+  }
+  [data-center-text="true"] .collapsible-trigger-btn {
+    text-align: left;
+  }
+  fieldset#ProductSelect-6791147061406-option-0 {
+    flex-direction: column;
+}
+.gmo-icons {display: none;}  
+  fieldset#ProductSelect-7186118934686-option-0 {flex-wrap: wrap;}
+
+
+#ProductSelect-6791147061406-option-1 div.variant-input {
+    min-width: 100px;
+    width: unset;
+}
+ 
+.slide-pop-notification.slide-pop-notification.active {
+    display: none!important;
+} 
+
+.slide-cart-full .side-cart__suggestions {
+    display: none !important;
+}
+
+.code-block-slide-pop {
+    display: none !important;
+} .ck-sp-app-wrapper {
+    display: none!important;
+} p.saved-value {
+    display: none;
+}
+.product-single__description.rte{
+  visibility: visible;
+} 
+  
+  
+  #MainContent > div.faq-wrapper > div > div {
+    background-color: #f8fbfd;
+    max-width: 1000px;
+    margin: auto;
+}
+</style> 
+
+  
+{% section 'product-template-narrow' %}
+{% assign product = all_products['fastbar-provider']%}
+  {% comment %}
+<div class="faq-wrapper">
+  <div class="grid__item" style="padding-top: 40px">
+    <h2 style="text-align: center">FAQs</h2>
+    <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-what-is-virtual-inventory-5886305370265"
+        aria-expanded="false"
+      >
+        What is Virtual Inventory?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-what-is-virtual-inventory-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          <ul>
+            <li>
+              If providers prefer not to stock ProLon in clinic, your inventory
+              can be held and shipped directly to patients who purchase from
+              you.<br /><br />
+            </li>
+            <li>
+              The purchase of a larger volume of ProLon boxes to get the best
+              bulk pricing. ProLon boxes will not ship at the time of purchase.
+              ProLon box total will be added to your account in virtual
+              inventory.<br /><br />
+            </li>
+            <li>
+              Enjoy the flexibility of sending out ProLon Professional Standard,
+              ProLon Professional - No Nightshades, and ProLon Soup Variety 2,
+              free shipping, to your patients or office at any time
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-is-fast-bar-part-of-virtual-inventory-5886305370265"
+        aria-expanded="false"
+      >
+        Is Fast Bar® Part of Virtual Inventory?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-is-fast-bar-part-of-virtual-inventory-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          Unfortunately,&nbsp;not at this time! Fast Bar is a wonderful addition
+          for everyday intermittent fasting goals and can be added to a daily
+          routine in-between The ProLon Fasting Mimicking Diet cycles.
+        </div>
+      </div>
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-how-do-i-access-my-purchased-virtual-inventory-5886305370265"
+        aria-expanded="false"
+      >
+        How do I access my purchased virtual inventory?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-how-do-i-access-my-purchased-virtual-inventory-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          <ul>
+            <li>
+              Login to your provider account on prolonfmd.com to view
+              your virtual inventory total.
+            </li>
+            <li>
+              Process your order through your account and complete to pull from
+              your inventory total.
+            </li>
+            <li>
+              Contact your sales representative or sales support to process your
+              order to pull from your inventory total.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-virtual-inventory-shipping-5886305370265"
+        aria-expanded="false"
+      >
+        Is shipping charged when I ship out from my virtual inventory?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-virtual-inventory-shipping-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          <ul>
+            <li>
+              Ground shipping is free (except when shipping to AK, HI, PR).
+            </li>
+            <li>
+              Expedited shipping is available at an additional cost at check
+              out.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-virtual-inventory-expiration-5886305370265"
+        aria-expanded="false"
+      >
+        Does my virtual inventory have a product expiration date?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-virtual-inventory-expiration-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          The product that is shipped has the best expiration date available at
+          our warehouse. The product does not sit on the shelf at your clinic
+          therefore does not have a short expiration date over time.
+        </div>
+      </div>
+      <button
+        type="button"
+        class="
+          label
+          collapsible-trigger
+          collapsible-trigger-btn
+          collapsible-trigger-btn--borders
+          collapsible--auto-height
+        "
+        aria-controls="Product-content-inventory-help-5886305370265"
+        aria-expanded="false"
+      >
+        What if I need help?
+        <span
+          class="collapsible-trigger__icon collapsible-trigger__icon--open"
+          role="presentation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon--wide icon-chevron-down"
+            viewBox="0 0 28 16"
+          >
+            <path
+              d="M1.57 1.59l12.76 12.77L27.1 1.59"
+              stroke-width="2"
+              stroke="#000"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div
+        id="Product-content-inventory-help-5886305370265"
+        class="collapsible-content collapsible-content--all"
+      >
+        <div class="collapsible-content__inner rte test">
+          We're here to help! If you ever have any questions about ordering,
+          placing virtual inventory orders, or anything in-between, we're happy
+          to assist and help you place those orders in-person, over the phone,
+          or via email. Please reach out to your Sales Representative or to our
+          customer service team.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="shopify-section-product-story-sections" class="shopify-section">
+  <div class="page-blocks">
+    <div>
+      <div class="index-section">
+        <div class="page-width">
+          <div class="feature-row aos-init aos-animate" data-aos="">
+            <div class="feature-row__item">
+              <div style="margin: 0 auto; max-width: 450px">
+                <div class="image-wrap" style="height: 0; padding-bottom: 100%">
+                  <img
+                    class="feature-row__image lazyautosizes lazyloaded"
+                    data-widths="[180, 360, 540, 720, 900, 1080]"
+                    data-aspectratio="1.0"
+                    data-sizes="auto"
+                    alt=""
+                    data-srcset="//cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_180x.png?v=1612374402 180w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_360x.png?v=1612374402 360w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_540x.png?v=1612374402 540w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_720x.png?v=1612374402 720w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_900x.png?v=1612374402 900w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_1080x.png?v=1612374402 1080w"
+                    sizes="450px"
+                    srcset="
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_180x.png?v=1612374402   180w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_360x.png?v=1612374402   360w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_540x.png?v=1612374402   540w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_720x.png?v=1612374402   720w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_900x.png?v=1612374402   900w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Updated_-_Soup_1080x.png?v=1612374402 1080w
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="
+                feature-row__item feature-row__text feature-row__text--left
+              "
+            >
+              <p class="h3">What's Inside</p>
+
+              <div class="rte featured-row__subtext">
+                <p>
+                  ProLon® meals come in 5 small boxes (one for each day) that
+                  include plant-based energy bars, soups, a variety of snacks,
+                  drinks, and supplements, all studied and carefully designed to
+                  nourish your body and promote good health.
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="index-section" style="background-color: white;">
+        <div class="page-width">
+          <div class="feature-row aos-init aos-animate" data-aos="">
+            <div
+              class="
+                feature-row__item feature-row__text feature-row__text--right
+              "
+            >
+              <p class="h3">Pro Tip</p>
+
+              <div class="rte featured-row__subtext">
+                <p>
+                  <strong>Remember:&nbsp;</strong>you can change the order of
+                  what you eat, but don’t switch components from one day to the
+                  other—each day’s intake is carefully crafted to maximize the
+                  benefits of your FMD experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-row__item">
+              <div style="margin: 0 auto; max-width: 450px">
+                <div class="image-wrap" style="height: 0; padding-bottom: 100%">
+                  <img
+                    class="feature-row__image lazyautosizes lazyloaded"
+                    data-widths="[180, 360, 540, 720, 900, 1080]"
+                    data-aspectratio="1.0"
+                    data-sizes="auto"
+                    alt=""
+                    data-srcset="//cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_180x.png?v=1612374974 180w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_360x.png?v=1612374974 360w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_540x.png?v=1612374974 540w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_720x.png?v=1612374974 720w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_900x.png?v=1612374974 900w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_1080x.png?v=1612374974 1080w"
+                    sizes="450px"
+                    srcset="
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_180x.png?v=1612374974   180w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_360x.png?v=1612374974   360w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_540x.png?v=1612374974   540w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_720x.png?v=1612374974   720w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_900x.png?v=1612374974   900w,
+                      //cdn.shopify.com/s/files/1/0497/8979/6505/files/L-Nutra_Tea_1080x.png?v=1612374974 1080w
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="index-section">
+        <div class="page-width">
+          <div class="feature-row aos-init aos-animate" data-aos="">
+            <div class="feature-row__item">
+              <div style="margin: 0 auto; max-width: 450px">
+                <a href="/products/fast-bar">
+                  <div
+                    class="image-wrap"
+                    style="height: 0; padding-bottom: 100%"
+                  >
+                    <img
+                      class="feature-row__image lazyautosizes lazyloaded"
+                      data-widths="[180, 360, 540, 720, 900, 1080]"
+                      data-aspectratio="1.0"
+                      data-sizes="auto"
+                      alt=""
+                      data-srcset="//cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_180x.png?v=1612379788 180w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_360x.png?v=1612379788 360w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_540x.png?v=1612379788 540w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_720x.png?v=1612379788 720w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_900x.png?v=1612379788 900w, //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_1080x.png?v=1612379788 1080w"
+                      sizes="450px"
+                      srcset="
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_180x.png?v=1612379788   180w,
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_360x.png?v=1612379788   360w,
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_540x.png?v=1612379788   540w,
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_720x.png?v=1612379788   720w,
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_900x.png?v=1612379788   900w,
+                        //cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_1080x.png?v=1612379788 1080w
+                      "
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="
+                feature-row__item feature-row__text feature-row__text--left
+              "
+            >
+              <p class="h3">Support All Month Long</p>
+
+              <div class="rte featured-row__subtext">
+                <p>
+                  Help your customers stick to their intermittent fasting goals
+                  with Fast Bar®. A new randomized, controlled study of 108
+                  adults who fasted for 15 hours overnight, then had glucose and
+                  ketone levels measured every hour for four hours after eating
+                  either breakfast, a tasty Fast Bar, or just water, showed that
+                  Fast Bar did not break their fast.
+                </p>
+              </div>
+
+              <a href="/products/fast-bar" class="btn"> Order Fast Bar </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% section 'recently-viewed' %} {% if collection %}
+<div class="text-center page-content page-content--bottom">
+  <a
+    href="{% if collection.handle == 'frontpage' %}/{% else %}{{
+      collection.url
+    }}{% endif %}"
+    class="btn btn--small return-link"
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      role="presentation"
+      class="icon icon--wide icon-arrow-left"
+      viewBox="0 0 50 15"
+    >
+      <path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z" />
+    </svg>
+    {{ "products.general.collection_return" | t: collection:collection.title }}
+  </a>
+</div>
+{% endif %}
+ {% endcomment %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    $(".variant__input-32593125703726").trigger("click");
+    $('input[name="Quantity"][value="Subscribe & Save $25"]').click();
+    $("input[type=radio][name=Quantity]").change(function () {
+      if (this.value == "Subscribe & Save $25") {
+        addSubscriptionOptions();
+      } else {
+        //$( "#subscription_plans").remove();
+        $("input,select", "#subscription_plans").attr("name", "");
+      }
+    });
+    $("input[type=radio][name=Quantity]").each(function () {
+      if (this.value == "Subscribe & Save $25") {
+        if ($(this).prop("checked")) {
+          addSubscriptionOptions();
+        }
+      } else {
+        $("input,select", "#subscription_plans").attr("name", "");
+        //$( "#subscription_plans" ).remove();
+      }
+    });
+  });
+
+  function addSubscriptionOptions() {
+    $("#subscription_plans").remove();
+    $(`form fieldset[name=Quantity] [data-value*="Subscribe"]`).append(
+      '<div id="subscription_plans" style="margin-left: 4px;">' +
+        '<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">' +
+        '<input type="hidden" name="properties[number_charges_until_expiration]" value="">' +
+        '<select name="properties[shipping_interval_frequency]">' +
+        '  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+        '  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' +
+        "</select>" +
+        "</div>"
+    );
+  }
+
+  setTimeout(function () {
+    $('.variant__input-4634645430318[value*="Subscribe"]').click();
+    addSubscriptionOptions();
+  }, 50);
+
+  $(window).load(function () {
+    $('input[name="Quantity"][value="Subscribe & Save $25"]').click();
+    setTimeout(function () {
+      $('.variant__input-4634645430318[value*="Subscribe"]').click();
+      addSubscriptionOptions();
+    }, 50);
+  });
+</script>
+{% render 'product_infox' %}
+<script>
+  $(document).ready(function () {
+    $(`form#AddToCartForm-6791079755934`).append(`<a href="https://prolonfmd.com/products/fastbar-provider" style="
+    display: flex;
+    align-items: center;
+    /*border: 2px solid #577d95;*/
+    width: 400px;
+border: 20px solid #dbe6f4;
+padding: 4px;
+    background: #dbe6f4;
+box-shadow: inset 0 0 0 2px #577d95;
+    justify-content: space-between;
+    margin-top: 20px;
+"> <img src="https://cdn.shopify.com/s/files/1/0497/8979/6505/files/Fast_Bar_-_Product_Page_120x.png?v=1612379788"><span style="
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0px;
+    width: 69%;
+    text-align: center;
+    color: black;
+">Order Fast Bar® Here<br>Intermittent Fasting Bars<span style="
+    background: #73984a;
+    width: 130px;
+color: white;
+    line-height: 1;
+    height: 32px; 
+    margin: 9px auto;
+letter-spacing: .05em;
+    font-size: small;
+" >BUY NOW</span></span>
+</a>`) 
+    let description = $(`script#v-json`).first().html();
+
+    $(`.product-single__description`).html(description).css({visibility:"visible"});;
+    $(".product-section").on("variantChange", function (v, d) {
+      let variant = v.variant; 
+ 
+      let description = $(`script#v-json[data-id="${variant.id}"]`).html();
+      $(`.product-single__description`).html(description).css({visibility:"visible"});
+    });
+ 
+  });
+</script>
+
+
+<script>
+
+  $(window).load(function(){
+  
+      $('.product-section .testimonials-slider').slick('unslick');
+      $(".product-section .testimonials-slider").slick({
+                    slidesToScroll: 1,
+                    slidesToShow:1, 
+                    dots: true,
+                    autoplay: true,        adaptiveHeight: true,
+ 
+                    autoplaySpeed: 3000
+                  });
+
+  });
+</script>     

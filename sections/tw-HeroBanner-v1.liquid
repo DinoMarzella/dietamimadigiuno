@@ -1,0 +1,298 @@
+{% assign data = section.settings %}
+<style>
+  .background-animate {
+    background-size: 400%;
+    -webkit-animation: AnimationName 25s linear infinite;
+    animation: AnimationName 25s linear infinite;
+  }
+  .bg-gradient-fuchsia {
+    background-image: linear-gradient(112.84deg, #99c938 0.33%, #f8931d 38.23%, #99c938 65.22%, #f8931d 100%);
+  }
+  .hero-banner-prolon {
+    background-image: var(--desktop-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 768px) {
+    .hero-banner-prolon {
+      background-image: var(--mobile-image);
+    }
+
+    .hero-banner-prolon:after {
+      content: '';
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) 12.32%, rgba(0, 0, 0, 0) 56.48%);
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
+<!-- tw-HeroBanner-v1 -->
+<div
+  class="relative overflow-hidden  hero-banner-prolon md:-mt-40 md:pt-32"
+  style="
+    --desktop-image: url('{{ data.desktop_image | img_url: '1600x' }}');
+    --mobile-image: url('{{ data.mobile_image | img_url: '1200x' }}');
+  "
+>
+  <div class="relative px-4 mx-auto max-w-container mb-4 md:mb-20">
+    <div class="relative z-10 flex flex-wrap items-center justify-center pb-10 -m-6 lg:pt-32 ">
+      <div class="flex-1 m:pt-80 md:py-24 px-2 m:max-w-[330px]">
+        <div class="mt-5 lg:max-w-3xl lg:mt-0 mobile:mt-5 pl-0 md:pl-16 2xl:pl-2">
+          {% if data.tag and data.tag != '' %}
+            <div class="mb-6 font-heading flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold text-xs tracking-px text-white bg-white bg-opacity-20 rounded-lg">
+              <svg
+                class="mr-2"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-config-id="auto-svg-3-3"
+              >
+                <path d="M6.33427 2.74895C6.54382 2.10403 7.45621 2.10403 7.66575 2.74895L8.41445 5.0532C8.50816 5.34162 8.77693 5.53689 9.08019 5.53689H11.503C12.1811 5.53689 12.4631 6.40462 11.9145 6.8032L9.95436 8.22731C9.70902 8.40556 9.60636 8.72152 9.70007 9.00994L10.4488 11.3142C10.6583 11.9591 9.92018 12.4954 9.37158 12.0968L7.41146 10.6727C7.16612 10.4945 6.8339 10.4945 6.58856 10.6727L4.62844 12.0968C4.07985 12.4954 3.34171 11.9591 3.55126 11.3142L4.29995 9.00994C4.39367 8.72152 4.29101 8.40556 4.04566 8.22731L2.08555 6.8032C1.53695 6.40462 1.81889 5.53689 2.497 5.53689H4.91984C5.22309 5.53689 5.49186 5.34162 5.58558 5.0532L6.33427 2.74895Z" fill="white"></path>
+              </svg>
+              <p data-config-id="auto-txt-12-3">{{ data.tag }}</p>
+            </div>
+          {% endif %}
+          {% if data.title and data.title != '' %}
+            <h1 class="leading-narrow mb-6 text-[24px] lg:text-4xl font-avant  text-white  md:text-gray-900 font-heading xl:text-5xl m:text-center">
+              {{ data.title }}
+            </h1>
+          {% endif %}
+          {% if data.description and data.description != '' %}
+            <div class="mb-10 text-xl font-medium text-center text-white">
+              {{ data.description }}
+            </div>
+          {% endif %}
+          <div class="w-full max-w-sm mx-auto mt-5 flex sm:max-w-none sm:justify-start gap-8 md:pt-16 text-avenir {{section.settings.button_position}}">
+            {%- if section.blocks.size > 0 -%}
+              {% for button in section.blocks %}
+                <div class="m:w-full">
+                  <a
+                    href="{{button.settings.url}}"
+                    class=" group p-3 text-base text-center text-white rounded   bg-prolon_secondary font-bold font-avenir active:shadow-sm flex justify-content items-center"
+                  >
+                    <p class="relative z-10 mr-2">
+                      {{ button.settings.text }}
+                    </p>
+
+                    <svg
+                      width="12"
+                      height="10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-white stroke-white group-hover:fill-black group-hover:stroke-black"
+                    >
+                      <path fillrule="evenodd" cliprule="evenodd" d="M7.154.646a.5.5 0 0 0-.707.708l3.145 3.145H1.2a.5.5 0 1 0 0 1h8.394L6.447 8.646a.5.5 0 1 0 .707.708l4-4a.5.5 0 0 0 0-.708l-4-4Z" fill="currentColor"></path>
+                    </svg>
+                  </a>
+                </div>
+              {% endfor %}
+            {%- endif -%}
+          </div>
+          {% if data.bottom_badge_text and data.bottom_badge_text != '' %}
+            <div class="-bottom-6 md:absolute  bg-white bottom-0 bottom-8 flex items-center mt-4 overflow-hidden ring-1 ring-slate-700/10 rounded-md shadow-xl w-full md:w-[283px]">
+              <div class="bg-orange-100 flex-none font-avant font-bold h-16 h-6 p-4 stroke-slate-500 text-3xl text-prolon_green text-prolon_secondary w-16 w-6">
+                {{ data.bottom_badge_number }}
+              </div>
+              <div class="flex flex-col h-6 justify-center p-4 ring-slate-900/10 rounded-md">
+                {{ data.bottom_badge_text }}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner TW Homepage",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "tag",
+      "label": "Tag",
+      "default": "Tag"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "bottom_badge_number",
+      "label": "Bottome Badge Number"
+    },
+    {
+      "type": "textarea",
+      "id": "bottom_badge_text",
+      "label": "Bottome Badge Text"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "select",
+      "id": "text_position_hero",
+      "label": "Text Position",
+      "default": "md:items-center md:justify-center",
+      "options": [
+        {
+          "label": "right_bottom",
+          "value": "md:items-end md:justify-end"
+        },
+        {
+          "label": "left_bottom",
+          "value": "items-end md:justify-start"
+        },
+        {
+          "label": "left_center",
+          "value": "md:items-center md:justify-start"
+        },
+        {
+          "label": "right_top",
+          "value": "md:items-start md:justify-end"
+        },
+        {
+          "label": "right_center",
+          "value": "md:items-center md:justify-end"
+        },
+        {
+          "label": "left_top",
+          "value": "md:items-start md:justify-start"
+        },
+        {
+          "label": "center",
+          "value": "md:items-center md:justify-center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "default": "md:object-right",
+      "options": [
+        {
+          "label": "left",
+          "value": "md:object-left"
+        },
+        {
+          "label": "right",
+          "value": "md:object-right"
+        },
+        {
+          "label": "top",
+          "value": "md:object-top"
+        },
+        {
+          "label": "bottom",
+          "value": "md:object-bottom"
+        },
+        {
+          "label": "center",
+          "value": "md:object-center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_position",
+      "label": "Button Position",
+      "default": "md:justify-start",
+      "options": [
+        {
+          "label": "left",
+          "value": "md:justify-start"
+        },
+        {
+          "label": "right",
+          "value": "md:justify-end"
+        },
+        {
+          "label": "center",
+          "value": "md:justify-center"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Button Type",
+          "default": "primary",
+          "options": [
+            {
+              "label": "primary",
+              "value": "primary"
+            },
+            {
+              "label": "secondary",
+              "value": "secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

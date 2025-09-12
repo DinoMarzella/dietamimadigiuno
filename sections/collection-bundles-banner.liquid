@@ -1,0 +1,22 @@
+<div class="banner-bundle__container">
+    <h1 class="banner-bundle__title">{{ section.settings.banner_title }}</h1>
+    <p class="banner-bundle__description"> {{ section.settings.banner_description }}</p>      
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.collection-best-seller-banner.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "banner_title",
+      "label": "t:sections.collection-best-seller-banner.settings.banner_title"
+    },
+    {
+      "type": "textarea",
+      "id": "banner_description",
+      "label": "t:sections.collection-best-seller-banner.settings.banner_description"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+<template v-if="cart && cart.items && cart.items.length > 0">
+  <ul class="grid gap-6 m-0 md:gap-6" >
+    <template v-for="(item,index) in reverseCart">
+      {% render 'king-cart-single-item' %}
+      
+    </template> 
+    {% render 'expedited-shipping'  %}
+  </ul> 
+ 
+  <button
+    class="hidden font-medium hover:text-gray-500 mt-[30px] text-center text-orange-800 text-right text-xs underline w-full"
+    @click="clearCart"
+  >
+    Clear Cart
+  </button>
+</template>

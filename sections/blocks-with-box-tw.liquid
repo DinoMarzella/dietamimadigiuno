@@ -1,0 +1,121 @@
+{% assign data = section.settings %}
+
+<!-- blocks-with-box-tw -->
+
+<div class="flex w-full items-center justify-center bg-[{{data.bg_color}}]">
+    <div class="flex w-full flex-col items-center justify-center py-12 md:pb-20">
+        <div class="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="font-harmonia mt-2 text-4xl font-normal leading-8 tracking-wide text-[#2F6645] sm:text-4xl">
+                    {{data.title}}</p>
+                <p></p>
+            </div>
+            <div class="mt-10 w-full">
+                <div class="flex w-full flex-col flex-wrap items-start justify-center md:flex-row">
+                    {% for block in section.blocks %}
+                    <div
+                        class="relative flex w-full flex-col items-start justify-start p-6 md:w-1/3 md:max-w-[350px] md:p-10">
+                        <div class="flex h-20 w-20 items-start justify-start rounded-md bg-transparent text-white"
+                            style="width: 80px; height: 80px;">
+                            <!-- card.settings.image_overide_url  -->
+
+                            <img class="h-full w-full object-contain object-center" width="100%" height="100%"
+                                src="{{block.settings.bimg | img_url: '3000x'}}" />
+                        </div>
+                        <p class="font-avant font-harmonia mt-2 text-left text-[#2F6645] font-bold text-black">
+                            {{block.settings.btitle}}</p>
+                        <p class="font-harmonia mt-4 text-left text-base text-black">{{block.settings.bdetails}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="mx-auto mt-4 max-w-sm justify-center sm:flex sm:max-w-none md:justify-center"></div>
+            </div>
+        </div>
+        <div class="relative w-full max-w-[900px] px-5 mt-10">
+            <div class="mt-0 flex w-full flex-col items-center justify-center">
+                <div class="bg-[#e9e9e9] p-4 py-0 absolute top-[-20px]">
+                    <h4 class="text-4xl tracking-wide text-[#2F6645]">{{data.ctitle}}</h4>
+                </div>
+                <div
+                    class="flex w-full items-center justify-center py-10 px-10 text-center flex-col border-solid border-[#2F6645] border ">
+                    <div class="max-w-[650px] py-5">
+                    {{data.cdetails}}
+                     </div>
+                </div>
+                {% if data.clink %}
+                <div class="bg-[#e9e9e9] p-4 py-0 absolute bottom-[-20px]"><a href="{{data.clink}}"
+                        class="btn text-link" style="color: white !important; margin-bottom: 0px; " tabindex="0">Try
+                        ProLon now</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blocks with box TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#e9e9e9"
+    },
+    {
+        "type": "text",
+        "id": "ctitle",
+        "label": "Title"
+    },
+    {
+        "type": "html",
+        "id": "cdetails",
+        "label": "Details"
+    },
+    {
+        "type": "url",
+        "id": "clink",
+        "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "bimg",
+          "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "btitle",
+            "label": "Title"
+        },
+        {
+            "type": "html",
+            "id": "bdetails",
+            "label": "Details"
+        }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "Blocks with box TW",
+        "blocks": [
+          {
+            "type": "cards"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}

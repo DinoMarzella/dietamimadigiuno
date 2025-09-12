@@ -1,0 +1,175 @@
+
+{% for xtag in customer.tags %}
+{% assign tag = xtag  | downcase %}
+{% if tag == 'approved' %}
+{%assign approved= true %}
+{% endif %}
+{% if tag == 'lhp' or tag == 'provider' or tag == 'hcp' or tag == 'hcr' or tag == 'hcc' or tag == 'hcr-recommender'  %}
+
+{% assign isProvider = true %}
+ 
+{% endif %} 
+
+
+{% endfor %} 
+<style>
+
+    .form {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #btn-submit {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: #f1903a;
+        width: 150px;
+        height: 45px;
+      margin-top:15px;
+    }
+
+    .alert {
+        padding: 10px;
+        margin: 5px;
+        width: 30%;
+        border-radius: 5px;
+        border-color: 1px lightgray inset;
+    }
+
+    .alert-success {
+        background-color: #32CD32;
+        color: white;
+    }
+
+    .alert-danger {
+        background-color: #FF7370;
+        color: white;
+    }
+  #certificate{
+    margin: 10px;
+    margin-top: -14px;
+    display: inline-flex;
+  }
+  
+   .announcement-bar {
+    display: none;}
+</style>
+<div class="page-width page-content">
+<header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+<h1 class="section-header__title">{{ 'customer.account.title' | t }} - Resale License</h1>
+
+<a href="/account?view=resources" class="btn btn--secondary btn--small section-header__link">Professional Resources</a> <a href="/account" class="btn btn--secondary btn--small section-header__link">Account Overview</a>
+
+</header>
+
+<div class="grid">
+   <div class="grid__item medium-up--two-thirds">
+     <h3>Resale License - Tax Exempt</h3>
+     <p>If you have any changes to your resale license or need to apply a new license to your account please upload that file here. 
+       Upon successful submission of your license, our team will be notified and we will update your tax staus. 
+       To see the document we have on file for you please click "View Certificate". 
+            <p><ul><li>Your current tax status: <strong>{% if customer.tax_exempt %} Account is tax exempt
+{% else %} Account is not tax exempt 
+     {% endif %}</strong></li></ul></p>
+
+    <form id="data" method="post" enctype="multipart/form-data" class="form">
+      
+        View Your Resale Certificate <div style="display: none;" id="certificate">
+        
+      </div>
+      <br><br>
+      
+              <div class="alert alert-success" style="display: none;"></div>
+        <div class="alert alert-danger" style="display: none;"></div>
+      <span style="background-color: #edf1f2;
+    padding: 12px;
+    font-weight: 800;"> Upload/Update your license here.</span>
+        <input name="email" required type="hidden" value="{{customer.email}}" />
+        <input name="resale-certificate" required type="file" />
+        <button id="btn-submit">Submit</button>
+    </form>
+    <br><br> 
+     
+</div>
+ 
+  
+   <div class="grid__item medium-up--one-third" style="display:none">
+    {% include 'provider-account-links'  %}
+      <h3>{{ 'customer.account.details' | t }}</h3>
+
+      <p class="h5">{{ customer.name }}</p>
+{% comment %}<!-- Begin ReCharge code -->
+<p id="rc_link_container">
+    <a href="/tools/recurring/login">Manage Subscriptions</a>
+</p>
+<!-- End ReCharge code -->{% endcomment %}
+ 
+<p class="h5">Default Address</p>
+      {{ customer.default_address | format_address }}
+
+      <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+    </div>
+ </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+//       console.log('Sending Request...')
+      let api_url = 'https://prolon-pro.herokuapp.com'
+//       let api_url = 'http://localhost:1337'
+      let customer_email = {{customer.email | json}};
+        $.ajax({
+          url: `${api_url}/leads/resale-certificate?email=${customer_email}&shop=prolon-pro.myshopify.com`,
+          method: 'GET',
+          success: function (data) {
+            if(data && data != ''){
+              let html = `<a target="_blank" href="${data}" class="btn btn--primary btn--small section-header__link">View Certificate</a>`
+              $('#certificate').html(html).show();
+            }
+          },
+          error: function (err) {
+              $("#certificate").html('').hide()
+          }
+        });
+    })
+    $("form#data").submit(function (e) {
+      let api_url = 'https://prolon-pro.herokuapp.com'
+//     let api_url = 'http://localhost:1337'
+        e.preventDefault();
+        $("#btn-submit").text('...')
+        $(".alert").hide()
+        var formData = new FormData(this);
+
+        $.ajax({
+          url: `${api_url}/leads/update-resale-certificate?shop=prolon-fmd-2020.myshopify.com`,
+            type: 'POST',
+            data: formData,
+            success: function (data) {
+//                 console.log('data: ', data);
+              let html = `<a target="_blank" href="${data}" class="btn btn--primary btn--small section-header__link">View Certificate</a>`
+              $('#certificate').html(html).show();
+                // alert('Success.')
+                $(".alert-success").html('Updated Successfully.')
+                $(".alert-success").show()
+                $("#btn-submit").text('Submit')
+            },
+            error: function (err) {
+                console.log('err: ', err);
+                // alert('Error.')
+                let errorText = 'Something went wrong.'
+                if (err.responseText)
+                    errorText = err.responseText
+                $(".alert-danger").html(errorText)
+                $(".alert-danger").show()
+                $("#btn-submit").text('Submit')
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    });
+</script>

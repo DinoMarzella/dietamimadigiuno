@@ -1,0 +1,62 @@
+{% if product.selling_plan_groups.size > 0 %}
+//  SHOPIFY RECHARGE  CHECKOUT INTEGRATION 
+function addSubscriptionOptions(context=null) { 
+   
+  $('.simple-sub-plan').remove();   
+  let planAdded=false;  
+  if(context){
+
+    let sellingPlan= $(context).find('#selling_plan-js');
+
+    if(sellingPlan && sellingPlan.length>0){
+        planAdded=true;
+        if(context)
+        $( `form fieldset[name=Quantity] [data-value*="Subscri"] input:checked`,context).closest('.variant-input').append( sellingPlan.text())   
+        else 
+        $( `form fieldset[name=Quantity] [data-value*="Subscri"]  input:checked`).closest('.variant-input').append( sellingPlan.text())
+    }   
+          
+  } 
+  
+  if(!planAdded){ 
+  $(`form fieldset[name=Quantity] [data-value*="Subscri"]`).append( 
+      '<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' + 
+   
+      '<select name="selling_plan">' +
+
+    {% for group in product.selling_plan_groups %}
+
+{% for selling_plan in group.selling_plans %}  
+'  <option value="{{ selling_plan.id }}" data-end="0">{{ selling_plan.name }}</option>' +
+{% endfor %}  
+
+{% endfor %} 
+      '</select>' +
+      '</div>');    
+      } 
+}  
+
+{% else %} 
+// RECHARGE DIRECT CHECKOUT INTEGRATION
+function addSubscriptionOptions() {
+  $(".simple-sub-plan").remove();
+
+
+  $(`form fieldset[name=Quantity] [data-value*="Subscribe"] input:checked`).each(function () {
+
+    $(this).closest('.variant-input').append(
+      '<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' +
+      '<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">' +
+      '<input type="hidden" name="properties[number_charges_until_expiration]" value="">' +
+      '<select name="properties[shipping_interval_frequency]">' +
+      '  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+      '  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' +
+
+      "</select>" +
+      "</div>"
+    );
+
+  })
+}
+
+{% endif %} 

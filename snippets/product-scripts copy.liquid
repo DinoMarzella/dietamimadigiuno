@@ -1,0 +1,70 @@
+<style>
+	/* .product-single__description.rte{
+visibility:hidden;    } */
+  .product-single__description.rte.visible{
+visibility:visible;
+  }
+  
+
+  
+  
+</style>
+<script>
+  function calcPrices(){
+  $('.variant-input-radio-wrap input').each(function(){
+
+let Quantity=$(this).val();
+
+let Soup= $('.variant-input-wrap input[name="Select Your Soup Flavors"]').val();
+
+let option = $(`option[data-option1="${Soup}"][data-option2="${Quantity}"]`);
+let price = option.data('price');
+let comparePrice= option.data('compare-at-price')
+$(this).closest('.variant-input').find('.price-wrapper').html(`<div> <s>${comparePrice}</s>${price} </div>`)
+
+
+});
+  }
+  calcPrices();
+   
+  // $(document).on('change','.variant-input input[name="Soup Flavor"]',function(e){
+
+    
+  //   changeDescription(e.target.value);
+    
+
+  //   });
+  
+  // function changeDescription(o){
+  
+  
+  //  let discription=$('.product-single__description.rte');
+    
+	// if(o=='Original')
+  //   {  
+      
+	// discription.html(discription.data('original'));
+      
+  //   } 
+  //   else if(o=='New Flavors' || o.includes('Soup')){
+	// discription.html(discription.data('new-flavor'));
+  //   } 
+  //   setTimeout(function(){
+  //   discription.addClass('visible');
+  //   },100);
+    
+  
+  // }
+  
+  
+  
+  
+  
+  
+  
+  $(document).ready(function(){ 
+  $('.variant-input input[name="Soup Flavor"]').change();
+	let currentVal= $('.variant-input input[name="Soup Flavor"]:checked').val()
+    //changeDescription(currentVal);
+  });
+  </script>  

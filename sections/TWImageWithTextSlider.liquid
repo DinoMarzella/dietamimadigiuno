@@ -1,0 +1,254 @@
+
+<style>
+  .image-text-slider{
+    position: relative;
+  }
+  .image-text-slider-wrapper .slick-next {
+      /* background-color: #fff; */
+      background-color: rgba(255,255,255,.9);
+      z-index: 1;
+      height: 3.25rem;
+      margin-top: -0.9375rem;
+      padding: 0.9rem;
+      width: 3.25rem;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+      /* -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 20%); */
+      -moz-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+      position: relative;
+      position: absolute;
+      right: 10px;
+      top: calc(100% + 10px);    
+  }
+  .image-text-slider-wrapper .slick-prev {
+      /* background-color: #fff; */
+      background-color: rgba(255,255,255,.9);
+      z-index: 1;
+      height: 3.25rem;
+      margin-top: -0.9375rem;
+      padding: 0.9rem;
+      width: 3.25rem;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+      /* -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 20%); */
+      -moz-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+      position: absolute;
+      left: calc(100% - 150px);
+      top: calc(100% + 10px);  
+  }
+  .image-text-slider-wrapper .slick-next svg{
+      position: absolute;
+      top: 5px;
+      left: 22px;
+  }
+  .image-text-slider-wrapper .slick-prev svg{
+      position: absolute;
+      top: 5px;
+      left: 18px;
+  }
+  
+  .image-text-slider-wrapper .slick-track { display: flex; align-items: stretch; }
+  
+  .image-text-slider-wrapper .slick-slide { height: auto; flex: 1; }
+  
+  .image-text-slider-wrapper .slick-dots {
+      bottom: -1.3rem;
+      position: absolute;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+  }
+  .image-text-slider-wrapper .slick-dots li {
+      height: 0.625rem;
+      width: 0.625rem;
+      display: inline-flex;
+      margin: 0 0.25rem;
+      border-radius: 50%;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+  }
+  .image-text-slider-wrapper .slick-dots li button {
+      background-color: #c9c9cc;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%;
+      height: 0.625rem;
+      width: 0.625rem;
+  }
+  .image-text-slider-wrapper .slick-dots li button {
+    color: transparent;
+  }
+  .image-text-slider-wrapper .slick-dots li button::before {
+      display: block;
+      left: 0;
+      top: 0;
+      transition: background .1s ease-out;
+      height: 0.625rem;
+      width: 0.625rem;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      content: "";
+      font-family: inherit;
+      font-size: 60px;
+      line-height: 20px;
+      text-align: center;
+      color: #c9c9cc;
+      opacity: .6;
+      -webkit-font-smoothing: antialiased;
+  }
+  .image-text-slider-wrapper .slick-dots li.slick-active button::before {
+      background: #222;
+      top: 0;
+      color: #222;
+      opacity: 1;
+  }
+  .image-text-slider-wrapper .slick-next:before,
+  .image-text-slider-wrapper .slick-prev:before {
+    display: none;
+  }
+  .image-text-slider-wrapper .slick-next,
+  .image-text-slider-wrapper .slick-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
+<div class='py-6 font-harmonia md:py-12 image-text-slider-wrapper' style="background-color: {{ section.settings.background_color }}">  
+  <div class='w-full mx-auto max-w-[1420px] px-5 lg:px-8 '>
+    <div class="image-text-slider rounded-xl bg-[#fef3e4]">   
+      {%- for block in section.blocks-%}
+        {% assign data = block.settings %}
+        <div class="w-full">
+          <div class='relative flex flex-col items-stretch justify-center overflow-hidden md:flex-row rounded-xl'>
+            <div class="relative w-full p-[20px] mx-auto md:p-[40px] md:w-3/5" style="max-width:{{data.image_max_width}};">
+              {% if data.use_video_html %}
+                  {{data.overide_image}}
+                {% else %} 
+              <img class="object-contain object-bottom w-full h-full" width='100%' height='100%' src={{ data.image | img_url: '1600x'  }} />
+              {% endif %}
+  
+          </div>
+            <div class="flex flex-col items-start justify-center w-full px-6 mx-auto md:px-12 md:w-2/5">
+                  {%- if data.tag -%}
+                    <p class="w-full px-5 text-[18px] leading-[26px] font-light tracking-widest text-center text-black uppercase md:pt-0 md:px-10 md:text-left font-avenir mb-[10px] md:mb-[15px]">{{data.tag}}</p>
+                  {%- endif -%}
+                  {%- if data.title -%}
+                    <h2 class="px-5 font-[500] text-center md:px-10 md:text-left text-[26px] leading-[31px] md:text-[32px] md:leading-[38px] mb-[10px] md:mb-[15px]" >
+                      <span class="block text-center text-black md:text-left font-avenir">{{data.title}}</span>
+                  </h2>                
+                {%- endif -%} 
+                {%- if data.description -%}
+                  <div class='px-5 text-[18px] md:text-[21px]  leading-[26px] md:leading-[31px] text-center text-black md:text-left md:px-10 font-avenir'>  
+                    {{data.description}}              
+                  </div>               
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "Image Text Slider TW", 
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "cards",
+        "name": "Cards",
+        "settings": [
+          {
+      "type": "text",
+      "id": "pretitle",
+      "label": "Pre Title"
+    },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "Description"
+      },
+       {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_video_html",
+        "label": "Use Video / Html"
+      },
+      {
+            "type": "html",
+            "id": "overide_image",
+            "label": "Video / Html Iframe "
+      },
+      {
+        "type": "text",
+        "id": "image_max_width",
+        "label": "Image Max Width"
+      },
+      {
+        "type": "text",
+        "id": "tag",
+        "label": "Tag"
+      }
+        ]
+      }
+    ],
+    "presets": [{
+        "name": "Image Text Slider TW"
+    }
+        ]
+  }
+{% endschema %}
+
+
+<script>
+  $(document).ready(function () {
+    $(".image-text-slider").slick({
+      "dots": false,
+      "arrows": true,		
+      "infinite": true,
+      "slidesToShow": 1,
+      "slidesToScroll": 1,
+      responsive: [
+        {
+          "breakpoint": 880,
+          "settings": {
+            "slidesToShow": 1,
+            "dots": true,
+            "arrows": false,	
+          }
+        },
+      ],
+      prevArrow:
+        '<div class="slick-prev" style="cursor:pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="42" viewBox="0 0 24 42"><path d="M22.4572074 1.00746147l-21 20.02482143 20.9479397 19.9751786" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"/></svg></div>',
+      nextArrow:
+        '<div class="slick-next" style="cursor:pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="42" viewBox="0 0 24 42"><path d="M1.45679 1.00746147l21 20.02482143L1.50885 41.0074615" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"/></svg></div>'
+    });
+  });
+</script> 

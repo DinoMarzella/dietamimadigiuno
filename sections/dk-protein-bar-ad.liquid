@@ -1,0 +1,77 @@
+{% schema %}
+{
+"name": "dk Protein Bar Ad",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Main Heading",
+"default": "We raised the bar on healthy protein"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Protein Image"
+},
+{
+"type": "richtext",
+"id": "paragraph1",
+"label": "First Paragraph",
+"default": "<p>Protein is essential to life and to muscle protection and growth. But eating some kinds of protein can increase levels of pro-aging hormones like IGF-1—and many protein products contain additives that can compromise your health. The L-Protein Bar is different.</p>"
+},
+{
+"type": "richtext",
+"id": "paragraph2",
+"label": "Second Paragraph",
+"default": "<p><strong>Formulated by the longevity scientists behind the Prolon 5-Day Fasting Mimicking Diet (FMD),</strong> this bar delivers the clean, complete plant-based protein that fuels your strength and vitality, without the elements that age you.</p>"
+}
+],
+"presets": [
+{
+"name": "dk Protein Bar Ad"
+}
+]
+}
+{% endschema %}
+
+<div class="bg-[#D0B9AB] mx-auto max-w-[1600px] relative rounded-lg px-4 pt-4 md:pt-12">
+    <div
+        class="max-w-[1400px] mx-auto w-full md:px-4 flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+        <!-- Left Text -->
+        <div class="md:w-[60%] mx-auto text-center md:text-left">
+            <div class="flex flex-col md:flex-row">
+                <h2
+                    class=" my-2 md:mt-24 w-full text-start text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px]">
+                    {{ section.settings.heading }}
+                </h2>
+                {% if section.settings.image != blank %}
+                <img src="{{ section.settings.image | img_url: 'master' }}" alt="Prolon L-Protein Bar"
+                    class="object-contain w-full max-w-[380px] mx-0 md:mx-auto xl:max-w-[420px]" />
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Right Text -->
+        <div class="md:w-[40%] text-[#00332B]  leading-relaxed md:mt-20">
+            <div class="mb-4">
+                {{ section.settings.paragraph1 }}
+            </div>
+            <div>
+                {{ section.settings.paragraph2 }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative lines (Desktop) -->
+    <div class="absolute bottom-0 left-0 right-0 justify-center hidden md:flex">
+        <div class="h-[50px] w-1/2 border-r-2 border-[#1F4139]"></div>
+        <div class="w-1/2"></div>
+    </div>
+
+    <!-- Decorative lines (Mobile) -->
+    <div class="flex justify-center pt-4 md:hidden md:pt-14">
+        <div class="h-[50px] w-1/2 border-r-2 border-[#1F4139]"></div>
+        <div class="w-1/2"></div>
+    </div>
+</div>
+    

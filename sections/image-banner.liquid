@@ -1,0 +1,41 @@
+<a href="{{section.settings.banner_url}}">
+<picture style="
+    width: 100%;
+    display: block;
+  ">
+    <source srcset="{{section.settings.desktop_image | img_url: '2200x'}}" media="(min-width: 991px)"> 
+  
+    <source srcset="{{section.settings.mobile_image  | img_url: '1200x'}}" media="(max-width: 990px)">
+
+    <img srcset="{{section.settings.desktop_image  | img_url: '2200x'}}" style="width: 100%;">
+  </picture>
+</a>
+
+{% schema %}
+{
+    "name": "Image Banner",
+    "settings": [
+     {
+        "type": "text",
+        "id": "banner_url",
+        "label": "Banner Url"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_image",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Banner",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

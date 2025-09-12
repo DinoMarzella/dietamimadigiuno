@@ -1,0 +1,352 @@
+ <div class="{{ section.settings.bg-color }}">
+  {% comment %}
+    <h2 class="text-start text-[16px] font-[600]">
+      {{ section.settings.heading_text }}
+    </h2>
+  {% endcomment %}
+  <section class="max-w-[1800px] mx-auto relative tab-img-content md:block">
+    <div class="flex justify-start gap-2 px-4 md:block">
+      <div class="flex items-center justify-center md:hidden ">
+        <div class="w-[2px] h-full  {% if section.settings.mobile_line_color == 'black' %} bg-black {% else %} bg-white {% endif %}"></div>
+      </div>
+      <div class="flex flex-col  {% if section.settings.flex-reverse == 'reverse' %} row-reverse {% endif %}  items-center justify-between mx-auto lg:flex-row ">
+        <div class="relative flex items-center justify-center md:pt-0 pt-4 {% if section.settings.flex-reverse == 'observe' %} lg:border-r-2 {% if section.settings.line_color == 'dark' %} lg:border-[#1F4139] {% else %} lg:border-white {% endif %} {{ section.settings.line_change }} {% endif %} lg:w-1/2 lg:mt-0 {{ section.settings.html_line }} py-4 lg:py-44">
+        <div class="w-full max-w-[700px] {% if section.settings.flex-reverse == 'reverse' %} lg:border-r-2 {% if section.settings.line_color == 'dark' %} lg:border-[#1F4139] {% else %} lg:border-white {% endif %} {{ section.settings.line_change }} {% endif %}">
+          <h1 class="text-[25px] md:py-0 py-[20px] md:text-[35px] font-light" >{{ section.settings.heading }}</h1>
+          <h4 class="mx-auto text-left text-[12px] md:text-[14px] leading-[1.2] font-bold text-[#56a511] pb-0 mb-[5px] mt-0 pt-0 uppercase"> {{ section.settings.subheading_below }} </h4>  
+
+        <dl class="mt-4 md:mt-20">
+            {% for block in section.blocks %}
+            <div class=" parent-of-question qa-wrapper">
+                <dl>
+                    <dt class="question">
+                        <button type="button"
+                            class="flex items-start justify-between w-full px-3 py-[2rem] text-left text-gray-900 toggle-faq"
+                            aria-controls="faq-1" aria-expanded="false">
+                            <span class="text-[16px] font-semibold leading-7">{{ block.settings.question }}</span>
+                            <span class="flex gap-2 ">
+                                <span class="flex gap-2 minus-icon" aria-hidden="true"> Chiudi <span> <img
+                                            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Vector_3.png?v=1724930184" alt="Arrow up"
+                                            class="mt-[9px] w-[15px] "></span></span>
+                                <span class="flex hidden gap-2 plus-icon" aria-hidden="true"> Apri  <span> <img
+                                            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Vector_2.png?v=1724930184" alt="Arrow up"
+                                            class="mt-[9px] w-[15px] "></span></span>
+
+                            </span>
+                        </button>
+                    </dt>
+                    <div class="block w-full h-[1px] bg-gray-400" >
+                        
+                    </div>
+
+                    <dd class="p-4 faq-answer" style="display: none;">
+                        {% comment %} <h2 class="text-[20px] md:text-[30px] font-base leading-7">{{ block.settings.headingtext }}</h2> {% endcomment %}
+                        <div class="">
+                            {{ block.settings.content }}
+                            
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            {% endfor %}
+
+        </dl>
+
+    </div>
+        </div>
+
+        {% if section.settings.enable_section %}
+          <div class="w-full text-left md:pt-0 lg:w-1/2">
+            <div class="">
+              <div class="relative px-6 mx-auto rounded-lg md:px-4 lg:max-w-xl">
+                <div class="absolute top-0 left-0 flex flex-col items-center h-full">
+                  <div>
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Background.png?v=1733996222"
+                      alt="Background Image"
+                    >
+                  </div>
+                  <div class="w-[2px] bg-gray-200 flex-grow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% else %}
+          <div class="w-full px-4 text-left lg:w-1/2">
+          <a
+              href="{{section.settings.video_url}}"
+              class=""
+              aria-hidden="true"
+              aria-label="Watch The Video"
+            ></a>
+            <img
+              src="{{ section.settings.hero_image | img_url: '2000x' }}"
+              alt="{{ section.settings.heading_text | strip_html }}"
+              class="md:w-[60%] object-cover lg:mx-[165px] py-[50px] {{ section.settings.html_v }}"
+            >
+            
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "pl image with faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+    },
+    {
+      "type": "select",
+      "id": "flex-reverse",
+      "label": " Flex Reverse",
+      "default": "observe",
+      "options": [
+        {
+          "label": "Observe",
+          "value": "observe"
+        },
+        {
+          "label": "Reverse",
+          "value": "reverse"
+        }
+        
+      ]
+    },
+    {
+     "type": "textarea",
+     "id": "line_change",
+     "label": "Line change"
+    },
+    {
+      "type": "select",
+      "id": "line_color",
+      "label": "Line color",
+      "default": "dark",
+      "options": [
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_line_color",
+      "label": "Mobile Line color",
+      "default": "black",
+      "options": [
+        {
+          "label": "Black",
+          "value": "black"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "bg-color",
+      "label": "background color "
+    },
+    {
+      "type": "select",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "dark_green",
+      "options": [
+        {
+          "label": "Dark green",
+          "value": "dark_green"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+"type": "text",
+"id": "subheading_below",
+"label": "Subheading below the title",
+},
+    {
+"type": "text",
+"id": "heading",
+"label": "Heading",
+"default": "Prolon 5-Day (Fasting Mimicking Diet) Program"
+  },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video Url"
+    },
+    {
+      "type": "html",
+      "id": "html_v",
+      "label": "Image CSS class"
+    },
+    {
+      "type": "html",
+      "id": "html_line",
+      "label": "Center line hide "
+    }
+  ],
+"blocks": [
+{
+"type": "questions_block",
+"name": "_list_block",
+"settings": [
+{
+"type": "text",
+"label": "Type Question",
+"id": "question"
+},
+{
+"type": "text",
+"label": "Type heading text",
+"id": "headingtext"
+
+},
+{
+"type": "html",
+"label": "Type first text",
+"id": "content"
+},
+{
+"type": "text",
+"label": "Type text",
+"id": "text"
+}
+]
+}
+],
+  "presets": [
+    {
+      "name": "pl image with faq",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.new-faq-toggle').on('click', function () {
+      const $toggle = $(this);
+      const $content = $toggle.next('.new-content');
+      const $icon = $toggle.find('.new-faq-icon');
+
+      // Close other open FAQs
+      $('.new-content').not($content).css('max-height', '0');
+      $('.new-faq-icon').not($icon).removeClass('rotate').addClass('no-rotate');
+
+      // Toggle current FAQ
+      if ($content.css('max-height') !== '0px') {
+        $content.css('max-height', '0');
+        $icon.removeClass('rotate').addClass('no-rotate');
+      } else {
+        $content.css('max-height', $content.prop('scrollHeight') + 'px');
+        $icon.addClass('rotate').removeClass('no-rotate');
+      }
+    });
+  });
+</script>
+
+<style>
+  .rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .no-rotate {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .new-content {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #73984a;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #1f4139;
+    opacity: 1;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: false,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+<script>
+   $(document).ready(function () {
+        // Initially open the first FAQ and close others
+        // $('.qa-wrapper').first().addClass('open').find('.faq-answer').show();
+        // $('.qa-wrapper').not(':first').find('.faq-answer').hide();
+        // $('.qa-wrapper').not(':first').find('.plus-icon').removeClass('hidden');
+        // $('.qa-wrapper').not(':first').find('.minus-icon').addClass('hidden');
+
+        $('.toggle-faq').on('click', function () {
+            var isExpanded = $(this).attr('aria-expanded') === 'true';
+
+            // Close all other FAQs
+            $('.qa-wrapper').not($(this).closest('.qa-wrapper')).removeClass('open').find('.faq-answer').slideUp();
+            $('.qa-wrapper').not($(this).closest('.qa-wrapper')).find('.plus-icon').removeClass('hidden');
+            $('.qa-wrapper').not($(this).closest('.qa-wrapper')).find('.minus-icon').addClass('hidden');
+
+            // Toggle the clicked FAQ
+            $(this).attr('aria-expanded', !isExpanded);
+            $(this).closest('.qa-wrapper').toggleClass('open').find('.faq-answer').slideToggle();
+            $(this).find('.plus-icon').toggleClass('hidden');
+            $(this).find('.minus-icon').toggleClass('hidden');
+        });
+    });
+
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.accordion-faqs-title').forEach((el) => {
+      el.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('.faqs-close-btn');
+        if (content) content.classList.toggle('hidden');
+        if (icon) icon.classList.toggle('rotate-180');
+      });
+    });
+  });
+</script>

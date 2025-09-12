@@ -1,0 +1,210 @@
+<style>
+    .prolon-recycle-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .child-prolon-recycle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px 0px;
+    }
+
+    .rc-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rc-title h2 {
+        margin-top: 0px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .row-of-days-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 50px 0px;
+    }
+
+    .row-of-days-wrap hr {
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .single-item-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+        margin: 0px 5px;
+    }
+
+    .single-item-b h2 {
+        margin-bottom: 0px;
+        font-weight:400;
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+    .single-item-b p {
+    line-height: 22px;
+    max-width:150px;
+    margin:0px;
+    }
+    @media(max-width:1250px) {
+        .rc-title{
+            padding: 0px 10px;
+        }
+        .rc-title h2 {
+        font-size: 28px;
+    }
+        .row-of-days-wrap {
+            max-width: 90%;
+        }
+
+        .single-item-b {
+            max-width: 130px;
+            height: 120px;
+        }
+
+        .single-item-b h2 {
+            font-size: 20px;
+        }
+
+        .single-item-b p {
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width:1000px) {
+        .single-item-b {
+            max-width: 100px;
+            height: 100px;
+        }
+
+        .single-item-b h2 {
+            font-size: 18px;
+        }
+
+        .single-item-b p {
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .row-of-days-wrap {
+            flex-direction: column;
+            padding: 20px 0px;
+        }
+
+        .row-of-days-wrap hr {
+            display: none;
+        }
+
+        .single-item-b {
+            margin: 5px;
+            max-width: 180px;
+            height: 180px;
+        }
+
+        .single-item-b h2 {
+            font-size: 24px;
+        }
+
+        .single-item-b p {
+            font-size: 15px;
+            padding: 0px 10px;
+        }
+    }
+</style>
+
+<div class="prolon-recycle-wrapper">
+    <div class="child-prolon-recycle" style="background: {{section.settings.bg_clr}};color:{{section.settings.txtclr}};">
+        <div class="rc-title">
+            <h2>{{section.settings.pmtitle}}</h2>
+        </div>
+        <div class="row-of-days-wrap">
+            <hr>
+            {% for block in section.blocks %}
+            <div class="single-item-b">
+                <h2>{{block.settings.days_title}}</h2>
+                <p>{{block.settings.days_description}}</p>
+            </div>
+            {% endfor %}
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Journey Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pmtitle",
+      "label": "Add Title",
+      "default": "Journey Title"
+    },
+    {
+      "type": "color",
+      "id": "bg_clr",
+      "label": "Background Color",
+      "default": "#2f6645"
+    },
+    {
+      "type": "color",
+      "id": "txtclr",
+      "label": "Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+  {
+    "type": "day_of_prolon",
+    "name": "Days of Prolon",
+    "settings": [
+      {
+        "type": "text",
+        "id": "days_title",
+        "label": "Added Title",
+        "default": "Day 1"
+      },
+      {
+        "type": "html",
+        "id": "days_description",
+        "label": "Added Description",
+        "default": "Transitioning To Fasting State"
+      }
+   ]
+}
+],
+"presets": [{
+  "name": "journey section",
+  "blocks": [
+    {
+      "type": "day_of_prolon"
+    }
+  ]
+   }
+  ]
+}
+{% endschema %}

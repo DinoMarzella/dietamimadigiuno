@@ -1,0 +1,806 @@
+<style>
+  .ajaxcart__inner .rebuy-product-block {
+    border-bottom: 1px solid #dfe2e5;
+    display: grid;
+    grid-template-columns: 100px 1fr 180px;
+    padding: 1.25rem;
+    background: white;
+  }
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-media {
+    width: 100px;
+  } 
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-media,
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-info {
+    grid-row: 1 / span 2;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-info {
+    width: auto;
+    grid-row: 1 / span 2;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .11px;
+    line-height: 1.5;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-variant-title {
+    color: #545c5f;
+    display: block;
+    font-size: .875em;
+    letter-spacing: .09px;
+    margin-right: 16px;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-review {
+    margin: 0;
+  }
+
+  .ajaxcart__inner .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-price {
+    color: #202324;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -.26px;
+    line-height: 1;
+    text-align: left;
+    display: block;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-price .rebuy-money {
+    color: inherit;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-options {
+    align-self: end;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-options,
+  .ajaxcart__inner .rebuy-product-block .rebuy-product-actions {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ajaxcart__inner .rebuy-product-block .rebuy-select {
+    font-size: .875rem;
+    margin-bottom: .5rem;
+  }
+
+  .ajaxcart__inner .rebuy-button {
+    background-color: #ffb231;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fontFamily);
+    font-size: 1rem;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-left: auto;
+    max-width: 100%;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-transform: none;
+  }
+
+  @media (max-width: 480px) {
+    .ajaxcart__inner .rebuy-product-block {
+      grid-template-columns: 100px 1fr;
+    }
+
+    .ajaxcart__inner .rebuy-product-block .rebuy-product-media {
+      grid-row: 1 / span 4;
+    }
+
+    .ajaxcart__inner .rebuy-product-block .rebuy-product-info {
+      padding-right: 0;
+    }
+
+    .ajaxcart__inner .rebuy-product-block .rebuy-product-options,
+    .ajaxcart__inner .rebuy-product-block .rebuy-product-actions {
+      padding-left: .875rem;
+    }
+
+    .ajaxcart__inner .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-price {
+      margin-bottom: .5rem;
+    }
+  }
+  }
+
+  .rebuy-widget .fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+  }
+
+  .rebuy-button {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 16px;
+    background: #2491C4;
+    border-width: 2px;
+    border-color: #2491C4;
+    border-radius: 5px;
+    border-style: solid;
+    text-align: center;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .rebuy-select,
+  select.rebuy-select {
+    display: block;
+    margin: 0;
+    padding: 10px 40px 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    border-color: #eee;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #919191 50%), linear-gradient(135deg, #919191 50%, transparent 50%), linear-gradient(to right, #919191, #919191);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  .rebuy-widget,
+  .rebuy-widget *,
+  .rebuy-widget *:before,
+  .rebuy-widget *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .rebuy-widget .rebuy-modal-close {
+    display: none;
+  }
+
+  .rebuy-widget .rebuy-product-title {
+    display: inline-block;
+    color: #434343;
+    text-decoration: none;
+  }
+
+  .rebuy-widget .rebuy-variant-title {
+    display: none;
+    margin: 0 0 5px 0;
+    color: #737373;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .rebuy-widget .rebuy-product-review {
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  .rebuy-widget .rebuy-product-price {
+    color: #737373;
+  }
+
+  .rebuy-widget .rebuy-money {
+    text-align: right;
+  }
+
+  .rebuy-widget .rebuy-product-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -moz-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .rebuy-widget .rebuy-product-grid:after {
+    content: '';
+  }
+
+  .rebuy-widget .rebuy-product-grid .rebuy-product-block {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block {
+      display: block;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-media {
+      float: left;
+      display: block;
+      width: 40%;
+      text-align: right;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-media img {
+      margin: 0 0 0 auto;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-info {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+      text-align: left;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-actions {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-options {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.large-columns-1 .rebuy-product-block {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block {
+      display: block;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block .rebuy-product-media {
+      float: left;
+      display: block;
+      width: 40%;
+      text-align: right;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block .rebuy-product-media img {
+      margin: 0 0 0 auto;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block .rebuy-product-info {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+      text-align: left;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block .rebuy-product-actions {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-style-list .rebuy-product-block .rebuy-product-options {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.medium-columns-1 .rebuy-product-block {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block {
+      display: block;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block .rebuy-product-media {
+      float: left;
+      display: block;
+      width: 40%;
+      text-align: right;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block .rebuy-product-media img {
+      margin: 0 0 0 auto;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block .rebuy-product-info {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+      text-align: left;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block .rebuy-product-actions {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-style-list .rebuy-product-block .rebuy-product-options {
+      float: right;
+      display: block;
+      margin: 10px 0 0 0;
+      padding: 0 15px;
+      width: 60%;
+    }
+
+    .rebuy-widget .rebuy-product-grid.small-columns-1 .rebuy-product-block {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .rebuy-widget .rebuy-product-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    -webkit-justify-content: stretch;
+    -moz-justify-content: stretch;
+    justify-content: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -moz-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    margin: 0;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-media {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    order: 1;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-media a.rebuy-product-image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    max-width: 100%;
+    font-size: 0;
+    line-height: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-media a.rebuy-product-image.clickable {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-media img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    order: 2;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-info .rebuy-product-title {
+    margin: 10px 0 0 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-info .rebuy-product-title.clickable {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-info .rebuy-product-price {
+    margin: 5px 0 0 0;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-actions {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: 20px;
+    order: 4;
+  }
+
+  .rebuy-widget .rebuy-product-block .rebuy-product-options {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: 20px;
+    order: 3;
+  }
+
+  .rebuy-widget .powered-by-rebuy {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -ms-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+  }
+
+  .rebuy-widget .powered-by-rebuy a {
+    display: inline-block;
+    color: #999;
+    text-decoration: none;
+  }
+
+  @media (max-width: 767px) {
+    .rebuy-widget .powered-by-rebuy {
+      opacity: 1;
+    }
+  }
+
+  .rebuy-widget:hover .powered-by-rebuy {
+    opacity: 1;
+  }
+
+  .rebuy-product-review {
+    font-size: 0;
+    line-height: 20px;
+  }
+
+  .rebuy-product-review .rebuy-star-rating {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  .rebuy-product-review .rebuy-star-rating .rebuy-star-rating-background {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3Csvg%20width%3D%22100%22%20height%3D%2220%22%20viewBox%3D%220%200%2080%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%23E5E5E5%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M71.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM55.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM40.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53-3.508-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM24.076%2011.368l-3.94%202.42c-.475.292-.757.096-.63-.443l1.076-4.53-3.507-3.022c-.422-.363-.324-.693.238-.74l4.603-.37%201.78-4.3c.21-.51.55-.512.76%200l1.78%204.3%204.602.37c.554.046.667.37.24.74l-3.508%203.02%201.074%204.532c.127.536-.146.74-.628.444l-3.94-2.422zM8.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53L1.12%205.792c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+
+  .rebuy-product-review .rebuy-star-rating .rebuy-star-rating-foreground {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3Csvg%20width%3D%22100%22%20height%3D%2220%22%20viewBox%3D%220%200%2080%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%23FBCA10%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M71.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM55.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM40.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53-3.508-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM24.076%2011.368l-3.94%202.42c-.475.292-.757.096-.63-.443l1.076-4.53-3.507-3.022c-.422-.363-.324-.693.238-.74l4.603-.37%201.78-4.3c.21-.51.55-.512.76%200l1.78%204.3%204.602.37c.554.046.667.37.24.74l-3.508%203.02%201.074%204.532c.127.536-.146.74-.628.444l-3.94-2.422zM8.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53L1.12%205.792c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+
+  .rebuy-product-review .rebuy-review-count {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .rebuy-widget .rebuy-product-title {
+    color: #232323;
+  }
+
+  .rebuy-money,
+  .rebuy-widget .rebuy-money {
+    color: #535353;
+  }
+
+  .rebuy-select,
+  .rebuy-widget .rebuy-select {
+    color: #232323;
+    background-color: #ffffff;
+    border-color#cccccc;
+    border-radius: 5px;
+  }
+
+  .rebuy-select {
+    background-image: linear-gradient(45deg, transparent 50%, #cccccc 50%), linear-gradient(135deg, #cccccc 50%, transparent 50%), linear-gradient(to right, #cccccc, #cccccc);
+  }
+
+  .rebuy-select:focus,
+  .rebuy-widget .rebuy-select:focus {
+    border-color: #2491C4;
+  }
+
+  .rebuy-button,
+  .rebuy-widget .rebuy-button {
+    color: #ffffff;
+    background: #2491C4;
+    border-color: #2491C4;
+    border-width: 2px;
+    border-radius: 5px;
+  }
+
+  .rebuy-widget.rebuy-widget {
+    background: transparent;
+  }
+</style>
+
+<div class="pyro fire-works">
+  <div class="before"></div>
+  <div class="after"></div>
+</div>    
+<div class="side-cart__suggestions" style="display:none;">
+
+  <div class="bg-wrapper-upsell">
+  <h5 style="text-align:center;padding-top: 10px;margin-bottom: 0px;color:black">Frequently bought together</h5>  
+  <!-- <div class="text-center" style="
+  font-size: 15px; 
+  font-weight: bold;   
+">Enjoy 4th of July Special Pricing</div> -->
+</div>    
+{% include 'count-down-timer' %}    
+  <ul class="side-cart__addons">
+   
+    {% for p in collections['checkout-upsell'].products %}
+    {% assign cVariant= p.variants[0]%}
+ 
+    <li
+      class="side-cart__item__addon-container  rebuy-product-block mct-powder product-id-9557748422 tag-allsupplements tag-bfcm2020 tag-bfcm2021 tag-caprop65 tag-core tag-ketosissupport tag-mct tag-mct-oil tag-mentalclarity tag-notnutbutter tag-overallwellness tag-pkwholesale tag-powder tag-searchpriority tag-singleproduct tag-subscribesave tag-subscription tag-supplements tag-wholesale"
+      data-id="{{cVariant.id}}">
+      <idv class="rebuy-product-media"><a href="/products/{{p.handle}}" class="rebuy-product-image clickable"><img
+            src="{{p.featured_image | img_url : '400x' }}" alt="{{}}"></a></idv>
+      <div class="rebuy-product-info"><a href="/products/{{p.handle}}" alt="View MCT Powder"
+          class="rebuy-product-title clickable">{{p.title}}</a>
+        <!-- <div class="rebuy-variant-title">{{cVariant.title}}</div> -->
+        <div class="rebuy-product-review"><span class="rebuy-star-rating"><span
+              class="rebuy-star-rating-background"></span> <span class="rebuy-star-rating-foreground"
+              style="width: 94.8192%;"></span></span>
+
+        </div>
+        <div class="rebuy-product-price">
+          <!---->
+          <div><span class="rebuy-money">{{cVariant.price | money}}</span></div>
+        </div>
+        <!---->
+      </div>
+      <div class="rebuy-product-options">
+        <select class="rebuy-select">
+          {% for v in p.variants %}
+          {% unless v.title contains 'Subscribe' or v.title contains 'Save' %}
+          <option value="{{v.id}}">{{v.title}} </option>
+          {% endunless %}
+          {% endfor %}
+        </select>
+        <!---->
+        <!---->
+      </div>
+      <div class="rebuy-product-actions">
+        <!---->
+        <!---->
+        <!----> <button type="button" class="rebuy-button side-cart__addon-add"
+          data-variant-id="{{cVariant.id}}"><span>Add to Cart</span></button>
+      </div>
+    </li>
+
+
+    {% endfor %}
+
+    {% comment %}
+    <li class="side-cart__item__addon-container" data-id="32858815168558">
+      <a>
+        <div class="side-cart__item-addon">
+          <div class="side-cart__addon-image"><img
+              src="https://cdn.shopify.com/s/files/1/0126/2921/3243/products/SingleBoxProLon_300x.jpg?v=1612736696"
+              alt="Buy ProLon"></div>
+          <div class="side-cart__addon-meta">
+            <span class="side-cart__product-style">ProLon Original</span>
+            <span style="
+                        font-weight: 100;
+                        font-size: 11px;
+                        line-height: 1;
+                        display: block;
+                        text-align: center; 
+                        padding: 5px 15px;
+                        text-align: left;
+                        max-width: 281px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        color: red;
+                        font-weight: bold;     text-align: center;
+ 
+                    ">Soup Variety</span>
+            <div class="flex side-cart__detail-price">
+              <div class="text-center side-cart__amount">$159.00</div>
+              <s class="sale-badge">$249</s>
+
+            </div>
+            <div class="save-amount-section">
+              <div class="save-ammount"> Save $90</div>
+            </div>
+
+          </div> <span class="side-cart__addon-action">
+            <button type="button" data-variant-id="32858815168558" data-add-addon="Buy ProLon" aria-label="Add Item"
+              class="btn side-cart__addon-add">ADD</button></span>
+        </div>
+      </a>
+    </li>
+
+
+
+    <li class="side-cart__item__addon-container" data-id="32858819756078">
+      <a>
+        <div class="side-cart__item-addon">
+          <div class="side-cart__addon-image"><img
+              src="https://cdn.shopify.com/s/files/1/0126/2921/3243/products/IMG_0044.jpg?v=1643477146"
+              alt="Buy ProLon"></div>
+          <div class="side-cart__addon-meta">
+            <span class="side-cart__product-style">Fast Bar 20ct </span>
+            <span style="
+    font-weight: 100;
+    font-size: 11px;
+    line-height: 1;
+    display: block;
+    /* background: #fec91c; */
+    padding: 5px 15px;
+    text-align: left;
+    max-width: 281px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: red;
+    font-weight: bold;
+"> Nuts & Honey</span>
+            <div class="flex side-cart__detail-price">
+              <div class="text-center side-cart__amount">$20.00</div>
+              <s class="sale-badge">$58 </s>
+            </div>
+            <div class="save-amount-section">
+              <div class="save-ammount"> Save $38</div>
+            </div>
+
+          </div> <span class="side-cart__addon-action">
+            <button type="button" data-variant-id="32858819756078" data-add-addon="Buy ProLon" aria-label="Add Item"
+              class="btn side-cart__addon-add">ADD</button></span>
+        </div>
+      </a>
+    </li>
+    {% comment %}
+
+    <li class="side-cart__item__addon-container" data-id="39570357354542"><a>
+        <div class="side-cart__item-addon">
+          <div class="side-cart__addon-image"><img
+              src="https://cdn.shopify.com/s/files/1/0508/0625/9870/products/1DayBoxPDP_59adfe44-b613-4135-9dd3-cd655962e08f.png?v=1632557330"
+              alt="Buy ProLon"></div>
+          <div class="side-cart__addon-meta"><span class="side-cart__product-style">ProLon® One Day Fast
+              Pack</span><span style="
+                    font-weight: 100;
+                    font-size: 11px;
+                    line-height: 1;
+                    display: block;
+                    text-align: center; 
+                    padding: 5px 15px;
+                    text-align: left;
+                    max-width: 281px;
+                    padding-left: 0px;
+                    padding-right: 0px;text-align: center;
+                    color: red;
+                    font-weight: bold;
+                ">Special Offer</span>
+            <div class="flex side-cart__detail-price">
+              <div class="text-center side-cart__amount">$10</div>
+              <s class="sale-badge">$39.99 </s>
+            </div>
+            <div class="save-amount-section">
+              <div class="save-ammount"> Save $30</div>
+            </div>
+          </div> <span class="side-cart__addon-action">
+            <button type="button" data-variant-id="39570357354542" data-add-addon="Buy ProLon" aria-label="Add Item"
+              class="btn side-cart__addon-add">ADD</button></span>
+        </div>
+      </a>
+    </li>
+    {% endcomment %}
+    {% endcomment %}
+  </ul>
+</div>

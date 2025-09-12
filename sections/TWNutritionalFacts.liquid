@@ -1,0 +1,177 @@
+{% assign data = section.settings %}
+<!-- TWNutritionalFacts -->
+<div class="w-full min-h-screen py-12 bg-white font-harmonia">
+  <div class="max-w-screen-lg px-4 mx-auto sm:px-6 lg:px-8">
+    <h1 class="w-full py-5 text-4xl font-bold text-center font-harmonia">{{ data.title }}</h1>
+    <div class="mt-10">
+      <div>
+        <div class="relative w-full py-3 text-base font-semibold text-center border-b cursor-pointer">
+          <p class="inline-block">SOUPS</p>
+          <p class="absolute inline-block right-5">+</p>
+        </div>
+        <div class="flex flex-col flex-wrap items-start justify-start md:flex-row">
+          {% assign soups_block = section.blocks | where: 'type', 'soups' %}
+
+          {%- if soups_block.size > 0 -%}
+            {% for cardMain in soups_block %}
+              {% assign card = cardMain.settings %}
+
+              <div class="relative w-full md:w-1/4">
+                <div class="">
+                  <img
+                    class="object-cover object-right w-full h-full transition duration-300 ease-in-out transform cursor-pointer motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.image | img_url: 'master' }}
+                  >
+                </div>
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+      <div>
+        <div class="relative w-full py-3 text-base font-semibold text-center border-b cursor-pointer">
+          <p class="inline-block">SNACKS</p>
+          <p class="absolute inline-block right-5">+</p>
+        </div>
+        <div class="flex flex-col flex-wrap items-start justify-start md:flex-row">
+          {% assign snacks_block = section.blocks | where: 'type', 'snacks' %}
+
+          {%- if snacks_block.size > 0 -%}
+            {% for cardMain in snacks_block %}
+              {% assign card = cardMain.settings %}
+
+              <div class="relative w-full md:w-1/4">
+                <div class="">
+                  <img
+                    class="object-cover object-right w-full h-full transition duration-300 ease-in-out transform cursor-pointer motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.image | img_url: 'master' }}
+                  >
+                </div>
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+      <div>
+        <div class="relative w-full py-3 text-base font-semibold text-center border-b cursor-pointer">
+          <p class="inline-block">DRICKS</p>
+          <p class="absolute inline-block right-5">+</p>
+        </div>
+        <div class="flex flex-col flex-wrap items-start justify-start md:flex-row">
+          {% assign drinks_block = section.blocks | where: 'type', 'drinks' %}
+
+          {%- if drinks_block.size > 0 -%}
+            {% for cardMain in drinks_block %}
+              {% assign card = cardMain.settings %}
+
+              <div class="relative w-full md:w-1/4">
+                <div class="">
+                  <img
+                    class="object-cover object-right w-full h-full transition duration-300 ease-in-out transform cursor-pointer motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.image | img_url: 'master' }}
+                  >
+                </div>
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+      <div>
+        <div class="relative w-full py-3 text-base font-semibold text-center border-b cursor-pointer">
+          <p class="inline-block">SUPPLEMENTS</p>
+          <p class="absolute inline-block right-5">+</p>
+        </div>
+        <div class="flex flex-col flex-wrap items-start justify-start md:flex-row">
+          {% assign supplements_block = section.blocks | where: 'type', 'supplements' %}
+
+          {%- if supplements_block.size > 0 -%}
+            {% for cardMain in supplements_block %}
+              {% assign card = cardMain.settings %}
+
+              <div class="relative w-full md:w-1/4">
+                <div class="">
+                  <img
+                    class="object-cover object-right w-full h-full transition duration-300 ease-in-out transform cursor-pointer motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.image | img_url: 'master' }}
+                  >
+                </div>
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Nutritional Facts TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "soups",
+      "name": "Soups",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "snacks",
+      "name": "Snacks",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "drinks",
+      "name": "Drinks",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "supplements",
+      "name": "Supplements",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

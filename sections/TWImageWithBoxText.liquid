@@ -1,0 +1,83 @@
+{% assign data = section.settings %}
+<!-- TWImageWithBoxText -->
+<div class="relative my-0 md:my-0 {%- if data.add_padding %} my-5 md:my-10 {%- endif -%}">
+  <div class="relative inset-0 w-full md:absolute sm:overflow-hidden">
+    <div class="object-cover w-full md:h-full">
+      <img
+        class="object-cover object-top w-full h-full"
+        width="100%"
+        height="100%"
+        src="{{ data.image | img_url: 'master' }}"
+      >
+    </div>
+  </div>
+  <div class="w-full mx-auto md:max-w-screen-xl 2xl:max-w-screen-2xl font-harmonia flex items-center justify-center {{ section.settings.box_position }}">
+    <div class="relative sm:overflow-hidden">
+      <div class="relative w-full px-4 py-10 bg-white md:my-16 md:max-w-sm sm:px-6 md:py-10 md:px-8">
+        <h3 class="w-full text-sm text-center text-black md:text-left md:pt-0">{{ data.tag }}</h3>
+        <h1 class="py-3 font-bold tracking-tight text-center text-black md:text-left text-28">
+          <span class="block text-center text-black md:text-left">{{ data.title }}</span>
+        </h1>
+        <div class="text-lg text-center text-black md:text-left">
+          {{ data.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image With Box TW",
+  "settings": [
+    { 
+      "type": "textarea",
+      "id": "tag",
+      "label": "Tag",
+      "default": "Tag"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Descreption",
+      "default": "Descreption"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "box_position",
+      "label": "Box Position",
+      "default": "md:justify-start",
+      "options": [
+        {
+          "label": "Center",
+          "value": "md:justify-center"
+        },
+        {
+          "label": "Left",
+          "value": "md:justify-start"
+        },
+        {
+          "label": "Right",
+          "value": "md:justify-end"
+        }
+      ]
+    }, 
+      {
+        "type": "checkbox",
+        "id": "add_padding",
+        "label": "Add Top Bottom Padding"
+      }
+  ]
+}
+{% endschema %}

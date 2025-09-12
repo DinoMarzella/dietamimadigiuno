@@ -1,0 +1,78 @@
+<div
+  class="w-full option-{{option.name}}"
+  role="radiogroup"
+  aria-labelledby="option-{{option.name}}-label"
+  data-option="{{option.name}}"
+  data-option-index="option-{{index}}"
+  v-cloak
+>
+  <label
+    class="{{option_title_class}}"
+    role="none"
+    v-text="getOptionName('{{index}}', '{{option.name}}')"
+  >
+    {{- option.name -}}
+  </label>
+  <div class="justify-between w-full  gap-3" role="none">
+    {% for value in option.values %}
+      <div class="flex-1 max-w-[100%]" role="none" v-if="!hideOption('option_{{index}}','{{value}}',{{index}})">
+        <label
+          class="inherit text-copy !font-normal"
+          v-if="optionAvailable('option{{index}}','{{value}}')"
+          ><input
+            class="sr-only product-option-input 1"
+            type="radio"
+            name="options[{{ option.name | escape }}]"
+            value="{{ value | escape }}"
+            v-model="option{{index}}"
+            {% if option.selected_value == value %}
+              checked
+            {% endif %}
+          >
+          {% if bg_image %}
+            <div class="
+                relative flex-1 block border cursor-pointer  focus:outline-none single-product-option border-gray-300 bg-white 
+                {% if forloop.first %}
+                rounded-md
+                {%endif %}
+                {% if forloop.last %}
+                  rounded-md
+                {% endif %}
+              ">
+              <img
+                class="block p-0 overflow-hidden"
+                :src="optionBgImage('option_{{index}}','{{value}}',{{index}})"
+                alt="variant-image"
+              >
+            </div>
+          {% else %}
+            <div
+              class="
+                {{option_button_class}}
+                {% if forloop.first %}
+                rounded-md
+                {%endif %}
+                {% if forloop.last %}
+                  rounded-md
+                {% endif %}
+              "
+              v-html="optionText('option_{{index}}','{{value}}',{{index}})"
+            >
+              {{ value }}
+            </div>
+          {% endif %}
+          <div
+            class="leading-[1.5] prolon-flavor-text pt-2 pr-1 text-xs md:text-sm font-normal hidden"
+            v-if="optionDescription('option_{{index}}','{{value}}',{{index}})"
+            v-html="optionDescription('option_{{index}}','{{value}}',{{index}})"
+          ></div> 
+        </label>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="mb-4 text-sm " role="none" ref="optionMessage"
+  v-html="getOptionDescription('{{index}}', '{{option.name}}')"
+  >
+    
+  </div> 
+</div>

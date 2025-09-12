@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.tw",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-pl",
+      "blocks": {
+        "html_dj8bPq": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon° Nutrition Bar",
+            "hide_option": false,
+            "option_1": "Nuts & honey",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512": {
+          "type": "faq",
+          "settings": {
+            "title": "Perché aggiungere una barretta nutrizionale alla tua giornata?",
+            "description": "La ricetta della barretta Nutrition Bar è il risultato di oltre 20 anni di ricerca presso la University of Southern California (USC). Gli scienziati hanno studiato come consumare miscele uniche di macronutrienti e micronutrienti senza interrompere lo stato di digiuno dell'organismo.\n\nHanno utilizzato questa formulazione per creare la barretta Nutrition Bar, che fornisce il gusto nutriente delle noci di macadamia, delle noci pecan, delle mandorle e del miele, con un effetto simile a quello di un bicchiere d'acqua* sul digiuno.\n<b>\nÈ inoltre a base vegetale, adatta alla dieta chetogenica e priva di glutine.</b>",
+            "page": ""
+          }
+        },
+        "9344d915-e31e-4901-8182-46abdde8b6ab": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Why to add ReSet in your life?",
+            "description": "<p>Reset is the only product that can nourish your body for a full day while your cells think you are not eating and therefore stay in a protective and rejuvenating state. It is a great detox, reboot, and maintenance product that balances your diet and washes the previous days of eating or drinking! The goal of reset is to provide you with premium plant-based, clean, low-carb, gluten-free nutrition that prolongs the previous overnight fast for another 24 hours, which has tremendous metabolic and cellular benefits. Reset formed around the Fasting Mimicking Nutri technology developed and tested by 14 global universities and L-Nutra to nourish you with premium quality plant-based food while inducing the cellular, metabolic, and emotional benefits of Prolonged fasting. It is a scientific breakthrough that took 2 decades, $48MM in research. and awarded 40+ patents — including the only patent in history on a nutrition program to enhance longevity and healthspan.</p>",
+            "page": ""
+          }
+        },
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b": {
+          "type": "faq",
+          "settings": {
+            "title": "Informazioni Nutrizionali",
+            "description": "<table class=\"nutrition-declaration\"><tbody>\n<tr>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Gusto</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Noci e miele</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Cocco e macadamia</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">gocce di cioccolato</font></font></th>\n</tr>\n<tr>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Importo per</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">100 grammi</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">100 grammi</font></font></th>\n<th><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">100 grammi</font></font></th>\n</tr>\n<tr>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Energia</font></font></td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">492 Kcal </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">2038 kJ</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">512 Kcal </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">2124 kJ</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">513 Kcal </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">2128 kJ</font></font>\n</td>\n</tr>\n<tr>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Grassi </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">di cui saturi </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">monoinsaturi </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">polinsaturi:</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">34 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">4,8 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">20 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">8,3 g</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">35 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">5 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">19 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">8 g</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">35 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">5 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">18 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">8,3 g</font></font>\n</td>\n</tr>\n<tr>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Carboidrati </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">di cui zuccheri:</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">21 grammi </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">11 grammi</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">27 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">13 g</font></font>\n</td>\n<td>\n<font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">26 g </font></font><br><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">13 g</font></font>\n</td>\n</tr>\n<tr>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Fibra</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">20 grammi</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">17 grammi</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">19 grammi</font></font></td>\n</tr>\n<tr>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Proteina</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">14 grammi</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">13 grammi</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">14 grammi</font></font></td>\n</tr>\n<tr>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Sale</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">0,46 g</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">0,46 g</font></font></td>\n<td><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">0,45 g</font></font></td>\n</tr>\n</tbody></table>",
+            "page": ""
+          }
+        },
+        "ca36c6fe-5a25-4b34-ac72-648a6d22c529": {
+          "type": "faq",
+          "settings": {
+            "title": "Ingredienti segreti della barretta nutrizionale",
+            "description": "La barretta nutriente nutre il tuo corpo con proteine ​​vegetali di alta qualità, carboidrati complessi (indice glicemico molto basso) ed è ricca di grassi sani, simili a quelli del cervello, che ricaviamo da macadamia, noci pecan e noci, gli ingredienti più costosi che la natura offre!<br>\nLa formula segreta della barretta nutriente è il frutto di due decenni di collaborazione tra la natura ei nostri scienziati, che hanno svelato una nutri-tecnologia naturale del digiuno con il cibo o di una dieta che imita il digiuno. Recentemente, 14 università globali hanno aderito alla ricerca e ci hanno aiutato a presentare al mondo la barra nutriente, Reset e ProLon Five Days Fasting Nutrition.",
+            "page": ""
+          }
+        },
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/nutrition_bar_08.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/nutrition_bar_14_1600x_87da6d7f-3fa3-45f6-bb5a-bb0f1edbba68.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "3249540d-84c9-4229-877c-a0d4369db659": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_bd63048ab2614da8b673cf68a6547f40_1600x_8a9d6a25-c385-40be-b191-9426e7f6a977.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/nutrition_bar_15_1600x_0c953bb0-0cab-4eff-9d03-e38f7e59d6df.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "a1130c1d-ef09-4b50-868d-90efd691e541": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_7fb73eb0441b47f5ad2c3cec60d26477_1600x_996a3d3b-2320-46a2-a5b2-2dc6af727988.webp",
+            "media_type": "video",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/7e63512d9a28473a9c73fa6d2433d475.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "html_dj8bPq",
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512",
+        "9344d915-e31e-4901-8182-46abdde8b6ab",
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b",
+        "ca36c6fe-5a25-4b34-ac72-648a6d22c529",
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5",
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3",
+        "3249540d-84c9-4229-877c-a0d4369db659",
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff",
+        "a1130c1d-ef09-4b50-868d-90efd691e541"
+      ],
+      "custom_css": [
+        ".nutrition-declaration table,.nutrition-declaration th,.nutrition-declaration td {border-width: 0px 0px 1px; border-style: solid; border-color: #0f0a0a; margin: 0px; padding: 0px;}"
+      ],
+      "settings": {
+        "custom_css_class": "md:!mb-[200px]",
+        "product": "prolon-nutrition-bar",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "custom_product_title": true,
+        "sub_title": "Barrette per il digiuno intermittente",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option1",
+        "option_1_name": "Choose {option}",
+        "option_1": "button",
+        "option_2_name": "Select {option}",
+        "option_2": "button",
+        "option_3_name": "Select {option}",
+        "option_3": "subscription-widget-new-v2"
+      }
+    },
+    "0e7e0514-d33b-43a3-84b2-266f49c7d7f1": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "template--16323201925278__0e7e0514-d33b-43a3-84b2-266f49c7d7f1-html-1": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"section\" style=\"background-color: #f4f7f1; color: black; text-align: center; padding: 30px; margin-bottom: 40px; margin-top: 20px;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Prolon_HSA_FSA_Eligable.svg?v=1702685554\" style=\"max-width: 300px; margin:auto;\"><p style=\"padding-top: 1%;\">Prolon is eligible for purchase and reimbursement with HSA/FSA — partnered with TrueMed. Questions? <a href=\"https://prolonlife.com/pages/fsa-hsa-faqs\" alt=\"FAQs on FSA/HSA\" style=\"font-weight: 600;\">Learn more</a></p>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16323201925278__0e7e0514-d33b-43a3-84b2-266f49c7d7f1-html-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a": {
+      "type": "pl-you-may-like",
+      "blocks": {
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1": {
+          "type": "boxes",
+          "settings": {
+            "title": "Performance Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2": {
+          "type": "boxes",
+          "settings": {
+            "title": "Intermittent Fasting Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3": {
+          "type": "boxes",
+          "settings": {
+            "title": "Longevity Essentials Bundle",
+            "Products": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "47469af4-dfcb-40f1-8d5a-ae27a4ec1230": {
+      "type": "pl-simple-image",
+      "settings": {
+        "image": "shopify://shop_images/FB_Icons_Updated_-_Desktop_2808x_copia_2808x_930ac650-7792-4bee-8e72-727af7617453.webp",
+        "image_mobile": "shopify://shop_images/FB_-_Icons_Updated_2_1512x_900x_034cfadc-3ad9-413f-92e2-95e4c4802cc6.webp",
+        "max-width-section": "!max-w-[840px]",
+        "padding-section": "px-[20px]"
+      }
+    },
+    "97cfe054-46bb-44ea-93ff-7eb3f3732d52": {
+      "type": "pl-fastingbar-grid",
+      "blocks": {
+        "3162c541-e3a7-4617-93b7-2cfbc974b69d": {
+          "type": "tabs",
+          "settings": {
+            "title": "NOCI DI MACADAMIA E COCCO",
+            "description": "<div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">\n            <div class=\"w-[15%]\"><img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\"></div>\n            <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">5 g di proteine &ZeroWidthSpace;&ZeroWidthSpace;vegetali</font></font></p>\n          </div>\n          <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">\n            <div class=\"w-[15%]\"><img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\"></div>\n            <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Mandorle, noci pecan, noci macadamia</font></font></p>\n          </div>\n          <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">\n            <div class=\"w-[15%]\"><img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\"></div>\n            <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Cocco, Sale marino</font></font></p>\n          </div>",
+            "bg_color": "#FCD8A7",
+            "image": "shopify://shop_images/nutrition_bar_03-removebg.webp"
+          }
+        },
+        "09159c38-0997-4527-87b4-fb2ebe1178eb": {
+          "type": "tabs",
+          "settings": {
+            "title": "NOCI E MIELE",
+            "description": "<div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">6 g di proteine &ZeroWidthSpace;&ZeroWidthSpace;vegetali</font></font></p> </div> <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Mandorle, noci pecan, noci macadamia</font></font></p> </div> <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Miele, sale marino</font></font></p> </div>",
+            "bg_color": "#FFDFB0",
+            "image": "shopify://shop_images/nutrition_bar_02-removebg.webp"
+          }
+        },
+        "f2879bcb-59c7-4f61-9157-4d67e19ec541": {
+          "type": "tabs",
+          "settings": {
+            "title": "SCAGLIE DI CIOCCOLATO",
+            "description": "<div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">5 g di proteine &ZeroWidthSpace;&ZeroWidthSpace;vegetali</font></font></p> </div> <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Mandorle, noci pecan, noci macadamia</font></font></p> </div> <div class=\"w-full py-[10px] border-b border-black flex justify-between items-center md:px-[20px]\">     <div class=\"w-[15%]\">\n<img class=\"w-[15px] h-[15px] object-contain\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/plus_2_copy.png?v=1691756485\" alt=\"più immagine\">     </div>     <p class=\"w-full text-left\"><font dir=\"auto\" style=\"vertical-align: inherit;\"><font dir=\"auto\" style=\"vertical-align: inherit;\">Gocce di cioccolato, sale marino</font></font></p> </div>",
+            "bg_color": "#FBD5A8",
+            "image": "shopify://shop_images/nutrition_bar_04-removebg.webp"
+          }
+        }
+      },
+      "block_order": [
+        "3162c541-e3a7-4617-93b7-2cfbc974b69d",
+        "09159c38-0997-4527-87b4-fb2ebe1178eb",
+        "f2879bcb-59c7-4f61-9157-4d67e19ec541"
+      ],
+      "settings": {}
+    },
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "Sì — Incredibilmente, quando mangi Fast Bar, il tuo corpo pensa che sia ancora a digiuno",
+        "subtitle": "WHY FAST BAR",
+        "description": "<p>\nLa formula esclusiva di Fasting Bar, composta da ingredienti di prima qualità, non attiva il sistema di percezione dei nutrienti del corpo, inducendolo a credere di stare digiunando.\n<br><br>\nLa ricetta di ProLon® Nutrition Bar nasce da oltre 20 anni di ricerca presso la University of Southern California (USC). Gli scienziati hanno studiato come miscele uniche di macronutrienti e micronutrienti potessero essere assunte senza interrompere lo stato di digiuno.\n</p>",
+        "image": "shopify://shop_images/nutrition_bar_16_sq_700x_9c0891b6-912c-477a-a465-240b5a1ade57.webp",
+        "image_on_left": false,
+        "image_contain": true
+      }
+    },
+    "151dd957-c577-4c56-a299-49b055fb668a": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "Delizioso + Sano = Straordinario",
+        "subtitle": "COME FUNZIONA",
+        "description": "<p>\nLa barretta ProLon® è realizzata con frutta secca di prima qualità, come le noci di macadamia. La frutta secca contiene una varietà di nutrienti benefici per la salute, come antiossidanti, vitamine, minerali, fibre e acidi grassi Omega-3.\n<br><br>\nLa ricetta della barretta ProLon® Nutrition è studiata per nutrire il corpo mantenendolo a digiuno. Per questo motivo, è ideale da gustare durante la finestra di digiuno intermittente del mattino o come spuntino serale per saziarsi prima di andare a letto.\n <br><br>\nSimilmente all'acqua, i nostri deliziosi gusti non aumentano i livelli di glucosio nel sangue e mantengono i chetoni a digiuno*!\n</p>",
+        "image": "shopify://shop_images/nutrition_bar_14_sq_700x_74885693-9607-4c29-a63b-fe8023041b5a.webp",
+        "image_on_left": true,
+        "image_contain": true
+      }
+    },
+    "944efbb9-81da-41ff-b131-722adde5d9d2": {
+      "type": "faq",
+      "blocks": {
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0": {
+          "type": "question",
+          "settings": {
+            "title": "Con quale frequenza devo assumere le Nutrition Bar?",
+            "text": "<p>Si consiglia di consumare la barretta Nutrition Bar una volta al giorno, poiché vogliamo che le persone seguano una dieta sana ed equilibrata che preveda pasti regolari durante il giorno.</p>\n\n<p>Si può consumare al mattino dopo il digiuno notturno o come spuntino sano in qualsiasi momento della giornata, in aggiunta ai pasti, per aiutare a frenare la fame.</p>\n<p>L'impatto e la sicurezza del consumo di più di una Nutrition Bar al giorno non sono stati studiati, si consiglia pertanto di consumare solo una Nutrition Bar al mattino o alla sera, insieme a una dieta sana ed equilibrata durante gli altri pasti.</p>\n\n<p>La Nutrition Bar è ideale per supportare l'alimentazione per un tempo limitato e altri digiuni brevi. Se cercate i benefici del digiuno prolungato, la nostra Dieta Mima Digiuno ProLon 5-day è stata ampiamente testata, e utilizzata in modo sicuro da centinaia di migliaia di consumatori complessivamente sani ed è stata clinicamente testata per fornire molti benefici e supportare la salute metabolica generale, se utilizzata in diversi cicli. Per maggiori informazioni su ProLon, visitate il sito www.prolon.it.</p>"
+          }
+        },
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1": {
+          "type": "question",
+          "settings": {
+            "title": "Quali sono i risultati del primo studio sulle barrette Nutrition Bar?",
+            "text": "<p>Lo studio sulle Nutrition Bar ha testato gli effetti del consumo di una barretta Nutrition Bar a colazione (dopo un digiuno notturno di 15 ore), rispetto al salto della colazione o al consumo di una barretta generica per colazione. Lo studio ha analizzato i livelli di glucosio e chetoni nel sangue nelle 4 ore successive alla colazione e ha dimostrato che i livelli di glucosio nel sangue dei pazienti che mangiavano la barretta Nutrition Bar erano quasi identici a quelli dei pazienti che saltavano la colazione.</p>\n\n<p>Anche i livelli di chetoni durante le 4 ore erano molto simili in entrambi i gruppi. Questi risultati hanno dimostrato che il consumo di una barretta Nutrition Bar non interferisce con i principali marcatori fisiologici del digiuno. Lo studio ha anche dimostrato che la barretta Nutrition Bar dava una sensazione di sazietà e frenava il desiderio di mangiare fino a 3 ore dopo il consumo. In altre parole, è possibile mangiare una barretta Nutrition Bar per rendere il digiuno più facile e piacevole, mantenendo livelli di chetoni e di glucosio nel sangue simili a quelli di un digiuno di sola acqua.</p>"
+          }
+        },
+        "910be383-f543-43a2-be67-fb6e7ddf7a75": {
+          "type": "question",
+          "settings": {
+            "title": "Esistono ulteriori ricerche alla base della Nutrition Bar?",
+            "text": "<p>Sì! La Nutrition Bar è stata progettata con la stessa tecnologia della Dieta Mima Digiuno di ProLon®. La nostra tecnologia è il risultato di oltre 20 anni di test preclinici e clinici, con oltre 36 milioni di dollari di finanziamenti per la ricerca e lo sviluppo da parte dei National Institutes of Health e dell'Unione Europea.</p>"
+          }
+        },
+        "48c96854-2f13-4edc-af9a-d41158e8a33c": {
+          "type": "question",
+          "settings": {
+            "title": "Come può la Nutrition Bar sostenere il digiuno se contiene calorie?",
+            "text": "<p>Un tempo gli scienziati ritenevano che il bilancio calorico (cioè le calorie consumate meno le calorie bruciate) fosse il fattore più importante per la perdita di peso. Ma oggi gli scienziati hanno ampiamente concordato sul fatto che non tutte le calorie sono uguali. Fattori come i rapporti tra i macronutrienti, le quantità totali, il modo in cui i nutrienti vengono digeriti e assorbiti e la composizione molecolare hanno tutti un impatto sul modo in cui l'organismo elabora il cibo.\n\nLa Dieta Mima Digiuno (FMD) e la barretta del digiuno sono state accuratamente progettate, ampiamente studiate e clinicamente testate per consentire il giusto consumo di nutrienti e calorie, pur mantenendo le cellule in uno stato di digiuno. La nostra speciale formula brevettata si nasconde efficacemente ai sensori dei nutrienti del corpo, impedendo loro di inviare il segnale ormonale che di solito viene inviato dopo aver mangiato. Le cellule rispondono alla diminuzione di questo segnale ormonale entrando in uno stato di digiuno. Per saperne di più sulla scienza mima digiuno, visitate la pagina <a href=\"https://prolon.it/pages/scienza-e-ricerca\">Scienza e Ricerca</a>.</p>"
+          }
+        },
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "C'è una differenza tra la Nutrition Bar e la L-Bar di ProLon FMD?",
+            "text": "<p>La Nutrition Bar è stata progettata con la stessa tecnologia delle L-Bar di ProLon, ma presenta lievi differenze in termini di dimensioni, numero di calorie e contenuto complessivo di zuccheri. A causa dell'attenta formulazione dei rapporti tra macro e micro-nutrienti, le singole barrette non sono intercambiabili e devono essere utilizzate solo come indicato.</p>"
+          }
+        },
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Is there a difference between Fast Bar and the L-Bar in ProLon FMD?",
+            "text": "<p>Fast Bar was designed with the same technology as ProLon’s L-Bars, but there are slight differences in size, calorie count and overall sugar content. Due to the carefully formulated macro and micro-nutrient ratios of the individual bars, they’re not intended to be interchangeable and should only be used as directed.</p>"
+          }
+        },
+        "question_kGGkLU": {
+          "type": "question",
+          "settings": {
+            "title": "Le barrette vanno conservate in frigorifero?",
+            "text": "<p>Le barrette vanno conservate in un luogo fresco ed asciutto, preferibilmente in frigorifero. Se a causa del caldo o dopo la consegna queste dovessero presentarsi troppo molli è necessario ripristinarne il normale stato riponendole in frigorifero e cercando di evitare ulteriori sbalzi di temperatura.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0",
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1",
+        "910be383-f543-43a2-be67-fb6e7ddf7a75",
+        "48c96854-2f13-4edc-af9a-d41158e8a33c",
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369",
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1",
+        "question_kGGkLU"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0": {
+      "type": "pl-newsletter",
+      "disabled": true,
+      "settings": {
+        "description": "<div class=\"lg:flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the Prolon community</p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n<div class=\"klaviyo-form-UEwecV w-full max-w-[450px] lg:mt-4\"></div>\n</div>",
+        "descriptionWidth": "w-full",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0e7e0514-d33b-43a3-84b2-266f49c7d7f1",
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a",
+    "47469af4-dfcb-40f1-8d5a-ae27a4ec1230",
+    "97cfe054-46bb-44ea-93ff-7eb3f3732d52",
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed",
+    "151dd957-c577-4c56-a299-49b055fb668a",
+    "944efbb9-81da-41ff-b131-722adde5d9d2",
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0"
+  ]
+}

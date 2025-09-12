@@ -1,0 +1,214 @@
+{{ "filter-css.css" | asset_url | stylesheet_tag }}
+<div
+  id="shopify-section-shop-all-nav"
+  class="shopify-section shopify-section--bordered"
+>
+  <div class="fixedflip">
+    <div
+      id="imlookingforcontainer"
+      class="imlookingforcontainer mobilehideimlookingforcontainer topofpagefilters"
+    >
+      <div class="fixedflex slidetoggleadjust">
+        <div class="imlookingforflex">
+          <div><h1 class="Heading u-h1 h1larger">I'm a</h1></div>
+          <div class="dropdown topdrop show">
+            <button
+              class="btn2 topdropitem btn-secondary2 dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <h1 id="selected1" class="Heading u-h1 h1larger headlinelink">
+                Man
+                <span class="anyproductsnav">Man</span>
+              </h1>
+            </button>
+            <div
+              class="dropdown-menu menu1"
+              aria-labelledby="dropdownMenuButton"
+              x-placement="bottom-start"
+              style="
+                position: absolute;
+                transform: translate3d(14px, 63px, 0px);
+                top: 0px;
+                left: 0px;
+                will-change: transform;
+              "
+            >
+              <a
+                style="cursor: pointer"
+                class="dropdown-item"
+                href=""
+                data-tag="man"
+                >Man</a
+              >
+              <a
+                style="cursor: pointer"
+                class="dropdown-item"
+                href=""
+                data-tag="woman"
+              >
+                Woman
+              </a>
+              <a
+                style="cursor: pointer"
+                class="dropdown-item"
+                href=""
+                data-tag="not-say"
+                >Rather not say</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="imlookingforflex">
+          <div>
+            <h1 class="Heading u-h1 h1larger">
+              <span id="thathelpwith" class="thathelpwith">
+                <span class="thathelpwithsingular">looking for </span>
+              </span>
+            </h1>
+          </div>
+
+          <div class="dropdown topdrop">
+            <button
+              class="btn2 topdropitem btn-secondary2 dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <h1 id="selected2" class="Heading u-h1 h1larger headlinelink">
+                <span>
+                  Weight Loss
+
+                  <span
+                    class="anyconcernnav graytextswitch"
+                    style="color: #aaa !important"
+                    >Weight Loss</span
+                  > 
+                </span> 
+              </h1>
+            </button>
+            <div
+              class="dropdown-menu menu2"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a
+                data-tag="weight-loss"
+                class="dropdown-item dropdownitemhideshow Allfilternav"
+                >Weight Loss</a
+              >
+ 
+              <a
+                data-tag="cleanse"
+                class="dropdown-item dropdownitemhideshow Allfilternav"
+                >Cleanse</a
+              >
+              <a
+                data-tag="detox"
+                class="dropdown-item dropdownitemhideshow Allfilternav"
+                >Detox</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="filterbuttonmobileslide" class="filterbuttonmobileslide">
+        <button><span class="filtertextchangeopen">Filter</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let current_tags= {{current_tags | json}};
+  let collection_url= {{collection.url |json}};
+
+  function changeTags(){
+
+
+  let tag1=$('.dropdown-menu.menu1 .dropdown-item.active').data('tag');
+  let tag2=$('.dropdown-menu.menu2 .dropdown-item.active').data('tag');
+  // if(!tag1 && !tag2){
+  // return;
+  // }
+  if( tag2 &&tag2!=''){
+ 
+    $('.page-new-content').hide();
+    $(`.${tag2}-content`).show(); 
+    setTimeout(() => {
+      $(window).resize();  
+      $(`.${tag2}-content`).find('.slick-slider').slick('refresh');
+    }, 100); 
+  } 
+  else{
+    $('.page-new-content').hide();
+    $('.weight-loss-content').show();
+
+    setTimeout(() => {
+      $(window).resize();
+    }, 100); 
+  } 
+  }
+
+      $(document).ready(function(){
+        
+   if(current_tags){
+          current_tags.forEach(e=>{
+              e=e.toLowerCase();
+              let element=$(`[data-tag="${e}"]`)
+              element.addClass('active');
+              element.closest('.topdrop').find('.Heading').text(element.html());
+          });
+      }
+          $('.topdropitem').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+          if($(this).closest('.topdrop').find('.dropdown-menu').hasClass('show')){
+
+          $('.topdrop .dropdown-menu').removeClass('show');
+
+          }
+          else{
+          $('.topdrop .dropdown-menu').removeClass('show');
+          $(this).closest('.topdrop').find('.dropdown-menu').addClass('show')
+          }
+
+          })
+          $('.dropdown-menu.menu1 .dropdown-item').click(function(e){
+  $('.dropdown-menu.menu1 .dropdown-item').removeClass('active');
+  e.preventDefault();
+  e.stopPropagation();
+  let current = $(this);
+  $('h1#selected1').text(current.text());
+  current.addClass('active');
+  $('.dropdown-menu.menu1').removeClass('show');
+  changeTags();
+
+  });
+
+  $('.dropdown-menu.menu2 .dropdown-item').click(function(e){
+      $('.dropdown-menu.menu2 .dropdown-item').removeClass('active');
+      e.preventDefault();
+      e.stopPropagation();
+      let current = $(this);
+      $('h1#selected2').text(current.text());
+      current.addClass('active');
+      $('.dropdown-menu.menu2').removeClass('show');
+      changeTags();
+    
+    });
+
+     });
+
+     $('body').click(function(e){
+
+      if($('.dropdown-menu').hasClass('show')){
+      $('.dropdown-menu').removeClass('show');
+      }
+
+     });
+</script>

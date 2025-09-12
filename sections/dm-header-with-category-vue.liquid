@@ -1,0 +1,1433 @@
+
+<style type="text/tailwindcss">
+
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: auto;
+    
+  } 
+  .ochatbot-container {
+    z-index: 900!important;
+}
+.btn{
+  background-color: var(--colorBtnPrimary);
+ 
+}
+.acsb-trigger.acsb-trigger-size-medium {
+    z-index: 900!important;
+}  
+body.slide-cart-open  div#botmanWidgetRoot {
+  display: none;
+}
+
+body.slide-cart-open  .acsb-trigger {
+  display: none!important;
+} 
+@layer utilities {
+
+
+  .theme-grid{
+    @apply block;
+  }
+}
+
+
+  @layer components {
+    .container{
+      
+      @apply mx-auto px-4 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-container ;   
+    }
+    .single-nav-item .nav__submenu {
+      @apply hidden;
+    }
+    .single-nav-item:hover .nav__submenu {
+      @apply block;
+    } 
+    .spinner-loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid orange;
+      width: 25px; 
+      height: 25px;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-top: 6px;
+  }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #alert-border-1:hover {
+    color: #fff;
+}
+</style>
+
+<style>
+  .h1, .h2, .h3, h1, h2, h3{
+    font-family: var(--typeHeaderPrimary),var(--typeHeaderFallback);
+    font-weight: var(--typeHeaderWeight);
+    letter-spacing: var(--typeHeaderSpacing);
+    line-height: var(--typeHeaderLineHeight);
+  } 
+  h1,.h1 {
+    font-size: var(--typeHeaderSize);
+  
+  }
+  h2.h2 {
+    font-size: calc(var(--typeHeaderSize)*0.85)
+  }
+  h3,.h3 {
+    font-size:calc(var(--typeHeaderSize)*0.75)
+  } 
+  @media only screen and (min-width:769px){
+    .h1,h1{
+      font-size:var(--typeHeaderSize);
+    }
+  
+    .h2,h2{
+      font-size:calc(var(--typeHeaderSize)*0.85);
+    }
+  
+    .h3,h3{
+      font-size:calc(var(--typeHeaderSize)*0.7);
+    }
+  
+    .h3--mobile{
+      font-size:calc(var(--typeHeaderSize)*0.57);
+    }
+  }
+.btn-st-1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 12rem;
+  height: auto;
+}
+
+.btn-st-1 .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #f7931d;
+  border-radius: 1.625rem;
+}
+
+.btn-st-1 .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.btn-st-1 .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.btn-st-1 .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.btn-st-1 .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-st-1:hover .circle {
+  width: 100%;
+}
+
+.btn-st-1:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.btn-st-1:hover .button-text {
+  color: #fff;
+}
+</style>
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'announcement' -%}
+      <script src="{{'top-bar-slideshow.js' | asset_url}}" defer></script>
+      <div class="p-2 border-y-2 border-prolon_primary md:text-center font-avenir {%- if product.tags contains 'private-sales' -%} {{block.settings.private-sales-class}} {% else %} {{block.settings.class}} {% endif %}">
+
+        {%- if block.settings.text == empty -%} {% else %}
+        <a href="{%- if product.tags contains 'private-sales' -%} {{block.settings.private-sales-link}} {% else %} {{block.settings.link}} {% endif %}" id="text-bar-1" class="TopBarSlides" role="alert">  
+          <div class="ml-3 mr-2 text-sm font-medium md:text-base text-center">{%- if product.tags contains 'private-sales' -%} {{block.settings.private-sales-text}} {% else %} {{block.settings.text}} {% endif %}</div>
+        </a>
+        {% endif %}
+
+      {%- if block.settings.text-2 == empty -%} {% else %}
+        <a href="{{block.settings.link-2}}" id="text-bar-2" class="TopBarSlides hidden" role="alert">  
+          <div class="ml-3 mr-2 text-sm font-medium md:text-base text-center">{{block.settings.text-2}}</div>
+        </a>
+        {% endif %}
+
+      {%- if block.settings.text-3 == empty -%} {% else %}
+        <a href="{{block.settings.link-3}}" id="text-bar-3" class="TopBarSlides hidden" role="alert">  
+          <div class="ml-3 mr-2 text-sm font-medium md:text-base text-center">{{block.settings.text-3}}</div>
+        </a>
+        {% endif %}
+      
+    </div>
+    {% endif %}
+  {% endfor %}
+<div id="cart-with-header">  
+<div class="top-0 w-full relative z-950 ">     
+<div class="bg-white m-auto   prolon-container rounded-md shadow-lg w-full ">
+<header 
+      role="banner"
+      id="desktop"  
+      class="z-40 items-center hidden lg:block justify-between w-full gap-8 px-12 py-4 m-auto text-black transition duration-300 bg-white backdrop-blur-lg  font-avenir shadow-sm mx-auto"
+        :class=" {'fixed': scrollY >= 120, 'top-0': scrollY >= 120 }"
+  >
+      <div class="max-w-container w-full mx-auto lg:flex ">
+      <div id="logo-img" class="flex-1">
+        <a
+          class="flex md:pr-16 md:pl-16"
+          href="/"
+          ><img
+            class="object-contain h-12 md:h-14 "
+            src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLonLogo.svg?v=1666798099" 
+            alt="Prolon Italia logo"  
+        ></a>  
+      </div>
+      <div id="main-nav" class="flex mr-8">
+        <nav class="relative flex items-center justify-center gap-8">
+          <div class="relative single-nav-item has-mega-menu">   
+            <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex flex-col flex-wrap w-full md:flex-row md:w-2/3">
+                  {%- for block in section.blocks  limit: 4 -%}
+                    {%- if block.type == 'mega-menu-image' -%}
+                  <a href="{{block.settings.url}}" class="!block w-full  pr-2 md:w-1/2 {% if forloop.index <= 2 %} pb-2 {% endif %}">
+                    <div  
+                      class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" 
+                      style=" height: 144px;"
+                    > 
+                      <div class="flex justify-center w-1/3 mr-3 item-center">
+                        <img
+                          loading="lazy"
+                          width="300"
+                          height="300"
+                          src="{{ block.settings.image | img_url: '300x' }}"
+                          class="object-contain w-full h-auto"
+                          alt="{{block.settings.title}}"
+                        > 
+                      </div>
+                      <div class="flex flex-col justify-center w-2/3 item-start">
+                        <h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">{{block.settings.title}}</h4>
+                        <p class="text-base" style="color: rgb(34, 32, 47);">
+                          {{block.settings.subtitle}}
+                        </p>  
+                      </div> 
+                    </div>
+                  </a>
+                {%- endif -%}
+                {% endfor %}
+                  
+                </div>
+                <div class="flex flex-wrap w-full md:w-1/3">
+                  {%- for block in section.blocks    -%}
+                    {%- if block.type == 'mega-menu-image' and forloop.index > 4 -%}  
+                  <a href="{{block.settings.url}}" class="w-full pb-2 pr-2">
+                    <div
+                      class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover"
+                      style=" height: 112px;"  
+                    >   
+                      <div class="flex justify-center w-1/3 mr-3 item-center">
+                        <img 
+                          loading="lazy"
+                          src="{{ block.settings.image | img_url: '300x' }}"
+                          class="object-contain w-full h-auto"
+                          alt="{{block.settings.title}}"
+                        >
+                      </div>
+                      <div class="flex flex-col justify-center w-2/3 item-start">
+                        <h4 class="text-xl font-bold tracking-normal leading-1 xl:text-xl" style="color: rgb(34, 32, 47);">{{block.settings.title}}</h4>
+                        <p class="text-base" style="color: rgb(34, 32, 47);">
+                          {{block.settings.subtitle}}</p>
+                      </div>
+                    </div>
+                  </a>
+                    {% endif %}
+                  {% endfor %}
+                  
+                  <a  
+                    class="w-full p-3 text-base font-bold text-center text-white rounded bg-prolon_secondary font-avenir mr-2"
+                    href="/products/prolon-5-day"  
+                    ><span class="w-full">Ordina Kit</span></a
+                  > 
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="relative single-nav-item">
+            <a  
+              target="_self"
+              class="flex items-center justify-center group nav__menu-item"
+              href="/collections/tutti-i-prodotti"
+            > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Prodotti</p>
+            </a>
+          </div>
+          <div class="relative  single-nav-item ">
+            <a  
+              target="_self"
+              class="flex items-center justify-center group nav__menu-item"
+              href="/pages/scienza-e-ricerca"
+            > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Scienza</p>
+            </a>
+          </div>  
+          <div class="relative single-nav-item "> 
+            <a  
+              target="_self"
+              class="flex items-center justify-center group nav__menu-item"
+              href="/pages/dieta-mima-digiuno"
+            > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Mima Digiuno</p>
+              </a> 
+          </div>
+          <div class="relative single-nav-item "> 
+            <a  
+              target="_self"
+              class="flex items-center justify-center group nav__menu-item"
+              href="/pages/faq"
+            > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">FAQ</p>
+              </a> 
+          </div>
+          <div class="relative single-nav-item "> 
+            <a  
+              target="_blank"
+              class="flex items-center justify-center group nav__menu-item"
+              href="https://blog.prolon.it/"
+            > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Blog</p>
+              </a> 
+          </div>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">    
+        {%  unless template contains 'product' %} 
+        <a 
+          class="hidden w-32 p-3 text-base text-center text-white rounded  md:block bg-prolon_secondary font-bold font-avenir active:shadow-sm" 
+          href="/products/prolon-5-day"  
+          >Ordina ora</a>      
+      {% endunless %}   
+        <a class="relative flex items-center justify-center w-8 h-8 focus:ring-primary/5" href="/account"  >
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49989 7C4.49989 3.96243 6.96232 1.5 9.99989 1.5C13.0375 1.5 15.4999 3.96243 15.4999 7C15.4999 10.0375 13.0375 12.5 9.99994 12.5C9.99993 12.5 9.99991 12.5 9.99989 12.5C6.96232 12.5 4.49989 10.0376 4.49989 7ZM12.8072 12.8642C14.9916 11.8165 16.4999 9.58441 16.4999 7C16.4999 3.41015 13.5897 0.5 9.99989 0.5C6.41004 0.5 3.49989 3.41015 3.49989 7C3.49989 9.58441 5.00818 11.8165 7.19253 12.8642C6.25369 13.1119 5.34775 13.4838 4.49957 13.9734C2.82713 14.9386 1.43815 16.327 0.472172 17.999C0.334032 18.2381 0.415881 18.5439 0.654988 18.6821C0.894094 18.8202 1.19991 18.7384 1.33805 18.4992C2.21625 16.9792 3.47899 15.717 4.99944 14.8395C6.51985 13.962 8.24442 13.5 9.99989 13.5C9.99992 13.5 9.99996 13.5 9.99999 13.5C11.7555 13.5 13.4801 13.962 15.0005 14.8396C16.5209 15.7171 17.7837 16.9793 18.6618 18.4994C18.8 18.7385 19.1058 18.8204 19.3449 18.6823C19.584 18.5441 19.6658 18.2383 19.5277 17.9992C18.5618 16.3272 17.1728 14.9388 15.5004 13.9735C14.6522 13.4839 13.7462 13.1119 12.8072 12.8642Z" fill="#22202F"></path>
+          </svg></a
+        ><span class="relative inline-flex"
+          ><button
+            type="button"
+            class="inline-flex items-center px-2 py-2 text-sm font-semibold leading-6 transition duration-500 ease-in-out bg-white rounded-md cursor-pointer show-slide-cart"
+            @click="toggleSlideCart"
+          >
+            <svg
+              data-element="CartIcon"
+              data-component="MiniCart"
+              data-source-file="minicart.js"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+            >
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 1.4181C1.75 1.29866 1.83684 1.25 1.88 1.25H14.63C14.6526 1.25 14.6777 1.25855 14.7024 1.28523C14.728 1.3129 14.75 1.35837 14.75 1.4181C14.75 1.42398 14.7501 1.42987 14.7503 1.43574L15.2499 15.5882C15.2484 15.6424 15.2276 15.6852 15.2018 15.7127C15.1755 15.7408 15.1483 15.75 15.125 15.75H1.375C1.3517 15.75 1.32447 15.7408 1.29819 15.7127C1.27238 15.6851 1.2516 15.6424 1.25009 15.5882L1.74969 1.43574C1.7499 1.42987 1.75 1.42398 1.75 1.4181ZM1.88 0.25C1.2363 0.25 0.755222 0.793661 0.750042 1.40808L0.250311 15.5643C0.250104 15.5701 0.25 15.576 0.25 15.5819C0.25 16.1951 0.722793 16.75 1.375 16.75H15.125C15.7772 16.75 16.25 16.1951 16.25 15.5819C16.25 15.576 16.2499 15.5701 16.2497 15.5643L15.75 1.40808C15.7449 0.804177 15.2836 0.25 14.63 0.25H1.88ZM5.5 5C5.5 4.72386 5.27614 4.5 5 4.5C4.72386 4.5 4.5 4.72386 4.5 5C4.5 5.96141 4.88192 6.88344 5.56174 7.56326C6.24156 8.24308 7.16359 8.625 8.125 8.625C9.08641 8.625 10.0084 8.24308 10.6883 7.56326C11.3681 6.88344 11.75 5.96141 11.75 5C11.75 4.72386 11.5261 4.5 11.25 4.5C10.9739 4.5 10.75 4.72386 10.75 5C10.75 5.69619 10.4734 6.36387 9.98116 6.85616C9.48887 7.34844 8.82119 7.625 8.125 7.625C7.42881 7.625 6.76113 7.34844 6.26884 6.85616C5.77656 6.36387 5.5 5.69619 5.5 5Z" fill="#22202F"></path>
+            </svg>
+          </button>
+
+          <span class="absolute top-[6px] right-0 flex w-3 h-3 -mt-1 -mr-1"
+            ><span class="absolute inline-flex w-full h-full bg-orange-600 rounded-full opacity-75 animate-ping"></span
+            ><span class="relative inline-flex w-3 h-3 justify-center text-white text-center bg-prolon_secondary rounded-full text-[10px] leading-3"
+              v-text="cartCount<10?cartCount:''">
+                </span>  
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="max-w-container w-full mx-auto lg:flex hidden">
+      <div id="category-nav" class="z-40 flex mt-2 md:pr-16 md:pl-16">
+        <nav class="relative flex items-center justify-center gap-8">
+          <div class="relative single-nav-item has-mega-menu">
+            <a target="_self" class="flex items-center justify-center group nav__menu-item cursor-pointer" > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap font-semibold">Tutti i prodotti</p>
+              <span class="inline-block mt-1 ml-2">
+                <svg class="arrow-down group-hover:rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                  <path d="M4 4.5L8 0.5L0 0.5L4 4.5Z" fill="#22202F"></path>
+                </svg></span
+            ></a>   
+            <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu md:pr-16 md:pl-16">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex flex-col flex-wrap w-full md:flex-row">
+                  <a href="/products/l-biome" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/l-biome_copia_8966eca6-4582-4169-8bd2-ce01eb8e0519.png" class="object-contain w-full h-auto" alt="ProLon® L-Biome"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">NOVITÀ - ProLon® L-Biome</h4><p class="text-base" style="color: rgb(34, 32, 47);">Favorisce la crescita di microbi benefici e la salute intestinale</p></div></div></a>
+                  <a href="/products/prolon-5-day" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="//prolon.it/cdn/shop/files/Kit_ProLon_Dieta_Mima_Digiuno_8835ee1a-09f4-4678-bcd5-7479ebda8c20_300x.png?v=1673861372" class="object-contain w-full h-auto" alt="ProLon® - Mima Digiuno"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® - Mima Digiuno</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Programma nutrizionale di 5 giorni </p></div></div></a>
+                  <a href="/products/prolon-nutrition-bar" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="//prolon.it/cdn/shop/products/Fastbar_multipack_2560x2560_1_p_300x.png?v=1681230320" class="object-contain w-full h-auto" alt="NOVITA' - ProLon® Nutrition Bar"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® Nutrition Bar</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Barretta per il digiuno intermittente </p></div></div></a>
+                  <a href="/products/l-pill" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/l-pill_copia_c9ec726f-dc78-46a7-9256-00cb48e5e2bb.png?v=1699979599" class="object-contain w-full h-auto" alt="ProLon® L-Pill"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">NOVITÀ - ProLon® L-Pill</h4><p class="text-base" style="color: rgb(34, 32, 47);">Supporta un sano invecchiamento delle cellule e degli organi del corpo</p></div></div></a>
+                  <a href="/products/reset" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="//prolon.it/cdn/shop/files/Ret_Kit_300x.png?v=1673861404" class="object-contain w-full h-auto" alt="ProLon®- ReSet Kit"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon®- ReSet Kit</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Programma alimentare 24 ore </p></div></div></a>
+                  <a href="/products/prolon-longevity-spread" class="!block w-full  pr-2 md:w-1/3  pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/spread_5.png?v=1701274883" class="object-contain w-full h-auto" alt="NOVITA' - ProLon® Crema Spalmabile"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® Crema Spalmabile</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Mandorle Pugliesi &amp; Cacao </p></div></div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="relative single-nav-item has-mega-menu">
+            <a target="_self" class="flex items-center justify-center group nav__menu-item cursor-pointer" > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Programmi Mima Digiuno</p>
+              <span class="inline-block mt-1 ml-2">
+                <svg class="arrow-down group-hover:rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                  <path d="M4 4.5L8 0.5L0 0.5L4 4.5Z" fill="#22202F"></path>
+                </svg></span
+            ></a>
+             <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu md:pr-16 md:pl-16 w-1/2">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex flex-col flex-wrap w-full md:flex-row">
+                  <a href="/products/prolon-5-day" class="!block w-full mt-2 pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="//prolon.it/cdn/shop/files/Kit_ProLon_Dieta_Mima_Digiuno_8835ee1a-09f4-4678-bcd5-7479ebda8c20_300x.png?v=1673861372" class="object-contain w-full h-auto" alt="ProLon® - Mima Digiuno"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® - Mima Digiuno</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Programma nutrizionale di 5 giorni </p></div></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative single-nav-item has-mega-menu">
+            <a target="_self" class="flex items-center justify-center group nav__menu-item cursor-pointer" > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Digiuno Intermittente</p>
+              <span class="inline-block mt-1 ml-2">
+                <svg class="arrow-down group-hover:rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                  <path d="M4 4.5L8 0.5L0 0.5L4 4.5Z" fill="#22202F"></path>
+                </svg></span
+            ></a>   
+            <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu md:pr-16 md:pl-16 w-[76%]">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex-col flex-wrap w-full md:flex-row md:w-1/2">
+                  <a href="/products/reset?variant=46500624466269" class="!block w-full mt-2 pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/ProLon_ReSet_x3_bundle_pack_v1.webp?v=1690901287" class="object-contain w-full h-auto" alt="ProLon®- ReSet Kit"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon®- ReSet Kit</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Programma alimentare 24 ore </p></div></div></a>
+                  <a href="/products/prolon-nutrition-bar" class="!block w-full mt-2 pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="//prolon.it/cdn/shop/products/Fastbar_multipack_2560x2560_1_p_300x.png?v=1681230320" class="object-contain w-full h-auto" alt="NOVITA' - ProLon® Nutrition Bar"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® Nutrition Bar</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Barretta per il digiuno intermittente </p></div></div></a>
+                </div>
+                <div class="flex-col flex-wrap w-full md:flex-row md:w-1/2">
+                  <a href="/products/prolon-fasting-shake" class="!block w-full mt-2 pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/FastinShake_300x_651b13ee-1bad-4115-aefd-fabad641c444.png?v=1691686423" class="object-contain w-full h-auto" alt="ProLon® Fasting Shake"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">NUOVO! - ProLon® Fasting Shake</h4><p class="text-base" style="color: rgb(34, 32, 47);"></p></div></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative single-nav-item has-mega-menu">
+            <a target="_self" class="flex items-center justify-center group nav__menu-item cursor-pointer" > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Spalmabili</p>
+              <span class="inline-block mt-1 ml-2">
+                <svg class="arrow-down group-hover:rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                  <path d="M4 4.5L8 0.5L0 0.5L4 4.5Z" fill="#22202F"></path>
+                </svg></span
+            ></a>   
+            <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu md:pr-16 md:pl-16 w-1/2">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex flex-col flex-wrap w-full md:flex-row"><a href="/products/prolon-longevity-spread" class="!block w-full  pr-2"><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/spread_5.png?v=1701274883" class="object-contain w-full h-auto" alt="NOVITA' - ProLon® Crema Spalmabile"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">ProLon® Crema Spalmabile</h4><p class="text-base" style="color: rgb(34, 32, 47);"> Mandorle Pugliesi &amp; Cacao </p></div></div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="relative single-nav-item has-mega-menu">
+            <a target="_self" class="flex items-center justify-center group nav__menu-item cursor-pointer" > 
+              <p class="inline-block text-base text-black font-avenir whitespace-nowrap">Integratori alimentari</p>
+              <span class="inline-block mt-1 ml-2">
+                <svg class="arrow-down group-hover:rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                  <path d="M4 4.5L8 0.5L0 0.5L4 4.5Z" fill="#22202F"></path>
+                </svg></span
+            ></a>   
+            <div class="fixed left-0 2xl:left-12 pt-6 nav__submenu md:pr-16 md:pl-16">
+              <div class="flex flex-col w-full px-2 py-3 mt-2 bg-white rounded-md shadow-lg md:flex-row max-w-container ">
+                <div class="flex-col flex-wrap w-full md:flex-row md:w-1/2">
+                  <a href="/products/l-biome" class="!block w-full mt-2 pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/l-biome_copia_8966eca6-4582-4169-8bd2-ce01eb8e0519.png?v=1699979575" class="object-contain w-full h-auto" alt="ProLon® L-Biome"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">NOVITA' - ProLon® L-Biome</h4><p class="text-base" style="color: rgb(34, 32, 47);">Favorisce la crescita di microbi benefici e la salute intestinale</p></div></div></a>
+                  <a href="/products/l-pill" class="!block w-full pr-2 pb-2 "><div class="flex justify-center w-full rounded-md cursor-pointer item-center bg-prolon_light_primary hover:bg-prolon_light_primary_hover" style="height: 144px;"><div class="flex justify-center w-1/3 mr-3 item-center"><img loading="lazy" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0613/8069/0174/files/l-pill_copia_c9ec726f-dc78-46a7-9256-00cb48e5e2bb.png?v=1699979599" class="object-contain w-full h-auto" alt="ProLon® L-Pills"></div><div class="flex flex-col justify-center w-2/3 item-start"><h4 class="text-xl font-bold tracking-normal leading-1 xl:text-2xl font-avenir" style="color: rgb(34, 32, 47);">NOVITA' - ProLon® L-Pill</h4><p class="text-base" style="color: rgb(34, 32, 47);">Supporta un sano invecchiamento delle cellule e degli organi del corpo</p></div></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </header>
+  
+  {% render 'timer-bar', section: section %}   
+  
+</div>
+
+  <header
+    role="banner"
+    id="mobile" 
+    class="flex items-center justify-between w-full gap-4 px-4 leading-none bg-white text-primary lg:hidden h-nav backdrop-blur-lg md:px-8 z-100 shadow-lg"
+    :class=" {'fixed top-0': scrollY >= 60}"
+    style="z-index: 200;"
+  > 
+    <a 
+      class="flex items-center self-stretch leading-[3rem] md:leading-[4rem] justify-center flex-grow w-full h-full"
+      href="/"
+      style="max-width: 120px;"
+      ><img
+        class="object-contain h-12"
+        src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLonLogo.svg?v=1666798099"
+        alt="logo" 
+    ></a> 
+    <div class="flex items-center justify-end w-full"></div>
+    <div class="flex items-center justify-center w-full gap-4" style="max-width: 90px;">
+      <button
+        class="relative flex items-center justify-center w-8 h-8 slide-cart-button"
+        @click="toggleSlideCart"
+      >
+        <svg
+          data-element="CartIcon"
+          data-component="MiniCart"
+          data-source-file="minicart.js"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+        >
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 1.4181C1.75 1.29866 1.83684 1.25 1.88 1.25H14.63C14.6526 1.25 14.6777 1.25855 14.7024 1.28523C14.728 1.3129 14.75 1.35837 14.75 1.4181C14.75 1.42398 14.7501 1.42987 14.7503 1.43574L15.2499 15.5882C15.2484 15.6424 15.2276 15.6852 15.2018 15.7127C15.1755 15.7408 15.1483 15.75 15.125 15.75H1.375C1.3517 15.75 1.32447 15.7408 1.29819 15.7127C1.27238 15.6851 1.2516 15.6424 1.25009 15.5882L1.74969 1.43574C1.7499 1.42987 1.75 1.42398 1.75 1.4181ZM1.88 0.25C1.2363 0.25 0.755222 0.793661 0.750042 1.40808L0.250311 15.5643C0.250104 15.5701 0.25 15.576 0.25 15.5819C0.25 16.1951 0.722793 16.75 1.375 16.75H15.125C15.7772 16.75 16.25 16.1951 16.25 15.5819C16.25 15.576 16.2499 15.5701 16.2497 15.5643L15.75 1.40808C15.7449 0.804177 15.2836 0.25 14.63 0.25H1.88ZM5.5 5C5.5 4.72386 5.27614 4.5 5 4.5C4.72386 4.5 4.5 4.72386 4.5 5C4.5 5.96141 4.88192 6.88344 5.56174 7.56326C6.24156 8.24308 7.16359 8.625 8.125 8.625C9.08641 8.625 10.0084 8.24308 10.6883 7.56326C11.3681 6.88344 11.75 5.96141 11.75 5C11.75 4.72386 11.5261 4.5 11.25 4.5C10.9739 4.5 10.75 4.72386 10.75 5C10.75 5.69619 10.4734 6.36387 9.98116 6.85616C9.48887 7.34844 8.82119 7.625 8.125 7.625C7.42881 7.625 6.76113 7.34844 6.26884 6.85616C5.77656 6.36387 5.5 5.69619 5.5 5Z" fill="#22202F"></path>
+        </svg>
+        <span class="absolute top-[6px] right-0 flex w-3 h-3 -mt-1 -mr-1"><span class="absolute inline-flex w-full h-full bg-orange-600 rounded-full opacity-75 animate-ping"></span><span class="relative inline-flex w-3 h-3 justify-center text-white text-center bg-prolon_secondary rounded-full text-[10px] leading-3">
+          ${cartCount < 10?cartCount:''}
+          </span> 
+        </span>
+        </button>
+        <button class="relative flex items-center justify-center w-8 h-8 toggle-menu"
+        @click="toggleMenu"
+        > 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          fill="currentColor"
+          stroke="#000"
+          class="text-black w-7 h-7"
+        >
+          <title>Menu</title><path fill="none" stroke="#000" stroke-width="3" d="M7 15h51M7 32h43M7 49h51"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  {% render 'ck-mobile-nav' , blocks:section.blocks %}
+  {% render 'king-slide-cart' %}
+</div>
+</div>   
+{% schema %}
+{
+  "name": "Header",
+  "class":"z-950", 
+  "settings": [     
+    {
+      "type": "link_list",
+      "id": "main_menu_link_list",
+      "label": "Navigation",
+      "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "mega_menu_images",
+      "label": "Show mega menu images",
+      "default": true,
+      "info": "[How to create a mega menu](https://archetypethemes.co/blogs/impulse/how-do-i-create-a-mega-menu)"
+    },
+    {
+      "type": "select",
+      "id": "main_menu_alignment",
+      "label": "Header layout",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Logo left, menu left"
+        },
+        {
+          "value": "left-center",
+          "label": "Logo left, menu center"
+        },
+        {
+          "value": "left-drawer",
+          "label": "Logo left, menu drawer"
+        },
+        {
+          "value": "center-left",
+          "label": "Logo center, menu left"
+        },
+        {
+          "value": "center-split",
+          "label": "Logo center, menu split"
+        },
+        {
+          "value": "center",
+          "label": "Logo center, menu below"
+        },
+        {
+          "value": "center-drawer",
+          "label": "Logo center, menu drawer"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "header_style",
+      "label": "Header style",
+      "default": "normal",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "sticky",
+          "label": "Sticky"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_index",
+      "label": "Overlay header over home page",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_collection",
+      "label": "Overlay header over collection",
+      "info": "(if collection image is enabled)",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Announcement bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "announcement_compact",
+      "label": "Use compact style"
+    },
+    {
+      "type": "checkbox",
+      "id": "announcement_above_header",
+      "label": "Always show above header"
+    },
+    {
+      "type": "header",
+      "content": "Toolbar"
+    },
+    {
+      "type": "link_list",
+      "id": "toolbar_menu",
+      "label": "Navigation",
+      "info": "This menu won't show dropdown items"
+    },
+    {
+      "type": "checkbox",
+      "id": "toolbar_social",
+      "label": "Show social icons"
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Currency selector",
+      "info": "To add a currency, go to your [currency settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": "Show currency selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_flags",
+      "label": "Show currency flags",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo-inverted",
+          "label": "White logo",
+          "info": "Used when on top of an image"
+        },
+        {
+          "type": "range",
+          "id": "desktop_logo_width",
+          "label": "Desktop logo width",
+          "default": 200,
+          "min": 100,
+          "max": 400,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mobile_logo_width",
+          "label": "Mobile logo width",
+          "default": 140,
+          "min": 60,
+          "max": 200,
+          "step": 10,
+          "unit": "px",
+          "info": "Set as a max-width, may appear smaller"
+        }
+      ]
+    },
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "class",
+          "label": "Classi CSS",
+          "default": "bg-black text-white"
+        },
+        {
+          "type": "html",
+          "id": "text",
+          "label": "Testo",
+          "default": "Hassle-free returns"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "html",
+          "id": "text-2",
+          "label": "Testo 2",
+          "default": "Hassle-free returns"
+        },
+        {
+          "type": "url",
+          "id": "link-2",
+          "label": "Link 2"
+        },
+        {
+          "type": "html",
+          "id": "text-3",
+          "label": "Testo 3",
+          "default": "Hassle-free returns"
+        },
+        {
+          "type": "url",
+          "id": "link-3",
+          "label": "Link 3"
+        },
+        {
+          "type": "text",
+          "id": "private-sales-class",
+          "label": "Class for Private Sales",
+          "default": "bg-black text-white"
+        },
+        {
+        "type": "html",
+          "id": "private-sales-text",
+          "label": "Heading for Private Sales",
+          "default": "Hassle-free returns"
+        },
+        {
+          "type": "url",
+          "id": "private-sales-link",
+          "label": "Link for Private Sales"
+        }
+      ]
+    },
+    {
+      "type": "mega-menu-image",
+      "name": "Mega Menu Item With Image",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url "
+        },
+        
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        { 
+          "type": "html",
+          "id": "subtitle",
+          "label": "Sub Title"
+        }
+      ]
+    }, 
+    {
+        "type": "countdowntimer",
+        "name": "Countdown Timer",
+        "limit": 1,
+        "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_timer",
+          "label": "ShowTimer"
+        },
+         
+          {
+            "type": "text",
+            "id": "left_text",
+            "label": "Left Text"
+            
+          },
+          {
+            "type": "text",
+            "id": "right_text",
+            "label": "Right Text"
+          },  
+    
+        {
+          "type": "select",
+          "id": "year",
+          "label": "t:sections.countdown.blocks.timer.settings.year.label",
+          "default": "2023",
+          "options": [
+            {
+              "value": "2022",
+              "label": "2022"
+            },
+            {
+              "value": "2023",
+              "label": "2023"
+            },
+            {
+              "value": "2024",
+              "label": "2024"
+            },
+            {
+              "value": "2025",
+              "label": "2025"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "month",
+          "label": "t:sections.countdown.blocks.timer.settings.month.label",
+          "default": "01",
+          "options": [
+            {
+              "value": "01",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.01.label"
+            },
+            {
+              "value": "02",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.02.label"
+            },
+            {
+              "value": "03",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.03.label"
+            },
+            {
+              "value": "04",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.04.label"
+            },
+            {
+              "value": "05",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.05.label"
+            },
+            {
+              "value": "06",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.06.label"
+            },
+            {
+              "value": "07",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.07.label"
+            },
+            {
+              "value": "08",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.08.label"
+            },
+            {
+              "value": "09",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.09.label"
+            },
+            {
+              "value": "10",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.10.label"
+            },
+            {
+              "value": "11",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.11.label"
+            },
+            {
+              "value": "12",
+              "label": "t:sections.countdown.blocks.timer.settings.month.options.12.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "day",
+          "label": "t:sections.countdown.blocks.timer.settings.day.label",
+          "default": "1",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "2"
+            },
+            {
+              "value": "3",
+              "label": "3"
+            },
+            {
+              "value": "4",
+              "label": "4"
+            },
+            {
+              "value": "5",
+              "label": "5"
+            },
+            {
+              "value": "6",
+              "label": "6"
+            },
+            {
+              "value": "7",
+              "label": "7"
+            },
+            {
+              "value": "8",
+              "label": "8"
+            },
+            {
+              "value": "9",
+              "label": "9"
+            },
+            {
+              "value": "10",
+              "label": "10"
+            },
+            {
+              "value": "11",
+              "label": "11"
+            },
+            {
+              "value": "12",
+              "label": "12"
+            },
+            {
+              "value": "13",
+              "label": "13"
+            },
+            {
+              "value": "14",
+              "label": "14"
+            },
+            {
+              "value": "15",
+              "label": "15"
+            },
+            {
+              "value": "16",
+              "label": "16"
+            },
+            {
+              "value": "17",
+              "label": "17"
+            },
+            {
+              "value": "18",
+              "label": "18"
+            },
+            {
+              "value": "19",
+              "label": "19"
+            },
+            {
+              "value": "20",
+              "label": "20"
+            },
+            {
+              "value": "21",
+              "label": "21"
+            },
+            {
+              "value": "22",
+              "label": "22"
+            },
+            {
+              "value": "23",
+              "label": "23"
+            },
+            {
+              "value": "24",
+              "label": "24"
+            },
+            {
+              "value": "25",
+              "label": "25"
+            },
+            {
+              "value": "26",
+              "label": "26"
+            },
+            {
+              "value": "27",
+              "label": "27"
+            },
+            {
+              "value": "28",
+              "label": "28"
+            },
+            {
+              "value": "29",
+              "label": "29"
+            },
+            {
+              "value": "30",
+              "label": "30"
+            },
+            {
+              "value": "31",
+              "label": "31"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "hour",
+          "label": "t:sections.countdown.blocks.timer.settings.hour.label",
+          "default": "03",
+          "options": [
+            {
+              "value": "00",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.00.label"
+            },
+            {
+              "value": "01",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.01.label"
+            },
+            {
+              "value": "02",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.02.label"
+            },
+            {
+              "value": "03",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.03.label"
+            },
+            {
+              "value": "04",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.04.label"
+            },
+            {
+              "value": "05",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.05.label"
+            },
+            {
+              "value": "06",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.06.label"
+            },
+            {
+              "value": "07",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.07.label"
+            },
+            {
+              "value": "08",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.08.label"
+            },
+            {
+              "value": "09",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.09.label"
+            },
+            {
+              "value": "10",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.10.label"
+            },
+            {
+              "value": "11",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.11.label"
+            },
+            {
+              "value": "12",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.12.label"
+            },
+            {
+              "value": "13",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.13.label"
+            },
+            {
+              "value": "14",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.14.label"
+            },
+            {
+              "value": "15",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.15.label"
+            },
+            {
+              "value": "16",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.16.label"
+            },
+            {
+              "value": "17",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.17.label"
+            },
+            {
+              "value": "18",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.18.label"
+            },
+            {
+              "value": "19",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.19.label"
+            },
+            {
+              "value": "20",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.20.label"
+            },
+            {
+              "value": "21",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.21.label"
+            },
+            {
+              "value": "22",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.22.label"
+            },
+            {
+              "value": "23",
+              "label": "t:sections.countdown.blocks.timer.settings.hour.options.23.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "minute",
+          "label": "t:sections.countdown.blocks.timer.settings.minute.label",
+          "default": "00",
+          "options": [
+            {
+              "value": "00",
+              "label": "00"
+            },
+            {
+              "value": "01",
+              "label": "01"
+            },
+            {
+              "value": "02",
+              "label": "02"
+            },
+            {
+              "value": "03",
+              "label": "03"
+            },
+            {
+              "value": "04",
+              "label": "04"
+            },
+            {
+              "value": "05",
+              "label": "05"
+            },
+            {
+              "value": "06",
+              "label": "06"
+            },
+            {
+              "value": "07",
+              "label": "07"
+            },
+            {
+              "value": "08",
+              "label": "08"
+            },
+            {
+              "value": "09",
+              "label": "09"
+            },
+            {
+              "value": "10",
+              "label": "10"
+            },
+            {
+              "value": "11",
+              "label": "11"
+            },
+            {
+              "value": "12",
+              "label": "12"
+            },
+            {
+              "value": "13",
+              "label": "13"
+            },
+            {
+              "value": "14",
+              "label": "14"
+            },
+            {
+              "value": "15",
+              "label": "15"
+            },
+            {
+              "value": "16",
+              "label": "16"
+            },
+            {
+              "value": "17",
+              "label": "17"
+            },
+            {
+              "value": "18",
+              "label": "18"
+            },
+            {
+              "value": "19",
+              "label": "19"
+            },
+            {
+              "value": "20",
+              "label": "20"
+            },
+            {
+              "value": "21",
+              "label": "21"
+            },
+            {
+              "value": "22",
+              "label": "22"
+            },
+            {
+              "value": "23",
+              "label": "23"
+            },
+            {
+              "value": "24",
+              "label": "24"
+            },
+            {
+              "value": "25",
+              "label": "25"
+            },
+            {
+              "value": "26",
+              "label": "26"
+            },
+            {
+              "value": "27",
+              "label": "27"
+            },
+            {
+              "value": "28",
+              "label": "28"
+            },
+            {
+              "value": "29",
+              "label": "29"
+            },
+            {
+              "value": "30",
+              "label": "30"
+            },
+            {
+              "value": "31",
+              "label": "31"
+            },
+            {
+              "value": "32",
+              "label": "32"
+            },
+            {
+              "value": "33",
+              "label": "33"
+            },
+            {
+              "value": "34",
+              "label": "34"
+            },
+            {
+              "value": "35",
+              "label": "35"
+            },
+            {
+              "value": "36",
+              "label": "36"
+            },
+            {
+              "value": "37",
+              "label": "37"
+            },
+            {
+              "value": "38",
+              "label": "38"
+            },
+            {
+              "value": "39",
+              "label": "39"
+            },
+            {
+              "value": "40",
+              "label": "40"
+            },
+            {
+              "value": "41",
+              "label": "41"
+            },
+            {
+              "value": "42",
+              "label": "42"
+            },
+            {
+              "value": "43",
+              "label": "43"
+            },
+            {
+              "value": "44",
+              "label": "44"
+            },
+            {
+              "value": "45",
+              "label": "45"
+            },
+            {
+              "value": "46",
+              "label": "46"
+            },
+            {
+              "value": "47",
+              "label": "47"
+            },
+            {
+              "value": "48",
+              "label": "48"
+            },
+            {
+              "value": "49",
+              "label": "49"
+            },
+            {
+              "value": "50",
+              "label": "50"
+            },
+            {
+              "value": "51",
+              "label": "51"
+            },
+            {
+              "value": "52",
+              "label": "52"
+            },
+            {
+              "value": "53",
+              "label": "53"
+            },
+            {
+              "value": "54",
+              "label": "54"
+            },
+            {
+              "value": "55",
+              "label": "55"
+            },
+            {
+              "value": "56",
+              "label": "56"
+            },
+            {
+              "value": "57",
+              "label": "57"
+            },
+            {
+              "value": "58",
+              "label": "58"
+            },
+            {
+              "value": "59",
+              "label": "59"
+            },
+            {
+              "value": "60",
+              "label": "60"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_timer",
+          "label": "t:sections.countdown.blocks.timer.settings.hide_timer.label",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.countdown.blocks.timer.settings.text.label"
+        }
+       
+        ]
+    }  
+  ],
+  "default": {
+    "settings": {}
+  }
+}
+{% endschema %}

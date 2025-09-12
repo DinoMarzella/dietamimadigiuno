@@ -1,0 +1,10 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[15],{279:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{
+var _core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(315);var _core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(7);(0,
+_core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__.initSection)(".js-accordion-facts-section",(section=>{const isMobile=window.innerWidth<=1024;const accordions=(0,
+_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findElements)(section,".js-accordion-facts-item");const descriptions=(0,
+_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findElements)(section,".js-accordion-facts-description");const activateAccordion=accordion=>{accordions.forEach((acc=>acc.classList.remove("--is-active")))
+;descriptions.forEach((desc=>desc.classList.remove("--is-active")));accordion.classList.add("--is-active");const accordionId=accordion.getAttribute("data-accordion-item")
+;const description=descriptions.find((desc=>desc.getAttribute("data-accordion-item")===accordionId));if(description)description.classList.add("--is-active")};if(isMobile)accordions.forEach((accordion=>{
+accordion.addEventListener("click",(()=>{activateAccordion(accordion);setTimeout((()=>{const top=null===accordion||void 0===accordion?void 0:accordion.getBoundingClientRect().top;if(top)window.scroll({top:top+window.scrollY-100,
+behavior:"smooth"})}),350)}))}));else accordions.forEach((accordion=>{accordion.addEventListener("mouseenter",(()=>{activateAccordion(accordion)}))}));return{unload:null}}))}},__webpack_require__=>{
+var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId);__webpack_require__.O(0,[685],(()=>__webpack_exec__(279)));var __webpack_exports__=__webpack_require__.O()}]);

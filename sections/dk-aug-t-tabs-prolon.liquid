@@ -1,0 +1,816 @@
+{%- assign settings = section.settings -%}
+<style>
+  .active-tab {
+    position: relative;
+    border-bottom-width: 2px;
+    border-color: black;
+    color: black;
+  }
+  /* .active-tab::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid black;
+  } */
+  @media (max-width:767px){
+    .tab-header {
+     
+      color: black;
+      /* border-radius: 5px; */
+    }
+    .active-tab {
+       position: relative;
+    border-bottom-width: 1px;
+    border-color: black;
+    color: black;
+    }
+    /* .active-tab::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 5px solid #323D12;
+    } */
+  }
+</style>
+
+<section>
+  <div class="  bg-[#F1EAE5]" id="{{ settings.section_id }}">
+  <div class="justify-center hidden md:flex ">
+    <div class="h-[80px] md:w-1/2   lg:border-r-2 lg:border-[#1F4139] "></div>
+    <div class=" md:w-1/2"></div>
+  </div>
+  <div class="w-[2px] mx-auto hidden md:block lg:hidden h-[50px] bg-[#1F4139]"> </div>
+      <div class="flex justify-start gap-4 px-4 md:block max-w-[1600px] mx-auto">
+        <div class="flex items-center justify-center md:hidden ">
+          <div class="w-[2px] h-full  bg-black"> </div>
+        </div>
+          
+    <div class=" md:px-6 pt-[40px] md:pt-[80px]">
+
+      <div class="text-left md:text-center mb-6 md:mb-[70px] ">
+        <h1 class="text-[30px] font-[500]   md:text-[34px]  xl:text-[40px]  leading-[1.2] w-full text-[#1F4139]">{{ section.settings.title }}</h1>
+        <p class="text-lg text-[#323D12] leading-[1.2] md:text-[20px] text-[18px] pt-[10px]">
+          {{ section.settings.subtitle }}
+        </p>
+      </div>
+      <div class="!grid grid-cols-4 space-x-[8px] md:space-x-8 max-w-[1200px] mx-auto m-0">
+        <div
+          class="md:pb-[6px] pb-[2px]  md:text-[14px] font-bold uppercase border-b border-gray-300 text-[10px] tab-header active-tab cursor-pointer text-left md:text-center flex justify-center items-center"
+          data-tab_id="tab1"
+        >
+          {{ section.settings.tab1_title }}
+        </div>
+        <div
+          class="md:pb-[6px] pb-[2px]  md:text-[14px] font-bold uppercase border-b border-gray-300 text-[10px] tab-header cursor-pointer text-left md:text-center flex justify-center items-center"  data-tab_id="tab2"
+        >
+          {{ section.settings.tab2_title }}
+        </div>
+        <div
+          class="md:pb-[6px] pb-[2px]  md:text-[14px] font-bold uppercase border-b border-gray-300 text-[10px] tab-header cursor-pointer text-left md:text-center flex justify-center items-center" data-tab_id="tab3"
+        >
+          {{ section.settings.tab3_title }}
+        </div>
+        <div
+          class="md:pb-[6px] pb-[2px]  md:text-[14px] font-bold uppercase border-b border-gray-300 text-[10px] tab-header cursor-pointer text-left md:text-center flex justify-center items-center" data-tab_id="tab3"
+        >
+          {{ section.settings.tab4_title }}
+        </div>
+      </div>
+      <div class=" mx-auto  pt-[20px] md:pt-[70px] ">
+        
+      <section id="tab1" class="tab-content ">
+        
+
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div
+              class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+             
+              <img src="{{ section.settings.hero_image_tab_1 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_1 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+           
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_1 }}
+                </h2>
+                <h1 class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_1 }}
+                </h1>
+                <div class="text-start">
+                {{ section.settings.paragraph_1_tab_1 }}
+                </div>
+                {% assign product = all_products[section.settings.product_1_1] %}
+                {% if product %}
+                  <p class="text-[16px] font-bold text-[#1F4139]">
+                    {{ section.settings.price_prefix_product_1_1 }} {{ product.price_min | money }}
+                  </p>
+                  <a href="{{ product.url }}" class="sm:w-[230px] w-full uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px]">
+                    Shop Now
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+           
+           
+          </div>
+        
+        
+        </div>
+
+          <div class="relative tab-img-content md:block">
+            <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+          
+              <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+               {% if section.settings.video_url_tab_1_product_2  %}
+                <a href="{{section.settings.video_url_tab_1_product_2}}" class="promo-grid__slide-link js-no-transition" aria-hidden="true"
+                  aria-label="Watch The Video"></a>
+                {% endif %}
+
+                <img src="{{ section.settings.hero_image_tab_1_product_2 | img_url: '2000x' }}"
+                  alt="{{ section.settings.heading_text_tab_1_product_2 | strip_html }}"
+                  class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+          
+          
+              </div>
+          
+              
+          
+              <div class="w-full px-4 text-left lg:w-1/2">
+                <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                  <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                    {{ section.settings.subheading_text_tab_1_product_2 }}
+                  </h2>
+                  <h1
+                    class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                    {{ section.settings.heading_text_tab_1_product_2 }}
+                  </h1>
+                  <div class="text-start">
+                    {{ section.settings.paragraph_1_tab_1_product_2 }}
+                  </div>
+                </div>
+              </div>
+          
+          
+             
+            </div>
+          
+          
+          </div>
+
+
+
+        </section>
+        <section id="tab2" class="hidden tab-content">
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+            
+              <img src="{{ section.settings.hero_image_tab_2 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_2 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_2 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_2 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_2 }}
+                </div>
+              </div>
+            </div>
+        
+        
+           
+          </div>
+        
+        
+        </div>
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+            
+              <img src="{{ section.settings.hero_image_tab_2_product_2 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_2_product_2 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_2_product_2 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_2_product_2 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_2_product_2 }}
+                </div>
+              </div>
+            </div>
+        
+        
+           
+          </div>
+        
+        
+        </div>
+
+
+
+        </section>
+        <section id="tab3" class="hidden tab-content">
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+           
+              <img src="{{ section.settings.hero_image_tab_3 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_3 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_3 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_3 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_3 }}
+                </div>
+              </div>
+            </div>
+        
+        
+            
+          </div>
+        
+        
+        </div>
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+           
+              <img src="{{ section.settings.hero_image_tab_3_product_2 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_3_product_2 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_3_product_2 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_3_product_2 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_3_product_2 }}
+                </div>
+              </div>
+            </div>
+        
+        
+            
+            
+          </div>
+        
+        
+        </div>
+
+
+        </section>
+         <section id="tab4" class="hidden tab-content">
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+           
+              <img src="{{ section.settings.hero_image_tab_4 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_4 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_4 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_4 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_4 }}
+                </div>
+              </div>
+            </div>
+        
+        
+            
+          </div>
+        
+        
+        </div>
+        
+        <div class="relative tab-img-content md:block">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-1/2 lg:mt-0 ">
+           
+              <img src="{{ section.settings.hero_image_tab_4_product_2 | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text_tab_4_product_2 | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12  ">
+        
+        
+            </div>
+        
+            
+        
+            <div class="w-full px-4 text-left lg:w-1/2">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <h2 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_4_product_2 }}
+                </h2>
+                <h1
+                  class="text-[25px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {{ section.settings.heading_text_tab_4_product_2 }}
+                </h1>
+                <div class="text-start">
+                  {{ section.settings.paragraph_1_tab_4_product_2 }}
+                </div>
+              </div>
+            </div>
+        
+        
+            
+            
+          </div>
+        
+        
+        </div>
+
+
+        </section>
+      </div> 
+    
+      
+    
+    </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "dk Tabs Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+      
+    }
+    ,
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Your Title Here"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "Your Subtitle Here"
+    },
+    {
+      "type": "text",
+      "id": "tab1_title",
+      "label": "Product 1 Title",
+      "default": "Tab 1"
+    },
+    {
+  "type": "text",
+  "id": "price_prefix_product_1_1",
+  "label": "Prefisso Prezzo",
+  "default": "A partire da"
+},
+{
+  "type": "product",
+  "id": "product_1_1",
+  "label": "Prodotto 1-1"
+},
+    {
+     "type": "image_picker",
+      "id": "hero_image_tab_1",
+      "label": "Hero Image product 1"
+    },
+    {
+     "type": "text",
+      "id": "video_url_tab_1",
+      "label": "Video URL Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "subheading_text_tab_1",
+      "label": "Tab 1 Subheading",
+      "default": "Tab 1 Subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading_text_tab_1",
+      "label": "Tab 1 Heading",
+      "default": "Tab 1 Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1_tab_1",
+      "label": "Tab 1 Description",
+      "default": "Tab 1 Description"
+    },
+{
+  "type": "text",
+  "id": "price_prefix_product_1_2",
+  "label": "Prefisso Prezzo prodotto",
+  "default": "A partire da"
+},
+{
+  "type": "product",
+  "id": "product_1_2",
+  "label": "Prodotto 1-2"
+},
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_1_product_2",
+    "label": "Hero Image Tab 1 product 2"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_1_product_2",
+    "label": "Video URL Tab 1 product 2"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_1_product_2",
+    "label": "Tab 1 product 2 Subheading",
+    "default": "Tab 1 product 2 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_1_product_2",
+    "label": "Tab 1 product 2 Heading",
+    "default": "Tab 1 product 2 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_1_product_2",
+    "label": "Tab 1 product 2 Description",
+    "default": "Tab 1 product 2 Description"
+    },
+
+    
+    {
+      "type": "text",
+      "id": "tab2_title",
+      "label": "Tab 2 Title",
+      "default": "Tab 2"
+    },
+ {
+  "type": "text",
+  "id": "price_prefix_product_2_1",
+  "label": "Prefisso Prezzo",
+  "default": "A partire da"
+},
+{
+  "type": "product",
+  "id": "product_2_1",
+  "label": "Prodotto 2-1"
+},
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_2",
+    "label": "Hero Image Tab 2"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_2",
+    "label": "Video URL Tab 2"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_2",
+    "label": "Tab 2 Subheading",
+    "default": "Tab 2 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_2",
+    "label": "Tab 2 Heading",
+    "default": "Tab 2 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_2",
+    "label": "Tab 2 Description",
+    "default": "Tab 2 Description"
+    },
+     {
+  "type": "text",
+  "id": "price_prefix_product_2_2",
+  "label": "Prefisso Prezzo",
+  "default": "A partire da"
+},
+{
+  "type": "product",
+  "id": "product_2_2",
+  "label": "Prodotto Tab 2-2"
+},
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_2_product_2",
+    "label": "Hero Image Tab 2 product 2"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_2_product_2",
+    "label": "Video URL Tab 2 product 2"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_2_product_2",
+    "label": "Tab 2 product 2 Subheading",
+    "default": "Tab 2 product 2 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_2_product_2",
+    "label": "Tab 2 product 2 Heading",
+    "default": "Tab 2 product 2 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_2_product_2",
+    "label": "Tab 2 product 2 Description",
+    "default": "Tab 2 product 2 Description"
+    },
+
+
+    {
+      "type": "text",
+      "id": "tab3_title",
+      "label": "Tab 3 Title",
+      "default": "Tab 3"
+    },
+{
+    "type": "text",
+    "id": "price_prefix_product_3_1",
+    "label": "Prefisso Prezzo",
+    "default": "A partire da"
+},
+{
+    "type": "product",
+    "id": "product_3_1",
+    "label": "Prodotto 3-1"
+},
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_3",
+    "label": "Hero Image Tab 3"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_3",
+    "label": "Video URL Tab 3"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_3",
+    "label": "Tab 3 Subheading",
+    "default": "Tab 3 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_3",
+    "label": "Tab 3 Heading",
+    "default": "Tab 3 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_3",
+    "label": "Tab 3 Description",
+    "default": "Tab 3 Description"
+    },
+{
+    "type": "text",
+    "id": "price_prefix_product_3_2",
+    "label": "Prefisso Prezzo",
+    "default": "A partire da"
+},
+{
+    "type": "product",
+    "id": "product_3_2",
+    "label": "Prodotto 3-2"
+},    
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_3_product_2",
+    "label": "Hero Image Tab 3 product 2"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_3_product_2",
+    "label": "Video URL Tab 3 product 2"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_3_product_2",
+    "label": "Tab 3 product 2 Subheading",
+    "default": "Tab 3 product 2 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_3_product_2",
+    "label": "Tab 3 product 2 Heading",
+    "default": "Tab 3 product 2 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_3_product_2",
+    "label": "Tab 3 product 2 Description",
+    "default": "Tab 3 product 2 Description"
+    },
+
+
+    {
+      "type": "text",
+      "id": "tab4_title",
+      "label": "Tab 4 Title",
+      "default": "Tab 4"
+    },
+{
+    "type": "text",
+    "id": "price_prefix_product_4_1",
+    "label": "Prefisso Prezzo",
+    "default": "A partire da"
+},
+{
+    "type": "product",
+    "id": "product_4_1",
+    "label": "Prodotto 4-1"
+},
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_4",
+    "label": "Hero Image Tab 4"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_4",
+    "label": "Video URL Tab 4"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_4",
+    "label": "Tab 4 Subheading",
+    "default": "Tab 4 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_4",
+    "label": "Tab 4 Heading",
+    "default": "Tab 4 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_4",
+    "label": "Tab 4 Description",
+    "default": "Tab 4 Description"
+    },
+{
+    "type": "text",
+    "id": "price_prefix_product_4_2",
+    "label": "Prefisso Prezzo",
+    "default": "A partire da"
+},
+{
+    "type": "product",
+    "id": "product_4_2",
+    "label": "Prodotto 4-2"
+},    
+    {
+    "type": "image_picker",
+    "id": "hero_image_tab_4_product_2",
+    "label": "Hero Image Tab 4 product 2"
+    },
+    {
+    "type": "text",
+    "id": "video_url_tab_4_product_2",
+    "label": "Video URL Tab 4 product 2"
+    },
+    {
+    "type": "text",
+    "id": "subheading_text_tab_4_product_2",
+    "label": "Tab 4 product 2 Subheading",
+    "default": "Tab 4 product 2 Subheading"
+    },
+    {
+    "type": "text",
+    "id": "heading_text_tab_4_product_2",
+    "label": "Tab 4 product 2 Heading",
+    "default": "Tab 4 product 2 Heading"
+    },
+    {
+    "type": "textarea",
+    "id": "paragraph_1_tab_4_product_2",
+    "label": "Tab 4 product 2 Description",
+    "default": "Tab 4 product 2 Description"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "dk Tabs Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+    $(document).ready(function () {
+        $('.tab-header').on('click', function () {
+            // Get the tab ID from the clicked tab-header
+            var tabId = $(this).data('tab_id');
+            $('.tab-header').removeClass('active-tab');
+            // Toggle font weight for the clicked tab header
+            $(this).toggleClass('active-tab');
+    
+            // Reset font weight for other tab headers
+            $('.tab-content').addClass('hidden');
+    
+            // Toggle visibility of the corresponding tab content
+            var tabContent = $('#' + tabId);
+            tabContent.toggleClass('hidden');
+        });
+    });
+</script>

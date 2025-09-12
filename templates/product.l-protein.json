@@ -1,0 +1,313 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "disabled": true,
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}",
+        "#Video_LProtein {object-fit: cover; width: 100%; height: auto; aspect-ratio: 286 / 375;}",
+        ".border-prolon_secondary {color: #000; font-weight: bold;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "prolon-l-protein",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "ProLon L-Protein",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-l-protein\" %}",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli i {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona la {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona la {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "dk_product_dynamic_v1_QnC7Nh": {
+      "type": "dk-product-dynamic-v1",
+      "blocks": {
+        "images_r68qfK": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_4-L_Protein_9f99fa39-dad3-44c3-a721-c7f88a1cc0d4.jpg",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_kxTTWK": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_2-L_Protein.jpg",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_6AJJNz": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_3-L_Protein.jpg",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_KArmxF": {
+          "type": "images",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_1-L_Protein.jpg",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_MAHK7E": {
+          "type": "images",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_4-L_Protein_9f99fa39-dad3-44c3-a721-c7f88a1cc0d4.jpg",
+            "media_type": "video",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/a26be6d7be63426bb8c3e5fabd7f2bdc.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "images_r68qfK",
+        "images_kxTTWK",
+        "images_6AJJNz",
+        "images_KArmxF",
+        "images_MAHK7E"
+      ],
+      "custom_css": [
+        ".Soup.Flavor {display: none;}",
+        "h1 {font-size: 33px; line-height: 45px; font-weight: 600 !important;}",
+        ".w-full.mt-4.product-description {display: block !important;}",
+        ".py-2.option-show-button {display: none;}",
+        ".bg-\\[\\#73984a\\] {--tw-bg-opacity: 1; background-color: rgb(86 165 18); border-radius: 50px;}",
+        ".bg-\\[\\#98ca3c\\] {background-color: rgb(29 64 53); border-radius: 50px;}",
+        "button.w-full.rounded-md.bg-\\[\\#56A512\\].text-white {border-radius: 40px;}",
+        ".name-value {display: none;}"
+      ],
+      "name": "dk-product-dynamic-1",
+      "settings": {
+        "selected_product": "prolon-l-protein",
+        "margin_mb": "",
+        "show_star": true,
+        "title": "Longevity Protein",
+        "description": "<div class=\"text-[15px]\">\n<br><div class=\"text-[#1F4139]\">\n<!-- Top Text --><p class=\"\">Sviluppato sulla base di oltre 25 anni di ricerca scientifica, test preclinici hanno dimostrato che questa formulazione brevettata con 25 g di proteine di origine vegetale può sostenere la sintesi e la riparazione muscolare ritardando l’invecchiamento e mantenendo forza e funzionalità dei muscoli. Lo speciale mix di aminoacidi essenziali permette di mantenere basso il livello di IGF-1, una via nota per accelerare l'invecchiamento.</p>\n<!-- Features --><div class=\"space-y-4 mt-4\">\n<div>\n<p class=\"font-semibold\"> Supporto ottimale per muscoli e corpo </p>\n<hr class=\"border-t border-black mt-1\">\n</div>\n<div>\n<p class=\"font-semibold\"> Alto contenuto di proteine, basso contenuto di carboidrati </p>\n<hr class=\"border-t border-black mt-1\">\n</div>\n<div>\n<p class=\"font-semibold\"> Proteine di origine vegetale </p>\n<hr class=\"border-t border-black mt-1\">\n</div>\n<div>\n<p class=\"font-semibold\"> 21 vitamine e minerali </p>\n<hr class=\"border-t border-black mt-1\">\n</div>\n<div>\n<p class=\"font-semibold\"> Ingredienti a base vegetale e privi di derivati del latte, OGM e soia </p>\n<hr class=\"border-t border-black mt-1\">\n</div>\n<div>\n<p class=\"font-semibold\"> 14 bustine singole per confezione </p>\n<br>\n</div>\n</div>\n</div>\n</div>",
+        "reverse_layout": false,
+        "show_new": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p><p><strong>Gusto originale:</strong> Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro <strong>— oppure —</strong></p><p><strong>Gusto nuovo sapore:</strong> Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p><p><strong>Zuppe:</strong> Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p><p><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p><p><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p><p><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p><p><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p><p><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "content_html": "",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "content_html": "",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "",
+            "content_html": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "8200e398-3bf8-4b80-aca9-360bfed1af37": {
+      "type": "promo-grid",
+      "blocks": {
+        "ebbcfd2e-2d3d-42c8-81f2-f25262378dae": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "ebbcfd2e-2d3d-42c8-81f2-f25262378dae"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "9ad313b2-be01-443d-b2e0-3a1675b19707": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/ProLon_Life_PDP_Image_10-L_Protein.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "The Healthy Aging Revolution - una nuova era delle proteine in polvere",
+        "text": "<p>Gli shake proteici a base di siero di latte e di origine animale innescano un processo che favorisce l’invecchiamento, motivo per cui il consumo regolare di proteine in eccesso (soprattutto di origine animale) può aumentare il rischio di cancro e di altre malattie croniche.</p><p>L-Protein utilizza una formulazione brevettata di proteine di origine vegetale, di vitamine e di minerali essenziali per raggiungere l'equilibrio tra l'assunzione dei nutrienti e la riduzione dei livelli di IGF-1, sostenendo la salute muscolare senza accelerare l'invecchiamento.</p><p>L-Protein vanta 25 g di proteine di origine vegetale per porzione, mantenendo al contempo i livelli di IGF-1 significativamente più bassi rispetto alle nostre controparti in polvere di siero di latte. Si adatta perfettamente ai vostri obiettivi di salute e benessere.<br/></p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "33a23363-5d8f-4509-90fb-6e26373ac191": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/ProLon_Life_PDP_Image_4-L_Protein.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Cosa c'è di speciale nel nostro L-Protein?",
+        "text": "<p>L-Protein combina le proteine vegetali dei piselli, dei fagioli neri e dei ceci, per una digestione, un assorbimento e un nutrimento ottimali.  Se consumato come parte del regime della Dieta della Longevità, questo mix di proteine e aminoacidi formulato scientificamente mira a mantenere costanti i livelli di IGF-1, ricostruire i  muscoli e migliorare le prestazioni.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
+    },
+    "faq_QtQwaq": {
+      "type": "faq",
+      "blocks": {
+        "question_9hdTCw": {
+          "type": "question",
+          "settings": {
+            "title": "Posso assumere L-Protein a digiuno?",
+            "text": "<p>No, la L-Protein non fa parte della nostra linea di prodotti per il digiuno intermittente. È destinato a essere consumato durante la finestra di alimentazione come parte dell'obiettivo giornaliero di calorie e proteine.</p>"
+          }
+        },
+        "question_jeBWz3": {
+          "type": "question",
+          "settings": {
+            "title": "Con quale frequenza posso utilizzare L-Protein?",
+            "text": "<p>L-Protein può essere utilizzato quotidianamente per raggiungere i tuoi obiettivi proteici giornalieri complessivi. Assicurati di consumare questa proteina durante la finestra di alimentazione.</p>"
+          }
+        },
+        "question_eVTRrP": {
+          "type": "question",
+          "settings": {
+            "title": "Qual è la differenza tra ProLon Fasting Shake e L-Protein?",
+            "text": "<p>Il nostro Fasting Shake fa parte della nostra linea di prodotti per il digiuno intermittente. È destinato a essere consumato durante la finestra di digiuno, poiché non interromperà il digiuno né influenzerà i livelli di chetoni durante l'alimentazione per un tempo limitato (TRF). Inoltre, il Fasting Shake è anche intenzionalmente povero di proteine ​​per rimanere al di sotto dei percorsi di rilevamento dei nutrienti del nostro corpo. L-Protein viene consumata quando si mangia cibo. Fornisce calorie e un'elevata dose di proteine. Può essere utilizzato come carburante dopo l'allenamento, come parte di una sana colazione o pranzo quando si interrompe il digiuno, oppure può essere semplicemente utilizzato come integratore per aumentare l'apporto proteico complessivo ogni giorno.</p>"
+          }
+        },
+        "question_MCtCBQ": {
+          "type": "question",
+          "settings": {
+            "title": "In cosa si differenzia L-Protein dalle altre proteine ​​in polvere vegane?",
+            "text": "<p>A differenza di altre proteine in polvere vegane, L-Protein utilizza piselli, fagioli neri e ceci come parte della sua composizione proteica complessiva anziché proteine a base di cereali come riso integrale o polvere di avena, il che aiuta a mantenere la nostra composizione a un basso contenuto di carboidrati. I legumi che utilizziamo sono noti per supportare un invecchiamento sano e fanno parte dei nostri protocolli dietetici salutari, apportando una sana dose di fibre vegetali alla tua dieta.</p>"
+          }
+        },
+        "question_EPiUjz": {
+          "type": "question",
+          "settings": {
+            "title": "L-Protein è ​​Keto friendly?",
+            "text": "<p>La nostra formula è considerata a basso contenuto di carboidrati (~6g di carboidrati netti per porzione). Tuttavia, il livello di chetosi dipenderà dalla persona e da come usa la nostra polvere in combinazione con altri alimenti durante la giornata.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_9hdTCw",
+        "question_jeBWz3",
+        "question_eVTRrP",
+        "question_MCtCBQ",
+        "question_EPiUjz"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dk_product_dynamic_v1_QnC7Nh",
+    "sub",
+    "8200e398-3bf8-4b80-aca9-360bfed1af37",
+    "9ad313b2-be01-443d-b2e0-3a1675b19707",
+    "33a23363-5d8f-4509-90fb-6e26373ac191",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "faq_QtQwaq",
+    "recommendations",
+    "collection-return"
+  ]
+}

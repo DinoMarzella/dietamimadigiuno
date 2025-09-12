@@ -1,0 +1,86 @@
+<!-- TWVideoCards -->
+<div class="relative pt-10 pb-20 bg-gray-50 tw-video-cards">
+    <div class="relative">
+      <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-container lg:px-8">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ section.settings.maintitle }}</p>
+      </div>
+      <div class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:max-w-container  {% if section.settings.fourgrid %}  lg:grid-cols-4 {% else %}lg:grid-cols-3 {% endif %} lg:px-8">
+        {% for block in section.blocks %}
+          <single-video-grid
+            image="{{ block.settings.block_img | img_url: '480x480' }}"
+            :title="`{{ block.settings.title }}`"
+            :details="`{{ block.settings.details }}`"
+            :name="`{{ block.settings.name }}`"
+            :blockdate="`{{ block.settings.blockdate }}`"
+            :iframe_url="`{{ block.settings.video_url }}`"
+            :iframe_class="`{{ block.settings.iframe_class }}`"
+          >
+          </single-video-grid>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <script src="{{'ck-video-grid.js' | asset_url}}" defer></script>
+  {% schema %}
+  {
+    "name": "Video Cards",
+    "settings": [
+      {
+        "type": "text",
+        "id": "maintitle",
+        "label": "Title",
+        "default": "Add Title"
+      },
+      {
+        "type": "checkbox",
+        "id": "fourgrid",
+        "label": "Four Grid Row",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "block_img",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "html",
+            "id": "details",
+            "label": "Details"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "blockdate",
+            "label": "Date"
+          },
+          {
+            "id": "video_url",
+            "type": "text",
+            "label": "Video URL"
+          },
+          {
+            "id": "iframe_class",
+            "type": "text",
+            "label": "iFrame Class"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

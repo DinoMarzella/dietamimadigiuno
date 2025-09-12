@@ -1,0 +1,9 @@
+"use strict";(self["webpackChunktvg_shopify_theme"]=self["webpackChunktvg_shopify_theme"]||[]).push([[735],{692:(__unused_webpack_module,__unused_webpack___webpack_exports__,__webpack_require__)=>{
+var _core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(315);var _core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(7);(0,
+_core_shopify_init_section_index_js__WEBPACK_IMPORTED_MODULE_0__.initSection)(".js-single-video",(section=>{const toggle=(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findOneElement)(section,".js-videos");const coverImage=(0,
+_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findElements)(section,".js-cover");let isPlaying=false;null===toggle||void 0===toggle?void 0:toggle.addEventListener("click",(()=>{var _video_contentWindow
+;const currenVideoClass=window.innerWidth>=1024?"js-desktop-youtube-iframe":"js-mobile-youtube-iframe";const video=(0,_core_dom_traversal_index_js__WEBPACK_IMPORTED_MODULE_1__.findOneElement)(section,`iframe.${currenVideoClass}`)
+;if(!(video instanceof HTMLIFrameElement))return;if(isPlaying){var _video_contentWindow1;null===(_video_contentWindow1=video.contentWindow)||void 0===_video_contentWindow1?void 0:_video_contentWindow1.postMessage('{"method":"pause"}',"*")
+;isPlaying=false;return}null===coverImage||void 0===coverImage?void 0:coverImage.forEach((image=>{image.classList.add("fade-out")}))
+;null===(_video_contentWindow=video.contentWindow)||void 0===_video_contentWindow?void 0:_video_contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*");isPlaying=true}));return{unload:null}}))}
+},__webpack_require__=>{var __webpack_exec__=moduleId=>__webpack_require__(__webpack_require__.s=moduleId);__webpack_require__.O(0,[685],(()=>__webpack_exec__(692)));var __webpack_exports__=__webpack_require__.O()}]);

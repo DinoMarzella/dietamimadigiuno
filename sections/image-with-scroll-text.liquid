@@ -1,0 +1,148 @@
+<!-- image-with-scroll-text.liquid -->
+<style>
+    *{
+  margin:0px;
+  padding:0px;
+}
+.__fasting_soups_imp{
+  background:#F1F4F7;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.___content_row___wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+.title_row__wrap{
+  padding:20px 0px;
+  text-align: center;
+}
+.__left_image____col{
+  display:flex;
+  flex:1;
+  width:100%;
+}
+.__left_image____col img{
+  width:100%;
+}
+.__right_image____col{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  flex:1;
+}
+.__content___child_wrap{
+  display:flex;
+  flex-direction:column;
+}
+.__header____wrap_n{
+  border-bottom:1px solid black;
+  margin-bottom:30px;
+}
+.__header____wrap_n h1{
+  padding-bottom:10px;
+}
+.__scroll__para_wrapper{
+  height:200px;
+  width:100%;
+  overflow:scroll;
+  padding:10px 0px;
+}
+.__bottom____box_wrapper{
+  padding:20px 0px;;
+}
+.__bottom____box_wrapper p{
+  padding-top:10px;
+}
+
+.__content___child_wrap{
+  width:100%;
+  max-width:65%;
+}
+
+@media(max-width:1000px){
+  .___content_row___wrapper{
+    flex-direction:column;
+  }
+  .__right_image____col{
+    padding:30px 10px;
+  }
+  .__content___child_wrap{
+    max-width:90%;
+  }
+}
+</style> 
+
+<div class="__fasting_soups_imp">
+    <div class="title_row__wrap" style="color:{{section.settings.header_color_text}}">
+      <h1>{{section.settings.main_title_sec_pr}}</h1>
+    </div>
+    <div class="___content_row___wrapper">
+      <div class="__left_image____col">
+        <img src="{{section.settings.par_main_image | img_url: '1200x'}}">
+      </div>
+      <div class="__right_image____col">
+        <div class="__content___child_wrap">
+          <div class="__header____wrap_n">
+            <small>ORIGNAL</small>
+            <h1>{{section.settings.cont_head_lis}}</h1>
+          </div>
+        <h3>HOW TO PREPARE:</h3>
+          <div class="__scroll__para_wrapper">
+           {{section.settings.drnmic_text_para}}
+          </div>
+          <div class="__bottom____box_wrapper">
+            <h3>ALTERNATE WAYS TO PREPARE:</h3>
+            <p>
+              {{section.settings.btom_text_res}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% schema %}
+  {
+    "name": "Image With Scroll",
+
+    "settings": [
+    {
+        "type": "html",
+        "id": "main_title_sec_pr",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "header_color_text",
+        "label": "Title text color"
+      },
+      {
+        "type": "image_picker",
+        "id": "par_main_image",
+        "label": "Add Image"
+      },
+      {
+        "type": "html",
+        "id": "cont_head_lis",
+        "label": "Add label"
+      },
+      {
+        "type": "html",
+        "id": "drnmic_text_para",
+        "label": "Content"
+      },
+      {
+        "type": "html",
+        "id": "btom_text_res",
+        "label": "box text"
+      }
+ 
+    ]
+  }
+  {% endschema %}

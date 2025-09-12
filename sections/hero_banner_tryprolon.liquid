@@ -1,0 +1,51 @@
+<style>
+  .desktop-wrapper{
+    display:block;
+  }
+  .mobile-wrapper{
+    display:none;
+  }
+  @media(max-width:767px){
+    .desktop-wrapper{
+      display:none;
+    }
+    .mobile-wrapper{
+      display:block;
+    }
+  }
+</style>
+<div class="hero-banner pointer">
+  <div class="desktop-wrapper">
+    <img src="{{ section.settings.desktop_image | img_url: '1800x' }}" alt="">
+  </div>
+  <div class="mobile-wrapper">
+    <img src="{{ section.settings.mobile_image | img_url: '700x' }}" alt="">
+  </div>
+</div> 
+  
+   
+
+{% schema %}
+{
+    "name": "Image Banner Try Prolon",
+    "settings": [
+     
+      {
+        "type": "image_picker",
+        "id": "desktop_image",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Banner Try Prolon",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

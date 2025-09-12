@@ -1,0 +1,139 @@
+{% if handle  contains 'prolon' %}
+<style>
+.email-slide-pop h5 {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Harmonia Sans';
+    letter-spacing: 0px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.email-slide-pop {
+    background: #deedbc;
+    /* padding: 10px; */
+    text-align: center;
+    position: relative;
+    align-items: center;
+    display: flex;;
+
+}
+
+span.submittion-error {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Harmonia Sans';
+}
+.email-slide-pop input {
+    font-weight: normal;
+    font-family: 'Harmonia Sans';
+    font-size: 13px;
+    width: 60%;
+    flex-grow: 1; 
+}
+
+button.add-fast-bar {
+    /* position: absolute; */
+    right: 30px;
+    height: 43px;
+    background: #73984a;
+    color: white;
+    padding-inline: 10px;
+    line-height: 1; 
+}
+
+.email-wrapper-flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;;
+}
+
+button.cancel-submittion {
+    font-weight: 400!Important;
+    font-family: 'Harmonia Sans';
+    line-height: 1.2;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.congrats-message-popup {
+    background: #deedbc;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: 'Harmonia Sans';
+    font-weight: bold;
+} 
+@media(max-width:767px){
+    .slide-pop-notification {
+    max-width: 98%;
+} 
+
+.email-slide-pop h5 {
+    font-size: 13px;
+}
+
+.email-slide-pop input {
+    width: 60%;
+    height: 30px;
+    line-height: 1;
+    padding-block: 0px;
+}
+
+button.add-fast-bar {
+    padding-block: 4px;
+    height: 30px;
+    line-height: 1;
+} 
+
+.email-slide-pop input {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+button.cancel-submittion {
+    text-align: left;
+    width: 100%;
+    padding-left: 13px;
+} 
+
+.right-side-pop-notification {
+    max-width: 290px;
+    flex-grow: 1;
+}
+ 
+
+.code-block-slide-pop .img-left-pop img {
+    max-width: 140px;
+}
+p.major-banner-coaching {
+    white-space: unset!important;
+} 
+} 
+</style>
+<div class="code-block-slide-pop"> 
+<div class="hidden email-slide-pop" style="
+   
+">
+    <div class="img-left-pop">
+        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Lets_connect_Popup_400x.jpg?v=1630576881" style="
+    width: 240px;
+">
+    </div>
+    <div class="right-side-pop-notification">
+    <h5>Signup today and get free Fast Bar with your ProLon purchase!</h5>
+    <div class="email-wrapper-flex">
+        <input class="recapture-email" type="email" placeholder="Enter Your Email" >
+        <button class="add-fast-bar">Signup</button> 
+        <span class="submittion-error animated"></span> 
+    </div> 
+    <button class="cancel-submittion">No, I don't like free stuff. </button>
+    </div>
+</div>
+<div class="hidden congrats-message-popup ">
+    🎉 &nbsp; Congrats, you’ll receive FREE Fast Bar with your order! 
+</div>      
+  
+</div>
+
+{% endif %}   

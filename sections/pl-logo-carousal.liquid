@@ -1,0 +1,174 @@
+{%- assign data = section.settings -%}
+<style>
+  .slider.logos-carousel{
+    height: 60px;
+    position: relative;
+    width: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin: 50px 0;
+    margin-bottom: 80px!important;
+
+  }  
+  .slide-track {
+    width: calc(2275.66px * 3);
+    display: flex;
+   
+    justify-content: space-between;
+  }
+  .scroll-animation{
+     animation: scrolling 180s linear infinite;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .slide:hover {
+    transform: scale(0.9);
+  }
+  .slider:hover .slide-track {
+    animation-play-state: paused;
+  }
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-4275.66px * 2));
+    }
+  }
+  .slide .logo {
+    height: 30px;
+    padding: 0px 40px;
+    object-fit:contain!important;
+  }
+
+@media screen and (max-width: 720px) {
+  .slide{
+    max-width: 150px;
+  }
+  .slider.logos-carousel {
+    height: 40px;
+    margin: 0px!important;
+  } 
+  .slide-track {
+    width: calc(1615.16px * 3);
+  }
+  .slide .logo {
+    width: auto;
+    height: 40px;
+    padding: 0px 30px;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-3415.16px * 2));
+    }
+  }
+} 
+</style>
+<div>
+  <div id="logos-carousel" class="slider logos-carousel">
+    <div class="slide-track scroll-animation">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image_url.size > 0 -%}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{block.settings.image_url}}"
+            >
+          </div>
+          {% else %}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{ block.settings.image | img_url: '300x'}}"
+            >
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image_url.size > 0 -%}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{block.settings.image_url}}"
+            >
+          </div>
+          {% else %}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{ block.settings.image | img_url: '300x'}}"
+            >
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image_url.size > 0 -%}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{block.settings.image_url}}"
+            >
+          </div>
+          {% else %}
+          <div class="slide">
+            <img
+              class="logo"
+              src="{{ block.settings.image | img_url: '300x'}}"
+            >
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-stats');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Logo Carousal",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logod",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "image_url",
+          "label": "Image Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Logo Carousal",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

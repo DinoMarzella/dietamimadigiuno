@@ -1,0 +1,211 @@
+<style>
+  .prolon-protocol-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+}
+.prolon-protocol-wrapper .child-prolon-protocol{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+background:#2f6645;
+color:white;
+padding:70px 0px;
+}
+.prolon-protocol-wrapper .rc-title{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+text-align:center;
+}
+.prolon-protocol-wrapper .rc-title h2{
+margin-top:0px;
+font-weight: 500;
+      font-size: 40px;
+}
+.prolon-protocol-wrapper .row-of-days-wrap{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+max-width:1200px;
+padding:50px 0px;
+}
+.prolon-protocol-wrapper .row-of-days-wrap hr{
+width:50%;
+margin:0px 10px;
+}
+.prolon-protocol-wrapper .single-item-b{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+width:100%;
+max-width:150px;
+height:150px;
+border-radius:50%;
+border:2px solid white;
+margin:0px 5px;
+}
+.prolon-protocol-wrapper .single-item-b h2{
+margin-bottom:0px;
+}
+.prolon-protocol-wrapper .mid-text-c{
+width:100%;
+position:relative;
+text-align:center;
+top:-18px;
+}
+.prolon-protocol-wrapper .mid-text-c p{
+text-align:center;
+font-size:12px;
+}
+.prolon-protocol-wrapper .mid-text-c hr{
+width:90%;
+}
+.single-item-b img {
+  max-width: 90px;
+}
+@media(max-width:1250px){
+.prolon-protocol-wrapper .rc-title h2 {
+      font-size: 28px;
+  }
+.prolon-protocol-wrapper .row-of-days-wrap{
+  max-width:90%;
+}
+.prolon-protocol-wrapper .single-item-b{
+  max-width:130px;
+  height:120px;
+}
+.prolon-protocol-wrapper .single-item-b h2{
+  font-size:20px;
+}
+.prolon-protocol-wrapper .single-item-b p{
+  font-size:14px;
+}
+}
+
+@media(max-width:1000px){
+.prolon-protocol-wrapper .single-item-b{
+  max-width:100px;
+  height:100px;
+}
+.prolon-protocol-wrapper .single-item-b h2{
+  font-size:18px;
+}
+.prolon-protocol-wrapper .single-item-b p{
+  font-size:12px;
+}
+}
+
+@media(max-width:767px){
+.prolon-protocol-wrapper .row-of-days-wrap{
+  flex-direction:column;
+  padding:20px 0px;
+}
+.prolon-protocol-wrapper .row-of-days-wrap hr{
+  display:none;
+}
+.prolon-protocol-wrapper .single-item-b{
+  margin:5px;
+  max-width:180px;
+  height:180px;
+}
+.prolon-protocol-wrapper .single-item-b h2{
+  font-size:24px;
+}
+.prolon-protocol-wrapper .single-item-b p{
+  font-size:15px;
+  padding:0px 10px;
+}
+.prolon-protocol-wrapper .mid-text-c{
+  top:0px;
+  margin:20px 0px;
+}
+}
+</style>
+{% assign sspro = section.settings %}
+<div class="prolon-protocol-wrapper">
+  <div class="child-prolon-protocol">
+    <div class="rc-title">
+      <h2>{{sspro.maintitle}}</h2>
+    </div>
+    <div class="row-of-days-wrap">
+      <hr>
+      {% for block in section.blocks %}
+  {% if block.settings.showdays %}
+      <div class="single-item-b">
+       <img src="{{block.settings.imgpto | img_url: '2200x'}}" />
+      </div>
+    {% endif %}
+    {% if block.settings.singlline %}
+      <div class="mid-text-c">
+        <p>{{block.settings.sinline}}</p>
+        <hr>
+      </div>
+     {% endif %}
+      {% endfor %}
+      <hr>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Protocol Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "maintitle",
+      "label": "Add Title"
+    }
+  ],
+  "blocks": [
+  {
+    "type": "protocol_sec",
+    "name": "Protocol Section",
+    "settings": [
+    {
+      "type": "checkbox",
+      "id": "showdays",
+      "label": "Show Days Sectoin",
+      "default": true
+     },
+      {
+        "type": "image_picker",
+        "id": "imgpto",
+        "label": "Added Image"
+      },
+      {
+          "type": "checkbox",
+          "id": "singlline",
+          "label": "Show single line",
+          "default": false
+      },
+      {
+          "type": "text",
+          "id": "sinline",
+          "label": "Single Line Text",
+          "default": "Transitioning To Fasting State"
+      }
+   ]
+}
+],
+"presets": [{
+  "name": "Protocol section",
+  "blocks": [
+    {
+      "type": "protocol_sec"
+    }
+  ]
+}
+  ]
+}
+{% endschema %}

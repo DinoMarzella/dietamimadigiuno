@@ -1,0 +1,89 @@
+<div class="prolon-safe-styling">
+    <section
+        class="section_MBMmk __no-padding_fDLiw __inner-space-all_UCln0 __inner-space-small_Gsj7R __inner-space-medium_m87u6 __inner-space-large_fnLls __inner-space-xlarge_s0qs5"
+        style="--space-bg-all:white;padding-top: 0px;margin-top:0px;">
+    <div class="container_BhTWe" style="" >
+        <div class="offersInner_Arvmd" style="--offers-top-adjustment:20px; padding-top: 0px;padding-bottom: 20px;">
+            <div id="offers" class="offersInnerInner_t7TW6">
+                <div class="bottom_1y5V0">
+                    <div class="topLevelSeparator_xnHTX"></div>
+                    <div class="topLevelRow_Ckb0y">
+                        <div class="topLevelCol_cJ0YT __first_nvdzj">
+                            <div class="bottomText_+LSYO">
+                                <p><strong>{{section.settings.title}}</strong></p>
+                                <p>{{section.settings.details}}</p>
+                            </div>
+                        </div>
+                        <div class="topLevelCol_cJ0YT __second_U1ewx">
+                            <ul class="bottomList_L7CNx __mobile_0FIk5">
+                                {% for block in section.blocks %}
+                                <li class="bottomItem_Pog1p">
+                                  <img class="m-image" src="{{block.settings.image | img_url:'100x'}}" />
+                                    <p class="bottomText_+LSYO"><strong>{{block.settings.title}}</strong></p>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <ul class="bottomList_L7CNx __desktop_41eZx">
+                                {% for block in section.blocks %}
+                                <li class="bottomItem_Pog1p">
+                                    <img class="m-image" src="{{block.settings.image | img_url:'100x'}}" />
+                                    <p class="bottomText_+LSYO"><strong>{{block.settings.title}}</strong></p>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></section>
+</div>
+
+{% schema %}
+      {
+        "name": "Offer cards bottom",
+        "settings": [
+         {
+            "type": "text",
+            "id": "title",
+            "label": "Add text"
+          },
+          {
+            "type": "html",
+            "id": "details",
+            "label": "details"
+          }
+        ],
+        "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          } 
+        ]
+      }
+    ],
+        "presets": [
+          {
+            "name": "Offer cards bottom",
+            "blocks": [
+        {
+          "type": "block"
+        },
+        {
+          "type": "block"
+        }
+      ]
+          }
+        ]
+      }
+    {% endschema %}

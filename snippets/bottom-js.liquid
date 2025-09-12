@@ -1,0 +1,92 @@
+
+
+<!--  TEST CUSTOMER -->
+{% if customer %} 
+
+<style>
+.not-logged-in {
+    display: none!important;
+}
+
+.for-logged-in {
+    display: inline-block!important;
+}
+</style> 
+
+
+
+{% for xtag in customer.tags %}
+{% assign tag = xtag  | downcase %}
+{% if tag == 'approved' %}
+{%assign approved= true %}
+{% endif %}  
+{% if tag == 'lhp' or tag == 'hcp' or tag == 'hcr' or tag == 'hcr'  %}
+
+{% assign provider = true %} 
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+<script>
+
+    let customer= {{customer |json}};
+ 
+    window.approved= {{approved|json}};
+
+    window.provider= {{provider|json}};
+
+ 
+
+    $(document).ready(function(){
+        if(provider){
+        $('a.site-nav__link[href="/products/buy-prolon"]').attr('href','/products/buy-prolon-sale');
+        }
+    }); 
+
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A==" crossorigin="anonymous"></script>
+{% if template contains 'product'%}
+{% render 'popup-for-patient' %}
+
+ 
+{% endif  %}
+
+
+
+<script type="text/javascript" src=https://www.cvrtrkpro.com/scripts/sdk/everflow.js></script>
+
+
+
+<script type="text/javascript">
+
+    EF.click({
+
+        offer_id: EF.urlParameter('oid'),
+
+        affiliate_id: EF.urlParameter('affid'),
+
+        sub1: EF.urlParameter('sub1'),
+
+        sub2: EF.urlParameter('sub2'),
+
+        sub3: EF.urlParameter('sub3'),
+
+        sub4: EF.urlParameter('sub4'),
+
+        sub5: EF.urlParameter('sub5'),
+
+        uid: EF.urlParameter('uid'),
+
+        source_id: EF.urlParameter('source_id'),
+
+        transaction_id: EF.urlParameter('_ef_transaction_id'),
+
+    });
+
+</script> 

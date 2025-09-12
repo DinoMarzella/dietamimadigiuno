@@ -1,0 +1,77 @@
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+<script>
+
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+  $(document).ready(function () {
+    window.leadSavingUrl= 'https://prolon-pro.herokuapp.com/leads/save';
+//     window.leadSavingUrl= 'http://localhost:1337/leads/save';
+    $('.header').parent().addClass('stick-top');
+    var register_type = getParameterByName('register_type'); // "lorem"
+
+    if(register_type=='a4m')
+    {
+      $('.how-did-you-hear select').html(`<option value="A4M">A4M</option>`).val('A4M');
+    }   
+
+
+//     $('.registration-form').submit(function (e) {
+//       e.preventDefault();
+//       console.log('Sumitting form...')
+//       $('.btn-registration-submit').text('...').attr('disabled', 'disabled');
+// //       var data = $(this).serializeArray();
+//       var data = new FormData(this);
+//       $.ajax({  
+//         url: leadSavingUrl,   
+//         // url: 'http://localhost:1337/leads/save',
+//         method: 'POST',
+//         data,  
+//         success: function (data) {
+//           window.location = 'https://prolon-pro.myshopify.com/pages/thank-you'
+//         },
+//         error: function (error) {
+//           console.log(error)
+//           alert('Error. Please try again.'); 
+//           $('.btn-registration-submit').text('Submit').removeAttr('disabled');
+//         },
+//         cache: false,
+//         contentType: false,
+//         processData: false
+//       })
+//     })
+  });
+    
+$(".registration-form").validate({
+  submitHandler: function(form,e) {
+        e.preventDefault();
+        console.log('Sumitting form...')
+        $('.btn-registration-submit').text('...').attr('disabled', 'disabled');
+  //       var data = $(this).serializeArray();
+        var data = new FormData($('.registration-form')[0]);
+        $.ajax({  
+          url: leadSavingUrl,   
+          // url: 'http://localhost:1337/leads/save',
+          method: 'POST',
+          data,  
+          success: function (data) {
+            window.location = 'https://prolon-pro.myshopify.com/pages/thank-you'
+          },
+          error: function (error) {
+            console.log(error)
+            alert('Error. Please try again.'); 
+            $('.btn-registration-submit').text('Submit').removeAttr('disabled');
+          },
+          cache: false,
+          contentType: false,
+          processData: false
+        })
+    }
+});
+</script>

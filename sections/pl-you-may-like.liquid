@@ -1,0 +1,71 @@
+{%- assign data = section.settings -%}
+
+
+{% render 'ck-bundle-drawer', data:data %}
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-you-may-like');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL You May Like",
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "type": "boxes",
+      "name": "box",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Performance Bundle"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+        "type": "text",
+        "id": "Products",
+        "label": "Products",
+        "info": "Enter the product handle of the products you want to display in this box. Separate each handle with a comma. Example: product-handle-1, product-handle-2, product-handle-3"
+        } 
+ 
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL You May Like",
+      "blocks": [
+        {
+          "type": "boxes",
+          "settings": {
+            "title": "Performance Bundle"
+        }
+      },
+      {
+        "type": "boxes",
+        "settings": {
+          "title": "Intermittent Fasting Bundle"
+      }
+    },
+    {
+      "type": "boxes",
+      "settings": {
+        "title": "Longevity Essentials Bundle"
+    }
+  }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

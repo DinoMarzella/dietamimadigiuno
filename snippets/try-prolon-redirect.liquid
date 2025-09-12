@@ -1,0 +1,40 @@
+{% if handle =='tryprolon' %}
+ 
+<script>  
+  let ResetSitesList = {
+
+    DEFAULT: "https://prolonreset.eu/pages/tryprolon",
+    US: "https://prolonfmd.com/pages/tryprolon",
+  };
+  $.getJSON(
+    "https://api.ipgeolocation.io/ipgeo?apiKey=496ea9ae2341457aa765954620f2dd0d",
+    findGeoLocationReset
+  );
+
+  function findGeoLocationReset(d) {
+    console.log("geo-ip", d);
+    window.current_country = d.country_code2;
+    if (d.country_code2) {
+      localStorage.setItem("geo_location", JSON.stringify(d));
+    }
+
+ 
+      if (d.country_code2!='US') { 
+        $("body").html(`<center style="   
+        height: 100vh;
+        display: block;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        ">
+              
+            Redirecting to ${d.country_code2} site ...
+              </center>`);
+
+        location.href = ResetSitesList[d.country_code2] || ResetSitesList['DEFAULT'] ; 
+      } 
+    
+  }
+</script>
+{% endif %}   

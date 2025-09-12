@@ -1,0 +1,132 @@
+<!-- image-slider.liquid -->
+<style>
+    .__nutrition_wrapper{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+.__nutrition_header{
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  font-family:sans-serif;
+  margin-bottom:20px;
+  margin-top: 40px;
+}
+.__nutrition_slider_wrapper{
+  display:flex ; 
+  width:100%;
+  gap:20px;
+  max-width:60%;
+  margin:0 auto;
+  
+
+}
+.__image_block_n{
+  display:block;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  max-width: 250px;
+}
+.__image_block_n img{
+  width:100%;
+  {%- comment -%} max-width:85%;  {%- endcomment -%}
+}
+@media(max-width:767px){
+  .__nutrition_slider_wrapper{
+    max-width:95%; 
+    margin:0 auto;
+    flex-wrap: wrap;
+  }
+  .__image_block_n{
+    max-width: 46%;
+  } 
+}
+.__nutrition_slider_wrapper .slick-prev:before{
+  color: black;
+  fill: black;
+}
+.__nutrition_slider_wrapper .slick-next:before{
+  color: black;
+  fill: black;
+}
+</style>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+
+
+<div class="__nutrition_wrapper">
+    <div class="__nutrition_header">
+      <h1>{{ section.settings.nutri_header }}</h1>
+    </div>
+    <div class="__nutrition_slider_wrapper" id="special_slider">
+        {% for block in section.blocks %}
+      <div class="__image_block_n">
+        <img src="{{ block.settings.image_slid | img_url: '1200x'}}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+<script>
+   
+    {%- comment -%} $('#special_slider').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+		 {%- endcomment -%}
+</script>
+
+
+  {% schema %}
+  {
+    "name": "Image Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "nutri_header",
+        "label": "Add Title"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "image_slider",
+      "name": "Slide image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_slid",
+          "label": "Add Image"
+        }
+     ]
+  }
+  ]
+}
+  {% endschema %}

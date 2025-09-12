@@ -1,0 +1,81 @@
+{% assign data = section.settings %}
+
+<!-- Image-with-text-v1-tw Ali -->
+
+<div class="flex justify-center items-center w-full">
+    <div class="flex justify-center items-center w-full flex-col-reverse md:flex-row bg-[{{data.bgcolor}}] ">
+      <div class="flex justify-center items-center w-full py-14 px-5">
+      <div class="flex flex-col justify-center items-center max-w-[400px] w-full gap-5">
+     {% for block in section.blocks %}
+      <div class="flex justify-center items-center w-full gap-10">
+          <img class="w-full max-w-[70px]" src="{{block.settings.icon | img_url: '3000x'}}" alt="shop-pay-icon">
+          <div>
+              <h4 class="text-[#72984B] font-[Avenir-Roman] text-lg md:text-2xl uppercase">{{block.settings.title}}</h4>
+              <p class="font-[Avenir-Roman] text-sm md:text-lg">{{block.settings.details}}</p>
+          </div>
+      </div>
+     {% endfor %}
+  </div>
+      </div>
+      <div class="flex justify-center items-center w-full">
+        <div class="flex justify-center items-center w-full">
+          <img src="{{data.rimage | img_url: '3000x'}}" alt="ProLon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% schema %}
+{
+  "name": "Image-with-text-v1tw",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "rimage",
+      "label": "Image"
+    },
+    {
+        "type": "color",
+        "id": "bgcolor",
+        "label": "Background Color",
+       "default": "#f1f8fd"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+      {
+        "type": "image_picker",
+        "id": "icon",
+        "label": "Icon"
+       },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title",
+          "default": "ProLon Title"
+        },
+        {
+          "type": "html",
+          "id": "details",
+          "label": "Details",
+         "default": "The body transitions into a fasting state  & fat-burning mode so it can begin  cellular clean-up."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image-with-text-v1tw",
+      "blocks": [
+        {
+          "type": "block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

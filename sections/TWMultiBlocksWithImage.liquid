@@ -1,0 +1,141 @@
+{% assign data = section.settings %}
+<!-- TWMultiBlocksWithImage -->
+
+<div class="w-full py-12 bg-white font-grilliRegular">
+    <div class="w-full px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="mb-5 text-2xl uppercase md:text-4xl">{{data.title}}</h1>
+        <p class="my-2 font-normal tracking-tight md:text-2xl md:leading-10 text-darkGunMetal sm:text-2xl font-grilliRegular max-w-[600px] mx-auto">{{data.details}}</p>
+      </div>
+      <div class="flex md:flex-row flex-col justify-center items-center w-full mt-10 md:mt-12 max-w-[1200px] mx-auto h-full">
+       <div class="flex flex-col items-center justify-start w-full h-full sm:flex-row md:flex-col">
+        {% for block in section.blocks %}
+        {% if block.type == 'blockleft' %}
+        <div class="flex flex-col bg-[#F4F7F1] p-5 md:p-8 rounded-lg m-3 w-full h-full">
+          {% if block.settings.mini_title %}
+            <h2 class="border-solid border-black border-b-[1px] w-full max-w-[150px] text-xl">{{block.settings.mini_title}}</h2>
+            {% endif %}
+            {% if block.settings.quty %}
+          <span class="text-[#476327] text-2xl pt-2">{{block.settings.quty}}</span>
+          {% endif %}
+          {% if block.settings.bdetail %}
+          <p class="mt-2 text-xs">{{block.settings.bdetail}}</p>
+          {% endif %}
+        </div>
+       {% endif %}
+       {% endfor %}
+       </div>
+       <div class="flex items-center justify-start my-3 sm:my-0 sm:m-3">
+         <div class="flex justify-center items-center bg-[#F4F7F1] w-full">
+           <img src="{{data.main_img | img_url: '3000x'}}">
+         </div>
+       </div>
+       <div class="flex flex-col items-center justify-start w-full h-full sm:flex-row md:flex-col">
+        {% for block in section.blocks %}
+        {% if block.type == 'blockright' %}
+        <div class="flex flex-col bg-[#F4F7F1] p-5 md:p-8 rounded-lg m-3 w-full h-full">
+            {% if block.settings.mini_titler %}
+              <h2 class="border-solid border-black border-b-[1px] w-full max-w-[150px] text-xl">{{block.settings.mini_titler}}</h2>
+              {% endif %}
+              {% if block.settings.qutyr %}
+            <span class="text-[#476327] text-2xl pt-2">{{block.settings.qutyr}}</span>
+            {% endif %}
+            {% if block.settings.bdetailr %}
+            <p class="mt-2 text-xs">{{block.settings.bdetailr}}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% endfor %}
+       </div>
+      </div>
+      <div class="flex items-center justify-center w-full mt-3 md:mt-10">
+     <a href="{{data.btnlink}}" class="flex justify-center items-center bg-[#F7931D] px-3 py-3 text-xl uppercase text-white rounded cursor-pointer w-full max-w-xs">{{data.btntext}}</a>
+    </div>
+       </div>
+    </div>
+
+    
+{% schema %}
+{
+    "name": "Multiple blocks TW",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+       "default": "ProLon is Tested"
+      },
+      {
+          "type": "liquid",
+          "id": "details",
+          "label": "Details",
+         "default": "Our 5-day nutrition program is the only program patented for promoting rejuvenation from within for healthy aging."
+      },
+      {
+          "type": "image_picker",
+          "id": "main_img",
+          "label": "Image"
+      },
+      {
+          "type": "url",
+          "id": "btnlink",
+          "label": "Button Link"
+      },
+      {
+          "type": "text",
+          "id": "btntext",
+          "label": "Button Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "blockleft",
+        "name": "Left blocks",
+        "settings": [
+          {
+            "type": "text",
+            "id": "mini_title",
+            "label": "Pre Title",
+           "default": "IGF-1"
+          },
+          {
+            "type": "text",
+            "id": "quty",
+            "label": "Quantity",
+           "default": "-13%"
+          },
+          {
+              "type": "liquid",
+              "id": "bdetail",
+              "label": "Details",
+             "default": "IGF-1, a marker associated with aging and increased risk of cancer in mid-aged adults, was reduced by 13%."
+          }
+        ]
+      },
+      {
+        "type": "blockright",
+        "name": "Right blocks",
+        "settings": [
+          {
+            "type": "text",
+            "id": "mini_titler",
+            "label": "Pre Title",
+           "default": "IGF-1"
+          },
+          {
+            "type": "text",
+            "id": "qutyr",
+            "label": "Quantity",
+           "default": "-13%"
+          },
+          {
+              "type": "liquid",
+              "id": "bdetailr",
+              "label": "Details",
+             "default": "IGF-1, a marker associated with aging and increased risk of cancer in mid-aged adults, was reduced by 13%."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

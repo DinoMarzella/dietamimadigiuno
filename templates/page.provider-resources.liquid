@@ -1,0 +1,414 @@
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #fafafa82;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #444;
+    outline: none;
+    margin-top: 10px;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+    border-bottom: none;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border: 1px solid #444;
+    border-top: none;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories-grid {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .categories-grid-2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .categories-card {
+    cursor: pointer;
+    width: 20%;
+    padding: 0px;
+    /* border: 1px solid #d8d8d8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    height: 150px;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  }
+
+  .card-selected {
+    box-shadow: 0 1px 3px rgb(185 230 177 / 12%), 0 1px 2px rgb(30 62 22 / 24%);
+    border: 3px solid #9aca39;
+  }
+
+  .faqs-content {
+    margin-top: 15px;
+  }
+
+  h1.main-faq-title-pr {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: #607a92;
+    font-weight: 600;
+  }
+
+  h3.main-faq-sub-title {
+    color: gray;
+    font-weight: 600;
+  }
+
+
+  div#safety-precautions {}
+
+  form#faq-search-form {
+    width: 600px;
+    max-width: 100%;
+    position: relative;
+    padding: 60px 0px;
+  }
+
+  form#faq-search-form input {
+    width: 100%;
+  }
+
+  button#btn-faq-search {
+    position: absolute;
+    right: 0px;
+    background: #73994a;
+    height: 43px;
+    padding: 0px 30px;
+    color: white;
+  }
+
+  @media(max-width:767px) {
+    h1.main-faq-title-pr {
+      font-size: 35px;
+      text-align: center;
+    }
+
+    form#faq-search-form {
+      padding: 20px 0px;
+    }
+
+    .categories-card {
+      width: 46%;
+    }
+  }
+</style>
+ 
+<div class="page-width page-content">
+
+  {%- render 'breadcrumbs' -%}
+
+  <div class="grid">
+    <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+
+      <!-- <header class="section-header">
+        <h1 class="section-header__title">{{ page.title }}</h1>
+      </header>
+
+      <div class="rte rte--nomargin">
+        {{ page.content }}
+      </div> -->
+
+      <div class="container">
+        <div class="content-center">
+          <h1 class="main-faq-title-pr">Let's get started</h1>
+        </div>
+        <div class="content-center">
+          <h3 class="main-faq-sub-title">Resources for a successful ProLon integration</h3>
+        </div>
+        <div>
+          <div class="content-center">
+            <form id="faq-search-form">
+              <input type="text" id="txt-faq-search" required placeholder="Quick resource search..." />
+              <button type="submit" id="btn-faq-search">Search</button>
+            </form>
+          </div>
+          <small class="content-center" id="search-validation" style="color: red;"></small>
+        </div>
+
+        <h2 class="main-faq-title-pr" style="color:#818181; text-align: center; padding: 20px 0px;">Resource Categories</h2>
+        
+        <div class="categories-grid">
+        </div>
+
+        <h2 class="main-faq-title-pr" style="color:#818181; text-align: center; padding-top: 50px; padding-bottom: 20px;">Frequently Visited Resources</h2>
+
+        <div class="categories-grid-2">
+        </div>
+        <hr>
+        <div class="faqs-content">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script> 
+  var CATEGORIES = [
+    {
+      title: 'Professional Education',
+      tag: 'professional-education'
+    },
+    {
+      title: 'Patient Education',
+      tag: 'patient-education'
+    },
+    {
+      title: 'Implementing into your practice',
+      tag: 'implementing-into-your-practice'
+    },
+    {
+      title: 'Regulatory & Compliance',
+      tag: 'regulatory-compliance'
+    }
+  ]
+  var CATEGORIES2 = [
+    {
+      title: 'Clinical Studies',
+      tag: 'clinical-studies'
+    },
+    {
+      title: 'Patient Protocols',
+      tag: 'patient-protocols'
+    },
+    {
+      title: 'Webinars',
+      tag: 'webinars'
+    },
+    {
+      title: 'Product Sheets',
+      tag: 'product-sheets'
+    },
+    {
+      title: 'Program Sheets',
+      tag: 'program-sheets'
+    },
+    {
+      title: 'Fasting Education',
+      tag: 'fasting-education'
+    },
+    {
+      title: 'Email Series Introducing ProLon to Patients',
+      tag: 'email-series-introducing-proLon-to-patients'
+    },
+    {
+      title: 'Social Media Posts',
+      tag: 'social-media-posts'
+    },
+    {
+      title: 'Fasting Week Resources',
+      tag: 'fasting-week-resources'
+    }
+  ]
+  var CURRENT_QUESTIONS = []
+  $(document).ready(function () {
+    console.log("ready!");
+    _fillCategoriesGrid()
+  });
+
+  function _initializeAccordians() {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  }
+
+  function _fillCategoriesGrid() {
+    let html = ''
+    CATEGORIES.forEach(cat => {
+      html += `<div id="${cat.tag}" onclick="categorySelected('${cat.tag}', 1)" class="categories-card">
+                  ${cat.title}
+              </div>`
+    })
+    $('.categories-grid').html(html)
+
+
+    let html2 = ''
+    CATEGORIES2.forEach(cat => {
+      html2 += `<div id="${cat.tag}" onclick="categorySelected('${cat.tag}', 2)" class="categories-card">
+                  ${cat.title}
+              </div>`
+    })
+    $('.categories-grid-2').html(html2)
+  }
+
+  function categorySelected(tag, list) {
+    $(`.categories-card`).removeClass('card-selected')
+    $(`#${tag}`).addClass('card-selected')
+    getQuestions(tag, list)
+  }
+
+  async function getQuestions(tag, list) {
+    var categoriesMain = CATEGORIES;
+    if (list == 2){
+      categoriesMain = CATEGORIES2;
+    }
+    let categoryTitle = categoriesMain.find(cat => cat.tag == tag).title
+    $("#txt-faq-search").val('')
+    let url = `https://prolonfmd.com/blogs/provider-resources/tagged/${tag}?view=json`
+    try {
+      const res = await $.ajax({
+        url: url,
+        type: 'GET',
+      });
+      let questions = JSON.parse(res)
+      setQuestionsHTML(questions, categoryTitle)
+      CURRENT_QUESTIONS = questions
+    } catch (err) {
+      console.log('err: ', err);
+      $('.faqs-content').html(`<button class="accordion">No questions available.</button>`)
+    }
+  }
+
+  function setQuestionsHTML(questions, categoryTitle, reset = true, animate = true) {
+    if (reset && questions.length == 0) {
+      $('.faqs-content').html(`<button class="accordion">No questions available.</button>`)
+      $('html, body').animate({
+        scrollTop: $(".faqs-content").offset().top - 100
+      }, 2000);
+      return;
+    }
+    let html = ``
+    if (!reset) {
+      html += $('.faqs-content').html()
+    }
+    html += `
+          <div>
+            <h3>${categoryTitle}</h3>
+          </div>
+          `
+    questions.forEach(ques => {
+      html += `<button class="accordion">${ques.title}</button>
+          <div class="panel">
+            <p>${ques.body_html}</p>
+          </div>`
+    })
+    html += `<hr />`
+    $('.faqs-content').html(html)
+    _initializeAccordians()
+    if (animate) {
+      $('html, body').animate({
+        scrollTop: $(".faqs-content").offset().top - 100
+      }, 2000);
+    }
+  }
+
+  function filterQuestions() {
+    CURRENT_QUESTIONS = []
+    let query = $("#txt-faq-search").val()
+    $('#search-validation').html('')
+    if (!query || query == '') {
+      $('#search-validation').html('Required.')
+      return;
+    }
+    $('.faqs-content').html('').css({
+      height: 0,
+      overflow: 'hidden'
+    })
+    setTimeout(() => {
+      $('.faqs-content').css({
+        height: 'unset',
+        overflow: 'unset'
+      }).fadeIn('slow')
+    }, 1500);
+    $('#btn-faq-search').text('...')
+    const promises = [];
+    for (let category of CATEGORIES) {
+      let categoryTitle = category.title
+      let url = `https://prolonfmd.com/blogs/provider-resources/tagged/${category.tag}?view=json`
+      const promise = $.ajax({
+        url: url, 
+        type: 'GET'
+      }).done(function (result) {
+        let questions = JSON.parse(result)
+        let rquery = new RegExp(query, "i");
+        let filtered = questions.filter(ques => ques.title.match(rquery) || ques.body_html.match(rquery))
+        if (filtered.length > 0) {
+          setQuestionsHTML(filtered, categoryTitle, false, false)
+          CURRENT_QUESTIONS.push(filtered)
+        }
+      }).fail(function (err) {
+        console.log('err: ', err);
+      });
+      promises.push(promise)
+    }
+    Promise.allSettled(promises).
+    then((results) => {
+      // results.forEach((result) => console.log(result))
+      if (CURRENT_QUESTIONS.length == 0) {
+        $('.faqs-content').html(
+          `<button class="accordion">There are no FAQs that matches your search, try a different term or using the categories below to find an answer that may assist you.</button>`
+        )
+      }
+    });
+
+
+    $('html, body').animate({
+      scrollTop: $(".faqs-content").offset().top - 100
+    }, 2000);
+    setTimeout(() => {
+      $('#btn-faq-search').text('Search')
+    }, 2000);
+  }
+  $("#faq-search-form").submit(function (e) {
+
+    //prevent Default functionality
+    e.preventDefault();
+    // console.log('Form submitted.')
+    filterQuestions()
+
+  });
+</script>

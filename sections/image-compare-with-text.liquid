@@ -1,0 +1,153 @@
+{% assign data = section.settings %}
+<!-- DMCompareImageWithText -->
+<div class='py-6 lg:overflow-hidden md:py-12 {%- if data.remove_padding %} md:py-0 {%- endif -%}' style="background-color: {{data.background_color}}">  
+  {% if data.pretitle.size > 0 %}
+  <h1 class="flex justify-center mx-auto mb-16 text-center uppercase item-center">{{data.pretitle}}</h1>
+  {% endif %}
+  <div class="mx-auto {% if data.full_width %}w-full{% else %} max-w-screen-2xl lg:px-8{% endif %} ">
+      <div class='flex flex-col items-center justify-center md:flex-row {%- if data.image_on_left %} md:flex-row-reverse {%- endif -%}''>
+          <div class="w-full max-w-2xl px-4 mx-auto sm:px-6 lg:flex lg:items-center lg:px-0 md:w-1/2">
+              <div class="">
+                {%- if data.tag -%}
+                  <p class="px-5 text-sm font-light tracking-tight text-center md:px-10 md:text-left">{{data.tag}} </p>
+                {%- endif -%}
+                {%- if data.subtitle -%}
+                  <p class="md:px-10 accent-subtitle">{{data.subtitle}}</p>                
+              {%- endif -%}
+                {%- if data.title -%}
+                  <h2 class="px-5 my-4 text-3xl font-bold tracking-tight text-center md:px-10 md:text-left md:text-4xl sm:my-5 lg:my-6" >
+                    <span class="block text-center text-black md:text-left font-avant">{{data.title}}</span>
+                </h2>                
+              {%- endif -%}
+              {%- if data.description -%}
+                <div class='px-5 text-lg text-left text-black md:px-10 font-avenir'>  
+                  {{data.description}}              
+                </div>               
+            {%- endif -%}
+            
+              </div>
+          </div>
+          <div class="relative w-full py-6 mx-auto md:py-0 md:w-1/2 {% if data.full_width %}mx-0{% endif %}" style="max-width:{{data.image_max_width}}">
+
+              <image-compare class="comparison comparison-{{ section.id }} comparison--style-{{ section.settings.slider_style }}" data-section-id="{{ section.id }}">
+      {% for block in section.blocks %}
+        {% if forloop.index == 1 %}<div class="comparison__draggable" data-draggable>{% endif %}
+
+        {% if block.settings.image != blank %}
+          <img class="comparison__image comparison__image--{{ forloop.index}} {% if block.settings.blur %}blur{% endif %}" src="{{ block.settings.image | img_url: '2000x' }})" alt="{{ block.settings.image.alt }}" {% if forloop.index == 1 %}data-primary-image{% else %}data-secondary-image{% endif %} {{ block.shopify_attributes }}>
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg comparison__image' }}
+        {% endif %}
+
+        {% if forloop.index == 1 %}</div>{% endif %}
+      {% endfor %}
+      <button class="comparison__button" data-button>
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+      </button>
+    </image-compare>
+ 
+          </div>
+      </div>
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "Compare Image With Text", 
+    "settings": [
+      {
+      "type": "text",
+      "id": "pretitle",
+      "label": "Pre Title"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub-Title",
+        "default": "Sub-Title"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "Description"
+      },
+      {
+      "type": "select",
+      "id": "slider_style",
+      "label": "t:sections.image-comparison.settings.slider_style.label",
+      "default": "classic",
+      "options": [
+        {
+          "value": "classic",
+          "label": "t:sections.image-comparison.settings.slider_style.options.classic.label"
+        },
+        {
+          "value": "minimal",
+          "label": "t:sections.image-comparison.settings.slider_style.options.minimal.label"
+        }
+      ]
+    },
+      {
+        "type": "checkbox",
+        "id": "image_on_left",
+        "label": "Image On Left"
+      }, 
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full Width",
+       "default": false
+      }, 
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "image_max_width",
+        "label": "Image Max Width"
+      },
+      {
+        "type": "text",
+        "id": "tag",
+        "label": "Tag"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "image",
+      "name": "t:sections.image-comparison.blocks.image.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.image-comparison.blocks.image.settings.image.label"
+        }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "Compare Image With Text",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

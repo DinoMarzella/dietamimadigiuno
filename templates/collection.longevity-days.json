@@ -1,0 +1,1224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.speed",
+  "sections": {
+    "dk_video_banner_kdBhXQ": {
+      "type": "dk-video-banner",
+      "disabled": true,
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/a8d00e578a114fe9a382009752e0c37a.mp4",
+        "heading_text": "<span class=\"block mb-0 md:mb-4\">Nutrition Science to help you...\n</span>",
+        "html": "const strings = [\n\"Healthier Living\",\n\"Sustaining longevity\",\n\"Fat Focused Weight Loss\",\n\"Balancing energy\",\n\"Rejuvenate cells\",\n\"Biological age\",\n\"Protect lean muscle mass\"\n  ];",
+        "sub_text": "Experience the many benefits of <br class=\"md:block hidden\"> fasting while you eat",
+        "button_link": "shopify://collections/all-products",
+        "button_text": "All Products",
+        "quiz_button_link": "shopify://pages/nutritional-coaching",
+        "quiz_button_text": "Nutritional Coaching"
+      }
+    },
+    "ebb478e5-b8a2-419c-a9d1-c556c42645ab": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "banner_url": "https://prolonlife.com/collections/all"
+      }
+    },
+    "pl_hero_v4_NDbiFH": {
+      "type": "pl-hero-v4",
+      "blocks": {
+        "buttons_fNWFRL": {
+          "type": "buttons",
+          "settings": {
+            "title": "Shop Prolon 5-Day",
+            "url": "https://prolon.eu/products/prolon-5-day",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white"
+          }
+        },
+        "buttons_BtRxrh": {
+          "type": "buttons",
+          "settings": {
+            "title": "All Products",
+            "url": "https://prolon.eu/collections/all",
+            "bg_color": "bg-[#F7F9FB] hover:bg-[#F7F9FB]",
+            "text_color": "text-black"
+          }
+        }
+      },
+      "block_order": [
+        "buttons_fNWFRL",
+        "buttons_BtRxrh"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_bg_white": false,
+        "title": "",
+        "subtitle": "",
+        "description": "<p class=\"h2 text-center mb-4\">IT’S NOT A DIET, IT’S SCIENCE</p>\n<p class=\"text-center mb-4\">Discover the innovative nutritional technology of the Fasting Mimicking Diet to support metabolic health, reduce biological ageing and change your relationship with food.</p>\n\n<style>\n@media (min-width: 769px) {\n#shopify-section-template--23119456731483__pl_hero_v4_NDbiFH > div > section > div > div > div.md\\:ml-\\[2rem\\].w-full.md\\:w-1\\/2.md\\:mb-0.xl\\:ml-\\[8rem\\].max-w-\\[620px\\].left-side-banner {\n  margin-left: 55%;\n  width: 100%\n}\n}\n</style>",
+        "image": "shopify://shop_images/01_d_uk.jpg",
+        "bottomDescription": ""
+      }
+    },
+    "slideshow_QQKLwB": {
+      "type": "slideshow",
+      "blocks": {
+        "hero_GMNVLg": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "LONGEVITY DAYS<br> -25% OFF",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p>Invest in your well-being,<br>  your longevity journey starts now</p>\n<div class=\"md:flex font-bold mt-5\">\n<div class=\"countdown md:mx-2 gap-x-8\">\n    <div class=\"container-day\">\n        <h3 class=\"day font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Day</p>\n    </div>\n    <div class=\"container-hour\">\n        <h3 class=\"hour font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Hour</p>\n    </div>\n    <div class=\"container-minute\">\n        <h3 class=\"minute font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Minute</p>\n    </div>\n    <div class=\"container-second\">\n        <h3 class=\"second font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Second</p>\n    </div>\n</div>\n</div>\n\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--hero_GMNVLg .hero__text-shadow {\n    margin-top: 70%;\nmax-width: 90%;\ntext-align: center;\n}\n}\n\n.border-y-red {\nborder-top: 1px solid #ff0000;\nborder-bottom: 1px solid #ff0000;\nmargin: 10px 0 20px;\n}\n\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:black;\n  max-width: 300px;\n}\n.day, .hour, .minute, .second {\nfont-size: 1.5rem;\n}\n.cd-title {\nfont-size: 0.75rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n.slick-track {\nmargin-bottom: 0px !important;\n}\n</style>\n\n<script>\nconst countdown = () => {\n  const countDate = new Date(\"May 31, 2025 23:59:59\").getTime ();\n  const now = new Date().getTime ();\n  const gap = countDate - now;\n  \n  //How the fuck does time work?\n  const second = 1000;\n  const minute = second * 60;\n  const hour = minute * 60;\n  const day = hour * 24;\n\n  //Calculate the shit\n  const textDay = Math.floor(gap / day);\n  const textHour = Math.floor((gap % day) / hour);\n  const textMinute = Math.floor((gap % hour) / minute);\n  const textSecond = Math.floor((gap % minute) / second);\n\n  document.querySelector(\".day\").innerText = textDay;\n  document.querySelector(\".hour\").innerText = textHour;\n  document.querySelector(\".minute\").innerText = textMinute;\n  document.querySelector(\".second\").innerText = textSecond;\n};\n\nsetInterval(countdown, 1000);\n</script>",
+            "link": "#shop-products",
+            "link_text": "Discover Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#73994a",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/desk.png",
+            "image_mobile": "shopify://shop_images/mobile.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_78Fen7": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<span class=\"md-text-white\">New Soups, Same Benefits</span>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p class=\"md-text-white\"><span class=\"text-3xl font-black italic\">A smart break, now even better</span>\n<br>Discover the new soup varieties in the ProLon ReSet 1-day kit: renewed taste, same goal - to support your body in a healthy and balanced way.</p>\n\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--hero_78Fen7 .hero__text-shadow {\n    margin-top: 62%;\nmax-width: 90%;\n}\n}\n@media only screen and (min-width: 769px) {\n.md-text-white {\ncolor: white;\n}\n}\n.hero__link .btn {\ncolor: white !important;\n}\n</style>",
+            "link": "shopify://products/reset",
+            "link_text": "ReSet 1 Day Kit",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#73984a",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/reset_desk.jpg",
+            "image_mobile": "shopify://shop_images/reset_mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_E4bWPx": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<span class=\"md-text-white\">Change is in the air</span>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p class=\"md-text-white\">\nJust 5 days to regain energy, balance and wellness</p>\n\n<p class=\"hidden md-text-white mt-2\"><b>A special gift is waiting for you!</b> <br>Spend at least €99 and discover the surprise at checkout</p>\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--hero_E4bWPx .hero__text-shadow {\n    margin-top: 62%;\nmax-width: 100%;\n}\n.countdown {\n  color:black !important;\n}\n}\n@media only screen and (min-width: 769px) {\n.md-text-white {\ncolor: white;\n}\n}\n.hero__link .btn {\ncolor: white !important;\n}\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:white;\n  max-width: 300px;\n}\n.day, .hour, .minute, .second {\nfont-size: 1rem;\n}\n.cd-title {\nfont-size: 0.75rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n.slick-track {\nmargin-bottom: 0px !important;\n}\n</style>\n\n<script>\nconst countdown = () => {\n  const countDate = new Date(\"Apr 30, 2025 23:59:59\").getTime ();\n  const now = new Date().getTime ();\n  const gap = countDate - now;\n  \n  //How the fuck does time work?\n  const second = 1000;\n  const minute = second * 60;\n  const hour = minute * 60;\n  const day = hour * 24;\n\n  //Calculate the shit\n  const textDay = Math.floor(gap / day);\n  const textHour = Math.floor((gap % day) / hour);\n  const textMinute = Math.floor((gap % hour) / minute);\n  const textSecond = Math.floor((gap % minute) / second);\n\n  document.querySelector(\".day\").innerText = textDay;\n  document.querySelector(\".hour\").innerText = textHour;\n  document.querySelector(\".minute\").innerText = textMinute;\n  document.querySelector(\".second\").innerText = textSecond;\n};\n\nsetInterval(countdown, 1000);\n</script>",
+            "link": "shopify://collections/prolon",
+            "link_text": "All products",
+            "link_2": "shopify://products/prolon-5-day-kit",
+            "link_text_2": "ProLon® 5-Day",
+            "color_accent": "#73984a",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/spring_desk_01.jpg",
+            "image_mobile": "shopify://shop_images/spring_mobile_01.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_NnA9NW": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<span class=\"text-white\">BLACK FRIDAY PROLON!</span>",
+            "title_size": 60,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p class=\"text-red-600 border-y-red font-semibold\">Up to 30% of discount</p>\n<p class=\"text-white mb-4\"><b>Exclusive Discounts:</b> \n<br>5% off orders over €199, 10% off over €249!</p>\n<p class=\"text-white\">LIMITED TIME OFFER</p>\n<div class=\"md:flex justify-center font-bold\">\n<div class=\"countdown mx-auto md:mx-2 gap-x-2\">\n    <div class=\"container-day\">\n        <h3 class=\"day font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Day</p>\n    </div>\n    <div class=\"container-hour\">\n        <h3 class=\"hour font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Hour</p>\n    </div>\n    <div class=\"container-minute\">\n        <h3 class=\"minute font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Minute</p>\n    </div>\n    <div class=\"container-second\">\n        <h3 class=\"second font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Second</p>\n    </div>\n</div>\n</div>\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--hero_NnA9NW .hero__text-shadow {\n    margin-top: 60%;\nmax-width: 100%;\nwidth: 100%;\n}\n}\n.slideshow__slide--hero_NnA9NW .hero__text-shadow {\ntext-align: center;\n}\n.border-y-red {\nborder-top: 1px solid #ff0000;\nborder-bottom: 1px solid #ff0000;\nmargin: 10px 0 20px;\n}\n\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:white;\n  max-width: 300px;\n}\n.day, .hour, .minute, .second {\nfont-size: 1rem;\n}\n.cd-title {\nfont-size: 0.75rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n.slick-track {\nmargin-bottom: 0px !important;\n}\n</style>\n\n<script>\nconst countdown = () => {\n  const countDate = new Date(\"Nov 30, 2024 23:59:59\").getTime ();\n  const now = new Date().getTime ();\n  const gap = countDate - now;\n  \n  //How the fuck does time work?\n  const second = 1000;\n  const minute = second * 60;\n  const hour = minute * 60;\n  const day = hour * 24;\n\n  //Calculate the shit\n  const textDay = Math.floor(gap / day);\n  const textHour = Math.floor((gap % day) / hour);\n  const textMinute = Math.floor((gap % hour) / minute);\n  const textSecond = Math.floor((gap % minute) / second);\n\n  document.querySelector(\".day\").innerText = textDay;\n  document.querySelector(\".hour\").innerText = textHour;\n  document.querySelector(\".minute\").innerText = textMinute;\n  document.querySelector(\".second\").innerText = textSecond;\n};\n\nsetInterval(countdown, 1000);\n</script>",
+            "link": "shopify://collections/cyber-monday",
+            "link_text": "Discover Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/asset-hp-slide-bf24-dimage-EN.webp",
+            "image_mobile": "shopify://shop_images/asset-hp-slide-bf24-mimage-EN.webp",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_D6RqJM": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Cyber Monday!",
+            "title_size": 60,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p class=\"font-semibold p-subtitle\">Up to 30% of discount</p>\n<p class=\"mb-4\"><b>Exclusive Discounts:</b> \n<br>5% off orders over €199, 10% off over €249!</p>\n\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--hero_D6RqJM .hero__text-shadow {\n    margin-top: 60%;\nmax-width: 100%;\nwidth: 100%;\n}\n}\n.slideshow__slide--hero_D6RqJM .hero__text-shadow {\ntext-align: center;\n}\n.border-y-red {\nborder-top: 1px solid #ff0000;\nborder-bottom: 1px solid #ff0000;\nmargin: 10px 0 20px;\n}\n.p-subtitle {\nfont-weight: 700;\nfont-size: 2rem;\ncolor: #306253;\n}\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:white;\n  max-width: 300px;\n}\n.day, .hour, .minute, .second {\nfont-size: 1rem;\n}\n.cd-title {\nfont-size: 0.75rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n.slick-track {\nmargin-bottom: 0px !important;\n}\n</style>\n\n<script>\nconst countdown = () => {\n  const countDate = new Date(\"Nov 30, 2024 23:59:59\").getTime ();\n  const now = new Date().getTime ();\n  const gap = countDate - now;\n  \n  //How the fuck does time work?\n  const second = 1000;\n  const minute = second * 60;\n  const hour = minute * 60;\n  const day = hour * 24;\n\n  //Calculate the shit\n  const textDay = Math.floor(gap / day);\n  const textHour = Math.floor((gap % day) / hour);\n  const textMinute = Math.floor((gap % hour) / minute);\n  const textSecond = Math.floor((gap % minute) / second);\n\n  document.querySelector(\".day\").innerText = textDay;\n  document.querySelector(\".hour\").innerText = textHour;\n  document.querySelector(\".minute\").innerText = textMinute;\n  document.querySelector(\".second\").innerText = textSecond;\n};\n\nsetInterval(countdown, 1000);\n</script>",
+            "link": "shopify://collections/cyber-monday",
+            "link_text": "Discover Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#306253",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/01_d_EN.jpg",
+            "image_mobile": "shopify://shop_images/01_m_EN_31588181-acd5-4f26-a964-34dea51cec16.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "hero_GMNVLg",
+        "hero_78Fen7",
+        "hero_E4bWPx",
+        "hero_NnA9NW",
+        "hero_D6RqJM"
+      ],
+      "custom_css": [
+        ".hero__text-shadow {max-width: 600px;}",
+        ".hero__image {-o-object-fit: contain !important; object-fit: contain !important;}",
+        ".hero .slideshow__slide .hero__image-wrapper {transform: scale(1);}"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "fd8b5800-458f-4e1d-896d-776f17599cda": {
+      "type": "pl-product-grid",
+      "blocks": {
+        "products_hkthiQ": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-next-gen-sv",
+            "title": "ProLon Next Gen",
+            "subtitle": "REJUVENATION FROM WITHIN",
+            "description": "Discover the authentic flavour of our fresh soups, made with organic ingredients grown in Italy, which not only delight the palate, but also help rejuvenate cells and metabolism, protecting lean mass and promoting general well-being.",
+            "price": "16425",
+            "compare_at_price": "",
+            "btn_text": "Add to Cart",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]",
+            "image": "shopify://shop_images/product-rte-next-gen-asset-1_1.webp",
+            "handle": "prolon-next-gen",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-5-day-kit",
+            "title": "Prolon 5-Day Program",
+            "subtitle": "REJUVENATION FROM WITHIN",
+            "description": "Life-changing nutrition that rejuvenates cells and metabolism while protecting lean body mass.",
+            "price": "13425",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/p-5day_6c131095-0ef6-4864-b710-a7267f9f4513.png",
+            "handle": "prolon-5-day-kit",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2": {
+          "type": "products",
+          "settings": {
+            "product": "reset",
+            "title": "Reset 1-Day Kit",
+            "subtitle": "A ONE-DAY MIND AND BODY RESET",
+            "description": "A one-day all-inclusive offset, detox, and reset with fasting-mimicking nutrition.",
+            "price": "2925",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/reset-1day_ccb064be-5bb6-46d8-81c9-391acb1282e3.webp",
+            "handle": "reset",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-fasting-bar",
+            "title": "Nutrition Bars",
+            "subtitle": "INTERMITTENT FASTING BARS",
+            "description": "Great breakfast that nourishes your body while keeping it in a physiological fasting state.",
+            "price": "2925",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/0001.jpg",
+            "handle": "prolon-fasting-bar",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-l-protein",
+            "title": "L-Protein",
+            "subtitle": "COMPLETE PROTEIN DRINK",
+            "description": "Optimal muscle synthesis with complete plant proteins to support performance & healthy aging.",
+            "price": "4425",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "/products/prolon-l-protein",
+            "btn_color": "text-white hover:text-black bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/02.jpg",
+            "handle": "prolon-l-protein",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5": {
+          "type": "products",
+          "settings": {
+            "product": "longevity-spread",
+            "title": "Longevity Spread",
+            "subtitle": "APULIAN ALMONDS & COCOA",
+            "description": "Made with 74% Apulian Almonds, plant-based proteins, healthy fats, and low carbs.",
+            "price": "893",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/assets_SPREA_1600x_800x_ecfdc85f-dde6-4555-aaf4-d83c35bbd62c.webp",
+            "handle": "longevity-spread",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6": {
+          "type": "products",
+          "settings": {
+            "product": "l-pill",
+            "title": "L-Pill",
+            "subtitle": "DAILY HEALTHY AGING",
+            "description": "Dual-cap technology with naturally occurring ingredients that support healthy aging of cells and organs.",
+            "price": "4425",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/assets_l-pill_1600x_a9fff174-3602-4df0-b7fe-54337a201bc4.webp",
+            "handle": "l-pill",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-8": {
+          "type": "products",
+          "settings": {
+            "product": "l-biome",
+            "title": "L-Biome",
+            "subtitle": "GUT HEALTH",
+            "description": "Dual-cap technology with fasting nutrition pre and probiotics, wrapped with vegan DHA.",
+            "price": "5175",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/assets_l-biome_1600x_1d727129-617e-4c2d-8c1d-19ff8ef04a81.webp",
+            "handle": "l-biome",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9": {
+          "type": "products",
+          "settings": {
+            "product": "l-biome-l-pill",
+            "title": "L-Pill & L-Biome",
+            "subtitle": "DAILY HEALTHY AGING",
+            "description": "30-day supply of L-Pill & L-Biome to support overall health and wellbeing.",
+            "price": "7425",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/assets_l-biome-l-pill-bundle_1600x_1920x1920_f2884907-01d8-4433-baa6-fece3eb8df6d.webp",
+            "handle": "l-biome-l-pill",
+            "show_direct_prices": true
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-4": {
+          "type": "products",
+          "settings": {
+            "product": "fasting-shake",
+            "title": "Fasting Shake",
+            "subtitle": "VANILLA FLAVOR",
+            "description": "Great breakfast shake that nourishes your body while keeping it in a physiological fasting state.",
+            "price": "4425",
+            "compare_at_price": "",
+            "btn_text": "Shop Now",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/Fasting_Shake_12.webp",
+            "handle": "fasting-shake",
+            "show_direct_prices": false
+          }
+        }
+      },
+      "block_order": [
+        "products_hkthiQ",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-8",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-4"
+      ],
+      "settings": {
+        "id": "shop-products",
+        "title": "<span style=\"font-weight: 600;\">Slow Down Bioage & Age Gracefully\n</span><br> Prolon Everyday Nutrition",
+        "subtitle": "Shop Products"
+      }
+    },
+    "2824c60c-f37d-4143-b2c8-3d3d1ef2f22c": {
+      "type": "pl-logo-carousal",
+      "blocks": {
+        "c6d4ecef-93d4-4fae-b511-04a34d5866e1": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/5842ab62a6515b1e0ad75b09.png?v=1693605103"
+          }
+        },
+        "31aeb89c-05a7-4e30-994f-a841a5a225d3": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/cbs-logo-png-transparent_c5ca53c9-d8d8-44ef-8813-7d40874b71a5.png?v=1693605430"
+          }
+        },
+        "ff6b0d82-5c93-4034-a7c2-d19230c6024f": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/The-Wall-Street-Journal-emblem_00da1d41-a903-4420-9e7e-6a730aab6ae7.png?v=1693605430"
+          }
+        },
+        "569a1660-d0a6-4df1-852d-32cabe11f973": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0524/9898/9237/files/forbes-logo_665ae680-8bf4-4219-adc2-f1afbf03dc6d.svg?v=1678090400"
+          }
+        },
+        "b85b2fcd-8da0-4c0e-b4c0-9144566ed0d8": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Time_Magazine_logo.svg?v=1678089880"
+          }
+        },
+        "b0b79d22-314f-4ad1-ab68-b5f770a2b794": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/The_New_York_Times_Logo.svg?v=1694010416"
+          }
+        },
+        "ea3ae13c-ba61-4ed6-ba6e-238ed8943a39": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0524/9898/9237/files/VOGUE_LOGO.svg?v=1678089880"
+          }
+        },
+        "60468a24-097c-44cc-8ba1-c258232da3a8": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/FOX_wordmark.svg?v=1694010415"
+          }
+        },
+        "af2b45a0-89e5-43ce-ab1e-d0f718fc5d1d": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0524/9898/9237/files/National-Geographic-Logo.svg?v=1678089881"
+          }
+        },
+        "a0d53e30-01e5-469a-9d07-dfc86129cdc6": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Arte_Logo_2017_Horizontal.svg?v=1694010415"
+          }
+        },
+        "3a4dde76-4cf9-43a4-83f0-5dfbffa8aa54": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/The_Logo_of_The_Washington_Post_Newspaper.svg?v=1694010416"
+          }
+        },
+        "e5a6359d-d0ee-4b6e-b896-d6a5701e0f05": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/The_Economist_Logo.svg?v=1694010415"
+          }
+        },
+        "95a561e1-4461-40f3-8e7b-311d2497ea5f": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/The_Telegraph_logo.svg?v=1694010416"
+          }
+        },
+        "69b36b75-69e0-45f5-b573-e99978a02a37": {
+          "type": "logod",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Los_Angeles_Times_logo.svg?v=1694010416"
+          }
+        }
+      },
+      "block_order": [
+        "c6d4ecef-93d4-4fae-b511-04a34d5866e1",
+        "31aeb89c-05a7-4e30-994f-a841a5a225d3",
+        "ff6b0d82-5c93-4034-a7c2-d19230c6024f",
+        "569a1660-d0a6-4df1-852d-32cabe11f973",
+        "b85b2fcd-8da0-4c0e-b4c0-9144566ed0d8",
+        "b0b79d22-314f-4ad1-ab68-b5f770a2b794",
+        "ea3ae13c-ba61-4ed6-ba6e-238ed8943a39",
+        "60468a24-097c-44cc-8ba1-c258232da3a8",
+        "af2b45a0-89e5-43ce-ab1e-d0f718fc5d1d",
+        "a0d53e30-01e5-469a-9d07-dfc86129cdc6",
+        "3a4dde76-4cf9-43a4-83f0-5dfbffa8aa54",
+        "e5a6359d-d0ee-4b6e-b896-d6a5701e0f05",
+        "95a561e1-4461-40f3-8e7b-311d2497ea5f",
+        "69b36b75-69e0-45f5-b573-e99978a02a37"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "f4e94dc0-c1fa-4d25-a1de-c38a64f9fd8d": {
+      "type": "pl-simple-image",
+      "disabled": true,
+      "settings": {
+        "max-width-section": "",
+        "padding-section": "px-0"
+      }
+    },
+    "0dc7f90a-7e82-4196-a318-aea6ca51e8e9": {
+      "type": "pl-stats",
+      "blocks": {
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-1": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "€",
+            "value": "35",
+            "suffix": "M",
+            "text": "In research and development"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-2": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "100",
+            "suffix": "+",
+            "text": "Global patents on our nutrition technology"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-3": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "32",
+            "suffix": "",
+            "text": "Clinical trials - science you can trust"
+          }
+        },
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-4": {
+          "type": "Stats",
+          "settings": {
+            "prefix": "",
+            "value": "18",
+            "suffix": "",
+            "text": "Prestigious University research partners"
+          }
+        },
+        "product_nfQbgb": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "carousel-product_item": "prolon-next-gen-sv",
+            "carousel-product_title": "ProLon Next Gen",
+            "carousel-product_subtitle": "READY TO EAT ProLon soups",
+            "carousel-product_description": "Discover the authentic flavour of our fresh soups, made with organic ingredients grown in Italy.",
+            "carousel-product_button": "SHOP NOW"
+          }
+        },
+        "product_H3CBqr": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "carousel-product_item": "prolon-5-day",
+            "carousel-product_image": "shopify://shop_images/p-5day_6c131095-0ef6-4864-b710-a7267f9f4513.png",
+            "carousel-product_image_hover": "shopify://shop_images/p-5day_6c131095-0ef6-4864-b710-a7267f9f4513.png",
+            "carousel-product_title": "Prolon 5-Day Program",
+            "carousel-product_subtitle": "Expanded variety 4",
+            "carousel-product_description": "Life-changing nutrition that rejuvenates cells and metabolism while protecting lean body mass.",
+            "carousel-product_button": "SHOP NOW"
+          }
+        },
+        "product_weKAyP": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "carousel-product_item": "reset",
+            "carousel-product_image": "shopify://shop_images/reset-1day_ccb064be-5bb6-46d8-81c9-391acb1282e3.webp",
+            "carousel-product_image_hover": "shopify://shop_images/reset-1day_ccb064be-5bb6-46d8-81c9-391acb1282e3.webp",
+            "carousel-product_title": "ReSet 1-Day Kit",
+            "carousel-product_subtitle": "A ONE-DAY MIND AND BODY RESET",
+            "carousel-product_description": "A one-day all-inclusive offset, detox, and reset with fasting-mimicking nutrition.",
+            "carousel-product_button": "SHOP NOW"
+          }
+        },
+        "product_n3xcn3": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "carousel-product_item": "prolon-fasting-bar",
+            "carousel-product_image": "shopify://shop_images/0001.jpg",
+            "carousel-product_image_hover": "shopify://shop_images/0001.jpg",
+            "carousel-product_title": "Nutrition Bars",
+            "carousel-product_subtitle": "INTERMITTENT FASTING BARS",
+            "carousel-product_description": "Great breakfast that nourishes your body while keeping it in a physiological fasting state.",
+            "carousel-product_button": "SHOP NOW"
+          }
+        },
+        "product_FzKny8": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "carousel-product_item": "prolon-l-protein",
+            "carousel-product_title": "L-Protein",
+            "carousel-product_subtitle": "COMPLETE PROTEIN DRINK",
+            "carousel-product_description": "Optimal muscle synthesis with complete plant proteins to support performance & healthy aging.",
+            "carousel-product_button": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-1",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-2",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-3",
+        "template--15644371386415__0dc7f90a-7e82-4196-a318-aea6ca51e8e9-Stats-4",
+        "product_nfQbgb",
+        "product_H3CBqr",
+        "product_weKAyP",
+        "product_n3xcn3",
+        "product_FzKny8"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_title": "",
+        "title": "Precision nutrition for health and longevity.",
+        "subtitle": "",
+        "description": "Tailored to <b>reverse and slow down biological age</b> (through our 5-Day and daily nutrition), Prolon Nutritional products are discovered and licensed from the Longevity Institute of the University of Southern California and 18 other university research institutions. Food is the only product we consume every day of our lives. It was time for ethical science, instead of for-profit business, <b>to develop nutrition formulations aimed at enhancing human health</b> and supporting medicine. \n        <br><br>\n        The Longevity Diet Book summarizes the main discoveries behind Nutrition for Longevity and Food as Medicine.",
+        "image": "shopify://shop_images/The_Longevity_Diet_EU-_Paperback_2x_8d1099d8-bdbe-4761-aa08-77483780a77b.webp",
+        "btn_title": "",
+        "btn_url": ""
+      }
+    },
+    "modern_custom_html_6CWMWn": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<h3 class=\"text-center\">THE LATEST NEWS</h3>\n\n<div class=\"product-carousel\">\n  \n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n<span class=\"p-tag\">NEW</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-rte-next-gen-asset-4.webp?v=1728998622\" alt=\"ProLon Next Gen\">\n    <h4 class=\"text-xl\">ProLon® Next Gen<br><small>Ready to eat ProLon soups</small>\n</h4>\n    <p>Discover the authentic flavour of our fresh soups, made with organic ingredients grown in Italy.</p>\n    <p class=\"p-price font-bold\">€249 <del>€279</del></p>\n\n    <a href=\"https://prolon.co.uk/products/prolon-next-gen\" class=\"btn rounded-md\">DISCOVER NOW</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n<span class=\"p-tag\">BEST SELLER</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-4.webp?v=1729260755\" alt=\"ProLon Kit Dieta Mima Digiuno Expanded variety\">\n    <h4 class=\"text-xl\">ProLon 5-Day Program<br><small>Expanded Variety</small>\n</h4>    <p>Life-changing nutrition that rejuvenates cells and metabolism while protecting lean body mass.</p>\n    <p class=\"p-price font-bold\">€179 <del>€209</del></p>\n    <a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=41659581661319\" class=\"btn\">DISCOVER NOW</a>\n  </div>\n\n   <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n<span class=\"p-tag\">100% VEGAN</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-l-protein.webp?v=1729279651\" alt=\"L-Protein\">\n    <h4 class=\"text-xl\">L-Protein<br><small>COMPLETE PROTEIN DRINK</small>\n</h4> <p>Optimal muscle synthesis with complete plant proteins to support performance & healthy aging.</p>\n    <p class=\"p-price font-bold\">€59</p>\n    <a href=\"https://prolon.co.uk/products/prolon-l-protein\" class=\"btn\">DISCOVER NOW</a>\n  </div>\n\n  <!-- Puoi aggiungere più prodotti in questo modo -->\n</div>\n\n<style>\n.product-carousel {\n  width: 100%;\n  margin: 0 auto;\n}\n\n.carousel-item {\n  text-align: center;\n  padding: 20px;\n}\n\n.carousel-item img {\n  width: 100%;\n  max-width: 300px;\n  height: auto;\n  display: block;\n  margin: 0 auto;\n}\n.carousel-item h4,.carousel-item img  {\n  margin: 10px auto 5px;\n}\n.carousel-item .p-price {\n  margin: 10px auto 15px;\n}\n.carousel-item p {\n  margin: 0;\n}\n.btn {\n  display: inline-block;\n  padding: 10px 20px;\n  background-color: #0071e3;\n  color: #fff;\n  text-decoration: none;\n  margin-top: 10px;\n  border-radius: 5px;\n}\n@media only screen and (max-width: 768px) {\n.slick-prev, .slick-next {\n  display: none !important;\n}\n}\n.slick-prev:before, .slick-next:before {\n  color: #0071e3;\n}\ndel {\ncolor: red;\n}\n.product-carousel .slick-track {\nmargin-bottom: 25px;\n}\n#shopify-section-template--23284278034779__modern_custom_html_6CWMWn .page-width {\n    max-width: 1920px;\n}\n.footer__section--border {\ndisplay: none;\n}\n.best-sellers__carousel {\ndisplay: none;\n}\n.p-tag {\n  position: absolute; /* Posiziona l'etichetta relativamente al suo contenitore */\n  top: 10px; /* Distanza dall'alto del contenitore */\n  right: 10px; /* Distanza dalla destra del contenitore */\n  background-color: #f7931d; /* Colore di sfondo dell'etichetta */\n  color: white; /* Colore del testo */\n  padding: 5px 10px; /* Spaziatura interna */\n  border-radius: 5px; /* Bordi arrotondati */\n  font-size: 0.9em; /* Dimensione del testo */\n  font-weight: bold; /* Grassetto */\n  z-index: 10; /* Assicurati che l'etichetta sia sopra gli altri elementi */\n}\n\n.carousel-item {\n  position: relative; /* Rende possibile posizionare assolutamente l'etichetta NOVITÀ */\n}\n</style>\n<script>\n$(document).ready(function(){\n  $('.product-carousel').slick({\n    dots: true,\n    infinite: true,\n    speed: 300,\n    slidesToShow: 4,  // Mostra 4 prodotti alla volta\n    slidesToScroll: 1,\n    responsive: [\n      {\n        breakpoint: 1024,\n        settings: {\n          slidesToShow: 3,\n          slidesToScroll: 1,\n          infinite: true,\n          dots: true\n        }\n      },\n      {\n        breakpoint: 600,\n        settings: {\n          slidesToShow: 2,\n          slidesToScroll: 1\n        }\n      },\n      {\n        breakpoint: 480,\n        settings: {\n          slidesToShow: 1,\n          slidesToScroll: 1\n        }\n      }\n    ],\n    prevArrow: '<button type=\"button\" class=\"slick-prev\">Previous</button>',\n    nextArrow: '<button type=\"button\" class=\"slick-next\">Next</button>'\n  });\n});\n</script>"
+      }
+    },
+    "171d778d-7311-49e1-a108-cfcf9e7f99ab": {
+      "type": "pl-single-testimonial",
+      "settings": {
+        "description": "<div class=\"flex justify-center items-center flex-col md:flex-row max-w-[1500px] mx-auto\">\n  \n    <div class=\"text-center text-[30px] lg:text-[2.3vw] xl:text-[36px] text-white  font-normal text-left md:pl-2 mr-[20px]\">Free <b>Shipping</b> on orders from 49€ onwards</div>    \n  </div>"
+      }
+    },
+    "00a6a8b3-5b00-4113-8efe-4736dae2e313": {
+      "type": "pl-features",
+      "blocks": {
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "5-Day Program",
+            "url": "#shop-programs",
+            "bg_color": "bg-[#78a14a] hover:bg-[#78a14a]",
+            "text_color": "text-white"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-2": {
+          "type": "buttons",
+          "settings": {
+            "title": "Longevity Nutrition",
+            "url": "#shop-products",
+            "bg_color": "bg-[#F7F9FB] hover:bg-[#F7F9FB]",
+            "text_color": "text-black"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-1": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Cellular Rejuvenation",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-2": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Metabolic Health",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-3": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Fat-Focused Weight Loss",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-4": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Lean Muscle Protection",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-5": {
+          "type": "first_image_description",
+          "settings": {
+            "text": "Hydrated, Glowing Skin",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-1": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Clarity & Focus",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-2": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Confidence & Success",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        },
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-3": {
+          "type": "second_image_description",
+          "settings": {
+            "text": "Overall Sense of Well-being",
+            "image": "shopify://shop_images/pl-accept.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-1",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-buttons-2",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-1",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-2",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-3",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-4",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-first_image_description-5",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-1",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-2",
+        "template--15644371386415__00a6a8b3-5b00-4113-8efe-4736dae2e313-second_image_description-3"
+      ],
+      "settings": {
+        "data_id": "the-research",
+        "main_title": "",
+        "title": "Why stay younger than your age?",
+        "subtitle": "Why Prolon",
+        "description": "You have 87% chance to acquire and die from one of four age related conditions: Diabetes, Cancer, Cardiovascular and Alzheimer's diseases. When your cells and metabolism get older, you lose the power of rejuvenation and self-healing, and become prone to chronic conditions. Between age 40 and 70 you start experiencing aging symptoms with muscle mass loss, stubborn weight gain, mood and focus change, blood sugar, blood pressure, cholesterol, inflammaging, skin changes, etc. \n \nProlon Nutrition helps you ignite the cellular rejuvenation power of your body (a process called autophagy which was awarded the 2016 Nobel Prize in Medicine), slow down your bioaging score and create years of difference between your chronological age and biological age so that you stay healthy today and increase your chances of delaying the onset of age-related conditions. A younger you at any age helps your metabolism better fight weight gain, muscle loss, blood sugar, metabolic markers, inflammaging, and other age-related health issues.<br>\n<a class=\"underline\" href=\"/pages/the-science/\">Read the scientific articles here.</a>",
+        "image_1": "shopify://shop_images/pl-greenglobe.png",
+        "image_2": "shopify://shop_images/pl-Socia.png",
+        "text_on_left": true,
+        "image_1_title": "Healthy aging benefits",
+        "image_2_title": "Social & emotional benefits"
+      }
+    },
+    "207b5e2a-a7c2-4260-b93f-b913cb4390f2": {
+      "type": "pl-single-testimonial",
+      "settings": {
+        "description": "<div class=\"flex justify-center items-center flex-col md:flex-row max-w-[1500px] mx-auto\">\n  \n    <div class=\"w-full md:w-[71%] text-[30px] lg:text-[2.3vw] xl:text-[36px] text-white  font-normal text-left md:pl-2\">Behind <b>ProLon</b> and the <b>Fasting Mimicking Diet</b>\n</div>\n     <div class=\"flex justify-center items-center m:w-full\"> \n         <a href=\"/pages/science\" class=\"inline-block py-[10px] px-7 w-full text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#F7F9FB] hover:bg-[#F7F9FB] bg-[#F7F9FB] hover:bg-[#F7F9FB] text-black border border-gray-300\" data-qwik-inspector=\"components/life/features-v2.tsx:100:21\">The Science</a>\n              </div>  \n    \n  </div>"
+      }
+    },
+    "6553686e-8da6-4cc3-bb8b-81a067d19c00": {
+      "type": "pl-stats-boxes",
+      "blocks": {
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-1": {
+          "type": "stats",
+          "settings": {
+            "title": "REVERSE BIOLOGICAL AGE",
+            "description": "Awakens the process of <span class=\"font-semibold\">cellular rejuvenation</span> and <span class=\"font-semibold\">metabolic reset.</span>"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-2": {
+          "type": "stats",
+          "settings": {
+            "title": "SLOW DOWN AGING",
+            "description": "<span class=\"font-semibold\">Mitigates</span> food-induced spikes in <span class=\"font-semibold\">aging factors</span> such as insulin & IGF1"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-3": {
+          "type": "stats",
+          "settings": {
+            "title": "AGE GRACEFULLY",
+            "description": "Nutraceutical ingredients to promote healthy <span class=\"font-semibold\">cellular aging</span>"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-1": {
+          "type": "products",
+          "settings": {
+            "title": "Prolon 5-Day Program",
+            "description": "5-days to cellular rejuvenation",
+            "handle": "prolon-5-day",
+            "image": "shopify://shop_images/pl-prolon.png"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-2": {
+          "type": "products",
+          "settings": {
+            "title": "ReSet 1-Day Kit",
+            "description": "24 hour mind & body reset",
+            "handle": "reset",
+            "image": "shopify://shop_images/pl-reset.png"
+          }
+        },
+        "products_ipBGAp": {
+          "type": "products",
+          "settings": {
+            "title": "L-Protein",
+            "description": "Longevity protein shake",
+            "handle": "/products/prolon-l-protein",
+            "image": "shopify://shop_images/pl-l-protein-nw.png"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-4": {
+          "type": "products",
+          "settings": {
+            "title": "Nutrition Bar",
+            "description": "Nutrition to fast for longer",
+            "handle": "prolon-fasting-bar",
+            "image": "shopify://shop_images/pl-nutrition-bar-nw.webp"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-3": {
+          "type": "products",
+          "settings": {
+            "title": "Fasting Shake",
+            "description": "Nutrition technology shake",
+            "handle": "prolon-fasting-shake",
+            "image": "shopify://shop_images/pl-fasting-shake.webp"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-5": {
+          "type": "products",
+          "settings": {
+            "title": "Longevity Spread",
+            "description": "Apulian almond & cocoa spread",
+            "handle": "prolon-longevity-spread",
+            "image": "shopify://shop_images/pl-longevity-spread.webp"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-6": {
+          "type": "products",
+          "settings": {
+            "title": "L-Pill Supplement",
+            "description": "Support healthy aging",
+            "handle": "prolon-l-pill",
+            "image": "shopify://shop_images/pl-l-suppliment.png"
+          }
+        },
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-7": {
+          "type": "products",
+          "settings": {
+            "title": "L-Biome Supplement",
+            "description": "Gut Health",
+            "handle": "prolon-l-biome",
+            "image": "shopify://shop_images/pl-l-biome.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-1",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-2",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-stats-3",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-1",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-2",
+        "products_ipBGAp",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-4",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-3",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-5",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-6",
+        "template--15644371386415__6553686e-8da6-4cc3-bb8b-81a067d19c00-products-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "data_id": "the-research",
+        "title": "How Prolon keeps you younger than your age?",
+        "bg_color": "#F8F9FB",
+        "description": "",
+        "image": "shopify://shop_images/ProLon_ReSet_PDP_Hero_ee7bdf36-c16a-4b63-9183-6bae008df8fb.png"
+      }
+    },
+    "115e3c2b-9e3e-48f5-9bac-14cf07f1b04b": {
+      "type": "pl-testimonials",
+      "blocks": {
+        "template--15644371386415__115e3c2b-9e3e-48f5-9bac-14cf07f1b04b-testimonials-1": {
+          "type": "testimonials",
+          "disabled": true,
+          "settings": {
+            "title": "Well deserved investment in me!",
+            "description": "A friend recommended ProLon to me. My goal was to reduce stomach inflammation and improve overall gut health. The program is well laid out & easy to follow. I viewed it as a well deserved investment in 'me' Prolon did not disappoint, I have more energy, feel great & plan to continue down the path of healthier eating behavior for years tocome.",
+            "name": "- Nancy S."
+          }
+        },
+        "template--15644371386415__115e3c2b-9e3e-48f5-9bac-14cf07f1b04b-testimonials-3": {
+          "type": "testimonials",
+          "disabled": true,
+          "settings": {
+            "title": "ProLon changed my life!",
+            "description": "ProLon changed my life. I saw significant results on day three of the 5 day program. It teaches you how to eat and more importantly how you are supposed to feel when you are eating healthy. It has inspired me continue with this journey towards maintaining my health and well-being.",
+            "name": "- Fernando H."
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__115e3c2b-9e3e-48f5-9bac-14cf07f1b04b-testimonials-1",
+        "template--15644371386415__115e3c2b-9e3e-48f5-9bac-14cf07f1b04b-testimonials-3"
+      ],
+      "settings": {
+        "title": "Prolon is <span class=\"text-[#73994a] font-semibold\">the only nutrition program patented</span> for <span class=\"text-[#73994a] font-semibold\">promoting longevity, healthspan, and protecting lean body mass.</span>"
+      }
+    },
+    "feb788d5-50ce-42fe-9099-0f435c1a7fd3": {
+      "type": "pl-nutrition-program",
+      "blocks": {
+        "template--15644371386415__feb788d5-50ce-42fe-9099-0f435c1a7fd3-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "Start Reversing Your Age Today",
+            "url": "/products/prolon-5-day",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white hover:text-white"
+          }
+        },
+        "template--15644371386415__feb788d5-50ce-42fe-9099-0f435c1a7fd3-tabs_detail-1": {
+          "type": "tabs_detail",
+          "settings": {
+            "title": "What's included each month?",
+            "description": "What's included each month?What's included each month? What's included each month?"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__feb788d5-50ce-42fe-9099-0f435c1a7fd3-buttons-1",
+        "template--15644371386415__feb788d5-50ce-42fe-9099-0f435c1a7fd3-tabs_detail-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "id": "shop-programs",
+        "main_title": "",
+        "title": "<b>Reverse Bioage Program:</b> Prolon 5-Day Program",
+        "subtitle": "#1 DOCTOR RECOMMENDED",
+        "description": "Bioage score shows that <b>3 cycles of Prolon 5-Day Fasting Program decrease bioage by 2.5 years.</b> \n        <br><br>\n        Prolon 5-Day provides everything you need for a complete 5-Day cellular rejuvenating fast, with food to nourish your body.",
+        "side_title": "BIOAGE REDUCTION2.5years",
+        "side_subtitle": ""
+      }
+    },
+    "aug_t_defy_prolon_kTwGDG": {
+      "type": "aug-t-defy-prolon",
+      "blocks": {
+        "slide_AiJjKx": {
+          "type": "slide",
+          "settings": {
+            "main_image": "shopify://shop_images/defy-bioage-frame-1.webp",
+            "title_box": "",
+            "text_box": ""
+          }
+        },
+        "slide_xmBnh3": {
+          "type": "slide",
+          "settings": {
+            "main_image": "shopify://shop_images/defy-bioage-frame-2.webp",
+            "title_box": "",
+            "text_box": ""
+          }
+        },
+        "slide_cCnc39": {
+          "type": "slide",
+          "settings": {
+            "main_image": "shopify://shop_images/defy-bioage-frame-3.webp",
+            "title_box": "",
+            "text_box": ""
+          }
+        },
+        "slide_DyzQiP": {
+          "type": "slide",
+          "settings": {
+            "main_image": "shopify://shop_images/defy-bioage-frame-4.webp",
+            "title_box": "",
+            "text_box": ""
+          }
+        },
+        "slide_pHU8GN": {
+          "type": "slide",
+          "settings": {
+            "main_image": "shopify://shop_images/defy-bioage-frame-5.webp",
+            "title_box": "",
+            "text_box": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_AiJjKx",
+        "slide_xmBnh3",
+        "slide_cCnc39",
+        "slide_DyzQiP",
+        "slide_pHU8GN"
+      ],
+      "custom_css": [
+        "@media (min-width: 48em) {.md\\:text-\\[70px\\] {font-size: 29px; font-weight: 600; text-align: center; }}",
+        "@media (min-width: 80em) {.xl\\:text-\\[40px\\] {font-size: 40px; font-weight: 500; }}",
+        ".bg-\\[\\#F3F3F2\\] {background-color: #fcfcf7;}",
+        "@media (min-width: 48em) {.md\\:py-14 {padding-top: 50px; padding-bottom: 15px; }}",
+        "@media (max-width: 769px) {.text-\\[21px\\] {font-size: 30px; font-weight: 500; }}"
+      ],
+      "settings": {
+        "section_id": "ReverseAging",
+        "main_heading": "Defy Aging by Reversing Your BioAge",
+        "sub_heading": "Here Is What to Expect During the Prolon 5-Day Program",
+        "sub_block_heading": "",
+        "sub_block_main_text": "Reduce BioAge by 2.5 Years",
+        "description_text": "Three cycles of Prolon may decrease your BioAge by 2.5 years in as little as 3 months.\n\nProlon 5-Day provides everything you need for a complete five day cellular rejuvenating fast, with food to nourish your body.\n\n<br>\n<br>\n<b>Don't wait! Start reversing your BioAge today! </b>",
+        "first_button_text": "Buy Prolon 5-Day Program",
+        "first_button_link": "shopify://products/prolon-5-day-kit",
+        "second_button_text": "Shop All Nutrition",
+        "second_button_link": "shopify://collections/all"
+      }
+    },
+    "t_new_tabs_pNzHUk": {
+      "type": "t-new-tabs",
+      "blocks": {
+        "tab_block_q7Nx7p": {
+          "type": "tab_block",
+          "settings": {
+            "collection_p": "fasting-mimicking-diet",
+            "tab_title": "Fasting Mimicking Diet",
+            "tab_heading": "",
+            "tab_description": "",
+            "product1_title": "Prolon 5-Day Program",
+            "product1_description": "REJUVENATION FROM WITHIN",
+            "product1_button_text": "Shop Now",
+            "link1": "shopify://products/prolon-5-day",
+            "product2_title": "ProLon Next Gen",
+            "product2_description": "REJUVENATION FROM WITHIN",
+            "product2_button_text": "Shop Now",
+            "link2": "shopify://products/prolon-next-gen-sv"
+          }
+        },
+        "tab_block_NDbfkh": {
+          "type": "tab_block",
+          "settings": {
+            "collection_p": "intermittent-fasting-diet",
+            "tab_title": "Intermittent Fasting",
+            "tab_heading": "",
+            "tab_description": "",
+            "product1_title": "",
+            "product1_description": "",
+            "product1_button_text": "",
+            "link1": "",
+            "product2_title": "",
+            "product2_description": "",
+            "product2_button_text": "",
+            "link2": ""
+          }
+        },
+        "tab_block_EiFycg": {
+          "type": "tab_block",
+          "settings": {
+            "collection_p": "longevity-everyday",
+            "tab_title": "Longevity Everyday",
+            "tab_heading": "",
+            "tab_description": "",
+            "product1_title": "",
+            "product1_description": "",
+            "product1_button_text": "",
+            "link1": "",
+            "product2_title": "Product 2 Title",
+            "product2_description": "Product 2 Description",
+            "product2_button_text": "Shop Now",
+            "link2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_block_q7Nx7p",
+        "tab_block_NDbfkh",
+        "tab_block_EiFycg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 64em) {.lg\\:text-\\[50px\\] {font-size: 40px; font-weight: 500; }}",
+        "@media (min-width: 48em) {.md\\:pt-\\[70px\\] {padding-top: 30px; }}",
+        "@media (max-width: 768px) {.pt-\\[20px\\] {padding-top: 10px; padding-left: 10px; padding-right: 10px; } .text-\\[24px\\] {font-size: 30px; font-weight: 500; }}",
+        "@media (max-width: 769px) {.py-\\[10px\\] {padding-top: 10px; padding-bottom: 10px; }}",
+        "#prolon-programs {margin: 100px 0 50px;}"
+      ],
+      "settings": {
+        "section_id": "prolon-programs",
+        "title": "Shop Prolon and Everyday Nutrition",
+        "subtitle": "We Offer Many Ways to Shop and Explore Prolon"
+      }
+    },
+    "57233b4b-7e3d-4c1d-ad60-e6cf180b59a5": {
+      "type": "pl-video-testimonials",
+      "blocks": {
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-1": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Weight loss, clarity, reduced cravings, energy",
+            "video": "https://www.youtube.com/watch?v=9ZyhBZxMCLU"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-2": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Improved well-being, weight loss, energy, confidence",
+            "video": "https://www.youtube.com/watch?v=TRGu1JehI2w"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-3": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Reduced sugar cravings, better portion control",
+            "video": "https://www.youtube.com/watch?v=QWPL4o47Zg0"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-4": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Preserved lean muscle mass & performance",
+            "video": "https://www.youtube.com/watch?v=_vzgj5WBwRc"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-5": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Weight loss, clarity, reduced cravings, energy",
+            "video": "https://www.youtube.com/watch?v=9ZyhBZxMCLU"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-6": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Improved well-being, weight loss, energy, confidence",
+            "video": "https://www.youtube.com/watch?v=9ZyhBZxMCLU"
+          }
+        },
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-7": {
+          "type": "cards",
+          "settings": {
+            "benefits": "Reduced sugar cravings, better portion control",
+            "video": "https://www.youtube.com/watch?v=9ZyhBZxMCLU"
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-1",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-2",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-3",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-4",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-5",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-6",
+        "template--15644371386415__57233b4b-7e3d-4c1d-ad60-e6cf180b59a5-cards-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "#1 Doctor Recommended Nutrition for Health & Longevity",
+        "subTitle": "TRIED & TRUSTED"
+      }
+    },
+    "rich_text_Qgc4GJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fDYz9E": {
+          "type": "heading",
+          "settings": {
+            "title": "Watch Videos to Learn More"
+          }
+        },
+        "text_ULzy8E": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "Watch Videos From Professionals and People Just Like You"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fDYz9E",
+        "text_ULzy8E"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "modern_custom_html_daaTzw": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<script async type=\"text/javascript\" src=\"//asset.fwcdn3.com/js/embed-feed.js\"></script>\n<fw-embed-feed channel=\"prolon_uk\" playlist=\"gXPKXB\" mode=\"row\" open_in=\"default\" max_videos=\"0\" placement=\"middle\" player_placement=\"bottom-right\">\n</fw-embed-feed>"
+      }
+    },
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359": {
+      "type": "pl-newsletter",
+      "settings": {
+        "description": "<div class=\"lg:flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the Prolon community</p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n<div class=\"klaviyo-form-V42Upy max-w-[450px]\"></div>\n</div>",
+        "descriptionWidth": "",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "dk_video_banner_kdBhXQ",
+    "ebb478e5-b8a2-419c-a9d1-c556c42645ab",
+    "pl_hero_v4_NDbiFH",
+    "slideshow_QQKLwB",
+    "fd8b5800-458f-4e1d-896d-776f17599cda",
+    "2824c60c-f37d-4143-b2c8-3d3d1ef2f22c",
+    "f4e94dc0-c1fa-4d25-a1de-c38a64f9fd8d",
+    "0dc7f90a-7e82-4196-a318-aea6ca51e8e9",
+    "modern_custom_html_6CWMWn",
+    "171d778d-7311-49e1-a108-cfcf9e7f99ab",
+    "00a6a8b3-5b00-4113-8efe-4736dae2e313",
+    "207b5e2a-a7c2-4260-b93f-b913cb4390f2",
+    "6553686e-8da6-4cc3-bb8b-81a067d19c00",
+    "115e3c2b-9e3e-48f5-9bac-14cf07f1b04b",
+    "feb788d5-50ce-42fe-9099-0f435c1a7fd3",
+    "aug_t_defy_prolon_kTwGDG",
+    "t_new_tabs_pNzHUk",
+    "57233b4b-7e3d-4c1d-ad60-e6cf180b59a5",
+    "rich_text_Qgc4GJ",
+    "modern_custom_html_daaTzw",
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359"
+  ]
+}

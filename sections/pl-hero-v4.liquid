@@ -1,0 +1,174 @@
+{%- assign data = section.settings -%}
+
+<div>
+  <section
+    class="relative overflow-hidden pl-wrapper pl-wrapper-hero">
+    <img src="{{ data.image | img_url: '1900x' }}" class="relative md:absolute inset-0 !w-full !max-w-full h-full object-cover m:h-[40vh] object-right hero__image-wrapper hidden md:block"  alt="Main hero Banner"/>
+    <img src="{{ data.image_mobile | img_url: '1800x' }}" class="object-cover block md:hidden"  alt="Main hero Banner"/>
+ 
+    <div class="relative  md:py-[20px]">
+      <div class="relative z-10 flex flex-col md:items-start justify-center  md:min-h-[500px] max-w-[1600px] mx-auto items-center xl-only:ml-[2rem] ">    
+        <div class="md:ml-[2rem]   w-full md:w-1/2  md:mb-0  xl:ml-[8rem]
+        {% if data.text_bg_white %} 
+        bg-white {% endif  %}  max-w-[620px] left-side-banner">
+          <div
+            class="w-full p-[20px] pb-[10px] md:p-[30px] hero__animation-contents !delay-200 mx-auto m:max-w-[91%] m:mx-auto 
+             {% if data.text_bg_white %}
+            m:bg-white {% endif  %} m:relative m:-top-[30px] m:pt-1 m:shadow-custom"
+          >
+            {%- if data.subtitle.size > 0 -%}
+              <span class="inline-block py-px px-2 my-[16px] md:mb-4 md:mt-0 text-xs leading-5 text-white bg-[#73994a] uppercase">
+                {{data.subtitle}}
+              </span>
+            {%- endif -%}
+            <h1 class="my-[20px] text-[34px] lg:text-[4vw] xl:text-[46px] text-black font-bold hero__animation-contents !delay-200">{{data.title}}</h1>
+
+            {%- if data.description -%}
+              <p class="mb-8 text-lg md:text-lg lg:text-xl xl:text-2xl text-black  font-medium hero__animation-contents !delay-500">{{data.description}}</p>
+            {%- endif -%} 
+            <div class="flex flex-wrap lg:flex-nowrap hero__animation-contents !delay-[.8s] gap-2">
+              {%- if section.blocks.size > 0 -%}
+                {%- for button in section.blocks -%}
+                  <div class="w-full lg:w-[47%] py-1 md:py-0 md:mr-4">
+                    <a
+                      class="inline-block h-[50px] flex justify-center items-center py-[10px] px-7 w-full text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:{{button.settings.bg_color}} {{button.settings.bg_color}} {{button.settings.text_color}} border border-gray-300"
+                      href='{{button.settings.url}}'
+                    >
+                      {{button.settings.title}}
+                    </a>
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            </div>
+          </div>
+          {%- if data.bottomDescription.size > 0 -%}
+            <div class="w-full flex flex-wrap mb-[30px] bg-[#F7F9FB] px-[30px] hero__animation-contents !delay-[.8s]">
+              <div class=" py-[10px] text-lg md:text-xl text-black  font-normal"> {{data.bottomDescription}}</div>
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="hidden w-full px-4 ">
+          <div class="relative mx-auto max-w-max">
+            <img
+              src="{{ data.image_mobile | img_url: '1800x' }}"
+              alt="Main hero Banner"
+              class="absolute left-0 z-10 object-cover p-1 ml-11 top-1 h-52"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-hero');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Hero V4",
+  "settings": [ 
+      {
+      "type": "checkbox",
+      "id": "text_bg_white",
+      "label": "Text Bg White",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<p class='font-[600]'> <span class='text-[40px] md:text-[5vw] xl:text-[60px]'> Eat different.</span> <br><span class='text-gray-700 text-[6vw] md:text-[3vw] xl:text-[42px] font-semibold'>Stay younger than your age</span></p>"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "ProLon"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "ProLon is the only nutrition program patented for promoting longevity through <span class='text-[#73994a] italic font-semibold'>cellular rejuvenation </span>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "textarea",
+      "id": "bottomDescription",
+      "label": "Bottom Description",
+      "default": "<div class='flex items-center justify-center'><span class='px-[10px] text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] whitespace-nowrap font-bold'>#1 Doctor Recommended Nutrition For Longevity</span></div>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Longevity Program"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "Url",
+          "default": "#shop-programs"
+        },
+        {
+          "type": "text",
+          "id": "bg_color",
+          "label": "Bg Color",
+          "default": "bg-[#77A117] hover:bg-[#77A117]"
+        },
+        {
+          "type": "text",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "text-white"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Hero V4",
+      "blocks": [
+        {
+          "type": "buttons",
+          "settings": {
+            "title": "5-Day Fasting Nutrition",
+            "url": "#shop-programs",
+            "bg_color": "bg-[#77A117] hover:bg-[#77A117]",
+            "text_color": "text-white"
+          }
+        },
+        {
+          "type": "buttons",
+          "settings": {
+            "title": "Daily Longevity Nutrition",
+            "url": "#shop-products",
+            "bg_color": "bg-[#F7F9FB] hover:bg-[#F7F9FB]",
+            "text_color": "text-black"
+          }
+        }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

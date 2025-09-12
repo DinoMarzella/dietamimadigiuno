@@ -1,0 +1,99 @@
+<section class="relative bg-[#fcfcf7]  flex flex-col items-end justify-center pb-[30px] lg:pb-0" id="{{ settings.section_id }}">
+  <div class="px-6 max-w-[1900px] mx-auto">
+    <div class="text-center py-[20px] lg:pt-[88px] lg:pb-[88px]">
+      <h1 class="text-[30px] lg:text-[36px] xl:text-[40px] text-black leading-[1.2] font-[500]">{{ section.settings.title }}</h1> 
+      <p class="leading-[1.2] text-black lg:text-white  lg:text-[20px] xl:text-[24px] text-[18px] pt-[4px]">{{ section.settings.description }}</p>
+    </div>
+    <div class="block lg:hidden lg:w-[40%] w-full">
+      <img
+        class="w-full max-h-[400px] object-contain lg:h-[100%] xl:h-[400px]"
+        src="{{ section.settings.book_image | img_url: '2000x' }}"
+        alt="Prolon Book Image"
+      >
+    </div>
+  </div>
+  <section class="w-full bg-[#fcfcf7] px-[20px] lg:px-0">
+      <div class="flex flex-col items-center lg:items-stretch justify-center lg:flex-row gap-[20px] bg-white w-full lg:max-w-[90%] xl:max-w-[1200px] mx-auto">
+        <div class="lg:w-[50%] w-full px-[10px] lg:px-4 py-6 lg:py-[25px]">
+          <div class="xl:px-[10px]">
+            <h2 class="font-bold text-[20px] lg:text-[24px] pt-[15px] lg:pt-[25px]">
+              Join the L-Nutra community!
+            </h2>
+            <h3 class="text-[16px] lg:text-[18px]">
+              Stay up to date with the latest scientific findings and innovations of the ProLon Mimic Fasting Diet!
+            </h3>
+
+            <p class="font-bold text-[16px] lg:text-[18px] pt-[20px] lg:pt-[35px] ">
+              You can unsubscribe at any time
+            </p>
+            <div class="w-full lg:w-[400px] py-1 lg:pt-[25px] pt-[20px]">
+              <div class="klaviyo-form-WWuqDV"></div>
+            </div> 
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-center items-center lg:w-[50%] w-full bg-[#eef2e8]">
+          <img
+            class="w-full h-[300px] object-cover lg:h-[505px]"
+            src="{{ section.settings.book_image | img_url: '2000x' }}"
+            alt="Prolon Book Image"
+          > 
+        </div>
+      </div>
+  </section>
+</section>
+
+{% comment %} <section class="hidden lg:block">
+  <div> 
+    <img class="w-full" src="{{ section.settings.background_image | img_url: '2000x' }}" alt="{{ section.settings.title | strip_html }}">
+  </div>
+</section> {% endcomment %}
+
+{% schema %}
+{
+  "name": "Free Books Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+      
+    }
+    , 
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Defy Aging by Reversing Your Bioage"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Here Is What to Expect During Your 5-Day Prolon Program Fast"
+    },
+    {
+      "type": "image_picker",
+      "id": "book_image",
+      "label": "Book Image"
+    },
+   
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Join and Download Now"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Books",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,89 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+
+<div class="w-full py-[20px] md:py-[40px] max-w-[1600px] mx-auto pl-wrapper-scuence-blogs ">
+  <div class="flex justify-center items-stretch flex-col md:flex-row flex-wrap">
+    {%- for blog in section.blocks -%}
+      <div
+        class="w-full md:w-1/3 p-[20px] h-full hero__animation-contents "
+      >
+        <div class="flex flex-col pb-8 bg-gray-50 shadow-md hover:scale-100 transition duration-500 rounded-[7px] overflow-hidden">
+          <a   href="{{blog.settings.button_url}}" class="relative w-full overflow-hidden max-h-[280px]">
+            <img
+              loading="lazy" 
+              src="{{ blog.settings.image | img_url: '500x' }}"
+              class="w-[100%] mx-auto object-contain object-center  !max-h-[350px]"
+              alt="{{blog.settings.description | strip_html }}"
+              height="277"
+              width="493"
+            >
+          </a>
+
+          <div 
+            class="py-[20px] w-full text-[16px] md:text-[18px] text-black font-normal px-[20px] text-left min-h-[150px] 2xl:min-h-[121px]"
+          >
+            {{ blog.settings.description }}
+          </div>
+
+          <div class="w-full px-[20px] flex justify-between items-center">
+            <a
+              class=" block py-4 px-7 w-full text-lg md:text-xl leading-6 font-medium text-center bg-[#77A117] hover:bg-[#77A117] text-white "
+              href="{{blog.settings.button_url}}"
+              aria-label="Continue Reading"
+              target="_blank"
+            >
+              Continue Reading
+            </a>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-scuence-blogs');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Science Blogs",
+  "settings": [
+   
+  ],
+  "blocks": [
+    {
+      "type": "blogs",
+      "name": "Blogs",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_url",
+          "label": "Button Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Science Blogs",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

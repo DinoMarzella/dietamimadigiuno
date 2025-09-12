@@ -1,0 +1,141 @@
+<style>
+  .main-skin-feature-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    overflow: hidden ;
+    background: #f2f3f7;
+  }
+  .main-skin-feature-right{
+    width: 50%;
+  }
+  .main-skin-feature-left{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-skin-feature-left h3{
+    font-family: 'interstate', sans-serif;
+    font-stretch: condensed;
+    letter-spacing: 1.22px;
+    color: #3a8dde;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .main-skin-feature-left p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05px;
+    color: #000;
+  }
+  .main-skin-feature-left-inner{
+    padding: 1.125rem;
+    max-width: 33.75rem;
+    position: relative;
+  }
+  .main-skin-feature-right .product-feature-image{
+    height: 100%; 
+    width:100%; 
+    object-fit: cover;
+  }
+  .main-skin-feature-right {
+    min-height: 600px;
+    max-height: 600px;
+  }
+  .revrse-row-image{
+    flex-direction: row-reverse;
+  }
+  @media (max-width: 767px) {
+    .main-skin-feature-right {min-height: auto;} 
+    .main-skin-feature-wrapper{
+    flex-direction: column;
+  }
+  .main-skin-feature-right{
+    width: 100%;
+  }
+  .main-skin-feature-left{
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .main-skin-feature-left h3{
+    font-size: 28px;
+  }
+  .main-skin-feature-left p{
+    font-size: 16px;
+  }
+  .main-skin-feature-left-inner{
+    padding: 8px;
+  }
+  }
+</style> 
+
+<div class="main-skin-feature-wrapper {% if section.settings.image_on_right == false %}revrse-row-image {% endif %} {{section.settings.custom_class}}" style=" background-color:{{section.settings.bg_color}};"> 
+  <div class="main-skin-feature-left ">
+    <div class="main-skin-feature-left-inner">
+      <h3>{{section.settings.title}}</h3>
+      <div class="main-skin-feature-left-description">{{section.settings.description}}</div>
+    </div>
+  </div> 
+  <div class="main-skin-feature-right "> 
+    <img loading="lazy" width="100%" height="400px"   class="product-feature-image" src={{ section.settings.image | img_url: '1000x' }} alt="{{section.settings.title}}">
+  </div>
+</div>  
+
+{% schema %}
+  {
+    "name": "Skin Feature Section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": {
+          "en": "Image"
+        }
+      },
+        {
+          "type": "checkbox",
+          "id": "image_on_right",
+          "label": "Image on Right",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#F3F8FD"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Custom Class"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Skin Feature Section"
+      }
+    ]
+  }
+{% endschema %} 
+  

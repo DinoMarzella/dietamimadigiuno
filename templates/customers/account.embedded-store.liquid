@@ -1,0 +1,59 @@
+<style>
+  
+   .announcement-bar {
+    display: none;}
+  
+</style>
+<div class="page-width page-content">
+  <header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+    <h1 class="section-header__title">{{ 'customer.account.title' | t }} - Provider Locator</h1>
+<a href="/account" class="btn btn--secondary btn--small section-header__link">Back To Account Overview</a>
+
+  </header>
+  
+ 
+  <div class="grid">
+
+    <div class="grid__item medium-up--two-thirds">
+     <h2>Add ProLon Products to your website</h2>
+
+      <p>As part of the Digital Partnership Program, you now have the option to display and sell ProLon products directly from your website to your patients or customers. All product pricing and details are updated in real time to provide the best pricing and promotional deals to your patients and customers.<br>
+        <br>If you would like to see an example of how these products are displayed, please <a href="http://providersamplestore.com/" target="_blank"><strong>click here.</strong></a><br>
+       <br>There are three options to add the embedded store to your website:<br>
+        <ul><ui>- Install the embedded code yourself.</ui><br>
+          <ui>- Have the L-Nutra Development team complete the embedded code isntallation for you.</ui><br>
+          <ui>- Have the person who manages your website complete the embedded code installation.</ui></ul> </p> 
+    <br>For additional program details or other information related to the Digital Partnership Program, please contact your account representative.<br>
+<div class="typeform-widget" data-url="https://form.typeform.com/to/tB7eKUCA?typeform-medium=embed-snippet" data-transparency="0" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 600px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    
+    
+    </div>
+
+    <div class="grid__item medium-up--one-third" style="display:none">
+      <h3>{{ 'customer.account.details' | t }}</h3>
+
+      <p class="h5">{{ customer.name }}</p>
+<p class="h5">Default Address</p>
+      {{ customer.default_address | format_address }}
+
+      <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+    </div>
+
+  </div>
+
+  
+</div>
+
+    {% if customer.metafields.adv_reg.token and shop.metafields.adv_reg.showProfile == 'on' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.1/iframeResizer.min.js"></script>
+    
+    <iframe id="advancedRegForm" onload="iFrameResize({log:false}, '#advancedRegForm')" 
+    src="https://taloncommerce.com/advanced_registration/api/registration_form/?id=3355&form=profile&token={{customer.metafields.adv_reg.token}}" 
+
+     style="min-width: 100%; 
+    margin: 0 auto;padding-top:30px;border:none;  min-height:500px;overflow:hidden;" width="100%" height="100%" allowtransparency="true">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+    {% endif %} 
+<!-- 
+    <div class="aaa-success-msg-account"></div><div class="aaa-error-msg-account"></div><div class="aaa_customer_all_plan_listing" data-customer-email="{{ customer.email }}" data-customer-id="{{ customer.id }}"> </div> -->

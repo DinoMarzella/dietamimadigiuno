@@ -1,0 +1,97 @@
+<!-- image-with-block-new.liquid -->
+<style>
+    *{
+  padding:0px;
+  margin:0px;
+}
+.__fb_grand_sec{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+._child_fb_left_sec{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  flex:1;
+}
+._child_fb_right_sec{
+  display:flex;
+  flex:1;
+}
+._child_fb_left_sec img{
+  width:100%;
+}
+.__grand_child_wrapper_f{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  padding:50px;
+  text-align:left;
+}
+.__mini_block_bottom{
+  color:white;
+  padding:20px;
+}
+@media(max-width:767px){ 
+    .__fb_grand_sec {
+    flex-direction: column;
+}
+.__grand_child_wrapper_f{
+  padding:20px;
+}
+}
+</style>
+
+<div class="__fb_grand_sec" style="background-color:{{section.settings.sec_bg_new}}">
+    <div class="_child_fb_left_sec">
+      <img src="{{section.settings.image_grandd | img_url: '1300x'}}">
+    </div>
+    <div class="_child_fb_right_sec">
+      <div class="__grand_child_wrapper_f">
+    {{section.settings.inside_content_wrap}}
+      <div class="__mini_block_bottom" style="background-color:{{section.settings.box_color_new}}">
+        {{section.settings.box_cont_wrap}}
+      </div>
+      
+      
+      </div>
+    </div>
+  </div>
+
+  {% schema %}
+  {
+    "name": "Image with Block",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_grandd",
+        "label": "Add Image"
+      },
+      {
+        "type": "color",
+        "id": "sec_bg_new",
+        "label": "Background",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "html",
+        "id": "inside_content_wrap",
+        "label": "Add Content"
+      },
+      {
+        "type": "html",
+        "id": "box_cont_wrap",
+        "label": "Add Box Content"
+      },
+      {
+        "type": "color",
+        "id": "box_color_new",
+        "label": "Box Color",
+        "default": "#1c1d1d"
+      }
+    ]
+  }
+{% endschema %}

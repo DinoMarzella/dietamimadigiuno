@@ -1,0 +1,2409 @@
+{% for xtag in customer.tags %}
+  {% assign tag = xtag | downcase %}
+  {% if tag == 'approved' %}
+    {% assign approved = false %}
+  {% endif %}
+  {% if tag == 'lhp' or tag == 'provider' or tag == 'hcp' or tag == 'hcr' or tag == 'hcc' or tag == 'hcr-recommender' %}
+    {% assign isProvider = true %}
+  {% endif %}
+{% endfor %}
+ 
+<script>  
+  window.show_popup_offer= false;  
+  {% if handle == 'prolon-flash-sale' or handle == 'gofast'  or handle == 'reset'   %}
+  window.show_popup_offer= false;
+  {% endif %}
+</script> 
+{% assign prolon_discount_image = 'https://cdn.shopify.com/s/files/1/0126/2921/3243/t/118/assets/RENEW%20Promo%20-%20Popup.jpg?v=1681249818' %}
+   
+{% if handle == 'gofast' or handle == 'prolon-core-offer' or handle == 'michael' %}
+{% endif %}
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/4.0.0-beta.0/bodyScrollLock.min.js"
+  integrity="sha512-3Nm4Kyd9rUTWfh21EUrquXSPtan5lhhOFqnV7xdE9gW7+M8Y6FEyTf7NJQMwtMiCyulb6Wu6j6boo6Q79N/CPA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<script>
+    {% unless handle contains 'prolon-professional' %}
+  window.shouldShowJulyPopup=true;
+  {% endunless %}
+  const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+  const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+  //   window.API_URL = "http://localhost:1337/";
+  window.API_URL = "https://prolon-pro.herokuapp.com/";
+  let localHost = localStorage.getItem("doLocal");
+  if (localHost == 1) {
+    window.API_URL = "http://localhost:1337/";
+  }
+</script>
+
+<link rel="stylesheet" href="{{ 'cart-styles.scss.css' | asset_url }}">
+
+<style>
+  ._8eVJwNcrtIy96NHcgYxJd.s-41658277200030 button {
+    display: none;
+}
+
+._8eVJwNcrtIy96NHcgYxJd.s-41658277200030 input {
+    pointer-events: none;
+}  
+  .ss-shopify_cart .ajaxcart-progress {
+    display: block !important;
+  }
+  .ss-shopify_cart .drawer__fixed-header {
+    height: 40px;
+  }
+  @media (max-width: 767px) {
+    .popup-remover-bg {
+      position: fixed;
+      width: 100vw;
+      height: 40vh;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  .ss-shopify_cart .drawer__header {
+    height: 40px;
+  }
+
+  .ss-shopify_cart .drawer__inner {
+    top: 60px;
+  }
+
+  .ss-shopify_cart .drawer__close-button {
+    top: -9px;
+  }
+
+  .ss-shopify_cart .ajaxcart-progress__inner {
+    background: #73984a;
+    color: white;
+  }
+
+  .ajaxcart-progress__bar {
+    display: none;
+  }
+
+  .ss-shopify_cart h5.ajaxcart-progress__title {
+    /* color: white!important; */
+    margin: 0px;
+    padding: 0px !important;
+  }
+</style>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.0.2/rivets-cart.min.js"
+></script>
+
+{% capture upsells %} {% include 'upsell-cart' %} {% endcapture %}
+<div class="slide-cart-full">
+  <div class="cart-warnings-with-testimonials">
+    <div class="cart-testimonials">{% section 'testimonials' %}</div>
+    {%- render 'cart-warning' -%}
+  </div>
+
+  <div class="ss-cart-container"></div>
+</div>
+<style>
+  .ss-shopify_cart .ajaxcart-progress.ajaxcart-progress--full {
+    background: #e8dbd430;
+  }
+  span.amount.money.simple-price-side-cart {
+    color: #ff0000;
+  }
+  /* .ss-shopify_cart .ajaxcart-progress{
+    display: none!important; 
+  } */
+</style>
+
+<!-- CART VAIRABLES -->
+{% assign giftcollection = collection | json %}
+{% for collection in collections %}
+  {% if collection.handle contains 'free-fastbar-gift' %}
+    {% assign giftcollection = collection %}
+  {% endif %}
+{% endfor %}
+{% for p in giftcollection.products %}
+  {% if p.tags contains 'do_filter_via_metafield' %}
+    {% for v in p.variants %}
+      {% if v.metafields.global.free_gift != 'yes' %}
+        {% assign filtervariants = filtervariants | append: v.id | append: ', ' %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+<script class="cart-template-warning">
+  window.UpsellProductsVariants = [41055122587806, 37757694574750];
+
+  window.notAllowedGift=[{{filtervariants | replace:"null",''}}];
+  window.cartTemplateTestimonial = `
+   <div class="cart-warnings-with-testimonials">
+    <div class="cart-testimonials">{% section 'testimonials'%}</div>
+    {%- render 'cart-warning' -%}
+  </div> `;
+</script>
+
+<script>
+  $.fn.enterKey = function (fnc) {
+    return this.each(function () {
+      $(this).keypress(function (ev) {
+        var keycode = ev.keyCode ? ev.keyCode : ev.which;
+        if (keycode == '13') {
+          fnc.call(this, ev);
+        }
+      });
+    });
+  };
+  window.emptry_cart_message = 'Get started on ProLon Fasting Mimicking Diet';
+  window.SHOPACCESSTOKEN =
+    'MGFmMjU4MjUxMjQ0NGI5MzQzZThjMDFlNTY0MjE3YTk6c2hwcGFfZGVhNjk1YWY3NWI5MDZkNzk5OTZkZWZhNjNmZTRlMmE=';
+  window.ajaxCartSubscribeText = 'Subscribe Now & Save';
+  window.ajaxCartParams = {
+    AllowSubscriptionUpsell: true,
+    AllowSubscription_Special: true,
+    ValidSingleVariants: ['single'],
+    ValidSubscriptionVariant: ['subscribe'],
+    RewardSection: {
+      enabled: true,
+      emptyMessage: 'Get Free Shipping with your ProLon Order over $150',
+      value: 150,   
+      inProgressMessage: `You are _value_ away from getting Free Shipping!`,
+      finalMessage: `Celebrate 🎉 &nbsp;You have free shipping!`,
+      rewardType: 'free_shipping',
+      // product_variant_id: "39557089394734",
+ 
+      condtionalBy: [
+        {
+          conditiontype: 'amount',
+          type: 'specific_collection',
+          value: 'all',
+        },
+        {
+          conditiontype: 'count',
+          type: 'specific_collection',
+          value: 'all',
+          minCount: 1,
+        },
+      ],
+    },
+    multi_product_reward: {
+      title: 'Last chance to get Fast Pack, while supplies last',
+      product: '15-prolon-fast-pack',
+      reward_count: 1,
+      allowed_on_products: ['buy-prolon-2022'],
+      // allowed_on_variants: ["Single Prolon Order"],
+      // allowed_variants: ["Single Box Order"],
+      show_discount_type: 'amount',
+      discount_price: '15',
+      total_count: 2,
+    },
+    emptyCart: {
+      buttonText: 'Shop Now',
+      buttonUrl: '/products/buy-prolon',
+    },
+  };
+
+  window.ShouldHideSlideCart = true;
+  window.validateXHR = function (e) {
+    return window.ShouldHideSlideCart;
+  };
+  window.do_cart_without_loading = true;
+</script>
+<script src="{{ 'ajax-cart-ss.js' | asset_url }}" defer></script>
+
+<script>
+              function get_cookie(name) {
+              return (document.cookie.match("(^|; )" + name + "=([^;]*)") || 0)[2];
+              }
+
+
+                    const HealthyStartValidator=function (url){
+                        let notice= `You must agree with the healthy start product warning to check out`;
+                        let conditionalCHeck= $('input#CartPageAgree').length>0 && $('input#CartPageAgree')[0].checked;
+
+                        let hideDisclaimer= $('body').data('hide-disclaimer');
+                        if($('body').hasClass('hide-disclaimer')){
+                          hideDisclaimer=true;
+                        }
+
+                        if($("body").hasClass('do-not-show-healthy-commitment')){
+
+                          conditionalCHeck=true;
+                        }
+
+                        if(hideDisclaimer)
+                        {
+                          conditionalCHeck=true;
+                        }
+                      if(conditionalCHeck){
+
+                      let discount = jQuery(`input.dcbInput`).val()
+                      if(discount && discount!='' && !url.includes('discount=')){
+                          $('button.dcbButton').click();
+                      }
+                      else
+                      {
+                        location.href = url;
+                      }
+                      }
+                      else{
+                        alert(notice);
+                        setTimeout(function(){
+                        $('.cart__checkout').removeClass('btn--loading');
+                        },500);
+                      //location.href = "/checkout";
+                      }
+                    }
+                    window.OverRideCheckoutLink = () => {
+                    HealthyStartValidator('/checkout');
+                    };
+
+                    function reChargeProcessCart(discount,giveBack) {
+
+                      do {
+                        token = get_cookie("cart");
+                      } while (token == undefined);
+
+                      var myshopify_domain = "{{ shop.permanent_domain }}";
+                      try {
+                        var ga_linker = ga.getAll()[0].get("linkerParam");
+                      } catch (err) {
+                        var ga_linker = "";
+                      }
+                      var customer_param =
+                        "{% if customer %}customer_id={{customer.id}}&customer_email={{customer.email}}{% endif %}";
+
+                     let  checkout_url =
+                        "/checkout?myshopify_domain=" +
+                        myshopify_domain +
+                        "&cart_token=" +
+                        token +
+                        "&" +
+                        ga_linker +
+                        "&" +
+                        customer_param;
+
+                        if(discount)
+                        {
+                          checkout_url+="&discount="+discount;
+                        }
+                        if(giveBack)
+                        {
+                          return checkout_url;
+                        }
+                        else{
+                    HealthyStartValidator(checkout_url);
+                        }
+                    }
+
+                    window.ProcessSubscriptionCheckout = () => {
+                      //window.testGlobalBeforeReact(0);
+                      reChargeProcessCart();
+                    };
+                    jQuery(document).on("click", ".js-drawer-open-cart", e => {
+                      e.preventDefault();
+                      SuperCart.ShowCartfn();
+                    });
+                    $(document).ready(function () {
+                      $(".product-single__form").submit(async function (e) {
+                        e.preventDefault();
+                        let id= $('.product-single__variants').val();
+                        let context = $(this);
+                        jQuery.post("/cart/add.json", $(this).serialize(),function(c){
+
+                          SuperCart.ShowCartfn()
+
+
+                          if(ttq){
+                            ttq.track('AddToCart',{  
+                              content_id: c.variant_id,
+                              quantity: 1, 
+                              price: c.line_price, 
+                              currency: 'USD',}) 
+                            } 
+                          if(fbq){
+                          fbq('track', 'AddToCart', {
+                          content_name:c.title,
+                          content_category: c.vendor,
+                          content_ids: [c.variant_id],
+                          content_type: 'product',
+                          value: c.line_price,
+                          currency: 'USD'
+                          });
+                          }
+                          console.log(c);
+
+
+
+ 
+                          });
+                      });
+                    });
+                    {% comment %}
+                    $(document).on("ss-cart:showcart", function (e) {
+                      if (e.detail) {
+                        $(".cart-warnings-with-testimonials").addClass("slide-in-right");
+                        if (
+                          $(".cart-warnings-with-testimonials .testimonials-slider").hasClass(
+                            "slick-initialized"
+                          ) == false
+                        ) {
+                          $(".cart-warnings-with-testimonials .testimonials-slider").slick({
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                            dots: true,
+                            autoplay: true,
+                            autoplaySpeed: 3000
+                          });
+                        }
+
+                        setTimeout(function () {
+                          $(".cart-warnings-with-testimonials").addClass("active");
+                        }, 100);
+                      } else {
+                        $(".cart-warnings-with-testimonials").removeClass("active");
+                        setTimeout(function () {
+                          $(".cart-warnings-with-testimonials").removeClass("slide-in-right");
+                        }, 100);
+                      }
+                    });
+                    {% endcomment %}
+
+                  // 	let showCart=false;
+                  //    $(document).on('click',".js-drawer-open-cart", function (e) {
+                  // //      showCart=!showCart;
+                  //     if (showCart) {
+                  //       $(".cart-warnings-with-testimonials").addClass("slide-in-right");
+                  //       if (
+                  //         $(".cart-warnings-with-testimonials .testimonials-slider").hasClass(
+                  //           "slick-initialized"
+                  //         ) == false
+                  //       ) {
+                  //         $(".cart-warnings-with-testimonials .testimonials-slider").slick({
+                  //           slidesToScroll: 1,
+                  //           slidesToShow: 1,
+                  //           dots: true,
+                  //           autoplay: true,
+                  //           autoplaySpeed: 3000
+                  //         });
+                  //       }
+
+                  //       setTimeout(function () {
+                  //         $(".cart-warnings-with-testimonials").addClass("active");
+                  //       }, 100);
+                  //     } else {
+                  //       $(".cart-warnings-with-testimonials").removeClass("active");
+                  //       setTimeout(function () {
+                  //         $(".cart-warnings-with-testimonials").removeClass("slide-in-right");
+                  //       }, 100);
+                  //     }
+
+                  //   });
+
+
+                  let ajaxcarter=   setInterval(function(){
+
+
+                      if(window.context && window.context && window.context.store.subscribe){
+
+
+                        clearInterval(ajaxcarter);
+
+
+
+                      context.store.subscribe(async function(e){
+
+                        _DoBodyClassOnCartOPen(e.showCart);
+
+                        if (e.showCart) {
+                          if(window.shouldShowJulyPopup)
+            {
+
+              {%unless isProvider %}
+              setTimeout(() => {
+                if(window.show_popup_offer){
+                              $('.popup-wrapper-fix').show();
+                }
+              }, 1000);
+              {% endunless %}
+
+
+              setTimeout(() => {
+
+                window.shouldShowJulyPopup=false;
+              }, 1500);
+            }
+
+                          window.__cart=e.Cart;
+                          window.SuperCartBACKUP= e.Cart;
+                          validateOnlyResetProduct(e.Cart);
+                          __ChooseFreeGift(e.Cart);   
+                         // addPaidBottle(e.Cart);
+                          await removeAnyFreePaidGift(e.Cart);
+                        
+                          let providerCode = Cookies.get("provider_code");
+ 
+                          if(providerCode && providerCode!=''){
+
+                            let currentCode= $('input.dcbInput').val();
+                            if(!currentCode || currentCode==''){
+                          $('input.dcbInput').val(providerCode)
+                            }
+                          }
+                          if (Shopify.PaymentButton) {
+                            Shopify.PaymentButton.init();
+                          }
+                          window.hasValidStripeProducts=true;
+                          loadSaving();
+                          try{
+
+                            await __checkUpsell(e.Cart);
+
+                            if($(".ajaxcart__inner.ajaxcart__inner--has-fixed-footer.email-side-pop").length == 0){
+                            if(!$(".ajaxcart__inner--has-fixed-footer").hasClass('email-popup-added')){
+                            setTimeout(() => {
+                            $('.ajaxcart__inner--has-fixed-footer .code-block-slide-pop').remove();
+                            $(".ajaxcart__inner--has-fixed-footer").prepend(`{% include 'email-side-popup' %}`);
+                            $(".ajaxcart__inner--has-fixed-footer").addClass('email-popup-added');
+
+                            }, 100);
+
+
+                            }
+
+                            // $(".recapture-email").enterKey(function (e) {
+                            // e.preventDefault();
+                            // __processEmailFreeGift();
+                            // })
+                            }
+                       //     ShouldShowEmailPopup(e.Cart);
+                          $('.cart-testimonials .testimonials-slider').slick('unslick').slick({
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                            dots: true,
+                            autoplay: true,
+                            autoplaySpeed: 3000
+                          });
+
+                        }
+                        catch(ex){
+
+                          // console.log(`upsell error`,ex)
+                        }
+                          if($('.ajaxcart__inner.ajaxcart__inner--has-fixed-footer .cart-warnings-with-testimonials').length==0){
+
+                            $(".shopify-cart-product-overflow-wrapper").append(
+                              `{{upsells}}`
+                            );
+                            $(".shopify-cart-product-overflow-wrapper").append(
+                            `<div class="custom-side-cart-discount tbtDiscountCombine inSlide" style="border: 2px solid rgb(154, 202, 56);"><div class="dcbDes">Enter your  Discount or HCP code here.</div><div class="dcbInputGroup" data-children-count="1"><input class="dcbInput" type="text" placeholder="Code ex: COUPON12"><button class="dcbButton" style="background:#73984a;">APPLY</button><div class="dcbResult"></div></div></div>`
+                            );
+                            {% if product.handle == 'prolon-professionals' %}
+
+                            if (providerCode){
+                            $(".shopify-cart-product-overflow-wrapper").append(
+                            ` <div class="hcp-code-wrapper">
+                            <p class="text-right hcp-code-title">HCP CODE  : ${providerCode}</p>
+                            <div class="custom-side-cart-discount tbtDiscountCombine inSlide" style="border: 2px solid rgb(154, 202, 56);"><div class="dcbDes">Enter your  Discount here.</div><div class="dcbInputGroup" data-children-count="1"><input class="hcp_discount_code" type="text" placeholder="Code ex: COUPON12"><button class="dcbButton" style="background:#73984a;">APPLY</button><div class="dcbResult"></div></div></div></div>`
+                            );
+                            }
+                            {% endif %}
+
+
+                            $('.shopify-cart-product-overflow-wrapper').append( window.cartTemplateTestimonial);
+
+                            if(window.onload1){
+                            onload1();
+                            }
+                            setTimeout(function(){
+                            $(".ajaxcart__inner.ajaxcart__inner--has-fixed-footer .cart-warnings-with-testimonials .testimonials-slider").slick({
+                              slidesToScroll: 1,
+                              slidesToShow: 1,
+                              dots: true,
+                              arrows:false,
+                              autoplay: true,
+                              autoplaySpeed: 3000
+                            });
+                            },100);
+
+                          }
+
+                          if($('.ajaxcart__footer--fixed .ajaxcart__note--terms').length==0){
+
+
+
+
+
+                            $('.ajaxcart__footer.ajaxcart__footer--fixed').prepend(`<p class="ajaxcart__note ajaxcart__note--terms" data-children-count="1">
+                                      <input class="box" checked  {% if handle contains 'reset' %} checked{% endif %} id="CartPageAgree" name="read_box" type="checkbox" value="1">
+                                      <!--input type="checkbox" id="CartPageAgree" /-->
+                                      <label for="CartPageAgree">
+
+                                          I agree with the <a href="/pages/healthy-start-commitment" target="_blank">Healthy Start Commitment</a>, please proceed with my purchase.
+
+                                      </label>
+                    </p> <p class="afterpay-checkout" data-pf-type="Paragraph" style="
+                    text-align: center;
+                "><span data-pf-type="Text" class="sc-ptSuy fnmilh pf-6ed15b43">Pay in 4 interest-free payments with&nbsp; &nbsp;<svg role="img" aria-labelledby="shopify-payment-terms-shop-pay-logo" xmlns="http://www.w3.org/2000/svg" class="shop-pay-logo" viewBox="0 0 85 20" fill="none" style="
+          width: 50px;
+          position: relative;
+          top: 2px;
+      ">
+            <title id="shopify-payment-terms-shop-pay-logo">Shop Pay</title>
+            <clipPath id="a">
+              <path d="m0 0h84.3107v20h-84.3107z"></path>
+            </clipPath>
+            <g clip-path="url(#a)" fill="rgb(90, 49, 244)">
+              <path d="m21.6512 6.38113c-.6779-1.42195-1.963-2.34048-3.8994-2.34048-.5943.01037-1.1784.15712-1.7071.42892-.5287.27181-.9878.66141-1.3421 1.13876l-.0707.08611v-5.572999c0-.0322081-.0128-.0630951-.0356-.0858696-.0227-.0227744-.0536-.0355714-.0858-.0355714h-2.7379c-.0319.00057871-.0622.0136276-.0845.0363396s-.0348.0532723-.0348.0851014v15.985959c0 .0316.0126.0619.0349.0843.0224.0224.0527.0349.0844.0349h2.9322c.0318 0 .0624-.0125.0851-.0348s.0357-.0526.0363-.0844v-6.81612c0-1.3248.8832-2.26321 2.2963-2.26321 1.5456 0 1.9365 1.27181 1.9365 2.56791v6.51142c0 .0316.0125.0619.0349.0843.0223.0224.0527.0349.0843.0349h2.9256c.0318 0 .0624-.0125.0851-.0348s.0358-.0526.0363-.0844v-6.90003c0-.23625 0-.46809-.0309-.69331-.0502-.73803-.2343-1.46076-.5431-2.13293z"></path>
+              <path d="m7.01049 8.75062s-1.49261-.35107-2.04241-.49238c-.54979-.14131-1.51027-.4416-1.51027-1.16804 0-.72643.77501-.95827 1.56106-.95827s1.66042.18989 1.72887 1.06205c.00276.03143.01723.06068.04054.08194s.05376.033.08531.03288l2.89028-.01104c.01701.00004.03384-.00343.04945-.01019.01561-.00675.02965-.01666.04126-.0291.0116-.01243.02052-.02712.02618-.04316.00567-.01604.00797-.03307.00676-.05004-.17885-2.79091-2.62753-3.78893-4.88632-3.78893-2.6783 0-4.636803 1.7664-4.636803 3.71386 0 1.42196.401857 2.75559 3.561513 3.683.55421.1611 1.30713.3709 1.96512.5542.79046.2208 1.21661.5542 1.21661 1.0797 0 .6094-.8832 1.0333-1.75095 1.0333-1.25635 0-2.14838-.4659-2.22125-1.3027-.00379-.0306-.0187-.0588-.04191-.0792-.0232-.0203-.05308-.0314-.08395-.0312l-2.883648.0132c-.016906 0-.0336383.0034-.049203.01-.0155648.0066-.0296402.0163-.0413866.0285-.0117465.0121-.0209248.0265-.02698352.0423-.00605873.0158-.00887455.0326-.00828136.0495.13248048 2.6342 2.67610248 4.0539 5.04749248 4.0539 3.53281 0 5.12923-1.9872 5.12923-3.8485.0044-.8744-.19655-2.86602-3.16631-3.62558z"></path>
+              <path d="m44.193 4.03646c-1.4684 0-2.6982.81254-3.4909 1.7929v-1.67809c0-.03124-.0122-.06124-.0341-.08353-.0219-.0223-.0517-.03512-.0829-.0357h-2.7424c-.0316 0-.0619.01256-.0843.03492-.0223.02237-.0349.05269-.0349.08431v15.67683c.0006.0312.0134.061.0357.0829s.0523.0341.0835.0341h2.9345c.031 0 .0608-.0123.0827-.0343.022-.0219.0343-.0517.0343-.0827v-5.1535h.0442c.4659.711 1.7399 1.5633 3.4047 1.5633 3.1309 0 5.7408-2.5966 5.7408-6.1051.0022-3.36725-2.5944-6.09634-5.8909-6.09634zm-.2716 9.21404c-.6181.0153-1.2268-.1538-1.7483-.4859s-.9323-.8121-1.1798-1.3786c-.2476-.5666-.3207-1.1941-.2101-1.80236.1107-.6083.4001-1.16985.8312-1.61296.4312-.44311.9847-.74769 1.5897-.87488.6051-.12719 1.2343-.0712 1.8074.1608.5731.23201 1.0641.62952 1.4103 1.14179.3462.51228.5319 1.11609.5334 1.73441.0064.4041-.0671.8056-.2162 1.1812-.1492.3757-.3711.7182-.653 1.0079s-.6182.5209-.9897.6802c-.3715.1594-.7707.2438-1.1749.2484z"></path>
+              <path d="m29.0399 3.34705c-2.7357 0-4.1003.92957-5.1954 1.67366l-.0332.02208c-.0564.03867-.0962.09722-.1113.16395-.0152.06672-.0046.13671.0297.19596l1.0819 1.86355c.0203.03487.048.06483.0812.08773s.0711.03819.1109.04475c.0389.00703.0789.00532.1171-.00499s.0736-.02896.1037-.05462l.0861-.07066c.563-.47251 1.4661-1.104 3.652-1.27623 1.2166-.09715 2.2676.2208 3.0426.94503.8523.78605 1.3624 2.05565 1.3624 3.39594 0 2.4663-1.4529 4.0163-3.7867 4.0472-1.9232-.011-3.2149-1.0134-3.2149-2.495 0-.7861.3555-1.2983 1.0488-1.8106.0529-.0378.0904-.09357.1054-.15689s.0066-.12993-.0237-.18753l-.9715-1.83706c-.018-.03287-.0422-.06189-.0714-.08538s-.0627-.04099-.0986-.05151c-.0368-.01095-.0754-.01405-.1135-.00911-.038.00495-.0746.01783-.1073.03781-1.0908.64695-2.4288 1.83044-2.356 4.10467.0884 2.8947 2.4951 5.1049 5.6238 5.1954h.1568.2142c3.7182-.1214 6.4032-2.8814 6.4032-6.624 0-3.43562-2.5039-7.11415-7.1363-7.11415z"></path>
+              <path d="m61.6477 5.11365h-1.8636c-.0437.00057-.0855.0182-.1164.04913-.031.03094-.0486.07273-.0492.11647v3.91037c.0006.04354.0183.08509.0493.11567s.0728.04773.1163.04773h1.8636c1.1349 0 1.9717-.89425 1.9717-2.11969s-.8368-2.11968-1.9717-2.11968z"></path>
+              <path d="m67.3734 12.0313c0 .5674.4791.8832 1.3138.8832 1.1349 0 1.8061-.6138 1.8061-1.7024v-.3135l-1.7001.0883c-.8965.0442-1.4198.4173-1.4198 1.0444z"></path>
+              <path d="m81.1731.0352368h-25.0388c-.4107-.0000001-.8175.0809442-1.1969.2382052-.3795.157261-.7243.387758-1.0146.678317-.2904.290561-.5206.635491-.6776 1.015071s-.2377.78638-.2374 1.19715v13.70732c0 .8294.3293 1.6248.9156 2.2115s1.3815.9166 2.2109.9172h25.0388c.4112.0012.8187-.0788 1.199-.2352s.7261-.3863 1.0175-.6765.5228-.635.6808-1.0146c.158-.3797.2397-.7868.2403-1.198v-13.70731c.0008-.41207-.0797-.82024-.2372-1.20106-.1574-.38081-.3885-.72676-.6801-1.01793-.2916-.291172-.6379-.521832-1.0189-.678717-.381-.156886-.7893-.2369022-1.2014-.2354462zm-19.4304 10.8567632h-1.9696c-.0439 0-.086.0174-.1171.0485-.031.031-.0485.0732-.0485.1171v2.8042c0 .0439-.0174.086-.0485.1171-.031.031-.0731.0485-.1171.0485h-1.3866c-.0437-.0006-.0855-.0183-.1165-.0492-.0309-.0309-.0485-.0727-.0491-.1164v-10.11491c0-.04392.0175-.08604.0485-.1171.0311-.03105.0732-.0485.1171-.0485h3.6874c2.0887 0 3.5836 1.52131 3.5836 3.65645s-1.4838 3.65866-3.5726 3.65866zm10.3776 2.9675c.0003.022-.0038.0437-.012.0641-.0082.0203-.0203.0389-.0357.0545s-.0338.028-.054.0364c-.0203.0085-.042.0129-.0639.0129h-1.3094c-.0219 0-.0436-.0044-.0638-.0129-.0203-.0084-.0386-.0208-.054-.0364s-.0276-.0342-.0358-.0545c-.0082-.0204-.0123-.0421-.012-.0641v-.3025c.0022-.0265-.0042-.053-.0183-.0756s-.0352-.04-.06-.0497-.052-.0111-.0777-.004c-.0257.007-.0484.0222-.0648.0432-.3908.4262-1.0267.7353-2.0402.7353-1.4926 0-2.4795-.7772-2.4795-2.1197-.0144-.3273.0532-.6531.1966-.9477s.3582-.5487.6247-.7392c.5388-.40406 1.3734-.61382 2.6121-.6624l1.3138-.04416v-.38419c0-.77501-.5211-1.104-1.358-1.104-.8368 0-1.3645.29587-1.4882.77942-.0098.03416-.0308.06403-.0596.08485-.0288.02081-.0638.03136-.0993.02997h-1.2961c-.0239.00059-.0476-.00405-.0694-.01359-.0219-.00955-.0414-.02376-.0572-.04165s-.0274-.03901-.0342-.06189c-.0067-.02288-.0084-.04696-.0048-.07055.1943-1.14816 1.1437-2.02032 3.1685-2.02032 2.1506 0 2.9256 1.00022 2.9256 2.91015zm8.1564-6.56214-2.9146 7.77434c-.6624 1.8062-1.8216 2.2699-3.0912 2.2699-.2392.0058-.478-.0232-.7088-.0861-.036-.0097-.0678-.031-.0905-.0605-.0228-.0295-.0352-.0657-.0353-.1029v-1.1813c-.0001-.0247.0052-.0492.0157-.0716.0104-.0224.0257-.0422.0446-.058.019-.0158.0413-.0272.0652-.0335.0239-.0062.0489-.0071.0732-.0025.2001.038.4034.0572.6072.0574.3511.0176.698-.0831.985-.2861.2871-.203.4977-.4965.5981-.8334l.0861-.2716c.0134-.0363.0134-.0762 0-.1126l-2.7246-6.99933c-.0084-.02503-.0107-.05167-.0068-.07776s.0139-.05089.0291-.0724c.0153-.02151.0354-.03911.0588-.05139.0233-.01227.0492-.01887.0756-.01925h1.3248c.034.00032.067.0108.095.03008.0279.01928.0494.04648.0618.07811l1.8503 4.93714c.0122.0322.034.06.0624.0796s.0621.0301.0966.0301.0682-.0105.0966-.0301.0501-.0474.0623-.0796l1.6053-4.92389c.0108-.03358.032-.06282.0606-.08347.0286-.02066.0631-.03164.0983-.03135h1.358c.0262-.00009.0521.00598.0756.01771.0234.01174.0438.02881.0595.04985.0157.02105.0262.04547.0307.07132.0045.02584.0029.05239-.0046.07751z"></path>
+            </g>
+          </svg>
+                </span></p><p class="as-low-as-price"> As low as <span class="lowest-price" ></span></p>
+                <p class="cart__terms updated" style="margin-top: 0px; font-size: 12px; {% if isProvider %} display:none;{% endif %}">Cliccando sul pulsante di checkout qui sotto, dichiaro di accettare <a href="/pages/condizioni-di-vendita" target="_blank" class="terms-link">Termini e condizioni</a> & <a href="/pages/avvertenze-per-i-consumatori" target="_blank" class="terms-link">Avvertenze per i consumatori</a>.</p>
+                `);
+
+
+                $('.ss-shopify_cart').append(`<style>.slide-cart-open .popup-wrapper-fix {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 70%;
+  }
+
+  img.popup-over-prolon {
+      max-width: 450px;
+  }
+
+  span.close-btn-text {
+      position: absolute;
+      top: 0px;
+      background: white;
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .prolon-pro-p {
+      position: relative;
+  }
+
+  span.close-btn-text {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background: black;
+      color: white;
+      cursor: pointer;
+  }
+
+  @media(max-width:767px){
+  .slide-cart-open .popup-wrapper-fix {
+      width: 100%;
+      background: #0000009c;
+      max-width: 100%;
+      margin: 0px;z-index:99999999999999999;
+  }
+
+  .prolon-pro-p {
+      max-width: 300px;
+      margin: 0 auto;
+  }
+
+  .prolon-pro-p img {
+      max-width: 100%;
+  }
+  }
+  </style><div class="popup-wrapper-fix" style="display:none;" ><div class="prolon-pro-p">
+    <div class="popup-remover-bg"></div>
+
+    <img class="popup-over-prolon" src="{{prolon_discount_image}}"><span class="close-btn-text">X</span></div>
+  </div>`)
+
+
+
+
+
+                          }
+                          $(".cart-warnings-with-testimonials").addClass("slide-in-right");
+                          if (
+                            $(".cart-warnings-with-testimonials .testimonials-slider").hasClass(
+                              "slick-initialized"
+                            ) == false
+                          ) {
+                            // $(".cart-warnings-with-testimonials .testimonials-slider").slick({
+                            //   slidesToScroll: 1,
+                            //   slidesToShow: 1,
+                            //   dots: true,
+                            //   autoplay: true,
+                            //   autoplaySpeed: 3000
+                            // });
+
+                          }
+
+                          setTimeout(function () {
+                            $(".cart-warnings-with-testimonials").addClass("active");
+                          }, 100);
+
+                          if($('.ss-shopify_cart .ajaxcart__footer--fixed .additional-checkout-buttons').length==0){
+
+                            let cartButtons= `<div class="additional-checkout-buttons " >
+                          {{ content_for_additional_checkout_buttons }}
+                          </div>`;
+
+                      //      $('.ss-shopify_cart .ajaxcart__footer--fixed').append(cartButtons)
+
+
+                            }
+
+                        } else {
+                          $(".cart-warnings-with-testimonials").removeClass("active");
+                          setTimeout(function () {
+                            $(".cart-warnings-with-testimonials").removeClass("slide-in-right");
+                          }, 100);
+                        }
+
+
+
+
+                      });
+
+                      $(document).on('click','p.ajaxcart__note.ajaxcart__note--terms',function(){
+
+
+                        $('.slide-cart-full .ajaxcart__inner.ajaxcart__inner--has-fixed-footer').animate({
+                              scrollTop: $('.slide-cart-full .ajaxcart__inner--has-fixed-footer div.cart-warnings-with-testimonials').offset().top+130
+                          }, 500);
+
+                      });
+
+
+
+                      }
+
+
+                    },100);
+
+                    let DiscountCombineOverider=  setInterval(function(){
+                    if(window.bindDCSumbit3){
+                      clearInterval(DiscountCombineOverider);
+                      window.bindDCSumbit3= function (codes, shop, dcCustomerId, button_text, that, result) {
+                        $('.last-minute-coupon').remove();
+                      jQuery(".dcbButton").html("<div class='dcbLoader'></div>"),
+                      jQuery(".dcbButton").attr("disabled", !0),
+                      jQuery.ajax({
+                          type: "GET",
+                          url: "/cart.js",
+                          cache: !1,
+                          dataType: "json",
+                          success: function(cart) {
+                              var data = {};
+                              data.shop = shop,
+                              data.action = "combineCode",
+                              data.codes = codes,
+                              data.cart = cart,
+                              data.customerId = dcCustomerId,
+                              cart.note && (data.note = cart.note),
+                              jQuery("dbNote").length && jQuery("dbNote").val() && (data.note = jQuery("dbNote").val());
+
+                              if($('.ajaxcart__inner.ajaxcart__inner--has-fixed-footer').hasClass('has-subscription-product'))
+                              {
+
+                                let token = get_cookie("cart");
+                                let url =  reChargeProcessCart(codes,true);
+                                jQuery.get(url).then( async function(r){
+                  if(r){
+                    $('.dcbResult').text('');
+                    jQuery(".dcbButton").html(button_text),
+                    jQuery(".dcbButton").removeAttr("disabled");
+                    let discountActive = $(r).find(`#discount_active`);
+                    let discountRuleVisble =  discountActive.css('display');
+
+                    if(discountActive && discountActive.length>=0 && discountRuleVisble!='none')
+                    {
+                      reChargeProcessCart(codes);
+                    }
+                    else{
+                    $('.dcbResult').text(`"${codes}" is not a valid discount/hcp code.`);
+                    $('.last-minute-coupon').remove();
+                    $(`<div class="last-minute-coupon animated flash" >Use "CART5"and save 5% of your order.</div>`).insertBefore('.custom-side-cart-discount');
+                    setTimeout(function(){
+                    $('.last-minute-coupon').remove();
+                    },60000);
+                    }
+
+                  }
+                  else{
+                    jQuery(".dcbButton").html(button_text),
+                jQuery(".dcbButton").removeAttr("disabled")
+                    console.log(`error`,r);
+                  }
+
+
+                }).catch(e=>{
+                  jQuery(".dcbButton").html(button_text),
+                jQuery(".dcbButton").removeAttr("disabled")
+                  console.log(e);
+                }) ;
+            ;
+
+
+                              }
+
+                              else{
+
+                                try {
+                    let codes = jQuery(`input.dcbInput`).val();
+
+                    var settings = {
+                      url: "https://prolon-pro.herokuapp.com/stores/lookup",
+                      method: "GET",
+                      timeout: 0,
+                      headers: {
+                        accesstoken: "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",
+                        shopname: "prolon-fmd-2020",
+                        discount: codes
+                      }
+                    };
+
+                    $.ajax(settings)
+                      .done(function (response) {
+                        if (response && response.id) {
+                          location.href =
+                            "/checkout?discount=" + jQuery(`input.dcbInput`).val();
+                        } else {
+                          jQuery(".dcbButton").html(`Apply`),
+                            jQuery(".dcbButton").removeAttr("disabled");
+                          $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                        }
+                      })
+                      .fail(function (ex) {
+
+                        jQuery(".dcbButton").html(`Apply`),
+                        jQuery(".dcbButton").removeAttr("disabled");
+                        $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                        return;
+                      });
+                  } catch (ex) {}
+
+
+                               }
+
+
+
+
+                            }
+                      })
+                  }
+                    }
+                    },100);
+
+                    $(document).on("click", ".dcbButton", async function (e) {
+                e.preventDefault();
+                $(".last-minute-coupon").remove();
+                let conditionalCHeck= $('input#CartPageAgree').length>0 && $('input#CartPageAgree')[0].checked;
+
+                if($("body").hasClass('do-not-show-healthy-commitment')){
+
+                conditionalCHeck=true;
+                }
+                if(!conditionalCHeck)
+                {
+                alert(`You must agree with the healthy start product warning to check out`);
+                return;
+                }
+
+
+
+                jQuery(".dcbButton").html("<div class='dcbLoader'></div>"),
+                jQuery(".dcbButton").attr("disabled", !0);
+                try{
+                await ValidateDiscountedProductsToAdd();
+                }
+                catch(ex){
+
+                }
+                let patientDiscountcode= $('.hcp_discount_code').val();
+                if(patientDiscountcode && patientDiscountcode!=''){
+
+                let validateCoupon = await checkShopifyDisount(patientDiscountcode);
+
+                    if(!validateCoupon){
+                    return;
+                    }
+
+                }
+
+                let hcp_status =   await checkHCPCode();
+                if(hcp_status && hcp_status=='ok')
+                {
+              jQuery(".dcbButton").html(`Apply`),
+              jQuery(".dcbButton").removeAttr("disabled");
+                  return;
+                }
+
+
+                if (
+                  $(".ajaxcart__inner.ajaxcart__inner--has-fixed-footer").hasClass(
+                    "has-subscription-product"
+                  )
+                ) {
+                  // let token = get_cookie("cart");
+                  let codes = jQuery(`input.dcbInput`).val();
+                  let url = reChargeProcessCart(codes, true);
+                  jQuery
+                    .get(url)
+                    .then(async function (r) {
+                      if (r) {
+                        $(".dcbResult").text("");
+                        jQuery(".dcbButton").html(`Apply`),
+                          jQuery(".dcbButton").removeAttr("disabled");
+                        let discountActive = $(r).find(`#discount_active`);
+                        let discountRuleVisble = discountActive.css("display");
+
+                        if (
+                          discountActive &&
+                          discountActive.length >= 0 &&
+                          discountRuleVisble != "none"
+                        ) {
+                          reChargeProcessCart(codes);
+                        } else {
+                          if (codes.toLowerCase().includes("try60")) {
+                            $(".dcbResult").text(``);
+
+                            $(".last-minute-coupon").remove();
+                            $(
+                              `<div class="last-minute-coupon animated flash" >"${codes}" only works directly on the checkout.</div>`
+                            ).insertBefore(".custom-side-cart-discount");
+                            setTimeout(function () {
+                              $(".last-minute-coupon").remove();
+                            }, 60000);
+                          } else {
+                            $(".dcbResult").text(
+                              `"${codes}" is not a valid discount/hcp code.`
+                            );
+                            $(".last-minute-coupon").remove();
+                            $(
+                              `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                            ).insertBefore(".custom-side-cart-discount");
+                            setTimeout(function () {
+                              $(".last-minute-coupon").remove();
+                            }, 60000);
+                          }
+                        }
+                      } else {
+                        jQuery(".dcbButton").html(`Apply`),
+                          jQuery(".dcbButton").removeAttr("disabled");
+                        console.log(`error`, r);
+                      }
+                    })
+                    .catch(e => {
+                      jQuery(".dcbButton").html(`Apply`),
+                        jQuery(".dcbButton").removeAttr("disabled");
+                      console.log(e);
+                    });
+                } else {
+                  try {
+                    let codes = jQuery(`input.dcbInput`).val();
+
+                   //  DISCOUNTCOMBINEProcessCode(codes);
+
+
+
+                    var settings = {
+                      url: "https://prolon-pro.herokuapp.com/stores/lookup",
+                      method: "GET",
+                      timeout: 0,
+                      headers: {
+                        accesstoken: "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",
+                        shopname: "prolon-fmd-2020",
+                        discount: codes
+                      }
+                    };
+
+                    $.ajax(settings)
+                      .done(function (response) {
+                        if (response && response.id) {
+                          let url=
+                            "/checkout?discount=" + jQuery(`input.dcbInput`).val();
+                            HealthyStartValidator(url,true)
+                            jQuery(".dcbButton").html(`Apply`),
+                            jQuery(".dcbButton").removeAttr("disabled");
+                        } else {
+                          jQuery(".dcbButton").html(`Apply`),
+                            jQuery(".dcbButton").removeAttr("disabled");
+                          $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                        }
+                      })
+                      .fail(function (ex) {
+
+                        jQuery(".dcbButton").html(`Apply`),
+                        jQuery(".dcbButton").removeAttr("disabled");
+                        $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                        return;
+                      });
+
+
+                    } catch (ex) {}
+
+
+                }
+
+              });
+              window.hasValidStripeProducts = true;
+              async function loadSaving(){
+
+                try{
+        let data= await $.get('/cart?view=slidecarttotal');
+
+        data= JSON.parse(data)
+
+        if(data && data.length>0)
+        {
+
+        let totalCompare=0;
+        let totalLines= 0;
+        data.forEach(e=>{
+
+
+        totalCompare+=(e.compare_at_price*e.qty);
+        totalLines+=e.line_price;
+
+
+          if(e.tags.includes("no-stripe"))
+          {
+            window.hasValidStripeProducts=false;
+          }
+
+
+
+        });
+
+        let savings= totalCompare-totalLines;
+
+        if(savings>0){
+          $('.saved-value').remove();
+
+        $(`<p class="saved-value" style="
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 19px; margin:0px;
+        ">Congrats! 🎉 You have saved $${savings/100} Today</p>`).insertBefore('.tbtDiscountCombine');
+        } else{
+          $('.saved-value').remove();
+
+
+        }
+        }
+        }
+              catch(ex){
+                $('.saved-value').remove();
+
+              }
+
+        };
+
+
+
+        async function checkShopifyDisount(codes){
+
+              return new Promise((resolve)=>{
+
+                var settings = {
+                    url: "https://prolon-pro.herokuapp.com/stores/lookup",
+                    method: "GET",
+                    timeout: 0,
+                    headers: {
+                    accesstoken: "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",
+                    shopname: "prolon-fmd-2020",
+                    discount: codes
+                    }
+                    };
+
+                    $.ajax(settings).done(function (response) {
+                        if (response && response.id) {
+
+                          resolve(true);
+                        } else {
+                           jQuery(".dcbButton").removeAttr("disabled");
+                          $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                          resolve(false);
+                        }
+                      })
+                      .fail(function (ex) {
+
+                        jQuery(".dcbButton").html(`Apply`),
+                        jQuery(".dcbButton").removeAttr("disabled");
+                        $(".dcbResult").text(
+                            `"${codes}" is not a valid discount/hcp code.`
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+
+                          resolve(false);
+                        return;
+                      });
+
+
+
+              })
+
+
+        }
+        function getParam(param){
+        return new URLSearchParams(window.location.search).get(param);
+        }
+
+        async function checkHCPCode(){
+
+          let code = jQuery(`input.dcbInput`).val();
+
+          if(code && code !='' && hasValidStripeProducts){
+            try{
+            let codeStatus=  await jQuery.getJSON(`${API_URL}stores/hcp-lookup?hcp_code=${code}`);
+
+              if(codeStatus && codeStatus.status &&codeStatus.stripe_connect){
+
+                let cart = await jQuery.getJSON("/cart.json");
+                let discountcode= code;
+                let patientDiscountcode= $('.hcp_discount_code').val();
+                if(patientDiscountcode && patientDiscountcode!=''){
+                  discountcode+=`,${patientDiscountcode}`
+                }
+                let data= {
+                  "stripe_connect_account_id": codeStatus.stripe_connect.account_id,
+                  "hcp_code": discountcode,
+                  ...cart
+                } ;
+                let _url= `${API_URL}stores/stripe/create-checkout-session?shop={{shop.permanent_domain}}`;
+
+                let only_klarna= getParam('only_klarna')
+                if(only_klarna=="1")
+                {
+                  _url+="&only_allow_klarna=1";
+                }else{
+                  _url+="&with_klarna=1";
+
+                }
+
+               let response= await $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url:_url,
+                    data: JSON.stringify(data)
+                });
+
+                if(response){
+                if (response.url) {
+                  jQuery.get(`/cart/clear`);
+                window.location = response.url;
+                return 'ok';
+                } else {
+
+                console.log("stripe-connect-error", response);
+ 
+                 response= await $.ajax({
+                  type: "POST",
+                  contentType: "application/json; charset=utf-8",
+                  url:_url, 
+                  data: JSON.stringify(data)
+                 }); 
+                 if (response.url) { 
+                 jQuery.get(`/cart/clear`);
+                 window.location = response.url;
+                 return 'ok';
+                 }
+
+                $('.cart__checkout').removeClass('btn--loading')
+                return null;
+                }
+                }
+                else{
+                  $('.cart__checkout').removeClass('btn--loading')
+                  return null;
+
+                }
+
+              }else{
+                $('.cart__checkout').removeClass('btn--loading')
+                return null;
+              }
+
+
+            }
+            catch(e){
+              $('.cart__checkout').removeClass('btn--loading')
+              console.log(e);
+              return null;
+            }
+
+
+
+          }
+
+
+
+        }
+
+
+        function _DoBodyClassOnCartOPen(showCart) {
+          const targetElement = document.querySelector('.slide-cart-full .ajaxcart__inner');
+
+    // 3. ...in some event handler after showing the target element...disable body scroll
+
+
+    // 4. ...in some event handler after hiding the target element...
+
+
+    if(showCart){
+      $('body').addClass('slide-cart-open');
+      disableBodyScroll(targetElement);
+    }
+    else{
+      $('body').removeClass('slide-cart-open');
+      enableBodyScroll(targetElement);
+
+    }
+    }
+
+    let FreeGiftsVariants={
+          "bonus-pack": 40823261331614,
+          "free-one-day-box":40874184704158,
+          "free-prolon-fast-pack":40874200498334,
+          "treat-bag":41025299939486,
+          "10-prolon-fast-pack":41055122587806,
+          "free-gift-30ct-fastbar":41090699198622,
+          "bonus-snack-pack":41058088911006,
+          "free-reset-by-prolon":"41562580320414",
+          "free-10ct-fast-bar-1":"41854987174046"
+        }
+
+        let productWithFreeGifts={
+            name:"prolon-bonus-pack",
+            gift:"bonus-pack",
+
+
+        }
+        function debounce(func, wait, immediate) {
+                var timeout;
+                return function() {
+                    var context = this, args = arguments;
+                    var later = function() {
+                        timeout = null;
+                        if (!immediate) func.apply(context, args);
+                    };
+                    var callNow = immediate && !timeout;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                    if (callNow) func.apply(context, args);
+                };
+            };
+
+
+            async function doBulkCartUpdate (items) {
+
+  return new Promise( async (resolve)=>{
+
+  let totalItemstoUpdate=0;
+
+    for(let i of Object.entries(items)){
+      totalItemstoUpdate++;
+    }
+
+  let update =items;
+    if(totalItemstoUpdate>0){
+    await  jQuery.post('/cart/update.js', {
+    updates: update
+    });
+
+    SuperCart.getCart();
+    }
+
+  resolve();
+  });
+
+
+
+  }
+
+
+            let specialGiftsHandles = [
+                "free-gift-10ct",
+                "20-free-fast-bar-special",
+                "free-gift-30ct-fastbar",
+                "free-25ct-fast-bar" ,
+                "free-reset-by-prolon",
+                "free-12ct-fast-bar",
+                "free-prolon-signature-bottle",
+                "free-24ct-gift",
+                "free-10ct-fast-bar-1",
+                "free-fast-bar-20ct", 
+                "free-12ct-fast-bar-1"
+
+              ];
+              let _superSpecialGifts = async (cart) => {
+
+  if (window.specialGiftProcessing) {
+    console.log(`Gift Already Processing`);
+    return
+  }
+  window.specialGiftProcessing = true;
+  let specialCart = await $.get('/cart?view=slidecartgift');
+  var productsToUpdate = {};
+
+  function productQtyUpdate(variant_id, quantity) {
+
+    if (productsToUpdate && productsToUpdate[variant_id]) {
+      productsToUpdate[variant_id] += quantity;
+    } else {
+      productsToUpdate[variant_id] = quantity;
+    }
+  }
+  if (specialCart) {
+    try {
+      specialCart = JSON.parse(specialCart);
+    } catch (error) {
+      return;
+    }
+
+  }
+  let ItemByQty = [];
+  let doMatchedQuatity = false;
+  // if(localStorage.getItem('do_matched')=='yes')
+  // {
+  // }
+  //  doMatchedQuatity = true;
+  let validProductGifts = [];
+  let directAddGiftId =false;
+
+  for (let i of cart.items) {
+    ItemByQty[i.variant_id] = i.quantity;
+  }
+  if (specialCart && specialCart.length && specialCart.length > 0) {
+
+
+    for (let specialItem of specialCart) {
+
+
+      let chooseGiftItem = localStorage.getItem('choose_gift_item_id');
+      if(specialItem.super_special_gift && specialItem.super_special_gift != null){
+
+      //  $('.choose-free-gift').show();
+          // directAddGiftId = 41684335329438;
+          //  localStorage.setItem('choose_gift_item_id',directAddGiftId);
+          //  chooseGiftItem = localStorage.getItem('choose_gift_item_id');
+          localStorage.setItem('choose_gift_item_id', `${specialItem.super_special_gift}`);
+          chooseGiftItem = localStorage.getItem('choose_gift_item_id');
+          // if (specialItem.override_global_gift == 'true') {
+
+          //  }else{
+
+          // //  localStorage.setItem('choose_gift_item_id', `39576661688478,41684335329438`);
+          // localStorage.setItem('choose_gift_item_id', `41684335329438`);
+          // chooseGiftItem = localStorage.getItem('choose_gift_item_id');
+          //  }
+
+      }
+      else{
+        $('.choose-free-gift').hide();
+      }
+      if (specialItem.super_special_gift && specialItem.super_special_gift != null && chooseGiftItem && chooseGiftItem != '') {
+
+
+
+            let giftIds = []; //chooseGiftItem && chooseGiftItem.split(',');
+
+            if (giftIds && giftIds.length > 0) {
+
+            for (let giftid of giftIds) {
+
+
+
+
+            if (giftid && giftid != '' &&  giftid != 'null') {
+
+
+
+
+            let giftVariantId = giftid//specialItem.special_gift;
+            validProductGifts.push(giftVariantId);
+            let mainproductQty = ItemByQty[specialItem.variant_id];
+            let specialGiftQty = ItemByQty[giftVariantId];
+
+
+            if (mainproductQty > 0) {
+            let qtytoAdd = 1;
+            if (doMatchedQuatity) {
+              qtytoAdd = mainproductQty;
+            }
+            productQtyUpdate(giftVariantId, qtytoAdd);
+
+            // await  doCartUpdate(giftVariantId, qtytoAdd, {
+            //           "_free_upsell_gift": "yes"
+            //           });
+            }
+
+
+            console.log(`Quantity to add`, { productsToUpdate })
+
+
+
+
+
+
+            }
+
+
+
+            }
+
+
+            }
+
+
+
+
+      }
+ 
+ 
+    if(cart.total_price>15000 ){    
+       let prolonSKus = [
+        "PR001",
+        "PR002",
+        "PR039",
+        "PR001-RKBUNDLE",
+        "PR002-RKBUNDLE",
+        "PR039-RKBUNDLE",
+        "PR001-2BOX",
+        "PR002-2BOX",
+        "PR0039-2BOX",
+        "PR001-3BOX",
+        "PR002-3BOX",
+        "PR0039-3BOX",
+        "3boxbulk",
+        "PR039-4BOX",
+        "PR039-2BoxBundle",
+        "PR001-2BoxBundle"
+      ];
+
+      let prolonQty = 0;
+      let normalProlonQty = 0;
+      for (let i of cart.items) {
+        if (i.handle =='gofast' && prolonSKus.includes(i.sku) && !i.handle.includes('provider')) { 
+          prolonQty += i.quantity; 
+        }  
+        if(prolonSKus.includes(i.sku) && !i.handle.includes('provider')){ 
+          normalProlonQty += i.quantity;
+        }
+
+        }   
+
+    
+        //productsToUpdate[42655650873502] = 1; 
+        //validProductGifts.push("42655650873502");           
+                           
+         
+       //productsToUpdate[41562580320414] = prolonQty; 
+     //  validProductGifts.push("41562580320414");    //free reset 20 ct
+    }
+    
+    {% if isProvider %}
+    /* if(cart.total_price>100000 ){    
+      productsToUpdate[41562580320414] = 10; 
+      validProductGifts.push("41562580320414");    //free fastbar 20 ct
+   } 
+    else if(cart.total_price>55000 ){    
+      productsToUpdate[41562580320414] = 4; 
+      validProductGifts.push("41562580320414");    //free fastbar 20 ct
+   }
+  else if(cart.total_price>25000 ){    
+       productsToUpdate[41562580320414] = 2; 
+       validProductGifts.push("41562580320414");    //free fastbar 20 ct
+    } */
+    
+    {% endif %}
+
+
+  
+
+    }
+
+  } 
+
+
+
+  //productsToUpdate[variant_id]
+
+
+  let giftUpsellAdded = localStorage.getItem('last_gift_items');
+  if (giftUpsellAdded) {
+    giftUpsellAdded = JSON.parse(giftUpsellAdded);
+  }
+  localStorage.setItem('last_gift_items', JSON.stringify(productsToUpdate));
+
+  for (let i of cart.items) {
+    //  ItemByQty[i.variant_id]=i.quantity;
+    if (giftUpsellAdded && giftUpsellAdded[i.variant_id] && giftUpsellAdded[i.variant_id] > 0) {
+      if (!validProductGifts.includes(i.variant_id.toString())) {
+        productsToUpdate[i.variant_id] = 0;
+      }
+    }
+
+    // for Repeatative Logic
+    for (let [key, value] of Object.entries(productsToUpdate)) {
+
+      if (key == i.variant_id && value == i.quantity) {
+        delete productsToUpdate[i.variant_id];
+      }
+    }
+
+    if (specialGiftsHandles.includes(i.handle) && !validProductGifts.includes(i.variant_id.toString()) && (!productsToUpdate[i.variant_id] || productsToUpdate[i.variant_id] == 0)) {
+
+      productsToUpdate[i.variant_id] = 0;
+
+    }
+
+
+  }
+
+  localStorage.setItem('last_gift_items', JSON.stringify(productsToUpdate));
+  window.specialGiftProcessing = false;
+  {% comment %} if(productsToUpdate[FreeGiftsVariants["free-reset-by-prolon"]]==0){
+    delete productsToUpdate[FreeGiftsVariants["free-reset-by-prolon"]];
+  } {% endcomment %} 
+ 
+
+  await doBulkCartUpdate(productsToUpdate);
+
+
+  }
+
+            function  __particularProductGift(cart){
+
+            if(cart.item_count>0){
+            _superSpecialGifts(cart);
+              let prolonAdded= false;
+            let GiftAdded=false;
+            let ProlonQty=1, GiftQty=1;
+            let ItemByQty= {}
+            let BonusPackAdded=false;
+            let BonusproductAdded=false;
+            let BonusproductQty=1, BonusPackQty=1;
+            let FREE_RESET_ADDED=0;
+            let FREE_RESET_ADDED_QTY=0;
+            let ProlonOneDayBoxAdded=false;        let OneDayBoxAdded=false;        let ProlonOneBoxQTY=1, OneDayBoxAQty=1;
+              //
+            let ProlonTwoDayBoxAdded=false;        let TwoDayBoxAdded=false;        let ProlonTwoBoxQTY=1, TwoDayBoxAQty=1;
+
+            let ProlonTreatBoxAdded=false;        let TreatBoxAdded=false;        let ProlonTreatBoxQTY=1, TreatBoxAQty=1;
+                //FAST PACK FOR $10
+      let SPECIALOFFER2Added=false;        let SPECIALOFFERFASTPACKAdded=false;        let SPECIALOFFER2_Qty=1, SPECIALOFFERFASTPACK_Qty=1;
+      //BLACK FRIDAY
+      let ProlonBFridayBoxAdded=false;        let FridayFastBarAdded=false;        let ProlonBFridayBoxQTY=1, FridayFastBarQty=1;
+            let ProlonProviderAdded=false,ProlonProviderQTY=0,ProviderFastBarAdded=false,
+  ProviderFastBarQty=0;
+              for(let i of cart.items){
+                ItemByQty[i.variant_id]=i.quantity;
+
+                if(i.handle == 'prolon-provider')
+                 {
+                   ProlonProviderAdded=true;
+                   ProlonProviderQTY += i.quantity;
+                  }
+                  if(i.handle == "free-reset-by-prolon")
+                  {
+                  FREE_RESET_ADDED=true;
+                  FREE_RESET_ADDED_QTY += i.quantity;
+                  }
+
+                   //  if(i.handle=='20-free-fast-bar' )
+                  if(i.handle=='free-10ct-fast-bar' )
+                  {ProviderFastBarAdded=true;
+                   ProviderFastBarQty = i.quantity;}
+
+
+
+              if(i.handle==productWithFreeGifts.name)
+              {BonusproductAdded=true;
+              BonusproductQty = i.quantity;}
+
+              if(i.handle==productWithFreeGifts.gift)
+              {BonusPackAdded=true;
+              BonusPackQty = i.quantity;}
+
+         //
+         if(i.handle=='prolon-free-1-day-box')
+                {ProlonOneDayBoxAdded=true;
+                ProlonOneBoxQTY = i.quantity;}
+
+                if(i.handle=='free-one-day-box')
+                {OneDayBoxAdded=true;
+                OneDayBoxAQty = i.quantity;}
+
+
+                // TWO DAY
+
+
+                if(i.handle=='prolon-2x')
+                {ProlonTwoDayBoxAdded=true;
+                ProlonTwoBoxQTY = i.quantity;}
+
+                if(i.handle=='free-prolon-fast-pack')
+                {TwoDayBoxAdded=true;
+                TwoDayBoxAQty = i.quantity;}
+
+                // if(i.sku=='SingleBox1')
+                // {
+                // if(i.quantity>2){
+                // alert('You cannot buy more than 2 One Day Fast Pack')
+                // SuperCart.updateProduct(null,i.id,2)
+                // }
+                // }
+
+
+                  //TREAT BOX
+                  if(i.handle=='prolon-fasting-group' || i.handle.includes    ('prolon-fasting-nutrition-extra'))
+                {ProlonTreatBoxAdded=true;
+                  ProlonTreatBoxQTY = i.quantity;}
+
+                if(i.handle=='treat-bag')
+                {TreatBoxAdded=true;
+                  TreatBoxAQty = i.quantity;}
+
+
+                  // black friday
+                  if(i.properties && i.properties.with_30_ct_fast_bar && i.properties.with_30_ct_fast_bar=='yes')
+                {ProlonBFridayBoxAdded=true;
+                  ProlonBFridayBoxQTY = i.quantity;}
+
+                if(i.handle=='free-gift-30ct-fastbar')
+                {FridayFastBarAdded=true;
+                  FridayFastBarQty = i.quantity;}
+
+      // SPECIAL OFFER 2
+      if(i.properties && i.properties.with_discounted_snack_pack && i.properties.with_discounted_snack_pack=='yes')
+
+                  {SPECIALOFFER2Added=true;
+                    SPECIALOFFER2_Qty = i.quantity;}
+
+                  if(i.handle=='bonus-snack-pack')
+                  {SPECIALOFFERFASTPACKAdded=true;
+                    SPECIALOFFERFASTPACK_Qty = i.quantity;}
+
+              }
+              console.log(`adding and finding gift prolonAdded${prolonAdded} GiftAdded${GiftAdded}`);
+
+
+                let RESETQTYTOADD =0;
+                if(ProlonProviderQTY>=1){
+                  RESETQTYTOADD = 2;
+                }
+                if(ProlonProviderQTY>=4){
+                  RESETQTYTOADD = 5;
+                }
+                if(ProlonProviderQTY>=10){
+                  RESETQTYTOADD = 10;
+                }
+
+              if(ProlonProviderAdded && ProlonProviderQTY>0 && !ProviderFastBarQty){
+
+
+          // SuperCart.updateProduct(null,FreeGiftsVariants["free-10ct-fast-bar-1"],RESETQTYTOADD)
+            }
+            if(ProlonProviderAdded &&  ProlonProviderQTY>0 && ProviderFastBarQty!=RESETQTYTOADD){
+          //   SuperCart.updateProduct(null,FreeGiftsVariants["free-10ct-fast-bar-1"],RESETQTYTOADD)
+            }  
+            else if (!ProlonProviderAdded && ProviderFastBarQty){ 
+              //SuperCart.updateProduct(null,FreeGiftsVariants["free-10ct-fast-bar-1"],0)
+            }
+
+
+
+
+
+            if(BonusproductAdded && !BonusPackAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['bonus-pack'],BonusproductQty)
+            }
+            if(BonusproductAdded && BonusPackAdded && BonusproductQty!=BonusPackQty){
+            SuperCart.updateProduct(null,FreeGiftsVariants['bonus-pack'],BonusproductQty)
+            }
+            else if (!BonusproductAdded && BonusPackAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['bonus-pack'],0)
+            }
+
+       //
+
+            if(ProlonOneDayBoxAdded && !OneDayBoxAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-one-day-box'],ProlonOneBoxQTY)
+            }
+            if(ProlonOneDayBoxAdded && OneDayBoxAdded && ProlonOneBoxQTY!=OneDayBoxAQty){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-one-day-box'],ProlonOneBoxQTY)
+            }
+            else if (!ProlonOneDayBoxAdded && OneDayBoxAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-one-day-box'],0)
+            }
+
+
+            //
+
+            if(ProlonTwoDayBoxAdded && !TwoDayBoxAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-prolon-fast-pack'],ProlonTwoBoxQTY*2)
+            }
+            if(ProlonTwoDayBoxAdded && TwoDayBoxAdded && (ProlonTwoBoxQTY*2)!=TwoDayBoxAQty){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-prolon-fast-pack'],ProlonTwoBoxQTY*2)
+            }
+            else if (!ProlonTwoDayBoxAdded && TwoDayBoxAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['free-prolon-fast-pack'],0)
+            }
+
+       // TREAT BOX
+      //  let ProlonTreatBoxAdded=false;        let TreatBoxAdded=false;        let ProlonTreatBoxQTY=1, TreatBoxAQty=1;
+       if(ProlonTreatBoxAdded && !TreatBoxAdded){
+         //   SuperCart.updateProduct(null,FreeGiftsVariants['treat-bag'],ProlonTreatBoxQTY)
+            }
+            if(ProlonTreatBoxAdded && TreatBoxAdded && (ProlonTreatBoxQTY!=TreatBoxAQty)){
+           // SuperCart.updateProduct(null,FreeGiftsVariants['treat-bag'],ProlonTreatBoxQTY)
+            }
+            if ( TreatBoxAdded){
+            SuperCart.updateProduct(null,FreeGiftsVariants['treat-bag'],0)
+            }
+
+          //  if(SPECIALOFFER2Added && !SPECIALOFFERFASTPACKAdded){
+          //     SuperCart.updateProduct(null,FreeGiftsVariants['bonus-snack-pack'],SPECIALOFFER2_Qty)
+          //     }
+          //     if(SPECIALOFFER2Added && SPECIALOFFERFASTPACKAdded && (SPECIALOFFER2_Qty!=SPECIALOFFERFASTPACK_Qty)){
+          //     SuperCart.updateProduct(null,FreeGiftsVariants['bonus-snack-pack'],SPECIALOFFER2_Qty)
+          //     }
+          //     else if (!SPECIALOFFER2Added && SPECIALOFFERFASTPACKAdded){
+          //     SuperCart.updateProduct(null,FreeGiftsVariants['bonus-snack-pack'],0)
+          //     }
+
+             //  FRIDAY BLACK FAST BAR
+            //  if(ProlonBFridayBoxAdded && !FridayFastBarAdded){
+            // SuperCart.updateProduct(null,FreeGiftsVariants['free-gift-30ct-fastbar'],ProlonBFridayBoxQTY)
+            // }
+            // if(ProlonBFridayBoxAdded && FridayFastBarAdded && (ProlonBFridayBoxQTY!=FridayFastBarQty)){
+            // SuperCart.updateProduct(null,FreeGiftsVariants['free-gift-30ct-fastbar'],ProlonBFridayBoxQTY)
+            // }
+            // else if (!ProlonBFridayBoxAdded && FridayFastBarAdded){
+            // SuperCart.updateProduct(null,FreeGiftsVariants['free-gift-30ct-fastbar'],0)
+            // }
+
+
+         //  FRIDAY BLACK FAST BAR_
+        //  if(!ProviderFastBarAdded && ProlonProviderQTY>=20){
+        //      SuperCart.updateProduct(null,41117557031070,ProlonProviderQTY)
+        //      }
+        //      if(ProviderFastBarAdded && ProlonProviderQTY>=20 && (ProlonProviderQTY!=ProviderFastBarQty)){
+        //      SuperCart.updateProduct(null,41117557031070,ProlonProviderQTY)
+        //      }
+        //      else if ((ProlonProviderQTY<20) && ProviderFastBarAdded){
+        //      SuperCart.updateProduct(null,41117557031070,0)
+        //      }
+
+
+
+          }
+
+            if(cart && cart.item_count==0){
+            localStorage.setItem('choose_gift_item_id','');
+            $('.choose-free-gift').hide();
+            }
+
+          }
+
+        async  function __removeZeroValueproducts(cart){
+
+            let freeItem
+            let freeItems=['free-one-day-box-jenny']
+            let ItemByQty=[];
+            for(let i of cart.items){
+            ItemByQty[i.handle]=i.quantity;
+            }
+            if(cart && cart.items && cart.items && cart.items.length == 1){
+
+              if(cart.items[0].handle == 'free-one-day-box-jenny')
+              {
+                let variant_id= cart.items[0].variant_id;
+                let updates= {};
+                updates[variant_id]=0;
+           await jQuery.post('/cart/update.js', {
+
+             updates: updates
+                });
+                 SuperCart.getCart();
+              }
+
+
+            }
+
+
+
+          }
+        function __checkUpsell(cartdata){
+
+          let currentUpsellsInCart=0;
+
+          if(cartdata && cartdata.items){
+           __particularProductGift(cartdata);
+           __removeZeroValueproducts(cartdata);
+            if(cartdata.items.length>0)
+            {
+              $('.slide-cart-full .side-cart__suggestions').css("display",'block');
+              $('.as-low-as-price').show();
+              $('.lowest-price').text("$"+((cartdata.total_price/100)/4).toFixed(2));
+            }
+            else{
+              $('.slide-cart-full .side-cart__suggestions').css("display",'none');
+              $('.as-low-as-price').hide();
+            }
+            if($('.ajaxcart-progress__bar.hidden').length>0){
+              $('.ajaxcart-progress').hide();
+            }
+            else{
+              $('.ajaxcart-progress').show();
+            }
+
+          $('.side-cart__suggestions').removeClass('hidden').removeClass('supper-hidden');
+          $('li.side-cart__item__addon-container').removeClass('hidden').show();
+          $('body').attr('data-hide-disclaimer','');
+
+          cartdata.items.forEach(e=>{
+
+
+            if((e.url.includes("prolon-provider") || e.url.includes('fastbar-provider'))  )
+            {
+            $('body').attr('data-hide-disclaimer',true);
+            $('input#CartPageAgree').prop('checked',true);
+            }
+
+
+            if(e.variant_id){
+
+              if(UpsellProductsVariants.includes(e.variant_id)){
+                currentUpsellsInCart++;
+              }
+
+              $(`li.side-cart__item__addon-container[data-id="${e.variant_id}"]`).addClass('hidden').hide();
+            }
+
+
+
+          });
+
+          let hiddenItemsLength= $('li.side-cart__item__addon-container.hidden').length;
+          let ItemsLength= $('.side-cart__suggestions li.side-cart__item__addon-container').length;
+          if(ItemsLength==hiddenItemsLength)
+          {
+            $('.side-cart__suggestions').addClass('hidden supper-hidden');
+          }
+
+          if(cartdata.items.length && cartdata.items.length>0 &&currentUpsellsInCart > 0 && currentUpsellsInCart == cartdata.items.length){
+            console.log(`clearing the cart`);
+
+            jQuery.get("/cart/clear.json", function(c){
+              if(SuperCart)
+              SuperCart.getCart();
+              });
+
+          }
+
+
+
+
+          }
+          else{
+            $('.slide-cart-full .side-cart__suggestions').css("display",'none');
+          }
+          $(".ss-cart-container").removeClass("show-addon")
+          $('.addon-product-cart').hide();
+                   if(cartdata && cartdata.items){
+                   for(let o of cartdata.items)
+                    {
+
+                      if(o.handle.includes("buy-prolon-2022")){
+                        $('.addon-product-cart').show();
+                        $(".ss-cart-container").addClass("show-addon")
+                      }
+                    }
+                   }
+        }
+        function addPaidBottle(cartdata){
+
+
+          let added_water_bottle = Cookies.get("added_water_bottle");
+
+
+            if (cartdata && cartdata.total_price>16000 && added_water_bottle != "yes") {
+
+
+              //add prolon water bottle
+              if(added_water_bottle!='yes'){
+                Cookies.set("added_water_bottle", 'yes', { expires: 1 });
+                doCartUpdate(41833531179166, 1);
+              }
+
+            } 
+
+
+
+          }
+
+          $(document).on('click','button.side-cart__addon-add',function(e){
+            e.preventDefault();
+
+            let id= $(this).closest('.rebuy-product-block').find('.rebuy-select').val();
+            if(!id)
+            {id = $(this).data('variant-id');}
+            let context= $(this);
+            if(id){
+
+            $(this).attr('disabled','disabled').html('<div class="dcbLoader"></div>');
+            CartJS.addItem(id,1,{
+              _discountoffer:'yes'
+            },{success:function(){
+
+            context.text('Add To Cart').removeAttr('disabled');
+            SuperCart.getCart();
+            }});
+
+            }
+
+
+
+            });
+
+
+
+            $(document).on('keypress','.dcbInput',function (ev) {
+    var keycode = ev.keyCode ? ev.keyCode : ev.which;
+    if (keycode == "13") {
+      ev.preventDefault();
+    $('.dcbButton').click();
+    }
+    });
+
+
+    async function ValidateDiscountedProductsToAdd(code){
+
+
+  return new Promise( async function(resolve, reject){
+    try{
+   let code= jQuery(`input.dcbInput`).val()
+   if(code && code !=''){
+   code = code.toLowerCase();
+   }
+   if(window.__cart && window.__cart.items){
+
+    if(window.__cart.item_count > 0 && code.includes('jenny')){
+
+      let isAlreadyAddedGift= window.__cart.items.filter(e=>e.variant_id==41210836582558);
+      if(!isAlreadyAddedGift || isAlreadyAddedGift.length==0)
+      {
+
+      let addgift = await jQuery.post('/cart/update.js', {
+      updates: {
+        41210836582558: 1,
+      }
+
+
+
+      });
+      SuperCart.getCart();
+      }
+
+      if(isAlreadyAddedGift  && window.__cart && window.__cart.items && isAlreadyAddedGift.length ==  window.__cart.items.length)
+      {
+        let addgift = await jQuery.post('/cart/update.js', {
+                updates: {
+                  41210836582558: 0,
+              }
+    });
+
+    SuperCart.getCart();
+      }
+    }
+  }
+    else{
+      if(window.__cart && window.__cart.items){
+
+
+      let isAlreadyAddedGift= window.__cart.items.filter(e=>e.variant_id==39656748056622);
+      if(isAlreadyAddedGift && isAlreadyAddedGift.length>0){
+  let addgift = await jQuery.post('/cart/update.js', {
+                updates: {
+                  39656748056622: 0,
+              }
+    });
+
+    SuperCart.getCart();
+  }
+  }
+    }
+
+    }
+    catch(ex){
+      reject();
+      return ;
+    }
+
+    resolve();
+  })
+  }
+  async function doCartUpdate (variant_id,quantity,props) {
+
+  return new Promise( async (resolve)=>{
+
+    if(props){
+
+  await jQuery.post('/cart/add.js', {
+  items: [
+  {
+  quantity: quantity,
+  id: variant_id,
+  properties: props
+  }
+  ]
+  });
+
+  SuperCart.getCart();
+  }
+  else{
+  let update ={};
+  update[variant_id]=quantity;
+  await  jQuery.post('/cart/update.js', {
+  updates: update
+  });
+
+  SuperCart.getCart();
+  }
+
+  resolve();
+  });
+
+
+
+  }
+  function __ChooseFreeGift (cartdata){
+
+
+
+  if (cartdata && cartdata.items) {
+
+    if (cartdata.items.length > 0) {
+
+      if($('.slide-cart-full .custom-cart-notices .choose-free-gift').length == 0){
+        $('.slide-cart-full .custom-cart-notices').append(`{% include 'choose-your-gift' %}`);
+      }
+
+      // $('.fire-works').addClass('active')
+
+
+    }
+
+  } else {
+    $('.slide-cart-full .custom-cart-notices .choose-free-gift').css("display", 'none');
+    $('.fire-works').removeClass('active')
+
+  }
+
+  }
+
+  async function validateOnlyResetProduct(cartdata) {
+      try {
+        let product = []; let resetCount = 0; let totalItems = '';
+        if (cartdata && cartdata.items) {
+
+          totalItems = cartdata.item_count;
+          for (let i of cartdata.items) {
+            if (i.handle.includes("reset")) {
+              resetCount += i.quantity;
+            }
+
+
+
+
+
+          }
+
+        }
+
+        if (resetCount == totalItems) {
+
+          $('body').addClass('do-not-show-healthy-commitment');
+        } else {
+          $('body').removeClass('do-not-show-healthy-commitment');
+        }
+      }
+      catch (ex) {
+        console.log(ex);
+      }
+    }
+  async function removeAnyFreePaidGift(cartdata){
+
+   try{
+   if(cartdata && cartdata.items ){
+     let invalidFreegiftItems =[];  let upsellCount=0; let totalItems = cartdata.item_count;
+      cartdata.items.forEach((e,i)=>{
+      if(e){
+        let vTitle= e.product_title.toLowerCase();
+
+
+       if(((e.product_title.toLowerCase().includes('free') && e.product_title.toLowerCase().includes('fast') && !e.product_title.toLowerCase().includes('free fast bar')) || vTitle.includes('free fast') && !e.product_title.toLowerCase().includes('free fast bar') || vTitle.toLowerCase().includes('free prolon')  ||(e.product_title.toLowerCase().includes('free reset' ) && !e.product_title.toLowerCase().includes('free reset special') ) ||vTitle.includes('free 10ct')|| vTitle.includes('free 20ct')||vTitle.includes('free 30ct') ) && e.final_line_price > 0){
+         e.line_number=i+1;
+         invalidFreegiftItems.push(e)
+       }
+      if(e.properties && e.properties._discountoffer && e.properties._discountoffer=='yes' || e.product_type=='Upsell'){
+      upsellCount+=e.quantity;
+      }
+     }
+     });
+     console.log({invalidFreegiftItems});
+     if(invalidFreegiftItems.length>0){
+       for(let p of invalidFreegiftItems){
+         await dochangeCart({line:p.line_number,quantity:0});
+        //  await jQuery.post('/cart/change.js', { quantity: 0, line: p.line_number });
+       }
+       SuperCart.getCart();
+     } 
+     if(totalItems>0 && totalItems==upsellCount){
+            console.log(` Removing Normal Upsells`)
+           await jQuery.getJSON('/cart/clear.js');
+            SuperCart.getCart();
+    }
+
+   }
+  }
+  catch(ex){
+   console.log(ex);
+  }
+  }
+
+  async function updateCartItemwithChange(variant_id,properties){
+
+  let update ={
+    variant_id:variant_id,
+    properties
+  };
+  
+  await  jQuery.post('/cart/change.js', update);
+
+
+  }
+  async function dochangeCart({ line, quantity, params, callback }) {
+   return  fetch(`/cart/change.js`, {
+      method: "POST",
+      body: JSON.stringify({
+        line: line,
+        quantity: quantity,
+      }),
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then((response) => response.json())
+
+  }
+  $(document).on('click','.update-choose-gift',function(){
+
+  let variantId= $(this).data('variant-id');
+
+  localStorage.setItem('choose_gift_item_id',variantId);
+  //  SuperCart.getCart()
+  SuperCart.ShowCartfn()
+  });
+
+
+    function DISCOUNTCOMBINEProcessCode(codes){
+    let parentBox= $('#CartContainer')
+      jQuery.ajax({
+        type: "GET",
+        url: "/cart",
+        cache: false,
+        dataType: "html",
+        success: function (result2) {
+          if (
+            jQuery(jQuery.parseHTML(result2, document, true)).filter("#dcScript")
+              .length
+          ) {
+            var dcScript = jQuery(jQuery.parseHTML(result2, document, true)).filter(
+              "#dcScript"
+            );
+            eval(dcScript.html());
+            var data = {};
+            data.shop = {{shop.permanent_domain|json }};
+            data.action = "combineCode";
+            data.codes = codes;
+            data.cart = window.SuperCartBACKUP || {{cart | json}};
+            data.customerId = {{customer.id| json}};
+            if (dcCart.note) {
+              data.note = dcCart.note;
+            }
+            if (jQuery("dbNote").length) {
+              if (jQuery("dbNote").val()) {
+                data.note = jQuery("dbNote").val();
+              }
+            }
+            jQuery.post(
+              "https://thanhhd.com/app/public/discounts-combine/new-discounts-combine.php",
+              data,
+              function (result1) {
+                jQuery(".dcbButton").html('Redirecting');
+                jQuery(".dcbButton").removeAttr("disabled");
+                parentBox.find(".dcbInput").val("");
+
+
+                if (result1 && result1.url) {
+                            HealthyStartValidator( result1.url,true)
+                            jQuery(".dcbButton").html(`Apply`),
+                            jQuery(".dcbButton").removeAttr("disabled");
+                        } else {
+                          jQuery(".dcbButton").html(`Apply`),
+                          jQuery(".dcbButton").removeAttr("disabled");
+                          $(".dcbResult").text(
+                            result1.msg
+                          );
+                          $(".last-minute-coupon").remove();
+                          $(
+                            `<div class="last-minute-coupon animated flash" >Use "CART10"and save 10% of your order.</div>`
+                          ).insertBefore(".custom-side-cart-discount");
+                          setTimeout(function () {
+                            $(".last-minute-coupon").remove();
+                          }, 60000);
+                        }
+
+              }
+            );
+          }
+        },
+      });
+
+    }
+
+    $(document).on('click','.popup-wrapper-fix .close-btn-text,.popup-wrapper-fix .close-btn-bg',function (params) {
+
+   $('.popup-wrapper-fix').hide().addClass('!hidden');
+  });
+</script>
+
+<style>
+  @media (max-width: 767px) {
+    .ss-shopify_cart .drawer__fixed-header {
+      height: 40px;
+    }
+
+    .ss-shopify_cart .drawer__inner {
+      top: 50px;
+    }
+
+    .ss-shopify_cart .drawer__header {
+      padding: 0px;
+    }
+
+    .ss-shopify_cart .drawer__title {
+      padding: 0px;
+      vertical-align: top;
+      position: relative;
+      left: -30px;
+      top: 6px;
+    }
+
+    .ss-shopify_cart .drawer__close-button {
+      top: -12px;
+    }
+  }
+</style>
+
+{% comment %}
+  <script>
+    function validateEmail(email) {
+      const re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+    function __processEmailFreeGift(input) {
+      let email = $(input).val();
+
+      if (!validateEmail(email)) {
+        $(".submittion-error")
+          .text("Please input a valid email.")
+          .addClass("flash");
+        setTimeout(() => {
+          $(".submittion-error").text("").removeClass("flash");
+        }, 2000);
+        return;
+      } else {
+        Cookies.set("recap_email", email, { expires: 1 });
+        $(".email-slide-pop").hide();
+        $(".congrats-message-popup").removeClass("hidden");
+        setTimeout(function () {
+          $(".slide-pop-notification").removeClass("active");
+        }, 300);
+        SuperCart.getCart();
+        if (window._learnq) {
+          _learnq.push([
+            "identify",
+            {
+              $email: email,
+            },
+          ]);
+        }
+        setTimeout(function () {
+          $(".slide-pop-notification").removeClass("active");
+          _learnq.push([
+            "track",
+            "SLIDE_CART_POPUP_SUBMITTED",
+            {
+              email: email,
+              GET_FREE_FASTBAR: true,
+            },
+          ]);
+        }, 300);
+      }
+    }
+
+    function ShouldShowEmailPopup(cart) {
+      let email = Cookies.get("recap_email");
+      if (!cart) {
+        return;
+      }
+      if (cart.item_count > 0) {
+        let prolonAdded = false;
+        let GiftAdded = false;
+        let ProlonQty = 1,
+          GiftQty = 1;
+        for (let i of cart.items) {
+          if (i.handle.includes("prolon")) {
+            if (i.final_price > 17000) {
+              prolonAdded = true;
+              ProlonQty = i.quantity;
+            }
+          }
+          if (i.handle == "20ct-gift") {
+            GiftAdded = true;
+            GiftQty = i.quantity;
+          }
+        }
+        console.log(`OverRidedGift`);
+        if (!email && !GiftAdded) {
+        } else if (!email && GiftAdded) {
+          SuperCart.updateProduct(null, "39576661688478", 0);
+        } else if (prolonAdded && !GiftAdded) {
+          SuperCart.updateProduct(null, "39576661688478", ProlonQty);
+        } else if (prolonAdded && GiftAdded && ProlonQty != GiftQty) {
+          SuperCart.updateProduct(null, "39576661688478", ProlonQty);
+        } else if (!prolonAdded && GiftAdded) {
+          SuperCart.updateProduct(null, "39576661688478", 0);
+        }
+      }
+
+      if (!email) {
+        $(".ss-shopify_cart .email-slide-pop").removeClass("hidden");
+        $(".ss-shopify_cart .congrats-message-popup").addClass("hidden");
+      } else {
+        $(".ss-shopify_cart .email-slide-pop").addClass("hidden");
+        $(".ss-shopify_cart .congrats-message-popup").removeClass("hidden");
+      }
+    }
+    $(document).on("click", "button.add-fast-bar", function (e) {
+      e.preventDefault();
+      let input = $(this).parent().find(".recapture-email");
+      __processEmailFreeGift(input);
+    });
+
+    // $('button.add-fast-bar').click(function(e){
+    //   e.preventDefault();
+    // __processEmailFreeGift();
+
+    // });
+
+    $(document).on("click", "button.cancel-submittion", function (e) {
+      e.preventDefault();
+      if ($(this).closest(".slide-pop-notification")) {
+        $(this).closest(".slide-pop-notification").removeClass("active");
+      } else {
+        $(this).closest(".email-slide-pop").hide();
+      }
+    });
+  </script>
+{% endcomment %}
+
+{% include 'count-down-timer-js' %}
+ 
+{%- comment -%} <script>
+let giftDivFinder = setInterval(function(){
+
+
+
+
+},100) 
+</script> {%- endcomment -%}

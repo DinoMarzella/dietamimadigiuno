@@ -1,0 +1,79 @@
+{% comment %}AUTO-GENERATED CODE - DO NOT EDIT!{% endcomment %}
+<script class="json-asset-manifest" type="application/json">
+{
+  "templateName": {{ template.name | default: 'unknown' | json }},
+  "entries": [
+    {
+      "info": {
+        "name": "facts-accordion",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-facts-accordion.js' | asset_url | json }}
+      ]
+    },
+    {
+      "info": {
+        "name": "feature-long-boxes",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-swiper.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-feature-long-boxes.js' | asset_url | json }}
+      ]
+    },
+    {
+      "info": {
+        "name": "product-features",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-product-features.js' | asset_url | json }}
+      ]
+    },
+    {
+      "info": {
+        "name": "single-video",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-single-video.js' | asset_url | json }}
+      ]
+    },
+    {
+      "info": {
+        "name": "testimonials-cards",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-swiper.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-testimonials-cards.js' | asset_url | json }}
+      ]
+    },
+    {
+      "info": {
+        "name": "text-plus-image",
+        "type": "section"
+      },
+      "assets": [
+        {{ 'tvg-shared-runtime.js' | asset_url | json }},
+        {{ 'tvg-shared-by-usage-min-2.js' | asset_url | json }},
+        {{ 'tvg-section-text-plus-image.js' | asset_url | json }}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>"use strict";(()=>{var parseSectionData=input=>{if(input==null)throw new Error("Input is not present");if(typeof input!="object")throw new Error("Input cannot be parsed");let sectionName="sectionName"in input&&typeof input.sectionName=="string"&&input.sectionName.length>0?input.sectionName:null;if(sectionName==null)throw console.error("Section name is not defined",input),new Error("Section name is not defined");return{sectionName}};var parseSectionFromEvent=evt=>{if(evt.target==null)return null;let sectionId="detail"in evt&&evt.detail!==null&&typeof evt.detail=="object"&&"sectionId"in evt.detail&&typeof evt.detail.sectionId=="string"&&evt.detail.sectionId.length>0?evt.detail.sectionId:null;return sectionId==null?null:evt.target instanceof HTMLElement&&evt.target.getAttribute("id")==="shopify-section-"+sectionId?evt.target:null};var onDocumentReady=fn=>{if(document.readyState==="complete"||document.readyState==="interactive"){setTimeout(fn,1);return}document.addEventListener("DOMContentLoaded",fn)},init=()=>{let InitializedAssets=new Set,initAsset=src=>{if(InitializedAssets.has(src))return;let script=document.createElement("script");script.type="text/javascript",script.src=src,script.defer=!0,onDocumentReady(()=>{document.body.appendChild(script)}),InitializedAssets.add(src)},manifestEl=document.querySelector("script.json-asset-manifest");if(manifestEl==null)throw new Error("Asset manifest not found");let manifest=JSON.parse(manifestEl.innerText);manifest.entries.forEach(entry=>{if(entry.info.type!=="section"&&(entry.info.type==="theme"||entry.info.type===manifest.templateName))return entry.assets.forEach(initAsset)});let initSectionAssets=section=>{try{let scriptElement=section.querySelector("script.json-portable-section-assets");if(scriptElement==null)return;let{sectionName}=parseSectionData(JSON.parse(scriptElement.innerText)),manifestEntry=manifest.entries.find(item=>item.info.type==="section"&&item.info.name===sectionName);if(manifestEntry==null)return;manifestEntry.assets.forEach(initAsset)}catch(err){console.error("Section assets cannot be initialized",err)}};document.addEventListener("shopify:section:load",evt=>{let section=parseSectionFromEvent(evt);section!=null&&initSectionAssets(section)}),Array.from(document.querySelectorAll(".shopify-section")).forEach(initSectionAssets)};init();})();
+</script>

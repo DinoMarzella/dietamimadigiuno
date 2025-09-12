@@ -1,0 +1,237 @@
+<style>
+
+  .skin-improve-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    max-width: 100%;
+    margin: 0 auto;;
+    background-color:#e9e9e9;
+    padding: 50px 0px;
+    margin-bottom: 30px;
+  }
+  .skin-improve-wrapper h2{
+    font-family: "interstate", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2f6645;
+  }
+  .skin-cards-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0px;
+  }
+  .skin-cards-single{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 24px;
+  }
+  .skin-cards-single img{
+    max-width: 50px;
+    width:100%;
+    object-fit: contain;
+    padding: 10px 0px;
+  }
+  .skin-cards-single h3{
+    font-family: Avenir, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2f6645;
+  }
+  .skin-cards-single p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+  .skin-improve-why-wrapper{
+    max-width: 900px;
+    margin: auto;
+    border:1px solid #2F6645;
+    position: relative;
+  }
+  .skin-improve-why-description{
+    max-width: 650px;
+    margin: auto;
+    padding: 60px 0px 50px 0px;
+  }
+  .skin-improve-why-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skin-improve-why-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skin-improve-why-title h4{
+    font-family: "interstate", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #2f6645;
+    position: absolute;
+    top: -20px;
+    background-color:#e9e9e9;
+    padding: 0px 15px;
+  }
+  .skin-improve-why-description p{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05px;
+    text-align: center;
+    color:#000;
+  }
+  .skin-improve-why-button a{
+    position: absolute !important;
+    bottom: -20px;
+  }
+  
+  @media(max-width:767px){
+    .skin-improve-wrapper{
+    padding: 50px 20px;
+  }
+  .skin-improve-wrapper h2{
+    font-size: 28px;
+  }
+  .skin-cards-wrapper{
+    flex-direction: column;
+  }
+  .skin-cards-single{
+    width: 100%;
+  }
+  
+  .skin-improve-why-description{
+    padding: 40px 10px 30px 10px;
+  }
+  .skin-improve-why-title h4{
+    font-size: 28px;
+    top: -17px;
+  }
+  
+  .skin-improve-why-button a{
+    position: absolute !important;
+    bottom: -17px;
+  }
+  } 
+  </style>
+  {% assign prot = section.settings %}
+  <div class="skin-improve-wrapper">
+    <div class="skin-improve-inner">
+      <div class="skin-improve-cards-wrapper">
+        <h2>{{prot.title}}</h2>
+        <div class="skin-cards-wrapper">
+          {% for block in section.blocks %}
+                <div class="skin-cards-single">
+                    <img src="{{ block.settings.img_hand | img_url: '2200x' }}">
+                    <h3>{{block.settings.maintitle}}</h3>
+                    <p>{{block.settings.card_desc}}</p>
+                </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="skin-improve-why-wrapper">
+        <div class="skin-improve-why-title">
+          <h4>{{prot.title_bottom}}</h4>
+        </div>
+        <div class="skin-improve-why-description">{{prot.desccription_bottom}}</div>
+        <div class="skin-improve-why-button">
+          <a href="{{prot.button_url}}" class="btn text-link" style="color: white !important; margin-bottom: 0px; " tabindex="0">{{prot.button_text}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  {% schema %}
+  {
+      "name": "Skin Improve Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "ProLon Benefits"
+        },
+        {
+          "type": "text",
+          "id": "title_bottom",
+          "label": "Title Bottom"
+        },
+        {
+          "type": "textarea",
+          "id": "desccription_bottom",
+          "label": "Descreption Bottom"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "benefit-section",
+          "name": "Benefit Card",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "img_hand",
+              "label": "Add Image"
+            },
+            {
+              "type": "text",
+              "id": "maintitle",
+              "label": "Add Card Title",
+              "default": "Clean Up Your Body Faster"
+            },
+            {
+              "type": "html",
+              "id": "card_desc",
+              "label": "Add Card Description",
+              "default": "ProLon is a revolutionary clean up your body faster and easier."
+            }
+          ]
+        }
+      ],
+      "presets": [
+      {
+          "name": "Skin Improve Section"
+      }
+          ]
+    }
+  {% endschema %}

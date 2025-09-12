@@ -1,0 +1,361 @@
+{% include 'shogun-content-handler' %}
+{% capture siteContent %} <!doctype html>
+<html class="no-js speed-template" lang="{{ request.locale.iso_code }}">
+  {% capture head %}
+<head>
+      {% comment %} <link
+  rel="stylesheet"
+  href="https://cdn.orderprotection.com/widget/shopify/5.9.3/style.css"
+/> {% endcomment %}
+
+  {% if request.path == '/collections/upsell' %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+
+{% if template == 'index' %}
+<link rel="stylesheet" href="{{ 'header_carousel.css' | asset_url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+{% endif %}
+
+  <meta name="google-site-verification" content="zkwnlniaGEv2U2wJK4EwVMlDEJPg1lFDJESXEh7N1eY" />
+  <meta name="facebook-domain-verification" content="ui4s80rz8v3fx3twm73dkfplhmkbdx" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="p:domain_verify" content="a8893252f7a56de8069404f73f270ee5"/>
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+  {%- endif -%}
+  {%- render 'seo-title' -%}
+  {%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+  {%- render 'social-meta-tags' -%}
+  {%- render 'font-face' -%}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-Css.css' | asset_url | stylesheet_tag }} 
+  {{ 'ck-tailwind-build.min.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'utils.js' | asset_url | script_tag }}
+  {{ 'custom.scss.css' | asset_url | stylesheet_tag }} 
+  {%- render 'css-variables' -%}
+  {% if template contains "404"  %}
+  <style>.announcement-bar{display:none;}</style>
+  {% endif %} 
+   
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MD5SMB3');</script>
+<!-- End Google Tag Manager -->
+  
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="79ea3adc-a224-4209-8b43-04c52ffc72d5" data-blockingmode="auto" type="text/javascript"></script>
+  <script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("consent", "default", {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+    </script> 
+    
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    window.theme = window.theme || {};
+    theme.routes = {
+      cart: "{{ routes.cart_url }}",
+      cartAdd: "{{ routes.cart_add_url | append: '.js'}}",
+      cartChange: "{{ routes.cart_change_url }}"
+    };
+    theme.strings = {
+      soldOut: {{ 'products.product.sold_out' | t | json }},
+      unavailable: {{ 'products.product.unavailable' | t | json }},
+      stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
+      willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
+      willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
+      waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},
+      savePrice: {{ 'products.general.save_html' | t: saved_amount: '[saved_amount]' | json }},
+      cartEmpty: {{ 'cart.general.empty' | t | json }},
+      cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }}
+    };
+    theme.settings = {
+      dynamicVariantsEnable: true,
+      dynamicVariantType: {{ settings.variant_type | json }},
+      cartType: {{ settings.cart_type | json }},
+      moneyFormat: {{ shop.money_format | json }},
+      saveType: {{ settings.product_save_type | json }},
+      recentlyViewedEnabled: false,
+      predictiveSearch: {{ settings.predictive_search_enabled }},
+      predictiveSearchType: {{ settings.search_type | json }},
+      inventoryThreshold: {{ settings.inventory_threshold }},
+      quickView: {{ settings.quick_shop_enable }},
+      themeName: 'Impulse',
+      themeVersion: "3.2.3"
+    };
+  </script>   
+                {% comment %} <!-- Klaviyo cross site tracking Start - FMDxPRO -->  
+<script type="text/javascript/defer" async="" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XqzShz&amp;shop=prolon-pro.myshopify.com"></script>
+                <!-- Klaviyo cross site tracking End - FMDxPRO -->  {% endcomment %}
+                <!-- Speedify code Start - OPTIMIZED_CONTENT_FOR_HEADER - 2023 V3.0 -->
+                  {% include 'jquery' %}
+                  <script>
+                    window.SuperJ= $;
+                  </script>
+
+          
+                <noscript id="deferred-styles">
+
+                </noscript>
+
+                {% capture cfh %}
+                {{ content_for_header }}
+                {% endcapture%} 
+                
+                
+                    {% if cfh contains 'DesignMode' %}
+                    {{ cfh }}
+                    {%else %}
+                    {% include 'cfh-optimized' with cfh %}
+                    {% endif%}
+                <!-- Speedify code END - 2023 V3.0 -->
+                    
+                 
+  <script src="{{ 'vendor-scripts-v6.js' | asset_url | split: '?' | first }}" defer="defer" script-defered defer ></script>
+   
+
+  {% if shop.enabled_currencies.size > 1 %}
+    <link rel="preload" as="style" href="{{ 'currency-flags.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"></noscript>
+  {% endif %} 
+<!-- <script src="{{ 'theme-compressed.js' | asset_url }}" defer="defer" script-defered defer ></script> -->  
+<script src="{{ 'theme.min.js' | asset_url }}" defer="defer" script-defered defer ></script>  
+  
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer" script-defered defer ></script>
+  {%- endif -%}
+  {% include 'local-redirects'  %}
+<script type="text/javascript/inlinedefer">
+	(function(){"use strict";var e=null,b="4.0.0",
+	n="31668",
+	additional="term=value",
+	t,r,i;try{t=top.document.referer!==""?encodeURIComponent(top.document.referrer.substring(0,2048)):""}catch(o){t=document.referrer!==null?document.referrer.toString().substring(0,2048):""}try{r=window&&window.top&&document.location&&window.top.location===document.location?document.location:window&&window.top&&window.top.location&&""!==window.top.location?window.top.location:document.location}catch(u){r=document.location}try{i=parent.location.href!==""?encodeURIComponent(parent.location.href.toString().substring(0,2048)):""}catch(a){try{i=r!==null?encodeURIComponent(r.toString().substring(0,2048)):""}catch(f){i=""}}var l,c=document.createElement("script"),h=null,p=document.getElementsByTagName("script"),d=Number(p.length)-1,v=document.getElementsByTagName("script")[d];if(typeof l==="undefined"){l=Math.floor(Math.random()*1e17)}h="dx.steelhousemedia.com/spx?"+"dxver="+b+"&shaid="+n+"&tdr="+t+"&plh="+i+"&cb="+l+additional;c.type="text/javascript";c.src=("https:"===document.location.protocol?"https://":"http://")+h;v.parentNode.insertBefore(c,v)})()
+</script>
+   
+  <script type="text/javascript/inlinedefer">(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],
+  f=function(){var o={ti:"56271068"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},
+  n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){
+  var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||
+    (f(),n.onload=n.onreadystatechange=null)},
+  i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+  </script>
+ 
+ 
+
+
+ <script type="text/javascript">
+
+         window.zESettings = {
+
+             webWidget: {
+
+                chat: {
+
+                    connectOnPageLoad: false        
+
+                }
+
+            }
+
+         };
+
+        </script>
+{% include 'extra-tracking-scripts' %}
+{% include 'ck-vue-loader' %} 
+{% include 'ck-tailwindconfig' %} 
+ 
+
+<style>.site-nav__icons {
+  display: flex;
+
+}</style> 
+
+  {% comment %} <link rel="stylesheet" href="https://cdn.orderprotection.com/widget/shopify/5.9.3/style.css" />
+<script src="https://cdn.orderprotection.com/widget/shopify/5.28.45/orderprotection.js"></script>
+<script defer> 
+  const widget = OrderProtection.createOrderProtectionWidget({
+    locations: [
+      {
+        sibling: {
+          position: "before",
+          selector: "#op-selector",
+        },
+      },
+    ],
+  });
+  widget.init();
+</script> {% endcomment %}
+<script>
+  window._template = {
+      directory: "{{ template.directory }}",
+      name: "{{ template.name }}",
+      suffix: "{{ template.suffix }}"
+  }
+  window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+</script> 
+
+{% if template == 'index' %}
+  <link rel="stylesheet" href="{{ 'header.css' | asset_url }}">
+{% endif %}
+
+<link rel="stylesheet" href="{{ 'menu.css' | asset_url }}">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">  
+<script type="text/javascript">
+  (function(a,b,c,d,e,f,g){
+    e['ire_o']=c;e[c]=e[c]||function(){
+      (e[c].a=e[c].a||[]).push(arguments)};
+    f=d.createElement(b);g=d.getElementsByTagName(b)[0];
+    f.async=1;f.src=a;g.parentNode.insertBefore(f,g);
+  })('https://utt.impactcdn.com/A5897560-07e2-462a-b461-6ca4bfac8d401.js','script','ire',document,window);
+
+    {% if customer %}
+    ire('identify', {
+        customerid: '{{ customer.id }}',
+        customeremail: '{{ customer.email | sha1 }}'
+    });
+    {% endif %}
+</script>
+</head> 
+{% endcapture %} 
+{{head }} 
+<body   data-variant="B" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} 
+
+{% if handle == 'prolon-provider' or handle == 'fastbar-provider' %} hide-disclaimer {% endif %} "  data-center-text="{{settings.type_body_align_text}}" data-button_style="{{settings.button_style}}" data-type_header_capitalize="{{settings.type_header_capitalize}}" data-type_headers_align_text="{{settings.type_headers_align_text}}" data-type_product_capitalize="{{settings.type_product_capitalize}}" data-swatch_style="{{settings.swatch_style}}"
+    data-template="{{ template }}"
+data-handle="{{ handle }}"  
+{% if handle == 'prolon-provider ' or handle =='fastbar-provider' %} data-hide-disclaimer="true" {% endif %}
+>
+
+  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD5SMB3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body">
+    {% include 'is_provider_popup' %}
+    {% section 'header' %}
+
+      <main class="main-content" id="MainContent">
+         
+        <offer-bar subtotal="{{cart.original_total_price |  divided_by: 100 |  default:0}}"></offer-bar> 
+    
+        {% comment %} {% if template contains 'index' %}
+        <div class="bg-pink-50 dark:bg-gray-800 dark:text-pink-400 flex gap-2 items-start mt-[30px] p-4 text-pink-800 text-sm" role="alert">
+  <div class="flex items-start w-full gap-2 px-4 mx-auto"><svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
+  </svg>
+  <div>
+    <span class="font-bold">Affected by the California wildfires?</span>
+    <p>We want to help. <a href="/pages/california-wildfires" class="text-blue-600 underline">View resources and information here.</a></p>
+  </div></div>
+</div> 
+        {% endif %}  {% endcomment %}
+        {{ content_for_layout }}
+	<noscript class="endOfLayoutContentX" type="text/mark"></noscript>
+      </main>
+
+      {% section 'footer-promotions' %}
+      {% section 'footer' %}
+
+    </div>
+  </div>
+
+  {% section 'newsletter-popup' %}
+
+  {%- if settings.cart_type == 'drawer' -%}
+    {%- render 'ajax-cart-template' -%}
+  {%- endif -%}
+
+  {% comment %}
+    Custom markup for slider arrows using theme icons
+  {% endcomment %}
+  <div class="hide">
+    <button id="prevArrowTemplate" class="slick-prev" aria-label="{{ 'general.pagination.previous' | t }}" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+      <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
+    </button>
+    <button id="nextArrowTemplate" class="slick-next" aria-label="{{ 'general.pagination.next' | t }}" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+      <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
+    </button>
+  </div> 
+
+  {%- if settings.predictive_search_enabled -%}
+    {%- render 'predictive-template' -%}
+  {%- endif -%}
+
+  {% render 'video-modal' %}
+  {% render 'photoswipe-template' %}
+  {% if template contains 'product' %}
+    {% render 'recently-viewed-product-template' %}
+  {% endif %}
+<!-- Begin ReCharge code -->
+{% include 'subscription-theme-footer' %}
+<!-- End ReCharge code -->
+  
+  {% if template == "cart" %}
+  
+  {% endif %}
+  
+  {% comment %} {% include 'ss-ajax-cart' %}
+    {% endcomment %}
+        {% render 'cart-switcher-injector' %}
+
+
+{% include 'adroll' %}
+ {% include 'smile-initializer' %}   
+  {% include 'wisepops-generated' %}
+  {% include 'bottom-scripts' %}
+ 
+  {% include 'verify-terms' %} 
+ 
+<!-- CRITEO START -->
+{% render 'criteo-tracking' %}
+<!-- CRITEO END -->
+
+        {% if template == 'index' %}
+      <script src="{{ 'header.js' | asset_url }}"></script>
+    {% endif %} 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script src="{{ 'menu.js' | asset_url }}" defer></script>
+    {% render 'asset-loader' %}
+  </body>  
+</html>
+  
+{% endcapture %}
+
+{{ siteContent | replace: 'RKvSwp', 'XqzShz' }}

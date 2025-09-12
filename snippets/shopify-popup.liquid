@@ -1,0 +1,230 @@
+<style class="extra-body-elements">
+    #shopify-terms-cover * {
+  color: black;
+}
+div#shopify-terms-cover.hidden {display: none;} 
+#shopify-terms-cover .visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+#shopify-terms-cover h1 {
+  font-size: 26px; 
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0 0 20px;
+  max-width: 255px;     
+ 
+}
+#shopify-terms-cover p {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0 0 24px;
+}
+#shopify-terms-cover section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#shopify-terms-cover header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#shopify-terms-cover .price {
+  color: #5a31f4;
+  font-weight: 600;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+}
+#shopify-terms-cover .price__icon {
+  width: 43px;
+  height: 10px;
+}
+#shopify-terms-cover .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#shopify-terms-cover .list-item {
+  display: flex;
+  padding-bottom: 24px;
+}
+#shopify-terms-cover .list-item__heading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125%;
+  padding-bottom: 4px;
+}
+#shopify-terms-cover .list-item__subheading {
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.7);
+}
+#shopify-terms-cover .list-item__icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 21px;
+  padding-right: 12px;
+}
+#shopify-terms-cover .btn__close {
+  position: relative;
+  overflow: visible;
+  margin: 0;
+  background: transparent;
+  border: none;
+  -webkit-font-smoothing: inherit;
+  appearance: button;
+  cursor: pointer;
+}
+#shopify-terms-cover .btn__close--primary {
+  background-color: #c9bcf8;
+  color: black;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  transition: background-color 100ms ease-in-out, opacity 100ms ease-out, color 100ms ease-in-out;
+}
+#shopify-terms-cover .btn__close--icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 16px;
+  border-radius: 6px;
+}
+#shopify-terms-cover .btn__close--icon:hover,
+#shopify-terms-cover .btn__close--icon:active,
+#shopify-terms-cover .btn__close--icon:focus {
+  background-color: #c9bcf8;
+  color: black; 
+} 
+#shopify-terms-cover .btn__close--primary:hover,
+#shopify-terms-cover .btn__close--primary:active,
+#shopify-terms-cover .btn__close--primary:focus {
+  background-color: #c9bcf8;
+} 
+#shopify-terms-cover .help_text {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#shopify-terms-cover .help_text__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+#shopify-terms-cover .help_text__link:hover,
+#shopify-terms-cover .help_text__link:active,
+#shopify-terms-cover .help_text__link:focus {
+  color: #3f22ab; 
+}
+#shopify-terms-cover footer {
+  text-align: center;
+}
+#shopify-terms-cover .close__icon {
+  width: 13px;
+  height: 13px;
+}
+#shopify-terms-cover .affirm-logo {
+  width: 39px;
+  height: 21px;
+  padding-left: 4px;
+}
+#shopify-terms-cover .affirm-text {
+  display: flex;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}  
+</style> 
+<div id="shopify-terms-cover" class="hidden extra-body-elements" 
+    style="position: fixed; inset: 0px; z-index: 999999; background: rgba(0, 0, 0, 0.3);">
+    <div id="klarna-payment-terms-modal" role="dialog" aria-modal="true" 
+        aria-labelledby="klarna-payment-terms-modal-heading" 
+        style="position: fixed; inset: 0px; z-index: 999999; background: white; height: 620px; width: 432px; max-width: 95%; max-height: 95%; margin: auto; border-radius: 7px; padding: 32px; box-sizing: border-box; overflow: auto;">
+          
+        <klarna-installments-modal price="$193.75" > 
+
+          <section>
+            <header>
+              <h1 id="shopify-payment-terms-modal-heading">Pay now or later - It's up to you.</h1>
+              <button type="button" class="btn__close btn__close--icon" aria-label="Close">
+                <svg class="close__icon" aria-hidden="true"><use xlink:href="#close"></use></svg>
+              </button>
+            </header>
+            <div hidden="" id="shopify-payment-terms-modal-warning-text">Opens in a new window.</div>
+            <p>  
+          <span>Choose Shop Pay at checkout to pay in full or split your purchase into 4 equal installments of</span>
+          <span class="shopify-shop-pay-price">$18.75<svg aria-hidden="true" class="price__icon"><use xlink:href="#squiggle"></use></svg></span>
+          <span>*.</span>
+        </p>
+            <ul class="list">
+              <li class="list-item">
+                <svg role="img" aria-hidden="true" class="list-item__icon"><use xlink:href="#fees-icon"></use></svg>
+                <div>
+                  <div class="list-item__heading">No hidden fees</div>
+                  <div class="list-item__subheading">No interest, no fees, and no impact to your credit score.</div>
+                </div>
+              </li>
+              <li class="list-item">
+                <svg role="img" aria-hidden="true" class="list-item__icon"><use xlink:href="#cc-icon"></use></svg>
+                <div>
+                  <div class="list-item__heading">Make the most of your budget</div>
+                  <div class="list-item__subheading">Automatic payments every two weeks keep things flexible.</div>
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="btn__close btn__close--primary">Close</button>
+            <p id="eligibility-approval" class="help_text">
+              <span>
+                *Subject to eligibility check and approval. Estimated payment amount excludes taxes and shipping fees.
+              </span>
+              <a class="help_text__link" href="https://www.affirm.com/licenses" target="_blank" aria-describedby="shopify-payment-terms-modal-warning-text">
+                Notice to California Residents
+              </a>
+            </p>
+            <footer>
+              <shop-pay-logo role="img" aria-label="Shop Pay" size="large" data-dashlane-observed="true"></shop-pay-logo>
+              <div class="affirm-text">
+                <span>installments in partnership with</span>
+                  <svg role="img" aria-labelledby="shopify-payment-terms-modal-affirm" class="affirm-logo"><use xlink:href="#affirm"></use></svg>
+              </div>
+            </footer> 
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="fees-icon" viewBox="0 0 21 18" fill="none">
+                <path d="M19.2777 9C19.2777 11.1206 18.9033 12.9026 18.1324 14.1227C17.4034 15.2763 16.2803 16 14.4999 16C12.7196 16 11.5965 15.2763 10.8675 14.1227C10.0966 12.9026 9.72217 11.1206 9.72217 9C9.72217 6.87944 10.0966 5.0974 10.8675 3.87733C11.5965 2.72371 12.7196 2 14.4999 2C16.2803 2 17.4034 2.72371 18.1324 3.87733C18.9033 5.0974 19.2777 6.87944 19.2777 9Z" fill="white" stroke="#7B5AF6" stroke-width="2"></path>
+                <path d="M10.5 14.3334L17.6111 3.66669" stroke="#7B5AF6" stroke-width="2"></path>
+                <path d="M6.958 11.48C6.958 10.276 6.426 9.38 5.278 8.974L3.696 8.414C2.618 8.036 2.324 7.532 2.324 6.86C2.324 6.146 2.8 5.684 3.64 5.684C4.606 5.684 5.124 6.286 5.124 7.336H6.734C6.734 5.754 5.824 4.648 4.396 4.382V3.08H3.248V4.34C1.722 4.522 0.7 5.656 0.7 6.958C0.7 8.204 1.316 9.226 2.576 9.66L4.088 10.15C5.04 10.5 5.348 10.906 5.348 11.522C5.348 12.362 4.816 12.838 3.836 12.838C2.702 12.838 2.03 12.068 2.03 10.794H0.42C0.42 12.782 1.442 13.986 3.248 14.21V15.4H4.396V14.21C5.95 14.014 6.958 12.964 6.958 11.48Z" fill="#7B5AF6"></path>
+              </symbol>
+              <symbol id="cc-icon" viewBox="0 0 21 16" fill="none">
+                <path d="M17.3636 1H2.63636C1.73262 1 1 1.7835 1 2.75V13.25C1 14.2165 1.73262 15 2.63636 15H17.3636C18.2674 15 19 14.2165 19 13.25V2.75C19 1.7835 18.2674 1 17.3636 1Z" stroke="#7B5AF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1 6L19 6" stroke="#7B5AF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M13 11H15" stroke="#7B5AF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </symbol>
+              <symbol id="affirm" viewBox="0 0 40 22" fill="none">
+                <title id="shopify-payment-terms-modal-affirm">Affirm</title>
+                <path fill="#000000" d="M3.058 14.543c-.482 0-.724-.236-.724-.623 0-.72.812-.965 2.292-1.121 0 .962-.656 1.744-1.569 1.744zm.638-5.413c-1.058 0-2.275.495-2.936 1.017l.604 1.26c.53-.48 1.386-.892 2.159-.892.734 0 1.14.243 1.14.734 0 .33-.269.497-.777.563C1.99 12.056.5 12.575.5 14.026c0 1.15.826 1.846 2.116 1.846.92 0 1.74-.507 2.129-1.176v.99H6.46v-4.148c0-1.712-1.2-2.408-2.764-2.408zM20.92 9.318v6.367h1.837v-3.068c0-1.458.89-1.886 1.51-1.886.243 0 .57.07.785.23l.334-1.684a2.104 2.104 0 00-.822-.147c-.944 0-1.538.415-1.929 1.258v-1.07h-1.714zM33.899 9.13c-.971 0-1.697.57-2.075 1.118-.35-.709-1.093-1.118-1.983-1.118-.971 0-1.643.535-1.954 1.15v-.962h-1.77v6.367h1.838v-3.277c0-1.177.621-1.742 1.201-1.742.525 0 1.007.337 1.007 1.207v3.812h1.835v-3.277c0-1.19.606-1.742 1.213-1.742.486 0 .998.35.998 1.193v3.826h1.834v-4.401c0-1.431-.971-2.154-2.144-2.154zM16.452 9.317h-1.664v-.648c0-.842.485-1.083.903-1.083.462 0 .822.203.822.203l.566-1.284s-.573-.372-1.617-.372c-1.173 0-2.508.656-2.508 2.716v.468h-2.785v-.648c0-.842.485-1.083.903-1.083.238 0 .557.054.822.203l.566-1.284c-.338-.196-.88-.372-1.617-.372-1.173 0-2.508.656-2.508 2.716v.468H7.269v1.405h1.066v4.963h1.834v-4.963h2.785v4.963h1.834v-4.963h1.664V9.317zM17.547 15.684h1.832V9.317h-1.832v6.367z"></path>
+                <path fill="#5A31F4" d="M28.24.434c-4.956 0-9.372 3.413-10.625 7.8h1.795C20.457 4.968 24.012 2.1 28.24 2.1c5.14 0 9.582 3.882 9.582 9.925 0 1.356-.177 2.58-.513 3.66h1.743l.017-.059c.286-1.115.431-2.326.431-3.6 0-6.74-4.95-11.59-11.26-11.59z"></path>
+              </symbol>
+              <symbol id="squiggle" viewBox="0 0 43 10" fill="none">
+                <path d="M9.62095 5.04617C8.94881 5.25492 8.31699 5.39409 7.71878 5.63067C5.84572 6.36986 4.08993 7.39479 2.50965 8.6715C2.22013 8.91561 1.9685 9.20426 1.76356 9.52739C1.64079 9.72655 1.45521 9.87557 1.23834 9.94914C1.02147 10.0227 0.786683 10.0163 0.573866 9.93098C0.150414 9.81964 0.0159848 9.46476 0.0025419 9.03334C-0.0117113 8.78028 0.0341362 8.52746 0.136075 8.29699C0.238015 8.06651 0.392942 7.86541 0.587309 7.71124C1.44731 6.98191 2.34482 6.30131 3.27589 5.67243C4.88859 4.53384 6.69839 3.72817 8.60601 3.2996C9.16432 3.2139 9.72969 3.18825 10.2931 3.22306C10.5766 3.23472 10.8466 3.35146 11.0539 3.552C11.2611 3.75254 11.3919 4.02352 11.4223 4.31553C11.4514 4.96274 11.4401 5.61122 11.3887 6.25693C11.3887 6.47264 11.3416 6.68835 11.2946 7.03628C11.5734 6.98943 11.8463 6.91006 12.1079 6.79969C13.1228 6.23606 14.1243 5.6933 15.1191 5.04617C16.7687 3.80877 18.5394 2.75456 20.4022 1.90096C21.4062 1.47852 22.4848 1.27937 23.568 1.31645C23.7541 1.30668 23.9402 1.33708 24.1144 1.40573C24.2886 1.47438 24.447 1.57978 24.5798 1.71523C24.7125 1.85068 24.8166 2.01322 24.8854 2.19254C24.9542 2.37186 24.9862 2.56402 24.9795 2.75685C24.9795 3.30656 24.9123 3.85628 24.8719 4.46166C24.9997 4.3712 25.1542 4.27378 25.3088 4.17636C26.7002 3.24394 28.0646 2.2628 29.4963 1.393C30.9457 0.454744 32.6266 -0.028641 34.3358 0.00131229C35.3238 0.0361044 35.8078 0.50232 35.8078 1.51129C35.8195 1.97782 35.7835 2.44432 35.7002 2.90297C35.5848 3.41514 35.4389 3.91943 35.2633 4.41295C35.5053 4.26682 35.6666 4.18332 35.8145 4.0859C37.5361 2.791 39.3752 1.67239 41.3059 0.745863C41.5215 0.653045 41.7472 0.587624 41.9781 0.551028C42.1749 0.499154 42.3835 0.528135 42.5601 0.6319C42.7368 0.735666 42.8678 0.906168 42.9258 1.1077C43.0097 1.31745 43.0229 1.55039 42.9631 1.76883C42.9033 1.98728 42.7742 2.17848 42.5964 2.31151C42.5112 2.38001 42.4187 2.43837 42.3209 2.48547C40.393 3.40943 38.5543 4.52081 36.8294 5.80463C36.453 6.05514 36.0766 6.30564 35.6868 6.54223C35.4484 6.71142 35.1882 6.84495 34.9138 6.93886C33.4082 7.32853 32.5882 6.93886 32.8638 5.28971C32.9948 4.73065 33.1702 4.18373 33.388 3.65448C33.5762 3.11868 33.7913 2.5968 34.0602 1.93575C33.5628 2.02621 33.1864 2.07492 32.8302 2.17234C31.1747 2.70218 29.6179 3.5186 28.226 4.58691C27.1035 5.37321 26.0146 6.20126 24.8652 6.9319C24.4142 7.18452 23.9125 7.32507 23.3999 7.34244C23.2503 7.3709 23.0962 7.3608 22.9512 7.31303C22.8062 7.26527 22.6747 7.18131 22.5685 7.06855C22.4622 6.9558 22.3844 6.81771 22.3418 6.66646C22.2993 6.51521 22.2933 6.35545 22.3245 6.20126C22.4231 5.49335 22.5782 4.79511 22.7883 4.11374C22.8992 3.78799 23.0294 3.46962 23.1781 3.16044C22.6262 3.27341 22.0843 3.43401 21.5583 3.64057C20.2543 4.33641 18.9571 5.03225 17.7001 5.72809C16.3559 6.54223 15.0116 7.44682 13.6673 8.28183C12.8993 8.75227 12.0091 8.96383 11.1198 8.88721C10.8941 8.89799 10.6688 8.85872 10.459 8.77204C10.2491 8.68537 10.0595 8.55327 9.903 8.38461C9.74644 8.21596 9.6265 8.01462 9.5512 7.79409C9.4759 7.57355 9.44697 7.3389 9.46636 7.10586C9.48652 6.50048 9.54702 5.83943 9.62095 5.04617Z" fill="#BDADFB"></path>
+              </symbol>
+              <symbol id="close" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.547 6.77l5.322-5.086A.468.468 0 0014 1.347a.662.662 0 00-.131-.379l-.875-.842A.725.725 0 0012.6 0c-.175 0-.262.042-.35.126L7 5.136 1.75.127A.508.508 0 001.4 0c-.175 0-.306.042-.394.126L.131.968a.662.662 0 00-.131.38c0 .126.044.252.175.336L5.453 6.73.13 11.816a.468.468 0 00-.131.337c0 .126.044.252.131.379l.875.842a.724.724 0 00.394.126c.175 0 .263-.042.35-.126L7 8.364l5.25 5.01a.508.508 0 00.35.126c.175 0 .306-.042.394-.126l.875-.842a.662.662 0 00.131-.38.378.378 0 00-.175-.336L8.547 6.77z" fill="#000000"></path>
+              </symbol>
+            </svg>
+          </section>
+        </klarna-installments-modal>
+    </div>
+</div>

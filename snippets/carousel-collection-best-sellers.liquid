@@ -1,0 +1,263 @@
+{% for item in section.blocks %}
+  {% assign settings = item.settings %}
+  {% assign product = settings['carousel-product_item'] %}
+  {% assign image = settings['carousel-product_image'] | image_url %}
+  {% assign image_hover = settings['carousel-product_image_hover'] | image_url %}
+
+  {% style %}
+    .carousel-product__item {
+      position: relative;
+    }
+
+    .carousel-product__image--{{ product.id }} {
+      background-image: url({{ image }});
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .carousel-product__info .image_link:hover .carousel-product__image--{{ product.id }}, .preload {
+      background-image: url({{ image_hover }});
+    }
+
+    @media screen and (max-width: 750px) {
+      .carousel-product__info .image_link:hover .carousel-product__image--{{ product.id }} {
+        background-image: url({{ image }});
+      }
+    }
+  {% endstyle %}
+{% endfor %}
+<div class="best-sellers__carousel">
+  <div class="best-sellers__carousel__title">Shop the Latest</div>
+
+  <div class="carousel-product__container best-sellers__carousel-hp">
+    {% for item in section.blocks %}
+      {% assign settings = item.settings %}
+      {% assign product = settings['carousel-product_item'] %}
+      {% assign variant = product.variants | last %}
+
+      {% assign image = settings['carousel-product_image'] | image_url %}
+      {% assign image_hover = settings['carousel-product_image_hover'] | image_url %}
+
+      {% assign price_discount = product.compare_at_price | money_without_trailing_zeros %}
+      {% assign price_original = product.price | money_without_trailing_zeros %}
+
+      {% if settings['carousel-product_title'] != blank %}
+        <div class="carousel-product__item">
+          <div class="carousel-product__info">
+            <a href="{{ product.url }}" class="image_link">
+              <div class="carousel-product__image carousel-product__image--{{ product.id }}"></div>
+            </a>
+            <div class="carousel-product__info_item">
+              <h3 class="carousel-product__title">{{ settings['carousel-product_title'] }}</h3>
+              {% if settings['carousel-product_subtitle'] != blank %}
+                <h4 class="carousel-product__subtitle">{{ settings['carousel-product_subtitle'] }}</h4>
+              {% endif %}
+              <span class="carousel-product__price">
+                {% if settings['carousel-product_subtitle'] contains "Expanded variety 4" %}
+                  189
+                {% if product.compare_at_price %}
+              <span class="carousel-product__price-discount">209</span>
+                {% endif %}
+                {% else %}
+                {{ price_original }}
+                {% if product.compare_at_price %}
+              <span class="carousel-product__price-discount">{{ price_discount }}</span>
+                {% endif %}
+                {% endif %}
+              </span>
+              {% if settings['carousel-product_description'] != blank %}
+                <p class="carousel-product__description">{{ settings['carousel-product_description'] }}</p>
+              {% endif %}
+            </div>
+          </div>
+          <a href="{{ product.url }}" class="carousel-product__button carousel-product__button--version-A">
+            {{ settings['carousel-product_button'] | upcase }}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .best-sellers__carousel-hp .slick-arrow .icon {
+    position: relative;
+    top: 1px;
+    display: block;
+    width: 46px;
+    height: 46px;
+    fill: #8ab757;
+    background: #ffffff4a;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0px 0px 5px 2px #acacac;
+    box-sizing: border-box;
+  }
+  .best-sellers__carousel-hp .slick-arrow .icon:hover {
+    background: #8ab757;
+    fill: #ffffff;
+  }
+  .best-sellers__carousel-hp .slick-disabled {
+    display: none !important;
+  }
+  .best-sellers__carousel-hp .slick-prev {
+    left: 0px;
+  }
+  .best-sellers__carousel-hp .slick-next {
+    right: 0%;
+  }
+  .best-sellers__carousel__title {
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 3rem auto;
+  }
+
+  .carousel-product__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  .carousel-product__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 0.7rem;
+    width: calc(25% - 20px);
+    min-width: 300px;
+  }
+
+  .carousel-product__item:hover {
+    box-shadow: 1px 1px 10px #949494;
+  }
+
+  .carousel-product__info_item {
+    padding: 0.6rem 0.5rem 0;
+  }
+
+  .carousel-product__image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+
+  .carousel-product__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+    min-height: 4.2rem;
+    margin-bottom: -2rem;
+  }
+  .carousel-product__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .carousel-product__price {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .carousel-product__price-discount {
+    font-size: 18px;
+    color: #6b7280;
+    text-decoration: line-through;
+    font-weight: 300;
+  }
+  .carousel-product__description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .carousel-product__button {
+    display: block;
+    background-color: #78a14a;
+    color: #ffffff;
+    width: 100%;
+    padding: 0.6rem 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 1.3rem;
+    transition: 0.5s;
+    font-family: Avenir Next, sans-serif;
+  }
+
+  @media (max-width: 480px) {
+    .carousel-product__container {
+      padding: 0;
+    }
+    .best-sellers__carousel__title {
+      font-size: 30px;
+      margin: 0 auto 1rem;
+    }
+    .best-sellers__carousel-hp .slick-prev {
+      left: -15px;
+    }
+    .best-sellers__carousel-hp .slick-next {
+      right: -15px;
+    }
+  }
+  @media (max-width: 384px) {
+    .carousel-product__title {
+      margin-bottom: 0;
+    }
+    .carousel-product__item {
+      min-width: inherit;
+      margin: 0px;
+      padding: 0 5px;
+    }
+  }
+</style>
+
+<script>
+  $(document).ready(function () {
+    $('.best-sellers__carousel-hp').slick({
+      dots: true,
+      speed: 300,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1032,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 772,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ],
+    });
+  });
+</script>

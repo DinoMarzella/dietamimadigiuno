@@ -1,0 +1,31 @@
+{% include 'page-block-custom-html' ,block:section %}
+
+{% schema %}
+{
+    "name": "Custom html 2.0",
+    "presets": [{ 
+        "name": "CUSTOM HTML 2.0",
+        "category": "MODERN"
+    }],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full page width",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "space_around",
+        "label": "Add spacing above and below",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "code",
+        "label": "HTML",
+        "default": "<h2>Custom HTML</h2><p>Use this advanced section to build your own layouts or to add custom HTML or scripts.</p>"
+      }
+    ]
+  }
+{% endschema %}  

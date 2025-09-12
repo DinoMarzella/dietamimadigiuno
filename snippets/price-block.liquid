@@ -1,0 +1,40 @@
+{% unless priceblock %}
+<style>
+  mainprice {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  smallboxtext {
+    font-size: 18px;
+  }
+
+  installment {
+    font-size: 19px;
+    line-height: 1;
+  } 
+
+  .price-box.do-add-to-cart {
+    padding-bottom: 0px;
+  }
+ 
+  bigspan {
+    font-size: 40px;
+    font-weight: bold;
+    /* height: 30px; */
+    display: inline-block;
+  }mainprice.green-price{
+    color: #73984a;
+}  
+</style>
+{% assign priceblock = true %} {% endunless%}
+
+<div class="main-price-new"   >
+  <div> 
+    <mainprice class="{{class}}"> {{variant.price |  money_without_trailing_zeros}}</mainprice> 
+    <smallboxtext> /box — or </smallboxtext>
+  </div>
+  <installment
+    >4 interest-free payments of <bigspan>{{variant.price | divided_by:4 | money_without_trailing_zeros}}</bigspan>
+  </installment>
+</div>

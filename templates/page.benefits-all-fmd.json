@@ -1,0 +1,777 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_X3QC9A": {
+      "type": "image-banner",
+      "settings": {
+        "banner_url": "",
+        "desktop_image": "shopify://shop_images/benefits-hero_2200x_ee0a9931-c987-41a3-8ead-6d3ea9b68b65.webp",
+        "mobile_image": "shopify://shop_images/benefits-hero_2200x_ee0a9931-c987-41a3-8ead-6d3ea9b68b65.webp"
+      }
+    },
+    "advanced_content_aYpfCB": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_dmWaw9": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 1500px; padding: 50px 20px; 30px; margin: auto;\">\n<h2 style=\"color: black;\">La dieta mima digiuno di 5 giorni (FMD) di Prolon è uno strumento scientificamente provato che offre notevoli benefici per un invecchiamento sano e duraturo: <b>scopri i benefici.</b>\n</h2>\n<hr>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "html_D9rcNF": {
+          "type": "html",
+          "settings": {
+            "code": "<script data-lyvecom async src=\"https://dashboard.lyvecom.com/widget/widget.js\"></script>\n      <script>\n          (() => {\n              const scriptElement = document.querySelector('script[data-lyvecom]');\n              scriptElement.addEventListener('load', () => {\n                  LyveComWidget.mount({\n                  account: '67f0074fad85669ec2972a80',\n                  stories: true,\n                  lng: 'en',\n                  position: 'left',\n                  positionLeft: '0',\n                  positionBottom: '0'\n                });\n          })})()\n      </script>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_dmWaw9",
+        "html_D9rcNF"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "facts_accordion_eJCe9M": {
+      "type": "facts-accordion",
+      "blocks": {
+        "text_xjPUHA": {
+          "type": "text",
+          "settings": {
+            "title": "Invecchiamento sano",
+            "description": "<h4>Clinicamente testato per:</h4><ul><li>Tre cicli all'anno per 20 anni possono favorire un invecchiamento sano</li><li>Supporta un sistema immunitario sano e marcatori metabolici sani</li><li><strong>Supporta i processi naturali del corpo di pulizia intracellulare e rinnovamento cellulare</strong> : le cellule appaiono come versioni più giovani di se stesse dopo il digiuno</li><li><strong>Aiuta il corpo a ringiovanire per un invecchiamento sano</strong> *</li><li><strong>Invecchiamento sano attraverso il ringiovanimento cellulare<br/><br/></strong></li></ul><h4><a href=\"/pages/invecchiamento-sano\" title=\"/pages/invecchiamento-sano\"><strong>Scopri di più sull'invecchiamento sano→</strong></a></h4><h5><strong>Fonte e dati:</strong></h5><h6>*Tutti i risultati si basano su tre o quattro cicli di FMD, completati una volta al mese per tre o quattro mesi consecutivi.</h6><h6>**Basato su calcoli di una simulazione sanitaria; sono ancora necessari ulteriori dati.</h6><h6><a href=\"https://www.nature.com/articles/s41467-024-45260-9\" target=\"_blank\"><em>https://www.nature.com/articles/s41467-024-45260-9</em></a></h6>",
+            "show_image": true,
+            "image": "shopify://shop_images/Prolon_Benefits_-_well-being.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_pp3pCj": {
+          "type": "text",
+          "settings": {
+            "title": "Perdita di peso",
+            "description": "<h4>Clinicamente testato per:</h4><ul><li>Perdita di peso media di 5,7 libbre <em>*</em></li><li>Mira <strong>alla perdita di grasso viscerale</strong></li><li>Perdita di peso focalizzata sui grassi, con particolare attenzione al grasso addominale</li><li><strong>Ridurre la circonferenza della vita di 1,5 pollici </strong><em>*</em></li><li>Perdita di peso duratura dopo il ritorno alla dieta normale**</li><li>Diminuisce l'IMC</li><li><strong>Protezione muscolare: </strong><em>a differenza di altri programmi di perdita di peso, perdita di peso/grasso senza diminuzione della massa muscolare magra</em></li><li>Preserva la funzione muscolare</li><li><strong>Perdi fino a 5 libbre in un ciclo</strong> <strong><br/></strong></li></ul><h4><a href=\"/pages/benefici-perdita-di-peso\" title=\"/pages/benefici-perdita-di-peso\"><strong>Scopri di più sulla perdita di grasso/peso→</strong></a></h4><h5><strong>Fonte e dati:</strong></h5><h6>*Dopo tre cicli consecutivi, effettuati mensilmente.</h6><h6>** <em>Quando valutato tre mesi dopo il completamento del ciclo FMD</em> .</h6><h6><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816332/\"><span style=\"text-decoration:underline\">Italiano: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816332/, </span></a><a href=\"https://pubmed.ncbi.nlm.nih.gov/35034194/\"><span style=\"text-decoration:underline\">https://pubmed.ncbi.nlm.nih.gov/35034194/, https://pubmed.ncbi.nlm.nih.gov/35034194/, </span></a><a href=\"https://www.nature.com/articles/s41467-024-45260-9\"><span style=\"text-decoration:underline\">https://www.nature.com/articles/s41467-024-45260-9</span></a></h6>",
+            "show_image": true,
+            "image": "shopify://shop_images/Prolon_Benefits_-_fattissue.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_rif7YH": {
+          "type": "text",
+          "settings": {
+            "title": "Salute della pelle",
+            "description": "<h4>Clinicamente testato per:</h4><ul><li><strong>Aumenta l'idratazione della pelle del 25% </strong><em>*</em></li><li><strong>Migliora le linee sottili </strong><em>*</em></li><li>Migliora <strong>l'aspetto generale della pelle, la sua luminosità e la sua chiarezza </strong><em>*</em></li><li><strong>Uniforma il tono della pelle </strong><em>*</em></li></ul><h4>Gli utenti segnalano:</h4><ul><li><strong>Maggiore fiducia</strong> nell'aspetto della propria pelle</li><li><strong>Pelle più liscia</strong> </li><li>Miglioramento <strong>della qualità</strong> e della consistenza della pelle<br/></li></ul><h4><a href=\"/pages/benefici-salute-della-pelle\" title=\"/pages/benefici-salute-della-pelle\"><strong>Scopri di più sulla salute della pelle →</strong></a></h4><h5><strong>Fonte e dati:</strong></h5><h6>* <em>Tutti i seguenti tre cicli mensili consecutivi di 5 giorni</em></h6><h6><a href=\"https://www.mdpi.com/2077-0383/12/5/1710\"><span style=\"text-decoration:underline\">https://www.mdpi.com/2077-0383/12/5/1710</span></a><br/></h6>",
+            "show_image": true,
+            "image": "shopify://shop_images/ProLon_Blog_Image-skin.png",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_PwPLTi": {
+          "type": "text",
+          "settings": {
+            "title": "Cardiometabolico",
+            "description": "<h4>Clinicamente testato per:</h4><ul><li>20 giorni di Prolon sono efficaci quanto 120 giorni di dieta mediterranea sulla salute del cuore</li><li>Supporta i marcatori metabolici sani</li><li>Può supportare livelli sani di colesterolo*</li><li>Supporta una sana pressione sanguigna sistolica, per coloro che sono già entro livelli sani*</li><li>Come parte di uno stile di vita sano, può aiutare a sostenere la salute cardiovascolare <strong><br/></strong></li></ul><h5><strong>Fonte e dati:</strong></h5><h6>*Dopo tre cicli consecutivi, effettuati mensilmente.</h6><h6><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816332/\"><span style=\"text-decoration:underline\"><em>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816332/</em></span></a></h6><h6><a href=\"https://www.nature.com/articles/s41467-024-45260-9\"><span style=\"text-decoration:underline\">https://www.nature.com/articles/s41467-024-45260-9</span></a></h6>",
+            "show_image": true,
+            "image": "shopify://shop_images/ProLon_Blog_Image-hearthealth.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_YTYgCy": {
+          "type": "text",
+          "settings": {
+            "title": "Energia e concentrazione",
+            "description": "<h4>Dopo il digiuno gli utenti hanno segnalato:</h4><ul><li><strong>Miglioramenti nei livelli di energia</strong></li><li><strong>Maggiore concentrazione e chiarezza</strong><br/></li></ul><h4><a href=\"/pages/benefici-energia-e-concentrazione\" title=\"/pages/benefici-energia-e-concentrazione\"><strong>Scopri di più su energia e concentrazione→</strong></a></h4>",
+            "show_image": true,
+            "image": "shopify://shop_images/ProLon_Blog_Image-energy.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_WVGj48": {
+          "type": "text",
+          "settings": {
+            "title": "Mentale/Emozionale/Comportamentale",
+            "description": "<h4>Dopo il digiuno gli utenti hanno segnalato:</h4><ul><li>Senso di realizzazione</li><li><strong>Aumento della fiducia in se stessi</strong></li><li><strong>Riduzione della voglia di cibo e zucchero</strong> , con conseguenti abitudini alimentari più sane</li><li><strong>Maggiore consapevolezza</strong> nelle scelte alimentari e nel controllo delle porzioni</li><li>Maggiore motivazione a mantenere uno stile di vita più sano e a migliorare il benessere generale</li><li>Maggiore <strong>controllo sulla salute e un rapporto più positivo con il cibo</strong></li><li>Maggiore <strong>motivazione all'esercizio fisico</strong> /Cambiamenti dello stile di vita autoiniziati</li></ul><p></p><h4><a href=\"/pages/benefici-mentali-ed-emozionali\" title=\"/pages/benefici-mentali-ed-emozionali\"><strong>Scopri di più sul comportamento→</strong></a></h4><h5><strong>Fonte e dati:</strong></h5><h6>* <em>Tutti i seguenti tre cicli mensili consecutivi di 5 giorni</em></h6><h6>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11067095/</h6><h6>https://app.box.com/s/v26ggteqtdip5o2k1vdm281lul7kdmv5/file/1237037690702</h6>",
+            "show_image": true,
+            "image": "shopify://shop_images/ProLon_Blog_Image-focus_eca5963c-6fdb-47d8-bb89-74567e00d3bb.webp",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xjPUHA",
+        "text_pp3pCj",
+        "text_rif7YH",
+        "text_PwPLTi",
+        "text_YTYgCy",
+        "text_WVGj48"
+      ],
+      "custom_css": [
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-container {max-width: 1500px; margin: auto;}",
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {display: none;}",
+        "h3 {font-size: 25px;}",
+        "ul {list-style: disc;}",
+        "li {margin-left: 20px; padding-bottom: 10px; line-height: 1.8rem;}",
+        "h6 {font-size: 12px; letter-spacing: 0; text-transform: none;}",
+        "h5 {font-size: 12px; letter-spacing: 0; text-transform: none; border-top: 1px dashed gray; padding-top: 10px;}",
+        "h4 {color: #73914a; padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 22,
+        "mobile_top_padding": 3,
+        "mobile_bottom_padding": 3,
+        "header": "<p>Benefici della Dieta Mima Digiuno (DMD)</p>",
+        "cta_text": "Leggi di più",
+        "cta_url": "",
+        "mobile_copy": "Hai bisogno di ulteriori informazioni sui nostri programmi?"
+      }
+    },
+    "9126296c-78c2-4cf7-9bed-843dcace8d86": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clean_Up.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Cellular Rejuvenation\n(Autophagy)</h3>\n<p style=\"padding-top: 20px;\">A fasting induced miracle of biology called autophagy (which won the Nobel Prize in Medicine in 20), cellular rejuvenation is key to your vibrance, emotions, performance, mental clarity,healthy aging and longevity.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Weight_Loss.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Fat Focused <br>Weight Loss</h3>\n<p style=\"padding-top: 20px;\">Kickstart weight loss (on average 5 pounds), especially belly fat, while protecting lean body mass, (which althletes and performance minded will love). The key is your body thinks your fasting, while you're staying nourished.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Precise_Nutrition.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Changed Relationship<br>with Food</h3>\n<p style=\"padding-top: 20px;\">In this 5-day journey, ProLon helps you to understand, appreciate, and change your relationship with food. You can successfully function without all the mindless eating and extra calories.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "552ca599-bb03-413f-a543-706f5c9b3c3e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Energy.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Improved Sense<br>of Well-being</h3>\n<p style=\"padding-top: 20px;\">Your emotional well being is a huge benefit as most people after ProLon feel successful vs the other long term diets that set you up to quit. Feel empowered, rejuvenated, vibrant, and with more mental clarity.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5b4fc08b-6220-4b87-8a38-9977e71e88a9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #fef3e4; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clarity.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Healthier, Younger<br>Looking Skin</h3>\n<p style=\"padding-top: 20px;\">Clinically shown after 3 cycles of ProLon (15 days total), to reduce fine lines and wrinkles. Your skin is rejuvenating from the inside out, which users come to love!</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "9a7634ff-560a-4a50-b8fb-9e8c2be4f348": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Convenient.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Convenient, Fits Into\nEvery Lifestyle</h3>\n<p style=\"padding-top: 20px;\">The beauty of ProLon Fasting Nutrition is it is in 5-day cycles. We recommend doing at least 3 cycles a year (only 15 days). You can include ProLon into your already healthy routine with minimal disruption.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-0",
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-1",
+        "template--14463572934702__9126296c-78c2-4cf7-9bed-843dcace8d86-1668362187d98c7b0f-2",
+        "552ca599-bb03-413f-a543-706f5c9b3c3e",
+        "5b4fc08b-6220-4b87-8a38-9977e71e88a9",
+        "9a7634ff-560a-4a50-b8fb-9e8c2be4f348"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3>Biological Age Reversal  </h3><p>The data speaks for itself: studies show that 5-Day FMD may reduce biological age by 2.5 years after just three consecutive monthly cycles. And the benefits keep coming - following Prolon three times a year between the ages of 50 and 70 could lower your biological age score by up to 11 years.*</p><h3>Immune and Metabolic Health Support</h3><p>As we age, maintaining a healthy immune system and healthy metabolic markers such as blood sugar levels, cholesterol, and blood pressure becomes essential to reducing long-term risks. Prolon’s FMD is clinically shown to support both, helping lay the foundation for a longer, more vibrant life. </p>",
+        "button_label": "",
+        "button_link": "shopify://products/prolon-fasting-nutrition-extra",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f3497522-49ea-41b4-a24a-f5def5a9b144": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Autophagy.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3>Cellular Rejuvenation</h3><p>Research indicates that Prolon taps into autophagy, your body’s natural processes of intracellular cleanup and renewal. After the 5-day cycle your cells are rejuvenated, potentially functioning and appearing like new versions of their younger selves.</p><p>While even a single cycle of Prolon 5-Day offers numerous benefits, each builds upon the last. We recommend an initial three-month cycle for optimal impact, followed by three to four cycles yearly to maximize results (about once each quarter). Take control of your aging today, and experience the power of our longevity science firsthand! </p><p><em>*based on calculations from a health simulation; more data is still needed</em></p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "73029347-7b90-4f29-a683-7c5a54b61381": {
+      "type": "TWProlonBenefits",
+      "blocks": {
+        "6ef85315-de2e-45a0-a5c6-afa465a89099": {
+          "type": "cards",
+          "settings": {
+            "title": "Promote Cellular Renewal",
+            "description": "Trigger autophagy, (the clean-up of old and worn out cellular components), and help your body rejuvenate.",
+            "image_overide_url": ""
+          }
+        },
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501": {
+          "type": "cards",
+          "settings": {
+            "title": "Support Metabolic Health",
+            "description": "Helps you maintain healthy systolic blood pressure. *Results based on 3 consecutive monthly cycles.",
+            "image_overide_url": ""
+          }
+        },
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92": {
+          "type": "cards",
+          "settings": {
+            "title": "Enhance Clarity & Performance",
+            "description": "Customers report feeling greater focus, clarity and energy toward the end and after completing the fast.",
+            "image_overide_url": ""
+          }
+        },
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156": {
+          "type": "cards",
+          "settings": {
+            "title": "Fat Focused Weight Loss*",
+            "description": "Kickstart weight loss (on average 5 pounds), especially belly fat, while protecting lean body mass.",
+            "image_overide_url": ""
+          }
+        },
+        "5575b93e-0325-42c1-bf02-c988c1ff138f": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "shopify://collections/all",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "6ef85315-de2e-45a0-a5c6-afa465a89099",
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501",
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92",
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156",
+        "5575b93e-0325-42c1-bf02-c988c1ff138f"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<h3>Key Benefits Fasting Mimicking Technology</h3>",
+        "image_width": "100px",
+        "card_width": "w-1/4",
+        "background_color": "#ffffff",
+        "text_alignment": "text-center",
+        "content_alignment": "items-center",
+        "background_shadow": "bg-transparent"
+      }
+    },
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<div style=\"max-width: 1280px; margin: auto; padding: 30px 0px;\">\n    <h3 style=\"font-size: 34px; text-align: center; font-weight:700;\">\n        Join the health trend of fasting with food™.\n    </h3>\n    <br>\n    <p style=\"font-size: 20px; text-align: center;\">The ProLon Fasting Mimicking Diet is the first and only meal program that has gone through clinical trials at\n        the University of Southern California and been patented for its healthy-aging effects!  This 5-day meal\n        program provides scientifically researched micro- and macro-nutrients in precise quantities and combinations\n        that nourish you, but are not recognized as food by your body and therefore mimics a fasting state! \n    </p>\n</div>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "c7cf97de-37a9-41ff-b006-2950c67f795c": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "The ProLon Fasting Mimicking Diet is your secret to fasting",
+        "description": "",
+        "text_position": "md:items-end md:justify-start",
+        "content_position": "justify-center text-center",
+        "background_shadow": "backdrop-blur-sm bg-white/25",
+        "text_color": "#ffffff",
+        "under_header": false
+      }
+    },
+    "2e036f94-feea-4a01-8025-982c50a5306d": {
+      "type": "TWImageWithBoxText",
+      "disabled": true,
+      "settings": {
+        "tag": "MEET THE CREATOR OF THE FMD",
+        "title": "Dr. Valter Longo, Ph.D",
+        "description": "<p>Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.</p>\n<br>\n<p>For the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).<br><br>It is derived from these findings that we are able to bring you ProLon and </p>",
+        "box_position": "md:justify-start",
+        "add_padding": false
+      }
+    },
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5": {
+      "type": "TWPageHeroBanner",
+      "blocks": {
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "shopify://collections/all",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Healthy Convenience",
+        "description": "Get many of the benefits of a 5-day fast without giving up food with ProLon, the first and only patented 5-Day Fasting Mimicking Diet. ProLon gently guides your body into a fasting state to get many of the health benefits that come from long fasts while enjoying delicious meals and tasty snacks.",
+        "text_position": "md:items-center md:justify-center",
+        "content_position": "justify-center text-center",
+        "background_shadow": "bg-transparent",
+        "text_color": "#000000",
+        "under_header": false
+      }
+    },
+    "6e1a61d6-00f1-4980-b176-025e881e5d99": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<p style=\"text-align:center; font-weight:700; font-size: 34px;\">What the Experts have to Say</p>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Amy Savagian, MD",
+        "description": "“I love the science supporting ProLon, and I love that the science has been published in multiple peer reviewed journals. It allows me to suggest ProLon with confidence. I have used fasting and time restricted eating in my practice for years; ProLon augments this and takes it to the next level.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "TRIPLE BOARDED IN INTERNAL, INTEGRATIVE AND OBESITY MEDICINE"
+      }
+    },
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. William Hsu, M.D",
+        "description": "“ProLon carries so many weight, metabolic and cellular benefits that not only do I recommend it, but I decided to join the company’s mission full time as Chief Medical Officer”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": false,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "CHIEF MEDICAL OFFICER, L-NUTRA, INC  <br>FORMER PROFESSOR OF MEDICINE, HARVARD"
+      }
+    },
+    "835ab035-03ee-444e-9227-8bd33197aa9f": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Maria Tulpan, M.D.",
+        "description": "“Not only do I recommend ProLon as a frequent nutritional intervention, I’ve done it myself numerous times. I love this product so much, I invested in the company.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "ENDOCRINOLOGY, DIABETES & METABOLISM <br>L-NUTRA AMBASSADOR"
+      }
+    },
+    "2169fcb5-9999-4349-90cc-cc5639da5e55": {
+      "type": "TWOnlyImage",
+      "disabled": true,
+      "settings": {
+        "max_height": "450px",
+        "under_header": false
+      }
+    },
+    "advanced_content_zMTtiY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_WNLyXp": {
+          "type": "html",
+          "settings": {
+            "code": "<h2> Supportato da oltre 25 anni di ricerca\n </h2><p>Ou Le nostre tecnologie innovative sono state sottoposte a rigorosi test indipendenti da parte di alcune delle istituzioni e dei centri medici più prestigiosi al mondo. Queste collaborazioni, che rappresentano il fondamento di L-Nutra, sono state fondamentali per dimostrare l'efficacia della nostra tecnologia Mima Digiuno.<br></p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "html_gMx4DW": {
+          "type": "html",
+          "settings": {
+            "code": "<hr>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_WNLyXp",
+        "html_gMx4DW"
+      ],
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; margin-bottom: 0px; padding: 40px 20px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: #fff; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_ayF6K7": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_Kck4Dm": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">32</span><p> Studi clinici sull'uso della nutrizione che imita il digiuno.</p>\n</div>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "html_eUBKNP": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">200</span><p> Brevetti rilasciati o in attesa di approvazione a livello mondiale su metodi che imitano il digiuno e la nutrizione.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_Wr3cKF": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">18</span><p> Prestigiose università partner nella sperimentazione e nella ricerca sulla DMD.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_pkrYmE": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">100M</span><p> Nei finanziamenti ricevuti per sostenere la ricerca e lo sviluppo.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_Kck4Dm",
+        "html_eUBKNP",
+        "html_Wr3cKF",
+        "html_pkrYmE"
+      ],
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; padding: 40px 20px 50px; margin-top: 0px;}",
+        ".titlebg {font-size: 55px; color: #67c908;}",
+        ".row-highlight {background-color: #ffff; padding: 30px; border-radius: 20px; text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_fd3TkW": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_JGEJ9A": {
+          "type": "html",
+          "settings": {
+            "code": "<h2> Sostieni l'invecchiamento sano con ProLon </h2><p> Noi di Prolon abbiamo creato prodotti che possono essere utilizzati quotidianamente per supportare i tuoi obiettivi di invecchiamento sano. Ogni piccolo cambiamento contribuisce a rallentare il ritmo dell'invecchiamento e a rinnovarti dall'interno verso l'esterno. <br></p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "html_UnGQ7W": {
+          "type": "html",
+          "settings": {
+            "code": "<hr>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_JGEJ9A",
+        "html_UnGQ7W"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 500;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "featured_collection_arTbGj": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".grid-product__meta {text-align: left;}",
+        ".grid-product__image-mask {height: 165px;}",
+        ".grid.grid {display: block;}"
+      ],
+      "settings": {
+        "title": "",
+        "home_featured_products": "tutti-i-prodotti",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "text_columns_Ga4mXt": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_KXFn9y": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Longevity Supplements: Do They Really Work?",
+            "text": "<p><br>The concept behind the L-Pill (short for Longevity Pill) emerged from our research on the four...<br><br><a href=\"https://prolonlife.com/blogs/stories/longevity-supplements\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/longevity-supplements"
+          }
+        },
+        "text_block_qfY8Hn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Longevity Diet Shopping List: Stock Up on These Staples",
+            "text": "<p><br>The Longevity Diet draws from years of research on the eating and lifestyle patterns of people...<br><br><a href=\"https://prolonlife.com/blogs/stories/longevity-diet-shopping-list-stock-up-on-these-staples\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/longevity-diet-shopping-list-stock-up-on-these-staples"
+          }
+        },
+        "text_block_UzKMJM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "What is the Secret Behind Fasting for Longevity?",
+            "text": "<p><br>Praising the benefits of fasting seems simple on the surface. Fasting is well known modality for...<br><br><a href=\"https://prolonlife.com/blogs/stories/what-is-the-secret-behind-fasting-for-longevity\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/what-is-the-secret-behind-fasting-for-longevity"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_KXFn9y",
+        "text_block_qfY8Hn",
+        "text_block_UzKMJM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-weight: 500; text-align: left;}",
+        ".section-header {text-align: left;}",
+        ".rte-setting a:not(.rte__image),.rte a:not(.rte__image) {text-decoration: none; color: #73914a; font-weight: 600;}",
+        "p {text-align: left;}",
+        ".medium-up--one-third {background-color: #fcfcf7; padding: 20px 30px; border-radius: 20px;}",
+        "@media only screen and (min-width: 769px) {.medium-up--one-third {width: 31%; margin-left: 1%; margin-right: 1%; }}",
+        ".index-section {background-color: #fcfcf7; padding: 40px 0; margin-top: 0px; margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "title": "Want to dig deeper into the benefits? Latest blog, articles, and tips on skin health, and longevity.",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_6nCejY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_kHr4Ry": {
+          "type": "html",
+          "settings": {
+            "code": "<p>Studi e trial clinici:\n</p><hr>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "html_cgjQpG": {
+          "type": "html",
+          "settings": {
+            "code": "<ul>\n<li>https://www.mdpi.com/2077-0383/12/5/1710</li>\n</ul>",
+            "width": "75%",
+            "alignment": "center"
+          }
+        },
+        "html_B9P3wz": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (min-width: 769px) {\nh3 {font-weight: normal;\nfont-size: 25px;}\nh2 {color: #73914a;\nfont-size: 34px;\nfont-weight: normal;}\np {font-size: 16px;}\n}\n\n@media only screen and (max-width: 768px) {\nh3 {\nfont-size: 18px !important;}\nh2 {font-size: 24px !important; \ncolor: #73914a;\nfont-weight: normal;}\np {font-size: 14px;\ntext-align: left;}\n\n}\n\n\n#shopify-section-template--17812500185246__advanced_content_zMTtiY {background-color: #fcfcf7;}\n\n.drk-grn {color: #1e4136;}\n\nhr{ border: none;\n  border-top: 2px dotted #999;\n  color: #999;\n  background-color: #fff;\n  height: 1px;\n  margin: 10px 0;}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_kHr4Ry",
+        "html_cgjQpG",
+        "html_B9P3wz"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner_X3QC9A",
+    "advanced_content_aYpfCB",
+    "facts_accordion_eJCe9M",
+    "9126296c-78c2-4cf7-9bed-843dcace8d86",
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02",
+    "f3497522-49ea-41b4-a24a-f5def5a9b144",
+    "73029347-7b90-4f29-a683-7c5a54b61381",
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778",
+    "c7cf97de-37a9-41ff-b006-2950c67f795c",
+    "2e036f94-feea-4a01-8025-982c50a5306d",
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5",
+    "6e1a61d6-00f1-4980-b176-025e881e5d99",
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa",
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b",
+    "835ab035-03ee-444e-9227-8bd33197aa9f",
+    "2169fcb5-9999-4349-90cc-cc5639da5e55",
+    "advanced_content_zMTtiY",
+    "advanced_content_ayF6K7",
+    "advanced_content_fd3TkW",
+    "featured_collection_arTbGj",
+    "text_columns_Ga4mXt",
+    "advanced_content_6nCejY"
+  ]
+}

@@ -1,0 +1,50 @@
+ 
+ <script type="module" crossorigin src="{{"prolon-dashboard.js" | asset_url}}" t></script>
+ <link rel="stylesheet" href="{{"prolon-index.css" | asset_url}}"> 
+<link href="
+https://cdn.jsdelivr.net/npm/primeicons@6.0.1/primeicons.min.css
+" rel="stylesheet">
+<style>
+  a[href="#/virtual-inventory"] {
+    display: none;
+} 
+</style>
+<script> 
+
+
+
+                    window.base_provider_name = "{{customer.first_name}} {{customer.last_name}}";
+                    window.base_provider_email = "{{customer.email}}"  ;
+
+                    // window.store_url     = "prolon-pro.myshopify.com"
+                    window.store_url = "prolon-fmd-2020.myshopify.com";
+                    window.store_url_for_order = '{{ shop.permanent_domain }}'; 
+                    window.current_shopify_store = "prolonlife.com";
+//                  window.store_url= 
+
+                    window.shop_url = "prolonlife.com"
+                    {% if customer.tags contains 'pro-v2-admin' %}
+                    window.isProlonAdmin = true;
+                    {% endif %}; 
+ 
+                    {% if customer.tags contains 'pro-v2-super-admin' %}
+                    window.isSuperAdmin = true;
+                    {% endif %};   
+                    window.provider_name = window.base_provider_name;
+                    window.provider_email = window.base_provider_email;
+                    let LoginAsProviderEmail = localStorage.getItem("LoginAsProviderEmail");
+                    let LoginAsProviderName = localStorage.getItem("LoginAsProviderName");
+
+
+                    if (window.isProlonAdmin && LoginAsProviderEmail != '' && LoginAsProviderEmail != null) {
+                      window.isLoggedinAsProvider = true;
+                      window.provider_email = LoginAsProviderEmail;
+                      window.provider_name = LoginAsProviderName;
+                    } 
+
+ 
+</script>  
+
+    <div id="dashboard-app"></div>   
+
+     

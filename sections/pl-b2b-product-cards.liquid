@@ -1,0 +1,202 @@
+{%- assign data = section.settings -%}
+<div class="w-full bg-[#f4f4f4] pl-b2b-product-cards">
+  <div class="py-12 md:py-[80px]  px-[20px] max-w-[1600px] mx-auto pl-wrapper-features-v3 ">
+    <div class="flex items-center flex-col {% if data.text_on_left %} md:flex-row {% else %} md:flex-row-reverse {% endif %} flex-wrap">
+      <div class="w-full md:px-[20px] mb-[40px] md:mb-0">
+        {%- if data.subtitle.size > 0 -%}
+          <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents  !delay-100">
+            {{ data.subtitle }}
+          </span>
+        {%- endif -%}
+
+        <h2
+          class="
+            mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents
+            !delay-200
+          "
+        >
+          {{ data.title }}
+        </h2>
+        <p
+          class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500"
+        >
+          {{ data.description }}
+        </p>
+      </div>
+      <div class="w-full md:px-[20px]">
+        <div class="relative flex justify-center items-start flex-wrap gap-[30px]">
+          {% assign cards_blocks = section.blocks | where: 'type', 'cards' %}
+          {%- for item in cards_blocks -%}
+            {%- assign transDelay = forloop.index | times: 0.5 | plus: 1.0 -%}
+
+            <div
+              class="w-full  p-[20px] h-full hero__animation-contents single-product-card"
+              style="{{transDelay}}"
+            >
+              <div class="flex flex-col pb-8 bg-gray-50 shadow-md hover:scale-100 transition duration-500 rounded-[15px] overflow-hidden">
+                <a class="relative w-full h-[280px] cursor-pointer product-image-view-button">
+                  <img
+                    src="{{item.settings.image | img_url: '500x'}}"
+                    class="w-[100%] mx-auto object-cover object-center h-full max-h-[280px] "
+                    alt="{{item.settings.title}}"
+                    loading="lazy"
+                  >
+                </a>
+                <div class="flex flex-row items-start justify-between px-[20px] pt-[25px] pb-[20px]">
+                  <a href="/products/{{item.settings.btn_url}}" class="">
+                    <h3 class="text-[20px]  lg:text-[1.8vw] 2xl:text-[26px] text-black font-semibold text-left">
+                      {{ item.settings.title }}
+                    </h3>
+                    <p class="text-black font-normal text-[12px] text-left lg:whitespace-nowrap md:text-[1.1vw] 2xl:text-base">
+                      {{ item.settings.subtitle }}
+                    </p>
+                  </a>
+                  <div class="w-max ">
+                    <p
+                      class="w-full text-[18px] md:text-[26px] text-black  text-center font-semibold"
+                    >
+                      {{ item.settings.price }}
+                    </p>
+                  </div>
+                </div>
+                <div class="w-full h-[1px] border-b border-gray-500"></div>
+
+                <div class="w-full flex flex-col md:flex-row justify-center items-center py-[15px]">
+                  <div
+                    class="
+                      w-full text-[16px] md:text-[18px] text-black font-normal px-[20px] text-center
+                      md:min-h-[110px]
+                      xl:min-h-[81px]
+                    "
+                  >
+                    {{ item.settings.description }}
+                  </div>
+                </div>
+
+                <div class="pt-8 w-full px-[20px] flex justify-center items-center flex-col gap-3 ">
+                  <a
+                    href="{{item.settings.btn_url}}"
+                    class="inline-block py-[10px] px-7 text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#77A117] bg-[#77A117] text-white border border-gray-300 max-w-[200px]"
+                    q:id="3t"
+                  >
+                    {{ item.settings.btn_text }}
+                  </a>
+                </div>
+              </div>
+            </div>
+            {% comment %}
+              <div class="w-[30%] max-w-[350px] mx-auto" >
+                <img
+                  class="relative w-full max-h-[310px] object-cover h-full !delay-300 hero__animation-contents rounded-md"
+                  src="{{item.settings.image | img_url: '500x'}}"
+                  alt="Feature Image 1"
+                >
+                  <p class="my-[10px] text-[20px]  lg:text-[1.8vw] 2xl:text-[26px] text-black font-semibold text-left">{{item.settings.title }}</p>
+                  <p class="text-black font-normal text-[12px] text-left lg:whitespace-nowrap md:text-[1.1vw] 2xl:text-base"> {{item.settings.subtitle }} </p>
+                  <a
+                    href="{{item.settings.btn_url}}"
+                    class="inline-block py-[10px] px-7 text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#77A117] bg-[#77A117] text-white border border-gray-300 max-w-[200px]"
+                    q:id="3t"
+                  >
+                    {{ item.settings.btn_text }}
+                  </a>
+              </div>
+            {% endcomment %}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-b2b-product-cards');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL B2B Product Cards",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Why stay younger</b> than your age? "
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Why Prolon"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Close to 90% of humans will die from one of four age related conditions: Diabetes, Cancer, Cardiovascular and Alzheimer's diseases. When your cells and metabolism get older, you lose the power of rejuvenation and healing, and become prone to these conditions. Between age 40 and 70 you start experiencing aging symptoms with muscle mass loss, weight gain, mood and focus change, blood sugar, blood pressure, cholesterol, inflammaging, skin changes, etc.<br /><br /> ProLon helps you create years of difference between your chronological age and biological age so that you stay healthy today and delay the onset of age-related conditions. Read the scientific articles here."
+    },
+    {
+      "type": "checkbox",
+      "id": "text_on_left",
+      "label": "Text On Left",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "<b>Slow Down Bioage & Age Gracefully</b><br /> ProLon Everyday Nutrition"
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "REJUVENATION FROM WITHIN"
+        },
+        {
+          "type": "html",
+          "id": "description",
+          "label": "Description",
+          "default": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "<b>$190</b>"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Add to Cart"
+        },
+        {
+          "type": "text",
+          "id": "btn_url",
+          "label": "Button URL",
+          "default": "#"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL PL B2B Product Cards",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

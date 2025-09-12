@@ -1,0 +1,153 @@
+<style>
+  .prolon-top-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+</style>
+{% include 'shop-pay-tw' %}
+
+{% include 'product-description-new' %}
+{% include 'product-choice-new-live-payments' %} 
+<div class="hidden" hidden>
+  {% section 'product-template-narrow' %} 
+</div> 
+ 
+{% if collection %}
+  <div class="text-center page-content page-content--bottom">
+    <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn btn--small return-link">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  	$('input[type=radio][name=Quantity]').change(function() {
+		if (this.value.includes('Subscribe & Save')) {
+	      addSubscriptionOptions();
+		} else {
+          $( "#subscription_plans" ).remove();
+		}
+	});
+    
+    $('input[type=radio][name=Quantity]').each(function() {
+      if (this.value.includes('Subscribe & Save')) {
+        if($(this).prop('checked')){
+          addSubscriptionOptions();
+        }
+      } else {
+        $( "#subscription_plans" ).remove();
+      }
+    }); 
+  }); 
+   
+  function addSubscriptionOptions() {
+    $( "form fieldset[name=Quantity]").append( 
+		'<div id="subscription_plans" style="margin-left: 4px;">' + 
+      	'<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">'+
+		'<select name="properties[shipping_interval_frequency]">' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+		'  <option data-charge_interval_frequency="2" value="2" data-end="0">Deliver every 2 months</option>' +
+		'  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' + 
+		'  <option data-charge_interval_frequency="4" value="4" data-end="0">Deliver every 4 months</option>' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="3">Deliver every month for 3 months</option>' +
+		'</select>' +
+		'</div>');   
+  }
+  $('[href="#product-choice"]').click(function(e){
+e.preventDefault();
+ $('html, body').animate({
+        scrollTop: $("#product-choice").offset().top - 100
+      }, 2000);
+});
+</script>{% render 'product_infox' %}<!-- brontoBrowseObject:start -->
+ 
+<script> 
+  $(document).ready(function () {
+    $(".hero-banner").click(function () {
+      $("html, body").animate(
+        { scrollTop: $("#product-choice").offset().top-50  }, 
+        300 
+      );
+    });
+
+    $(document).on('click',".select-product-and-process",function () {
+      //code test 2
+      let context = $(this); 
+      let mainsection = context.closest('.add-to-cart-section');
+      let option2 = $(this).attr("data-option-2");
+      context.find(".btn").text("Adding...");
+      let flavor= mainsection.find('.flavor-type:checked').val();
+      $(`input[data-index="option1"][value="${flavor}"]`).click();
+     
+      $(
+        `.variant-input-radio-wrap input[name="Quantity"][value="${option2}"],.variant-input-wrap input[name="Quantity"][value="${option2}"]`
+      ).click();
+  
+      setTimeout(function () {
+        $(".add-to-cart").click();
+      }, 50);
+      setTimeout(function () {
+        context.find(".btn").text("AGGIUNGI AL CARRELLO");
+      }, 1000);
+    });
+
+
+    $('.do-add-to-cart').click(function(){
+      $(this).closest('.single-product-wrapper').find(".select-product-and-process").click();
+    });  
+    $('[name="subscription_cart"]').click(function () {
+      let val = $(this).val();
+
+      $("select.shipping_interval_frequency").val(val).change();
+    });
+ 
+    $('.flavour-description').html(`<p><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+    $('.flavor-type').click(function(){
+
+      let currentFlavour= $(this).closest('.add-to-cart-section').find('.flavor-type:checked').val(); 
+      if(currentFlavour=='Original')
+      { 
+        $(this).closest('.add-to-cart-section').find('.flavour-description').html(`<p><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>`);
+      }
+      else{ 
+        $(this).closest('.add-to-cart-section').find('.flavour-description').html(`<p><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p>`);
+        
+      }
+
+    });  
+ 
+ });
+</script>
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>

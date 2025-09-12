@@ -1,0 +1,334 @@
+{{'offer-cards.scss' | asset_url | stylesheet_tag }}
+
+<div class="prolon-safe-styling">
+    <section
+        class="section_MBMmk __no-padding_fDLiw __inner-space-all_UCln0 __inner-space-small_Gsj7R __inner-space-medium_m87u6 __inner-space-large_fnLls __inner-space-xlarge_s0qs5"
+        style="--space-bg-all:white;margin-bottom: 0px;">
+        <div class="container_BhTWe">
+
+            <div class="offersInner_Arvmd" style="--offers-top-adjustment:20px;">
+                <div id="offers" class="offersInnerInner_t7TW6 prolon-new-offer-section">
+                    <div class="offersInnerInnerInner_MvHeg">
+                        <div class="topLevelRow_Ckb0y">
+                            <div class="topLevelCol_cJ0YT __first_nvdzj">
+                                <div class="logoWrapper_X6pkV">
+                                 <h4>ProLon 5-Day
+                                </h4>
+                                </div>
+
+                                <div class="content_lqIAq">
+                                    <p>{{section.settings.details}}</p>
+                                </div>
+                                <form class="viewToggle_zEik- __option2_PInHz original">
+                                <div class="div-flex">  <label for="offers-v2-2-view-1"
+                                        class="viewToggleLabel_WTden"><input id="offers-v2-2-view-1" type="radio"
+                                            name="offer-flavor" value="original" checked="checked"
+                                            class="viewToggleInput_0yn5Q">
+                                        <div class="viewToggleText_BhnUC">Original</div>
+                                    </label>
+                                    <div class="viewMiddle_3stjf">
+                                        <div class="viewMiddleInner_yLF0F"></div>
+                                    </div><label for="offers-v2-2-view-2" class="viewToggleLabel_WTden"><input
+                                            id="offers-v2-2-view-2" type="radio" name="offer-flavor" 
+                                            value="new-flavor" class="viewToggleInput_0yn5Q">
+                                        <div class="viewToggleText_BhnUC">New Flavor</div>
+                                    </label>
+                                  </div>
+                                      <div class="text-original-flavor">
+                                        <p style="
+                                          margin-top: 20px;
+                                      "><strong>Soups:</strong> Vegetable, Minestrone, Minestrone Quinoa,&nbsp;Mushroom, Tomato</p>
+                                      </div>
+                                      <div class="text-new-flavor">
+                                        <p style=" 
+                                          margin-top: 20px;
+                                      "><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p> 
+                                      </div>
+                                </form>
+                            </div>
+                            <div class="topLevelCol_cJ0YT __second_U1ewx">
+                                <div class="offersRow_tCOz7">
+                                    {% for block in section.blocks %}
+                                    <div data-index="{{forloop.index}}" class="offer_45h50 
+                                      {% if block.settings.sub_type =='single' %}
+                                        __noPreheading_DeG2Z
+                                        {% else %} 
+                                        __hasPreheading_2EyA9
+                                      {% endif %}
+                                       
+                                      "
+                                        style="--offer-order-desktop:2;">
+                                        <div class="offerInner_6dAby">
+                                            <div class="offerInnerInner_Z4LKE">
+                                                {% unless forloop.index == 1 %}
+                                                <div class="preheading_MECH"><p>{{block.settings.sub_type}}</p></div>
+                                                {% endunless %}
+                                                <h3 class="heading_mavnl">{{block.settings.sub_heading}}</h3>
+                                                <div class="pricing_1j3UY">
+                                                    {% if block.settings.sub_price %}
+                                                    <span aria-hidden="true"
+                                                        class="pricingPrice_XZfk1"> {{block.settings.sub_price}} </span>
+                                                    {% endif %}
+                                                      {% if block.settings.sub_compare_p %}
+                                                        <span aria-hidden="true" class="pricingPriceRegular_lt8ao">{{block.settings.sub_compare_p}}</span>
+                                                      {% endif %}
+                                                    </div>
+                                                    {% if block.settings.sub_saving %}
+                                                <div class="subheading_HUwqy"> {{block.settings.sub_saving}} </div>
+                                                {% endif %}
+                                                <div class="imageWrapper_f87bX">
+                                                    <div class="image_CuNuo" style="--image-display-all:block;">
+                                                        {%- comment -%} <div class="sizer_r77tI"
+                                                            style="padding-bottom: 58.8235%; --image-padding-bottom-all:58.8235%;">
+                                                        </div> {%- endcomment -%}
+                                                        <picture><img
+                                                                src="{{block.settings.sub_image | img_url: '2000x'}}?auto=compress,format"
+                                                                sizes="(min-width: 75em) 18.13rem, (min-width: 64em) calc((((100vw - 8.13rem) * 0.75) / 3) - 1.88rem), (min-width: 48em) calc(((100vw - 8.13rem) / 3) - 1.88rem), calc(100vw - 5.63rem)"
+                                                                class="img_JdK-o"
+                                                                srcset="{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=100  100w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=116  116w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=134  134w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=156  156w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=182  182w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=210  210w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=244  244w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=282  282w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=328  328w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=380  380w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=442  442w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=512  512w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=594  594w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=688  688w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=798  798w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=926  926w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=1074  1074w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=1120  1120w">
+                                                        </picture><noscript>
+                                                            <picture><img class="img_JdK-o" alt=""
+                                                                    src="{{block.settings.sub_image | img_url: '2000x'}}?auto=compress,format"
+                                                                    srcset="{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=100  100w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=116  116w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=134  134w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=156  156w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=182  182w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=210  210w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=244  244w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=282  282w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=328  328w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=380  380w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=442  442w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=512  512w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=594  594w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=688  688w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=798  798w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=926  926w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=1074  1074w,{{block.settings.sub_image | img_url: '2000x'}}?q=80&amp;auto=format&amp;w=1120  1120w"
+                                                                    sizes="(min-width: 75em) 18.13rem, (min-width: 64em) calc((((100vw - 8.13rem) * 0.75) / 3) - 1.88rem), (min-width: 48em) calc(((100vw - 8.13rem) / 3) - 1.88rem), calc(100vw - 5.63rem)" />
+                                                            </picture>
+                                                        </noscript>
+
+                                                    </div>
+                                                </div>
+                                                <div class="offerSeparator_r4S-M"></div>
+                                                <div class="itemContentWrapper_qWfpo">
+                                                    <div class="itemContent_OzfzG">
+                                                        {{block.settings.sub_deshead}}
+                                                    </div>
+                                                </div>
+                                                <div><a role="button" 
+                                                        class="buttonPill_5C65v __size-default_xB7RO __appearance-primary_E8lQt __fullWidth_Bp5jN
+                                                        super-add-to-cart
+                                                        pointer" 
+                                                        data-variant-id-original="{{block.settings.variant_id_original}}" 
+                                                        data-variant-new-flavor="{{block.settings.variant_id_new_flavor}}" 
+
+                                                        data-subscription-id="{{block.settings.subscription_id}}"
+                                                        data-option-name="{{block.settings.sub_heading}}"
+                                                > 
+ 
+                                                        <div class="inner_tfiYP">
+                                                            <div> {{block.settings.subbtn_text}} </div>
+
+
+                                                        </div>
+                                                    </a></div>
+                                                <div class="bottomContents_gElom">
+                                                    <div class="bottomContent_EBsLz __spacer_Gcvca">
+                                                        <p>{{block.settings.sub_gurantee}}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+      {
+        "name": "Offer cards",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_main",
+            "label": "Add Image"
+          },
+          {
+            "type": "html",
+            "id": "details",
+            "label": "Details",
+            "default": "Details"
+          }
+        ],
+        "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "text",
+            "id": "sub_type",
+            "label": "Offer Type",
+            "default": "Premium"
+          },
+          {
+            "type": "text",
+            "id": "sub_heading",
+            "label": "Heading"
+          },
+          {
+            "type": "text",
+            "id": "sub_price",
+            "label": "Price"
+          },
+          {
+            "type": "text",
+            "id": "sub_compare_p",
+            "label": "Compare at price"
+          },
+          {
+            "type": "text",
+            "id": "sub_saving",
+            "label": "Saving"
+          },
+          {
+            "type": "image_picker",
+            "id": "sub_image",
+            "label": "Image"
+          },
+          {
+            "type": "html",
+            "id": "sub_deshead",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "subbtn_text",
+            "label": "Button Text"
+          },
+          {
+            "type": "text",
+            "id": "sub_gurantee",
+            "label": "Subscription Gurantee"
+          },
+          {
+            "type": "text",
+            "id": "variant_id_original",
+            "label": "Variant Id Original"
+          },
+          {
+            "type": "text",
+            "id": "variant_id_new_flavor",
+            "label": "Variant Id New Flavor"
+          }, 
+          {
+            "type": "text",
+            "id": "subscription_id",
+            "label": "Selling Plan Id"
+          } 
+        ]
+      }
+    ],
+        "presets": [
+          {
+            "name": "Offer cards",
+            "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+          }
+        ]
+      }
+    {% endschema %}
+
+
+    <script>
+
+
+
+      $(document).on('click',".super-add-to-cart",async function () {
+        //code test 2  
+        let context = $(this); 
+        try{ 
+
+          let selectedFlavor= $('[name="offer-flavor"]:checked').val();
+          let variantIdOriginal = context.data('variant-id-original');
+          let variantIdNewFlavor = context.data('variant-new-flavor');
+          let subscriptionId = context.data('subscription-id');
+          let optionName= context.data('option-name');
+        context.find(".inner_tfiYP").text("Adding..."); 
+     
+       
+          let variantId = variantIdOriginal;
+          if(selectedFlavor == 'new-flavor'){
+            variantId = variantIdNewFlavor;
+          }
+  
+  
+          let item ={
+          quantity: 1, 
+          id: variantId,
+           
+          };   
+
+      if(optionName.toLowerCase().includes('subscri')){
+        item.selling_plan=subscriptionId    
+      }  
+  
+  
+        await jQuery.post('/cart/add.js', {
+    items: [
+    item
+    ]
+    }); 
+  
+    SuperCart.ShowCartfn();
+    
+    {%- comment -%} let shouldAddWatterBottle= $(mainsection).find('.water-bottle-add-to-cart'); 
+    if($(shouldAddWatterBottle).prop('checked')){
+    doCartUpdate("41833531179166", 1, { // $5 water bottle
+  
+    });
+    }  {%- endcomment -%}
+  
+  
+    context.find(".inner_tfiYP").text("Buy Now");
+        }catch(ex){
+          console.log(ex);
+          context.find(".inner_tfiYP").text("Buy Now");
+    
+        }
+      });   
+
+      $(document).ready(function(){
+
+        $('[name="offer-flavor"]').change(function(){
+
+          let value =$(this).val();
+      
+          if(value=='new-flavor'){
+      
+              $('.__option2_PInHz').addClass('new-flavor')
+          }else{
+      $('.__option2_PInHz').removeClass('new-flavor')
+              
+          }
+      })  
+
+
+
+        $('.viewMiddleInner_yLF0F').click(function(){
+
+          if($('.__option2_PInHz').hasClass('new-flavor')){
+          $('[name="offer-flavor"]').first().click();
+          }else{ 
+            $('[name="offer-flavor"]').last().click();
+          }
+        })
+
+      })
+  
+
+    </script>

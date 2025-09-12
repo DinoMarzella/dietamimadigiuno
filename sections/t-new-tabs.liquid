@@ -1,0 +1,297 @@
+<style>
+  .tab-button {
+    border-bottom: 1px solid transparent;
+    /* Default border for all tabs */
+    color: #5d7e11;
+    /* Default text color */
+  }
+
+  .active-tab {
+    position: relative;
+    border-bottom-width: 4px;
+    border-color: #5d7e11;
+    color: black;
+    /* Active text color */
+  }
+
+  .active-tab::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #5d7e11;
+    /* Triangle under active tab */
+  }
+</style>
+
+{%- assign settings = section.settings -%}
+
+<div class="bg-[#f3f3f2]" id="{{settings.section_id}}">
+  <div class="w-full max-w-[1420px] md:pb-[90px] pb-[30px] mx-auto px-6 pt-[40px] md:pt-[80px]">
+    <div class="text-center mb-6 md:mb-[70px]">
+      <h1 class="text-[24px] lg:text-[50px] leading-[1.2]">{{ settings.title }}</h1>
+      <p class="text-lg text-[#323D12] leading-[1.2] md:text-[20px] text-[18px] pt-[10px]">{{ settings.subtitle }}</p>
+    </div>
+
+    <!-- Tabs Menu -->
+    <div class="!grid grid-cols-{{ section.blocks.size }} space-x-8 max-w-[1420px] mx-auto m-0">
+      {% for block in section.blocks %}
+        <button
+          class="tab-button md:pb-[20px] pb-[6px] text-[#5D7E11] md:text-[18px] font-bold text-[11px] {% if forloop.first %}active-tab{% endif %}"
+          onclick="showTab('{{ block.id }}')"
+        >
+          {{ block.settings.tab_title }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="bg-white  max-w-[1420px] mx-auto md:pb-[30px] pt-[20px] md:pt-[70px] md:px-4">
+      {% for block in section.blocks %}
+        <section
+          id="{{ block.id }}"
+          class="tab-content md:pb-[40px] {% if forloop.first == false %}hidden{% endif %}"
+        >
+          <h2 class="md:text-[40px] text-[21px] leading-[1.2] mb-4 text-center px-[20px]">
+            {{ block.settings.tab_heading }}
+          </h2>
+          <p
+            class="text-[#323D12] text-center md:text-[20px] text-[16px] md:mb-[48px] mb-[10px] leading-[1.2] px-[20px]"
+          >
+            {{ block.settings.tab_description }}
+          </p>
+          <div
+            class="flex flex-col w-full gap-[20px] max-w-[100%] mx-auto lg:flex-row justify-center lg:space-y-0"
+          >
+            {% assign product_count = block.settings.collection_p.products.size %}
+            {% assign width = 100 | divided_by: product_count | minus: 2 %}
+ 
+           {% for product in block.settings.collection_p.products %}
+    <div class="bg-[#FCFCF7] rounded-lg md:pt-[28px] flex flex-col justify-between pt-[15px] w-full lg:w-[{{ width }}%] max-w-[500px]">
+        <div class="max-w-[350px] mx-auto flex flex-col items-center justify-center">
+            <h3 class="text-[20px] font-[500] mb-2 px-[20px] md:whitespace-nowrap">
+              {% case product.title %}
+              {% when 'ProLon® L-Pill (Antioxidant and Anti-aging)' %}
+              L-Pill
+              {% when 'L-Biome (Intestinal Health)' %}
+              L-Biome
+              {% else %}
+              {{ product.title }}
+              {% endcase %}
+            </h3>
+            <p class="text-black mb-[23px] text-[15px] text-center font-[300] leading-[1.2] px-[20px]">
+                {{product.metafields.custom.mini_description.value}}
+                {% comment %} {{ block.settings.product1_description }} {% endcomment %}
+            </p> 
+            <a href="/products/{{ product.handle }}">
+                <button class="text-base pr-12 pl-12 bg-[#1F4139] rounded-full text-white py-[10px]">
+                    Shop Now
+                </button>
+            </a>
+        </div>
+        <img src="{% case product.title %}
+              {% when 'ProLon® 5-day' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/p-5day_6c131095-0ef6-4864-b710-a7267f9f4513_1.webp?v=1722345715
+              {% when 'ProLon® Next Gen' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/product-rte-next-gen-asset-1.webp?v=1728999179
+              {% when 'ReSet 1 Day Fasting Kit' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_Life_PDP_Square_Images_-_ReSet_1080x_bc88e783-2010-468f-8b70-555296da4fd5.webp?v=1724943104
+              {% when 'ProLon® Nutrition Bar - 12 Pack' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon-nutrition-bars-PDP-Square-Images-x1500_1080x_bffd9bca-b7c2-4f71-90cb-14a4f29bf1ab.webp?v=1724944025
+              {% when 'Almonds & Cocoa Spread' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/assets_l-biome_1600x_wbkg.webp?v=1729795601
+              {% when 'Fasting Shake' %}
+              https://cdn.shopify.com/s/files/1/0524/9898/9237/files/assets_fasting-shake_1600x_wbkg.webp?v=1729795685
+                    {% else %}
+                        {{ product.featured_media.preview_image | img_url: '500x500' }}
+                    {% endcase %}"
+            alt="{{ product.title }}"
+            class="w-full object-cover mt-[20px] md:mt-[40px] h-full max-h-[240px] md:max-h-[290px]"
+        >
+    </div>
+{% endfor %}
+ 
+            {% comment %} <div class="bg-white shadow-2xl rounded-lg pt-[40px] md:pt-[28px] w-full lg:w-1/2">
+              <div class="max-w-[350px] mx-auto flex flex-col items-center justify-center">
+                <h3 class="text-[20px] font-bold mb-4 md:text-start text-center px-2">
+                  {{ block.settings.product2_title }}
+                </h3>
+                <p
+                  class="text-black mb-[23px] text-[15px] text-center font-[300] leading-[1.2] px-[20px]"
+                >
+                  {{ block.settings.product2_description }}
+                </p>
+                <a href="{{ block.settings.link2 }}">
+                  <button class="bg-[#5D7E11] text-white md:h-[55px] h-[50px] md:text-[18px] text-[16px] px-[83px] rounded-md">
+                    {{ block.settings.product2_button_text }}
+                  </button>
+                </a>
+              </div>
+              <img
+                src="{{ block.settings.product2_image | img_url: 'master' }}"
+                alt="{{ block.settings.product2_title }}"
+                class="w-full object-cover mt-[20px] md:mt-[40px] h-full max-h-[240px] md:max-h-[290px]"
+              >
+            </div> {% endcomment %}
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  function showTab(tabId) {
+    // Get all tab contents and hide them
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach((tab) => {
+      if (tab.id === tabId) {
+        tab.classList.remove('hidden');
+      } else {
+        tab.classList.add('hidden');
+      }
+    });
+
+    // Get all buttons and update the active class
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach((button) => {
+      button.classList.remove('active-tab'); // Remove active class from all buttons
+    });
+
+    // Add the active class to the correct button
+    const activeButton = document.querySelector(`button[onclick="showTab('${tabId}')"]`);
+    if (activeButton) {
+      activeButton.classList.add('active-tab'); // Set active class for the clicked button
+    }
+  }
+
+  // Automatically trigger the first tab to be active on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const firstTab = document.querySelector('.tab-button');
+    if (firstTab) {
+      firstTab.click(); // Simulate a click on the first tab to show it on page load
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "Tabs Layout New",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+      
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Your Title Here"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "Your Subtitle Here"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab_block",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_p",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Tab Heading",
+          "default": "Tab Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "tab_description",
+          "label": "Tab Description",
+          "default": "Tab Description"
+        },
+        {
+          "type": "text",
+          "id": "product1_title",
+          "label": "Product 1 Title",
+          "default": "Product 1 Title"
+        },
+        {
+          "type": "textarea",
+          "id": "product1_description",
+          "label": "Product 1 Description",
+          "default": "Product 1 Description"
+        },
+        {
+          "type": "text",
+          "id": "product1_button_text",
+          "label": "Product 1 Button Text",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "link1",
+          "label": "Product 1 Button Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "product1_image",
+          "label": "Product 1 Image"
+        },
+        {
+          "type": "text",
+          "id": "product2_title",
+          "label": "Product 2 Title",
+          "default": "Product 2 Title"
+        },
+        {
+          "type": "textarea",
+          "id": "product2_description",
+          "label": "Product 2 Description",
+          "default": "Product 2 Description"
+        },
+        {
+          "type": "text",
+          "id": "product2_button_text",
+          "label": "Product 2 Button Text",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "link2",
+          "label": "Product 2 Button Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "product2_image",
+          "label": "Product 2 Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabs Layout"
+    }
+  ]
+}
+{% endschema %}

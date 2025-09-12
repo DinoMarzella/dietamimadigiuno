@@ -1,0 +1,1549 @@
+<style>
+{% if handle == 'prolon-next-gen-v4' %}
+    .Soup.Flavor {
+    display: none;
+}
+{% endif  %}
+
+#tp-custom-box iframe {
+    width: min-content !important;
+    margin-left: -10px;
+}
+</style>
+
+{% assign product = all_products['fasting-bar'] %}
+
+
+{%- assign hidden_class = "block" -%}
+{%- if template == "product.Reset-1day-kit"   -%}
+{%- assign hidden_class = "hidden" -%}
+{%- endif -%}
+
+{%- if template == "product.Reset-1day-kit" -%}
+{%- assign margin_class = "md:!mb-[520px]" -%}
+{%- endif -%}
+
+{%- if  template == "product.longevity-landing-v9" -%}
+{%- assign hidden_class_v9 = "hidden" -%}
+{%- assign showDiscountedPercentage_v9 = "!block" -%}
+{%- endif -%}
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign top-padding = "" -%}
+{%- if template == "product.prolon-rte-v3" -%}
+{%- assign top-padding = " md:mt-10" -%}
+
+{%- else -%}
+{%- assign top-padding = "" -%}
+{%- endif -%}
+
+
+{%- if template == "product.longevity-landing-v8" or template == "product.longevity-landing-v9" or template == "page.longevity-landing-fasting" or template == "page.longevity-landing-v3" -%}
+{%- assign bg-class = " !bg-[#f7f0e9]" -%}
+{%- assign margin-v8 = "md:!mb-[0]" -%}
+{%- assign option-col = "!bg-white" -%}
+
+{%- assign hiddenPrice = "hidden" -%}
+
+
+
+    {%- endif  -%}
+
+
+<div id="app-2"
+    class="pl-wrapper pl-wrapper-product-section relative {{ section.settings.margin_mb }} {{ margin-v8 }} {{ top-padding }} {{ bg-class }}  mb-[30px] font-avenir {{ margin_class }} {% if template == "
+    product.prolon-v2" %}md:!mb-[440px] {% endif %} loaded_animation">
+    <div class=" mx-auto !pt-6 lg:py-[40px] lg:max-w-[1400px]  px-[20px] md:px-[0px]  ">
+       
+        <div
+            class="md:grid md:grid-cols-6  lg:grid-cols-6 lg:grid-rows-1 lg:gap-x-2 md:gap-[30px] lg:gap-[50px] xl:gap-[50px] !mt-0 ">
+<div class="md:col-span-3 lg:col-span-4 lg:row-end-1 lg:px-8 2xl:px-0">
+    <div class="flex flex-col">
+        <div
+            class="flex w-full gap-2 overflow-x-scroll overflow-y-hidden aspect-w-1 aspect-h-1 flex-nowrap md:grid md:grid-cols-2 md:justify-center md:items-center md:overflow-hidden">
+            {% assign images_block = section.blocks | where: 'type', 'images' %}
+        
+            {%- if images_block.size > 0 -%}
+            {%- for media in images_block -%}
+            <div class="shrink-0 media-{{forloop.index}} {% if forloop.index == 3  %} col-span-2 md:!max-w-full {% endif %} hero__animation-contents relative "
+                style="transition-delay: {{forloop.index | times: 0.4}}s">
+                {%- if media.settings.media_type == 'video' -%}
+                {% assign isMp4= false %}
+                {% if media.settings.video_url contains '.mp4' %}
+                {% assign isMp4= true %}
+        
+                {% endif %}
+        
+        
+        
+        
+                <a href="{{ media.settings.video_url }}" class="promo-grid__slide-link js-no-transition
+                            {% if isMp4  %}  product-video-trigger product-video-trigger--mp4 {% endif  %}
+                              " aria-hidden="true" aria-label="Watch The Video"></a>
+                {% if isMp4 %}
+                <video playsinline loop controls controlsList="nodownload" poster="{{ media.settings.image | img_url: '600x' }}"
+                    class="hide product-video-mp4-sound" src="{{  media.settings.video_url }}">
+        
+        
+                </video>
+                {% endif %}
+        
+                {%- endif -%}
+                <img src="{{ media.settings.image | img_url: '1600x' }}"
+                    class="!w-auto md:!w-full md:!max-w-full min-h-[350px] m:!max-h-[350px] md:!h-full !object-cover"
+                    alt="Product image" loading="eager">
+            </div>
+            {%- endfor -%}
+        
+            {% else %}
+            <div class="col-span-2 !max-w-full">
+                {%- for media in product.media -%}
+                <div class="pb-[15px] px-[10px] w-full md:w-1/2" key="{i}">
+                    <img alt="Product image" loading="eager" class="!w-full object-cover !h-full"
+                        src="{{ media | img_url: '1600x' }}">
+                </div>
+                {%- endfor -%}
+            </div>
+            {%- endif -%}
+            {% if product.handle contains 'prolon-offer' %}
+            <img class="col-span-2 hidden md:block !max-w-full !h-auto !object-contain"
+                src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-Featured.png?v=1690546584&width=2754&height=129">
+            {% endif %}
+        </div>
+    </div>
+    {% if section.settings.trial_icons %} <div class="justify-center hidden gap-2 mt-5 md:flex md:mt-11 md:gap-4"><div class=""><img src="//prolonlife.com/cdn/shop/files/4.4_Stars_1200x.png?v=1724927753" class="md:w-[115px] w-[70px]" alt=""></div><div class=""><img src="//prolonlife.com/cdn/shop/files/Clinical_Trials_1200x.png?v=1724927752" class="md:w-[115px] w-[70px]" alt=""></div><div class=""><img src="//prolonlife.com/cdn/shop/files/Patented_1200x.png?v=1724927748" class="md:w-[115px] w-[70px]" alt=""></div><div class=""><img src="//prolonlife.com/cdn/shop/files/Partners_1200x.png?v=1724927747" class="md:w-[115px] w-[70px]" alt=""></div></div>{% endif %}
+</div>
+            
+
+        <div id="acquista-ora"
+            class="w-full max-w-[504px] mt-4 z-[1] md:col-span-3 xl:col-span-5 lg:row-span-2 lg:row-end-2 xl:mt-0 product-details px-0 md:pr-[15px] lg:pr-[30px] lg:pl-0 2xl:pr-[40px] md:sticky md:top-[130px] md:h-fit">
+
+                <div class="flex flex-col-reverse">
+                    <div class="mt-2 mb-2">
+                        {% if section.settings.show_star %}
+                            <!-- TrustBox widget - Micro Star -->
+                            <div id="tp-custom-box" class="trustpilot-widget" data-locale="it-IT" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="5c46dc3e20d18f000126579a" data-style-height="24px" data-style-width="100%" data-token="89ffbd1f-fd10-4d3c-8aa8-42c158e49a0f" data-font-family="Open Sans">
+                                <a href="https://it.trustpilot.com/review/prolon.it" target="_blank" rel="noopener">Trustpilot</a>
+                            </div>
+                            <!-- End TrustBox widget -->
+                        {% endif %}
+
+                        <h1
+                            class="w-full text-left text-[16px] md:pt-0 pt-4 !font-semibold  text-gray-900 sm:text-[24px] mt-0 md:mt-[10px]">
+                            {% if section.settings.title == '' %} {{ product.title }} {% else %} {{ section.settings.title }} {% endif %} {% if section.settings.show_new %}
+                        <span
+                            class="bg-[#1E4036] text-[16px] rounded-full text-white px-4  py-2 mb-5 md:mb-4  font-semibold transform transition-all duration-300 hover:scale-105 ">
+                            Nuovo
+                        </span>
+                        {% endif %}</h1>
+                            {%- if template == "product.longevity-landing-v8"  or template == "page.longevity-landing-fasting" or template == "page.longevity-landing-v3" -%}
+                            {%- assign showCrossOutPrice = "" -%}
+                            {%- assign hideCrossOutPrice = "hidden" -%}
+                            {%- assign showDiscountedPercentage = "!block" -%}
+
+                            {%- else -%}
+                            {%- assign showCrossOutPrice = "hidden" -%}
+                            {%- assign hideCrossOutPrice = "" -%}
+                            {%- endif -%}
+
+
+
+                        <div class="w-full flex flex-col gap-2 text-left {{ hidden_class }} mt-[10px]" v-cloak v-cloak-hide>
+                         
+                           
+                        
+                          
+                            {% comment %} <div class="flex items-center gap-4">
+                            <div class="text-gray-600 font-semibold text-[14px] sm:text-[16px] ">
+                                starting at $${calculatedPrice ? (calculatedPrice.replace('$', '') / 12).toFixed(2) : '0.00'}
+                            </div>
+                              
+                                <span class="text-[#56A512] font-semibold text-[18px] sm:text-[24px]">
+                                    ${calculatedPrice}
+                                </span>
+                        
+                              
+                                {% comment %} <span
+                                    class="text-gray-600 line-through font-semibold text-[18px] sm:text-[24px] ">
+                                    ${compare_at_price}
+                                </span> {% endcomment %}
+                            </div> {% endcomment %}
+
+                        <div class="flex items-baseline gap-2 mt-2">
+                            <span class="text-2xl md:text-[2rem] font-extrabold  tjcext-primary ">${calculatedPrice}</span>
+                        {% if section.settings.price_for_bar %}
+                            <span class="font-medium text-gray-600 text-md md:text-lg">
+                                12&nbsp;barrette &mdash; ≈ €${calculatedPrice ? (calculatedPrice.replace('€', '') / 12).toFixed(2) : '0.00'} per barretta
+                            </span>
+                        {% endif %}
+                        </div>
+
+
+                            
+                        
+                            <!-- Sale message (if needed) -->
+                            {% comment %}
+                            <div class="mt-1">
+                                <span class="text-left font-semibold text-[14px] md:text-[16px]" v-html="saleMessage"></span>
+                            </div>
+                            {% endcomment %}
+                        </div>
+                        <div class="text-[15px]">{% if section.settings.description == '' %} {{ product.description }} {% else %} {{ section.settings.description }} {% endif %} 
+                            {% comment %} <span class="underline cursor-pointer" @click="showModal = true">Learn
+                                More</span> {% endcomment %}
+                        </div>
+                        <div v-cloak v-cloak-hide v-if="showModal"
+                            class="fixed inset-0 flex items-center justify-center mt-24 bg-gray-700 bg-opacity-50 z-[170]">
+                            <div
+                                class="bg-white p-6 rounded-lg w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%] shadow-lg relative">
+
+
+                                <button @click="showModal = false" class="absolute text-gray-600 top-2 right-2">
+                                    &times;
+                                </button>
+
+
+                                <div class="w-full mb-4">
+                                    <img src="https://crba5awc75zwh5ig-50806259870.shopifypreview.com/cdn/shop/files/proloncopy1_2_1200x.png?v=1724646418"
+                                        alt="Product Image" class="object-cover w-full h-[350px]">
+                                </div>
+
+
+                                <div class=" text-[16px]">
+                                    <div class="py-2"><span class="block pb-1">Enjoy an easier, safer fasting experience
+                                            that supports your health and
+                                            wellness.</span> <span class="block pb-1">Experience the benefits of fasting
+                                            while still nourishing your body
+                                            with plant-based foods. This unique approach allows you to achieve a fasting
+                                            state without the challenges and
+                                            risks of water-only fasting.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div v-cloak v-cloak-hide class="">
+
+                    <div class="gap-2 my-1 md:my-5 inter"
+                        style="display: flex; flex-direction: {{ section.settings.reverse_layout | default: false | downcase | replace: 'true', 'column-reverse' | replace: 'false', 'column' }};">
+                  
+                        {%- assign bgColorClass = "" -%}
+                        {%- assign itemStart = "" -%}
+                        {%- if template == "product.prolon-rte-v3" -%}
+                        {%- assign bgColorClass = "bg-[#f9fff3]" -%}
+                        {%- assign itemStart = "item-start flex-col" -%}
+                        {%- else -%}
+                        {%- assign bgColorClass = "bg-[#F1EAE5]" -%}
+                        {%- assign itemStart = "item-center" -%}
+                        {%- endif -%}
+
+                        
+
+    <div class="" v-for="option in options">
+                                <div :class="option.name" >
+                                {% comment %} <div class="font-bold " v-html="get_option_title(option)">
+                                </div> {% endcomment %}
+                                <div class="flex flex-col gap-2 md:max-w-[450px] mx-auto">
+                                <div v-for="value in option.values" :key="value"
+                                @click="selectOption(option.position, value)":class="{
+                                'relative w-full border !cursor-pointer text-black min-h-[75px] rounded-md border-[#56A512] !py-4 flex {{ option-col }} items-center {{ bgColorClass }}': selected_options['option_' + option.position] === value,
+                                'relative w-full border !cursor-pointer border-gray min-h-[75px] rounded-md border-[#56A512] !py-4 flex items-center ': selected_options['option_' + option.position] !== value
+                                }">
+                        
+                                    <div class="flex justify-between w-full px-4 font-semibold xl:flex-nowrap">
+                                        <div class="flex gap-1 item-center md:gap-4">
+                                            <div class="flex flex-col item-start">
+                                                <span v-if="selected_options['option_' + option.position] == value" class="inset-0 min-h-[20px] min-w-[20px]"
+                                                    style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain;">
+                                                </span>
+                                                <span v-else class="inset-0 ">
+                                                    <div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+                                                </span>
+                                            </div>
+                                            <div class="{{ hidden_class }} {{ hidden_class_v9 }}">
+                                                <img v-if="option.position==1" class="!hidden rounded max-w-12 lg:block max-h-12 md:max-h-20"
+                                                    :src="image_show(option.position,value)" alt="Featured Image" />
+                                            </div>
+                                            <div class="flex flex-col max-w-[310px]">
+                                    
+                                                <div class="flex flex-col justify-between w-full gap-1">
+                                    
+                                                   
+                                                    <div class="name-value inter text-[12px] sm:text-[14px]  text-left " v-if="option.position==1"
+                                                        v-html="get_sku_flavor_title(option.position,value)">
+                                                    </div>
+                                                <div class="name-value inter text-[12px] sm:text-[14px] text-left" v-else>
+                                                    <span v-if="option.position == 2 && value && value.toLowerCase().includes('subscri')">
+                                                        Subscribe & save 20%
+                                                    </span>
+                                                    <span v-else-if="option.position == 2 && value && value.toLowerCase().includes('one time')">
+                                                        1 scatola - 12 barrette
+                                                    </span>
+                                                    <span v-else v-html="value"></span>
+                                                </div>
+                                                    {%- if template=="product.reset-1day-kit" -%}
+                                                        <span v-if="value && value.toLowerCase().includes('subscri')"
+                                                        class="show--percentage z-10  px-[6px] lg:block bg-[#56A512] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                        + 13% off
+                                                        </span>
+                                                        {% else %}
+                                                            {% comment %} <span v-if="value && value.toLowerCase().includes('subscri')"
+                                                                class="show--percentage z-10  px-[6px] lg:block bg-[#56A512] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                                + 23% off
+                                                            </span>
+                                                            
+                                                            
+                                                            
+                                                            <span v-if="value && value.toLowerCase().includes('one time')"
+                                                                class="show--percentage z-10  px-[6px] lg:block bg-[#1D4035] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                                + 15% off
+                                                            </span> {% endcomment %}
+
+                                                        {% endif -%}
+                                                   
+                                               
+                                                    {%- if template=="product.reset-1day-kit" -%}
+                                                    <p class="font-thin text-[12px] text-left" 
+                                                     v-if="option.position == 2 && value?.toLowerCase()?.includes('subscri')">
+                                                        13% Off all orders. Cancel anytime.
+                                                    </p>
+                                                    {%- else -%}
+                                                    <p class="font-thin text-[12px] text-left" 
+                                                     v-if="option.position == 2 && value?.toLowerCase()?.includes('subscri')">
+                                                       
+                                                        Auto renew, pause cancel anytime
+                                                    </p>
+                                                    {%- endif -%}
+                                                    <span class="font-thin text-[12px] text-left" v-if="option.position == 2 && value && value.toLowerCase().includes('one time')">
+                                                        Single purchase, 12ct bars
+                                                    </span>
+                                                  
+                                                    <div class="flex items-center "
+                                                        v-if="option.position==2 && value?.toLowerCase()?.includes('subscri')">
+                                                        <select v-if="selling_plans?.length > 1"
+                                                            class="pl-2 border-0 bg-transparent border-b-2 focus:outline-none  pr-8 text-[12px]  text-black"
+                                                            @change="change_subscription_plan($event)" :value="selected_plan?.id">
+                                    
+                                                            <option v-for="plan in selling_plans" :key="plan.id" :value="plan.id"
+                                                                :selected="plan.id == selected_plan?.id">
+                                                                ${plan.name
+                                                                }
+                                                            </option>
+                                                        </select>
+                                   
+                                                    </div>
+                                                </div>
+
+                                        <div class="sku_descrption text-[12px] sm:text-[14px] text-left"  v-if="option.position==1">
+                                            <span v-html="get_sku_flavor_description(value, product.title)"></span>
+                                        </div>
+                                          {%- if template == "product.prolon-rte-v3"  -%}
+                                                    <div class="pt-3 pb-2 "
+                                                        v-if="value && value.toLowerCase().includes('subscri')">
+                                                        <div class="flex justify-between">
+                                                            <div
+                                                                class="name-value inter text-[12px] sm:text-[14px] text-left font-semibold whitespace-nowrap">
+                                                                Gift with subscription </div>
+                                                            <div class="flex gap-3 ">
+                                                                <del
+                                                                    class="text-gray-500 text-[12px] sm:text-[14px] ">$35</del>
+                                                                <span
+                                                                    class="font-semibold text-[12px] sm:text-[14px] ">FREE</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-[12px] pt-1">
+                                                            Extend your benefits with these post-fast essentials for
+                                                            optimal results. Includes water bottle, fasting bars,
+                                                            fasting and protein shake.
+                                                        </div>
+                                                    </div>
+
+                                                    <img v-if="value && value.toLowerCase().includes('subscri')"
+                                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/welcome_kit_horizontal_fc0f408f-70c7-4921-a09d-e8357d7b8477.png?v=1735650701"
+                                                        class="max-w-[87%]" />
+                                                   
+
+                                                    
+                                                    {% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-col">
+                                            
+                                <img class="w-[30px]"
+                                    v-if="option.position == 1 && (value?.toLowerCase()?.includes('variety 5') || value?.toLowerCase()?.includes('variety 6'))"
+                                    src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Organic4colorsealGIF.gif?v=1747319970"
+                                    alt="Selected Flavor Image" />
+
+
+                                       
+                                    <div  v-if="option.position==1" class="price-value inter text-[16px] text-center {{ hidden_class }} ">
+                                    <del class="text-gray-500 {{ hidden_class_v9 }} ">${compare_at_price}</del>
+                                        <span class="ml-2">${ getOptionPrice(option.position, value) }</span>
+                                      
+                                    </div>
+                                    <div v-if="option.position==2" class="price-value inter text-[16px] text-center ">
+                                        
+                                        <span class="">${ getOptionPrice(option.position, value) }</span>
+                                    {%- if template == "product.longevity-landing-v8" or template == "product.longevity-landing-v9" or template == "page.longevity-landing-fasting" or template ==
+                                    "page.longevity-landing-v3" -%}
+                                    <span v-if="option.position == 2 && value?.toLowerCase()?.includes('subscri')"  class="px-[6px] py-[2px] ml-2 mb-1 text-[12px] font-semibold inline-block text-white rounded-md bg-[#56A512]">Save
+                                        20%</span>
+                                        <span v-if="option.position == 2 && value?.toLowerCase()?.includes('one')"
+                                            class="px-[6px] py-[2px] ml-2 mb-1 text-[12px] font-semibold inline-block text-white rounded-md bg-[#56A512]">Save
+                                            20%</span>
+                                    {% endif %}
+                                    </div> 
+                                    {%- if template == "product.prolon-rte-v3" -%}
+                                    {% comment %} <div v-if="option.position==2" class="">
+                                    <p v-if="value && value.toLowerCase().includes('subscri')"
+                                        class="px-1 flex justify-center mt-2  inline-block text-center py-1 rounded-md mr-[3px] text-[12px] text-white  bg-prolon_green">
+                                        Pre-Order </p>
+                                        </div> {% endcomment %}
+                                    {% endif %}
+                                    </div>
+                                   
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="holiday-order-bump" style="display:none">
+                    <div
+                        class="flex relative items-center p-3 mx-0 md:mx-2 mb-3 md:mt-0 mt-3 md:mb-5 bg-[#f2f3ee] rounded-md shadow-sm ">
+
+
+                        <label for="new_year_bundle_checkbox" class="wps_upsell_bump_checkbox_container">
+                            <input type="checkbox" name="new_year_bundle_checkbox" id="new_year_bundle_checkbox"
+                                class="add_offer_in_cart extra-prolon-add-to-cart"><span class="checkmark"></span>
+                        </label>
+
+
+                        <div class="flex-grow py-2 ml-4">
+
+                            <span class="text-[12px] md:text-[14px] block">
+                                <span class="font-semibold text-prolon_green">Yes, add $125 </span> <b>New Year
+                                    Bundle</b> Post-fast nutrition for continued support and longevity-minded eating
+                                habits.
+                            </span>
+
+                            <span class="underline text-[12px] md:text-[14px] cursor-pointer"
+                                @click="newYearModal = true">Learn
+                                More</span>
+                            <div v-cloak v-cloak-hide v-if="newYearModal"
+                                class="fixed inset-0 flex items-center justify-center mt-28 bg-gray-700 bg-opacity-50 z-[170]">
+                                <div class=" relative rounded-lg w-[90%] sm:w-[50%] md:w-[40%] lg:w-[25%]  ">
+
+
+                                    <button @click="newYearModal = false"
+                                        class="absolute  font-bold text-[28px] top-0 text-white right-2 z-[200]">
+                                        &times;
+                                    </button>
+
+
+                                    <div class="w-full mb-4 ">
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Healthy_Habits_-_New_Year_Bundle.png?v=1735577903"
+                                            alt="Product Image" class="object-cover w-full h-auto">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <span
+                            class=" z-10  px-[10px]  lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[12px] absolute !top-0 !right-0 font-bold">
+                            48% OFF
+                        </span>
+
+
+                    </div>
+                </div>
+
+               
+                <div class="md:max-w-[450px] mx-auto mt-2">
+                    <button type="button" :disabled="!calculatedPrice || isOutOfStock || addingtoCart"
+                        @click="addToCart(selected_variant)"
+                        :class="['w-full rounded-md', isOutOfStock ? 'bg-gray-400 !cursor-not-allowed' : 'bg-[#56A512]', 'text-white']">
+                        <span
+                            class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-">
+                            <span
+                                class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy">
+                                <svg v-if="addingtoCart" class="inline w-8 h-8 ml-2 text-white animate-spin "
+                                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                        fill="#E5E7EB"></path>
+                                    <path
+                                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <svg v-if="!addingtoCart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true" width="18">
+                                    <path fill-rule="evenodd"
+                                        d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-bold " v-if="!addingtoCart">
+                                    ${ isOutOfStock ? 'Esaurito' : 'Aggiungi al carrello' }
+                                </span>
+                                {% comment %} <div v-if="!isOutOfStock">
+                                    <span class="mr-2 -ml-2 text-[16px]">.</span>
+                                    <span class="font-semibold text-[16px]">$${calculatedPrice} </span>
+                                </div> {% endcomment %}
+                            </span>
+                        </span>
+                    </button>
+                </div>
+
+                    <div class="md:max-w-[450px] mx-auto mt-2">
+                    <!-- Benefits Section with Checkmarks -->
+                    {% comment %} <div class="p-4 mb-4 rounded-lg ">
+                        <div class="flex items-center gap-3 mb-2">
+                            <svg class="w-5 h-5 text-[#56A512]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-sm font-medium">HSA/FSA Eligible through Sika</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-sm font-medium">Free shipping over $200</span>
+                        </div>
+                    </div> {% endcomment %}
+
+
+                    </div>
+
+         
+            <div class="w-full max-w-4xl mx-auto">
+                {% assign faq_block = section.blocks | where: 'type', 'faq' %}
+            
+                {%- for block in faq_block -%}
+                <div class="border-b border-black last:border-b-0">
+                    <div class="flex items-center justify-between w-full py-6 transition-colors duration-200 cursor-pointer detail-tab-wrapper "
+                        @click="toggleFaq({{ forloop.index0 }})">
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3 class="pr-4 text-lg font-semibold text-gray-900">{{ block.settings.title }}</h3>
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-gray-600 transition-transform duration-300 ease-in-out"
+                                        :class="{ 'rotate-45': openFaqIndex === {{ forloop.index0 }} }" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="overflow-hidden transition-all duration-500 ease-in-out faq-content"
+                        :class="{ 'faq-open': openFaqIndex === {{ forloop.index0 }}, 'faq-closed': openFaqIndex !== {{ forloop.index0 }} }">
+                        <div class="pb-6 pr-8 leading-relaxed text-gray-700">
+                            {{ block.settings.description }}
+                        </div>
+                    </div>
+                </div>
+                {%- endfor -%}
+            </div>
+            
+               
+
+
+
+
+
+
+
+                {% comment %} {%- if template == "product.prolon-rte-v3" -%}
+                <div class="flex gap-2 mt-5" >
+                    <span>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5952/5952788.png" class="max-w-6 min-w-6" alt="" />
+                    </span>
+                    <span class="text-[14px]">
+                        Sold out—but not for long! Order your Next Gen program today to secure your spot at the
+                        front of the line when the next shipment arrives next week.
+                    </span> 
+                </div>
+                {% endif %} {% endcomment %}
+
+                <div class="hidden mt-6 border-t-2 border-black border-dotted health-positive-note">
+                    <div class="flex items-center gap-1 mt-4">
+                        <div><img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/833314.png?v=1729852954"
+                                class="w-[20px] min-w-[20px] pr-1" alt=""></div>
+                        <div class="text-[12px] sm:!text-[15px]"> Did you know, Prolon is cost neutral, but <span
+                                class="font-bold">health
+                                positive?</span></div>
+                        <div class="relative group"><button class="text-[12px] sm:!text-[15px]">ⓘ</button>
+                            <div
+                                class="absolute -right-5 sm:-right-20 top-full z-20 mt-2 w-[200px] sm:w-[260px] md:w-[375px] bg-[#78a14a] p-4 text-xs sm:text-sm text-white group-hover:block hidden shadow-lg">
+                                <div class="relative p-2">
+                                    <div
+                                        class="absolute -top-3 sm:-top-6 right-8 sm:right-12 h-4 w-4 sm:h-5 sm:w-6 -translate-x-1/2 rotate-45 bg-[#78a14a]">
+                                    </div>
+                                    <div><span class="block font-bold text-center">Meaningful Investment - Balanced
+                                            Cost</span><span class="block py-2">The average adult spends about $152 on
+                                            groceries, plus $48/week dining
+                                            out. One round of Prolon's 5-Day program includes all the food and
+                                            supplements you need, for
+                                            5 full days.</span><span class="font-bold">Plus</span> - you are making a
+                                        long-term investment in your health and future self. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-2 mt-5 md:hidden md:mt-11 md:gap-4 ">
+                    {% for block in section.blocks %}
+                    {% if block.type == 'logo' %}
+                    <div class="">
+                        <img src="{{ block.settings.logo_image | img_url: '1200x' }}" class="md:w-[115px] w-[70px]"
+                            alt="">
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+
+            </div>
+        </div>
+    </div> 
+</div>
+
+{% schema %}
+{
+"name": "dk-product-dynamic-1",
+"settings": [
+
+{
+"type": "product",
+"id": "selected_product",
+"label": "Select Product"
+},
+{
+"type": "textarea",
+"id": "margin_mb",
+"label": "Margin Bottom"
+},
+{
+"type": "checkbox",
+"id": "show_star",
+"label": "Show Star"
+},
+{
+"type": "checkbox",
+"id": "trial_icons",
+"label": "Mostra icone Trials Clinici"
+},
+{
+"type": "checkbox",
+"id": "price_for_bar",
+"label": "Dividi prezzo per barretta (12)"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Title",
+"default": "Prolon 5-Day Fasting Mimicking Diet (FMD)"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "checkbox",
+"id": "reverse_layout",
+"label": "Reverse Layout"
+},
+{
+"type": "checkbox",
+"id": "show_new",
+"label": "Show NEW Badge"
+}
+],
+"blocks": [
+{
+"type": "images",
+"name": "Image",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "select",
+"id": "media_type",
+"label": "Media Type",
+"default": "image",
+"options": [
+{
+"label": "Image",
+"value": "image"
+},
+{
+"label": "Video",
+"value": "video"
+}
+]
+},
+
+{
+"type": "text",
+"id": "video_url",
+"label": "Video Url"
+}
+]
+}, 
+{
+"type": "faq",
+"name": "Faq",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Question"
+},
+{
+"type": "html",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "page",
+"id": "page",
+"label": "Description from page"
+}
+]
+},
+{
+"type": "logo",
+"name": "Logo",
+"settings": [
+{
+"type": "image_picker",
+"id": "logo_image",
+"label": "Logo Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "dk-product-dynamic-1"
+}
+]
+}
+{% endschema %}
+
+
+
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+
+    let blockImages = []
+    {% for block in section.blocks %}
+    {% if block.type == 'image-item' %}
+    blockImages.push("{{ block.settings.image | img_url: '1200x' }}")
+    {% endif %}
+    {% endfor %}
+
+
+    const { createApp, ref } = Vue
+    createApp({
+        delimiters: ['${', '}'],
+        data() {
+
+            return {
+                openFaqIndex: null,
+                addingtoCart: false,
+                slides: blockImages, 
+                showModal: false,
+                newYearModal: false,
+                product: {},
+                slideCartOpen: false,
+                cart: {},
+                isModalOpen: false,
+                currentVideoUrl: '',
+                videoUrls: [
+                    {% for block in section.blocks %}
+            {% if block.settings.video_url %}
+            "{{ block.settings.video_url }}",
+                {% endif %}
+                {% endfor %}
+            ],
+        currentSlide: 0,
+        thumbnailStartIndex: 0,
+        selected_plan: {},
+        maxVisibleThumbnails: 5,
+        selected_options: {},
+        FlavorsDescriptionBYSKUS: {
+        "Gen3": "Red Bell Pepper & Onion, Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger",
+        "Original": "Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+        PR038: "Green Pea & Chives, Chickpea & Leeks - All new flavors!",
+        "Expanded Variety": `<span class="text-black ">Our best soups, Fasting Bars, Fasting Shake, and Extra Virgin Olive Oil. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/89bc0ff87b0fd993.jpg?v=1713891885">Learn More</a></span>`,
+        "PR039Boxbundle-4": `<span class="text-black ">Our best soups, Fasting Bars, Fasting Shake, and Extra Virgin Olive Oil. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/89bc0ff87b0fd993.jpg?v=1713891885">Learn More</a></span>`,
+        "PR039Boxbundle-3": `<span class="text-black ">Our best soups, Fasting Bars, Fasting Shake, and Extra Virgin Olive Oil. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/89bc0ff87b0fd993.jpg?v=1713891885">Learn More</a></span>`,
+        PR020: "Tomato, Butternut Squash",
+        PR055: "Tomato, Minestrone & Quinoa",
+        PR056: "Vegetable, Red Bell Pepper & Onion",
+        PR057: "Carrot Ginger, Lentil Curry",
+        "4boxbulk": "Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+        "Chocolate Chip": "Chocolate chips, Sea salt Almonds, Pecans, Macadamias 5g Plant-based protein",
+          "Nuts & Honey": "Coconut, Sea salt Almonds, Pecans, Macadamias 5g Plant- based protein",
+            "Coconut Macadamia": "Honey, Sea salt Almonds, Pecans, Macadamias 6g Plant- based protein",
+            "Variety Pack": "All the above! Almonds, Pecans, Macadamias 5g Plant- based protein ",
+            "Variety 1": `<span class="text-[12px] hidden sm:text-[14px]" >Chickpea & Leeks</span>`,
+            "Variety 2": `<span class="text-[12px] hidden sm:text-[14px]" >Minestrone & Quinoa</span>`,
+            "Variety 3": `<span class="text-[12px] hidden sm:text-[14px]" >Red Bell Pepper & Onion</span>`,
+            "Variety 4": `<span class="text-[12px] hidden sm:text-[14px]" >Lentil Curry</span>`,
+             "Variety 5": `<span class="text-[12px] hidden sm:text-[14px]" >Red Bell Pepper & Onion</span>`,
+            "Variety 6": `<span class="text-[12px] hidden sm:text-[14px]" >Lentil Curry</span>`,
+            "Light Summer Pack": `<span class="text-[12px]  sm:text-[14px]" >Includes: Reset, Fasting Bars, L-Protein, L-Pill</span>`,
+            "Complete Summer Pack": `<span class="text-[12px]  sm:text-[14px]" >Includes: Prolon 5-Day, Reset, Fasting Bars, L-Protein, L-Pill</span>`,
+            
+            
+
+    },
+    FlavorsBYSKU: {
+  // PR039:  "Red Bell Pepper & Onion, Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger",
+  PR039: "New Soup Flavor",
+  // PR001: " Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+  PR001: "Original Soup Flavor",
+  PR004: `<span  class="px-[5px] py-[1px] mr-[2px] text-[10px] text-white rounded-sm bg-prolon_green">NEW</span> Expanded Variety `,
+  PR038: "Green Pea & Chives, Chickpea & Leeks - All new flavors!",
+  PR020: "Tomato, Butternut Squash",
+  PR055: "Tomato, Minestrone & Quinoa",
+  PR056: "Vegetable, Red Bell Pepper & Onion",
+  PR057: "Carrot Ginger, Lentil Curry",
+  FS1001: "Vanilla",
+  FS1002: "Chocolate ",
+  // SDBundle3: "14 Individual sachets per bag",
+  SDBundle3: "3 Individual Jars",
+  SDBundle2: "2 Individual Jars",
+  SD001: "1 Individual Jar",
+  // L-Protein
+  PB1012EU: "L-Protein Bar (12 x 45gr)",
+  // Fastbars
+  "Chocolate Chip": "12ct. Chocolate Chip",
+  "Nuts & Honey": "12ct. Nuts & Honey",
+  "Coconut Macadamia": "12ct. Coconut Macadamia",
+  "Variety Pack": "12ct. Variety Pack ",
+  "Variety 1":"Green Peas & Chives, Chickpea & Leeks ",
+  "Variety 2":"Tomato, Minestrone & Quinoa",
+  "Variety 3":"Vegetable, Red Bell Pepper & Onion ",
+    "Variety 4":"Carrot Ginger, Lentil Curry",
+     "Variety 5": ` <span class="px-[5px] py-[1px] mr-[2px] text-[10px] text-white rounded-sm bg-prolon_green">NEW NEXT GEN</span> Minestrone, Artichoke & Yellow Tomato `,
+        "Variety 6": ` <span class="px-[5px] py-[1px] mr-[2px] text-[10px] text-white rounded-sm bg-prolon_green">NEW NEXT GEN</span>  Minestrone, Broccoli & Quinoa`,
+        
+},
+showimage:{
+    "Chocolate Chip": "https://prolonlife.com/cdn/shop/files/ProLonLifePDPImage1-FBChoc_a91812a1-b941-4e1e-92f5-3df9a6458e23.png?v=1695051270",
+    "Nuts & Honey": "https://prolonlife.com/cdn/shop/files/ProLonLifePDPImage1-FBCoc_726d0f7b-e280-41ff-9990-9607d1dc00dd.png?v=1695051271",
+    "Coconut Macadamia": "https://prolonlife.com/cdn/shop/files/Fastbar_Variety_1_19970a01-5794-4613-8cdc-d22ba33d8c54.png?v=1695051271",
+    "Variety Pack": "https://prolonlife.com/cdn/shop/files/ProLonLifePDPImage1-FBHoney_1cc8bda4-0d2a-4453-9bae-e81d9c2f04b4.png?v=1695051270",
+    "Variety 1": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Container_1c2268f2-9ebf-4d8e-9698-6f6c3588a19a.png?v=1737493989",
+    "Variety 2": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Container_f58d0686-aacd-4801-b9a8-1eb96b9385f7.png?v=1737494007",
+    "Variety 3": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPImage1-FBChoc_a91812a1-b941-4e1e-92f5-3df9a6458e23_png.png?v=1737494023",
+    "Variety 4": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPImage1-FBChoc_png_9eec8108-469b-44da-b8d7-c8aefdf0f4ad.png?v=1737494046",
+    "Light Summer Pack": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Summer_Kit_-_Light.jpg?v=1752425105",
+    "Complete Summer Pack": "https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Summer_Kit_-_Complete_73941b6b-b274-4bf2-a60c-7d8bc9d8e670.jpg?v=1752425189",
+}
+    
+
+                }
+            },
+
+        methods: {
+              toggleFaq(index) {
+                this.openFaqIndex = this.openFaqIndex === index ? null : index;
+            },
+
+            
+            money(value) {
+            if (!value) return 0;
+            return "€" + (value / 100).toFixed(2);
+            }, 
+            get_option_title(option) {
+                let name = option.name
+                if (name?.toLowerCase()?.includes("soup flavor")) {
+                    name = `Please Choose Your Flavors:`
+                }
+                if (name?.toLowerCase()?.includes("pack")) {
+                    name = `Select your travel pack`
+                }
+                
+                if (name?.toLowerCase()?.includes("frequency")) {
+                    name = `Save Time & Money With Our Recurring Order Option`
+                }
+                if (name?.toLowerCase()?.includes("type")) {
+                    name = `Save Time & Money With Our Recurring Order Option`
+                }
+                
+
+                return `<div class="flex items-center mb-3 text-black md:mb-6"><p class="font-bold text-[16px]">${name}</p><div class="flex-grow ml-2 border-t border-gray-300"></div></div>`
+            }, 
+
+        showVideoModal(index) {
+            if (this.videoUrls[index]) {
+                this.currentVideoUrl = this.videoUrls[index]
+                this.isModalOpen = true
+            }
+        },
+        closeModal() {
+            this.isModalOpen = false
+            this.currentVideoUrl = ''
+        },
+
+        change_subscription_plan(event) {
+            const plan_id = event.target.value
+            this.selected_plan = this.selling_plans.find(plan => plan.id == plan_id)
+        },
+
+        openSlideCart() {
+            console.log('openSlideCart')
+            this.slideCartOpen = true
+        },
+        closeSlideCart() {
+            console.log('closeSlideCart')
+            this.slideCartOpen = false
+        },
+        prevSlide() {
+            this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length
+        },
+
+        nextSlide() {
+            this.currentSlide = (this.currentSlide + 1) % this.slides.length
+        },
+
+        showSlide(index) {
+            this.currentSlide = index
+        },
+
+        prevThumbnail() {
+            if (this.thumbnailStartIndex > 0) {
+                this.thumbnailStartIndex--
+            }
+        },
+        nextThumbnail() {
+            if (this.thumbnailStartIndex + this.maxVisibleThumbnails < this.slides.length) {
+                this.thumbnailStartIndex++
+            }
+        },
+
+
+
+        get_sku_flavor(sku) {
+            console.log('get_sku_flavor', sku)
+            let flavor = sku.split('-')[0]
+            console.log('get_sku_flavor', flavor)
+            return flavor
+        },
+         image_show(position, value) {
+
+                let flavor = this.get_sku_flavor(value)
+                let title = this.showimage[flavor]
+                console.log('get_sku_flavor_title', title)
+                if (title) {
+                    return title
+                } else {
+                    return value
+                }
+            },
+
+         get_sku_flavor_title(position, value) {
+            
+            let flavor = this.get_sku_flavor(value)
+            let title = this.FlavorsBYSKU[flavor]
+            console.log('get_sku_flavor_title', title)
+            if (title) {
+                return title
+            } else {
+                return value
+            }
+        },
+        
+
+        get_sku_flavor_description(sku, title) {
+
+
+            let flavor = this.get_sku_flavor(sku)
+
+            let description = this.FlavorsDescriptionBYSKUS[sku]
+            console.log('get_sku_flavor_description', description)
+            if (description) {
+                return description
+            } else {
+                return title
+            }
+        },
+
+
+
+        async updateCart(variantId, quantity) {
+            console.log('updateCart', variantId, quantity)
+            let data = {
+                "id": `${variantId}`,
+                "quantity": quantity
+            }
+            let response = await fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            let result = await response.json()
+            console.log('updateCart', result)
+            this.getCart()
+        },
+        async removeFromCart(variantId) {
+            console.log('removeFromCart', variantId)
+            let data = {
+                "id": `${variantId}`,
+                "quantity": 0
+            }
+
+            let response = await fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            let result = await response.json()
+            console.log('removeFromCart', result)
+            this.getCart()
+        },
+        async addToCart(selectedVariant) {
+            this.addingtoCart = true
+            if (!selectedVariant) {
+                alert('Please select a variant')
+                return false
+            }
+            // console.log('addToCart', selectedVariant)
+            let variant_id = selectedVariant.id
+
+            let isSubscription = this.selected_options.option_2?.toLowerCase()?.includes('subscri')
+            let selected_plan = this.selected_plan
+            let quantity = 1
+            let selling_plan = isSubscription ? selected_plan.id : null
+            let lineItem = {
+                "id": variant_id,
+                "quantity": quantity
+            }
+
+            store.addToCart(variant_id, 1, selling_plan, () => {
+                this.addingtoCart = false;
+
+                let new_year_bundle_checkbox = document.getElementById('new_year_bundle_checkbox');
+
+                if (new_year_bundle_checkbox && new_year_bundle_checkbox.checked) {
+
+
+                    store.addToCartWithProperties({
+                        id: "44734466097310",
+                        quantity: 1,
+                        properties: { upsell: true },
+                        cb: (response) => {
+
+                        },
+                    });
+
+                }
+
+
+                window.SuperCart.ShowCartfn()
+            })
+
+
+        },
+
+        selectOption(position, value) {
+
+            this.selected_options["option_" + position] = value
+
+        },
+      getCompareAtPrice(position, value) {
+
+
+
+
+                let variant = this.variants.find(variant => {
+
+
+                    let options = {
+                        option1: this.selected_options.option_1,
+                        option2: this.selected_options.option_2,
+                        ["option" + position]: value
+                    }
+
+                    return variant.option1 == options.option1 && variant.option2 == options.option2
+
+                })
+
+                if (this.isSubscription) {
+
+                    let OneTimeVariant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('one time'))
+                    let subscriptionVariant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('subscri'))
+
+                    //WITHOUT SALE CODe 
+                    if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                        return "€" + OneTimeVariant?.price / 100
+                    }
+                    else {
+                        return ""
+                    }
+
+                    // if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                    //     return "£" + subscriptionVariant?.price / 100
+                    // }
+                    // else {
+                    //     return "£" + OneTimeVariant?.price / 100
+                    // }
+                }
+
+
+
+                if (variant && variant.compare_at_price > 0 && variant.compare_at_price > variant.price) {
+                    return "€" + variant?.compare_at_price / 100
+                }
+                else {
+                    // without sale 
+                    // return ""
+                    return "€" + variant?.price / 100
+                }
+
+            },
+            getOptionPrice(position, value) {
+
+
+                let variant = this.variants.find(variant => {
+
+
+                    let options = {
+                        option1: this.selected_options.option_1,
+                        option2: this.selected_options.option_2,
+                        ["option" + position]: value
+                    }
+
+                    return variant.option1 == options.option1 && variant.option2 == options.option2
+
+                })
+
+
+                let percentageOff = 0
+                if (this.product.tags.includes("15-percent-discount")) {
+                    percentageOff = 15
+                }
+                if (this.product.tags.includes("20-off-sitewide")) {
+                percentageOff = `20`;
+                }  
+                if (this.product.tags.includes("25-off-sitewide")) {
+                    percentageOff = 25
+                }
+
+                // if (this.isSubscription) {
+
+                //     let variant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('one time'));
+
+                //     if (variant) {
+                //         return "£" + variant?.price / 100
+                //     }
+                // }  
+
+
+                if (percentageOff > 0) {
+                    let price = variant?.price / 100
+                    let discount = price * (percentageOff / 100)
+                    let discountedPrice = price - discount
+                    return this.money(discountedPrice * 100)
+                }
+
+ 
+                return this.money(variant?.price)
+            },
+        async getCart() {
+
+            let cartResponse = await fetch('/cart.json')
+            this.cart = await cartResponse.json()
+            this.openSlideCart()
+
+        },
+        async getProductByHandle(handle) {
+            const product = await fetch(`/products/${handle}.js`).then(response => response.json())
+            this.product = product
+             const defaultOptions = {};
+            product.options.forEach((option, index) => {
+                defaultOptions[`option_${index + 1}`] = option.values[0]; 
+            });
+            this.selected_options = defaultOptions;
+            let selling_plan = product?.selling_plan_groups?.[0]?.selling_plans || []
+            
+            if (handle === 'the-longevity-nutrition-kit' || handle === 'longevity-nutrition-program') {
+                this.selected_plan = selling_plan[0]
+            } else {
+                this.selected_plan = selling_plan[0]
+            }
+            console.log({ product })
+        }, 
+    },
+        computed: {
+
+        
+
+      
+
+        isSubscription() {
+            return this.selected_options?.option_2?.toLowerCase()?.includes('subscri')
+        },
+
+        isOutOfStock() {
+            return this.selected_variant?.available === false
+        },
+
+        selling_plans() {
+            console.log(`products`, this.product)
+            return this.product?.selling_plan_groups?.[0]?.selling_plans || []
+
+        },
+
+
+        isAwayFreeShipping() {
+            return this.total_percentage < 100
+        },
+
+        isFreeShipping() {
+            return this.total_percentage >= 100
+        },
+        total_percentage() {
+
+            let freeshippingValue = 1000
+            let subtotal = this.totalCartPrice
+            let percentage = (subtotal / freeshippingValue) * 100
+
+            return percentage
+
+
+
+        },
+        totalCartPrice() {
+            return this.cart?.total_price / 100
+        },
+
+        compare_at_price() {
+
+
+            if (!this.variants) {
+                return ""
+            }
+
+            let variant = this.selected_variant
+
+            if (this.isSubscription) {
+
+                let OneTimeVariant = this.variants.find(variant => variant.option2?.toLowerCase()?.includes('one time') && variant.option1 == this.selected_options.option_1)
+                let subscriptionVariant = this.variants.find(variant => variant.option2?.toLowerCase()?.includes('subscri') && variant.option1 == this.selected_options.option_1)
+
+                if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                    return "€" + OneTimeVariant?.price / 100
+                }
+                else {
+                    return ""
+                }
+
+
+
+
+            }
+            if (variant && variant.compare_at_price > 0 && variant.compare_at_price > variant.price) {
+                return "€" + variant?.compare_at_price / 100
+            }
+
+
+
+            else {
+                return ""
+            }
+        },
+        calculatedPrice() {
+            if (!this.variants) {
+                return ""
+            }
+            if (!this.selected_variant) {
+                return ""
+            }
+
+            let variant = this.selected_variant
+            let percentageOff = 0
+            if (this.product.tags.includes("15-percent-discount")) {
+                percentageOff = 15
+            }
+            if (this.product.tags.includes("20-off-sitewide")) {
+                percentageOff = 20
+            }
+            if (this.product.tags.includes("25-off-sitewide")) {
+                percentageOff = 25
+            } 
+
+            if (percentageOff > 0) {
+                let price = variant?.price / 100
+                let discount = price * (percentageOff / 100)
+                let discountedPrice = price - discount
+                return "€" + discountedPrice
+            }
+
+
+
+            return "€" + variant?.price / 100
+        },
+        variants() {
+            console.log('variants', this.product.variants)
+            return this.product.variants
+
+        },
+        selected_variant() {
+
+            if (this.variants) {
+                let option1 = this.selected_options.option_1
+                let option2 = this.selected_options.option_2
+                let option3 = this.selected_options.option_3
+
+                let variant = this.variants.find(variant => variant.option1 == option1 && variant.option2 == option2 && variant.option3 == option3)
+
+                return variant
+            }
+            else {
+                return {}
+            }
+        },
+        options() {
+            console.log('options', this.product.options)
+            return this.product.options
+        },
+        slides() {
+            return blockImages
+        },
+        visibleThumbnails() {
+            return this.slides.slice(this.thumbnailStartIndex, this.thumbnailStartIndex + this.maxVisibleThumbnails)
+        },
+        remainingThumbnails() {
+            return this.slides.length - (this.thumbnailStartIndex + this.maxVisibleThumbnails)
+        },
+
+        saleMessage() {
+            if (!this.product || !this.product.tags) {
+                console.log('Product or tags not available')
+                return ``
+            }
+
+            console.log('Evaluating saleMessage, product tags:', this.product.tags)
+
+            let totalOff = ``
+            if (this.product.tags.includes("10-sale-off")) {
+                totalOff = `10`
+            }
+            if (this.product.tags.includes("15-percent-discount")) {
+                totalOff = `15`
+            }
+            if (this.product.tags.includes("25-off-sitewide")) {
+                totalOff = `25`
+            }
+            if (this.product.tags.includes("20-off-sitewide")) {
+                totalOff = `20`
+            }
+
+            if (!totalOff) {
+                return ``
+            }
+
+            return `<span class="bg-[#98ca3c] block font-semibold md:text-[16px]  px-4 py-1 text-[14px] text-white text-left">${totalOff}% OFF</span>`
+        }
+
+
+
+    },
+        mounted() {
+
+        console.log('onMounted', this.variants)
+                this.getProductByHandle('{{ section.settings.selected_product }}');
+        // this.getCart();
+        // document.querySelectorAll('[v-cloak]').forEach(element => {
+        // element.removeAttribute('v-cloak');
+        // }); 
+
+    },
+
+        }).mount('#app-2')
+
+
+</script>
+
+
+<style>
+    .checkmark {
+        position: absolute;
+        cursor: pointer;
+        top: 32px;
+        margin: 3px;
+        left: 7px;
+        height: 25px;
+        width: 25px;
+        background-color: #eeeeee;
+        animation: shadow-pulse 1.5s infinite;
+        border: 2px solid #73994a;
+        border-radius: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .checkmark {
+            top: 30px;
+            left: 3px;
+        }
+    }
+
+    .wps_upsell_bump_checkbox_container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    .wps_upsell_bump_checkbox_container input:checked~.checkmark {
+        background-color: #73994a;
+    }
+
+    .checkmark:after {
+        content: "✓";
+
+        position: absolute;
+        display: none;
+    }
+
+    .wps_upsell_bump_checkbox_container input:checked~.checkmark:after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        border-radius: 100%;
+        line-height: 0.7;
+        color: green;
+        font-size: 18px;
+        top: 10px;
+
+
+
+    }
+
+    /* .wps_upsell_bump_checkbox_container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid #333;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } */
+
+    .wps_upsell_offer_image {
+        margin-right: 10px;
+    }
+
+    .wps_upsell_offer_img {
+        width: 80px;
+        height: 80px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+
+
+    /*! CSS Used keyframes */
+    @keyframes shadow-pulse {
+        0% {
+            box-shadow: 0 0 0 1px #73984a;
+        }
+
+        100% {
+            box-shadow: 0 0 0 7px transparent;
+        }
+    }
+
+    @keyframes leftright {
+        0% {
+            transform: translateX(-5px)scaleX(-1);
+        }
+
+        60% {
+            transform: translateX(-2px)scaleX(-1);
+        }
+
+        100% {
+            transform: translateX(-5px)scaleX(-1);
+        }
+    }
+</style>
+
+
+<style>
+    .faq-content {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .faq-open {
+        max-height: 1000px !important;
+        opacity: 1 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .faq-closed {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .faq-content>div {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .checkmark {
+        position: absolute;
+        cursor: pointer;
+        top: 32px;
+        margin: 3px;
+        left: 7px;
+        height: 25px;
+        width: 25px;
+        background-color: #eeeeee;
+        animation: shadow-pulse 1.5s infinite;
+        border: 2px solid #73994a;
+        border-radius: 20px;
+    }
+
+
+</style>

@@ -1,0 +1,481 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "{margin-top: 80px; padding: 50px 0px 0px;}",
+        "h1 {text-align: center; font-size: 36px; font-weight: 600;}"
+      ],
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "a8d35c3e-299c-4522-a2b1-0048c24d4a2d": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Kit ProLon",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "c1433958-3f8c-4051-99d8-76685d0de55e": {
+          "type": "question",
+          "settings": {
+            "title": "Che cos'è ProLon®?",
+            "text": "<p>ProLon® è un programma dietetico da seguire per 5 giorni, sviluppato da scienziati della longevità di livello mondiale. L’utente ProLon® riceve tutto ciò che gli occorre, per ogni giorno del programma alimentare, in una confezione unica.</p>"
+          }
+        },
+        "7cf74c86-a158-4f36-8c85-19681ff80503": {
+          "type": "question",
+          "settings": {
+            "title": "Chi dovrebbe utilizzare il programma ProLon®?",
+            "text": "<p>\nStudi clinici hanno dimostrato che ProLon® può offrire importanti effetti benefici derivanti dalla variazione del regime alimentare: chiedi ulteriori informazioni al tuo medico o il tuo nutrizionista.</p>"
+          }
+        },
+        "55ac1589-dac3-408d-bdd1-e60caaf0eab9": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa contiene il box ProLon®?",
+            "text": "<p>\nOgni box ProLon® contiene delle preparazioni alimentari con circa 60 costituenti vegetali, scientificamente formulate e clinicamente testate per chi voglia sottoporsi al protocollo dietetico Mima Digiuno della durata di 5 giorni. All’interno del kit troverete cinque ulteriori confezioni, ognuna specifica per le giornate della DMD. Tutti gli alimenti di ProLon® sono gradevolissimi al palato e semplici da preparare tra cui zuppe, barrette, snacks, integratori e supplementi alimentari, infusi e concentrati per bevande.</p>"
+          }
+        },
+        "3a7765a3-1e15-4792-a7e0-6cdf6d2bb0a2": {
+          "type": "question",
+          "settings": {
+            "title": "Come assumo ProLon®?",
+            "text": "<p>\nL’utente ProLon® utilizza i prodotti del programma per 5 giorni consecutivi seguendo l’ordine di assunzione riportato nella brochure. L’ordine con il quale i prodotti possono essere assunti all’interno della stessa giornata può variare ma NON è possibile invertire gli alimenti di giorni diversi.</p>"
+          }
+        },
+        "0e1e3784-9ba3-459d-a24b-5f18b9f3e246": {
+          "type": "question",
+          "settings": {
+            "title": "Quanto peso si perde con ProLon?",
+            "text": "<p>\nLa quantità di peso perso varia da individuo ad individuo. Un professionista sarà capace di approfondire questo argomento e lavorare con il paziente per raggiungere il goal personalizzato.</p>"
+          }
+        },
+        "91594470-bb74-4af3-b16c-286af3826ead": {
+          "type": "question",
+          "settings": {
+            "title": "Quante volte devo assumere ProLon® in un anno?",
+            "text": "<p>\nDipende dal peso corporeo del paziente, dai marcatori di riferimento e dai controlli periodici sulla salute. Questo può stabilirsi dopo la valutazione ed il parere del proprio medico o nutrizionista:\n•Soggetti con rischio elevato: da 3 a 12 volte all’anno (dipende dalle condizioni);\n•Soggetti a basso rischio o in un buono stato di salute: da 2 a 3 volte all’anno.\n\nSe pensi che ProLon® sia adatto a te, contatta il tuo medico o il tuo nutrizionista, il quale potrà consigliarti ed autorizzarti all’uso di ProLon®; oppure contatta il nostro Staff che risponderà a tutte le tue domande e potrà aiutarti a trovare un medico o un nutrizionista più vicino a Te.</p>"
+          }
+        },
+        "f52f3c6e-117f-4415-96f4-ec1155989771": {
+          "type": "question",
+          "settings": {
+            "title": "Una volta iniziato ProLon®, posso frazionare i giorni?",
+            "text": "<p>\nIl frazionamento dei giorni del ProLon® non è consigliato in quanto questo metodo è stato studiato per un’efficacia su cinque giorni consecutivi.</p>"
+          }
+        },
+        "09d35f9d-896e-4ad8-a385-432c5227397f": {
+          "type": "question",
+          "settings": {
+            "title": "Esiste una dieta di transizione da seguire dopo che il paziente termina ProLon®?",
+            "text": "<p>\nIl 6°giorno, una volta finito il ProLon®, il paziente dovrebbe evitare di eccedere con il cibo e riprendere una dieta normale in modo graduale. Infatti, si consiglia, di iniziare con cibi liquidi e molto soffici, come zuppe o minestre, succhi di frutta, frullati e centrifugati seguiti da alimenti leggeri come riso, pasta e piccole porzioni di legumi e/o pesce azzurro . Una dieta normale può essere ripresa a partire dal giorno 7, o 24 ore dopo la fine del ProLon®.</p>"
+          }
+        },
+        "fbb260cf-cb3e-4607-8056-028a98984ca4": {
+          "type": "question",
+          "settings": {
+            "title": "Vi sono dati scientifici che supportano la formulazione e gli ingredienti di ProLon®?",
+            "text": "<p>\nLa particolare formulazione dietetica di ProLon® è il risultato di decadi di studi scientifici, incluse ricerche pre-cliniche e cliniche. Il ProLon® contiene ingredienti specifici che sono stati agglomerati per mimare il digiuno, pur ottimizzando il nutrimento.</p>"
+          }
+        },
+        "8b02afec-5743-47a7-8dd9-ee023b1fd0e1": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Le componenti di ProLon® sono biologiche?",
+            "text": "<p>\nI pasti del ProLon® sono formulati con ingredienti biologici, e stiamo lavorando per ottenere le relative certificazioni. I nostri alimenti sono inoltre integralmente vegetali.</p>"
+          }
+        },
+        "70cb2d0f-261e-4ea0-a63e-c4ac95a8bee6": {
+          "type": "question",
+          "settings": {
+            "title": "Che tipo di altro cibo posso assumere insieme a ProLon®?",
+            "text": "<p>\nDato che il ProLon® è un protocollo dietetico che apporta tutto il necessario durante i 5 giorni, mentre aiuta e stimola il rinnovamento e la riparazione cellulare, non è consigliato assumere alcun tipo di altro alimento in concomitanza con il ProLon®. È fortemente consigliato idratarsi correttamente bevendo molta acqua per evitare la disidratazione..</p>"
+          }
+        },
+        "636a1a22-d76f-4713-a860-9e6d9df79d20": {
+          "type": "question",
+          "settings": {
+            "title": "Se sono necessarie kcal extra durante i cinque giorni, cosa si può assumere?",
+            "text": "<p>\nIl soggetto che segue ProLon® non dovrebbe assumere nient’altro durante i cinque giorni. Dal momento che il protocollo alimentare è ipocalorico, il paziente potrebbe sentire una sensazione di stanchezza e debolezza, in particolare il giorno 2. Questo è assolutamente normale. Solitamente, il giorno 3 questa sensazione va a ridursi ma, se i sintomi sono severi, il paziente può bere del succo di frutta e contattare il Medico o il Nutrizionista di riferimento. Sarà compito del Professionista valutare se il paziente può continuare il programma dietetico o interromperlo. Gli energy drink inclusi nelle piccole confezioni di ProLon® devono essere assunte durante il giorno e forniscono non solo il supporto nutrizionale, ma sono specialmente adatti in queste circostanze.</p>"
+          }
+        },
+        "851f2931-8490-4f2c-9afb-322619dd7b0e": {
+          "type": "question",
+          "settings": {
+            "title": "Il kit ProLon® ha scadenza?",
+            "text": "<p>\nLa scadenza dei prodotti del kit ProLon® è di 6 mesi.</p>"
+          }
+        },
+        "96156f98-db21-416e-9a30-c0f5be558043": {
+          "type": "question",
+          "settings": {
+            "title": "Durante la dmd posso consumare caffè cibi tisane o altre bevande?",
+            "text": "<p>\nDurante i 5 giorni di ProLon si consiglia di non aggiungere altri alimenti o altre bevande rispetto a quelli previsti dal Programma ProLon, fatta eccezione per l'acqua.</p>"
+          }
+        },
+        "f1ad5acb-04ed-4bff-b710-82f1fb6b767c": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa è L-Drink?",
+            "text": "<p>\nL'L-Drink è una bevanda che si assume dal 2 al quinto giorno; la quantità da assumere dipende dal peso corporeo e va preparato seguendo i passaggi riportati nelle istruzioni contenute all'interno del kit. Questa componente, correttamente preparata, aiuta il transito intestinale in quanto è un blando lassativo..</p>"
+          }
+        },
+        "44dd825b-c560-4d2f-b8b8-fd27b3901b06": {
+          "type": "question",
+          "settings": {
+            "title": "Con cosa posso sostituire i pasti del kit che non gradisco?",
+            "text": "<p>\nNon è possibile sostituire le componenti del kit. Il kit ProLon è stato studiato e testato per simulare una condizione di digiuno e per fornire, al contempo, adeguato nutrimento all'organismo, quindi sostituire una o più delle componenti previste è da evitare.</p>"
+          }
+        },
+        "74fb0d4e-2c4b-4127-92bc-96ea9a174b27": {
+          "type": "question",
+          "settings": {
+            "title": "Quanta acqua devo bere durante la dmd?",
+            "text": "<p>\nDurante il protocollo ProLon, si consiglia di bere almeno 2,5 litri di acqua totale al giorno (incluse le tisane previste e l'L-Drink).</p>"
+          }
+        },
+        "fc89e01c-464c-4aad-b481-92c67ca234c0": {
+          "type": "question",
+          "settings": {
+            "title": "Sto tutto il giorno fuori casa, come posso fare con i pasti?",
+            "text": "<p>\nLe zuppe e i minestroni possono essere preparate la mattina o la sera prima, assicurandosi sempre di mantenerle a temperature adeguate fino al momento del pranzo. Ad esempio: se si cuociono la sera precedente, basta portarle con sé dentro una borsa frigo; altrimenti, se si preparano la mattina, si possono conservare all'interno di un thermos, che mantiene la temperatura di cottura per alcune ore dopo la cottura.</p>"
+          }
+        },
+        "17d6b21d-896b-448e-b40b-4cb043a99d8d": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Salute",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "6ed04c2c-72ba-4b95-ba71-ee8679bee3e5": {
+          "type": "question",
+          "settings": {
+            "title": "ProLon® può essere usato da pazienti con malattie croniche?",
+            "text": "<p>\nA seconda della patologia, della storia medica pregressa e dei farmaci attuali, il programma dietetico ProLon® potrebbe essere combinato con lo standard di trattamento di cura; tuttavia, ProLon®non può essere prescritto per prevenire o curare le malattie.</p>"
+          }
+        },
+        "10c00c14-b1f8-4d2f-8c71-003f5dd85f02": {
+          "type": "question",
+          "settings": {
+            "title": "Bisogna interrompere l'assunzione di integratori alimentari durante i cinque giorni di ProLon®?",
+            "text": "<p>\nPoiché il programma dietetico ProLon® è progettato per fornire tutti i supplementi e le sostanze nutritive necessarie, non devono essere assunti multivitaminici o supplementi durante il periodo di dieta. Tuttavia, si consiglia di discuterne con il Professionista di fiducia.</p>"
+          }
+        },
+        "9558ebc2-63fe-44f6-87f3-d69f507a098d": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa implica la supervisione e il monitoraggio del paziente?",
+            "text": "<p>\nDurante la consultazione con i potenziali consumatori del ProLon®, il Professionista deve determinare se il paziente è adatto a un protocollo alimentare con un basso apporto calorico e proteico. Inoltre, è necessario educare il paziente sui potenziali effetti collaterali il ProLon® e fornire le informazioni adatte per essere contattati qualora il paziente abbia necessità. Inoltre, il Medico o il Nutrizionista devono monitorare il paziente durante la dieta e accertarsi che i pazienti seguano il ProLon® correttamente.</p>"
+          }
+        },
+        "0f76307b-d67c-4ca2-803b-dca718a9a9a3": {
+          "type": "question",
+          "settings": {
+            "title": "Come fa un paziente a monitorare se stesso?",
+            "text": "<p>\nIl Medico o il Nutrizionista deve suggerire delle raccomandazioni mirate in base al paziente che ha di fronte. Comunque, si consiglia di registrare il peso, la pressione arteriosa e la circonferenza addominale del paziente prima di iniziare il ProLon® e dopo ogni ciclo di dieta. Inoltre, il Professionista deve ricordare al paziente di seguire la dieta come pianificato, se capita di dimenticare qualcosa si prega di fare riferimento al Professionista di fiducia.</p>"
+          }
+        },
+        "33a3b996-bb69-4735-81cc-20eb6d09eb37": {
+          "type": "question",
+          "settings": {
+            "title": "Posso fare sport o attività fisica durante la dmd?",
+            "text": "<p>\nDurante i 5 giorni di ProLon, si consiglia di evitare le attività stancanti e particolarmente intense, incluso esercizio fisico di alta intensità o nuoto. I soggetti che praticano sport non devono allenarsi. Se ci si sente bene, è possibile concedersi una passeggiata ricreativa o praticare yoga, meditazione e sessioni leggere di pilates.</p>"
+          }
+        },
+        "926366f5-ef86-414e-93c4-ccfba68fc58c": {
+          "type": "question",
+          "settings": {
+            "title": "Ho mal di testa e dolori muscolari è normale?",
+            "text": "<p>\nSì, il mal di testa e i dolori muscolari rientrano tra gli effetti che sono tipicamente correlati con ProLon; in generale i primi 3 giorni sono i più impegnativi, soprattutto il secondo e il terzo, naturalmente, la risposta dell'organismo è sempre soggettiva.\n\n<a href=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/PROPOSTA_VIDEO_CON_COLORI_ALLINEATI_AL_SITO.mp4?v=1651668918\">Guarda il video della nostra nutrizionista</a></p>"
+          }
+        },
+        "275611c2-a7fa-4b11-b60a-b7ab9c782972": {
+          "type": "question",
+          "settings": {
+            "title": "Ho dolori muscolari. Cosa posso fare?",
+            "text": "<p>E' consigliabile stare a riposo e idratarsi bene, bevendo la giusta quantità di acqua nell'arco della giornata (circa 2,5 litri al giorno, compresi L-Drink e le tisane che trova all'interno del kit). Inoltre, per alleviare il dolore, può massaggiare la zona interessata, applicarvi una borsa dell'acqua calda o della crema erboristica miorilassante.</p>"
+          }
+        },
+        "02d30be1-9a39-45f1-a630-51bd6bc6ba32": {
+          "type": "question",
+          "settings": {
+            "title": "Ho raffeddore o l'influenza. Posso fare la DMD?",
+            "text": "<p>\nNo. E' bene iniziare la DMD quando si ha uno stato di salute ottimale.</p>"
+          }
+        },
+        "ae68b787-04eb-48be-9f75-b2fecc924b31": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa devo fare se assumo farmaci?",
+            "text": "<p>\nQuando si assumono farmaci, è consigliabile consultare il Medico che li ha prescritti, in quanto è scelta del Medico decidere se si può consumare ProLon in combinazione con qualsiasi tipo di farmaco.</p>"
+          }
+        },
+        "59c358b3-f8fa-4e93-bcd4-1249ef3a99ca": {
+          "type": "question",
+          "settings": {
+            "title": "Cosa devo fare se assumo integratori?",
+            "text": "<p>\nPoiché il kit ProLon è stato studiato e testato per simulare una condizione di digiuno e per fornire, al contempo, adeguato nutrimento all'organismo, tendenzialmente è corretto sospendere gli abituali integratori in quanto il programma include supplementi per vitamine, minerali e omega-3. Tuttavia, è consigliabile discuterne con il Professionista di fiducia, qualora l'integrazione sia stata suggerita dalla figura professionale stessa.</p>"
+          }
+        },
+        "b472bd8a-bc34-4cd3-adec-e11cfe5a4b64": {
+          "type": "question",
+          "settings": {
+            "title": "Sto allatando/gravidanza, posso fare la DMD?",
+            "text": "<p>\nNo, è vietato seguire Prolon in gravidanza o durante l'allattamento.</p>"
+          }
+        },
+        "5d03196f-3b1d-4bb4-a597-6c71dfbe925f": {
+          "type": "question",
+          "settings": {
+            "title": "Ho il diabete, posso fare la DMD?",
+            "text": "<p>\nE' severamente vietato seguire Prolon in presenza di Diabete Mellito tipo 1, tipo 2 o qualsiasi altra forma genetica di Diabete.</p>"
+          }
+        },
+        "9e3c24aa-437f-438b-9c39-6b3422436f6a": {
+          "type": "question",
+          "settings": {
+            "title": "Se il medico mi prescive le analisi, quanto tempo devo attendere dalla fine della DMD?",
+            "text": "<p>\nPer avere delle analisi attendibili è necessario attendere almeno 15-20 giorni dal termine del kit.</p>"
+          }
+        },
+        "df329d8b-28a9-4099-a858-fe511f989efd": {
+          "type": "question",
+          "settings": {
+            "title": "Posso fare due cicli consecutivi di DMD?",
+            "text": "<p>\nNo. E' bene applicare il protocollo DMD con frequenze ragionevoli. Chiedi consiglio all'Ufficio Scientifico L-Nutra e al professionista a te più vicino.</p>"
+          }
+        },
+        "299b2e31-3d8b-4aaa-8d4e-452677d47cfc": {
+          "type": "question",
+          "settings": {
+            "title": "Posso fare ProLon se ho il COVID-19 (anche in caso di soggetti asintomatici)?",
+            "text": "<p>\nIn generale, è preferibile non accostare ProLon a nessun tipo di vaccinazione. E' consigliabile attendere almeno 20-30 giorni dalla vaccinazione o dal Covid.</p>"
+          }
+        },
+        "029980ac-470e-4d72-9c97-ec38be0bbc71": {
+          "type": "question",
+          "settings": {
+            "title": "Posso fare ProLon se ho il ciclo mestruale?",
+            "text": "<p>\nE' consigliabile non effettuare ProLon durante i giorni del ciclo mestruale.</p>"
+          }
+        },
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Spedizione",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "Quanto ci mette ad arrivare il Kit dal momento dell'ordine?",
+            "text": "<p>Le nostre spedizioni sono con corriere GLS e impiegano 48-72 ore lavorative.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "Come faccio a tracciare il mio pacco?",
+            "text": "<p>Riceverai una mail al completamento dell'ordine da GLS, in alternativa non esitare a contattarci.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Resi",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "Come faccio a effettuare un reso?",
+            "text": "<p>Il diritto di recesso è regolato ai sensi di legge se il cliente-consumatore (ossia una persona fisica che acquista la merce per scopi non riferibili alla propria attività professionale, ovvero non effettua l'acquisto indicando nel modulo d'ordine un riferimento di partita iva) ha diritto di recedere dal contratto di acquisto per qualsiasi motivo.\n\nPer esercitare tale diritto il cliente dovrà inviare a Longevity Group Srl una comunicazione entro 14 giorni lavorativi a far data dalla data di consegna della merce. Tale comunicazione potrà essere inviata con RACCOMANDATA con ricevuta di ritorno indirizzata a: L-Nutra Italia Srl, Via XX Settembre 12/2E - 16121 Genova (GE) o mezzo mail all’indirizzo: info@prolon.it\n\nSarà accettato il reso di qualsiasi articolo, purché totalmente integro e nell'imballaggio originale, rimborsando l'intero ammontare escluse le spese di spedizione che rimangono a carico del cliente (come previsto dalla legge in materia).\n\nAi sensi dell’art. 52 del decreto legislativo 6 settembre 2005 n. 206 (“Codice del Consumo”), il cliente ha il diritto di recedere dal contratto di acquisto per qualsiasi motivo, senza necessità di fornire spiegazioni.\n\nDopo aver manifestato l'intenzione di avvalersi del diritto di recesso, il prodotto va inviato a L-Nutra Italia Srl, Via Sesia,18/20, 20017, Rho (MI). Dopo che sarà stata verificata l'integrità del prodotto sarà effettuato il rimborso, tramite riaccredito su carta di credito o conto Paypal, oppure tramite Bonifico bancario entro 14 gg dall'accettazione del reso. Le spese di spedizione rimangono in ogni caso a carico del cliente.</p>"
+          }
+        },
+        "0baf13ae-22d8-49ec-b8ed-1ca4ca4b6503": {
+          "type": "question",
+          "settings": {
+            "title": "Come fare se ricevo un pacco manomesso?",
+            "text": "<p>\nSe per caso il corriere dovesse consegnare un pacco con il sigillo manomesso o con evidente manomissione, bisogna scattare immediatamente una fotografia ed inviarla a ProLon® e restituire il pacco al corriere seduta stante. Se non si eseguono queste azioni, la Società non potrà fare nulla per aiutare.</p>"
+          }
+        },
+        "db2db8c2-3eed-4fbc-9d47-efc0521314c7": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Componenti Kit",
+            "text": "",
+            "align_text": "center"
+          }
+        },
+        "95f4313d-93dd-40c1-9337-c63f5986634e": {
+          "type": "question",
+          "settings": {
+            "title": "Mi manca la barretta alle noci, cosa posso fare?",
+            "text": "<p>\nPuò prendere la barretta del DAY 5 e nel frattempo noi provvediamo a spedirla al più presto. Contattare il servizio clienti al numero riportato sul sito web www.prolon.it.</p>"
+          }
+        },
+        "45d55ec9-d211-470c-9812-1f27c89f53ec": {
+          "type": "question",
+          "settings": {
+            "title": "Mi manca una delle tisane, cosa posso fare?",
+            "text": "<p>\nPuò prendere quella/e degli altri DAY e nel frattempo noi provvediamo a spedirla/e al più presto. Qualora non dovessero arrivare, non si preoccupi perché la tisana ha la funzione di aiutarla a mantenersi idratato/a: l'importante è assumere la giusta quantità di acqua nell'arco della giornata.</p>"
+          }
+        },
+        "7915d418-bf82-46aa-830e-6ebece791b11": {
+          "type": "question",
+          "settings": {
+            "title": "Mi manca una zuppa o un minestrone, cosa posso fare?",
+            "text": "<p>\nLa faremo contattare l'Ufficio Scientifico per ricevere maggiori dettagli su come procedere. Nel frattempo, noi provvederemo ad inviare la componente mancante al più presto.</p>"
+          }
+        },
+        "f683f1a2-61bf-44c2-a9a9-4dc9c02febc9": {
+          "type": "question",
+          "settings": {
+            "title": "Il kit è vegano?",
+            "text": "<p>\nNo. Il kit contiene miele e, al momento, l'integrazione di olio d'alga presenta una fonte animale.</p>"
+          }
+        },
+        "6e69336e-847c-4302-8baf-cdf1481ad7f5": {
+          "type": "question",
+          "settings": {
+            "title": "Le zuppe sono liofilizzate?",
+            "text": "<p>\nLe zuppe contenute all'interno del kit sono disidratate. E' necessario quindi reidratarle e cucinarle, come riportato nelle istruzioni, prima di consumarle.</p>"
+          }
+        },
+        "c931df1a-caaf-48b5-b82e-f6c0589864e5": {
+          "type": "question",
+          "settings": {
+            "title": "I Menù 1 e 2 di ProLon contengono nichel?",
+            "text": "<p>\nSì, entrambi i menù presentano componenti che contengono naturalmente nichel.</p>"
+          }
+        },
+        "675860d5-b0c3-436c-9803-368d55149d6b": {
+          "type": "question",
+          "settings": {
+            "title": "Perchè c'è la Barretta?",
+            "text": "<p>\nLa dieta attua un preciso bilanciamento tra i vari macronutrienti (proteine, grassi, zuccheri, fibre) e micronutrienti (vitamine e minerali), di conseguenza non è possibile sostituire un prodotto. Nel caso della barretta potrà mangiarla a piccoli pezzi durante tutto il corso della giornata oppure utilizzarla come muesli. Buona giornata</p>"
+          }
+        }
+      },
+      "block_order": [
+        "a8d35c3e-299c-4522-a2b1-0048c24d4a2d",
+        "c1433958-3f8c-4051-99d8-76685d0de55e",
+        "7cf74c86-a158-4f36-8c85-19681ff80503",
+        "55ac1589-dac3-408d-bdd1-e60caaf0eab9",
+        "3a7765a3-1e15-4792-a7e0-6cdf6d2bb0a2",
+        "0e1e3784-9ba3-459d-a24b-5f18b9f3e246",
+        "91594470-bb74-4af3-b16c-286af3826ead",
+        "f52f3c6e-117f-4415-96f4-ec1155989771",
+        "09d35f9d-896e-4ad8-a385-432c5227397f",
+        "fbb260cf-cb3e-4607-8056-028a98984ca4",
+        "8b02afec-5743-47a7-8dd9-ee023b1fd0e1",
+        "70cb2d0f-261e-4ea0-a63e-c4ac95a8bee6",
+        "636a1a22-d76f-4713-a860-9e6d9df79d20",
+        "851f2931-8490-4f2c-9afb-322619dd7b0e",
+        "96156f98-db21-416e-9a30-c0f5be558043",
+        "f1ad5acb-04ed-4bff-b710-82f1fb6b767c",
+        "44dd825b-c560-4d2f-b8b8-fd27b3901b06",
+        "74fb0d4e-2c4b-4127-92bc-96ea9a174b27",
+        "fc89e01c-464c-4aad-b481-92c67ca234c0",
+        "17d6b21d-896b-448e-b40b-4cb043a99d8d",
+        "6ed04c2c-72ba-4b95-ba71-ee8679bee3e5",
+        "10c00c14-b1f8-4d2f-8c71-003f5dd85f02",
+        "9558ebc2-63fe-44f6-87f3-d69f507a098d",
+        "0f76307b-d67c-4ca2-803b-dca718a9a9a3",
+        "33a3b996-bb69-4735-81cc-20eb6d09eb37",
+        "926366f5-ef86-414e-93c4-ccfba68fc58c",
+        "275611c2-a7fa-4b11-b60a-b7ab9c782972",
+        "02d30be1-9a39-45f1-a630-51bd6bc6ba32",
+        "ae68b787-04eb-48be-9f75-b2fecc924b31",
+        "59c358b3-f8fa-4e93-bcd4-1249ef3a99ca",
+        "b472bd8a-bc34-4cd3-adec-e11cfe5a4b64",
+        "5d03196f-3b1d-4bb4-a597-6c71dfbe925f",
+        "9e3c24aa-437f-438b-9c39-6b3422436f6a",
+        "df329d8b-28a9-4099-a858-fe511f989efd",
+        "299b2e31-3d8b-4aaa-8d4e-452677d47cfc",
+        "029980ac-470e-4d72-9c97-ec38be0bbc71",
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "0baf13ae-22d8-49ec-b8ed-1ca4ca4b6503",
+        "db2db8c2-3eed-4fbc-9d47-efc0521314c7",
+        "95f4313d-93dd-40c1-9337-c63f5986634e",
+        "45d55ec9-d211-470c-9812-1f27c89f53ec",
+        "7915d418-bf82-46aa-830e-6ebece791b11",
+        "f683f1a2-61bf-44c2-a9a9-4dc9c02febc9",
+        "6e69336e-847c-4302-8baf-cdf1481ad7f5",
+        "c931df1a-caaf-48b5-b82e-f6c0589864e5",
+        "675860d5-b0c3-436c-9803-368d55149d6b"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "contact_form_tgA6m6": {
+      "type": "contact-form",
+      "custom_css": [
+        "{background-color: #f1eae5; padding: 20px 0px;}",
+        "h2 {text-align: center; font-size: 28px; font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "Non hai trovato la risposta che cercavi?",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    },
+    "promo_grid_mrMr7V": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner_6QjjQT": {
+          "type": "banner",
+          "settings": {
+            "heading": "Hai ancora bisogno di aiuto?",
+            "text": "",
+            "link": "shopify://pages/contatti",
+            "label": "Contattaci",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner_6QjjQT"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq",
+    "contact_form_tgA6m6",
+    "promo_grid_mrMr7V"
+  ]
+}

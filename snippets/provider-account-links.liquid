@@ -1,0 +1,30 @@
+<style>.provider-links {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.provider-links a {
+    margin-top:10px;
+    display: block;
+}</style>
+{% if isProvider%}
+<div class="provider-links">
+
+<a href="account?view=prepaid-inventory" class="btn" style="background-color: #F28F3B; min-width: 245px;">My Virtual Inventory</a>
+<a href="account?view=provider-network" class="text-link btn" style="min-width: 245px;">Locator Registration</a>
+ 
+{% if  customer.tags contains 'stripe-connected' %}  
+<a href="/account?view=stripe-connect&cache=false" class="text-link btn">View My Referrals</a>
+{% else %}
+<a href="/account?view=stripe-connect&cache=false" class="text-link btn">Stripe Connect</a>  
+{% endif %}  
+<a href="account?view=resources&cache=false" class="text-link btn" margin-top: 5px;min-width: 245px;">Professional Resources</a>
+{% if  customer.tags contains 'no-embed' %}  
+    <!-- <a href="/account?view=embedded-store" class="text-link btn">Sell ProLon on My Website</a>   -->
+{% endif %}   
+
+{% comment %}<a href="account?view=resale-certificate" class="btn" style=" min-width: 245px;">Update Resale License</a>{% endcomment %}
+</div>
+                                                                                 <br>
+{% endif %}

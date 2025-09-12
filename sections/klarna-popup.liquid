@@ -1,0 +1,213 @@
+<style class="extra-body-elements">
+    #klarna-payment-terms-cover * {
+  color: black;
+}#klarna-payment-terms-cover span {
+    display: inline;
+}  
+div#klarna-payment-terms-cover.hidden {display: none;} 
+#klarna-payment-terms-cover .visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+#klarna-payment-terms-cover h1 {
+  font-size: 26px; 
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0 0 20px;
+  max-width: 255px;    white-space: nowrap;
+ 
+}
+#klarna-payment-terms-cover p {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0 0 24px;
+}
+#klarna-payment-terms-cover section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#klarna-payment-terms-cover header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#klarna-payment-terms-cover .price {
+  color: #5a31f4;
+  font-weight: 600;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+}
+#klarna-payment-terms-cover .price__icon {
+  width: 43px;
+  height: 10px;
+}
+#klarna-payment-terms-cover .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#klarna-payment-terms-cover .list-item {
+  display: flex;
+  padding-bottom: 24px;
+}
+#klarna-payment-terms-cover .list-item__heading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125%;
+  padding-bottom: 4px;
+}
+#klarna-payment-terms-cover .list-item__subheading {
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.7);
+}
+#klarna-payment-terms-cover .list-item__icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 21px;
+  padding-right: 12px;
+}
+#klarna-payment-terms-cover .btn__close {
+  position: relative;
+  overflow: visible;
+  margin: 0;
+  background: transparent;
+  border: none;
+  -webkit-font-smoothing: inherit;
+  appearance: button;
+  cursor: pointer;
+}
+#klarna-payment-terms-cover .btn__close--primary {
+  background-color: #ffb3c757;
+  color: black;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  transition: background-color 100ms ease-in-out, opacity 100ms ease-out, color 100ms ease-in-out;
+}
+#klarna-payment-terms-cover .btn__close--icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 16px;
+  border-radius: 6px;
+}
+#klarna-payment-terms-cover .btn__close--icon:hover,
+#klarna-payment-terms-cover .btn__close--icon:active,
+#klarna-payment-terms-cover .btn__close--icon:focus {
+  background-color: #ffb3c7;
+  color: black; 
+} 
+#klarna-payment-terms-cover .btn__close--primary:hover,
+#klarna-payment-terms-cover .btn__close--primary:active,
+#klarna-payment-terms-cover .btn__close--primary:focus {
+  background-color: #ffb3c7;
+} 
+#klarna-payment-terms-cover .help_text {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#klarna-payment-terms-cover .help_text__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+#klarna-payment-terms-cover .help_text__link:hover,
+#klarna-payment-terms-cover .help_text__link:active,
+#klarna-payment-terms-cover .help_text__link:focus {
+  color: #3f22ab;
+}
+#klarna-payment-terms-cover footer {
+  text-align: center;
+}
+#klarna-payment-terms-cover .close__icon {
+  width: 13px;
+  height: 13px;
+}
+#klarna-payment-terms-cover .affirm-logo {
+  width: 39px;
+  height: 21px;
+  padding-left: 4px;
+}
+#klarna-payment-terms-cover .affirm-text {
+  display: flex;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}  
+</style>
+<div id="klarna-payment-terms-cover" class="hidden extra-body-elements" 
+    style="position: fixed; inset: 0px; z-index: 999999; background: rgba(0, 0, 0, 0.3);">
+    <div id="klarna-payment-terms-modal" role="dialog" aria-modal="true"
+        aria-labelledby="klarna-payment-terms-modal-heading" 
+        style="position: fixed; inset: 0px; z-index: 999999; background: white; height: 720px; width: 432px; max-width: 95%; max-height: 95%; margin: auto; border-radius: 7px; padding: 32px; box-sizing: border-box; overflow: auto;">
+         
+        <klarna-installments-modal price="$193.75" > 
+
+            <section>
+                <header>  
+                  <h1 id="shopify-payment-terms-modal-heading">{{paymentText | default_to:12}} payments of $<span klarna-payment class="klarna-pop-pay-price"></span>*.</h1> 
+                  <button type="button" class="btn__close btn__close--icon" aria-label="Close"> 
+                    <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/271203.png?v=1645189494" style="
+                    width: 12px;
+                ">                   </button>  
+                </header>
+                <div hidden="" id="shopify-payment-terms-modal-warning-text">Opens in a new window.</div>
+                <p> 
+              <span>Spread your cost over {{paymentText}} months with APRs from 0%-24.99%. Get
+                an instant decision with no impact on your credit.</span>
+            
+              
+            </p> 
+            <p>Pay every month</p>
+                <ul class="list">
+                  <li class="list-item">
+                    <svg role="img" aria-hidden="true" class="list-item__icon"><use xlink:href="#fees-icon"></use></svg>
+                    <div> 
+                      <div class="list-item__heading">Payment of every month $<span class="klarna-pop-pay-price" klarna-payment></span>*</div>
+                      <div class="list-item__subheading">APRs from 0%-24.99%</div>   
+                    </div>   
+                  </li>
+                  <li class="list-item">
+                    <svg role="img" aria-hidden="true" class="list-item__icon"><use xlink:href="#cc-icon"></use></svg>
+                    <div>
+                      <div class="list-item__heading">Make the most of your budget</div> 
+                      <div class="list-item__subheading">Automatic payments every month keep things flexible.</div>
+                    </div>
+                  </li>
+                </ul>
+                <button type="button" class="btn__close btn__close--primary">Close</button>
+                <p id="eligibility-approval" class="help_text">
+                  <span>
+                    *Based on 0% APR, only available to qualified customers with excellent credit history and
+                    subject to credit approval. A down payment may be required.<br><br>
+                    Actual APR based on creditworthiness and subject to credit approval, resulting in, for
+                    example, 6 monthly payments of $166.67 to $179.02 per $1000 borrowed.
+                    Minimum purchase of $149.
+                  </span>
+                   
+                </p>
+                <footer> 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40.4494" viewBox="0 0 100 40.4494"><defs><style>.cls-1{fill:#ffb3c7;}</style></defs><g id="Lager_2" data-name="Lager 2"><g id="Layer_1" data-name="Layer 1"><rect class="cls-1" width="100" height="40.4494" rx="11.7384"/><path d="M80.0772,17.7235a6.194,6.194,0,1,0,0,10.2373v.75h3.5145V16.9727H80.0772Zm-3.1964,8.1388a3.0243,3.0243,0,1,1,3.1849-3.02A3.1059,3.1059,0,0,1,76.8808,25.8623Z"/><rect x="28.2027" y="11.7416" width="3.678" height="16.9694"/><path d="M64.1542,16.6569a4.2694,4.2694,0,0,0-3.62,1.6383V16.9733h-3.5V28.711h3.5421V22.5424a2.4754,2.4754,0,0,1,2.6383-2.6591c1.5447,0,2.4325.9228,2.4325,2.6348V28.711h3.5107V21.2464C69.1577,18.5146,66.9857,16.6569,64.1542,16.6569Z"/><path d="M43,17.7235a6.194,6.194,0,1,0,0,10.2373v.75h3.5145V16.9727H43Zm-3.1965,8.1388a3.0243,3.0243,0,1,1,3.1845-3.02A3.1058,3.1058,0,0,1,39.8034,25.8623Z"/><path d="M51.9513,18.5017V16.9728H48.353V28.7111h3.606v-5.48c0-1.8491,2.0042-2.843,3.3949-2.843.014,0,.0276.0014.0417.0015V16.9735A4.3821,4.3821,0,0,0,51.9513,18.5017Z"/><path d="M87.323,24.5476a2.2059,2.2059,0,1,0,2.206,2.2059A2.2057,2.2057,0,0,0,87.323,24.5476Z"/><path d="M25.6675,11.7384H21.8558a9.7488,9.7488,0,0,1-3.9412,7.8678l-1.51,1.131,5.8513,7.9792h4.8106l-5.3837-7.342A13.5049,13.5049,0,0,0,25.6675,11.7384Z"/><rect x="12.1204" y="11.7384" width="3.8185" height="16.9773"/></g></g></svg> 
+               
+                </footer>
+            
+              </section> 
+        </klarna-installments-modal>
+    </div>
+</div>

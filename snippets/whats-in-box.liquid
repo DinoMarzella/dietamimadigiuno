@@ -1,0 +1,158 @@
+<style>
+  .whats-in-box-wrapper .main-title{
+    font-family: 'Harmonia Sans';
+    font-weight: 600;
+    color: #a1a1a1;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .whats-in-box-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .whats-in-box-single{
+    width: 45%;
+  }
+  .hr--whats-in{
+  height:1px;
+  border:0;
+  border-top:1px solid #365f44;
+  margin: 5px 0px;
+}
+.what-single-title{
+  font-family: 'Harmonia Sans';
+  font-weight: 700;
+  color: #365f44;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+}
+.what-single-description{
+  font-family: 'Harmonia Sans';
+  font-weight: 500;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+}h3.nutrition-facts a {color: #a4c752;margin-top: 20px;display: block;text-decoration: underline;} 
+.video-container.nutrition-fact-popup {
+    background: white;
+}
+
+.accordion {
+    height: 800px;
+    overflow: scroll;
+}
+
+.prolon-acc .answer {
+    display: none;
+}  
+@media(max-width:767px){
+  .whats-in-box-single{
+    width: 100%;
+  }.whats-in-box-wrapper.mobile-only {
+    display: block!Important;
+}  .whats-in-box-wrapper.mobile-only {
+    display: block!Important;
+}
+
+.video-container.nutrition-fact-popup {
+    margin: 0 auto;
+}
+
+#video-wrap .close-video {
+    top: 10px;
+}
+
+.video-container.nutrition-fact-popup  h1.section-header__title {
+    font-size: 30px; 
+    text-align: left;
+}  
+}
+</style>
+<div class="whats-in-box-wrapper {% if mobileOnly %} mobile-only {% endif %}" style="display:none;" >
+  <h5 class="main-title">What’s in the Kit</h5>
+  <div class="whats-in-box-content">
+    <div class="whats-in-box-single">
+      <h6 class="what-single-title">Soups</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">A variety of easy-to-prepare soups made with a proprietary mix of all-natural, plant-based ingredients</p>
+    </div>
+    <div class="whats-in-box-single">
+      <h6 class="what-single-title">Supplements</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">Dietary supplement packed with multivitamins, amino-acids, minerals and omega-3 fatty acid to provide the body with nourishment</p>
+    </div>
+    <div class="whats-in-box-single">
+      <h6 class="single-title">Nut Bars</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">Cold-pressed, delicious nut bars with whole ingredients like almonds, macadamia nuts, and pecans</p>
+    </div>
+    <div class="whats-in-box-single">
+      <h6 class="single-title">L-Drink</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">Fruit-flavored, proprietary glycerol mix designed to fuel and protect muscles throughout the fast</p> 
+    </div>
+    <div class="whats-in-box-single">
+      <h6 class="single-title">Snacks</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">Snacks such as olives from the South of Spain where olive consumption is associated with longevity, and kale crackers enriched with plant-based protein.</p>
+    </div>
+    <div class="whats-in-box-single">
+      <h6 class="single-title">TEAS</h6>
+      <hr class="hr--whats-in">
+      <p class="what-single-description">Caffeine-free herbal teas loaded with healthy antioxidants.</p>
+    </div>
+  </div>
+
+  <h3 class="nutrition-facts nutrition-facts-btn"  >
+    <a href="https://prolonfast.com/pages/ingredients-supplement-facts" >Nutrition Facts   </a>
+  </h3>
+</div>
+
+
+<script>
+  $(".nutrition-facts-btn a").click(function (e) {
+  e.preventDefault();
+
+    let current_text= $(this).html();
+    let context= this;
+    $(this).html('Loading...');
+    setTimeout(() => {
+      $(".nutrition-facts-btn a").html('Nutrition Facts'); 
+    },2000);
+    try{ 
+    let nutrition_facts_url = $(this).attr("href");
+    let content = "";
+    $.get(nutrition_facts_url, function(data){
+
+      let mainContent = $(data).find('#MainContent');
+      mainContent.find('.question.active').removeClass('active');  
+      $(".nutrition-facts-btn a").html('Nutrition Facts');
+      content = mainContent.html(); 
+      if (content) {  
+    $("body")
+      .append(
+        '<div class="active" id="video-wrap"><span class="video-overlay"></span><div class="video-container nutrition-fact-popup">' +
+        content +   
+          '</div><button class="close-video"></button></div>'
+      ) 
+      .addClass("active"); 
+  }   
+    });
+ 
+ 
+}
+catch(ex){
+
+  $(".nutrition-facts-btn a").html('Nutrition Facts');
+}
+});
+
+$(document).on("click", ".close-video, .video-overlay", function () {
+  $("#video-wrap").remove();
+});
+</script>

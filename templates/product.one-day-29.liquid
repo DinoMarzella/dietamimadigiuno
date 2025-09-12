@@ -1,0 +1,130 @@
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}">
+{% if products.handle contains 'ypo'   %}
+<style> 
+a.site-nav__link[href="/products/buy-prolon"] {display: block;}
+</style>   
+{% endif %} 
+
+<style>
+    /*HIDE HERO SECTIONS */
+  @media only screen and (max-width: 768px){
+#shopify-section-product-sections-template-oneday29 > div > div.block-ae42afd0-b85d-48fc-93de-576cd5b8ad68 {
+display: none;}}
+  
+@media only screen and (min-width: 769px){
+#shopify-section-product-sections-template-oneday29 > div > div.block-033444e4-34d4-42f4-b82a-f28799feca21 {
+display: none;}
+  .page-content, .shopify-policy__container {
+    padding-bottom:5px;}
+}
+
+  #ProductSection-6696697921582 > div > div > div > div:nth-child(1) > div.testimonials-wrapper {
+    display: none;
+  }
+  #ProductSection-6696697921582 {
+background-color: #f4f4f4;
+padding: 30px 20px 0px 20px;
+    margin-bottom: 30px;
+}
+.header-item.header-item--navigation.text-center {
+    display: none;
+} 
+@media(max-width:768px){
+.block-ef3c8c44-510b-41f7-acbd-921f63e03a36  {
+    display: none;
+}
+
+}
+@media(min-width:769px){
+    .block-6f596aae-7c20-415f-93ee-f3c9cc5b0f6d{
+    display: none
+}
+} 
+</style>
+{% section 'product-sections-template-oneday29' %}
+{% section 'product-template-narrow' %}
+{% section 'product-sections-template-oneday2' %}
+
+
+{% if collection %}
+  <div class="text-center page-content page-content--bottom">
+    <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn btn--small return-link">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  	$('input[type=radio][name=Quantity]').change(function() {
+		if (this.value.includes('Subscribe & Save')) {
+	      addSubscriptionOptions();
+		} else {
+          $( "#subscription_plans" ).remove();
+		}
+	});
+    
+    $('input[type=radio][name=Quantity]').each(function() {
+      if (this.value.includes('Subscribe & Save')) {
+        if($(this).prop('checked')){
+          addSubscriptionOptions();
+        }
+      } else {
+        $( "#subscription_plans" ).remove();
+      }
+    }); 
+  }); 
+   
+  function addSubscriptionOptions() {
+    $( "form fieldset[name=Quantity]").append( 
+		'<div id="subscription_plans" style="margin-left: 4px;">' + 
+      	'<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">'+
+		'<select name="properties[shipping_interval_frequency]">' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+		'  <option data-charge_interval_frequency="2" value="2" data-end="0">Deliver every 2 months</option>' +
+		'  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' + 
+		'  <option data-charge_interval_frequency="4" value="4" data-end="0">Deliver every 4 months</option>' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="3">Deliver every month for 3 months</option>' +
+		'</select>' +
+		'</div>');   
+  }
+</script>{% render 'product_infox' %}<!-- brontoBrowseObject:start -->
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+
+<script type="text/javascript">
+$('span.btn.ajax-product').click(function(){
+
+let productid= $(".ajax-product").data('product-id')
+
+CartJS.addItem(productid,1)
+
+})</script> 

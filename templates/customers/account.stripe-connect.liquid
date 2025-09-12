@@ -1,0 +1,128 @@
+<style>
+  .stripe-connect-main-wrapper {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 30px;;
+  }
+  .stripe-connect-side-bar {
+  }
+  .stripe-connect-side-bar{
+    max-width: 25%;
+    padding: 0px 15px;
+    width: 100%;
+  }
+  .stripe-connect-side-bar-inner{
+    padding: 2rem;
+    background-color: #F8F8F8;
+    
+  }
+  .stripe-connect-side-bar h2{
+    margin-bottom: 1.5rem;
+    font-size: 23px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    color: #333;
+  }
+  .stripe-connect-side-bar p{
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: "Harmonia Sans",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .stripe-connect-side-bar ul {
+    margin: 0px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.stripe-connect-side-bar ul li{
+    font-family: "Harmonia Sans",sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.stripe-connect-side-bar ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0.5rem;
+    background-color: #dadada;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    display: block;
+}
+@media  (max-width: 767px) {
+  .stripe-connect-main-wrapper {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .stripe-connect-side-bar{
+    max-width: 100%;
+    padding: 0px 15px;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+</style>
+
+<div class="page-width page-content">
+  <header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+    <h1 class="section-header__title">{{ 'customer.account.title' | t }} - Referrals</h1>
+    <a href="{{ routes.account_logout_url }}" class="btn btn--secondary btn--small section-header__link">{{ 'layout.customer.log_out'| t }}</a> 
+    <a href="/account" class="btn btn--secondary btn--small section-header__link">Account Overview</a>
+  </header>
+ <div class="stripe-connect-main-wrapper">
+   <div class="grid">
+     {% if customer %}
+     {% if  customer.tags contains 'stripe-connected' %}
+     {% include 'stripe-connect-alert', status:true %}
+     <h3 class="text-center">Referral Orders using Stripe Account</h3>
+ 
+     <iframe style="margin-top:20px; border: none; width: 100vw; min-height: 500px;" src="https://prolon-pro.vercel.app/stripe-transfers?email={{customer.email}}&shop=prolon-fmd-2020.myshopify.com"></iframe> 
+     {%else %}
+     {% include 'stripe-connect-alert',status:false %}
+       <div class="connect-stripe-account">
+ 
+         {% include 'connect-stripe' %}
+       </div> 
+ 
+     {% endif %}   
+        
+        
+      {% endif %}
+    
+   </div>
+   {% unless customer.tags contains 'stripe-connected' %}
+    <div class="stripe-connect-side-bar">
+        <div class="stripe-connect-side-bar-inner">
+          <p>Before you begin this enrollment, please be sure to have the following Business and Personal information available:</p>
+          <h2>Business Information:</h2>
+          <ul>
+              <li>Business Name</li>
+              <li>Business Address</li>
+              <li>Tax Number/ EIN</li>
+              <li>Business Type (Industry/ Specialty)</li>
+          </ul>
+          <h2>Your Personal Information:</h2>
+          <ul>
+              <li>Home Address</li>
+              <li>Personal SSN</li>
+              <li>Bank Account and Routing Number</li>
+          </ul>
+        </div>
+    </div> 
+   {% endunless %}
+
+ </div>
+
+</div>

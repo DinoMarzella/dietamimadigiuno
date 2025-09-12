@@ -1,0 +1,113 @@
+{%- assign data = section.settings -%}
+
+<div class="pl-wrapper py-[50px] bg-[#fff] px-[20px] w-full pl-wrapper-testimonials w-full max-w-[1600px] mx-auto ">
+  <div class="w-full max-w-[1600px] mx-auto flex justify-center items-center flex-col">
+    <h2 class="pb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal w-full text-center max-w-[1200px] mx-auto hero__animation-contents ">
+      {{ data.title }}
+    </h2>
+  </div>
+  {%- if section.blocks.size > 0 -%}
+    <div class="pt-[15px] pb-[25px] md:pt-[20px] md:pb-[50px] w-full relative overflow-x-scroll flex justify-start items-start gap-[20px] md:gap-[30px]">
+      {%- for testimonial in section.blocks -%}
+        <div
+          style="transition-delay: {{foorloop.index | times: 0.4}}s"
+          class="flex flex-col justify-start items-start w-full md:w-[30%] rounded-[15px] bg-white border border-gray-400 p-[20px] md:p-[30px] hero__animation-contents min-w-[375px] "
+        >
+          <img
+            class="w-[130px] object-contain"
+            src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-yellow-stars.png?v=1690623037"
+            alt="yellow stars"
+          >
+          <h3 class="text-[20px] md:text-[26px] font-semibold py-[15px]">
+            {{ testimonial.settings.title }}
+          </h3>
+          <p class="text-[16px] md:text-[18px]">
+            {{ testimonial.settings.description }}
+          </p>
+          <p class="pt-[15px] text-[16px] md:text-[18px]">
+            {{ testimonial.settings.name }}
+          </p>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-testimonials');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Testimonials v2",
+  "settings": [
+    
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "<b>Longevity Nutrition</b> Program"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonials",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Well deserved investment in me!"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "A friend recommended ProLon to me. My goal was to reduce stomach inflammation and improve overall gut health. The program is well laid out & easy to follow. I viewed it as a well deserved investment in 'me' Prolon did not disappoint, I have more energy, feel great & plan to continue down the path of healthier eating behavior for years tocome."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "- Nancy S."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Testimonials v2",
+      "blocks": [
+        {
+          "type": "testimonials",
+          "settings": {
+            "title": "Well deserved investment in me!",
+            "description": "A friend recommended ProLon to me. My goal was to reduce stomach inflammation and improve overall gut health. The program is well laid out & easy to follow. I viewed it as a well deserved investment in 'me' Prolon did not disappoint, I have more energy, feel great & plan to continue down the path of healthier eating behavior for years tocome.",
+            "name": "- Nancy S."
+          }
+        },
+        {
+          "type": "testimonials",
+          "settings": {
+            "title": "I had such a great experience!",
+            "description": "Food was great. I had a lot of energy and slept well. I also lost 5 lbs which has been so hard to do! I'll definitely do Prolon again and have recommended it to friends.",
+            "name": "- Sarah S."
+          }
+        },
+        {
+          "type": "testimonials",
+          "settings": {
+            "title": "ProLon changed my life!",
+            "description": "ProLon changed my life. I saw significant results on day three of the 5 day program. It teaches you how to eat and more importantly how you are supposed to feel when you are eating healthy. It has inspired me continue with this journey towards maintaining my health and well-being.",
+            "name": "- Fernando H."
+          }
+        }
+      ],
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

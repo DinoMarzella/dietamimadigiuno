@@ -1,0 +1,29 @@
+{% if handle contains 'prolon-fasting-group' or handle contains 'fasting-group' %}
+<script src="{{ 'ck-components-klaviyo.js' |  asset_url }}" defer> 
+</script>  
+{% endif %}
+
+   
+<div class="relative z-50 custom-section-popup">
+
+</div>   
+<style>.accessibly-btn-small, .accessibly-btn-small:after {
+    height: 60px;
+    width: 60px;
+}
+
+#accessibility-widget svg {
+    height: 50px!important;
+}
+[data-x-handle="prolon-2-free-resets"] .announcement-bar {
+  display: none;
+} 
+ 
+[data-x-handle="prolon-fast-special"] #alert-border-1,
+[data-x-handle="prolon-flash-sale"] #alert-border-1,
+[data-x-handle="prolon-fast-special"] .timer-bar-section,
+[data-x-handle="prolon-flash-sale"] .timer-bar-section
+{  
+  display: none; 
+}   
+</style>  

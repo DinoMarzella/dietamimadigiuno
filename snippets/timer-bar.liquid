@@ -1,0 +1,178 @@
+
+<!-- LOADING TIMER  -->
+{% assign show_timer =false %}
+{%- assign timer_date = "" -%}
+{% for block in section.blocks %}
+{% if block.type == 'countdowntimer' %}
+{%- assign show_timer = block.settings.show_timer -%}
+{%- assign timer_date = block.settings.end_date -%}
+{%- assign left_timer_text = block.settings.left_text -%}
+{%- assign right_timer_text = block.settings.right_text -%}
+ 
+{% endif %}
+{% endfor %}
+{% if handle contains 'professional' %}
+{% assign show_timer = false %}
+{% endif %}
+{% if product %}
+{% if product.tags contains 'no-timer' %}
+{% assign show_timer = false %}
+{% endif %}
+{% endif %}  
+<div class="timer-bar-section" data-timer-enddate="{{timer_date}}">
+
+    {% if show_timer %}
+    <style>
+        .timer-container {
+            padding: 6px 0;
+            background: #f8faf6;
+            color: #002500;
+        }
+
+        .timer-container .container {
+            padding: 0 6rem;
+            margin-left: auto;
+            margin-right: auto;
+            /* max-width:92.25rem; */
+            position: relative;
+            width: 100%;
+        }
+
+        #clock {
+            height: 100%;
+            display: flex;
+            color: #002500;
+            font-weight: 700;
+            font-size: 18px;  
+            justify-content: center;
+            align-items: center;
+            padding: 0px 30px;
+
+        } 
+
+        .timer-container .timer-box {
+            margin: 0 10px;
+            text-align: center;
+            line-height: 1;
+        } 
+
+        .timer-container .timer-box div:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:767px) {
+            .timer-container .container {
+                padding: 0 10px;
+            }
+
+            #clock {
+                font-size: 30px;
+            }
+
+            .timer-container .timer-box {
+                margin: 0 20px;
+            }
+        }
+
+        /*! CSS Used keyframes */
+        @-webkit-keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+
+        .timer-container h3 {
+            font-size: 18px;
+          font-weight: 600;
+        }
+
+
+
+        .timer-container .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media(max-width:767px) {
+
+
+
+            .timer-container .container {
+                flex-wrap: wrap;
+                padding: 0px;
+                margin: 0px;
+                margin-top: 0px;
+                padding-top: 0px !Important;
+            }
+
+            .timer-container h3 {
+                font-size: 15px;
+            }
+
+            .timer-container {
+                padding: 10px 0px;
+            }
+
+            .timer-container div#clock {
+                height: 60px;
+            }
+        }
+    </style>
+    <div class="timer-container">
+        <div class="container">
+            <h3 style="
+  margin: 0px;
+">{{left_timer_text }}</h3>
+            <div id="clock" class="fadeInDown" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s;">
+                <div class="timer-box">
+                    <div class="timer-days">00</div>
+                    <div>Days</div>
+                </div>
+                <div class="timer-box ">
+                    <div class="timer-hours">00</div>
+                    <div>Hours</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-minutes">00</div>
+                    <div>Minutes</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-seconds">00</div>
+                    <div>Seconds</div>
+                </div>
+
+            </div>
+            <h3 style="
+  margin: 0px;
+">{{right_timer_text}}</h3>
+        </div>
+    </div>
+    {% endif %}
+
+</div>  

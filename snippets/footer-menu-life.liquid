@@ -1,0 +1,16 @@
+
+
+{% if linklists[menu].links.size > 0 %}
+{% for link in linklists[menu].links %}
+  {% comment %} Original line for this block was{% endcomment %}
+  {% comment %} <li><a href="{{ link.url }}">{{ link.title }}</a></li> {% endcomment %}
+  {% comment %} Start of the modification for AccessibilitySpark{% endcomment %}
+  {% if link.title == 'Accessibility' %}
+    <li><a data-acsb-custom-trigger="true" href="#">Accessibility</a></li>
+  {% else %}
+    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {% endif %}
+  {% comment %} End of the modification for AccessibilitySpark{% endcomment %}
+  
+{% endfor %}
+{% endif %}

@@ -1,0 +1,228 @@
+<style>
+  .recharge-subscription-updated .product-sale_price-subscription {
+    color: #999;
+    text-decoration: line-through;
+  font-family: "Harmonia Sans", sans-serif;
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+
+  .recharge-subscription-updated .product-regular_price-subscription {
+    padding-left: 0px !important;
+  font-family: "Harmonia Sans", sans-serif;
+    color: #a4c752;
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+  .recharge-subscription-updated .rca-subscription-form-buttons-subscription-text{
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    color: #a4c752;
+  }
+  .recharge-subscription-updated .subscribe-saving-updated{
+    text-transform: none;
+    color: #a1a1a1;
+  }
+
+  .recharge-subscription-updated .subscribe-saving-updated {
+    font-family: "Harmonia Sans", sans-serif;
+    font-size: 12px !important;
+    font-weight: 400;
+  }
+
+  .recharge-subscription-updated .rca-subscription-form-buttons-otp-text {
+    font-size: 16px !important;
+  }
+ 
+
+
+  .recharge-subscription-updated .rca-subscription-form__button {
+    display: flex !important;
+  } 
+  .recharge-subscription-updated .rca-subscription-form__button .recharge-price-wrapper{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+  } 
+  .recharge-subscription-updated .rca-subscription-form__button .recharge-text-wrapper{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  } 
+
+  .recharge-subscription-updated .rca-subscription-form__buttons .rca-subscription-form__button { 
+    border: 1px solid #a1a1a1 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    margin: 20px 0px !important;
+  }
+
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button {
+    padding: 15px 15px 15px 35px;
+  }
+
+  .recharge-subscription-updated .rca-subscription-form__button--selected {
+    border: 1px solid #a4c752 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    margin: 20px 0px !important;
+  }
+
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button:before {
+    left: 10px;
+    top: 18px;
+  }
+
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button:after {
+    left: 14px;
+    top: 22px;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button:first-child {}
+
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button {
+    margin-bottom: 0px;
+  }
+
+  .recharge-subscription-updated .rca-subscription-custom[data-selected-type=recurring] .rca-subscription-form__frequency {
+    background: transparent;
+    left: 81%;
+    top: 28px;
+  }
+
+  @media(max-width:767px) {
+    .recharge-subscription-updated .rca-subscription-custom[data-selected-type=recurring] .rca-subscription-form__frequency {
+      background: transparent;
+      left: 63%;
+      top: 35px;
+    } 
+
+    .recharge-subscription-updated .subscribe-saving-updated {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button {
+      padding: 10px 45px;
+    }
+  }
+</style>
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+ <!-- current_variant.option3 {{  current_variant.option3 }} -->  
+<div class="recharge-subscription-updated">
+  <div id="recharge-subscription" class="rca-subscription-form rca-subscription-custom 
+
+  {% if grid %} in-product-grid {% endif %}"
+  
+  data-selected-type="one-time" {% if product.tags contains 'no-subscription' %} hidden {% endif %}>
+
+  {% if current_variant.option3 contains 'Subscribe' %}
+  <input class="subscription-hidden-params" type="hidden" name="properties[shipping_interval_unit_type]" value="Weeks">  
+               
+  <input class="subscription-hidden-params"  type="hidden" name="properties[shipping_interval_frequency]" value="12">  
+
+  {% endif %}  
+    <label class="variant__label">
+      Select Frequency
+    </label>
+
+    <span style="
+        --active_color: #000000;
+        --font_color: #040404;
+        --background_color: #efefef;
+      ">
+      <span class="rca-subscription-form__buttons-type">
+        <div class="rca-subscription-form__buttons"> 
+          <label class="rca-subscription-form__button rca-button-left rca-subscription-form__button--subscription
+          {% if current_variant.option3 contains 'Subscribe' %}
+          rca-subscription-form__button--selected
+          {% endif %}  
+          "
+            data-type="recurring"
+            
+          
+            >
+            <div class="recharge-text-wrapper">
+              <span class="rca-subscription-form-buttons-subscription-text"><b>SUBSCRIBE & SAVE</b> 
+                {% assign VariantQuantity = current_variant.option2 | split:")" | first | replace: "(" %}
+                {%- assign  VariantQuantity= VariantQuantity | times :1 -%} 
+                <!--  VariantQuantity {{VariantQuantity}}  --> 
+                {% if grid%}    
+                  <span class="subscribe-saving-updated">(Lock in <span style="color: #2f6645;">
+                    {{ current_variant.price  | divided_by: VariantQuantity }} / Kit </span> for life)</span></span>
+                {% else %}    
+                  <span class="subscribe-saving-updated">Lock in <span style="color: #2f6645;font-weight: bold;">
+                    {% if true %}   
+                    {{ current_variant.price  | divided_by: VariantQuantity | money }} / Kit  
+                    {% else %}   
+                    {{current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | split : '.' | first }} OFF
+                    {% endif %}  
+                  </span> for life
+                     
+                  </span></span>
+                {% endif %} 
+              <div>
+                <select class="selct-delivery-days"> 
+                  <option value="12" data-type="weeks"> Deliver every 12 Week(s)</option>  
+                  <option value="8" data-type="weeks"> Deliver every 8 Week(s)</option>  
+                  <option value="4" data-type="weeks"> Deliver every 4 Week(s)</option> 
+                </select>  
+                <span class="subscribe-saving-updated" style="font-size: 12px;display: block;">Pause or delay   shipment at any time</span>  
+              </div>
+            </div>
+            <div  class="recharge-price-wrapper">
+              <span data-compare-price="" class="product-sale_price-subscription one-time-price">
+                {{ current_variant.compare_at_price | money }}
+              </span>
+              <span data-product-price="" class="product-regular_price-subscription subscription-price">{{
+                current_variant.price | money   }} 
+              </span>
+          </div>
+        </label>
+  <label
+    class="rca-subscription-form__button rca-button-right 
+    {% if current_variant.option3 contains 'One' %} 
+    rca-subscription-form__button--selected
+    {% endif %}  
+    rca-subscription-form__button--otp"
+    data-type="one-time">
+    <div class="recharge-text-wrapper">
+      <span class="rca-subscription-form-buttons-otp-text">ONE TIME ORDER</span>
+    </div>
+    <div  class="recharge-price-wrapper">
+      <span data-compare-price="" class="product-sale_price-subscription one-time-price">
+        {{current_variant.compare_at_price | money}}
+      </span>
+      <span data-product-price="" class="product-regular_price-subscription subscription-price">{{
+        current_variant.price | money    }} 
+      </span>
+  </div>
+  </label> </label></span></span>
+  <label class="rca-subscription-form__frequency" data-dashlane-label="true">
+    <span class="" style="font-size: 15px;">Delivery every</span>
+    <select class="rca-subscription-form__frequency-selector" data-dashlane-rid="b18c68e52077b862"
+      data-form-type="other" style="margin-top: 5px;">
+      {% for selling_plan_group in product.selling_plan_groups %}
+      {% for selling_plan in selling_plan_group.selling_plans %}
+      <option data-selling-id='{{ selling_plan.id }}' 
+        data-option-discount-value="{{ selling_plan.price_adjustments[0].value }}"
+        data-option-discount-value-type="{{ selling_plan.price_adjustments[0].value_type }}"
+        class="rca-subscription-form__frequency-option" value="{{ selling_plan.id }}">
+        {{ selling_plan.options[0].value }}
+      </option>
+      {% endfor %}
+      {% endfor %}
+ 
+
+
+    </select>
+  </label>
+
+</div>
+</div>

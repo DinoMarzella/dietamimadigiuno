@@ -1,0 +1,218 @@
+<div class="bg-[#1f4035]">
+  <div class="max-w-[1800px] mx-auto p-4 md:p-12 text-white">
+
+<h2 class="text-start text-[16px] font-[600]">
+  {{ section.settings.heading_text }}
+</h2>
+<section class="relative pb-[30px]  tab-img-content md:block">
+  <div class="flex flex-col lg:flex-row items-center gap-[20px] md:gap-[80px] justify-between  mx-auto px-6 pt-[30px]   ">
+    <div class="text-left lg:w-1/2">
+      <div class="max-w-[800px] space-y-4 md:space-y-0">
+        <h1 class="text-[30px] font-[500] text-center lg:text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full">
+          {{ section.settings.heading_text }}
+        </h1>
+        {{ section.settings.paragraph_1 }}
+
+        <div class="flex  md:pt-[10px]   gap-2 md:max-w-[510px]  ">
+          <div class="w-full lg:w-[290px] py-1 md:py-0 md:mr-4">
+            <a class="prerender inline-block md:h-[55px] h-[35px] md:text-[18px] text-[13px] flex justify-center items-center md:py-[10px] w-full  leading-4 font-[400]  md:!font-[600] text-center rounded-[6px] shadow-sm bg-[#78A14A] hover:bg-[#1F4036] !text-white border border-gray-300"
+              href="{{ section.settings.button_1_link }}">
+              {{ section.settings.button_1_text }}
+            </a>  
+          </div> 
+          <div class="w-full lg:w-[290px] py-1 md:py-0 md:mr-4">
+            <a class="prerender inline-block md:h-[55px] h-[35px] md:text-[18px] text-[13px] flex justify-center items-center md:py-[10px] w-full  leading-4 font-[400]  md:!font-[600] text-center rounded-[6px] shadow-sm bg-[#Ffffff] hover:bg-[#F7F9FB] text-black border border-gray-300 whitespace-nowrap"
+              href="{{ section.settings.button_2_link }}">
+              {{ section.settings.button_2_text }} →
+            </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex items-center justify-center mt-0 lg:w-1/2 lg:mt-0">
+      <!-- Pulsante per aprire la modale -->
+<div class="absolute flex items-center justify-center w-full h-full cursor-pointer" id="openVideoModal">
+    <div class="w-[60px] md:w-[100px] h-[60px] md:h-[100px] rounded-full bg-[#e9edf1] flex items-center justify-center">
+        <div class="bg-[#d3dbe3] text-white w-[50px] md:w-[80px] text-center h-[50px] md:h-[80px] flex items-center justify-center font-bold rounded-full text-[16px]">
+            <svg class="md:w-[39px] w-[29px] h-[35px] pl-2 md:h-[45px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 45" fill="none">
+                <path d="M39 22.5L0.749998 44.5837L0.75 0.41638L39 22.5Z" fill="#5D7E11"></path>
+            </svg>
+        </div>
+    </div>
+</div>
+
+      <img
+        src="{{ section.settings.hero_image | img_url: '2000x' }}"
+        alt="{{ section.settings.heading_text | strip_html }}"
+        class="rounded-[30px] md:w-[737px] md:h-[486px] object-cover"
+      >
+
+      {% comment %}
+        <div class="absolute">
+            <div
+                class="w-[60px] md:w-[100px] h-[60px] md:h-[100px] rounded-full bg-[#e9edf1] flex items-center cursor-pointer justify-center">
+                <div
+                    class="bg-[#d3dbe3] text-white w-[50px] md:w-[80px] text-center h-[50px] md:h-[80px] flex items-center justify-center font-bold rounded-full text-[16px]">
+                    <svg class="md:w-[39px] w-[29px] h-[35px] pl-2 md:h-[45px]" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 39 45" fill="none">
+                        <path d="M39 22.5L0.749998 44.5837L0.75 0.41638L39 22.5Z" fill="#5D7E11"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+      {% endcomment %}
+    </div>
+  </div>
+ 
+
+</section>
+</div>
+  </div>
+  <!-- Modale per il video -->
+<div id="videoModal" class="fixed z-1000 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+    <div class="relative w-full max-w-3xl bg-white rounded-lg shadow-lg">
+        <!-- Pulsante per chiudere la modale -->
+        <button id="closeVideoModal" class="absolute top-2 right-2 text-black text-2xl">&times;</button>
+        
+        <!-- Video YouTube -->
+        <div class="relative aspect-w-16 aspect-h-9">
+            <iframe id="youtubeVideo" class="w-full h-[500px] rounded-lg" 
+                src="{{section.settings.video_url}}" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var openVideoModal = document.getElementById("openVideoModal");
+    var closeVideoModal = document.getElementById("closeVideoModal");
+    var modal = document.getElementById("videoModal");
+    var youtubeVideo = document.getElementById("youtubeVideo");
+    var videoUrl = "{{ section.settings.video_url }}"; 
+
+    // Verifica se il link è un link normale e lo trasforma in embed
+    function convertToEmbedUrl(url) {
+        var videoId = "";
+        var regex1 = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+        var match = url.match(regex1);
+        if (match) {
+            videoId = match[1];
+        }
+        return videoId ? "https://www.youtube.com/embed/" + videoId : url;
+    }
+
+    var embedUrl = convertToEmbedUrl(videoUrl);
+
+    openVideoModal.addEventListener("click", function() {
+        youtubeVideo.src = embedUrl + "?autoplay=1&rel=0&showinfo=0";
+        modal.classList.remove("hidden");
+    });
+
+    closeVideoModal.addEventListener("click", function() {
+        youtubeVideo.src = "";
+        modal.classList.add("hidden");
+    });
+
+    modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            youtubeVideo.src = "";
+            modal.classList.add("hidden");
+        }
+    });
+});
+</script>
+
+
+
+{% schema %}
+{
+  "name": "dk Image with Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+    }, 
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Learn About the Science Behind Prolon Nutrition"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "Paragraph 1 Text",
+      "default": "Understanding Cellular Protection and Rejuvenation and What That Means For You"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Button 1 Text",
+      "default": "Shop All Products"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Button 2 Text",
+      "default": "Unlocking Vitality"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video Url"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "dk Image with Text",
+      "category": "Hero"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% comment %} <script>
+  $(document).ready(function() {
+
+    $('.tab-img-header').click(function() {
+      // Toggle the visibility of the content section
+      $('.tab-img-content').toggleClass('hidden');
+  
+      // Find the span element to change the text
+      var $span = $(this).find('span');
+      var $chevron = $(this).find('svg path');
+      
+      // Check if the content is visible
+      if ($span.text() == "Open") {
+        // Change the text to 'Close' and rotate the chevron to point up
+        $span.text('Close');
+        $chevron.attr('d', 'M1 12L6 7L11 12'); // Change chevron to up
+      } else {
+        // Change the text back to 'Open' and rotate the chevron to point down
+        $span.text('Open');
+        $chevron.attr('d', 'M1 7L6 12L11 7'); // Change chevron to down
+      }
+    });
+  });
+  
+  </script> {% endcomment %}

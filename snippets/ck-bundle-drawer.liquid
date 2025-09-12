@@ -1,0 +1,189 @@
+
+<div class="bundle-drawer-section" v-cloak v-cloak-hide > 
+<div class="pl-wrapper pl-wrapper-you-may-like w-full mx-auto  bg-[#F7F9FB] py-[50px] lg:py-[100px] lg:my-[50px]">
+    <div class="mx-auto w-full max-w-[1600px] flex justify-center flex-col items-center">
+        <span
+            class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation1-contents  !delay-100 mx-auto">
+            YOU MAY ALSO LIKE
+        </span>
+        <h4
+            class="w-full text-left text-[28px]  font-normal  text-gray-900 sm:text-[38px] mt-[10px] text-center mb-10 normal-case tracking-normal		">
+            Bundled for you
+        </h4>
+
+        <div class="flex justify-center items-center w-full m:flex-wrap">
+            {%- for pDetail in section.blocks -%}
+            <div key={index} class="mx-auto w-full px-8 pb-8 2xl:px-16 cursor-pointer"
+            @click='showBundleDrawer({{pDetail.settings | json}})'
+            > 
+                <div class="bg-white  rounded-lg shadow-xl">
+                    <p class="text-center font-bold text-[16px] p-4">
+                        {{pDetail.settings.title}}
+                    </p>
+                    <span class="border border-t border-2 border-[#78A117] block w-full"></span>
+                    <Image width="1234" height="1184" class="w-full p-8"
+                        src="{{pDetail.settings.image | img_url: '1600x'}}" alt="image" />
+                    <div class="p-8 pt-0">
+                        <button aria-label="Shop the bundle" class="flex items-center justify-start">
+                            <span
+                                class="w-[32px] h-[32px] bg-[#78A117] rounded-full flex justify-center items-center mr-2">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                    class="w-[22px] h-[22px] inline-block  mb-[2px] text-white"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="text-[16px] font-medium text-gray-700">
+                                Shop the bundle
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+
+        </div>
+    </div>
+</div>
+<teleport to="body" >
+<div class="relative !z-[910]" aria-labelledby="slide-over-title" role="dialog"  v-if="isOpen" aria-modal="true">
+    <!--
+    Background backdrop, show/hide based on slide-over state.
+
+    Entering: "ease-in-out duration-500" 
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in-out duration-500"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+   
+    <div class="fixed inset-0 overflow-hidden">
+        
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity cursor-pointer"
+                :class="{'opacity-100': isOpening, 'opacity-0': !isOpening}" @click="closeBundleDrawer()"></div>
+
+            <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                <!--
+          Slide-over panel, show/hide based on slide-over state.
+
+          Entering: "transform transition ease-in-out duration-500 sm:duration-700"
+            From: "translate-x-full"
+            To: "translate-x-0"
+          Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
+            From: "translate-x-0"
+            To: "translate-x-full"
+        -->
+                <div class="pointer-events-auto w-screen max-w-md transition ease-in-out transition ease-in-out duration-400 sm:duration-400"
+                :class="{'transform translate-x-0': isOpening, 'transform translate-x-full': !isOpening}"
+                >
+                    <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                        <div class="px-4 sm:px-6">
+                            <div class="flex items-start justify-between">
+                                <h2 class="text-base font-semibold leading-6 text-gray-900" id="slide-over-title" 
+                                v-text="modalDetails.title">
+                                </h2>
+                                <div class="ml-3 flex h-7 items-center">
+                                    <button type="button"
+                                    @click="closeBundleDrawer()"
+                                        class="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                        <span class="absolute -inset-2.5"></span>
+                                        <span class="sr-only">Close panel</span>
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                            <div v-if="loading"
+                             class="loading-svg w-full h-[400px] flex justify-center items-center">
+                        <svg aria-hidden="true" class="mr-2 w-8 h-8 text-gray-200 animate-spin  fill-[#73994a]" viewBox="0 0 100 101" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                fill="currentColor" />
+                            <path
+                                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                fill="currentFill" />
+                        </svg>
+                            </div>
+                            <div v-else>
+                                <div class="main-product">
+                                <div class="flex py-2 ">
+                                    <div class="product-image w-1/2">
+                                        <img class="w-full " :src="modalDetails?.image" alt="bundle" />
+                                    </div>
+                                    <div class="product-detail px-2 ">
+                                        <h2 class="w-full leading-[21px] text-[18px] text-left text-black font-semibold tracking-wider">
+                                            ${modalDetails.title}
+                                        </h2>
+                                         
+                                        <div v-if="products && products.length > 0" class="py-2 text-[14px]">
+                                           
+                                            <p :key="product.id" class=" text-[14px]" v-for="product in products">
+                                                1 x ${product.title}
+                                                <br />
+                                                <small class="whitespace-nowrap">${product.variants[0]?.title}</small>
+                                            </p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+
+                                <button v-if="is_added_to_cart" quantity="1"
+                                    class="bg-[#73994a] w-full h-[56px] rounded-[4px] disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center text-white font-bold"
+                                    @click="ShowCartfn()"
+                                    >
+                                    <span
+                                        class="font-semibold text-white uppercase ">View Cart</span>
+                                </button>
+
+                                <button v-else quantity="1" :disabled="adding_to_cart"
+                                    class="bg-[#73994a] w-full h-[56px] rounded-[4px] disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center text-white font-bold" 
+                                    @click="bundleADDToCart()"
+                                    > 
+                                    <svg aria-hidden="true" v-if="adding_to_cart" class="mr-2 w-6 h-6 text-gray-200 animate-spin  fill-[#73994a]"
+                                        viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentFill" />
+                                    </svg>
+                                    <span v-else class="font-semibold text-white uppercase ">
+                                        Buy Bundle Now - ${money(productBundlePrice)}</span></button>
+                                </div>
+                                <br>
+                                <hr class="border-gray-200" />
+                                <p class="pt-3 w-full leading-[21px] text-[14px] text-left text-black font-semibold tracking-wider">
+                                    Individual Products
+                                </p>
+                                <ul role="list" class="divide-y divide-gray-200  text-sm font-medium text-gray-500 h-[90vh] 
+                                                overlfow-x-hidden
+                                                overflow-y-scroll">
+                                    <single-product-card :product="product" :key="product.id" v-for="product in products" />
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</teleport>
+
+</div>
+
+<script src="{{'ck-product-bundle-life.js' | asset_url }}" defer></script>

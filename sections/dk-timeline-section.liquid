@@ -1,0 +1,220 @@
+{% schema %}
+{
+"name": "dk Timeline Section",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Heading",
+"default": "Your cells feel the benefits of Urolithin A before you do"
+},
+{
+"type": "textarea",
+"id": "subheading",
+"label": "Subheading",
+"default": "Step into the journey of Mitopure and its transformative effects on your body.\nFrom the first hours to one year in, chart your course towards optimal health."
+}
+],
+"blocks": [
+{
+"type": "timeline_item",
+"name": "Timeline Item",
+"settings": [
+{
+"type": "text",
+"id": "day_label",
+"label": "Day Label",
+"default": "Day 30"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Title",
+"default": "After 30 Days"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description",
+"default": "Your mitochondria function improves, leading to better energy levels and endurance."
+}
+]
+}
+],
+"presets": [
+{
+"name": "dk Timeline Section",
+"blocks": [
+{
+"type": "timeline_item"
+},
+{
+"type": "timeline_item"
+},
+{
+"type": "timeline_item"
+}
+]
+}
+]
+}
+{% endschema %}
+
+<div class="relative max-w-[1400px] px-4 md:pt-16 mx-auto">
+    <div class="flex flex-wrap justify-between md:flex-nowrap">
+        <div class="max-w-[700px]">
+            <h1 class="text-[30px] font-[500] text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full">
+                {{ section.settings.heading }}
+            </h1>
+            <p class="mt-4 text-lg text-left text-md">
+                {{ section.settings.subheading }}
+            </p>
+        </div>
+        <div class="hidden gap-5 my-auto md:flex desktop-arrow">
+            <svg id="prevBtn" class="w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M40.5 24.835H7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 38.335L7.5 24.835L21 11.335" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <svg id="nextBtn" class="w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M7.5 24.835H40.5" stroke="#272724" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M27 38.335L40.5 24.835L27 11.335" stroke="#272724" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    <div class="md:hidden flex gap-2 w-[80px] mt-3 ml-auto mobile-arrow">
+        <svg id="mobilePrevBtn" class="cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="32" height="29"
+            viewBox="0 0 32 29" fill="none">
+            <path d="M26.3125 14.799L5.68763 14.8708" stroke="#272724" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M14.0976 6.96653L5.68759 14.8709L14.1525 22.7164" stroke="#272724" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg id="mobileNextBtn" class="cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="30" height="29"
+            viewBox="0 0 30 29" fill="none">
+            <path d="M4.6875 14.835H25.3125" stroke="#272724" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M16.875 22.71L25.3125 14.835L16.875 6.95996" stroke="#272724" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    </div>
+
+   
+    <div class="relative hidden w-full my-20 2xl:mx-10 md:block">
+        <div id="timeline-container" class="flex gap-6 transition-all duration-500">
+            {% for block in section.blocks %}
+            <div class="timeline-item flex flex-col items-center w-[300px] transition-all duration-500 cursor-pointer transform 
+                {% if forloop.first %}scale-100 2xl:scale-125 opacity-100{% else %}scale-75 opacity-50{% endif %}"
+                data-id="timeline-{{ block.id }}">
+                <div class="transition-all duration-500">
+                    {% if block.settings.image %}
+                    <img src="{{ block.settings.image | img_url: '400x400' }}"
+                        class="object-cover transition-all duration-500 w-full h-[250px] rounded-lg shadow-lg"
+                        alt="{{ block.settings.day_label }}" />
+                    {% else %}
+                    <img src="https://via.placeholder.com/400x400"
+                        class="object-cover transition-all duration-500 w-full h-[250px] rounded-lg shadow-lg"
+                        alt="{{ block.settings.day_label }}" />
+                    {% endif %}
+                </div>
+                <p class="w-full py-2 mt-2 text-2xl text-gray-800 border-t border-black">
+                    {{ block.settings.day_label }}
+                </p>
+                <div
+                    class="timeline-content transition-all mt-1 duration-500  {% unless forloop.first %}hidden{% endunless %}">
+                    <p class="py-1 font-bold text-gray-900">{{ block.settings.title }}</p>
+                    <p class="text-sm text-gray-700">{{ block.settings.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+   
+
+    <div class="flex gap-4 mt-4 overflow-x-auto md:hidden ">
+        {% for block in section.blocks %}
+        <div class="min-w-[320px] w-[320px] max-w-[320px] p-2   rounded-lg "
+            data-id="timeline-{{ block.id }}">
+            <img src="{{ block.settings.image | img_url: '400x400' }}"
+                class="w-full mb-4 ">
+            <p class="text-lg font-bold text-gray-900">{{ block.settings.day_label }}</p>
+            <p class="py-1 font-bold text-gray-900">{{ block.settings.title }}</p>
+            <p class="text-sm text-gray-700 ">{{ block.settings.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+
+
+</div>
+    <div class="w-[2px] mx-auto h-[106px]  bg-[#1F4139] "></div>
+
+<script>
+    $(document).ready(function () {
+        let index = 0;
+        const $items = $(".timeline-item");
+        const totalItems = $items.length;
+        const $prevBtn = $("#prevBtn");
+        const $nextBtn = $("#nextBtn");
+        const $mobilePrevBtn = $("#mobilePrevBtn");
+        const $mobileNextBtn = $("#mobileNextBtn");
+        const $timelineContainer = $("#timeline-container");
+        const $mobileTimelineContainer = $(".overflow-x-auto.md\\:hidden");
+
+        function updateDesktopView() {
+            $items.each(function (idx) {
+                $(this).toggleClass("scale-100 2xl:scale-125 opacity-100", idx === index);
+                $(this).toggleClass("scale-75 opacity-50", idx !== index);
+                $(this).find(".timeline-content").toggleClass("hidden", idx !== index);
+            });
+        }
+
+        function goToNext() {
+            index = (index + 1) % totalItems;
+            updateDesktopView();
+        }
+
+        function goToPrev() {
+            index = (index - 1 + totalItems) % totalItems;
+            updateDesktopView();
+        }
+
+       
+        $prevBtn.on("click", goToPrev);
+        $nextBtn.on("click", goToNext);
+
+      
+        function scrollMobileTimeline(direction) {
+            let scrollAmount = direction === "next" ? "+=320" : "-=320";
+            $mobileTimelineContainer.animate({ scrollLeft: scrollAmount }, 400);
+        }
+
+       
+        $mobilePrevBtn.on("click", function () {
+            scrollMobileTimeline("prev");
+        });
+
+        $mobileNextBtn.on("click", function () {
+            scrollMobileTimeline("next");
+        });
+
+       
+        $items.each(function (idx) {
+            $(this).on("click", function () {
+                index = idx;
+                updateDesktopView();
+            });
+        });
+
+        updateDesktopView();
+    });
+</script>

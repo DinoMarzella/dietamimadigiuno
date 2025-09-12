@@ -1,0 +1,112 @@
+<div
+  class="w-full mt-6 mb-2 option-{{option.name}}"
+  role="radiogroup"
+  aria-labelledby="option-{{option.name}}-label"
+  data-option="{{option.name}}"
+  data-option-index="option-{{index}}"
+  v-cloak
+>
+  {%- comment -%}
+     <label
+      class="{{option_title_class}}"
+      role="none"
+      v-text="getOptionName('{{index}}', '{{option.name}}')"
+    >
+      {{- option.name -}}
+    </label>
+  {%- endcomment -%}
+  <div class="flex flex-col md:flex-row mx-0 flex-wrap justify-between w-full" role="none">
+    {% for value in option.values %}
+      <div class="flex-1 max-w-[100%]" role="none" v-if="!hideOption('option_{{index}}','{{value}}',{{index}})">
+        <label
+          class=" max-w-prose inherit text-center text-copy px-1.5 whitespace-nowrap"
+          v-if="optionAvailable('option{{index}}','{{value}}')"
+          ><input
+            class="sr-only product-option-input 1"
+            type="radio"
+            name="options[{{ option.name | escape }}]"
+            value="{{ value | escape }}"
+            v-model="option{{index}}"
+            {% if option.selected_value == value %}
+              checked
+            {% endif %}
+          >
+
+          <div
+            class=" text-sm font-bold mb-3"
+            v-html="optionText('option_{{index}}','{{value}}',{{index}})"
+          >
+            {{ value }}
+          </div>
+          <div class=" ">
+            <img
+              class="block p-0 overflow-hidden h-16 object-cover mx-auto"
+              :src="optionBgImage('option_{{index}}','{{value}}',{{index}})"
+              alt="variant-image"
+            >
+          </div>
+
+          <div
+            class="leading-[1.5] prolon-flavor-text font-normal pt-2 pr-1 text-xs font-bold text-gray-500 mb-2 "
+            v-if="optionDescription('option_{{index}}','{{value}}',{{index}})"
+            v-html="optionDescription('option_{{index}}','{{value}}',{{index}})"
+          ></div>
+          <span v-if="inStock('{{value}}')" >
+          <button
+            v-if="!isOptionToBuyAdded('{{value}}',{{index}})"
+            @click.prevent="addOptionToBuy('{{value}}',{{index}})"
+            class="bg-prolon_secondary h-[36px]  font-avant font-bold font-harmonia leading-1 md:block p-3 py-2 rounded text-center text-white text-xs tracking-normal  w-full"
+            v-text="ADD_TO_CART_TEXT"
+          >
+           
+          </button>
+          </span> 
+          <span v-else>
+            <span class="block text-[14px]"> Back in Stock <br>
+            <small class="text-[11px]">Late September
+            </small> 
+          </span>
+          <div
+            v-if="isOptionToBuyAdded('{{value}}',{{index}})"
+            v-cloak
+            class="border border-2 border-prolon_secondary inline-flex items-center rounded"
+          >
+            <button
+              aria-label="Decrease quantity"
+              class="w-8 h-8 transition text-primary/50 hover:text-primary disabled:cursor-wait"
+              @click.prevent="decreaseOptionToBuy('{{value}}',{{index}})"
+            >
+              −
+            </button>
+            <div class="font-bold px-2 text-center">
+              <span v-text="getOptionToBuyQuantity('{{value}}',{{index}})"></span>
+              box
+            </div>
+            <button
+              aria-label="Increase quantity"
+              class="disabled:cursor-wait h-8 hover:text-primary text-primary/50 transition w-8"
+              @click.prevent="increaseOptionToBuy('{{value}}',{{index}})"
+            >
+              +
+            </button>
+          </div>
+        </label>
+      </div>
+    {% endfor %}
+  </div>
+  <div
+    v-if="!allowedToPurchaseVariantBox"
+    class="flex justify-center"
+    role="alert"
+    aria-live="polite"
+    data-position="after"
+  >
+    Choose a Flavor to Begin
+    <svg xmlns="http://www.w3.org/2000/svg" width="15.01" height="17.947" viewBox="0 0 15.01 17.947" class="pl-1">
+      <g id="Grupo_33964" transform="translate(-1025.743 -322.316)">
+      <path id="Trazado_117583" fill="none" stroke="#5A3B36" stroke-width="2px" d="M11007.354,7682.788a12.84,12.84,0,0,0,6.5-4.759c1.627-2.327,2.132-6.907,2.3-9.483" transform="translate(-9981.352 -7343.491)"></path>
+      <path id="Trazado_117584" fill="none" stroke="#5A3B36" stroke-width="2px" d="M0,5.006,7.616,0l3.533,7.39" transform="matrix(0.985, -0.174, 0.174, 0.985, 1027.527, 325.851)"></path>
+      </g>
+    </svg>
+  </div>
+</div>

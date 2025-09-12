@@ -1,0 +1,75 @@
+{% assign data = section.settings %}
+
+<div class="flex w-full items-center justify-center">
+    <div class="flex w-full max-w-[1500px] flex-col items-center justify-center bg-[#F8F8F8] py-14">
+    {% if data.pretitle %}
+      <div class="flex items-center justify-center px-5 text-center">
+        <h2 class="text-3xl text-[#2F6645] md:text-4xl">{{data.pretitle}}</h2>
+      </div>
+      {% endif %}
+      <div class="flex w-full flex-col items-start justify-center py-10 md:flex-row">
+        <div class="flex w-full flex-1 items-center justify-center md:mx-10 md:border md:border-solid">
+          <img class="w-full" src="{{data.mb_image | img_url: '3000x'}}" />
+        </div>
+        <div class="flex w-full flex-1 flex-col items-start justify-start px-5 md:px-10">
+          <h1 class="text-3xl font-bold text-[#2F6645] md:text-4xl">{{data.stitle}}</h1>
+          <p class="mt-5">{{data.sdetails}}</p>
+        </div>
+      </div>
+      <div class="flex w-full flex-col items-center justify-center text-center">
+        {% if data.lathead %}
+        <p class="text-[#2F6645] px-5 text-xl">{{data.lathead}}</p>
+        {% endif %}
+        {% if data.btnurl %}
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="{{data.btnurl}}" class="btn text-link" style="color: white !important; margin-bottom: 0px;">Try ProLon now</a>
+      </div>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+
+  
+   
+{% schema %}
+{
+  "name": "Prolon habit",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pretitle",
+      "label": "Title"
+    },
+    {
+        "type": "image_picker",
+        "id": "mb_image",
+        "label": "Image"
+    },
+    {
+        "type": "text",
+        "id": "stitle",
+        "label": "Title"
+    },
+    {
+        "type": "html",
+        "id": "sdetails",
+        "label": "Details"
+    },
+    {
+        "type": "text",
+        "id": "lathead",
+        "label": "Bottom Line"
+    },
+    {
+        "type": "url",
+        "id": "btnurl",
+        "label": "Button Url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Prolon habit"
+    }
+  ]
+}
+{% endschema %}

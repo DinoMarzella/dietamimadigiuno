@@ -1,0 +1,310 @@
+{% include 'shogun-content-handler' %}
+{% capture siteContent %} <!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+<head>
+  {% include 'main-site-variables' %}
+  <!-- theme tw -->
+ {% render 'pagefly-head' %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="p:domain_verify" content="a8893252f7a56de8069404f73f270ee5"/>
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+  {%- endif -%}
+
+  <link rel="stylesheet" href="https://use.typekit.net/ptw2uba.css">
+  
+  {%- render 'seo-title' -%}
+
+  {%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  {%- render 'social-meta-tags' -%}
+
+  {%- render 'font-face' -%}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'ck-tailwind-build.min.css' | asset_url | stylesheet_tag: preload: true }}
+
+  {{ 'utils.js' | asset_url | script_tag }}
+ {{ 'custom.scss.css' | asset_url | stylesheet_tag }} 
+  {%- render 'css-variables' -%}
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MD5SMB3');</script>
+<!-- End Google Tag Manager -->
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="79ea3adc-a224-4209-8b43-04c52ffc72d5" data-blockingmode="auto" type="text/javascript"></script>
+  <script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("consent", "default", {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+    </script> 
+    
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    window.theme = window.theme || {};
+    theme.routes = {
+      cart: "{{ routes.cart_url }}",
+      cartAdd: "{{ routes.cart_add_url | append: '.js'}}",
+      cartChange: "{{ routes.cart_change_url }}"
+    };
+    theme.strings = {
+      soldOut: {{ 'products.product.sold_out' | t | json }},
+      unavailable: {{ 'products.product.unavailable' | t | json }},
+      stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
+      willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
+      willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
+      waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},
+      savePrice: {{ 'products.general.save_html' | t: saved_amount: '[saved_amount]' | json }},
+      cartEmpty: {{ 'cart.general.empty' | t | json }},
+      cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }}
+    };
+    theme.settings = {
+      dynamicVariantsEnable: true,
+      dynamicVariantType: {{ settings.variant_type | json }},
+      cartType: {{ settings.cart_type | json }},
+      moneyFormat: {{ shop.money_format | json }},
+      saveType: {{ settings.product_save_type | json }},
+      recentlyViewedEnabled: false,
+      predictiveSearch: {{ settings.predictive_search_enabled }},
+      predictiveSearchType: {{ settings.search_type | json }},
+      inventoryThreshold: {{ settings.inventory_threshold }},
+      quickView: {{ settings.quick_shop_enable }},
+      themeName: 'Impulse',
+      themeVersion: "3.2.3"
+    };
+  </script>
+    {% include 'jquery' %}
+  <script>
+    window.SuperJ= $;</script>
+    {% if template contains "product" %} 
+  <script src="https://s3.amazonaws.com/rc-prod-cdn/js/rc-util-shopify.js?shop=prolon-eu2.myshopify.com" async></script> 
+  <script async src="https://static.rechargecdn.com/static/js/recharge.js?shop=prolon-eu2.myshopify.com" defer ></script>
+  
+  {% endif %}
+          
+  <noscript id="deferred-styles">
+                  
+                 </noscript>
+                
+                    {% capture cfh %}
+{{ content_for_header }}
+{{ 'bsub.js' | asset_url | script_tag }}
+{{ 'bsub.scss.css' | asset_url | stylesheet_tag }}
+{% endcapture%}
+                
+                
+                    {% if cfh contains 'DesignMode' %}
+                    {{ cfh }}
+                    {%else %}
+                    {% include 'cfh-optimized' with cfh %}
+                    {% endif%}
+                <!-- Speedify code END - 2018 V2.0 -->
+                    
+                 
+
+  <script src="{{ 'vendor-scripts-v6.js' | asset_url | split: '?' | first }}" defer="defer" script-defered defer ></script>
+
+  {% if shop.enabled_currencies.size > 1 %}
+    <link rel="preload" as="style" href="{{ 'currency-flags.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"></noscript>
+  {% endif %} 
+<!-- <script src="{{ 'theme-compressed.js' | asset_url }}" defer="defer" script-defered defer ></script> -->  
+<script src="{{ 'theme.min.js' | asset_url }}" defer="defer" script-defered defer ></script>  
+  
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer" script-defered defer ></script>
+  {%- endif -%}
+  {% include 'local-redirects'  %}
+
+ <script type="text/javascript">
+
+         window.zESettings = {
+
+             webWidget: {
+
+                chat: {
+
+                    connectOnPageLoad: false        
+
+                }
+
+            }
+
+         };
+
+        </script>
+
+{% include 'discount-combine' %}
+
+
+     
+  {%- render 'bold-subscription-widget' -%}
+{% include 'ck-vue-loader' %}  
+{% include 'ck-tailwindconfig' %} 
+<style>.site-nav__icons {
+  display: flex;
+}</style>
+  <script defer src="https://cdn.intelligems.io/672ba8719d28.js"></script>
+  {% if template == 'index' %}
+    <link rel="stylesheet" href="{{ 'header.css' | asset_url }}">
+  {% endif %}
+  
+
+  {% render 'shogun-head' %}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">  
+</script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">  
+<script type="text/javascript">
+  (function(a,b,c,d,e,f,g){
+    e['ire_o']=c;e[c]=e[c]||function(){
+      (e[c].a=e[c].a||[]).push(arguments)};
+    f=d.createElement(b);g=d.getElementsByTagName(b)[0];
+    f.async=1;f.src=a;g.parentNode.insertBefore(f,g);
+  })('https://utt.impactcdn.com/A5897560-07e2-462a-b461-6ca4bfac8d401.js','script','ire',document,window);
+
+    {% if customer %}
+    ire('identify', {
+        customerid: '{{ customer.id }}',
+        customeremail: '{{ customer.email | sha1 }}'
+    });
+    {% endif %}
+</script>
+</head>
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} 
+
+{% if handle == 'prolon-provider' or handle == 'fastbar-provider' %} hide-disclaimer {% endif %} "  data-center-text="{{settings.type_body_align_text}}" data-button_style="{{settings.button_style}}" data-type_header_capitalize="{{settings.type_header_capitalize}}" data-type_headers_align_text="{{settings.type_headers_align_text}}" data-type_product_capitalize="{{settings.type_product_capitalize}}" data-swatch_style="{{settings.swatch_style}}"
+{% if handle == 'prolon-provider ' or handle =='fastbar-provider' %} data-hide-disclaimer="true" {% endif %}
+
+  data-handle="{{ handle }}" 
+>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD5SMB3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body">
+    {% include 'is_provider_popup' %}
+
+    {% section 'header' %}
+
+      <main class="main-content" id="MainContent">
+        {{ content_for_layout }}
+	<noscript class="endOfLayoutContentX" type="text/mark"></noscript>
+      </main>
+
+      {% section 'footer-promotions' %}
+      {% section 'footer' %}
+
+    </div>
+  </div>
+
+  {% section 'newsletter-popup' %}
+
+  {%- if settings.cart_type == 'drawer' -%}
+    {%- render 'ajax-cart-template' -%}
+  {%- endif -%}
+
+  {% comment %}
+    Custom markup for slider arrows using theme icons
+  {% endcomment %}
+  <div class="hide">
+    <button id="prevArrowTemplate" class="slick-prev" aria-label="{{ 'general.pagination.previous' | t }}" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+      <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
+    </button>
+    <button id="nextArrowTemplate" class="slick-next" aria-label="{{ 'general.pagination.next' | t }}" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+      <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
+    </button>
+  </div> 
+
+  {%- if settings.predictive_search_enabled -%}
+    {%- render 'predictive-template' -%}
+  {%- endif -%}
+
+  {% render 'video-modal' %}
+  {% render 'photoswipe-template' %}
+  {% if template contains 'product' %}
+    {% render 'recently-viewed-product-template' %}
+  {% endif %}
+<!-- Begin ReCharge code -->
+{% include 'subscription-theme-footer' %}
+<!-- End ReCharge code -->
+  
+  {% if template == "cart" %}
+ 
+  {% endif %}
+  
+    {% render 'cart-switcher-injector' %}
+
+{% include 'adroll' %}
+ {% include 'smile-initializer' %}
+
+  {% include 'wisepops-generated' %}
+  {% include 'bottom-scripts' %}
+ 
+  {% include 'verify-terms' %}
+  
+{% render 'spurit_po2_theme_snippet' %}
+<!-- CRITEO START -->
+{% render 'criteo-tracking' %}
+<!-- CRITEO END -->
+<!-- Order Protection Widget -->
+  <link rel="stylesheet" href="https://cdn.orderprotection.com/widget/shopify/5.9.3/style.css" />
+<script src="https://cdn.orderprotection.com/widget/shopify/5.9.3/orderprotection.js"></script>
+ <script defer>
+  const widget = OrderProtection.createOrderProtectionWidget({
+    locations: [
+      {
+        sibling: {
+          position: "before",
+          selector: "#op-selector",  
+          }, 
+        },
+      ],
+  });
+  widget.init();
+</script>  
+
+<!-- Order Protection Widget -->
+{% if template == 'index' %}
+  <script src="{{ 'header.js' | asset_url }}" defer></script>
+{% endif %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  </body>  
+</html>
+  
+{% endcapture %}
+ 
+{{ siteContent | replace: 'RKvSwp','XqzShz' }} 

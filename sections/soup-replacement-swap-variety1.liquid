@@ -1,0 +1,341 @@
+<style>
+  .soup-replace-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+}
+span.coupon-code.font-bold {
+  font-size: 42px;
+  display: block;
+} 
+.sub-child-replace-wrapper{
+ display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+width:100%;
+padding:20px 0px 50px 0px;
+}
+.fr-append-row-soups{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+width:100%;
+margin:40px 0px;
+}
+.question-pre-replace{
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+width:100%;
+}
+.question-pre-replace h1{
+color:#2F6645;
+margin-bottom:0px;
+}
+.common-radion-btns-rw{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+padding:0px 20px;
+max-width:350px;
+margin-top:20px;
+}
+.yes-rs-prolon,
+.no-rs-prolon{
+display:flex;
+justify-content:center;
+align-items:center;
+widows:100%;
+}
+#replaceprolonyes,
+#replaceprolonno{
+accent-color: green;
+cursor:pointer;
+width:20px;
+height:20px;
+margin-top:0px;
+margin-right:px;
+}
+.common-radion-btns-rw label{
+cursor:pointer;
+font-size:20px;
+margin-bottom:0px;
+}
+.question-pre-replace p{
+margin-top:0px;
+color:#2F6645;
+}
+.prolon-sub-divider-s{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+padding:0px 20px;
+max-width:700px;
+margin-top:30px;
+}
+.column-of-you-soups{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+}
+.sub-option-single{
+margin:10px 0px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.sub-option-single input{
+margin-right:10px;
+accent-color: green;
+cursor:pointer;
+transform: scale(1.3);
+}
+.sub-option-single label{
+cursor:pointer;
+margin-bottom:0px;
+letter-spacing:0px;
+font-size:14px;
+}
+.recieve-free-coupon{
+ 
+margin-top: 30px; 
+  
+} .thankyou-for-buying {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-pre-replace h1 {
+  margin-bottom: 20px;
+}
+
+span.coupon-code.font-bold {
+  font-weight: bold;
+} 
+@media(max-width:600px){
+.prolon-sub-divider-s{
+  flex-direction:column;
+}
+.common-radion-btns-rw{
+  max-width:200px;
+}
+.sub-child-replace-wrapper{
+  padding-top:0px;
+}
+.question-pre-replace h1{
+  padding:0px 10px;
+}
+.fr-append-row-soups{
+  margin:20px 0px;
+}
+}
+</style>
+
+<form  class="soup-replace-wrapper">
+  <div class="sub-child-replace-wrapper">
+    <div class="fr-append-row-soups">
+      <div class="question-pre-replace">
+        <h1>DID YOU SWAP ANY OF YOUR SOUPS?</h1>
+      </div>
+      <div class="common-radion-btns-rw">
+        <div class="yes-rs-prolon">
+          <input name="changesoup" id="replaceprolonyes" checked type="radio" value="yes">
+          <label for="replaceprolonyes">Yes</label>
+        </div>
+        <div class="no-rs-prolon">
+          <input name="changesoup" id="replaceprolonno" value = "no" type="radio">
+          <label for="replaceprolonno">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="fr-append-row-soups">
+      <div class="question-pre-replace">
+        <h1>WHICH SOUPS DID YOU REPLACE?</h1>
+        <p>(Check all that apply)</p>
+      </div>
+      <div class="prolon-sub-divider-s">
+        <div class="column-of-you-soups">
+          <div class="sub-option-single">
+            <input type="checkbox" name="Tomato - Day 1" id="d1">
+            <label for="d1">Tomato - Day 1</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" name="Minestrone - Day 1"  id="d2">
+            <label for="d2">Minestrone - Day 1</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" name="Mushroom - Day 2" id="d3">
+            <label for="d3">Mushroom - Day 2</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" name="Minestrone & Quinoa- Day 3" id="d4">
+            <label for="d4">Minestrone & Quinoa - Day 3</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" name="Tomato - Day 3" id="d5">
+            <label for="d5">Tomato - Day 3</label>
+          </div> 
+          
+        </div>
+        <div class="column-of-you-soups">
+          <div class="sub-option-single">
+            <input type="checkbox" name="Minestrone- Day 3" id="f1">
+            <label for="f1">Minestrone - Day 3</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" name="Vegetable- Day 4" id="f2">
+            <label for="f2">Vegetable - Day 4</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" id="f3" name="Minestrone & Quinoa- Day 4" >
+            <label for="f3">Minestrone & Quinoa - Day 4</label>
+          </div>
+          <div class="sub-option-single">
+            <input type="checkbox" id="f4" name="Tomato - Day 5" >
+            <label for="f4">Tomato - Day 5</label>
+          </div>
+          <div class="sub-option-single"> 
+            <input type="checkbox" id="f5" name="Minestrone - Day 5">
+            <label for="f5">Minestrone - Day 5</label>
+          </div>
+        </div>
+      </div> 
+      <div class="button-wrapper"> 
+        <button name="add" class="uppercase btn btn--full recieve-free-coupon add-to-cart">
+          Submit and Receive $10 off ProLon
+        </button>   
+      </div>
+      
+    </div>
+  </div>
+</form>
+
+<div class="thankyou-for-buying" style="display: none;">
+
+<div class="question-pre-replace">
+  <h1>Thank you for your feedback!</h1>
+  <p>
+    Here is your coupon code: <span class="font-bold coupon-code"></span>
+  </p>
+</div>
+
+</div>
+
+
+
+<script>
+function generateGuid() {
+  // Generates a unique guid to be used for the bundle_id 
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(4);
+  });
+}
+
+$(document).ready(function (params) {
+
+
+  $('.soup-replace-wrapper').submit(function (e) {
+
+    e.preventDefault();
+    let data = $(this).serializeArray();
+
+    let changesoup = $('input[name=changesoup]:checked').val();
+    if (changesoup && changesoup == 'yes') {
+      let lengthofData = data.length;
+      let soupArray = [];
+      for (let i = 0; i < lengthofData; i++) {
+        if (data[i].name == 'changesoup') {
+          continue;
+        }
+        else {
+          soupArray.push(data[i].name);
+        }
+      }
+      let soupArrayLength = soupArray.length;
+      // if soupArrayLength is greater than 0 then show the coupon code elese alert please select atleast one soup
+      if (soupArrayLength > 0) {
+
+        $('.thankyou-for-buying').show();
+        $('.soup-replace-wrapper').hide();
+
+        $('.coupon-code').text('REPLACE10');
+        let bundle_id = generateGuid();
+        for (let o of soupArray) { 
+          const data = new FormData();
+          let date = new Date();
+          let day = date.getDate();
+          let month = date.getMonth() + 1;
+          let year = date.getFullYear();
+          let today = year + '-' + month + '-' + day;
+       
+          data.append('formId', bundle_id); 
+          data.append('Variety Type', 'Variety 1'); 
+          data.append('Date', today); 
+
+
+          data.append('Item Name', o);
+          const action = "https://script.google.com/macros/s/AKfycbwcdMmENgJ1KW_vQgAfCfmldrUeVmr3MAmdmKWjvLP7AE283cA9KhEih9L3K6lXSej10Q/exec"; 
+          fetch(action, {  
+            method: 'POST',
+            body: data,
+          })
+            .then(() => {
+
+              // alert("Success!");
+
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        }
+
+
+
+
+
+
+
+
+
+      }
+      else {
+        alert('Please select atleast one soup.');
+      }
+
+
+
+    }
+    else {
+      alert('You are not eligible to receive the coupon code');
+    }
+
+
+
+
+  })
+
+
+})
+</script> 
+{% schema %}
+{
+  "name": "Soup Replacement v1",
+  "presets": [{ 
+      "name": "Soup Replacement v1"
+  }],
+  "settings": [
+  ]
+}
+{% endschema %} 

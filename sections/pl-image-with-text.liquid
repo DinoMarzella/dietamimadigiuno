@@ -1,0 +1,140 @@
+{%- assign data = section.settings -%}
+
+<div class="py-[25px] md:py-[50px] bg-white px-[20px] max-w-[1600px] mx-auto pl-wrapper-image-with-text">
+  <div class="flex items-center {% if data.image_on_left %} flex-col-reverse md:flex-row {% else %} flex-col-reverse md:flex-row-reverse{% endif %}">
+    <div class="w-full md:w-[50%] px-[20px]">
+      <div class="!w-full relative">
+        <img
+          class="relative !h-full !w-full max-h-[585px]  !delay-300 hero__animation-contents {% if data.image_contain %} !object-contain {% else %} object-cover {% endif %}"
+          src="{{data.image | img_url: '700x'}}"
+          alt="Feature Image 1"
+        >
+      </div>
+    </div>
+    <div class="w-full md:w-[50%] px-[20px] mb-[40px] md:mb-0">
+      {%- if subtitle.size > 0 -%}
+        <span class="inline-block py-px px-[20px] mb-[15px] text-xs leading-5 text-white bg-[#73994a] font-medium uppercase hero__animation-contents  !delay-100">
+          {{ data.subtitle }}
+        </span>
+      {%- endif -%}
+      <h2
+        class="
+          mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-normal hero__animation-contents
+          !delay-200
+        "
+      >
+        {{ data.title }}
+      </h2>
+      <p class="mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500">
+        {{ data.description }}
+      </p>
+      <div class="flex flex-wrap pt-[20px] hero__animation-contents !delay-700">
+        {%- for button in section.blocks -%}
+          <div
+            class="w-full md:w-[47%] py-1 md:py-0 md:mr-4"
+            aria-label="{{button.settings.title}}"
+          >
+            <a
+              class="inline-block py-[10px] px-7 w-full text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:{{button.settings.bg_color}} {{button.settings.bg_color}} {{button.settings.text_color}} hover:{{button.settings.text_color}} border border-gray-300"
+              href="{{button.settings.url}}"
+              aria-label="{{button.settings.title}}"
+            >
+              {{ button.settings.title }}
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-image-with-text');
+  });
+</script>
+{% comment %} title: string;
+subtitle: string;
+description: any;
+image: string;
+buttons: Array<any>;
+image_on_left: boolean;
+image_contain?:boolean; {% endcomment %}
+
+{% schema %}
+{
+  "name": "PL Image With Text",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_on_left",
+      "label": "Image on Left",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "image_contain",
+      "label": "Image Contain",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "5-Day Fasting Nutrition"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "Url",
+          "default": "#shop-programs"
+        },
+        {
+          "type": "text",
+          "id": "bg_color",
+          "label": "Bg Color",
+          "default": "bg-[#77A117] hover:bg-[#77A117]"
+        },
+        {
+          "type": "text",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "text-white"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Image With Text",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

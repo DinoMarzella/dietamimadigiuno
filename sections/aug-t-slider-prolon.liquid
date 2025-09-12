@@ -1,0 +1,246 @@
+<script>
+  $(document).ready(function () {
+    $('.slider-container').slick({
+      infinite: false,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-slide'),
+      nextArrow: $('.next-slide'),
+      responsive: [
+        {
+          breakpoint: 768, // Mobile breakpoint
+          settings: {
+            slidesToShow: 2, // Show 1 image on mobile
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1280, // Mobile breakpoint
+          settings: {
+            slidesToShow: 3.5, // Show 1 image on mobile
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  });
+</script>
+<style>
+  .slider-container .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+  }
+  .slider-container-main .slick-arrow {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 8px;
+    transform: translateY(-50%);
+    padding: 0;
+    border: none;
+    opacity: 1;
+    z-index: 10;
+  }
+  @media (max-width: 767px) {
+    .slider-container-main .slick-arrow {
+      top: -8px;
+      transform: translateY(16%);
+    }
+    .slider-container .slick-track {
+      gap: 5px;
+    }
+  }
+</style>
+<section class="bg-[#F3F3F2] slider-container-main">
+  <div class=" max-w-[1600px] md:py-[34px] py-[10px] flex md:flex-row flex-col items-center justify-center mx-auto px-[0px] md:px-4 max-h-[147px] overflow-hidden">
+    <div class="md:pr-8 w-full md:w-[20%]">
+      <p class="md:w-[176px] md:py-0 text-[16px] pt-[10px] font-[600] uppercase text-center">Recommended By:</p>
+    </div>
+    <div class="relative flex items-center justify-center w-full md:w-[80%]">
+      <div class="flex items-center gap-2">
+        <div class="cursor-pointer prev-slide">
+          <svg
+            class="hidden md:block"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="21"
+            viewBox="0 0 12 21"
+            fill="none"
+          >
+            <path
+                d="M12 2.90693L4.583 10.4857L12 18.0811L9.7166 20.4143L5.83655e-07 10.4857L9.7166 0.557163L12 2.90693Z"
+                fill="#5D7E11" />
+          </svg>
+          <svg
+            class="block md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 80 80"
+            fill="none"
+          >
+            <g filter="url(#filter0_d_203_2291)">
+                <rect x="69" y="65" width="50" height="50" rx="25" transform="rotate(-180 69 65)"
+                    fill="white" fill-opacity="0.9" shape-rendering="crispEdges" />
+            </g>
+            <path d="M48 32.3667L40.583 40L48 47.65L45.7166 50L36 40L45.7166 30L48 32.3667Z"
+                fill="#5D7E11" />
+            <defs>
+                <filter id="filter0_d_203_2291" x="0" y="0" width="80" height="80"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dx="-4" />
+                    <feGaussianBlur stdDeviation="7.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_203_2291" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_203_2291"
+                        result="shape" />
+                </filter>
+            </defs>
+          </svg>
+        </div>
+        <svg
+          class="hidden md:block"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="34"
+          height="79"
+          viewBox="0 0 34 79"
+          fill="none"
+        >
+          <rect y="78.2" width="77.4429" height="34" transform="rotate(-90 0 78.2)"
+              fill="url(#pattern0_203_2419)" fill-opacity="0.5" />
+          <defs>
+              <pattern id="pattern0_203_2419" patternContentUnits="objectBoundingBox" width="1"
+                  height="1">
+                  <use xlink:href="#image0_203_2419" transform="matrix(0.005 0 0 0.026 0 0.37)" />
+              </pattern>
+              <image id="image0_203_2419" width="200" height="10"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAKCAYAAADxeBEhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3xJREFUeNrcmYtu7CAMRHnk/7+YQCHC0TDYhO3r9i4SwhjYKolPxk69qy2l5HPO/jxPV7vYQ68+R3Nc3z5H+3773HX2s+dKKd69UYsxFukhBLGd4pP5cGb3nHb2fzl3tBvlvS+1+9BWnQvVjLUfdRprP+rGWAPkspuvtoPmbf324bx12S++Gnj3mvhgz+Wre4bfUHwyn+z+N9g2z+AIdug9VjBCg4N7u3V1vG4h2DK/GvgGPzfa5/pzeYrxouxFX7NLX8NReq7P6+pit0dXx6uLjWPtCezmT5oN+xKc1/Ym5Xe1M0k7x3uU39jZn+A6U70XZ7939gOTNygGSgtsCKBjEZx3YDMMSuBaQaz+hhHgw7oW+LjWrgfmAwgyF7uPHiAJBig3LKg0YCNMCMWWKskDQwgk4HGdRoSBe0ZIGJjuOwGaLOCIrQGkjIkAM6EiwHb2TUFvAYBrMvbrk+spvbutN5rWJA2BwLmDnALz2HhjH4uAX77lF299BqHNA4CgjgswbigIksEGQLxAgbbcZwTiFTgQDIJiUgbICFaAZBxBQRAYFRYIqAESZd7s5ksdsvQEkwFUWqxbNu5LBHaW1GrrxfQduazUMBhoojYYwBzwGihPga+tQbBjevQ0IhgRgdAAIVAuG8F4AoTg8JRe+U3lQCAeUygFkMxzgcICRAEFIZnGDsWJQamlbbvQ0Kjtv32gCEtVeKX9aNEJaZqnQJR0LXRogqgOvfkPSoc0CG7bggP+ZlDgaHZEwAUIsrcUBIEwVMTvgGHUI1ZqNanHiwqCkLCqZK1WYSXZGE9O1Uh9kigOQoZwiRr1OgHB/TII/wSQVaom4EggQqBOqqDNldTJSpvUOoMAsVRjmVotapFBNQgURwX903MoGiSGkqigEDAMxZRqLQApkGp9BZYMwT7AgypAYN5fmX6z/cnPlvIpFuDBgEUVigBWUFKoaCiGWW+gapCS+I0iHdUjIBQKJM768rUqxrWCXGBRQBF/XqjIEyDLtIsh0VIw8CEEmmK5n1KCtwJkR4F64DoKYIQp9rW4AmKVVi3SK7UGodTKG3B8tkgv+CmXC3MLkkWqZQEy1SQKIKwwJ8CV6XwRxfprwf+2gLyqRghTu2YstCngp6J8oRyBoSAwMMWaPv8SKDsKwj4EA9Oqp0L9Cnr+f4gyZgOkIX1rAS/jO7YPAQYA8FnCb4YM4oQAAAAASUVORK5CYII=" />
+          </defs>
+        </svg>
+      </div>
+
+      {% comment %} <div class="relative w-full overflow-hidden "> {% endcomment %}
+      <div class="flex justify-between w-full overflow-hidden slider-container">
+        {% for block in section.blocks %} 
+          <div class="!flex items-center justify-center">
+            <img
+              class=" {{ block.settings.img_width_height }}   object-contain"
+              src="{{ block.settings.img | img_url: '400x' }}"
+              alt="Prolon partners logos"
+            >
+          </div>
+        {% endfor %}
+      </div>
+      {% comment %} </div> {% endcomment %}
+      <div class="flex items-center gap-2">
+        <svg
+          class="hidden md:block"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="34"
+          height="79"
+          viewBox="0 0 34 79"
+          fill="none"
+        >
+          <rect x="34" y="0.75708" width="77.4429" height="34" transform="rotate(90 34 0.75708)"
+              fill="url(#pattern0_203_2420)" fill-opacity="0.5" />
+          <defs>
+              <pattern id="pattern0_203_2420" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_203_2420" transform="matrix(0.005 0 0 0.026 0 0.37)" />
+              </pattern>
+              <image id="image0_203_2420" width="200" height="10"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAKCAYAAADxeBEhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3xJREFUeNrcmYtu7CAMRHnk/7+YQCHC0TDYhO3r9i4SwhjYKolPxk69qy2l5HPO/jxPV7vYQ68+R3Nc3z5H+3773HX2s+dKKd69UYsxFukhBLGd4pP5cGb3nHb2fzl3tBvlvS+1+9BWnQvVjLUfdRprP+rGWAPkspuvtoPmbf324bx12S++Gnj3mvhgz+Wre4bfUHwyn+z+N9g2z+AIdug9VjBCg4N7u3V1vG4h2DK/GvgGPzfa5/pzeYrxouxFX7NLX8NReq7P6+pit0dXx6uLjWPtCezmT5oN+xKc1/Ym5Xe1M0k7x3uU39jZn+A6U70XZ7939gOTNygGSgtsCKBjEZx3YDMMSuBaQaz+hhHgw7oW+LjWrgfmAwgyF7uPHiAJBig3LKg0YCNMCMWWKskDQwgk4HGdRoSBe0ZIGJjuOwGaLOCIrQGkjIkAM6EiwHb2TUFvAYBrMvbrk+spvbutN5rWJA2BwLmDnALz2HhjH4uAX77lF299BqHNA4CgjgswbigIksEGQLxAgbbcZwTiFTgQDIJiUgbICFaAZBxBQRAYFRYIqAESZd7s5ksdsvQEkwFUWqxbNu5LBHaW1GrrxfQduazUMBhoojYYwBzwGihPga+tQbBjevQ0IhgRgdAAIVAuG8F4AoTg8JRe+U3lQCAeUygFkMxzgcICRAEFIZnGDsWJQamlbbvQ0Kjtv32gCEtVeKX9aNEJaZqnQJR0LXRogqgOvfkPSoc0CG7bggP+ZlDgaHZEwAUIsrcUBIEwVMTvgGHUI1ZqNanHiwqCkLCqZK1WYSXZGE9O1Uh9kigOQoZwiRr1OgHB/TII/wSQVaom4EggQqBOqqDNldTJSpvUOoMAsVRjmVotapFBNQgURwX903MoGiSGkqigEDAMxZRqLQApkGp9BZYMwT7AgypAYN5fmX6z/cnPlvIpFuDBgEUVigBWUFKoaCiGWW+gapCS+I0iHdUjIBQKJM768rUqxrWCXGBRQBF/XqjIEyDLtIsh0VIw8CEEmmK5n1KCtwJkR4F64DoKYIQp9rW4AmKVVi3SK7UGodTKG3B8tkgv+CmXC3MLkkWqZQEy1SQKIKwwJ8CV6XwRxfprwf+2gLyqRghTu2YstCngp6J8oRyBoSAwMMWaPv8SKDsKwj4EA9Oqp0L9Cnr+f4gyZgOkIX1rAS/jO7YPAQYA8FnCb4YM4oQAAAAASUVORK5CYII=" />
+          </defs>
+        </svg>
+        <div class="relative cursor-pointer next-slide">
+          <svg
+            class="block md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 80 80"
+            fill="none"
+          >
+            <g filter="url(#filter0_d_203_2288)">
+                <rect x="19" y="15" width="50" height="50" rx="25" fill="white" fill-opacity="0.9"
+                    shape-rendering="crispEdges" />
+            </g>
+            <path d="M40 47.6333L47.417 40L40 32.35L42.2834 30L52 40L42.2834 50L40 47.6333Z"
+                fill="#5D7E11" />
+            <defs>
+                <filter id="filter0_d_203_2288" x="0" y="0" width="80" height="80"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dx="-4" />
+                    <feGaussianBlur stdDeviation="7.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_203_2288" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_203_2288"
+                        result="shape" />
+                </filter>
+            </defs>
+          </svg>
+          <svg
+            class="hidden md:block"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="21"
+            viewBox="0 0 12 21"
+            fill="none"
+          >
+            <path d="M0 18.0645L7.417 10.4857L0 2.89034L2.2834 0.557129L12 10.4857L2.2834 20.4143L0 18.0645Z"
+                fill="#5D7E11" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "slider Logo",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "list_item",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "img_width_height",
+          "label": "Image Width Height",
+          "default": "w-[114px] h-[33px]"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "slider Logo"
+    }
+  ]
+}
+{% endschema %}

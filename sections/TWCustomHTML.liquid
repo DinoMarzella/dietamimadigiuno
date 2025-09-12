@@ -1,0 +1,30 @@
+{% assign data = section.settings %}
+<!-- TWCustomHTML -->
+<div class='p-5 text-lg text-left text-black normal-case md:p-10 my-0 md:my-0 {%- if data.add_spacing %} my-5 md:my-10 {%- endif -%}' style="background-color: {{data.bg_color}}">
+  {{data.html}}
+</div>
+
+{% schema %}
+{
+    "name": "Custom HTML TW",
+    "settings": [
+      {
+        "type": "html",
+        "id": "html",
+        "label": "HTML"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      }, 
+      {
+        "type": "checkbox",
+        "id": "add_spacing",
+        "label": "Add Top Bottom Spacing",
+        "default": false
+      }
+    ]
+   
+  }
+{% endschema %}

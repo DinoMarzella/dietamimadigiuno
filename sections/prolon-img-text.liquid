@@ -1,0 +1,161 @@
+<section class=" max-w-[1220px] mx-auto py-[20px] md:py-[40px] px-[20px] text-black bg-white">
+    <div
+        class="flex  {% if section.settings.reverse_layout %}lg:flex-row-reverse{% else %}lg:flex-row{% endif %} flex-col items-center justify-between gap-[20px] lg:gap-[40px]">
+        <div class="lg:w-[50%] w-full">
+            <div class="{{ section.settings.addclass_2 }} ">
+                <h2 class="md:text-[48px] text-[27px] text-black font-[500]">{{ section.settings.title }}</h2>
+                <p class="text-[12px] md:text-[16px]">{{ section.settings.description }}</p>
+            </div>
+            <img class="object-cover w-full "
+                src="{{ section.settings.img |  img_url: '1600x'}}">
+        </div>
+        <div class="lg:w-[50%] w-full md:{{ section.settings.padding_left }}">
+            <div class="lg:max-w-[616px] mx-auto">
+                <span class="text-[12px] ">{{ section.settings.small_text }}</span>
+                <div class=" {{section.settings.addclass}} ">
+                    <h2 class="md:text-[48px] text-[27px] leading-[1.2] text-black font-[500]">{{ section.settings.title
+                        }}</h2>
+                    <p class="text-[12px] md:text-[16px] pt-[20px]">{{ section.settings.description }}</p>
+                </div>
+
+                <div class="text-black"> 
+                    {{ section.settings.code }}
+                </div>
+                <div
+                    class=" grid-cols-2 pt-[15px] md:pt-[17px] gap-[13px] {% if section.settings.block_layout %}hidden{% else %} !grid {% endif %} ">
+                    {% for block in section.blocks %}
+                    <div>
+                        <h2 class="text-[20px] text-black md:text-[32px] font-[500]">{{ block.settings.heading }}</h2>
+                        <p class="text-[11px] md:text-[16px]">{{ block.settings.discription2 }} </p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div
+                    class="bg-[#73984a] mt-[20px] rounded-[36px] {% if section.settings.btn_layout %}hidden{% else %} block {% endif %} max-w-[450px] mx-auto  text-white py-[11px]">
+                    <a href="{{ section.settings.cta_link  }}">
+                        <div class="flex items-center gap-2 text-[12px] ] justify-center w-full">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="md:w-[16px] w-[14px] h-[14px] md:h-[16px]" width="16" height="16" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.89223 3.16402V3.71165H3.16225C2.92252 3.7117 2.69152 3.80159 2.51482 3.96359C2.33812 4.1256 2.22855 4.34794 2.20773 4.58676L1.75539 9.78921C1.74386 9.92152 1.75995 10.0548 1.80264 10.1805C1.84533 10.3063 1.91369 10.4218 2.00339 10.5197C2.09309 10.6177 2.20216 10.6959 2.32369 10.7494C2.44522 10.803 2.57655 10.8307 2.70936 10.8308H9.45613C9.58898 10.8308 9.72037 10.8031 9.84196 10.7496C9.96356 10.6961 10.0727 10.6179 10.1625 10.5199C10.2522 10.422 10.3206 10.3064 10.3634 10.1807C10.4061 10.0549 10.4222 9.92156 10.4106 9.78921L9.9583 4.58676C9.93747 4.34784 9.82782 4.12542 9.65101 3.96341C9.47419 3.8014 9.24306 3.71156 9.00324 3.71165H8.27325V3.16402C8.27325 2.58306 8.04247 2.0259 7.63167 1.6151C7.22087 1.2043 6.6637 0.973511 6.08274 0.973511C5.50178 0.973511 4.94462 1.2043 4.53382 1.6151C4.12302 2.0259 3.89223 2.58306 3.89223 3.16402ZM6.08274 1.79495C5.71964 1.79495 5.37141 1.93919 5.11466 2.19594C4.85791 2.45269 4.71367 2.80092 4.71367 3.16402V3.71165H7.45181V3.16402C7.45181 2.80092 7.30757 2.45269 7.05082 2.19594C6.79407 1.93919 6.44584 1.79495 6.08274 1.79495ZM4.71367 5.90216C4.71367 6.26525 4.85791 6.61348 5.11466 6.87023C5.37141 7.12698 5.71964 7.27122 6.08274 7.27122C6.44584 7.27122 6.79407 7.12698 7.05082 6.87023C7.30757 6.61348 7.45181 6.26525 7.45181 5.90216V5.21762C7.45181 5.10869 7.49508 5.00422 7.57211 4.9272C7.64913 4.85017 7.7536 4.8069 7.86253 4.8069C7.97146 4.8069 8.07593 4.85017 8.15295 4.9272C8.22998 5.00422 8.27325 5.10869 8.27325 5.21762V5.90216C8.27325 6.48311 8.04247 7.04028 7.63167 7.45108C7.22087 7.86188 6.6637 8.09266 6.08274 8.09266C5.50178 8.09266 4.94462 7.86188 4.53382 7.45108C4.12302 7.04028 3.89223 6.48311 3.89223 5.90216V5.21762C3.89223 5.10869 3.93551 5.00422 4.01253 4.9272C4.08956 4.85017 4.19402 4.8069 4.30295 4.8069C4.41188 4.8069 4.51635 4.85017 4.59338 4.9272C4.6704 5.00422 4.71367 5.10869 4.71367 5.21762V5.90216Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 text-[12px] md:text-[16px] font-bold">{{
+                                section.settings.cta_text }}</div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+"name": "Img With Text",
+"settings": [
+{
+"type": "checkbox",
+"id": "reverse_layout",
+"label": "Reverse Layout",
+"default": false
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "Main Image"
+},
+{
+"type": "text",
+"id": "padding_left",
+"label": "Padding Left",
+"default": "pl-[40px]"
+},
+{
+"type": "text",
+"id": "small_text",
+"label": "Small Text",
+"default": "Backed by 25+ Years of science"
+},
+{
+"type": "textarea",
+"id": "title",
+"label": "Title",
+"default": "The Science of Prolon"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description",
+"default": "Prolon is a product of relentless scientific exploration, unlocking fasting benefits without starvation. Its plant-based formula nourishes your body while activating cellular renewal pathways. Science has never been this nourishing—or this simple."
+},
+{
+"type": "textarea",
+"id": "code",
+"label": "Text ",
+"default": "The Science of Prolon"
+},
+{
+"type": "checkbox",
+"id": "btn_layout",
+"label": "Button Layout",
+"default": false
+},
+{
+"type": "textarea",
+"id": "cta_text",
+"label": "CTA Text",
+"default": "<span>Subscribe & Beneift</span> <span> - </span> <span> $185.00</span>"
+},
+{
+"type": "url",
+"id": "cta_link",
+"label": "CTA Link"
+},
+{
+"type": "checkbox",
+"id": "block_layout",
+"label": "Block Layout",
+"default": false
+},
+{
+"type": "textarea",
+"id": "addclass",
+"label": "desktop view"
+},
+{
+"type": "textarea",
+"id": "addclass_2",
+"label": "mobile view"
+}
+],
+"blocks": [
+{
+"type": "feature",
+"name": "Features",
+"settings": [
+{ 
+"type": "text",
+"id": "heading",
+"label": "Title",
+"default": "Innovation"
+},
+{
+"type": "textarea",
+"id": "discription2",
+"label": "Description",
+"default": "Developed by leading scientists, Prolon bridges the gap between nutrition and cellular health."
+}
+]
+}
+],
+"presets": [
+{
+"name": "Img With Text",
+"category": "Custom Sections"
+}
+]
+}
+{% endschema %}

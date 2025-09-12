@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROLON FMD</title>
+
+
+        <!-- EMEDABLE CODE LIBRARIES AND STYLES START -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+      @font-face {
+        font-family: "Harmonia Sans";
+        font-weight: 700;
+        font-style: normal;
+        src: url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n7.db6a243cdeddb2eba0b2e8fccdce1e6910fd06d0.woff2?h1=cHJvbG9uZmFzdC5jb20&hmac=3c752c98326a4e15e54b5661421003f5f7f8577cc3f1bf1c9b65bd7344441985")
+            format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n7.a069bd4d0320d5bc303f7f96d7bf28abc297b6aa.woff?h1=cHJvbG9uZmFzdC5jb20&hmac=4c0c608873d593b9b91bedd480a3ed292c354ad34612d42fe8dd196892fcfde6")
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Harmonia Sans";
+        font-weight: 400;
+        font-style: normal;
+        src: url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n4.73cf0589f7839ec88463a09f5335a2885467ed0c.woff2?h1=cHJvbG9uZmFzdC5jb20&hmac=9907d70c00139becdb4443d9f6a6b0c358b7822e1c5e4d886a0cb5f276efeb60")
+            format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n4.1c5276ef69780b63aa8f0ba7897fb3bc87270bb0.woff?h1=cHJvbG9uZmFzdC5jb20&hmac=6d850270b991e0b9d451cc35287f96999180baeb0425ea5308ce52b8691a83a4")
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Harmonia Sans";
+        font-weight: 600;
+        font-style: normal;
+        src: url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cHJvbG9uZmFzdC5jb20&hmac=6ad6a55af88d2117dcdccbb120e5a72dac1450c3a26fbfdce89fdaea094a615a")
+            format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cHJvbG9uZmFzdC5jb20&hmac=ddbc3a38a8a6e069514dc6971c70ca6d03c8743772ebae27a45f899f031dd3d7")
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Harmonia Sans";
+        font-weight: 400;
+        font-style: italic;
+        src: url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_i4.ccbfea79fd847e76d49925a923aa89064359e629.woff2?h1=cHJvbG9uZmFzdC5jb20&hmac=c78317c8efd0212cb8c2fdb76030417ec01ab841e1715bf8c9f61b7d30229b04")
+            format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_i4.e5c05a10aacfb8cc7fdf892df8dba937a214e6e7.woff?h1=cHJvbG9uZmFzdC5jb20&hmac=6825351a52ca0dca1f3ea6a07d782f3e1bc9eebe4c1e4a6be0f88b199d5beeaa")
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Harmonia Sans";
+        font-weight: 600;
+        font-style: italic;
+        src: url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_i6.d520474355816f56169b3a79baa14d2c479da2ba.woff2?h1=cHJvbG9uZmFzdC5jb20&hmac=03d500a829791ec2960188a7a56361a01988228e701b4bfdecd2c9e8cfce1bb2")
+            format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0126/2921/3243/t/69/assets/harmoniasans_i6.5ea0fa072a0601a91bbd7e0301549f9159a09ada.woff?h1=cHJvbG9uZmFzdC5jb20&hmac=8332081ae2616d1dd293823887bc9e47f30d13dfb482bfea8f4ff2bc90e1708f")
+            format("woff");
+      }
+    </style>
+    <style>
+        .prolon-product-section *{
+            font-family: 'PT Sans', sans-serif;     
+            } 
+
+      .prolon-product-section {
+        font-family: 'PT Sans', sans-serif;   
+
+      }
+      .prolon-product-section label:not(.variant__button-label) {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.75em;
+        font-weight: 800;
+      }
+      .prolon-product-section label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .prolon-product-section .btn {
+        line-height: 1.42;
+        text-decoration: none;
+        text-align: center;
+        white-space: normal;
+        font-size: max(calc(var(--typeBaseSize) - 4px), 13px);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        display: inline-block;
+        padding: 11px 20px;
+        margin: 0;
+        width: auto;
+        min-width: 90px;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #fff;
+        background: #73994a;
+      }
+      @media only screen and (max-width: 768px) {
+        .prolon-product-section .btn {
+          padding: 9px 17px;
+          font-size: max(calc(var(--typeBaseSize) - 6px), 11px);
+        }
+      }
+      .prolon-product-section .btn:hover {
+        color: #fff;
+        background-color: #73994a;
+      }
+      .prolon-product-section input[type="radio"] {
+        -webkit-appearance: radio;
+        -moz-appearance: radio;
+      }
+      .prolon-product-section label[for] {
+        cursor: pointer;
+      }
+      .prolon-product-section .site-nav__link {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        padding: 7.5px 15px;
+        white-space: nowrap;
+        color: #002500;
+      }
+      .prolon-product-section .site-nav__link:hover {
+        color: #002500;
+      }
+      @media only screen and (max-width: 959px) {
+        .prolon-product-section .site-nav__link {
+          padding: 7.5px;
+        }
+      }
+      .prolon-product-section .site-nav__link--underline {
+        position: relative;
+      }
+      .prolon-product-section .site-nav__link--underline:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        margin: 0 15px;
+        border-bottom: 2px solid;
+        border-bottom-color: #002500;
+        transition: right 0.5s;
+      }
+      .prolon-product-section s.compare-at-price {
+        color: #707070;
+        font-weight: 100;
+      }
+      .prolon-product-section *,
+      .prolon-product-section :after,
+      .prolon-product-section :before,
+      .prolon-product-section input {
+        box-sizing: border-box;
+      }
+      .prolon-product-section .site-nav__link {
+        font-size: 16px;
+      }
+      .prolon-product-section .ribbon {
+        position: relative;
+      }
+      .prolon-product-section div.variant-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      .prolon-product-section div.variant-input span {
+        display: flex;
+        padding: 0 20px;
+      }
+      .prolon-product-section div.variant-input span label {
+        margin: 0;
+      }
+      .prolon-product-section div.variant-input span input {
+        margin: 3px 10px;
+      }
+      .prolon-product-section div.variant-input span label:before {
+        content: " ";
+        position: absolute;
+        top: -1px;
+        left: -27px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid #73994a;
+        background: #fff;
+      }
+      .prolon-product-section
+        div.variant-input
+        span
+        input:checked
+        + label:after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -21.9px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: #fff;
+      }
+      .prolon-product-section div.variant-input span label {
+        position: relative;
+      }
+      .prolon-product-section
+        div.variant-input
+        span
+        input:checked
+        + label:before {
+        content: " ";
+        position: absolute;
+        top: -1px;
+        left: -27px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#fa9e47),
+          to(#73984a)
+        );
+        background-image: linear-gradient(to bottom right, #fa9e47, #73984a);
+      }
+      .prolon-product-section
+        div.variant-input
+        span
+        input:checked
+        + label:after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -21.9px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: #fff;
+      }
+      .prolon-product-section div.variant-input span label {
+        position: relative;
+      }
+      .prolon-product-section div.variant-input span input {
+        opacity: 0px;
+      }
+      .prolon-product-section .add-to-cart-section {
+        padding-bottom: 20px;
+      }
+      .prolon-product-section .single-product-wrapper {
+        width: 29%;
+        margin: 0 auto;
+        min-width: 380px;
+        text-align: center;
+        box-shadow: -1px 6px 8px #d8d8d887;
+        margin-bottom: 20px;
+      }
+      .prolon-product-section .single-product-wrapper h3.title-line {
+        font-size: 17px;
+        text-align: center;
+        padding: 10px;
+        background: var(--colorCartDot);
+        color: white;
+        margin: 0px;
+      }
+      .prolon-product-section .single-product-wrapper i.sub-heading {
+        border-bottom: 1px solid #d7d7d7;
+        display: block;
+        padding: 6px;
+        min-height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .prolon-product-section .single-product-wrapper img {
+        width: 100%;
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .prolon-product-section .single-product-wrapper .price-box {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #d7d7d7;
+        margin-top: 0;
+        padding-bottom: 20px;
+      }
+      .prolon-product-section .single-product-wrapper p.main-price {
+        margin: 0px;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .prolon-product-section .single-product-wrapper .description {
+        font-size: 16px;
+        padding: 20px;
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .prolon-product-section .single-product-wrapper .sub-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .prolon-product-section .single-product-wrapper {
+        cursor: pointer;
+      }
+      .prolon-product-section .price-box.do-add-to-cart {
+        position: relative;
+      }
+      .prolon-product-section div.variant-input span label {
+        text-align: left;
+        white-space: nowrap;
+      }
+      .prolon-product-section .single-product-wrapper img {
+        height: 270px;
+        display: block;
+        object-fit: contain;
+        object-position: bottom;
+      }
+      @media (min-width: 767px) {
+        .prolon-product-section .single-product-wrapper .description {
+          height: 204px;
+        }
+        .prolon-product-section .single-product-wrapper .sub-desc {
+          height: 90px;
+        }
+      }
+      .prolon-product-section .single-product-wrapper .sub-desc {
+        border-bottom: 1px solid #d7d7d7;
+      }
+      .prolon-product-section p.main-price.green-price {
+        color: #73984a;
+      }
+      .prolon-product-section .single-product-wrapper p.main-price {
+        font-size: 30px;
+      }
+      .prolon-product-section .single-product-wrapper p.main-price + small {
+        font-size: 20px;
+      }
+      .prolon-product-section .flavour-description {
+        font-size: 14px;
+        padding: 0px 10px;
+      }
+      .prolon-product-section .single-product-wrapper p.main-price {
+        line-height: 1;
+      }
+      .prolon-product-section .single-product-wrapper .price-box {
+        padding-bottom: 9px;
+        padding-top: 9px;
+      }
+    </style>
+
+    <style>
+       div#product-choice {
+    --colorBtnPrimary: #73994a;
+    --colorBtnPrimaryLight: #fd8c42;
+    --colorBtnPrimaryDim: #f06002;
+    --colorBtnPrimaryText: #ffffff;
+    --colorCartDot: #73984a;
+    --colorLink: #002500; 
+ 
+        }
+        div#product-choice {
+           
+    display: flex;
+    flex-wrap: wrap;
+} 
+      .prolon-product-section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+
+    <script>
+        if (!Array.prototype.last) {
+  Array.prototype.last = function () {
+    return this[this.length - 1]
+  }
+}
+
+if (!Array.prototype.first) {
+  Array.prototype.first = function () {
+    return this[0]
+  }
+} 
+    </script>
+          <!-- EMEDABLE CODE LIBRARIES AND STYLES END -->
+  </head>
+  <body> 
+
+    <!-- EMEDABLE CODE START -->
+    <section class="prolon-product-section"></section>
+    <style class="prolon-custom-styles"></style>
+    <script type="text/javascript">
+
+    window.HCPCODE="DKERR5000"; //ALWAYS CHANGE THE HCP CODE;
+    
+    // document ready javascript 
+  window.addEventListener("DOMContentLoaded", async (event) => {
+    let productScripts = await jQuery.get(
+      "https://prolonfmd.com/products/prolon-professionals?view=product-scripts.js"
+    );
+
+
+
+    if (productScripts && productScripts.length > 0) {
+      //evaluate the scripts safe way 
+      try {
+        eval(productScripts);  
+      }
+      catch (ex) {
+        console.log(ex);
+      }
+    }
+  });
+  
+
+
+   
+
+
+    </script>
+
+    <!-- EMEDABLE CODE END -->
+  </body>
+</html>

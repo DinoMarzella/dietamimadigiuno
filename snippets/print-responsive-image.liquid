@@ -1,0 +1,30 @@
+{% comment %}Snippet Parameters -->{% endcomment %}
+{%- assign wide_image = wide_image | default: print-image-sizes -%}
+{%- assign narrow_image = narrow_image | default: print-image-sizes -%}
+{%- assign breakpoint = breakpoint | default: 1024 -%}
+{%- assign alt_text = alt | default: wide_image.alt | default: narrow_image.alt | default: 'Image' -%}
+{% comment %}<-- Snippet Parameters{% endcomment %}
+
+{%- assign sizes = '375,425,640,768,1024,1200,1440' | split: ',' -%}
+{%- capture image_sizes -%}
+  {%- for size in sizes -%}
+    {%- assign size_request = size | round -%}
+    {%- if size_request <= breakpoint and narrow_image != blank -%}
+      <source
+        data-srcset="{{- narrow_image | image_url: width: size_request -}}"
+        media="(max-width: {{ size_request }}px)" />
+    {%- else -%}
+      <source
+        data-srcset="{{- wide_image | image_url: width: size_request -}}"
+        media="(max-width: {{ size_request }}px)" />
+    {%- endif -%}
+  {%- endfor -%}
+  <img
+    class="lazyload"
+    data-src="{{- wide_image | image_url -}}"
+    alt="{{ alt_text }}"
+    loading="lazy"
+  />
+{%- endcapture -%}
+{%- assign image_sizes = image_sizes | strip_newlines | strip -%}
+{{- image_sizes -}}

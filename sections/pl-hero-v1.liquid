@@ -1,0 +1,91 @@
+{%- assign data = section.settings -%}
+
+<section
+  class="relative bg-white overflow-hidden xlazyload"
+  style="background-image: url({{data.image | img_url: '100x'}}); background-position: center; background-size: cover; background-repeat: no-repeat; filter:blur(3px)"
+  data-bg="{{data.image | img_url: '1400x'}}"
+>
+
+  <div class="relative py-[25px] md:py-[50px]">
+      <div class="relative z-10 flex flex-col {{data.textPosition}} justify-center {{data.minHeight}}">
+        <div class="w-full  px-4 mb-12 md:mb-0" style="max-width: {{data.maxWidth}}">
+          {%- if data.subtitle -%}
+            <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-prolon uppercase rounded-9xl">
+              {{data.subtitle}}
+            </span>  
+          {%- endif -%}
+          <h1 class="my-6 text-[33px] md:text-[46px] leading-tight text-white font-bold text-center">
+            {{data.title}}
+          </h1>
+          {%- if data.description -%}
+            <p class="mb-8 text-lg md:text-xl text-white  font-medium">
+              {{data.description}}
+            </p>
+            {%- endif -%}
+          
+        </div>
+        <div class="w-full md:hidden px-4 ">
+          <div class="relative max-w-max mx-auto">
+            <img
+              class="absolute p-1 ml-11 top-1 left-0 z-10 h-52 object-cover"
+              src="{{data.image | img_url: '1800x'}}"
+            />
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+  {% schema %}
+  {
+    "name": "PL Hero V1",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Add Title"
+      },
+      {
+        "type": "text",
+        "id": "subTitle",
+        "label": "Sub Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "textPosition",
+        "label": "Text Position"
+      },
+      {
+        "type": "text",
+        "id": "maxWidth",
+        "label": "Max Width"
+      },
+      {
+        "type": "text",
+        "id": "minHeight",
+        "label": "Min Height"
+      }
+      
+      
+      
+    ],
+    "presets": [
+      {
+        "name": "PL Hero V1",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+  {% endschema %}
+  

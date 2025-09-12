@@ -1,0 +1,46 @@
+{% assign latestarticle = blog.articles.first %}
+
+<section class="relative overflow-hidden xl:w-[1450px] md:mx-auto  ">
+    <div
+        class="relative flex flex-col md:flex-row justify-start md:justify-end items-center w-full max-w-[1800px] mx-auto h-[650px] md:h-[735px]">
+        <div  
+            class="w-full max-w-[90%] md:max-w-[40%] absolute md:left-0 h-full top-[150px] md:top-0 z-[10] flex justify-center items-center">
+            <div class="w-full bg-white px-[20px] md:px-[40px] py-[30px] md:py-[50px] shadow-lg"> 
+                <div class="w-max py-[4px] px-[20px] mb-4 leading-[1] bg-prolon flex justify-center items-center">
+    <div class=" !text-left text-white ">
+        {% for tag in latestarticle.tags %}
+        {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if
+        tag_count
+        %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+        <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+                </div>
+                <h4 class="my-4 text-2xl tracking-tight md:my-6 md:text-3xl lg:!text-4xl " q:id="r">{{ latestarticle.title }}</h4>
+                <p class="py-2">
+                    {{latestarticle.content |  strip_html |  truncatewords: 16}}
+                </p>
+              
+
+                    <div class="py-1 md:w-auto" q:key="1">
+                        <a href="{{ latestarticle.url }}"
+                            class="h-[45px] inline-flex justify-center items-center py-[10px] px-7  text-base md:text-md leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#77A117] bg-[#77A117] text-white hover:!no-underline">
+                            Read More </a> 
+                    </div>
+               
+                <div class="flex flex-wrap mt-[30px]">
+                    <div class="py-1 md:w-auto md:py-0 md:mr-4" q:key="0">
+                        <img src="" class="w-[100%] object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full md:max-w-[70%]">
+            <img src="{{ latestarticle.image | img_url: '1400x' }}"
+                class="w-full h-[450px] md:h-full object-cover" q:id="t">
+        </div>
+    </div>
+</section>
+
+{% section 'blog-template-stories' %}   
+

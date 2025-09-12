@@ -1,0 +1,26 @@
+
+<template v-if="cart && cart.items.length == 0 && !loadingCart ">
+  <div class="theme-grid content-start gap-4 pb-8 overflow-y-scroll transition md:gap-12 md:pb-12">
+    <div class="text-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        aria-hidden="true"
+        class="w-12 h-12 mx-auto text-gray-400 &quot;"
+      >
+        <path d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+      </svg>
+      <h3 class="mt-2 text-sm font-medium text-gray-900">Carrello vuoto</h3>
+      <p class="mt-1 text-sm text-gray-500">Aggiungi uno o più dei nostri straordinari prodotti</p>
+      <div class="mt-6">
+        <a href="/collections/tutti-i-prodotti"
+          type="button"
+          class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-prolon_primary border border-transparent rounded-md shadow-sm hover:bg-prolon_primary focus:outline-none focus:ring-2 focus:ring-prolon_primary focus:ring-offset-2"
+        > 
+          ACQUISTA ORA 
+        </a> 
+      </div>
+    </div>
+  </div>
+</template>  

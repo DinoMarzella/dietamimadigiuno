@@ -1,0 +1,73 @@
+{% assign data = section.settings %}
+<!-- TWProlonPartner -->
+<div class="w-full pt-16 pb-16 font-harmonia" style="background-color: #a6c353">
+  <div class="w-full px-4 mx-auto md:w-11/12 sm:px-6 lg:px-8">
+      <div class="text-center">
+          <p class="my-2 text-3xl font-normal leading-10 tracking-tight text-white sm:text-4xl">{{data.title}}</p>
+      </div>
+
+      <div class="mt-10 md:mt-16">
+          <dl class="flex flex-col flex-wrap items-center justify-around">
+            {% assign buttons_block= section.blocks | where: 'type', 'buttons' %}
+
+            {%- if buttons_block.size > 0 -%}
+              {% for button in buttons_block %}
+                {% assign card = button.settings %}
+
+                <div class="relative flex items-center justify-center w-full max-w-xl p-4 mx-0 my-3 bg-white border-solid rounded-3xl md:my-3 md:mx-3 md:p-4">
+                  <a class="w-full px-5 text-2xl font-normal text-center text-saladGreen max-auto" href="{{card.url}}"">{{card.text}}</a>
+              </div>
+              {% endfor %}
+          {%- endif -%}
+
+          </dl>
+      </div>
+  </div>
+</div>
+{% schema %}
+{
+    "name": "Prolon Partner TW",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "buttons",
+        "name": "Buttons",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Url"
+          },
+      {
+        "type": "select",
+        "id": "button_type",
+        "label": "Button Type",
+        "default": "primary",
+        "options": [
+          {
+            "label": "primary",
+            "value": "primary"
+          },
+          {
+            "label": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}

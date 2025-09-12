@@ -1,0 +1,465 @@
+<style>
+*{
+    margin:0px;
+    padding:0px;
+}
+/* Main Banner Css */
+.___page-main-banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.___page-main-banner img{
+    width: 100%;
+}
+
+/* Reviews container */
+
+.reviews-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(216, 216, 216, 15% );
+    margin: 30px;
+}
+
+.___reviews-main-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+/* Review Card Css */
+.___review-card-parent{
+    position: relative;
+    width: 100%;
+    flex:1 1 400px;
+    padding:40px;
+}
+.___reviews-card-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #979797;
+    width: 100%;
+    background-color: white;
+}
+.___reviews-card-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 10px 80px;
+    min-height:230px;
+}
+.reviews-stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: -7px;
+}
+.reviews-stars img{
+    width: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.relative-image{
+    position: absolute;
+    left: 0px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.relative-image img{
+    width: 40%;
+}
+.___review-sub-title{
+    font-size: 12px;
+    font-family: "Helvetica Neue";
+    color: rgb(114, 113, 140);
+    line-height: 1.2;
+    text-align: left;
+    z-index: 46;
+    font-weight: bold;
+}
+.__review-title{
+    font-size: 16px;
+    font-family: "Helvetica Neue";
+    color: black;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 8px;
+}
+.__review-description{
+    font-size: 14px;
+    font-family: "Helvetica Neue";
+    color: black;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.margin-default-prolon{
+    margin-left: 100px;
+}
+
+/* Mobile code */
+@media(max-width:767px){
+    .reviews-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        /* margin: 0 auto; */
+        /* margin-left: 50px; */
+        margin: 15px;
+    }
+    .___reviews-main-row{
+        max-width: 100%;
+    }
+  .relative-image{
+  left:0px;
+  }
+}
+
+/* Bottom Journey Wrapper */
+
+.prolon-journey-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+ .prolon-journey-row h1{
+    font-size: 47px;
+    font-family: "Helvetica Neue";
+    color: rgb(120, 105, 177);
+    line-height: 1.2;
+}
+
+@media(max-width:500px){
+    .___review-card-parent{
+        padding: 10px;
+    }
+    .relative-image{
+        left: -30px;
+    }
+}
+  .main-center-wrapper{
+  display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:0 auto;
+  }
+</style>
+
+
+  
+    <div class="___page-main-banner">
+       
+    
+  
+        <picture style="
+          width: 100%;
+          display: block;
+        ">
+  <source srcset="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/main-banner.png?v=1624092880" media="(min-width: 769px)"> 
+
+  <source srcset="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/banner-mobile.png?v=1624110560" media="(max-width: 768px)">
+  
+  <img srcset="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/main-banner.png?v=1624092880" style="width: 100%;">
+        </picture>
+  </div>
+  <div class="main-center-wrapper">
+    <div class="reviews-container">
+        <div class="___reviews-main-row">
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/shutterstock_1593881998.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Heidi</span>
+                            <h2 class="__review-title">ProLon MD is what I needed to fast.</h2>
+                            <p class="__review-description">ProLon MD is what I needed to fast. Since everything was
+                                included in the box, I was able to successfully finish the fast with great results. My
+                                doctor recommended Prolon MD because it worked for him, and it has been helpful to me as
+                                well.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review2.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Olga</span>
+                            <h2 class="__review-title">I lost 4 lbs, it was relatively easy.</h2>
+                            <p class="__review-description">I lost 4 lbs, it was relatively easy. I feel more focused,
+                                clear, and healthier after completing the fast. Definitely will do it again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review3.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">MD</span>
+                            <h2 class="__review-title">Loved! Food was tasty, it was super.</h2>
+                            <p class="__review-description">Loved! Food was tasty, it was super easy to stay focused and
+                                consistent. High quality, very tasty food. I'll do this every quarter to stay on point!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review4.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Marina</span>
+                            <h2 class="__review-title">On day 1 I was worried.</h2>
+                            <p class="__review-description">On day 1 I was worried about the limited portions but for
+                                the
+                                remaining days I felt satisfied with the variety of flavors and textures. I really liked
+                                the
+                                kale crackers! I wish I could buy those separately! I also appreciated the scheduling of
+                                the
+                                meals and the L-drink to quell hunger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review5.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Kerri</span>
+                            <h2 class="__review-title">I was surprised at how satisfying</h2>
+                            <p class="__review-description">I was surprised at how satisfying the food kept me feeling
+                                throughout the day. My energy has improved, my clothes fit looser, and I feel great!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review6.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Patti</span>
+                            <h2 class="__review-title">I found this to be a relatively painless</h2>
+                            <p class="__review-description">I found this to be a relatively painless fasting process.
+                                The
+                                food was more than palatable and I did not suffer any significant hunger pains. The
+                                hardest
+                                part was giving up coffee, but luckily I did not have any headaches. I feel rejuvenated,
+                                and
+                                plan on repeating the process for the second and third months and intermittently
+                                thereafter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review7.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Mariah</span>
+                            <h2 class="__review-title">Round 2 please.</h2>
+                            <p class="__review-description">What a wonderful plan and support team. I was nervous and a
+                                little skeptical but am so glad I made the decision to try this. I can’t wait to start
+                                my
+                                second one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review8.png?v=1624092879">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/down-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Stephen</span>
+                            <h2 class="__review-title">This was a positive experience,</h2>
+                            <p class="__review-description">This was a positive experience, and has given some great
+                                insight
+                                into my dietary abilities going foward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review9.png?v=1624092879">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Ariella</span>
+                            <h2 class="__review-title">Excellent reset for my body</h2>
+                            <p class="__review-description">Overall, this fast mimicking program was an excellent reset
+                                for
+                                my body. It was hard, but doable. I can see myself doing this again,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review10.png?v=1624092878">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Jonathan</span>
+                            <h2 class="__review-title">The best fasting product out there.</h2>
+                            <p class="__review-description">Very healthy, I felt renewed and ready to continue my
+                                journey to
+                                a healthier me.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review11.png?v=1624092879">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/reviews-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Ursula</span>
+                            <h2 class="__review-title">Lost 6 pounds in 5 days</h2>
+                            <p class="__review-description">Lost 6 pounds in 5 days while transitioning into ketosis. I
+                                was
+                                a bit hungry at points but never starving. Soups were satisfying and the kale crackers &
+                                olives were delicious! I wish Prolon would sell some of the items separately. I would
+                                highly
+                                recommend this Prolon fast to anyone wanting a kick start to ketosis or for a clean old
+                                fashion cleanse. Will buy this again for another fast next month!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="___review-card-parent">
+                <div class="___reviews-card-wrapper">
+                    <div class="relative-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/review12.png?v=1624092879">
+                    </div>
+                    <div class="___reviews-card-child">
+                        <div class="reviews-content">
+                            <div class="reviews-stars">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/down-stars.png?v=1624092878">
+                            </div>
+                            <span class="___review-sub-title">Valery</span>
+                            <h2 class="__review-title">The product works.</h2>
+                            <p class="__review-description">The product works. Yes it is a bit difficult as is
+                                everything if
+                                you want to achieve.<br class="mobile-hidden">The packaging is a bit much but then It
+                                would
+                                not be consumer friendly nor attractive to just get a bunch of soup packages etc..LOL.
+                                The
+                                women I spoke to the first time I ordered was amazing and gave great service which I
+                                appreciated. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div class="prolon-journey-row">
+        <h1>Tell us about your ProLon Jorney</h1>
+    </div>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/NYhSTCbh?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+ 

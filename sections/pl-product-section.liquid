@@ -1,0 +1,229 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div class="pl-wrapper pl-wrapper-product-section">
+  {%- if data.product -%}
+      <div
+        class="relative md:mb-[300px]"
+      >
+        <div class="mx-auto pt-0 lg:py-[40px] lg:max-w-[1600px] px-[20px] md:px-[0px]">
+          <div class="md:grid md:grid-cols-6 lg:grid-cols-6 lg:grid-rows-1 lg:gap-x-8 lg:gap-[30px] xl:gap-[50px]">
+            <div class="md:col-span-3 lg:col-span-4 lg:row-end-1 lg:px-8 2xl:px-0">
+              <div class="flex flex-col">
+                <div class="flex w-full gap-2 overflow-x-scroll overflow-y-hidden aspect-w-1 aspect-h-1 flex-nowrap md:grid md:grid-cols-2 md:justify-center md:items-center md:overflow-hidden">
+                  
+                  {%- if section.blocks.size > 0 -%}
+                    {%- for media in section.blocks -%}
+                      <div
+                        class="{% if forloop.index == 2  %} col-span-2 md:!max-w-full {% endif %} hero__animation-contents "
+                        style="transition-delay: {{forloop.index | times: 0.4}}s"                      
+                      >
+                        <img
+                          src="{{ media.settings.image | img_url: '600x' }}"
+                          class="!w-auto md:!w-full md:!max-w-full min-h-[350px] m:!max-h-[350px] md:!h-full !object-cover"
+                          alt="Product image"
+                          loading="eager"
+                        />
+                      </div>
+                    {%- endfor -%}
+                    
+                    {% else %}
+                    <div class="col-span-2 !max-w-full">
+                      {%- for media in product.media -%}
+                        <div
+                          class="pb-[15px] px-[10px] w-full md:w-1/2"
+                          key={i}
+                        >
+                          <img
+                            alt="Product image"
+                            loading="eager"
+                            class="!w-full object-cover !h-full"
+                            src="{{ media | img_url: '600x' }}"
+                          />
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
+                  <img
+                    class="col-span-2 hidden md:block !max-w-full !h-auto !object-contain"
+                    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-Featured.png?v=1690546584&width=2754&height=129"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full max-w-3xl mx-auto mt-4 sm:mt-16 md:col-span-3 lg:col-span-5 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-none product-details lg:sticky lg:top-[70px]   lg:max-h-[850px]   mh900:top-[100px] px-0 md:px-[15px] lg:px-[30px] lg:pl-0  2xl:px-[60px] ">
+              <div class="flex flex-col items-start justify-center">
+                <span class="hidden md:block w-full text-left font-normal text-gray-900 text-[14px] md:text-[16px]">
+                  <a href="/">home</a> / {{data.product.handle}}
+                </span>
+                <h1
+                  data-product-id="{{data.product?.id}}"
+                  class="w-full text-left text-[18px]  font-bold  text-gray-900 sm:text-[24px] mt-[10px]"
+                >{{data.product.title}}</h1>
+                <span
+                  class=" block w-full text-left font-normal text-gray-900 text-[16px]"
+                >{{data.subtitle}}</span>
+                <span class="mt-2 block w-full text-left font-semibold text-gray-900 text-[14px] md:text-[16px]">
+                  ${(productStore.selected_variant?.price / 100).toFixed(2)}
+                </span>
+                <div
+                  class="w-full mt-4 product-description"
+                  dangerouslySetInnerHTML={product_description}
+                ></div>
+              </div>
+              {%- if data.variant_style == 'style2' -%}
+                <ProductAddToCartMultiple
+                  product={product}
+                  store={productStore}
+                  product_variant_style={product_variant_style}
+                  subscription_option={subscription_option}
+                /> 
+                {% else %}
+                <ProductAddToCart
+                  product={product}
+                  store={productStore}
+                  product_variant_style={product_variant_style}
+                  subscription_option={subscription_option}
+                />
+              {%- endif -%}
+
+              <div class="w-full mt-[50px]">
+                {product_details?.map((detail, i) => {
+                  return (
+                    <div
+                      key={"details" + i}
+                      class="w-full my-4 p-4 bg-[#F7F9FB]   flex justify-between items-center cursor-pointer"
+                      onClick$={() => openModal(detail)}
+                    >
+                      <span class="font-medium">{detail.title}</span>
+                      <svg
+                        class="w-[16px] h-[16px]"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Plus"
+                          fill="#78a14a"
+                          fill-rule="evenodd"
+                          stroke="none"
+                          d="M -0 14.511627 L 14.511628 14.511627 L 14.511628 0 L 21.488373 0 L 21.488373 14.511627 L 36 14.511627 L 36 21.488373 L 21.488373 21.488373 L 21.488373 36 L 14.511628 36 L 14.511628 21.488373 L -0 21.488373 L -0 14.511627 Z"
+                        />
+                      </svg>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+    <header class="text-center section-header section-header--404">
+      <h1 class="section-header__title">
+        404 Page Not Found for {product.handle}
+      </h1>
+      <div class="rte text-spacing">
+        <p>The page you were looking for does not exist. </p>
+        <p class="mt-5">
+          <a
+            href="/#shop-products"
+            class="inline-block max-w-[300px] mx-auto h-[50px] flex justify-center items-center py-[10px] px-7 w-full text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm  hover:bg-prolon bg-prolon_1 text-white border border-gray-300"
+            data-qwik-inspector="components/life/hero-v4.tsx:71:25"
+          >
+            Shop Products
+          </a>
+        </p>
+      </div>
+    </header>
+  {%- endif -%}
+  
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-product-section');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Product Section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "select",
+      "id": "variant_style",
+      "label": "Variant Style",
+      "default": "style2",
+      "options": [
+        {
+          "label": "Style 1",
+          "value": "style1"
+        },
+        {
+          "label": "Style 2",
+          "value": "style2"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "images",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "media_type",
+          "label": "Media Type",
+          "default": "image",
+          "options": [
+            {
+              "label": "Image",
+              "value": "image"
+            },
+            {
+              "label": "Video",
+              "value": "video"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Product Section",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

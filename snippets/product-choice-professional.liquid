@@ -1,0 +1,331 @@
+<style>
+  .add-to-cart-section {
+    padding-bottom: 20px;}
+  
+    .product-choise {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 1050px;
+        margin: 0 auto; 
+        flex-wrap: wrap;
+        padding: 10px 0px; 
+    } 
+    .hero-banner.pointer {
+        cursor: pointer;
+    } 
+    .single-product-wrapper {
+        width: 29%; 
+        margin: 0 auto;
+        min-width: 380px;
+        text-align: center;
+        box-shadow: -1px 6px 8px #d8d8d887;    margin-bottom: 20px;
+     
+    }
+    .choose-susbcription .flex.inline-wrapper {
+        justify-content: center!important;
+    } 
+    .single-product-wrapper h3.title-line {
+        font-size: 17px;
+        text-align: center;
+        padding: 10px;
+        background: var(--colorCartDot);
+        color: white;
+        margin: 0px;
+    } 
+    
+    .single-product-wrapper i.sub-heading {
+        border-bottom: 1px solid #d7d7d7;
+        display: block;
+        padding: 6px;
+        min-height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    }
+    
+    .single-product-wrapper img {
+        width: 100%;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    
+    .single-product-wrapper .price-box {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #d7d7d7;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    
+    .single-product-wrapper p.main-price {
+        margin: 0px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .single-product-wrapper .description {
+        font-size: 16px;
+        padding: 20px;
+        border-bottom: 1px solid #d7d7d7;
+    }  
+    .single-product-wrapper .sub-desc {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .single-product-wrapper .sub-desc p {
+        padding: 0px;
+        margin: 0px;
+    } .single-product-wrapper[data-v="37391319433374"] {
+        order: -1;
+    } .single-product-wrapper {
+        cursor: pointer;
+    }
+    .single-product-wrapper[data-v="37391319433374"] .price-box:after {
+    
+    transition:all .51s ease;
+        content: "Perfect for First Time Faster";display: block;width: 100%;position: absolute;left: 0px;background: red;bottom: -36px;padding: 5px 0px;color: white;opacity: 0;font-weight: bold;}
+    
+    .single-product-wrapper[data-v="37391319433374"]:hover .price-box:after {opacity:1}
+    
+    
+    .price-box.do-add-to-cart {
+        position: relative;
+    } shopify-payment-terms {
+        margin-bottom: 20px;
+        display: block;font-size: 13px;
+    } 
+    body #product-choice {
+    width: 100% !important;
+    max-width: 100%!important;
+} div.variant-input span label {
+    text-align: left;
+    white-space: nowrap;
+} .single-product-wrapper img {
+    height: 270px;
+    display: block;
+    object-fit:contain;
+    object-position:bottom;
+} 
+    @media(min-width:767px){
+        .single-product-wrapper .description {
+            height: 204px; 
+        } 
+        .single-product-wrapper .sub-desc {
+        height: 90px;
+        } 
+    } 
+    .single-product-wrapper .sub-desc {    border-bottom: 1px solid #d7d7d7;
+    }
+    h2.av-special-heading-tag {
+        font-size: 28px;
+    }
+     
+    p.main-price.green-price {
+        color: #73984a;
+    }  
+    .choose-susbcription .flex.inline-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    
+    .choose-susbcription .flex.inline-wrapper span {
+        display: flex;
+        align-items: center;
+    }
+    
+    .choose-susbcription .flex.inline-wrapper span label {
+        margin: 0px;
+    }
+    p.afterpay-checkout ,.as-low-as-price{
+    opacity: 0;
+}
+ul.no-bullets.footer__social {
+    display: none;
+} .slider.pop-slider {
+    display: none!important;
+} 
+  
+  .details {
+    color: white;
+    font-size: smaller;
+    background-color: orange;
+    padding: 10px;}
+
+    .single-product-wrapper p.main-price {
+    font-size: 30px;
+}
+
+
+.single-product-wrapper p.main-price+small {
+    font-size: 20px;
+}
+    </style>
+
+    <div id="product-choice" class="product-choise"> 
+    {% for v in product.variants limit:8 %} 
+    {% if v.option1 != lastOption %}
+
+    {% assign lastOption = v.option1 %}
+
+    {% if v.option1 contains 'Subscri' %}  
+    {% assign message =  "Prolon <b>Subscription</b> " %} 
+    {% assign price_class =  "green-price" %}
+    {% assign title = '<h3 class="title-line do-add-to-cart"     style="
+    background: #fec91c;color:black;
+    ">Enhanced Fasting
+    </h3>' %} 
+    {% capture description %}
+      
+    <div class="choose-susbcription">
+      <p>On-Going* Metabolic Health and Healthy Aging Maintenance Plans. </p>
+      <p>I want to receive ProLon:</p> 
+      <p data-children-count="4" class="flex inline-wrapper">
+          <span>
+        <input id="every-month" name="subscription_cart" checked type="radio" value="1" /><label for="every-month">Every month </label>
+        </span><span> 
+        <!-- <input id="every-3-months" name="subscription_cart" type="radio" value="3" />
+        <label for="every-3-months" >Every 3 months</label></span><br />  -->
+      </p>     
+      <small style="
+      font-size: 12px;
+    ">*Plans can be cancelled anytime prior to shipping.</small></div>
+    
+    {% endcapture %}  
+    
+    {% assign subDescription =  "<b>On-Going Healthy Aging
+        Maintenance Plans</b>  
+    " %}
+        
+    {% elsif v.title contains 'Bundle' %}
+    {% assign title = '<h3 class="title-line do-add-to-cart"     style="
+    background: #c535a3b3; color:black;
+    ">Ultimate Fasting 
+    </h3>' %} 
+      
+    {% assign description =  "Enjoy 5 days of Fasting Mimicking Diet for three consecutive months and enjoy all the benefits ProLon has to offer. <br><b>Receive 3 boxes together - enjoy great savings & greater results</b>
+     
+    <br><hr>  
+<b style='color:red;'>✔️ Includes 3 free coaching session - $222 value</b> <br>
+    " %} 
+    {% assign subDescription =  "<b>Reset With This Ultimate Fasting Plan for Metabolic Health and Healthy Aging</b>" %}
+    
+     {% if v.title contains '3' %} 
+    {% assign message =  "3 boxes of ProLon,  <span style='color:red'>&nbsp;3 free coaching sessions </span> Bundle discount - $222 value" %}
+    {% else %}  
+    {% assign title = '<h3 class="title-line do-add-to-cart"     style="
+    background: #73994a; color:black;
+    ">ProLon Professional Program 
+    </h3>' %}   
+    {% assign message =  "4 boxes of ProLon,  <span style='color:red'>&nbsp;5 free coaching sessions</span> Bundle discount - $370 value" %}   
+    {% assign description =  "The ProLon Professional Program follows the four cycle recommendation from your health care professional.  This program includes: ProLon, a nutritional intervention, comprehensive coaching with 5 live sessions, and texted tips, and patient education.  
+<hr>
+ 
+<b style='color:red;' >✔️ Includes 5 free coaching sessions - $370 value</b>
+" %} 
+{% assign subDescription =  "<b>Prolon Professional Program follows the clinical recommendation of completing four consecutive cycles of ProLon®</b>" %} 
+      
+    {%endif %}  
+    {% assign price_class =  "green-price" %}
+    
+
+         
+    {% else %}  
+    {% assign title = '<h3 class="title-line do-add-to-cart"    style="
+     color:black;
+    ">Perfect For First Time Faster
+    </h3>' %}  
+    {% assign message =  "Single box order <br> <span style='color:red;display:block;width:100%;'>Free coaching session - $74 value</span>" %}
+    {% assign price_class =  "green-price" %} 
+    
+    {% assign description =  " Order ProLon as a trial and see what all the buzz is about.
+    You’ll discover delicious foods that help keep you energized while giving your body many of the benefits of a 5-day fast. See how great you feel after doing just one cycle of ProLon!  
+    <hr>   
+    <b style='color:red;'>✔️ Includes 20 min free coaching session - $74 value</b>
+    " %}
+    {% assign subDescription =  "<b>Jumpstart your Metabolic Health and Healthy Aging with the Prolon 5-Day Meal Program</b> 
+    " %}    
+          
+    {% endif %}
+      
+    <div class="single-product-wrapper" data.option="{{v.option1}}" data-v="{{v.id}}">
+        {{title}} 
+    <i class="sub-heading do-add-to-cart" style="flex-wrap:wrap">
+    {{message}}
+    </i>   
+    <div class="price-box do-add-to-cart tez">  
+        
+        <p class="main-price {{price_class}}">
+    
+            <s class="compare-at-price "> 
+                {% if message contains 'Fasting' %}    
+                $747
+                {% else %}
+            <!--  v.compare_at_price {{v.compare_at_price}}-->
+          {% assign bcompare = v.compare_at_price | money_without_trailing_zeros %}
+          {% if v.metafields.my_fields.compare_at_price_frontend %}
+          {% assign frontend_compare_at_p =  v.metafields.my_fields.compare_at_price_frontend | times:100 | money_without_trailing_zeros %}
+          {% endif %}  
+          {% assign compare_at_p = frontend_compare_at_p  | default:  bcompare %}
+          <!-- frontend_compare_at_p {{frontend_compare_at_p}} -->
+          {{compare_at_p }}
+           
+            
+                {% endif %}
+            </s> 
+            {{v.price |  money_without_trailing_zeros}}</p>
+            {% if v.title contains '3 Box Bundle & Save' %}
+            <small style="color:red" >3 Box Bundle ($175 Per Box)</small>
+            {% elsif v.title contains '4 Box Bundle & Save' %}
+            <small style="color:red" >4 Box Bundle ($175 Per Box)</small>
+  
+           
+            {% else %} 
+            <small>Single Box </small> 
+            {% endif %} 
+    </div>
+    <div class="ribbon" > 
+    {{ribbon}}  
+    <img src="{{v.image | img_url:'1000x' }}" class="do-add-to-cart" />
+    </div> 
+    
+    
+    <div class="description">
+       {{description}}
+    </div>
+     
+    <div class="sub-desc do-add-to-cart">
+        {{subDescription}}
+    </div>
+    
+    <div class="add-to-cart-section">
+        
+        <div class="choose-flavor " > 
+            <div class="variant-input" data-index="option1" > 
+                <span><input id="original-flavor-{{v.id}}" name="variant-{{v.id}}-flavor" type="radio" checked  class="flavor-type" value="Original" />
+                <label for="original-flavor-{{v.id}}">Original</label>
+            </span><span>
+                <input id="new-flavor-{{v.id}}"  type="radio" name="variant-{{v.id}}-flavor"  class="flavor-type" value="New Flavors" />
+                <label for="new-flavor-{{v.id}}">New Flavors</label>
+            </span> 
+            </div> 
+    
+        </div>
+    
+        <div class="flavour-description"></div>
+        <a data-variant-id="{{v.id}}"  data-option-2="{{v.option2}}" class="select-product-and-process pointer site-nav__link site-nav__link--underline">
+            <span class="btn">Add To Cart</span>
+          </a>   
+  
+    </div>  
+    
+    </div>  
+    {% endif %}  
+    {% endfor %}
+    
+    
+    
+    </div>

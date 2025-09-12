@@ -1,0 +1,374 @@
+<style type="text/tailwindcss">
+    [v-cloak] {
+       opacity: 0.1;
+     }
+     [v-cloak][v-cloak-hide] {
+      display:none;
+    }
+      .video-foreground,
+      .video-background iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* pointer-events: none; */
+      }
+      .video-foreground {
+        height: 215%;
+        top: -57%;
+        width: 235%;
+        left: -64%;
+      }
+     @layer components {
+       .product-option-input + .single-product-option {
+         @apply opacity-50;
+       }
+       .product-option-input:hover + .single-product-option {
+         @apply opacity-100;
+       }
+       .product-option-input:checked + .single-product-option {
+         @apply  {{option_button_selected_class}};
+       }
+       .button-plan-option{
+        @apply text-[12px] md:text-sm font-avenir;    
+       }  
+     } 
+  </style> 
+  {{product.metafields.global.custom_css_new}} 
+  
+  <style>
+      .wps_upsell_offer_parent_wrapper {
+          border: double #f4004d 4px;
+          margin: 0 auto;
+      }
+  
+      .wps_upsell_offer_parent_wrapper {
+          font-family: 'Source Sans Pro', sans-serif;
+      }
+  
+      .wps_upsell_offer_wrapper {
+          background-color: #f0ff21;
+          padding: 20px;
+      } 
+  
+      .wps_upsell_offer_discount_section {
+          margin: 0;
+          text-align: center;
+          background-color: #ff8121;
+          line-height: 1.68;
+      }
+  
+      .wps_upsell_offer_discount_section h3 {
+          color: #0c0c0c;
+          margin: 2px;
+          padding: 1px;
+          font-size: 39px;
+          border: none;
+      }
+  
+      .wps_upsell_offer_product_section {
+          text-align: left;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          font-size: 16px;
+          align-items: start;
+      }
+  
+      .wps_upsell_offer_product_section p {
+          margin: 0;
+          color: #720121;
+          font-size: 15px;
+      }
+  
+      .wps_upsell_offer_product_content h4 {
+          display: inline-block;
+          vertical-align: middle;
+          font-weight: 500;
+      }
+  
+      .wps_upsell_offer_product_content p {
+          white-space: pre-line;
+      }
+  
+      p.wps_upsell_offer_product_price {
+          font-size: 15px;
+          font-weight: 700;
+      }
+  
+      p.wps_upsell_offer_product_price del {
+          font-size: 15px;
+      }
+  
+      .wps_upsell_offer_product_section h4 {
+          margin: 0;
+          color: #720121;
+          font-size: 25px;
+          font-weight: 300;
+      }
+  
+      .wps_upsell_offer_product_content {
+          word-break: break-word;
+      }
+  
+      .wps_upsell_offer_primary_section {
+          align-items: center;
+      background-color: transparent;
+      display: flex;
+  
+      padding: 10px;
+      border: none;
+      width: 100% !important;
+      margin-left: 0px;
+      background: #f9fff1;
+      max-width: 100%;
+  
+      border-radius:0px; 
+  
+  } 
+  
+      .wps_upsell_offer_primary_section .add_offer_in_cart_text {
+          color: black;
+          font-size: 13px;
+          margin: 0 0 0 5px; 
+          font-weight: 600;
+          padding: 0;
+          line-height: 1.2;
+          letter-spacing: 1px;
+          text-transform: capitalize;    min-height: 25px;
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      }
+   
+      .wps_upsell_offer_secondary_section {
+          padding: 8px;
+          background-color: #c1f0db;
+          text-align: center;
+          white-space: pre-line;
+      }
+  
+      .wps_upsell_offer_secondary_section p {
+          color: #485f75;
+          margin: 0;
+          font-size: 20px;
+      }
+  
+      .wps_upsell_offer_primary_section .wps_upsell_bump_checkbox_container {
+          cursor: pointer;
+          width: auto;
+          font-size: 22px;
+          height: 23px;
+          margin: 0 0 6px 0;
+          padding-left: 35px;
+          position: relative;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+  
+      .wps_upsell_bump_checkbox_container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+      }
+  
+      .checkmark {
+          position: absolute;
+          top: 0;
+          margin: 3px;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eeeeee;
+          animation: shadow-pulse 1.5s infinite;
+          border: 2px solid #73994a;
+          border-radius: 20px;
+      }
+  
+      .wps_upsell_offer_arrow {
+          width: 40px;
+          margin-right: 4px;
+          transform: scaleX(-1);
+          animation: leftright 0.4s infinite ease;
+          padding: 0 2px;
+          position: relative;
+          top: 5px;
+      }
+  
+      .wps_upsell_offer_arrow svg {
+          width: 100%;
+          height: auto;
+          fill: #dd3333;
+      }
+  
+      .wps_upsell_bump_checkbox_container:hover input~.checkmark {
+          background-color: #ccc;
+      }
+  
+      .wps_upsell_bump_checkbox_container input:checked~.checkmark {
+          background-color: #ffffff;
+      }
+  
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+  
+      .wps_upsell_bump_checkbox_container input:checked~.checkmark:after {
+          display: block;
+      }
+  
+      .wps_upsell_bump_checkbox_container .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid #333;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+  
+      .wps_upsell_offer_image {
+          margin-right: 10px;
+      }
+  
+      .wps_upsell_offer_img {
+          width: 80px;
+          height: 80px;
+          max-width: 200px;
+          max-height: 200px;
+      }
+      .ribbon {
+    width: 48%;
+    height: 188px;
+    float: left; 
+    margin-bottom: 30px;
+    
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+  }
+  .ribbon:nth-child(even) {
+    margin-right: 4%;
+  }
+  @media (max-width: 500px) {
+    .ribbon {
+      width: 100%;
+    }
+    .ribbon:nth-child(even) {
+      margin-right: 0%;
+    }
+  } 
+  .wrap {
+    width: 100%;
+    height: 188px;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    overflow: hidden;
+  }
+  .wrap:before, .wrap:after {
+    content: ""; 
+    position: absolute;
+  }
+  .wrap:before {
+    width: 40px;
+    height: 8px;
+    right: 100px;
+    background: #73994a;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .wrap:after {
+    width: 8px;
+    height: 40px;
+    right: 0px;
+    top: 100px; 
+    background: #73994a;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .ribbon6 {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px dashed;
+    box-shadow:0 0 0 3px #73994a,  0px 21px 5px -18px rgba(0,0,0,0.6);
+    background: #73994a; 
+    text-align: center;
+  }
+  
+      @media only screen and (min-width : 768px) and (max-width: 1100px) {
+          .wps_upsell_offer_wrapper .wps_upsell_offer_product_section {
+              flex-wrap: wrap;
+              justify-content: center;
+          }
+  
+          .wps_upsell_offer_wrapper .wps_upsell_offer_product_content {
+              width: 100% !important;
+          }
+      }
+  
+      @media screen and (max-width: 480px) {
+          .wps_upsell_offer_product_content { 
+              margin-left: 0;
+          }
+      }
+      .prolon-right-badge {
+          transform: rotate(90deg);
+          font-size: 12px;
+          right: -75px;
+          /* background: orange; */
+          padding: 4px 11px;
+          color: white;
+          font-weight: bold;
+      }
+  
+      @media(max-width:767px){
+      .prolon-right-badge {
+          padding: 1px 5px;
+          right: -55px;
+          font-size: 10px;
+      }
+      }
+      /*! CSS Used keyframes */
+      @keyframes shadow-pulse {
+          0% {
+              box-shadow: 0 0 0 1px #73984a; 
+          }
+  
+          100% {
+              box-shadow: 0 0 0 7px transparent;
+          }
+      }
+  
+      @keyframes leftright {
+          0% {
+              transform: translateX(-5px)scaleX(-1);
+          }
+  
+          60% {
+              transform: translateX(-2px)scaleX(-1);
+          }
+  
+          100% {
+              transform: translateX(-5px)scaleX(-1);
+          }
+      }
+  </style>
+   

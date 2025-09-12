@@ -1,0 +1,49 @@
+{% assign hideProduct = true %}
+{% assign allowedPatientCollections = 'patients' %}
+<!-- Customer tags {{customer.tags}} -->
+{% if customer %}
+{% for xtag in customer.tags %}
+{% assign tag = xtag  | downcase %}
+{% if tag == 'approved' %}
+{%assign approved= true %}
+{% endif %}   
+{% if tag == 'lhp' or tag == 'hcp' or tag == 'hcr' or tag == 'hcc' or tag == 'hcr-recommender'  %}
+
+{% assign provider = true %}  
+
+{% endif %}
+{% endfor %}
+{% endif %}
+<!-- approved {{approved}} provider {{provider}} -->
+{% if allowed == 'patient'  %}
+
+{% assign hideProduct = false %}
+
+{% elsif allowed == 'providers' %}
+ 
+    
+            {% if provider %}
+                
+                {% if approved %} 
+                    {% assign hideProduct = false %}
+                {% else %}
+                {% assign customMessage = 'Your account is not approved yet. please reach Account manager to get your account approved.' %}
+                {% endif %}
+    
+            {% endif %}
+{% endif %}
+
+
+{% if type == 'collection' %}
+<!-- collections {{handle}} -->
+    {% if allowedPatientCollections contains handle %}
+    {% assign hideProduct = false %} 
+    {% endif %}
+
+{% endif %}
+
+
+{% if hideProduct == true %}
+	{% include 'memberships-noaccess' type:type,customMessage:customMessage %}
+	{% break %}
+{% endif %} 

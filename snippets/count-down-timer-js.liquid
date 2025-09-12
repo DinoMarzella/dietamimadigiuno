@@ -1,0 +1,56 @@
+<!-- count-down-timer-js.liquid -->  
+{%- assign show_countdowntimer = true -%}
+{%- assign end_date = "08-29-2022" -%}     
+    
+<script type="text/javascript">   
+  let defaultDate= "{{ end_date }}T00:00:00.000-07:00";
+    let TopBarDate = $('.timer-bar-section').attr("data-timer-enddate");
+    if(TopBarDate != ''){
+        defaultDate = TopBarDate+"T00:00:00.000-07:00"; 
+    } 
+ 
+       var second = 1000,
+            minute = second * 60,
+
+            hour = minute * 60,
+
+            day = hour * 24;
+      
+       
+            var countDown = new Date(defaultDate).getTime();
+
+            
+        x = setInterval(function () {
+            var here = new Date();
+            var invdate = here;  
+
+            //var currentTime = new Date(Date.now() + (new Date().getTimezoneOffset() * 60000)).getTime();
+           // var pSTTime = currentTime - (11 * 3600000);  
+          
+  
+ 
+            var invdate = new Date(here.toLocaleString('en-US', {
+                timeZone: "America/Los_Angeles"
+            })); 
+ 
+            var nowNew = invdate.getTime();
+            var distance = countDown - nowNew; 
+            // var distance = countDown - pSTTime;  
+                if(distance > 0){
+                    $('.timer-container').show();
+
+                    $('.timer-days').text( Math.floor(distance / (day)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})),
+
+                    $('.timer-hours').text(Math.floor((distance % (day)) / (hour)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})),
+
+                    $('.timer-minutes').text(Math.floor((distance % (hour)) / (minute)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})),
+
+                    $('.timer-seconds').text( Math.floor((distance % (minute)) / second).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}));
+                }else{
+                    $('.timer-container').hide();
+                } 
+
+
+        }, second)
+
+</script>   

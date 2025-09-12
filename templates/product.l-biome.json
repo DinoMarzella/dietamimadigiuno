@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-v2",
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "l-biome",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "Dieta Mima Digiuno",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-l-biome\" \n %}",
+        "coupon_code": "",
+        "coupon_text": "",
+        "option_1_name": "Scegli i {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona la {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona la {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p><p><strong>Gusto originale:</strong> Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro <strong>— oppure —</strong></p><p><strong>Gusto nuovo sapore:</strong> Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p><p><strong>Zuppe:</strong> Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p><p><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p><p><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p><p><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p><p><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p><p><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "content_html": "",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "content_html": "",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "",
+            "content_html": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "6864838a-9034-43fc-8376-51ca9f7f06a4": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https://vimeo.com/891476499",
+        "divider": false
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"py-[25px] bg-[#73994a] px-[20px]\">\n  <div class=\"max-w-[1600px] mx-auto flex flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[10px]\">\n    <div class=\"flex justify-center items-center w-full\">\n      <div class=\"w-full\">\n<style>\n  .max-w-\\[110px\\]{\n    max-width:110px;\n  }\n.quotation{\n    position: relative;\n    top: -30px;\n    width: 60px;\n    margin-right: 10px;\n}\n\n@media(max-width:767px){\n  .quotation {\n    position: absolute;\n    left: 0px;\n    width: 41px;\n    margin-right: 10px;\n    top: 10px;\n}\n}\n  </style>\n<div class=\"flex justify-center items-center flex-col md:flex-row\">\n\n  <div class=\"w-full md:w-[80%] text-[26px] md:text-[36px] text-white font-normal text-center flex items-center justify-center m:!flex-col\">\n  <!-- <img width='279' height='138' class='ml-4 quotation' src='https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Quote_-_LPILL.png?v=1691175271' alt='star' />    -->\n    <span>La salute dell'intestino è essenziale per una vita sana. L-Biome sostiene il vostro percorso</span>\n  <img width=\"279\" height=\"138\" class=\"max-w-[110px] ml-4\" src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/biome_2x_563159be-dc78-48f2-85bd-7f70a39d004c.png?v=1693580228\" alt=\"star\"> </div>\n  \n</div>\n</div>\n    </div>\n  </div>\n</div>"
+      }
+    },
+    "2171edda-db61-40e5-8e5c-9015c70425a8": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--19864274862429__2171edda-db61-40e5-8e5c-9015c70425a8-liquid-1": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal \n         !delay-200\">\n<b>L-BIOME</b> per una ottimale <b>salute intestinale</b>\n</h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal  !delay-500\">I ceppi probiotici <strong>Bifidobacterium Breve B3 e Lactobacillus Rhamnosus HN001</strong> hanno mostrato effetti benefici sul miglioramento dell’aspettativa di vita e sull’alleviamento dei disturbi legati all’invecchiamento regolando la composizione del microbiota intestinale.</p>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pills_2_1500x900_2bfdaca8-6da0-4bf8-a917-2162b357ccd8.webp?v=1700494475\" alt=\"L-Biome\">",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "527201cd-f054-45e4-a3d0-d5c017cd55e4": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Bifidobacterium breve B-3</h4>\n<p>Test clinici hanno dimostrato che l’assunzione di B. breve B-3 ha ridotto la massa grassa dei soggetti adulti con tendenza all’obesità. È stato osservato un possibile miglioramento della reazione infiammatoria sistemica mediante la somministrazione di B. breve B-3.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lactobacillus Rhamnosus Hn001</h4>\n<p>È un probiotico particolarmente resistente all'azione della bile. Grazie a questa funzionalità, è in grado di colonizzare la parte superiore dell'intestino tenue e il colon. Numerosi studi dimostrano che L. rhamnosus HN001 ha un impatto benefico sulla funzione della barriera intestinale.</p>\n</div>\n\n<div id=\"elem-3\" class=\"mt-10 box-elem md:text-left text-center\">\n\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Inulina</h4>\n<p>è una fibra insolubile. Sebbene i cibi raffinati forniscano gusto ed energia, essi sono carenti di fibre e il loro consumo a lungo termine può portare a diversi disturbi. Diversi studi dimostrano che l’inulina agisce come un prebiotico e può <strong>supportare la crescita delle specie Bifidobacteria e Lactobacillus</strong> nel tratto intestinale, promuovendo una buona salute dell'apparato digerente.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "5c5d5019-df0f-4b16-aee4-e5c76c547a30": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-4\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">DHA</h4>\n<p>È un acido grasso polinsaturo omega-3 essenziale, componente dei fosfolipidi in vari organi, tra cui cuore, cervello e retina. L'assunzione di <strong>DHA contribuisce  a conservare la fisiologica funzione cerebrale ed al mantenimento della capacità visiva</strong> normale. Studi dimostrano che le popolazioni europee consumano pochi alimenti contenenti DHA, creando situazioni di carenza che possono essere affrontate attraverso l'integrazione.</p>\n</div>\n\n<div id=\"elem-5\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lisina</h4>\n<p>È un aminoacido essenziale per l’uomo e deve quindi essere assunto attraverso la dieta. La lisina svolge diversi ruoli negli esseri umani, soprattutto nella <strong>proteinogenesi</strong>, ma anche nella reticolazione dei polipeptidi del <strong>collagene</strong>.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--19864274862429__2171edda-db61-40e5-8e5c-9015c70425a8-liquid-1",
+        "527201cd-f054-45e4-a3d0-d5c017cd55e4",
+        "5c5d5019-df0f-4b16-aee4-e5c76c547a30"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "c7d86dd0-6395-4b6a-a634-e195f68facff": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"w-full bg-[#F7F9FB] pl-wrapper-custom-content caricato_animazione\">\n   <div class=\"w-full max-w-[1600px] mx-auto\">\n     <div class=\"flex flex-col md:flex-row items-start aware-center\">\n       <div class=\"w-full md:w-[40%] px-[20px] mb-[0px] md:mb-0 py-[25px] md:py-[50px] \">\n         <span class=\"inline-block py-px px-[20px] mb-[15px] text-xs leader-5 testo-bianco bg-prolon font-medium maiuscolo hero__animazione-contenuti !delay-100\">\n         </span>\n         <h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2] font-normal \n         !delay-200\">\n<b>L-BIOME</b> per una ottimale <b>salute intestinale</b>\n</h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal  !delay-500\">Il\n<b>lactobacillus rhamnosus HN001</b> e il <b>bifidumbacte-\nrium Breve B3</b> contribuiscono al <b>riequilibrio della\nflora batterica intestinale supportando il sistema\nintestinale-immunitario favorendo il metabolismo</b>.\nL’inulina contribuisce a fornire il nutrimento dei\nceppi probiotici. Il <b>DHA e la lisina promuovono l’integrità e il buon funzionamento dei tessuti</b>, come\nquello intestinal</p>\n       </div>\n       <div class=\"w-full md:w-[60%] px-[20px] mb-[40px] md:mb-0\">\n           <div class=\"flex flex-wrap pt-[20px]  !delay-400\">\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] \">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">Bifidobacterium breve B-3</p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">Test clinici hanno dimostrato che l’assunzione di B. breve B-3 ha ridotto la massa grassa dei soggetti adulti con tendenza all’obesità. È stato osservato un possibile miglioramento della reazione infiammatoria sistemica mediante la somministrazione di B. breve B-3.</p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] \">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">Lactobacillus Rhamnosus Hn001</p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">È un probiotico particolarmente resistente all'azione della bile. Grazie a questa funzionalità, è in grado di colonizzare la parte superiore dell'intestino tenue e il colon. Numerosi studi dimostrano che L. rhamnosus HN001 ha un impatto benefico sulla funzione della barriera intestinale.</p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] \">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">Inulina</p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">\n                  è una fibra insolubile. Sebbene i cibi raffinati forniscano gusto ed energia, essi sono carenti di fibre e il loro consumo a lungo termine può portare a diversi disturbi. Diversi studi dimostrano che l’inulina agisce come un prebiotico e può <strong>supportare la crescita delle specie Bifidobacteria e Lactobacillus</strong> nel tratto intestinale, promuovendo una buona salute dell'apparato digerente.</p>\n               </div>\n            \n              \n               <div class=\"w-full border-b border-black flex giustifica-center elementi-start py-[25px] md:py-[50px] \">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   DHA\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">È un acido grasso polinsaturo omega-3 essenziale, componente dei fosfolipidi in vari organi, tra cui cuore, cervello e retina. L'assunzione di <strong>DHA contribuisce  a conservare la fisiologica funzione cerebrale ed al mantenimento della capacità visiva</strong> normale. Studi dimostrano che le popolazioni europee consumano pochi alimenti contenenti DHA, creando situazioni di carenza che possono essere affrontate attraverso l'integrazione.</p>\n               </div>\n            \n<div class=\"w-full border-b-0 border-transparent flex aware-center items-start py-[25px] md:py-[50px] \">\n                 <p class=\"w-[35%] md:w-[35%] text-[18px] md:text-[24px] text-[#73994a] text-center\">\n                   Lisina\n                 </p>\n                 <p class=\"w-[65%] md:w-[65%] testo-[16px] md:testo-[18px] testo-[#000]\">È un aminoacido essenziale per l’uomo e deve quindi essere assunto attraverso la dieta. La lisina svolge diversi ruoli negli esseri umani, soprattutto nella <strong>proteinogenesi</strong>, ma anche nella reticolazione dei polipeptidi del <strong>collagene</strong>.</p>\n               </div>\n            \n\n\n           </div>\n       </div>\n     </div>\n   </div>\n</div>"
+      }
+    },
+    "9ad313b2-be01-443d-b2e0-3a1675b19707": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_61c35b35a52f450c9e53e6442d2a2f6b.jpg",
+        "image_width": 700,
+        "subtitle": "PERCHÈ L-BIOME",
+        "title": "L'innovazione incontra la natura.",
+        "text": "<p>Il nostro L-Biome, garantisce un dosaggio ottimale di questi ingredienti in modo sicuro ed efficace. Il DHA è legato all'aminoacido essenziale L-lisina formando un sale, che rende il DHA più facilmente assimilabile dall'organismo aumentandone l'efficacia.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "33a23363-5d8f-4509-90fb-6e26373ac191": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_fbfbcef094ea46188940470830a06094_webp.jpg",
+        "image_width": 700,
+        "subtitle": "COME FUNZIONA",
+        "title": "L'innovazione incontra la natura.",
+        "text": "<p>L-Biome può essere utilizzato quotidianamente da chiunque abbia un'età compresa tra i 18 e gli 80 anni. L'uso migliore è quello di assumerlo dopo aver fatto uno dei prodotti ProLon per la nutrizione del digiuno: Dieta che imita il digiuno di 5 giorni, ReSet Nutrition di 1 giorno, Barretta del digiuno o Frullato del digiuno. È possibile interrompere e ricominciare in qualsiasi momento. In caso di problemi di salute, consultare il medico prima di assumere L-Biome. Non assumere L-Biome in caso di allergia a uno dei suoi ingredienti.</p>\n\n<p>Con L-Biome di ProLon non scegliete solo un integratore, ma un partner nel vostro percorso di longevità e invecchiamento sano. Mentre siamo alla ricerca continua di ulteriori progressi nella comprensione della longevità, ci impegniamo a fornirvi il meglio di ciò che la scienza e la natura offrono oggi.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c": {
+      "type": "promo-grid",
+      "blocks": {
+        "5e857927-5599-4277-b57e-0e2cdf6246b9": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di Mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "5e857927-5599-4277-b57e-0e2cdf6246b9"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "5984b37d-0dab-4c49-85c2-80bfac52eda7": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<div class=\"custom-content \">\n  \n    \n    <div class=\"custom__item small--one-whole one-quarter align--center\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <p class=\"accent-subtitle text-center no-margin\">Esperti di nutrizione clinica</p>\n<p class=\"h3 text-center no-margin\">Coaching Gratuito</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n    \n    <div class=\"custom__item small--one-whole one-third align--top-middle\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0001_Carmen_Loverso_1d0b06b1-1db1-496d-a366-fc0cb45acd7c.jpg?v=1676879198\" title=\"Carmen Loverso\">\n<h4 class=\"small-margin\"><b>Carmen Loverso</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p>\n<p>Laureata magistrale dal 2017 in Alimentazione e Nutrizione Umana, ama praticare sport e ed è appassionata di cucina salutare. Longevità significa amare l’unico posto in cui vivrai per sempre: il tuo corpo.</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n    \n    <div class=\"custom__item small--one-whole one-third align--top-middle\">\n      <div class=\"custom__item-inner custom__item-inner--html \">\n        \n            \n              <div class=\"rte\" data-section-id=\"template--19874577383773__0768b74c-3366-4ae7-ade7-81d527d1daa1\" data-section-type=\"featured-content-section\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0003_Benedetta_Zenobi_d470f2c8-a6ad-4799-9d8c-c22b56c93312.jpg?v=1676879198\" title=\"Benedetta Zenobi\">\n<h4 class=\"small-margin\"><b>Benedetta Zenobi</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p>\n<p>Laureata magistrale dal 2018 in Alimentazione e Nutrizione Umana, appassionata di cucina naturale. Per Benedetta, Longevità significa mangiare salutare, pensare positivo a vivere in salute.</p>\n              </div>\n            \n          \n      </div>\n    </div>\n  \n  \n  </div>"
+      }
+    },
+    "b4f5c3b1-2c34-435f-bfc3-999621e63421": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19864274862429__b4f5c3b1-2c34-435f-bfc3-999621e63421-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<style>\n.d-open[open] summary {\n  padding-bottom: 20px;\n}\n</style>\n<div class=\"product-ref\">\n<details class=\"d-open\"> \n<summary><b>Riferimenti</b></summary>\n\n\n<p><strong>Bifidumbacterium breve B-3:</strong></p>\n\n\n\n<ul>\n<li>Minami, J.I., Kondo, S., Yanagisawa, N., et al., 2015. <strong>Oral administration of <em>Bifidobacterium breve</em> B-3 modifies metabolic functions in adults with obese tendencies in a randomised controlled trial.</strong> <em>Journal of Nutritional Science</em>, 4.</li>\n\n\n\n<li>Minami, J., Iwabuchi, N., Tanaka, M., et al., 2018. Effects of <em>Bifidobacterium breve</em> B-3 on body fat reductions in pre-obese adults: a randomized, double-blind, placebo-controlled trial. <em>Bioscience of Microbiota, Food and Health</em>, pp.18-001.</li>\n\n\n\n<li>Inoue T, Kobayashi Y, Mori N, Sakagawa M, et al., 2018. Effect of combined bifidobacteria supplementation and resistance training on cognitive function, body composition and bowel habits of healthy elderly subjects. <em>Benef Microbes</em>. 2018 Dec 7;9.</li>\n</ul>\n\n\n\n<p><strong>&nbsp;</strong><strong>Lactobacillus rhamnosus HN001:</strong></p>\n\n\n\n<ul>\n<li>González-Hernández LA, Jave-Suarez LF, Fafutis-Morris M, Montes-Salcedo KE, Valle-Gutierrez LG, Campos-Loza AE, Enciso-Gómez LF, Andrade-Villanueva JF (2012) Synbiotic therapy decreases microbial translocation and inflammation and improves immunological status in HIV-infected patients: a double-blind randomized controlled pilot trial. <em>Nutr J</em> 11:90.</li>\n\n\n\n<li>Mokkala K, Pussinen P, Houttu N, Koivuniemi E, Vahlberg T, Laitinen K. (2018) The impact of probiotics and n-3 long-chain polyunsaturated fatty acids on intestinal permeability inpregnancy: a randomised clinical trial. <em>Beneficial Microbes</em> 9(2): 199-208</li>\n\n\n\n<li>Kruger MC, Fear A, Chua WH, Plimmer GG, Schollum LM (2009) The effect of <em>Lactobacillus rhamnosus</em> on mineral absorption and bone health in growing male and ovariectomised female rats. <em>Dairy Science &amp; Technology</em> 89:219-231.</li>\n\n\n\n<li>Tannock GW, Taylor C, Lawley B, Loach D, Gould M, Dunn AC, McLellan AD, Black MA, McNoe L, Dekker J, Gopal P, Collett MA (2014) Altered transcription of murine genes induced in the small bowel by administration of probiotic strain <em>Lactobacillus rhamnosus</em> HN001. <em>Applied and Environmental Microbiology</em> 80:2851-2859</li>\n\n\n\n<li>Miller LE, Ouwehand AC (2013) Probiotic supplementation decreases intestinal transit time: Meta- HN019, analysis of randomized controlled trials. <em>World Journal of Gastroenterology</em> 19:4718-4725</li>\n</ul>\n\n\n\n<p><strong>Inulina :</strong></p>\n\n\n\n<ul>\n<li>Shah BR, Li B, Al Sabbah H, Xu W, Mráz J. <strong>Effects of prebiotic dietary fibers and probiotics on human health</strong>: With special focus on recent advancement in their encapsulated formulations. <em>Trends Food Sci Technol</em>. 2020 Aug;102:178-192.</li>\n\n\n\n<li>den Besten G., van Eunen K., Groen A.K., Venema K., Reijngoud D.-J., Bakker B.M. <strong>The role of short-chain fatty acids in the interplay between diet, gut microbiota, and host energy metabolism</strong>. <em>Journal of Lipid Research</em>. 2013;54(9):2325–2340.</li>\n\n\n\n<li>Dewulf E., Cani P., Claus S., Neyrinck A., Puylaert P., Glenn G.…Delzenne N. INULIN-TYPE fructans with prebiotic properties lessen endotoxemia and modulate host metabolism by changing gut microbiota composition in obese women: 749 accepted poster. <em>Obesity Facts</em>. 2012;5:200–201.</li>\n\n\n\n<li>Dewulf E.M., Cani P.D., Neyrinck A.M., Possemiers S., Van Holle A., Muccioli G.G.…Sohet F.M. Inulin-type fructans with prebiotic properties counteract GPR43 overexpression and PPARγ-related adipogenesis in the white adipose tissue of high-fat diet-fed mice. <em>The Journal of Nutritional Biochemistry</em>. 2011;22(8):712–722.</li>\n\n\n\n<li>Nicolucci A.C. Prebiotics reduce body fat and alter intestinal microbiota in children who are overweight or with obesity. <em>Gastroenterology</em>. 2017;153(3):711–722</li>\n</ul>\n\n\n\n<p>&#xFEFF;</p>\n\n\n\n<p><strong>Algal Oil DHA</strong></p>\n\n\n\n<ul>\n<li>Costantini L, Molinari R, Farinon B, Merendino N. <strong>Impact of Omega-3 Fatty Acids on the Gut Microbiota.</strong> <em>Int J Mol Sci</em>. 2017 Dec 7;18(12):2645 <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/</a></li>\n</ul>\n\n\n\n<ul>\n<li>Jayapala H, Lim SY. N-3 Polyunsaturated Fatty Acids and Gut Microbiota. <em>Comb Chem High Throughput Screen</em>. 2022 Jul 1. doi: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35786331/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://pubmed.ncbi.nlm.nih.gov/35786331/</a></li>\n\n\n\n<li>Rousseau G. Microbiota, a New Playground for the <strong>Omega-3 Polyunsaturated Fatty Acids in Cardiovascular Diseases</strong>. <em>Mar Drugs</em>. 2021 Jan 23;19(2):54. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/</a></li>\n\n\n\n<li>Stillwell W, Wassall SR. Docosahexaenoic acid: membrane properties of a unique fatty acid. <em>Chem Phys Lipids</em>. 2003;126(1):1-27.</li>\n\n\n\n<li>Serhan CN. Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology. <em>Nature</em>. 2014 Jun 5; 510(7503): 92–101.</li>\n\n\n\n<li>Kotani S, Sakaguchi E, Warashina S, et al. <strong>Dietary supplementation of arachidonic and docosahexaenoic acids improves cognitive dysfunction</strong>. <em>Neurosci Res</em> 2006;56(2):159-64.</li>\n\n\n\n<li>Innes JK, Calder PC. Marine <strong>Omega-3 (N-3) Fatty Acids for Cardiovascular Health</strong>: An Update for 2020. <em>Int J Mol Sci</em>. 2020 Feb 18;21(4):1362.</li>\n\n\n\n<li>SanGiovanni JP, Chew EY. The role of omega-3 long-chain polyunsaturated fatty acids in health and disease of the retina. <em>Prog Retin Eye Res</em>. 2005;24(1):87-138</li>\n</ul>\n</div>\n</details>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19864274862429__b4f5c3b1-2c34-435f-bfc3-999621e63421-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "6864838a-9034-43fc-8376-51ca9f7f06a4",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "2171edda-db61-40e5-8e5c-9015c70425a8",
+    "c7d86dd0-6395-4b6a-a634-e195f68facff",
+    "9ad313b2-be01-443d-b2e0-3a1675b19707",
+    "33a23363-5d8f-4509-90fb-6e26373ac191",
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c",
+    "5984b37d-0dab-4c49-85c2-80bfac52eda7",
+    "b4f5c3b1-2c34-435f-bfc3-999621e63421",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "recommendations",
+    "collection-return"
+  ]
+}

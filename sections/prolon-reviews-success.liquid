@@ -1,0 +1,114 @@
+<style>
+      .__main_grid_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .__reviews_prolon {
+    border: 1px solid #d3d3d3;
+    border-radius: 30px;
+  }
+  .container_reviews_wrap {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  ._left_mini_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+  }
+  ._right_medium_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+._left_mini_column img{
+  position: relative;
+    left: -5px;
+}
+.all_header_date{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.date_reviews{
+  color:gray;
+  font-size: 14px;
+  white-space: nowrap;
+}
+  @media (max-width: 767px) {
+    .__main_grid_wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .date_reviews{
+      white-space:unset;
+    }
+  }
+</style>
+
+<div class="__main_grid_wrapper">
+    {% for block in section.blocks %}
+    <div class="__reviews_prolon">
+      <div class="container_reviews_wrap">
+        <div class="_left_mini_column">
+          <img src="{{ block.settings.image_reviews | img_url: '1200x'}}"/>
+          {{block.settings.text_revr}}
+        </div>
+        <div class="_right_medium_column">
+         {{block.settings.gloden_text}}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% schema %}
+  {
+    "name": "success reviews",
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "success_review",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_reviews",
+            "label": "Review Image"
+          },
+          {
+            "type": "html",
+            "id": "text_revr",
+            "label": "Heading"
+          },
+          {
+            "type": "html",
+            "id": "gloden_text",
+            "label": "Review Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "reviews success",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "success_review"
+        }
+      ]
+    }
+  ]
+    }
+  {% endschema %}

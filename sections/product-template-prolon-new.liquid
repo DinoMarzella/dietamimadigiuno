@@ -1,0 +1,732 @@
+  
+<link rel="stylesheet" href="https://use.typekit.net/ptw2uba.css">
+
+{% render 'product-template-prolon-new',
+  product: product,
+  description_style: section.settings.description_style,
+  image_position: section.settings.image_position,
+  image_container_width: section.settings.image_size,
+  section_id: product.id,
+  social: section.settings.social_enable,
+  thumbnail_position: section.settings.thumbnail_position,
+  thumbnail_arrows: section.settings.thumbnail_arrows,
+  video_looping: section.settings.enable_video_looping,
+  video_style: section.settings.product_video_style,
+  seo_title:seo_title
+%}  
+
+
+{% if settings.enable_product_reviews and settings.reviews_layout == 'full' %}
+  <hr id="Reviews-{{ product.id }}" class="hr--clear">
+  <div class="index-section product-reviews product-reviews--full">
+    <div class="page-width">
+      <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "description_style",
+        "label": "Description position",
+        "default": "default",
+        "options": [
+          {
+            "value": "default",
+            "label": "Next to media"
+          },
+          {
+            "value": "full",
+            "label": "Below media"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "social_enable",
+        "label": "Enable social sharing",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Media"
+      },
+      {
+        "type": "paragraph",
+        "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Position",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Size",
+        "default": "medium",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "thumbnail_position",
+        "label": "Thumbnail position",
+        "default": "beside",
+        "options": [
+          {
+            "value": "beside",
+            "label": "Next to media"
+          },
+          {
+            "value": "below",
+            "label": "Below media"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "thumbnail_arrows",
+        "label": "Show thumbnail arrows"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_video_looping",
+        "label": "Enable video looping",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "product_video_style",
+        "label": "Video style",
+        "default": "muted",
+        "options": [
+          {
+            "value": "muted",
+            "label": "Video without sound"
+          },
+          {
+            "value": "unmuted",
+            "label": "Video with sound"
+          }
+        ],
+        "info": "Video with sound will not autoplay"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+
+<style>
+  .variant-wrapper.variant-wrapper--button.js.soup-flavor>label:before, 
+  .variant-wrapper.variant-wrapper--button.js.variant-button-cycles> label:before{
+      content: "SELECT ";  /* this is the text that will be displayed */
+  } 
+  .grid.grid { 
+      max-width: 1420px;
+      margin: auto;
+  }   
+  .recharge-subscription-updated {
+      max-width: 560px;
+  }
+  .variant-wrapper.variant-wrapper--button.js.frequency {
+       display: none;
+  } 
+  select.selct-delivery-days:active,select.selct-delivery-focus {
+    border: none;
+} 
+
+.product-new-prolon-6-june-22 .soup-flavor .variant-input-wrap input[type=radio]+label {
+    min-width: 150px; 
+    text-align: center;
+}
+
+  /* // MOBILE START HERE  */  
+  @media(max-width:767px){
+  
+    .product-new-prolon-6-june-22 .whats-in-box-wrapper:not(.mobile-only) {
+      display: none!important;
+  }
+  
+  h1.h2.product-single__title {
+      text-align: left;
+  }
+  
+  .product-new-prolon-6-june-22 .variant-button-cycles .variant-input {
+      flex-wrap: wrap;
+      max-width: 100%;
+      width: 100%;
+  }
+  
+  .product-new-prolon-6-june-22 .cycle-description-wrapper {
+      max-width: 102vw;
+      text-align: left;
+  }
+  
+  .product-new-prolon-6-june-22 .variant-button-cycles .variant-input .variant__button-label {
+      max-width: 100%;
+      width: 100%;
+  }
+  
+  .variant-input-wrap {
+      max-width: 100%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+  }
+  
+  .product-new-prolon-6-june-22 [data-index="option2"].variant-input-wrap input[type=radio]+label {
+      margin-inline: 0px;
+  }
+  
+  .recharge-subscription-updated {
+      margin-top: 20px;
+  }
+  
+  .recharge-subscription-updated .rca-subscription-form__button .recharge-price-wrapper {
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+  
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button {
+      padding-right: 0px;
+  }
+  
+     
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button:before{
+    top:26px;
+  }
+  .recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button:after {
+      top: 30px;
+  }
+  
+  .recharge-subscription-updated .subscribe-saving-updated {
+      margin: 0px;
+  }
+  
+ 
+  .product-new-prolon-6-june-22 .product-main-title-wrapper {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+  }
+  
+  .grid__item.grid__item { 
+      padding: 0px;
+  } 
+  
+  .soup-flavor+.product-single__description.rte.visible {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product__main-photos .slick-list {
+    padding: 0px;
+}
+
+.product-new-prolon-6-june-22 {
+    margin-top: 0px;
+}
+
+fieldset#ProductSelect-6785441726510-option-1 {}
+
+.variant-button-cycles {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]+label {
+    box-shadow: none!Important;
+    border: 2px solid #a1a1a1;
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 60px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]+label+span.cycle-description-wrapper {
+    border: 2px solid #a1a1a1;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]:checked+label {
+    box-shadow: none!Important;
+    border: 2px solid #a4c752;
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 60px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]:checked+label+span.cycle-description-wrapper {
+    border: 2px solid #a4c752;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]+label:before {
+    border: 1px solid #ccc;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 8px;
+    border-radius: 50%;
+}
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]:checked+label:after {
+    border: 1px solid #ccc;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    left: 22px;
+    top: 12px;
+    height: 1rem;
+    width: 1rem;
+    background-color: #a4c752; 
+}
+
+.rca-subscription-form__button span {
+    font-size: 14px;
+}
+
+div#PDPAddtoCartdiv button {
+    /* height: 60px; */
+    max-width: 260px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+ 
+
+.product-single__meta+gird__item {
+    display: none;
+}
+
+.product-single__meta+.grid__item {
+    display: none;
+}  
+
+  }  
+h3.nutrition-facts a {
+    border-bottom: 2px solid;
+    display: inline;
+}
+.product-single__meta .gmo-icons {
+    display: none;
+}
+
+
+
+.product-new-prolon-6-june-22 .gmo-icons {
+    margin-top: 20px;
+}
+
+.what-single-description {
+    line-height: 1.4;
+}  
+  </style> 
+<style>
+  .grid {
+    max-width: 1200px;
+    margin: auto;
+}
+  
+  @media only screen and (max-width: 768px) {
+    .faq-mobile {
+      display: none;
+    }
+  }
+  .faq-mobile {
+    margin-top: 30px;
+  }
+  
+    @media only screen and (min-width: 769px) {
+    .faq-desktop {
+      display: none;
+    }
+  }
+  
+    .product-new-prolon-6-june-22 {
+    padding-bottom: 10px;
+}   
+
+  
+  @media only screen and (max-width: 768px) {
+    .hero__subtitle {
+      font-size: 13.6px !important;
+  
+    margin-right: 36%;
+  }
+    .slideshow__slide--1597341402865 .hero__title {
+      font-size: 2.1em !important;
+    }
+  }
+    .hero__subtitle {
+      font-size: 18.3px;
+    max-width: 600px;
+  }
+  
+
+  .variant__label[for] {
+
+    color: #73994a;
+}
+  
+img.pdp-logos-new {
+    display: none;
+} 
+ {% unless image.alt contains 'variant' %}
+  {%- assign thumbnail_position = 'beside' -%}
+{% endunless %}
+  /* FONT UPDATE TO AVENIR AND INTERSTATE  */ 
+body, body p {
+    font-family: "Avenir Next";
+}
+
+body{
+--typeBasePrimary:'interstate', sans-serif !important;
+}
+
+
+.product-new-prolon-6-june-22 .variant__label,
+h3.nutrition-facts a,
+h6.what-single-title ,
+h6.single-title,   
+.whats-in-box-wrapper .main-title,
+#PDPAddtoCartdiv .add-to-cart,
+.optima-font,
+.rca-subscription-form__button span,
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input .variant__button-label,
+.solo-main-title h1,
+.details-card-b h3,
+.rc-title h2
+{
+    font-family: "interstate-condensed",sans-serif; 
+}
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input .variant__button-label{
+    font-size:16px;
+}
+
+.product-new-prolon-6-june-22 .variant-input-wrap input[type=radio]:not(:checked)+label {
+    color: grey;
+}
+
+.recharge-subscription-updated .rca-subscription-form-buttons-otp-text {
+
+  color: grey;
+    font-weight: 600;
+}
+
+.product-new-prolon-6-june-22 .add-to-cart {
+    font-size: 18px;
+}
+
+h2.optima-font.uppercase.font-weight-100 ,.rc-title h2{
+    font-weight: 500;
+}
+.single-item-b p{
+  font-size:12px;
+  text-transform:uppercase;
+  line-height:1.3;
+} 
+
+
+.solo-main-title h1 ,
+.prolon-protocol-wrapper .rc-title h2,h2.optima-font.uppercase.font-weight-100, .rc-title h2 {
+    font-size: 40px;
+    font-weight: 500;font-family: 'interstate-condensed', sans-serif ;
+}
+
+.whats-in-box-content {
+    align-items: flex-start;
+}
+
+.whats-in-box-single {
+    margin-bottom: 20px;
+}
+
+h3.nutrition-facts a {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.video-container.nutrition-fact-popup {
+    height: 100%;
+}
+.product-new-prolon-6-june-22 .cycle-description-wrapper {
+    line-height: 1;
+    position: relative;
+    /* top: -5px; */
+}
+
+.product-new-prolon-6-june-22 .variant__label {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input {
+    align-items: flex-start;
+}
+  
+.product-new-prolon-6-june-22 [data-value="(1) prolon 5-day cycle"] .cycle-description-wrapper {
+    position: relative;
+    top: 6px;
+}
+
+.product-new-prolon-6-june-22 [data-value="(2) prolon 5-day cycles"] .cycle-description-wrapper {
+    position: relative;
+    top: 5px;
+}
+.product-new-prolon-6-june-22 [data-value="(3) prolon 5-day cycles"] .cycle-description-wrapper {
+    position: relative;
+    top: 5px;
+}
+ 
+@media(max-width:1450px){ 
+  .row-of-vcards.row-of-vcards { 
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+ 
+.single-vcard {
+    min-width: 330px;
+}
+
+.whats-in-box-content {
+    width: 100%;
+    column-gap: 40px;
+    justify-content: space-between;
+} 
+}
+
+
+@media(min-width:768px){
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]+label:before {
+    border: 1px solid #ccc;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 12px;
+    border-radius: 50%;
+}
+.product-new-prolon-6-june-22 .variant-button-cycles .variant-input-wrap input[type=radio]:checked+label:after {
+    border: 1px solid #ccc;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    left: 10px;
+    top: 14px;
+    height: 10px;
+    width: 10px;
+    background-color: #a4c752;
+}
+
+.product-new-prolon-6-june-22 .variant-input-wrap input[type=radio]+label {
+    padding-left: 31px;
+}
+}
+label.rca-subscription-form__button.rca-button-right.rca-subscription-form__button--otp.rca-subscription-form__button--selected span.rca-subscription-form-buttons-otp-text {
+    color: #a4c752;
+}
+
+.recharge-subscription-updated .rca-subscription-form__button:not(.rca-subscription-form__button--selected) .rca-subscription-form-buttons-subscription-text {
+    color: grey;
+}  
+h6.single-title {
+    font-weight: 700;
+    color: #365f44;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 0px;
+} 
+ 
+label.rca-subscription-form__button.rca-button-left.rca-subscription-form__button--selected ,.rca-subscription-form__button--selected.rca-subscription-form__button--selected{
+    border: 2px solid #a4c752!important;
+}
+.recharge-subscription-updated .rca-subscription-form__buttons .rca-subscription-form__button {
+    border: 2px solid #a1a1a1!important;
+}
+
+label.rca-subscription-form__button.rca-button-right.rca-subscription-form__button--otp.rca-subscription-form__button--selected {
+    border-color: #a4c752!important;
+}
+
+select.selct-delivery-days:active, select.selct-delivery-focus {
+    border: 1px solid #d8d8d8;
+}  
+
+@media(max-width:767px){ 
+  p.shop-payment.shop-payment {padding: 0px!Important;}  
+.solo-main-title h1 ,
+.prolon-protocol-wrapper .rc-title h2,h2.optima-font.uppercase.font-weight-100, .rc-title h2 {
+
+    font-size:30px;
+}.whats-in-box-wrapper.mobile-only {
+    margin-top: 20px;
+}
+
+[data-type_headers_align_text=true] .section-header {
+    margin-bottom: 0px;
+}
+
+.video-container.nutrition-fact-popup .page-content, .shopify-policy__container {
+    padding-top: 10px;
+}
+
+#video-wrap .video-container.nutrition-fact-popup+.close-video {
+    right: 30px;
+    top: 29px;
+}
+
+  
+}   
+div#recharge-subscription .variant__label {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+h3.nutrition-facts.nutrition-facts-btn {
+    display: none;
+}    
+.product-new-prolon-6-june-22 {
+    padding-top: 25px;
+}   
+a.site-nav__link.site-nav__link--underline[href="/products/prolon-holiday-offer"] {display: none;}
+.recharge-subscription-updated .rca-subscription-custom .rca-subscription-form__buttons .rca-subscription-form__button {
+    margin-top: 10px!important;
+}   
+@media(min-width:767px){
+.product-new-prolon-6-june-22 .gmo-icons {
+    margin-top: 20px;
+    max-width: 80%;
+    margin-inline: auto;
+}  
+} 
+#shopify-section-product-story-sections > div > div:nth-child(4) > div{
+.hero__text-shadow {
+    max-width: 600px !important;
+    margin-right: 36% !important;
+}
+}
+
+</style> 
+{% include 'subscription-options-select' %}
+
+<script>
+   $(document).on('change','.variant-input input[name="Soup Flavor"]',function(e){
+
+
+    changeDescriptionNew(e.target.value);
+
+
+});
+
+function changeDescriptionNew(o){
+
+
+let discription=$('.variant-wrapper.variant-wrapper--button.js.soup-flavor+.product-single__description');
+
+//let descPlaceholder = $('.description-left-placeholder');
+if(o=='Original')
+{
+discription.html(discription.data('original'));
+//descPlaceholder.html(discription.data('original'));
+}
+else if( o && o=='New Flavors' || o &&  o.includes('Soup')){
+discription.html(discription.data('new-flavor'));
+//descPlaceholder.html(discription.data('new-flavor'));
+} 
+setTimeout(function(){
+discription.addClass('visible');
+},100);  
+
+
+} 
+$('h1.h2.product-single__title').html(`          
+                ProLon<sup>®</sup> 5-Day`)  ;
+                $('#PDPAddtoCartdiv').append(`<p style="
+    margin-top: 30px;
+">Inspired by Nobel Prize-winning science and developed by Dr. Valter Longo, ProLon is based on over 20 years of scientific research. This cutting edge research was funded by such institutions as the National Institutes of Health and conducted at the Longevity Institute at USC.<br><br>ProLon is the first and only clinically tested, doctor- recommended fasting meal program. Holding patents for the promotion of Longevity and Health Span, ProLon has inspired a positive change in the lives of over 300,000 satisfied users.</p>`)     
+$(document).ready(function(){     
+  if(window.innerWidth>767){ 
+  $('.product-new-prolon-6-june-22 .gmo-icons').insertBefore(`.whats-in-box-wrapper`); 
+  }else{
+    $('.product-new-prolon-6-june-22 .gmo-icons').show(); 
+  } 
+  changeDescriptionNew(current_variant.option1);  
+
+  $(document).on("click",'.shopify-installments__learn-more',function(e){
+e.preventDefault();
+$(".shopify-shop-pay-price").text($(this).attr('data-price'));
+   
+$('body').addClass('show-shopify-popup');
+    
+});
+
+  
+$('.btn__close--icon,div#klarna-payment-terms-cover .btn__close,#shopify-terms-cover,.btn__close').click(function(e){
+  $('body').removeClass('show-shopify-popup');  
+});    
+ 
+}); 
+
+ 
+
+</script>
+{% include 'shopify-popup'  %}  

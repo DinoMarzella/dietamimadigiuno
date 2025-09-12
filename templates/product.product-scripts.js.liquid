@@ -1,0 +1,150 @@
+// {% layout none %}
+console.log(`Custom Script Embed Here`);
+let styles = `p.klarna-payment {
+    display: none;
+}div#product-choice {
+    max-width: 1600px;
+}
+
+p.shop-payment {
+    display: none;
+}
+
+.prolon-product-section .single-product-wrapper .description {
+    display: none;
+}
+
+.prolon-product-section div.variant-input {
+    width: 100%;
+    justify-content: space-between;
+}.prolon-product-section .single-product-wrapper .sub-desc {
+    height: auto;
+    min-height: 100px;
+}
+.prolon-product-section div.variant-input div {
+    margin: 0 auto;
+}`;
+
+
+
+
+       async function loadProductByHandle(handle){
+ 
+        let { product } = await jQuery.getJSON(
+          "https://prolonfmd.com/products/prolon-professionals.json"
+        );
+        let { variants } = product; 
+
+       
+
+
+        $(".prolon-product-section").load('https://prolonfmd.com/products/'+handle+'?view=tryprolon-fasting-new-v4 #product-choice',function() {
+
+
+       
+        
+
+        $('.add-to-cart-section').each(function(){
+        $(this).find('.flavor-type:checked').change()
+        }); 
+}); 
+
+
+      }   
+      
+      
+$(document).ready(function () {
+        // loadProducts();
+        loadProductByHandle('prolon-professionals')
+        $('.prolon-custom-styles').append(`${styles}`); 
+
+});
+ let flavordetails= {
+            'Original':'<p><strong>Soups:</strong> Vegetable, Minestrone, Vegetable Quinoa,&nbsp;<br>Mushroom, Tomato</p>',
+            'New Flavors':`<p><strong>New Soup Flavors:</strong> Butternut Squash, Black Bean, Butternut Squash Quinoa, Spinach &amp; White Bean, Tomato</p>`
+        }
+  $(document).on('change','.flavor-type',function(){
+
+    try{ 
+     
+       
+         let context = $(this);   
+         let FourInstallmentprice;
+         let variantPrice;
+
+
+        let mainsection = context.closest('.add-to-cart-section');
+        let productWrapper = $(this).closest('.single-product-wrapper')
+        let option = $(this).closest('.single-product-wrapper').attr("data.option");  
+        let option2 = $(this).closest('.single-product-wrapper').attr("data.option2"); 
+        context.find(".btn").text("Adding...");  
+        let flavor= mainsection.find('.flavor-type:checked').val();
+        if(!flavor){
+        flavor= mainsection.find('.flavor-type').first().val(); 
+        }  
+        let currentVariants = productWrapper.find('.custom-variants').html();
+
+         if(currentVariants && currentVariants!='' ){ 
+            try{
+            currentVariants = JSON.parse(currentVariants);
+            }
+            catch(ex){
+                currentVariants= currentProduct.variants
+            }
+        }
+
+        let variants= currentVariants.filter(e=>{
+            return e.option1==option && e.option2==flavor ;
+        });
+        
+        if(!variants || variants.length==0){
+            variants= currentVariants.filter(e=>{
+            return e.option1 ==flavor
+            })
+        }
+        
+        let variantId;let cVariant;
+
+             if(variants&& variants.length>0){
+            variantId=variants[0].id;
+            FourInstallmentprice=variants[0].price;
+            variantPrice=variants[0].price/100;  
+            cVariant=variants[0];;
+            if(FourInstallmentprice){
+            FourInstallmentprice=(FourInstallmentprice/4).toFixed(2);
+            }
+        }
+
+
+
+        let value=variantId;
+        // let context= $(this).closest(`.add-to-cart-section`);
+        let id = value;
+        let url = `https://prolonfmd.com/products/prolon-professionals`;
+        let jsonparams= {
+            variant_id:id, 
+            hcpcode:HCPCODE
+        } 
+        url+='?_data='+btoa(JSON.stringify(jsonparams));
+              
+        let flavorspecs= flavordetails[value]; 
+        if(flavorspecs)
+        {productWrapper.find(`.flavour-description`).html(flavorspecs);}
+        productWrapper.find(`.select-product-and-process`).attr('href',url);
+        productWrapper.find(`.flavor-price`).html(`$${FourInstallmentprice}`);
+        productWrapper.find('.t-price').html(`$${variantPrice}`);
+
+   
+
+       
+
+   
+
+
+        } 
+        catch(ex){
+            console.log(ex);
+        }
+
+  });
+

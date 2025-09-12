@@ -1,0 +1,77 @@
+
+<div class="relative z-[1000] slide-cart-section" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+  <div
+    class="fixed inset-0 overflow-hidden"
+    :class="{'pointer-events-none':!isvisibleCart}"
+  >
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="fixed inset-y-0 right-0 flex max-w-full ">
+        <div 
+          class="fixed inset-0 transition-opacity duration-500 ease-in-out bg-gray-500 bg-opacity-75 opacity-0 cursor-pointer md:duration-300"
+          @click="closeAllDrawers"
+          :class="{'opacity-100':isvisibleCart,'opacity-0 pointer-events-none':!isvisibleCart}"
+        ></div>
+
+        <div
+          class="w-screen max-w-lg transition duration-500 ease-in-out transform translate-x-full pointer-events-auto md:duration-300 "
+          style="    transform: translateX(100%);" 
+          :style="{'transform':isvisibleCart?'translateX(0%)':'translateX(100%)'}"   
+          :class="{'!translate-x-0':isvisibleCart,'!translate-x-full':!isvisibleCart}"
+        >
+          <div class="flex flex-col h-full overflow-y-scroll bg-white shadow-xl">
+            <div class="sticky top-0 px-4 py-3 bg-gray-100 md:py-6 sm:px-6 z-[100]">
+              <div class="flex items-center justify-between">
+                <h2 class="text-[20px] text-gray-700" id="slide-over-title">Carrello (${cartCount})</h2>
+                <div class="flex items-center ml-3 h-7">
+                  <button
+                    type="button"
+                    class="p-2 -m-2 text-gray-400 border-none shadow-none outline-none hover:text-gray-500"
+                    @click="closeAllDrawers"
+                  >
+                    <span class="sr-only">Close panel</span>
+                    <svg
+                      class="w-6 h-6"
+                      x-description="Heroicon name: outline/x-mark"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              {% render 'king-free-shipping-bar' %}
+            </div>
+             
+            <div class="px-4 py-6 pt-0 sm:px-6">
+              <div class="mt-6">
+                {% render 'king-empty-cart' %}
+                {% render 'king-cart-items' %}
+                {% render 'king-cart-recommendations-new' %}
+              </div>
+            </div>
+            {% render 'king-cart-footer' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%  assign  prolon_discount_image =  'https://cdn.shopify.com/s/files/1/0126/2921/3243/t/118/assets/RENEW%20Promo%20-%20Popup.jpg?v=1681249818' %}
+{% if handle == 'prolon-flash-sale' or handle == 'gofast' or handle =='fasting-shake'  or handle =='reset'  %} 
+
+{% else  %}   
+  <div v-if="ShowProLonPopup" class="popup-wrapper-fix"  style="display:none"><div class="prolon-pro-p">
+    <div class="popup-remover-bg"></div>
+
+    <img class="popup-over-prolon" src="{{prolon_discount_image}}">
+    <span class="close-btn-text"
+      @click="ShowProLonPopup=false"
+    >X</span></div>
+  </div>
+  {% endif %}

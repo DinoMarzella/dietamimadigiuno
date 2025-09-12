@@ -1,0 +1,322 @@
+<div class="site-nav">
+  <div class="site-nav__icons">
+
+    {% if shop.customer_accounts_enabled %}
+    <div class="group  w-full parent  max-w-[400px] mx-auto !hidden md:!block">
+      <a class="parent" href="{{ routes.account_url }}">
+        <div class="font parent flex items-center justify-center  bg-white  py-[10px]  ">
+          <div>
+            <svg viewBox="0 0 24 24" height="32" width="32" aria-label="profile icon">
+              <g fill="black" class="text-black">
+                <path
+                  d="M16.3751 7C16.3751 9.41625 14.4164 11.375 12.0002 11.375C9.58398 11.375 7.62524 9.41625 7.62524 7C7.62524 4.58375 9.58398 2.625 12.0002 2.625C14.4164 2.625 16.3751 4.58375 16.3751 7Z"
+                  stroke-width="1.25"></path>
+                <path
+                  d="M4.33301 20.25V17.9728C4.33301 16.8636 4.67018 15.8772 5.34531 15.1719C6.01414 14.4733 7.08164 13.9807 8.68479 13.9807H15.9665C18.3314 13.9807 19.667 15.8717 19.667 17.9728V20.2503C19.667 20.4572 19.4994 20.625 19.292 20.625H4.70801C4.5009 20.625 4.33301 20.4571 4.33301 20.25Z"
+                  stroke-width="1.25" stroke-linecap="round"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center leading-[1.2] ml-[8px]">
+            {% if customer %}
+            <span style="
+                        position: relative;
+                      ">Hi {{ customer.first_name -}}
+            </span>
+            {% else %}
+            <span class="text-[12px] text-black font">Log In or</span>
+            <span class="text-[14px] text-black">SignUp</span>
+            {%- endif %}
+          </div>
+        </div>
+      </a>
+      <div class="mt-[0px] hidden child absolute  ml-[-15rem]">
+        <div class="flex items-center justify-center ">
+          <svg viewBox="0 0 22 20" height="20" width="22" class="" aria-label="dropdownCaret icon">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.59406 2.53055C9.15623 -0.0060935 12.8438 -0.0060885 14.4059 2.53056L21.1013 13.4025C22.7426 16.0675 20.8252 19.5 17.6954 19.5H4.30463C1.17475 19.5 -0.742551 16.0675 0.898689 13.4025L7.59406 2.53055Z"
+              fill="#fff"></path>
+          </svg>
+        </div>
+        <div class="bg-white shadow-lg rounded-[12px] max-w-[400px] mx-auto mt-[-8px] ">
+          <div class="py-[24px] px-[20px] border-b-4">
+            <h2 class="text-[24px] font-bold ">Welcome to Prolon</h2>
+
+            {% if customer %}
+            <p class="block text-wrap text-[16px] max-w-[400px] font leading-[1.2] pt-[8px] text-[#535353]"
+              style="text-wrap: wrap;">
+              Welcome back, {{ customer.first_name }}! Access your account to check past orders, exclusive fasting
+              resources, and
+              more.
+            </p>
+            <div class="flex justify-center pt-[20px] pb-[8px] gap-[12px]">
+              <a class="w-full h-full" href="/account">
+                <button class="bg-black text-[14px] w-full text-white px-6 py-[12px]">ACCESS ACCOUNT</button>
+              </a>
+            </div>
+            {% else %}
+            <p class="block text-wrap text-[16px] max-w-[400px] font leading-[1.2] pt-[8px] text-[#535353]"
+              style="text-wrap: wrap;">
+              Create a free account to check out quickly, refer friends and family, view your past orders, or gain
+              access to
+              exclusive fasting resources.
+            </p>
+            <div class="flex justify-center pt-[20px] pb-[8px] gap-[12px]">
+              <a class="w-full h-full" href="/account/register">
+                <button class="border border-black w-full text-[14px] font-[400] text-black px-6 py-[12px]"
+                  style="border: solid 1px;">
+                  SIGN UP
+                </button>
+              </a>
+              <a class="w-full h-full" href="/account/login">
+                <button class="bg-black text-[14px] w-full text-white px-6 py-[12px]">LOG IN</button>
+              </a>
+            </div>
+            {% endif %}
+          </div>
+
+
+          <ul class="space-y-4 py-[24px] px-[20px] font">
+            <li class="flex items-center gap-[12px]">
+              <a href="/account" class="flex items-center gap-[12px]">
+                <svg viewBox="0 0 24 24" height="24" width="24" class="" aria-label="profile icon">
+                  <g fill="white">
+                    <path
+                      d="M16.3751 7C16.3751 9.41625 14.4164 11.375 12.0002 11.375C9.58398 11.375 7.62524 9.41625 7.62524 7C7.62524 4.58375 9.58398 2.625 12.0002 2.625C14.4164 2.625 16.3751 4.58375 16.3751 7Z"
+                      stroke="black" stroke-width="1.25"></path>
+                    <path
+                      d="M4.33301 20.25V17.9728C4.33301 16.8636 4.67018 15.8772 5.34531 15.1719C6.01414 14.4733 7.08164 13.9807 8.68479 13.9807H15.9665C18.3314 13.9807 19.667 15.8717 19.667 17.9728V20.2503C19.667 20.4572 19.4994 20.625 19.292 20.625H4.70801C4.5009 20.625 4.33301 20.4571 4.33301 20.25Z"
+                      stroke="black" stroke-width="1.25" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+                <div>
+                  <p hyy class="font-bold text-black text-[16px]">Account</p>
+                  <p class="text-[#535353] text-[14px]" style="text-wrap: wrap;">View or modify your personal details.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex items-center gap-[12px]">
+              <a href="https://prolonlife.com/pages/rewards" class="flex items-center gap-[12px]">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="24" height="24"
+                  viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                  <metadata>
+                    Created by potrace 1.16, written by Peter Selinger 2001-2019
+                  </metadata>
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path
+                      d="M967 5110 c-492 -83 -685 -482 -435 -900 122 -204 326 -377 608 -517 l125 -62 -520 -3 -520 -3 -51 -27 c-28 -15 -72 -50 -97 -78 -76 -85 -77 -89 -77 -539 0 -376 1 -398 21 -441 59 -131 173 -200 331 -200 l68 0 0 -1027 c0 -1140 -3 -1091 66 -1186 38 -52 107 -101 164 -117 48 -14 3772 -14 3820 0 57 16 126 65 164 117 69 95 66 46 66 1186 l0 1027 67 0 c167 0 305 92 343 230 6 20 10 199 10 421 0 439 -1 444 -77 529 -25 28 -69 63 -97 78 l-51 27 -520 3 -520 3 125 62 c274 136 466 295 594 494 251 389 105 788 -332 905 -112 30 -383 37 -523 13 -119 -20 -250 -60 -341 -106 -160 -80 -333 -221 -458 -374 -121 -148 -250 -376 -321 -565 -19 -49 -36 -90 -39 -90 -3 0 -18 35 -34 78 -43 117 -138 306 -206 411 -238 366 -545 584 -909 645 -101 17 -357 20 -444 6z m473 -241 c421 -109 734 -452 919 -1008 39 -119 66 -220 60 -225 -9 -6 -275 16 -393 33 -288 42 -552 119 -764 221 -289 139 -469 295 -565 489 -41 82 -42 88 -42 181 0 90 2 100 30 146 55 88 157 148 305 180 98 21 341 12 450 -17z m2735 7 c143 -40 236 -107 275 -198 19 -44 22 -65 18 -135 -4 -72 -10 -93 -46 -165 -171 -345 -673 -613 -1328 -709 -117 -17 -384 -39 -392 -33 -2 1 10 52 27 113 133 478 405 866 721 1030 100 52 206 89 304 106 106 19 338 13 421 -9z m-1725 -1891 l0 -425 -1057 0 c-694 0 -1071 4 -1095 10 -20 6 -46 22 -58 37 -19 25 -20 38 -20 378 0 345 0 353 21 379 12 15 31 32 43 36 11 5 504 9 1094 9 l1072 1 0 -425z m2421 387 l29 -32 0 -354 c0 -341 -1 -354 -20 -379 -12 -15 -38 -31 -58 -37 -24 -6 -401 -10 -1094 -10 l-1058 0 0 425 0 425 1086 -2 1086 -3 29 -33z m-2421 -2092 l0 -1060 -869 0 c-860 0 -869 0 -894 20 -15 12 -31 38 -37 58 -6 24 -10 383 -10 1040 l0 1002 905 0 905 0 0 -1060z m2030 58 c0 -657 -4 -1016 -10 -1040 -6 -20 -22 -46 -37 -58 -25 -20 -34 -20 -894 -20 l-869 0 0 1060 0 1060 905 0 905 0 0 -1002z" />
+                  </g>
+                </svg>
+                <div>
+                  <a href="https://prolonlife.com/pages/rewards">
+                    <p class="font-bold text-black text-[16px]">Rewards</p>
+                  </a>
+                  <p class="text-[#535353] text-[14px]" style="text-wrap: wrap;">Track points, redeem benefits, and explore member-only perks.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex items-center gap-[12px]">
+              <a href="/account?view=longevity-resources" class="flex items-center gap-[12px]">
+                <svg viewBox="0 0 24 24" height="24" width="24" class="MenuLinkstyles__AccountLinkIcon-s6pvub-0 NFncq"
+                  aria-label="unfilledHeart icon">
+                  <g fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.63653 4.76811C6.64277 2.03516 10.5 3.94127 11.9999 6.9412C13.5 3.44126 18 2.44128 20.3633 4.76811C22.4065 6.62564 22.3993 9.72802 20.6996 11.8312C19.159 13.7375 13.2639 19.6725 12.1738 20.7669C12.0773 20.8637 11.9214 20.8651 11.8236 20.7696C10.7274 19.7004 4.8397 13.9295 3.30019 11.8312C1.60046 9.51447 1.59324 6.62564 3.63653 4.76811Z"
+                      stroke-width="1.25" stroke="black" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+                <div>
+                  <a href="/account?view=longevity-resources">
+                    <p class="font-bold text-black text-[16px]">Fasting Resources</p>
+                  </a>
+                  <p class="text-[#535353] text-[14px]">Everything you need during your 5-day fast</p>
+                </div>
+              </a>
+            </li>
+
+            {% comment %} <li class="flex items-center gap-[12px]">
+              <a href="/account?view=refer-a-friend" class="flex items-center gap-[12px]">
+                <svg viewBox="0 0 24 24" height="24" width="24" class="MenuLinkstyles__AccountLinkIcon-s6pvub-0 NFncq"
+                  aria-label="returns icon">
+                  <g fill="none">
+                    <path
+                      d="M12.2189 4.43787C16.5163 4.43787 20 7.92157 20 12.2189C20 16.5163 16.5163 20 12.2189 20C7.92157 20 4.43787 16.5163 4.43787 12.2189C4.43787 9.55888 5.77267 7.21058 7.80902 5.80731"
+                      stroke-linecap="square" stroke="black"></path>
+                    <path d="M8 9.63123L8 5.63123L4 5.63123" stroke-linecap="round" stroke="black"
+                      stroke-linejoin="round">
+                    </path>
+                  </g>
+                </svg>
+                <div>
+                  <a href="/account?view=refer-a-friend">
+                    <p class="font-bold text-black text-[16px]">Refer a Friend</p>
+                  </a>
+                  <p class="text-[#535353] text-[14px] ">Get rewarded for referring friends and Family <br> to Prolon
+                  </p>
+                </div>
+              </a>
+            </li> {% endcomment %}
+
+            <li class="flex items-center gap-[12px]">
+              <a href="/account?view=get-support" class="flex items-center gap-[12px]">
+                <svg viewBox="0 0 24 24" height="24" width="24" class="MenuLinkstyles__AccountLinkIcon-s6pvub-0 NFncq"
+                  aria-label="addressBook icon">
+                  <g fill="none">
+                    <rect x="4.99994" y="2.5" width="15" height="19" rx="0.5" stroke="black" stroke-linecap="round"
+                      stroke-linejoin="round"></rect>
+                    <path
+                      d="M14.5 9.5C14.5 10.6046 13.6046 11.5 12.5 11.5C11.3955 11.5 10.5001 10.6046 10.5001 9.5C10.5001 8.39542 11.3955 7.5 12.5 7.5C13.6046 7.5 14.5 8.39542 14.5 9.5Z"
+                      stroke-linecap="round" stroke="black" stroke-linejoin="round"></path>
+                    <path
+                      d="M8.85394 15.625V15.1201C8.85394 14.6652 9.00303 14.2745 9.293 13.9964C9.58281 13.7183 10.0687 13.5 10.8423 13.5H14.4832C15.5719 13.5 16.1459 14.2811 16.1459 15.1201V15.6254C16.1459 15.9013 15.9223 16.125 15.6459 16.125H9.35394C9.0778 16.125 8.85394 15.9011 8.85394 15.625Z"
+                      stroke-linecap="round" stroke="black" stroke-linejoin="round"></path>
+                    <path
+                      d="M6.35181 6.00012C6.35181 6.55241 5.61475 7.00012 4.70554 7.00012C3.79633 7.00012 3.05927 6.55241 3.05927 6.00012C3.05927 5.44784 3.79633 5.00012 4.70554 5.00012"
+                      stroke-linecap="round" stroke="black" stroke-linejoin="round"></path>
+                    <path
+                      d="M6.35181 18.0001C6.35181 18.5524 5.61475 19.0001 4.70554 19.0001C3.79633 19.0001 3.05927 18.5524 3.05927 18.0001C3.05927 17.4478 3.79633 17.0001 4.70554 17.0001"
+                      stroke-linecap="round" stroke="black" stroke-linejoin="round"></path>
+                    <path
+                      d="M6.35181 12.0001C6.35181 12.5524 5.61475 13.0001 4.70554 13.0001C3.79633 13.0001 3.05927 12.5524 3.05927 12.0001C3.05927 11.4478 3.79633 11.0001 4.70554 11.0001"
+                      stroke-linecap="round" stroke="black" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                <div>
+                  <a href="/account?view=get-support">
+                    <p class="font-bold text-black text-[16px]">Support</p>
+                  </a>
+                  <p class="text-[#535353] text-[14px]">Have a question? Our team is here to help!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    <a class="flex site-nav__link site-nav__link--icon small--hide" href="{{ routes.account_url }}">
+      {% if customer %} <span style="
+                position: relative;
+                left: -10px;
+                top: 4px;
+            ">Hi {{customer.first_name}}</span>{% endif %}
+
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64">
+        <path
+          d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z" />
+      </svg>
+      <span class="icon__fallback-text">
+        {% if customer %}
+        {{ 'layout.customer.account' | t }}
+        {% else %}
+        {{ 'layout.customer.log_in' | t }}
+        {% endif %}
+      </span>
+    </a>
+    {% endcomment %}
+    {% endif %}
+
+
+
+    {% comment %} {% if shop.customer_accounts_enabled %}
+    <a class="flex site-nav__link site-nav__link--icon small--hide" href="{{ routes.account_url }}">
+      {% if customer %} <span style="
+        position: relative;
+        left: -10px;
+        top: 4px;
+    ">Hi {{customer.first_name}}</span>{% endif %}
+
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64">
+        <path
+          d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z" />
+      </svg>
+      <span class="icon__fallback-text">
+        {% if customer %}
+        {{ 'layout.customer.account' | t }}
+        {% else %}
+        {{ 'layout.customer.log_in' | t }}
+        {% endif %}
+      </span>
+    </a>
+    {% endif %} {% endcomment %}
+
+    {% if settings.search_enable %}
+    <a href="{{ routes.search_url }}"
+      class="site-nav__link site-nav__link--icon js-search-header{% if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' %} medium-up--hide{% endif %}">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+        <path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42" />
+      </svg>
+      <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+    </a>
+    {% endif %}
+
+    {% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' or
+    section.settings.main_menu_alignment == 'left-drawer' %}
+    <button type="button"
+      class="site-nav__link site-nav__link--icon js-drawer-open-nav{% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %} megamenu-abtest-a"
+      aria-controls="NavDrawer">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="text-black icon icon-hamburger"
+        viewBox="0 0 64 64">
+        <path d="M7 15h51M7 32h43M7 49h51" />
+      </svg>
+      <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+    </button>
+    {% comment %} <button type="button"
+      class="site-nav__link site-nav__link--icon js-drawer-open-nav-mobile {% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %} megamenu-abtest-b"
+      aria-controls="NavDrawer">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="text-black icon icon-hamburger"
+        viewBox="0 0 64 64">
+        <path d="M7 15h51M7 32h43M7 49h51" />
+      </svg>
+      <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+    </button> {% endcomment %}
+    {% endif %}
+
+    <a href="{{ routes.cart_url }}"
+      class="flex items-center justify-center pt-2 site-nav__link site-nav__link--icon js-drawer-open-cart"
+      aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
+      <span class="cart-link hidden md:!block">
+        {%- if settings.cart_icon == 'cart' -%}
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64">
+          <path fill="none" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3" />
+          <circle cx="27" cy="53" r="2" />
+          <circle cx="47" cy="53" r="2" />
+        </svg>
+        {%- else -%}
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 64 64">
+          <g fill="none" stroke="#000" stroke-width="2">
+            <path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20" />
+            <path d="M14.74 18h36.51l3.59 36.73h-43.7z" />
+          </g>
+        </svg>
+        {%- endif -%}
+        <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+        <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+      </span>
+    </a>
+ 
+  </div>
+</div>
+<script>
+  const parent = document.querySelector('.parent');
+  const child = document.querySelector('.child');
+
+  parent.addEventListener('mouseover', () => {
+    child.classList.remove('hidden');
+  });
+
+  child.addEventListener('mouseover', () => {
+    child.classList.remove('hidden');
+  });
+  child.addEventListener('mouseout', () => {
+    child.classList.add('hidden');
+  });
+  parent.addEventListener('mouseout', (event) => {
+    if (!parent.contains(event.relatedTarget)) {
+      child.classList.add('hidden');
+    }
+  });
+</script>

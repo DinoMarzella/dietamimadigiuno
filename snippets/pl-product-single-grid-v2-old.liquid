@@ -1,0 +1,57 @@
+{%- assign transDelay = index | times: 0.5 | plus: 1.0 -%}
+<div
+  class="w-full  p-[20px] h-full hero__animation-contents"
+  style="transition-delay: {{transDelay}}ms"
+>
+  <div class="flex flex-col pb-0 bg-gray-50 shadow-md hover:scale-100 transition duration-500 rounded-t-[10px] overflow-hidden">
+    <a
+      href="/products/{{handle}}"
+      class="relative w-full h-[280px]"
+    >
+      <img
+        src="{{image | img_url: '500x'}}"
+        class="w-[100%] mx-auto object-cover object-center h-full max-h-[280px]"
+        alt="{{title}}"
+        loading="lazy"
+      >
+    </a>
+    <div class="flex flex-row items-start justify-between pt-[25px] pb-[20px]">
+      <a href="/products/{{handle}}" class="w-full">
+        <h3 class="text-[18px]  lg:text-[2.2vw] 2xl:text-[22px] text-black font-semibold text-center w-full px-[20px]">
+          {{ title }}
+        </h3>
+        <div class="my-[10px] w-full h-[1px] border-b border-gray-500"></div>
+        <p class="text-black font-normal text-[12px] text-center lg:whitespace-nowrap md:text-[1.1vw] 2xl:text-base w-full px-[20px]">
+          {{ subtitle }}
+        </p>
+      </a>
+    </div>
+
+    <div class="pt-[20px] w-full flex justify-between items-center">
+      <div
+        class="
+          py-4 px-7 w-full text-lg md:text-xl leading-6  font-medium text-center  flex items-center justify-between cursor-pointer  pl-product-detail-btn
+          {% if index == 1 %} bg-white text-black border-[2px] border-solid border-[#73994a] {% else %} bg-[#73994a] hover:bg-[#73994a] text-white {% endif %}
+        "
+        aria-label="Learn More"
+        data-tab_id="tab-detail-{{index}}"
+      >
+        <p class="font-[700] text-[20px] ">Learn More</p>
+        {% if index == 1 %}
+          <img
+            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Plus_69a09e5d-d1e2-4b0d-91bb-2b287b615fa6.png?v=1694512621"
+            alt="plus icon"
+            class="w-[20px] object-contain"
+          >
+
+        {% else %}
+          <img
+            src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Plus-white.png?v=1694454701"
+            alt="plus icon"
+            class="w-[20px] object-contain"
+          >
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

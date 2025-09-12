@@ -1,0 +1,338 @@
+<div class="product__container collection-with-vue-x">
+  {% for item in section.blocks %}    
+    {% assign settings = item.settings %}
+    {% assign product = settings.product_item %}
+    {% assign variant = product.variants | first %}
+    {% assign isSaleProduct = false %}
+    {% if product.tags contains 'bf-sale' or product.tags contains 'custom_pricing' %}
+      {% assign isSaleProduct = true %}
+    {% endif  %}
+
+    {% assign price_discount = settings.product_price_discount %}
+    {% if settings.product_price_discount != blank %}
+      {% assign price_discount = settings.product_price_discount | times: 100 | money_without_trailing_zeros %}
+    {% endif %}
+
+    {% assign price_original = settings.product_price | times: 100 | money_without_trailing_zeros %}
+
+    {% comment %} OVER RIDE FOR SALE 10% Off  {% endcomment %}
+    {% if product.tags contains '10-sale-off' %}
+        {% assign price_original = variant.price | times: 9 | divided_by: 10  |  money_without_trailing_zeros %}
+        {% assign isSaleProduct= true  %}
+        {% assign price_discount = variant.price | money_without_trailing_zeros  %}
+
+        
+    {% endif %}
+
+
+
+
+    {% assign image = settings.product_image | image_url %}
+    {% assign image_hover = settings.product_image_hover | image_url %}
+
+    
+    <style>
+      .product__image--{{ product.id }} {
+        background-image: url({{ image }});
+      }
+
+      .product__item:hover div > .product__image--{{ product.id }}, .preload {
+        background-image: url({{ image_hover }});
+      }
+
+      @media screen and (max-width: 750px) {
+        .product__item:hover div > .product__image--{{ product.id }} {
+          background-image: url({{ image }});
+        }
+      }
+    </style>
+    
+    <div class="product__item">
+      <div class="product__info">
+        <div class="product__image product__image--{{ product.id }}"></div>
+        <div class="product__info_item">
+          <h3 class="product__title">{{ settings.product_title }}</h3>
+          <h4 class="product__subtitle">{{ settings.product_subtitle }}</h4>
+          <span class="product__price" sale-price="{{isSaleProduct}}">
+              {{ price_original }}
+            {% if isSaleProduct %}
+            <span class="product__price-discount">{{ price_discount }}</span>
+            {% endif %}
+          </span>
+          <p class="product__description">{{ settings.product_description }}</p>
+        </div>
+      </div>
+        <a href="{{ product.url }}" class="product__button product__button--version-A">
+          {{ section.settings.product_button | upcase }}
+        </a>
+        <div class="product__button--version-B">
+          {% render 'mobile-shop-now-best-seller', product:product, settings:settings  %}
+        </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="product__container product__container--abtest ">
+  {% for item in section.blocks %}   
+    {% assign settings = item.settings %}
+    {% assign product = settings.product_item %}
+    {% assign variant = product.variants | first %}
+    {% assign image = settings.product_image | image_url %}
+    {% assign image_hover = settings.product_image_hover | image_url %}
+    {% assign isSaleProduct = false %}
+    {% if product.tags contains 'bf-sale' or product.tags contains 'custom_pricing' %}
+      {% assign isSaleProduct = true %}
+    {% endif  %}
+    {% assign price_discount = settings.product_price_discount %}
+    {% if settings.product_price_discount != blank %}
+      {% assign price_discount = settings.product_price_discount | times: 100 | money_without_trailing_zeros %}
+    {% endif %}
+    {% assign price_original = settings.product_price | times: 100 | money_without_trailing_zeros %}
+    {% assign product_price_no_sub = settings.product_price_no_sub | times: 100 | money_without_trailing_zeros %}
+    {% assign price_result = settings.product_price_discount | minus: settings.product_price |  times: 100 |  money_without_trailing_zeros %}
+
+    <script>
+      window.finalProductPrice= window.finalProductPrice || {};
+      {% if product.tags contains 'bf-sale'  or product.tags contains 'custom_pricing' %}
+        {% for variant in product.variants %}
+          {% assign variantFinalPrice = variant.metafields.custom.final_price_after_discount %}
+        window.finalProductPrice[{{variant.id}}] = {{ variantFinalPrice| times:100 | json}};
+        {%endfor %}
+      {% endif  %} 
+    </script> 
+
+    <style>
+      .product__image--{{ product.id }} {
+        background-image: url({{ image }});
+      }
+
+      .product__item:hover div > .product__image--{{ product.id }}, .preload {
+        background-image: url({{ image_hover }});
+      }
+
+      @media screen and (max-width: 750px) {
+        .product__item:hover div > .product__image--{{ product.id }} {
+          background-image: url({{ image }});
+        }
+      }
+    </style>
+
+      {% form 'product', product, class: 'product__item' %}
+
+        <div class="product__info">
+          <div class="product__image product__image--{{ product.id }}"></div>
+          <div class="product__info_item">
+            <h3 class="product__title">{{ settings.product_title }}</h3>
+            <h4 class="product__subtitle">{{ settings.product_subtitle }}</h4>
+            <span class="product__price" id="productPriceOriginal-{{product.id}}">
+              {{ price_original }} 
+            </span>
+            {% if isSaleProduct %}
+              <span class="product__price-discount" id="productPriceDiscount-{{product.id}}">  
+                {{ price_discount }}
+              </span>
+            {% endif %}
+  
+            <div class="product__options">
+              {% for option in product.options_with_values %}
+                {% if option.name contains 'Frequency' or option.name contains 'Type' %}
+                  {% for optionValue in option.values %}
+                    
+                    {% if optionValue contains 'Subscribe' %}
+                      <label class="product__radio-type" for="{{ optionValue }}{{ product.id }}">
+
+                        <input type="radio" class="product__radio-option" data-product-id="{{ product.id }}" name="orderType-{{ product.id }}" id="{{ optionValue }}{{ product.id }}" value="{{ optionValue }}" checked>
+                        <div>
+                          <p class="product__radio-title">{{ 'products.product.best_seller.title_subscribe' | t }}</p>
+                          <span class="product__radio-subtitle">{{ 'products.product.best_seller.delivery' | t }}</span>
+                          <select name="selling_plan" id="sellingPlan-{{product.id}}" class="product__radio-select-frequency">
+                            {% assign selling_plan_group = product.selling_plan_groups | first %}
+                            {% assign first_plan = selling_plan_group.selling_plans | first %}
+                            
+                            {% for plan in selling_plan_group.selling_plans %}
+                              <option value="{{ plan.id }}" {% if first_plan.id == plan.id %} selected {% endif %}>
+                                {{ plan.name | replace: 'Delivery every ', '' }}
+                              </option>
+                            {% endfor %}
+                          </select>
+                          {% if isSaleProduct %}
+                            <span class="product__radio-offer">{{ 'products.product.best_seller.save' | t }} {{ price_result }}</span>
+                          {% endif %}
+                        </div>
+                      </label>
+                    {% endif %}
+
+                    {% if optionValue contains 'One Time' %}
+                        <label for="{{ optionValue }}{{ product.id }}" class="product__radio-type product__radio-type--margin">
+                          <input type="radio" class="product__radio-option" data-product-id="{{ product.id }}" name="orderType-{{ product.id }}" id="{{ optionValue }}{{ product.id }}" value="{{ optionValue }}">
+                          <div>
+                            <p class="product__radio-title">{{ 'products.product.best_seller.title_one_time' | t }}</p>
+                            <span class="product__radio-subtitle product__radio-subtitle--accent">{{ 'products.product.best_seller.one_time' | t }}</span>
+                          </div>
+                        </label>
+                    {% endif %}  
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+
+              
+              <div class="product__select" id="select-{{ product.id }}">
+                <span class="product__select_placeholder">{{ 'products.product.best_seller.flavor' | t }}</span>
+                <div class="product__select_item" id="selected_flavor-{{product.id}}" data-product-id="{{ product.id }}">
+                  <img src="{{ 'check_circle.svg' | asset_url }}" class="product__select_icon_check" alt="">
+                  <p class="product__select_title product__radio-title" id="flavor_selected-{{product.id}}">
+                    {% if product.metafields.custom.flavor_variants.value != blank %}
+                      {{product.metafields.custom.flavor_variants.value[0].flavor_title}}
+                    {% else %} 
+                      {{ product.selected_or_first_available_variant.option1 }} 
+                    {% endif %}
+                    </p>
+                  <i class="product__select_arrow_icon arrow down"></i>
+                </div>
+
+                <div class="product__select_variants d-none" id="select_variants-{{product.id}}">
+                  {% for option in product.options_with_values %}
+                    {% if option.name contains 'Flavor' %}
+                      {% for optionValue in option.values %}
+                        <label for="{{ optionValue }}{{ product.id }}" class="select__variant_item">
+                          <input type="radio" id="{{ optionValue }}{{ product.id }}" name="flavor-{{ product.id }}" value="{{ optionValue }}" data-title-metafield="{{product.metafields.custom.flavor_variants.value[forloop.index0].flavor_title}}" class="input_flavor" data-product-id="{{ product.id }}" data-value="{{ optionValue }}" 
+                          {% if product.selected_or_first_available_variant.option1 == optionValue %} 
+                            checked 
+                          {% endif %}
+                          >
+                          <div class="select__variant_info">
+                            <h4 class="select__variant_title product__radio-title">
+                              {% if product.metafields.custom.flavor_variants.value != blank %}
+                                {{product.metafields.custom.flavor_variants.value[forloop.index0].flavor_title}}
+                              {% else %}
+                                {{optionValue}} 
+                              {% endif %}
+                            </h4>
+                            {% if product.metafields.custom.flavor_variants.value[forloop.index0].flavor_description %}
+                              <p class="select__variant_description">
+                                  {{product.metafields.custom.flavor_variants.value[forloop.index0].flavor_description}}
+                              </p>
+                            {% endif %}
+                          </div>
+                        </label>
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                  
+                  <select hidden name="flavorOption" class="flavor_option" data-product-id="{{ product.id }}" id="flavorOption-{{ product.id }}">
+                    {% for option in product.options_with_values %}
+                      {% if option.name contains 'Flavor' %}  
+                        {% for optionValue in option.values %}
+                          <option value="{{optionValue}}" 
+                          {% if product.selected_or_first_available_variant.option1 == optionValue %}
+                              selected
+                          {% endif %}
+                          > {{optionValue}}</option>
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+            
+            </div>
+            <p class="product__description">{{ settings.product_description }}</p>
+          </div>
+        </div>
+
+        <select hidden name="id" id="allVariants-{{ product.id }}">
+            {% for variante in product.variants %}
+              <option value="{{ variante.id }}" {% if variante == product.selected_or_first_available_variant %} selected {% endif %}
+              data-price-original="{{price_original}}"  
+              data-price-compare="{{price_discount}}"  
+              data-price-no-sub="{{product_price_no_sub}}"  
+              data-available="{{ variante.available }}"
+                >
+                {{ variante.title }}
+              </option>
+            {% endfor %}
+        </select>
+        <input type="text" hidden name="quantity" value="1">
+        <div class="product_container__butons">
+          <a href="{{ product.url }}" 
+            class="product__button product__button--secondary gtm-button-event"
+            gtm-value="view_product"> 
+            {{ 'products.product.best_seller.view_product' | t | upcase }}
+          </a>
+          <button data-product-id="{{ product.id }}" id="buttonAdd-{{product.id}}" class="product__button gtm-button-event" name="add" 
+          data-text-available="{{ 'products.product.best_seller.button_atc' | t | upcase }}" 
+          gtm-value="add_to_cart"
+          data-text-soldout="{{ 'products.product.sold_out' | t | upcase }}">
+            {{ 'products.product.best_seller.button_atc' | t | upcase }}
+          </button>
+        </div>
+      {% endform %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.collection-best-seller-products.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "product_button",
+      "label": "t:sections.collection-best-seller-products.settings.product_button"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "t:sections.collection-best-seller-products.blocks.name",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product_item",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_item"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_image"
+        },
+        
+        {
+          "type": "image_picker",
+          "id": "product_image_hover",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_image_hover"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_title"
+        },
+        {
+          "type": "text",
+          "id": "product_subtitle",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_subtitle"
+        },
+        {
+          "type": "text",
+          "id": "product_price",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price"
+        },
+        {
+          "type": "text",
+          "id": "product_price_discount",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price_discount"
+        },
+        {
+          "type": "text",
+          "id": "product_price_no_sub",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_price_no_sub"
+        },
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "t:sections.collection-best-seller-products.blocks.settings.product_description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

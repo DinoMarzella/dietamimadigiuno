@@ -1,0 +1,244 @@
+<style>
+	.product-single__description.rte{
+visibility:hidden;    }
+  .product-single__description.rte.visible{
+visibility:visible;
+  }
+  
+
+  
+  
+</style>
+<script>
+
+let current_product= {{product.handle |json }};
+ 
+  {% if handle contains 'buy-prolon'  or 'prolon-' %}
+ 
+//  custom calc for fasting program
+{% if product.tags contains 'reset-v3' %}
+  function calcPrices(){
+ 
+
+
+
+  $('.variant-input-radio-wrap .input_lable input').each(function(){
+
+let Quantity=$(this).val();  
+
+let Soup= $('.variant-input-wrap input[name="Soup Flavor"]:checked').val();
+let Frequency = $('.variant-input-wrap input[name="Frequency"]:checked').val();
+// let Type= $('.variant-input-wrap input[name="Type"]:checked').val();  
+let option = $(`option[data-option2="${Soup}"][data-option1="${Quantity}"][data-option3="${Frequency}"]`); 
+if(option.length==0)
+  {   
+    option = $(`option[data-option1="${Quantity}"]`);
+  }     
+let price = option.data('price'); 
+let comparePrice= option.data('compare-at-price')
+$(this).closest('.variant-input').find('.price-wrapper').html(`<div> <s>${comparePrice}</s>${price} </div>`)
+ 
+
+});
+  }
+{% else %}
+function calcPrices(){
+
+
+
+
+  $('.variant-input-radio-wrap .input_lable input').each(function(){
+
+let Quantity=$(this).val();  
+
+let Soup= $('.variant-input-wrap input[name="Soup Flavor"]:checked').val();
+// let Type= $('.variant-input-wrap input[name="Type"]:checked').val();  
+let option = $(`option[data-option1="${Soup}"][data-option2="${Quantity}"]`);
+if(option.length==0)
+  {   
+    option = $(`option[data-option1="${Quantity}"]`);
+  }     
+let price = option.data('price'); 
+let comparePrice= option.data('compare-at-price')
+$(this).closest('.variant-input').find('.price-wrapper').html(`<div> <s>${comparePrice}</s>${price} </div>`)
+
+
+});
+  }
+
+{% endif %}
+  $(document).ready(function(){
+
+    $('.product-section').on('variantChange',function(d){
+  
+    calcPrices()
+    });
+
+    $(document).on('change','.variant-input-radio-wrap input[type="radio"]',function(){
+       $('.variant-input').removeClass('active');
+      let title= $(this).val();
+      $('.simple-notice,.notice-in-red').remove();
+      
+      if(title.includes('Subscri')){
+      $(this).closest('.variant-input').addClass('active');   
+      }
+      
+      if(title.toLowerCase().includes('fasting'))
+      {  
+        $(`<p class="notice-in-red">30 Days Fasting Mimicking Diet®</p>`).insertBefore('form.product-single__form');        
+   
+        //$(`<span class="simple-notice"> Prolon plus 25 CT Fast Bar </span>`).insertAfter('.product__price-savings');        
+      }
+    }); 
+
+ 
+	       $('.variant-input').removeClass('active');
+
+    let title= $('.variant-input-radio-wrap input[type="radio"]:checked').val();
+    
+    if(title &&title.includes('Subscri')){
+     $('.variant-input-radio-wrap input[type="radio"]:checked').closest('.variant-input').addClass('active');   
+      } 
+      
+    
+      $('.simple-notice,.notice-in-red').remove();
+      if(title &&title.toLowerCase().includes('fasting'))
+      {   
+        $(`<p class="notice-in-red">30 Days Fasting Mimicking Diet®</p>`).insertBefore('form.product-single__form');        
+   
+        //$(`<span class="simple-notice"> Prolon plus 25 CT Fast Bar </span>`).insertAfter('.product__price-savings');        
+      }
+   
+    
+    
+
+  });
+
+
+  {% else %}
+  function calcPrices(){
+  $('.variant-input-radio-wrap input').each(function(){
+
+let Quantity=$(this).val();
+
+let Soup= $('.variant-input-wrap input[name="Soup Flavor"]').val();
+
+let option = $(`option[data-option1="${Soup}"][data-option2="${Quantity}"]`);
+let price = option.data('price');
+let comparePrice= option.data('compare-at-price')
+$(this).closest('.variant-input').find('.price-wrapper').html(`<div> <s>${comparePrice}</s>${price} </div>`)
+
+
+});
+  }
+ 
+ {% endif%}
+ 
+ 
+  calcPrices();
+   
+  $(document).on('change','.variant-input input[name="Soup Flavor"]',function(e){
+
+let context= $(this).closest('.product-single__form');
+changeDescription(e.target.value,context);
+
+
+}); 
+
+function changeDescription(o,context){
+
+
+let discription=$('.product-single__description.rte', context);
+
+let descPlaceholder = $('.description-left-placeholder',context);
+if(o=='Original')
+{
+discription.html(discription.data('original'));
+descPlaceholder.html(discription.data('original'));
+} 
+else if( o && o=='New Flavors' || o &&  o.includes('Soup')){
+discription.html(discription.data('new-flavor'));
+descPlaceholder.html(discription.data('new-flavor'));
+} 
+else if( o && o=='Variety' ){
+    let quantity= $('.variant-input-radio-wrap input[name="Quantity"]:checked',context).val(); 
+    let textQty= 1;
+    if(quantity.toLowerCase().includes('4')){
+      textQty= 2;
+    }
+  let desc = `<b>${textQty} x Original </b><br>Tomato Soup, Butternut Squash Soup, Lemon Spearmint Tea 
+   
+  <br><b>  
+    ${textQty} x New Flavors </b><br>
+  Vegetable Soup, Black Bean Soup, Hibiscus Tea`
+  
+  discription.html(desc);
+  descPlaceholder.html(desc);
+    
+    
+  }  
+else if( o && o=='Gen3' ){ 
+    let quantity= $('.variant-input-radio-wrap input[name="Quantity"]:checked',context).val(); 
+
+  let desc = `<b>ProLon Gen 3:</b> Peas and chive, chick peas leeks
+  `
+  if($('body').attr('data-x-handle') == 'prolon-fasting-group'){
+ 
+    desc = `<div class="mb-4 text-sm " role="none"><b>NEW Gen3: Inspired by ProLon users, bold in taste and sure to please.</b> <br> Red Bell Pepper &amp; Onion, Green Pea &amp; Chives, Lentil Curry, Chickpea &amp; Leeks, Carrot Ginger</div>
+    ` 
+  
+  } 
+  
+  discription.html(desc);
+  descPlaceholder.html(desc);
+    
+    
+  }  
+
+setTimeout(function(){
+discription.addClass('visible').show();
+},100);
+
+
+}
+
+
+
+  
+  
+  
+  $(document).ready(function(){ 
+  $('.variant-input input[name*="Soup Flavor"]').change();
+	let currentVal= $('.variant-input input[name*="Soup Flav"]:checked').val()
+  $('.product-section').each(function(){
+ 
+changeDescription(currentVal,$(this)); 
+
+
+
+})  
+if(location.href.includes('/prolon-offer')){
+$(`<div class="text-divider">ADVANCED FASTING</div>` ).insertAfter(`[data-productid="7117742014622"] [data-value="4 Box Bundle & Save"]`);
+$(`<div class="text-divider">FIRST TIME FASTER</div>`).insertAfter(`[data-productid="7117742014622"] [data-value="Single Box"]`)
+  $(`<div class="text-divider">FASTING LIFESTYLE</div>`).insertAfter(`[data-productid="7117742014622"] [data-value="2 Box Bundle & Save"]`);  
+}  
+$('[data-index="option1"]').change(function(){
+     
+    let context = $(this).closest('.product-section')  
+      
+    let flavor= $('[data-index="option2"]:checked',context).val();
+    let qty= $('[data-index="option1"]:checked',context).val();
+ 
+    if (!flavor){
+      changeDescription(qty,$(this).closest('.product-section'));
+    }else{
+      changeDescription(flavor,$(this).closest('.product-section'));
+    }
+  
+     if(flavor && flavor.includes('Variety') && qty && qty.includes('Single') ){
+      $('[value="Original"][name="Soup Flavor"]', context).click(); 
+     }    
+     
+ }) 
+  });
+  </script> 

@@ -1,0 +1,392 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.tw",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-pl",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "L-Pill & L-Biome",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<h3 class=\"button-plan-option font-bold text-md\">5-Day Fasting Kit\n</h3><p class=\"bg-prolon_secondary bg-red font-normal inline-block prolon-flavor-text px-3 md:px-4 text-[10px] text-white\"><strong>MOST POPULAR</strong>\n</p>",
+            "custom_description": "<b>Cellular Rejuvenation</b>, Healthy Aging &amp; Longevity and Metabolic Health",
+            "product_description": "<div class=\"mt-4 w-full product-description\" q:id=\"1h\">\n<p>Healthy aging and gut health supplements developted by  leading Longevity scientists &amp; doctors in collaboration with The Longevity Institute of The University of Southern California.</p>\n<p><br></p>\n<p><strong>L-Pill </strong>supports the body’s sustained energy, brain health, cardiovascular health, immune health, cellular protection and healthy aging. </p>\n<p><br></p>\n<p><strong>L-Biome</strong> aims at flourishing a post-fasting gut health environment while supporting the healthy aging of different organs and systems.</p>\n<p><br></p>\n<p>Both supplements are dual cap technology pills that uniquely gathers at high concentration of ingredients to support healthy aging/ gut health.</p>\n<p><br></p>\n<ul>\n<li>30-day supply </li>\n<li>Vegan capsules</li>\n<li>Dual-cap technology</li>\n</ul>\n</div>"
+          }
+        },
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512": {
+          "type": "faq",
+          "settings": {
+            "title": "Suggestions for use",
+            "description": "<p>\n <b>DIRECTIONS:</b> For adults, take two (2) capsules daily, preferably with a meal. </p>",
+            "page": ""
+          }
+        },
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b": {
+          "type": "faq",
+          "settings": {
+            "title": "Supplements Facts Information",
+            "description": "<h4 class=\"my-2\"><b>ProLon L-Biome</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Average Contents</th>\n    <th>for 2 capsule</th>\n    <th>for 3 capsule</th>\n</tr>\n<tr>\n    <td>LACTOBACILLUS RHAMNOSUS HN001</td>\n    <td>18 mld CFU bn</td>\n    <td>27 mld CFU bn</td>\n</tr>\n<tr>\n    <td>BIFIDOBACTERIUM BREVE</td>\n    <td>10 mld CFU bn</td>\n    <td>15 mld CFU bn</td>\n</tr>\n<tr>\n    <td>SALT OF OMEGA-3-LYSINE FATTY ACIDS <br>of which DHA dodecohexanoic acid <br>of which L-lysine</td>\n    <td>400 mg <br> 200 mg <br> 132 mg</td>\n    <td>600 mg <br> 300 mg <br> 198 mg</td>\n</tr>\n<tr>\n    <td>INULINA / INULINE / INULIN</td>\n    <td>300 mg</td>\n    <td>450 mg</td>\n</tr>\n</tbody>\n</table>\n\n<p class=\"mt-2\">The package contains 60 capsules Weight: 37.8g</p>\n\n<p class=\"my-2\"><b>General information:</b> L-BIOME is a dietary supplement containing probio- tics, prebiotics, DHA, and L-lysine that facilitates the balance of the intestinal bacterial flora. L-BIOME is well-tolerated as it is gluten and lactose-free. Lacto- bacillus rhamnosus HN001 and Bifidobacterium Breve B3 contribute to the re-establishment of the intestinal bacterial flora, by supporting the gut-im- mune system and favoring metabolism. Inulin contributes to providing the nourishment for probio- tic strains. DHA and lysine promote the integrity and proper functioning of tissues, including the intestinal one.</p>\n<p class=\"my-2\">Intestinal bacterial flora is present in the lumen of the intestinal mucosa and is composed of microorganisms that protect the intestine from pathogenic germs, hinder infections, promote food digestion, regulate intestinal function, produce essential vitamins for the body, and eliminate harmful waste. The bacterial flora can be altered by various factors such as stress, a poor diet, and antibiotics. Prebiotics are the nourishment for the bacterial flora, promoting its growth. They are indigestible by the human intestine, and naturally found in many plant-based foods.</p>\n<p class=\"my-2\">To carry out its beneficial action, the probiotic requi- res prebiotics intake. L-Biome is a synergistic blend of probiotics, prebiotics, DHA, and lysine to help promote intestinal well-being.</p>\n<p><b>Ingredients:</b> salt of omega-3 lysine fatty acids (Omega-3 from oil derived from the microalgae Schyzochitrium sp., L-lysine), L-Inulin; capsule: Hydroxypropyl methylcellu- lose; Bifidobacterium breve B3; anti-caking agent: Calcium biphosphate; Lactobacillus rhamnosus HN001; anti-caking agents: Magnesium salts of fatty acids,Talc; Calcium carbonate.</p>\n<p class=\"my-2\"><b>Dosage:</b> Directions for use: It is recommended to take 2-3 capsules per day with a glass of water.</p>\n<p class=\"my-2\"><b>Storage Instructions:</b> Store in a cool, dry place at a temperature not exceeding 25°C, away from light and/or heat sources.The minimum expiry date refers to the product if correctly stored in an intact package. Do not throw away in the environment after use.</p>\n<p class=\"my-2\"><b>WARNINGS:</b> Directions for use: It is recommended to take 2-3 capsules per day with a glass of water.</p>\n<p class=\"my-2\">Dietary supplements should not be considered as a substitute for a varied and balanced diet and a healthy lifestyle. Do not exceed the recommended daily dose. KEEP OUT OF REACH OF CHILDREN UNDER THREE YEARS OLD. Do not take in case of allergies or hypersensitivity to one or more components.</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>ProLon L-Pill</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Average Contents</th>\n    <th>for 2 capsule</th>\n    <th>for 3 capsule</th>\n</tr>\n<tr>\n    <td>SALT OF OMEGA-3-LYSINE FATTY ACIDS <br>of which DHA dodecohexanoic acid <br>of which L-lysine</td>\n    <td>400 mg <br>200 mg <br>132 mg</td>\n    <td>600 mg <br>300 mg <br>198 mg</td>\n</tr>\n<tr>\n    <td>WASABI JAPONICA</td>\n    <td>185 mg</td>\n    <td>277.5 mg</td>\n</tr>\n<tr>\n    <td>SUGAR CANE EXTRACT <br>of which 15% poliphenols and 5% flavonoids</td>\n    <td>100 mg</td>\n    <td>150 mg</td>\n</tr>\n<tr>\n    <td>CAFFEINE</td>\n    <td>69 mg</td>\n    <td>103.5 mg</td>\n</tr>\n<tr>\n    <td>GREEN TEA (20% CATECHINS) <br>of which epigallocatechin gallate</td>\n    <td>57.5 mg <br>2.30 mg</td>\n    <td>86.3 mg <br>3.45 mg</td>\n</tr>\n</tbody>\n</table>\n\n<p class=\"mt-2\">The package contains 60 capsules Weight: 37.8g</p>\n\n<p class=\"my-2\"><b>General information:</b> L-PILL is a supplement based on natural extracts, DHA, and lysine.The natural extracts, from green tea, Cane sugar, and Wasabi Japonica.</p>\n<p class=\"my-2\"><b>Ingredients:</b> salt of omega-3 lysine fatty acids (Omega-3 from oil derived from the microalgae Schyzochitrium sp., L-lysine); capsule: Hydroxypropyl methylcellulose; Wasabia japonica (Miq.) matsum., root) dry extract 2% in isocyanate calculated as glucosinolates, Cane sugar (Saccharum officinarum L, sap (juice)) dry extract 15% polyphenols and 5% ftavonoids; anti-caking agent: Calcium biphosphate; Caffeine, Green tea (Camellia sinensis (L.) Kuntze, leaves) dry extract 20% catechins (epigallocatechin gallate 4%); anti-caking agents:Magnesium salts of fatty acids,Talc; Calcium carbonate.</p> \n<p class=\"my-2\"><b>Dosage:</b> Directions for use: It is recommended to take 2-3 capsules per day with a glass of water.</p>\n<p class=\"my-2\"><b>Storage Instructions:</b> Store in a cool, dry place at a temperature not exceeding 25°C, away from light and/or heat sources.The minimum expiry date refers to the product if correctly stored in an intact package. Do not throw away in the environment after use.</p>\n<p class=\"my-2\"><b>WARNINGS:</b> Directions for use: It is recommended to take 2-3 capsules per day with a glass of water.</p> \n<p class=\"my-2\">Dietary supplements should not be considered as a substitute for a varied and balanced diet and a healthy lifestyle. Do not exceed the recommended daily dose. KEEP OUT OF REACH OF CHILDREN UNDER THREE YEARS OLD. Do not take in case of allergies or hypersensitivity to one or more components.</p>\n\n<p><a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_DRS_-_L-Biome_e_L-Pill_en.pdf?v=1707889585\" target=\"_blank\" class=\"btn text-white mt-8\">Download the Supplement Fact Information</a></p>",
+            "page": ""
+          }
+        },
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLonPDPImages-supplements1_02bd5903-1d54-4ec0-8532-1eee0fe587c2.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLonPDPImages-supplements2_ad5740dd-5e93-4ced-9952-0b4c080dca33.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "3249540d-84c9-4229-877c-a0d4369db659": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Life_PDP_Image_3_-supplements2_73bb4090-1ccc-41bd-8b2a-16f4efbc4693.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/l-biome_en_1.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "a1130c1d-ef09-4b50-868d-90efd691e541": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/l-pill_en_1.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512",
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b",
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5",
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3",
+        "3249540d-84c9-4229-877c-a0d4369db659",
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff",
+        "a1130c1d-ef09-4b50-868d-90efd691e541"
+      ],
+      "custom_css": [
+        ".nutrition-declaration table,.nutrition-declaration th,.nutrition-declaration td {border-width: 0px 0px 1px; border-style: solid; border-color: #0f0a0a; margin: 0px; padding: 0px;}"
+      ],
+      "settings": {
+        "custom_css_class": "md:!mb-[250px]",
+        "product": "l-biome-l-pill",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "custom_product_title": true,
+        "sub_title": "Healthy Aging + Gut Health",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option1",
+        "option_1_name": "Choose {option}",
+        "option_1": "button",
+        "option_2_name": "Select {option}",
+        "option_2": "button",
+        "option_3_name": "Select {option}",
+        "option_3": "subscription-widget-new-v2"
+      }
+    },
+    "07f32aac-e269-4344-9d0a-611798d41305": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<style>\n  .spread-benefits img {\n  max-width: 100px;\n  margin: 0px auto;\n  }\n  @media(max-width: 768px)  {\n  .spread-benefits img {\n  max-width: 70px;\n  }\n  </style>\n<div class=\"grid md:flex jc-center columngap-4 rowgap-30 align-items-baseline text-[16px] md:text-[20px] text-center grid-cols-2 md:flex-nowrap\">\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_microbioma_x256_f517dfdc-5079-4a35-8463-0a473555851d.png?v=1700568766\">\n<h6 class=\"!mt-2\">Rich in Pre- and Probiotics</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_salute_intestinale_x256_a108af31-1163-4462-88e2-5f2ba5256a0d.png?v=1700568766\">\n<h6 class=\"!mt-2\">Helps digestion</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_flora_batterica_v2_x256_a4691f46-0907-4a59-91a7-2408506b5a36.png?v=1700827363\">\n<h6 class=\"!mt-2\">Stimulates intestinal flora</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_invecchiamento_sano_x256_e235313e-a013-42c9-ad0e-4c6632538684.png?v=1700570013\">\n<h6 class=\"!mt-2\">Promotes healthy ageing</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_protezione_cellulare_x256_c7ddb50c-b1b2-4642-89c5-b5b3c6cbf42b.png?v=1700570012\">\n<h6 class=\"!mt-2\">Increases cell protection</h6>\n</div>\n<div class=\"spread-benefits\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/icone_pills_sistema_immunitario_x256_315e5391-9885-4e7c-a6ad-b31dea2f4384.png?v=1700569221\">\n<h6 class=\"!mt-2\">Boosts the immune system</h6>\n</div>\n</div>"
+      }
+    },
+    "13827550-6312-4551-8c39-55d425382d67": {
+      "type": "pl-single-testimonial",
+      "settings": {
+        "description": "<style>\n  .max-w-\\[110px\\]{\n    max-width:110px;\n  }\n.quotation{\n    position: relative;\n    top: -30px;\n    width: 60px;\n    margin-right: 10px;\n}\n\n@media(max-width:767px){\n  .quotation {\n    position: absolute;\n    left: 0px;\n    width: 41px;\n    margin-right: 10px;\n    top: 10px;\n}\n}\n  </style>\n<div class=\"flex justify-center items-center flex-col md:flex-row\">\n\n  <div class=\"w-full md:w-[80%] text-[26px] md:text-[36px] text-white font-normal text-center flex items-center justify-center m:!flex-col\">\n  <!-- <img width='279' height='138' class=' ml-4 quotation' src='https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Quote_-_LPILL.png?v=1691175271' alt='star' />    -->\n    <span>Intestinal health is essential for a healthy life. L-Biome accompanies you on your journey</span>\n  <img width=\"279\" height=\"138\" class=\"max-w-[110px] ml-4\" src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/biome_2x_563159be-dc78-48f2-85bd-7f70a39d004c.png?v=1693580228\" alt=\"star\"> </div>\n  \n</div>"
+      }
+    },
+    "advanced_content_impulse_EdFYNi": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "html_tFYA6E": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2]\">\n<b>L-BIOME</b> for optimal <b>intestinal health</b>\n</h2> \n         <p class=\"mb-[20px] text-[16px] md:text-[18px]\">The probiotic strains <b>Bifidobacterium Breve B3 and Lactobacillus Rhamnosus HN001 </b>showed beneficial effects on improving life expectancy and alleviating age-related disorders by regulating the composition of the intestinal microbiota.</p>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pills_2_1500x900_2bfdaca8-6da0-4bf8-a917-2162b357ccd8.webp?v=1700494475\" alt=\"L-Biome\">",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_zmfrtD": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Bifidobacterium breve B-3</h4>\n<p>Clinical tests have shown that taking B. breve B-3 reduced the fat mass of adult subjects with a tendency to obesity. A possible improvement in the systemic inflammatory response was observed with the administration of B. breve B-3.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lactobacillus Rhamnosus Hn001</h4>\n<p>This probiotic is particularly resistant to the action of bile. Thanks to this functionality, it is able to colonize the upper part of the small intestine and the colon. Numerous studies show that L.rhamnosus HN001 has a beneficial impact on intestinal barrier function.</p>\n</div>\n\n<div id=\"elem-3\" class=\"mt-10 box-elem md:text-left text-center\">\n\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\"> Inulin </h4>\n<p>It is an insoluble fiber. Although processed foods provide taste and energy, they are deficient in fiber and their long-term consumption can lead to various disorders. Several studies show that inulin acts as a prebiotic and can <b>promote the growth of Bifidobacteria and Lactobacillus species</b> in the intestinal tract, thereby promoting a healthy digestive system.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_cVHAQn": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">DHA</h4>\n<p> is an essential omega-3 polyunsaturated fatty acid, which is part of the composition of phospholipids in various organs, including the heart, brain and retina. <b>DHA intake contributes to the maintenance of physiological brain function and normal visual capacity</b>. Studies show that European populations consume few foods containing DHA, which creates deficiency situations that can be remedied by supplementation.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lysine</h4>\n<p>It is an essential amino acid for humans, which must therefore be supplied through food. Lysine plays several roles in humans, mainly in <b>proteinogenesis</b>, but also in the cross-linking of <b>collagen</b> polypeptides.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_tFYA6E",
+        "html_zmfrtD",
+        "html_cVHAQn"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "30fd8c35-6d59-4a2c-81d3-5a346e744120": {
+      "type": "pl-custom-content",
+      "blocks": {
+        "a3b6e46f-206d-4fe6-896e-fdd29349479f": {
+          "type": "tabs",
+          "settings": {
+            "title": "Morinaga B3®",
+            "description": "Morinaga B-3, which, besides its gut health benefits, has been shown to support weight, body fat percentage, blood glucose, and cholesterol levels already within a normal range. This is one of the essential microbiota that flourishes post ProLon Fasting Nutrition."
+          }
+        },
+        "3a779269-10db-4e0b-9457-0b554692ad1b": {
+          "type": "tabs",
+          "settings": {
+            "title": "LactoB™",
+            "description": "LactoB HN001 supports healthy digestive and bowel function, promotes healthy gut barrier integrity, supports healthy gut-immune axis, and encourages digestive comfort and healthy nutrient absorption. This is one of the ssential microbiota that flourishes post ProLon Fasting Nutrition."
+          }
+        },
+        "dfc1f7b4-8415-4c79-9622-1484cbeba28e": {
+          "type": "tabs",
+          "settings": {
+            "title": "Chicory RootPrebiotic",
+            "description": "L-Biome also contains Prebiotics such as Chicory Roots, which may support healthy gastrointestinal tract function, promote beneficial short-chain fatty acid production by healthy gut microbiota, and provides functional prebiotics that may help the growth of Bifidobacteria and Lactobacillus species in gut microflora."
+          }
+        },
+        "734e2d64-b30d-46d1-83d2-69890950137c": {
+          "type": "tabs",
+          "settings": {
+            "title": "DHA",
+            "description": "With FDA approved claims to promotes cardiovascular health, brain health and eye health in normal range at all stages of life. DHA is a structural component of human brain and retina of the eye. DHA may also positively influence the healthy gut-brain axis, promote intestinal wall integrity and support immune health of the body."
+          }
+        }
+      },
+      "block_order": [
+        "a3b6e46f-206d-4fe6-896e-fdd29349479f",
+        "3a779269-10db-4e0b-9457-0b554692ad1b",
+        "dfc1f7b4-8415-4c79-9622-1484cbeba28e",
+        "734e2d64-b30d-46d1-83d2-69890950137c"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ingredients for optimal <b>gut health</b>",
+        "subtitle": "HOW TO USE",
+        "description": "The quality and pace of our biological age are the main determinants for a healthy long life. The L-Biome aims at <b>flourishing a post-fasting gut health environment</b> while supporting healthy aging of different organs and systems. L-Biome contains two essential microbiota that flourish post Fasting Nutrition"
+      }
+    },
+    "30fd8c35-6d59-4a2c-81d3-5a346e7441201": {
+      "type": "pl-custom-content",
+      "blocks": {
+        "a3b6e46f-206d-4fe6-896e-fdd29349479f": {
+          "type": "tabs",
+          "settings": {
+            "title": "DHA",
+            "description": "With FDA approved claims to promotes cardiovascular health, brain health and eye health in normal range at all stages of life. DHA is a structural component of human brain and retina of the eye. DHA may also positively influence the healthy gut-brain axis, promote intestinal wall integrity and support immune health of the body."
+          }
+        },
+        "3a779269-10db-4e0b-9457-0b554692ad1b": {
+          "type": "tabs",
+          "settings": {
+            "title": "ProJUVN3™",
+            "description": "Wasabi japonica rhizome/root Known to naturally target a gene regulatory network involved in the protection of cells, and supporting Liver Health & Detoxification, Healthy Immune Function, and Brain Health."
+          }
+        },
+        "dfc1f7b4-8415-4c79-9622-1484cbeba28e": {
+          "type": "tabs",
+          "settings": {
+            "title": "Polynol®",
+            "description": "Very rich in polyphenols, flavonoids and proanthocyanins encourages metabolic health (supports already healthy glucose levels), promotes healthy antioxidant status of lipids, proteins and mitochondria, and healthy immunomodulation secondary to day-to-day activity, physical exercise, and aging."
+          }
+        },
+        "734e2d64-b30d-46d1-83d2-69890950137c": {
+          "type": "tabs",
+          "settings": {
+            "title": "Pure Tea®",
+            "description": "Organic green tea leaf extract from camellia sinensis which includes catechins containing ECGC and Caffeine and supports sustained perceived energy, may promote healthy antioxidant status, encourages cellular protection, metabolic function and cardiovascular health and encourages brain health and immune system function."
+          }
+        }
+      },
+      "block_order": [
+        "a3b6e46f-206d-4fe6-896e-fdd29349479f",
+        "3a779269-10db-4e0b-9457-0b554692ad1b",
+        "dfc1f7b4-8415-4c79-9622-1484cbeba28e",
+        "734e2d64-b30d-46d1-83d2-69890950137c"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ingredients for healthy aging",
+        "subtitle": "HOW TO USE",
+        "description": "The quality and pace of our biological age are the main determinants for a healthy long life. L-Pill's strength lies in its unique combination of four naturally occurring ingredients that have been consumed by millions and studied for their potential benefits in supporting healthy aging."
+      }
+    },
+    "3edaf15f-a10f-4133-ae6c-a4fff5b7bbe0": {
+      "type": "pl-single-testimonial",
+      "settings": {
+        "description": "<style>\n  .max-w-\\[110px\\]{\n    max-width:110px;\n  }\n.quotation{\n    position: relative;\n    top: -30px;\n    width: 60px;\n    margin-right: 10px;\n}\n\n@media(max-width:767px){\n  .quotation {\n    position: absolute;\n    left: 0px;\n    width: 41px;\n    margin-right: 10px;\n    top: 10px;\n}\n}\n  </style>\n<div class=\"flex justify-center items-center flex-col md:flex-row\">\n\n  <div class=\"w-full md:w-[80%] text-[26px] md:text-[36px] text-white font-normal text-center flex items-center justify-center m:!flex-col\">\n  <img width=\"279\" height=\"138\" class=\" ml-4 quotation\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Quote_-_LPILL.png?v=1691175271\" alt=\"star\">   \n    <span>The L-Pill is the <span class=\"font-medium italic\">only supplement</span> that I would take. <span class=\"text-base font-medium m:block\">- Dr. Valter Longo</span></span>\n  <img width=\"279\" height=\"138\" class=\"max-w-[110px] ml-4\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Valter_-_testimonial.png?v=1691175272\" alt=\"star\"> </div>\n  \n</div>"
+      }
+    },
+    "advanced_content_impulse_Q9JUne": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "html_y6QCVa": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"mb-[20px] text-[30px] md:text-[40px] lead-[1.2]\"> <b>L-PILL </b>for <b>healthy</b> aging</h2>\n        <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black\">The quality and rate of our biological aging are the main determinants of a long and healthy life. The strength of L-Pill lies in its unique combination of four natural ingredients that have been studied for their potential benefits in healthy aging, with <b>energizing and antioxidant</b> functions.</p>\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/pills_1500x900_4bc959b7-52e2-4fe6-80b6-ec9663f45521.webp?v=1700492637\" alt=\"L-Pill\">",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_8kjaBi": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">DHA</h4>\n<p> is an essential omega-3 polyunsaturated fatty acid, which is part of the composition of phospholipids in various organs, including the heart, brain and retina. <b>DHA intake contributes to the maintenance of physiological brain function and normal visual capacity</b>. Studies show that European populations consume few foods containing DHA, which creates deficiency situations that can be remedied by supplementation.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Lysine</h4>\n<p>It is an essential amino acid for humans, which must therefore be supplied through food. Lysine plays several roles in humans, mainly in <b>proteinogenesis</b>, but also in the cross-linking of <b>collagen</b> polypeptides.</p>\n</div>\n\n<div id=\"elem-3\" class=\"mt-10 box-elem md:text-left text-center\">\n\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\"> Wasabi Japonica extract rich in isothiocyanates </h4>\n<p><b>Isothiocyanates</b> come from the hydrolysis of glucosinolates, sulfur compounds with a characteristic odor, which is present in cruciferous vegetables, well known for their digestive function.</p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_UGYMj7": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"elem-1\" class=\"box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\"> Cane sugar extract rich in polyphenols and flavonoids </h4>\n<p> <b>Polyphenols</b> constitute a large group of natural organic substances including <b>flavonoids</b>. Many studies have linked the intake of flavonoids, <b>anti-aging</b> action and the ability to eliminate <b>free radicals</b> through electron transfer processes.</p>\n</div>\n\n<div id=\"elem-2\" class=\"mt-10 box-elem md:text-left text-center\">\n<h4 class=\"my-2 text-[16px] md:text-[20px] text-[#73994a]\">Green tea extract (catechins, caffeine)\n</h4>\n<p> Camellia sinensis leaf extract, in accordance with Ministry of Health guidelines, contributes to the drainage of body fluids, body weight balance, normal intestinal function, tone and anti-oxidation. </p>\n</div>",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_y6QCVa",
+        "html_8kjaBi",
+        "html_UGYMj7"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a": {
+      "type": "pl-you-may-like",
+      "blocks": {
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1": {
+          "type": "boxes",
+          "settings": {
+            "title": "Performance Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2": {
+          "type": "boxes",
+          "settings": {
+            "title": "Intermittent Fasting Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3": {
+          "type": "boxes",
+          "settings": {
+            "title": "Longevity Essentials Bundle",
+            "Products": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "Innovation meets nature.",
+        "subtitle": "WHY L-Biome",
+        "description": "<p>Our L-Biome, equipped with double capsule technology, ensures optimal dosage of these ingredients in a safe and effective way. DHA is contained outside the capsule for immediate absorption, while the other ingredients are safely locked inside, gradually releasing their potential benefits over time.</p>\n\n<p>Our L-PILL guarantees optimal dosage of these ingredients in a safe and effective way. DHA is bound to the essential amino acid L-lysine to form a salt, which makes DHA more easily assimilated by the body, increasing its effectiveness.</p>",
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_61c35b35a52f450c9e53e6442d2a2f6b_700x_8b4f8912-e10d-4aa4-8a48-d474280c88bd.webp",
+        "image_on_left": false,
+        "image_contain": true
+      }
+    },
+    "151dd957-c577-4c56-a299-49b055fb668a": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "How and when to use",
+        "subtitle": "HOW IT WORKS",
+        "description": "<p>L-Biome: It can be used daily by anyone aged 18 to 80. It is best used after taking one of ProLon's fasting nutrition products: 5 Days Fasting Mimicking Diet, One Day Reset Nutrition, the Fast Bar or the Fasting Shake. You can stop and start again at any time, as you wish. If you suffer from any medical condition, consult your doctor before taking L-Biome. Do not take L-Biome if you are allergic to any of its ingredients.</p>\n<p>L-Pill: Take two capsules daily before or during meals. You can stop and resume taking it at any time. If you have a medical problem, consult your doctor before taking L-Pill. Do not take L-Pill if you are allergic to any of its ingredients.</p>",
+        "image": "shopify://shop_images/assets_l-biome_img3_1000x_1080x_ee8e1427-accc-4fc5-a8b2-4d3314cba356.webp",
+        "image_on_left": true,
+        "image_contain": true
+      }
+    },
+    "25c38795-a781-47d3-a85b-6592c96d08f9": {
+      "type": "pl-custom-links",
+      "settings": {
+        "description": "<div class=\"product-ref\">\n<p><strong>Selected references</strong></p>\n\n\n\n<p><strong>Bifidumbacterium breve B-3:</strong></p>\n\n\n\n<ul>\n<li>Minami, J.I., Kondo, S., Yanagisawa, N., et al., 2015. <strong>Oral administration of <em>Bifidobacterium breve</em> B-3 modifies metabolic functions in adults with obese tendencies in a randomised controlled trial.</strong> <em>Journal of Nutritional Science</em>, 4.</li>\n\n\n\n<li>Minami, J., Iwabuchi, N., Tanaka, M., et al., 2018. Effects of <em>Bifidobacterium breve</em> B-3 on body fat reductions in pre-obese adults: a randomized, double-blind, placebo-controlled trial. <em>Bioscience of Microbiota, Food and Health</em>, pp.18-001.</li>\n\n\n\n<li>Inoue T, Kobayashi Y, Mori N, Sakagawa M, et al., 2018. Effect of combined bifidobacteria supplementation and resistance training on cognitive function, body composition and bowel habits of healthy elderly subjects. <em>Benef Microbes</em>. 2018 Dec 7;9.</li>\n</ul>\n\n\n\n<p><strong> </strong><strong>Lactobacillus rhamnosus HN001:</strong></p>\n\n\n\n<ul>\n<li>González-Hernández LA, Jave-Suarez LF, Fafutis-Morris M, Montes-Salcedo KE, Valle-Gutierrez LG, Campos-Loza AE, Enciso-Gómez LF, Andrade-Villanueva JF (2012) Synbiotic therapy decreases microbial translocation and inflammation and improves immunological status in HIV-infected patients: a double-blind randomized controlled pilot trial. <em>Nutr J</em> 11:90.</li>\n\n\n\n<li>Mokkala K, Pussinen P, Houttu N, Koivuniemi E, Vahlberg T, Laitinen K. (2018) The impact of probiotics and n-3 long-chain polyunsaturated fatty acids on intestinal permeability inpregnancy: a randomised clinical trial. <em>Beneficial Microbes</em> 9(2): 199-208</li>\n\n\n\n<li>Kruger MC, Fear A, Chua WH, Plimmer GG, Schollum LM (2009) The effect of <em>Lactobacillus rhamnosus</em> on mineral absorption and bone health in growing male and ovariectomised female rats. <em>Dairy Science & Technology</em> 89:219-231.</li>\n\n\n\n<li>Tannock GW, Taylor C, Lawley B, Loach D, Gould M, Dunn AC, McLellan AD, Black MA, McNoe L, Dekker J, Gopal P, Collett MA (2014) Altered transcription of murine genes induced in the small bowel by administration of probiotic strain <em>Lactobacillus rhamnosus</em> HN001. <em>Applied and Environmental Microbiology</em> 80:2851-2859</li>\n\n\n\n<li>Miller LE, Ouwehand AC (2013) Probiotic supplementation decreases intestinal transit time: Meta- HN019, analysis of randomized controlled trials. <em>World Journal of Gastroenterology</em> 19:4718-4725</li>\n</ul>\n\n\n\n<p><strong>Inulin:</strong></p>\n\n\n\n<ul>\n<li>Shah BR, Li B, Al Sabbah H, Xu W, Mráz J. <strong>Effects of prebiotic dietary fibers and probiotics on human health</strong>: With special focus on recent advancement in their encapsulated formulations. <em>Trends Food Sci Technol</em>. 2020 Aug;102:178-192.</li>\n\n\n\n<li>den Besten G., van Eunen K., Groen A.K., Venema K., Reijngoud D.-J., Bakker B.M. <strong>The role of short-chain fatty acids in the interplay between diet, gut microbiota, and host energy metabolism</strong>. <em>Journal of Lipid Research</em>. 2013;54(9):2325–2340.</li>\n\n\n\n<li>Dewulf E., Cani P., Claus S., Neyrinck A., Puylaert P., Glenn G.…Delzenne N. INULIN-TYPE fructans with prebiotic properties lessen endotoxemia and modulate host metabolism by changing gut microbiota composition in obese women: 749 accepted poster. <em>Obesity Facts</em>. 2012;5:200–201.</li>\n\n\n\n<li>Dewulf E.M., Cani P.D., Neyrinck A.M., Possemiers S., Van Holle A., Muccioli G.G.…Sohet F.M. Inulin-type fructans with prebiotic properties counteract GPR43 overexpression and PPARγ-related adipogenesis in the white adipose tissue of high-fat diet-fed mice. <em>The Journal of Nutritional Biochemistry</em>. 2011;22(8):712–722.</li>\n\n\n\n<li>Nicolucci A.C. Prebiotics reduce body fat and alter intestinal microbiota in children who are overweight or with obesity. <em>Gastroenterology</em>. 2017;153(3):711–722</li>\n</ul>\n\n<p><strong>Algal Oil DHA</strong></p>\n<ul>\n<li>Costantini L, Molinari R, Farinon B, Merendino N. <strong>Impact of Omega-3 Fatty Acids on the Gut Microbiota.</strong> <em>Int J Mol Sci</em>. 2017 Dec 7;18(12):2645 <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5751248/</a>\n</li>\n</ul>\n\n\n\n<ul>\n<li>Jayapala H, Lim SY. N-3 Polyunsaturated Fatty Acids and Gut Microbiota. <em>Comb Chem High Throughput Screen</em>. 2022 Jul 1. doi: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35786331/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://pubmed.ncbi.nlm.nih.gov/35786331/</a>\n</li>\n\n\n\n<li>Rousseau G. Microbiota, a New Playground for the <strong>Omega-3 Polyunsaturated Fatty Acids in Cardiovascular Diseases</strong>. <em>Mar Drugs</em>. 2021 Jan 23;19(2):54. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"break-all\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931107/</a>\n</li>\n\n\n\n<li>Stillwell W, Wassall SR. Docosahexaenoic acid: membrane properties of a unique fatty acid. <em>Chem Phys Lipids</em>. 2003;126(1):1-27.</li>\n\n\n\n<li>Serhan CN. Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology. <em>Nature</em>. 2014 Jun 5; 510(7503): 92–101.</li>\n\n\n\n<li>Kotani S, Sakaguchi E, Warashina S, et al. <strong>Dietary supplementation of arachidonic and docosahexaenoic acids improves cognitive dysfunction</strong>. <em>Neurosci Res</em> 2006;56(2):159-64.</li>\n\n\n\n<li>Innes JK, Calder PC. Marine <strong>Omega-3 (N-3) Fatty Acids for Cardiovascular Health</strong>: An Update for 2020. <em>Int J Mol Sci</em>. 2020 Feb 18;21(4):1362.</li>\n\n\n\n<li>SanGiovanni JP, Chew EY. The role of omega-3 long-chain polyunsaturated fatty acids in health and disease of the retina. <em>Prog Retin Eye Res</em>. 2005;24(1):87-138</li>\n</ul>\n\n\n\n<p><strong>Wasabi Japonica</strong></p>\n\n\n\n<ul>\n<li>6-(methylsulfinyl)hexyl isothiocyanate (6-MITC) from Wasabia japonica alleviates inftammatory bowel disease (IBD) by potential inhibition of glycogen synthase kinase 3 beta (GSK-3b)_European Journal of Medicinal Chemistry _2021.<ul><li>Anti-Diabetic Obesity Effects of Wasabia Japonica Matsum Leaf Extract on 45% Kcal High-Fat Diet-Fed Mice_Nutrients_2021</li></ul>\n<ul><li>Anti-oxidant and Anti-hypercholesterolemic Activities of Wasabia japonica_eCAM_2010_IF2.6. 9</li></ul>\n<ul><li>Anticancer and Anti-Neuroinftammatory Constituents Isolated from the Roots of Wasabia japonica_an- tioxidants_2022</li></ul>\n<ul><li>Bactericidal activity of wasabi (Wasabia japonica) against Helicobacter pylori_International Journal of Food Microbiology_2004</li></ul>\n<ul><li>Inhibitory effects of Japanese horseradish (Wasabia japonica) on the formation and genotoxicity of a potent carcinogen, acrylamide_J Sci Food Agric_2017</li></ul>\n<ul><li>Wasabi leaf extracts attenuate adipocyte hypertrophy through PPARγ and AMPK_Bioscience, Biotechnolo- gy, and Biochemistry_2016</li></ul>\n<ul><li>Molecular Mechanisms Underlying Anti-Inftammatory Actions of 6-(Methylsulfinyl)hexyl Isothiocyanate Derived from Wasabi (Wasabia japonica )_Advances in Pharmacological Sciences_2012</li></ul>\n<ul><li>Neuroprotective and Anti-Inftammatory Activities of Allyl Isothiocyanate through Attenuation of JNK/NF-κ</li></ul>\n<ul><li>Anti-angiogenic effects of dietary isothiocyanates/ Mechanisms of action and implications for human health_Biochemical Pharmacology_2011</li></ul>\n<ul>\n<li>Anti-inftammatory potential of allyl-isothiocyanate – role of Nrf2, NF-(k)B and microRNA-155_J. Cell. Mol.</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>Med._2012</p>\n\n\n\n<ul>\n<li>Neuroprotective and Anti-Inftammatory Activities of Allyl Isothiocyanate through Attenuation of JNK/NF-κ B/TNF-α Signaling_Int. J. Mol. Sci_2017_</li>\n</ul>\n\n\n\n<p><strong>Flavonoids and polyphenols from cane sugar extract</strong></p>\n\n\n\n<ul>\n<li>Antithrombotic activity of ftavonoids and polyphenols rich plant speciesMIRZA BOJIĆ ; University of Zagreb Faculty of Pharmacy and Biochemistry, Department of Medicinal Chemistry, HR-10000 Zagreb, Croatia<ul><li>Raúl Arcusa, Juan Ángel Carillo, Begoña Cerdá, Thierry Durand, Ángel Gil-Izquierdo, Sonia Medina, Jean-Marie Galano, María Pilar Zafrilla, Javier Marhuenda, Ability of a Polyphenol-Rich Nutraceutical to Reduce Central Nervous System Lipid Peroxidation by Analysis of Oxylipins in Urine: A Randomized, Double-Blind, Place- bo-Controlled Clinical Trial, Antioxidants, 10.3390/antiox12030721, 12, 3, (721), (2023).</li></ul>\n<ul><li>Michael Aviram, Bianca Fuhrman,Polyph enolic ftavonoids inhibit macrophage-mediated oxidation of LDL and attenuate atherogenesis,Atherosclerosis</li></ul>\n<ul><li>Postprandial insulin and glucose levels are reduced in healthy subjects when a standardised breakfast meal is supplemented with a filtered sugarcane molasses concentrate_EurJnutr_2015</li></ul>\n<ul><li>Antioxidant and Anti-Diabetic Functions of a Polyphenol-Rich Sugarcane Extract_JAmerCollofNutr_2019_</li></ul>\n<ul><li>A polyphenol rich sugarcane extract as a modulator for inftammation and T neurological disorders_Phar- maNutr_2020</li></ul>\n<ul><li>Immunomodulatory Properties of Polyphenol-Rich Sugarcane Extract on Human Monocytes_Biologic- s_2021</li></ul>\n<ul><li>Age-Deterring and Skin Care Function of a Polyphenol Rich Sugarcane Concentrate_Cosmetics_2020</li></ul>\n<ul><li>Antioxidant activity and polyphenol composition of sugarcane molasses extract_JFoodChem_2020_</li></ul>\n<ul>\n<li>Phytochemical profile of sugarcane and its potential health aspects_PhcogRev_2015_I</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p><strong>Catechins and caffeine from green tea extract</strong></p>\n\n\n\n<ul>\n<li>Luis Goya, Ricardo San Román, Sonia de Pascual-Teresa, Polyphenols’ Effect on Cerebrovascular Health, Current Medicinal Chemistry, 10.2174/0929867328666211129123459, 29, 6, (1029-1044), (2022).<ul><li>Sally C. Duplantier, Christopher D. Gardner, A Critical Review of the Study of Neuroprotective Diets to Reduce Cognitive Decline, Nutrients, 10.3390/nu13072264, 13, 7, (2264), (2021).</li></ul>\n<ul>\n<li>Bradley J. McEwen, Impact of cardiometabolic disease on cognitive function, Nutraceuticals in Brain Health and Beyond, 10.1016/B978-0-12-820593-8.00025-2, (357-368), (2021).</li>\n</ul>\n</li>\n</ul>\n\n\n\n<ul>\n<li>Chacko SM, Thambi PT, Kuttan R, Nishigaki I. Beneficial effects of green tea: a literature review. Chin Med. 2010 Apr 6;5:13. doi: 10.1186/1749-8546-5-13. PMID: 20370896; PMCID: PMC2855614.<ul><li>Prasanth MI, Sivamaruthi BS, Chaiyasut C,Tencomnao T. A Review of the Role of Green Tea (Camellia sinen- sis) in Antiphotoaging, Stress Resistance, Neuroprotection, and Autophagy. Nutrients. 2019 Feb 23;11(2):474. doi: 10.3390/nu11020474. PMID: 30813433; PMCID: PMC6412948.</li></ul>\n<ul>\n<li>Mengyuan Si, Zhongyuan Liu, Yingchao Dou, Guanyu Yang, Synthesis of Catechol Thioethers through Gallic Acid/Fe2(SO4)3 Catalyzed Aerobic Oxidative Coupling of Thiols and Catechol Derivatives, ChemistrySelect, 10.1002/slct.202103752, 6, 48, (13781-13785), (2021).</li>\n</ul>\n</li>\n</ul>\n</div>"
+      }
+    },
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0": {
+      "type": "pl-newsletter",
+      "settings": {
+        "description": "<div class=\"lg:flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the Prolon community</p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n<div class=\"klaviyo-form-UEwecV w-full max-w-[450px] lg:mt-4\"></div>\n</div>",
+        "descriptionWidth": "w-full",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "07f32aac-e269-4344-9d0a-611798d41305",
+    "13827550-6312-4551-8c39-55d425382d67",
+    "advanced_content_impulse_EdFYNi",
+    "30fd8c35-6d59-4a2c-81d3-5a346e744120",
+    "30fd8c35-6d59-4a2c-81d3-5a346e7441201",
+    "3edaf15f-a10f-4133-ae6c-a4fff5b7bbe0",
+    "advanced_content_impulse_Q9JUne",
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a",
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed",
+    "151dd957-c577-4c56-a299-49b055fb668a",
+    "25c38795-a781-47d3-a85b-6592c96d08f9",
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0"
+  ]
+}

@@ -1,0 +1,50 @@
+<div class="page-width">
+  <div
+    class="
+      cynthia-sass-main
+      pf-inner-wrapper
+      {%
+      if
+      block.settings.right_image
+      %}right-girl-image
+      {%
+      else
+      %}
+      left-girl-image
+      {%
+      endif
+      %}
+    "
+  >
+    <div
+      class="cynthia-sass new-year-wrapper"
+      style="background-image:url('{{
+        block.settings.image | img_url: '500x'
+      }}')"
+    >
+      <div class="section-padding">
+        <div class="details-wrapper">
+          <h3 class="registration-date">{{ block.settings.date_range }}</h3>
+          <span style="margin: 0px"
+            ><strong>{{ block.settings.name }} </strong></span
+          >
+          <div class="paragraph">
+            <p>
+              {{ block.settings.description }}
+            </p>
+            {% if block.settings.registeration_open %}
+            <br /><a
+              href="{{ block.settings.button_url }}"
+              class="register-now btn"
+              style="min-width: 200px"
+              >{{ block.settings.button_text }}</a
+            >
+            {% else %}
+            <p><b> Registration Closed</b></p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>

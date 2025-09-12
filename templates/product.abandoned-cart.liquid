@@ -1,0 +1,102 @@
+
+<style>
+  
+  #shopify-section-header > div:nth-child(3) > div.header-sticky-wrapper > div > div > header > div.page-width > div > div.header-item.header-item--navigation.text-center > ul > li:nth-child(4) {
+    display: none;}
+  
+  #shopify-section-product-template {
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .variant-input-wrap input[type=radio]:checked+label {
+    box-shadow: 0 0 0 2px #73984a;
+    background-color: #73984a63;
+    font-weight: 700;
+}
+  
+.variant-input-wrap label {
+     box-shadow: 0 0 0 2px #73984a;}   
+  
+  #ProductSection-6683190198430 > div > div > div.grid > div:nth-child(2) > div > p {
+    display: none;}
+  
+  @media only screen and (min-width: 769px){
+    #shopify-section-product-sections-template-cart-ac > div > div:nth-child(2) {
+      display: none;}}
+  
+  @media only screen and (max-widht: 768px){
+    #shopify-section-product-sections-template-cart-ac > div > div:nth-child(1) {
+      display: none;}}
+  
+  
+</style>
+
+{% if product.handle contains 'cocao' %}
+<div class="row-ac"><h3><img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Special_Ofer.svg?v=1619130552" alt="Special Offer" style="width: 200px; margin-bottom: -20px;" > Keep your health goals all month long!</h3><h4>ProLon®
+Plus Free 20ct Variety & 12ct Nuts & Cocao Chips Fast Bar®</h4></div>  
+{% endif %}
+
+{% if product.handle contains 'honey' %}
+<div class="row-ac"><h3><img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Special_Ofer.svg?v=1619130552" alt="Special Offer" style="width: 200px; margin-bottom: -20px;" > Keep your health goals all month long!</h3><h4>ProLon®
+Plus Free 20ct Variety & 12ct Nuts & Honoey Fast Bar®</h4></div>  
+{% endif %}
+
+{% if product.handle contains 'dark-cocoa' %}
+<div class="row-ac"><h3><img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Special_Ofer.svg?v=1619130552" alt="Special Offer" style="width: 200px; margin-bottom: -20px;" > Keep your health goals all month long!</h3><h4>ProLon®
+Plus Free 20ct Variety & 12ct Nuts & Dark Cocoa Fast Bar®</h4></div>  
+{% endif %}
+
+{% if product.handle contains '189' %}
+<div class="row-ac"><h3><img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Special_Ofer.svg?v=1619130552" alt="Special Offer" style="width: 200px; margin-bottom: -20px;" > Kickstart your health goals today!</h3></div>  
+{% endif %}
+
+{% section 'product-template' %}
+{% section 'product-sections-template-cart-ac' %}
+{% section 'product-sections-template-general' %}
+
+
+{% if collection %}
+  <div class="text-center page-content page-content--bottom">
+    <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn btn--small return-link">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  	$('input[type=radio][name=Quantity]').change(function() {
+		if (this.value.includes('Subscribe & Save')) {
+	      addSubscriptionOptions();
+		} else {
+          $( "#subscription_plans" ).remove();
+		}
+	});
+    
+    $('input[type=radio][name=Quantity]').each(function() {
+      if (this.value.includes('Subscribe & Save')) {
+        if($(this).prop('checked')){
+          addSubscriptionOptions();
+        }
+      } else {
+        $( "#subscription_plans" ).remove();
+      }
+    }); 
+  }); 
+   
+  function addSubscriptionOptions() {
+    $( "form fieldset[name=Quantity]").append( 
+		'<div id="subscription_plans" style="margin-left: 4px;">' + 
+      	'<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">'+
+		'<select name="properties[shipping_interval_frequency]">' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+		'  <option data-charge_interval_frequency="2" value="2" data-end="0">Deliver every 2 months</option>' +
+		'  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' + 
+		'  <option data-charge_interval_frequency="4" value="4" data-end="0">Deliver every 4 months</option>' +
+		'  <option data-charge_interval_frequency="1" value="1" data-end="3">Deliver every month for 3 months</option>' +
+		'</select>' +
+		'</div>');   
+  }
+</script>{% render 'product_infox' %}<!-- brontoBrowseObject:start -->

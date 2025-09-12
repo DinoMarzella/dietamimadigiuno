@@ -1,0 +1,160 @@
+{% assign data = section.settings %}
+<!-- TWKeyRootCauses -->
+<div class="w-full py-12 bg-white font-avenir">
+  <div class="w-full px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="my-2 font-normal tracking-tight md:text-3xl md:leading-10 text-darkGunMetal sm:text-5xl font-avenir">
+        {{ data.title }}
+      </p>
+    </div>
+
+    <div class="flex flex-col mt-10 md:flex-row md:mt-20">
+      <div class="w-full px-2 md:w-1/3">
+        <div class="w-full pt-8 rounded-lg md:pt-10 bg-champagneLight md:h-160">
+          <p class="px-2 py-1 mx-auto mb-5 text-sm border rounded-sm md:mb-16 w-max font-dinamoRegular border-darkGunMetal">
+            Root causes
+          </p>
+          <div class="flex items-start justify-end">
+            <div class="flex flex-row flex-wrap items-center justify-start md:items-end md:flex-col">
+              {% assign keys_array = section.blocks | where: 'type', 'keys_array' %}
+              {% for key in keys_array %}
+                <div
+                  key=""
+                  {{ forloop.index }}
+                  class="flex items-center justify-end cursor-pointer {% if forloop.index != 1 %} md:mt-8{% endif %}"
+                >
+                  <span class="hidden text-xs font-dinamoRegular md:block text-tealGreen">
+                    {{- key.settings.title -}}
+                  </span>
+                  <h4 class="pl-3 text-xl md:text-2xl font-avenirItalic text-darkGunmetal capitalize {% if forloop.index == 1 %} text-tealGreen{% endif %}">
+                    {{ key.settings.description }}
+                  </h4>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="hidden md:block">
+              {% assign keys_array = section.blocks | where: 'type', 'keys_array' %}
+              {% for key in keys_array %}
+                <img
+                  class="block ml-4 {% if forloop.index != 1 %} hidden{% endif %}"
+                  width="100%"
+                  height="100%"
+                  style="width: 149px; margin-left: 15px;"
+                  src=""
+                  {{ key.settings.image | img_url: 'master' }}
+                >
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-2/3">
+        {% assign impact_targets = section.blocks | where: 'type', 'impact_targets' %}
+        {% for card in impact_targets %}
+          <div class="flex flex-col justify-center md:flex-row w-ful item-center {% if forloop.index != 1 %} hidden{% endif %}">
+            <div class="w-full px-2 md:w-1/2">
+              <div class="w-full pt-8 rounded-lg md:pt-10 bg-champagneLight md:h-160">
+                <p class="px-2 py-1 mx-auto mb-16 text-sm border rounded-sm w-max font-dinamoRegular border-darkGunMetal">
+                  Impact
+                </p>
+                <div class="relative text-center md:pt-8">
+                  <div
+                    class="absolute z-0 hidden w-px h-full md:block md:-mt-1 md:w-full md:h-px bg-tealGreenDark top-o md:top-44"
+                  ></div>
+                  <img
+                    class="relative z-10 object-contain object-right w-64 h-full p-5 mx-auto border rounded-full border-tealGreenDark bg-champagneLight"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.settings.impact_image | img_url: 'master' }}
+                  >
+                  <p class="p-4 text-base text-center text-dinamoRegular">{{ card.settings.impact_description }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-2 md:w-1/2">
+              <div class="w-full pt-8 rounded-lg md:pt-10 bg-champagneLight md:h-160">
+                <p class="px-2 py-1 mx-auto mb-16 text-sm border rounded-sm w-max font-dinamoRegular border-darkGunMetal">
+                  How we target
+                </p>
+                <div class="relative text-center md:pt-8">
+                  <div class="absolute z-0 hidden w-full h-px -mt-1 md:block bg-tealGreenDark top-44"></div>
+                  <img
+                    class="relative z-10 object-contain object-right w-64 h-full p-5 mx-auto border rounded-full border-tealGreenDark bg-champagneLight"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    {{ card.settings.target_image | img_url: 'master' }}
+                  >
+                  <p class="p-4 text-base text-center text-dinamoRegular">{{ card.settings.target_description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Key Root Causes TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "keys_array",
+      "name": "Keys",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "impact_targets",
+      "name": "Imapct Targets",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "impact_description",
+          "label": "Impact Description"
+        },
+        {
+          "type": "textarea",
+          "id": "target_description",
+          "label": "Target Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "impact_image",
+          "label": "Imapct Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "target_image",
+          "label": "Target Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,543 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.tw",
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-pl",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "Reset 1-Day Kit",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<h3 class=\"button-plan-option font-bold text-md\">5-Day Fasting Kit\n</h3><p class=\"bg-prolon_secondary bg-red font-normal inline-block prolon-flavor-text px-3 md:px-4 text-[10px] text-white\"><strong>MOST POPULAR</strong>\n</p>",
+            "custom_description": "<b>Cellular Rejuvenation</b>, Healthy Aging &amp; Longevity and Metabolic Health",
+            "product_description": "<div class=\"mt-4 w-full product-description\" q:id=\"1h\">\n<p>Prolon Reset provides a complete day of innovative nutrition formula that was scientifically tested and patented to feed your body while keeping it in a physiological fasting state. This Nutrition Program induces your body to breakdown fat and use it as fuel, similar to when you water fast.</p>\n<br><ul>\n<li>Metabolic health\n</li>\n<li>Complete 1-day program</li>\n<li>Remain in a physiological fasting state</li>\n<li>Get your mind &amp; body back on track</li>\n<li>Breakdown fat and use it as fuel</li>\n</ul>\n</div>"
+          }
+        },
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512": {
+          "type": "faq",
+          "settings": {
+            "title": "What's inside the kit?",
+            "description": "<style><!--\n.inside-img { margin-right: 10px; border-radius: 8px;}\n--></style>\n<meta charset=\"utf-8\">\n<p><strong>With ProLon ReSet, you get everything you need pre-packaged and ready to go. </strong></p>\n<p>\n</p><p><img height=\"46\" width=\"58\" style=\"float: left;\" alt=\"\" class=\"inside-img\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/soup1_160x160.png?v=1667751467\"><strong>Soups:</strong> A variety of easy-to-prepare soups made with a proprietary mix of all-natural, plant-based ingredients</p>\n<p><img height=\"46\" width=\"58\" style=\"float: left;\" alt=\"\" class=\"inside-img\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-lbar.png?v=1667838709%20\"><strong>Nut Bars:</strong> Cold-pressed, delicious nut bars with whole ingredients like almonds, macadamia nuts, and pecans</p>\n<p><img height=\"46\" width=\"58\" style=\"float: left;\" alt=\"\" class=\"inside-img\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-snacks.png?v=1667838709\"><strong>Snacks:</strong> Snacks like olives from the South of Spain where olive consumption is associated with longevity, and kale crackers enriched with plant-based protein.</p>\n<p><img height=\"46\" width=\"58\" style=\"float: left;\" alt=\"\" class=\"inside-img\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-Supplements.png?v=1667837500\"><strong>Supplements:</strong> Dietary supplement packed with multivitamins, amino-acids, minerals and omega-3 fatty acid to provide the body with nourishment</p>\n<p><img height=\"46\" width=\"58\" style=\"float: left;\" alt=\"\" class=\"inside-img\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Tea.png?v=1667837499\"><strong>Herbal Teas:</strong> Caffeine-free herbal teas loaded with healthy antioxidants, and will keep you hydrated during your week.</p>",
+            "page": ""
+          }
+        },
+        "9344d915-e31e-4901-8182-46abdde8b6ab": {
+          "type": "faq",
+          "settings": {
+            "title": "Why to add Reset in your life?",
+            "description": "<p>Reset is the only product that can nourish your body for a full day while your cells think you are not eating and therefore stay in a protective and rejuvenating state. It is a great detox, reboot, and maintenance product that balances your diet and washes the previous days of eating or drinking! The goal of reset is to provide you with premium plant-based, clean, low-carb, gluten-free nutrition that prolongs the previous overnight fast for another 24 hours, which has tremendous metabolic and cellular benefits. Reset formed around the Fasting Mimicking Nutri technology developed and tested by 14 global universities and L-Nutra to nourish you with premium quality plant-based food while inducing the cellular, metabolic, and emotional benefits of Prolonged fasting. It is a scientific breakthrough that took 2 decades, $48MM in research. and awarded 40+ patents — including the only patent in history on a nutrition program to enhance longevity and healthspan.</p>",
+            "page": ""
+          }
+        },
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b": {
+          "type": "faq",
+          "settings": {
+            "title": "Nutritional Fact Information",
+            "description": "<h4 class=\"my-2\"><b>ALGAL OIL DHA 200 mg FOOD SUPPLEMENT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>per softgel</th>\n</tr>\n<tr>\n    <td>Algae oil <br>providing DHA (Docosahexaenoic Acid)</td>\n    <td>500 mg <br>200 mg</td>\n</tr>\n</tbody>\n</table>\n\n<p class=\"mt-2\">Serving size: 1 soft gel capsule</p>\n\n<p class=\"my-2\"><b>INGREDIENTS:</b> Aurantiochytrium Sp., Algal Oil, Hypromellose (Emulsifer), Silicon Dioxide (Anticaking Agent), Water. <br><b>STORAGE:</b> Store in a cool, dry place, below 25°C, away from direct sunlight. <br><b>WARNINGS:</b> Do not exceed the recommended daily dose. The supplements are not intended as a substitute for a varied diet. <br><b>KEEP OUT OF THE REACH OF CHILDREN.</b></p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>ALMONDS &amp; KALE CRACKER</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>2249 KJ <br>542 Kcal</td>\n    <td>742 KJ <br>179 Kcal</td>\n    <td>9%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>39 g <br>4 g</td>\n    <td>13 g <br>1.3 g</td>\n    <td>19% <br>7%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>26 g <br>3.6 g</td>\n    <td>19 g <br>3 g</td>\n    <td>7% <br>3%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>3.8 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>16 g</td>\n    <td>5.2 g</td>\n    <td>10%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>1.4 g</td>\n    <td>0.5 g</td>\n    <td>8%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> <b>Almonds</b>, <b>Sesame</b> Tapioca Flour, Chia Seeds, Flax Seeds, Sunflower Oil, Kale, Sea Salt, Coconut Sugar, Coconut Vinegar, Onion, Cumin Seeds, Black Pepper, Tocopherols (Antioxidant), Garlic, Oregano, Citric Acid (Acidity Regulator). <br><b>ALLERGENS:</b> For allergens, see ingredients in bold <br><b>STORAGE:</b> Store in a cool, dry place</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>L-BAR CHOCO CRISP</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>23 g</th>\n    <th>%CR†: 23 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1693 KJ <br>407 Kcal</td>\n    <td>389 KJ <br>94 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>20 g <br>3.2 g</td>\n    <td>4.6 g <br>0.7 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>35 g <br>14 g</td>\n    <td>8.1 g <br>2.7 g</td>\n    <td>3% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>23 g</td>\n    <td>5.2 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>9.7 g</td>\n    <td>2.2 g</td>\n    <td>4%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>0.24 g</td>\n    <td>0.06 g</td>\n    <td>1%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Inulin, <b>Almond</b> Butter, Brown Rice Crispy, Cocoa Powder , Chopped <b>Almonds</b>, Chocolate Chips (Cane Sugar, Unsweetened Chocolate, Cocoa Butter), Rolled Oats, Brown Rice Syrup, Flaxseed Oil, Rice Dextrin, Grape Juice, Salt. <br><b>ALLERGENS:</b> For allergens, see ingredients in bold. <b>MAY CONTAIN FRAGMENTS OF NUT SHELLS</b> <br><b>STORAGE:</b> Store in a cool, dry place</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>L-BAR NUT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>46 g</th>\n    <th>%CR†: 46 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>2377 KJ <br>575 Kcal</td>\n    <td>1094 KJ <br>264 Kcal</td>\n    <td>13%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>48 g <br>9.1 g</td>\n    <td>2 g <br>4.2 g</td>\n    <td>32% <br>21%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>19 g <br>19 g</td>\n    <td>8.9 g <br>8.9 g</td>\n    <td>3% <br>10%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>5.3 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>10 g</td>\n    <td>4.8 g</td>\n    <td>10%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>0.38 g</td>\n    <td>0.18 g</td>\n    <td>3%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> <b>Macadamia Nuts</b>, Honey, <b>Pecan Nuts</b>, Chopped <b>Almonds</b>, <b>Almond</b> Butter, Desiccated Coconut, Inulin, Flaxseed, Coconut Oil, Coconut Flour, Sea Salt, Natural Flavour, Anti-oxidant: Tocopherol-rich-extract, Acid: Citric Acid, Anti-oxidant: Ascorbic Acid. <br><b>ALLERGENS:</b> For allergens, see ingredients in bold. <b>MAY CONTAIN FRAGMENTS OF NUT SHELLS</b> <br><b>STORAGE:</b> Store in a cool, dry place</p>\n\n<hr class=\"my-8\">    \n\n<h4 class=\"my-2\"><b>BUTTERNUT SQUASH SOUP MIX</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1350 KJ <br>321 Kcal</td>\n    <td>446 KJ <br>106 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>4.5 g <br>0.7 g</td>\n    <td>1.5 g <br>0.2 g</td>\n    <td>2% <br>1%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>56 g <br>10 g</td>\n    <td>18 g <br>3.4 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>17 g</td>\n    <td>5.8 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>6 g</td>\n    <td>2 g</td>\n    <td>4%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>6 g</td>\n    <td>2 g</td>\n    <td>33%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Butternut Squash*, Rice Flour, Whole Grain Brown Rice, Inulin, Sea Salt, Carrots*, Olive Oil* (Olive Oil, Potato Starch, Rosemary Extract), Onion*, Yeast Extract. *dried. <br><b>STORAGE:</b> Store in a cool, dry place</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>OLIVES GREEN PITTED, SEA SALT FLAVOURED</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>20 g</th>\n    <th>%CR†: 20 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>703 KJ <br>170 Kcal</td>\n    <td>140 KJ <br>34 Kcal</td>\n    <td>2%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>17 g <br>3.2 g</td>\n    <td>3.3 g <br>0.6 g</td>\n    <td>5% <br>3%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>18 g <br>0.2 g</td>\n    <td>0.4 g <br>0 g</td>\n    <td>0% <br>0%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>0.5 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>16 g</td>\n    <td>0.4 g</td>\n    <td>1%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>1.4 g</td>\n    <td>0.4 g</td>\n    <td>6%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Olives, Extra Virgin Olive Oil, Sea Salt. <b>MAY CONTAINS PITS OR PITS FRAGMENTS</b> <br><b>STORAGE:</b> Store in a cool, dry place. Refrigerate after opening.</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>NR-3 MULTIVITAMIN AND MINERALS FOOD SUPPLEMENT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>per softgel</th>\n    <th>%VNR*</th>\n  </tr>\n  <tr>\n    <td>MAGNESIUM OXIDE</td>\n    <td>60.0 mg</td>\n    <td>16%</td>\n  </tr>\n<tr>\n    <td>VITAMIN C</td>\n    <td>45 mg</td>\n    <td>56%</td>\n  </tr>\n<tr>\n    <td>NIACIN:</td>\n    <td>8.0 mg NE</td>\n    <td>50%</td>\n  </tr>\n<tr>\n    <td>VITAMIN E</td>\n    <td>7.5 mg</td>\n    <td>63%</td>\n  </tr>\n<tr>\n    <td>ZINC</td>\n    <td>5.3 mg</td>\n    <td>53%</td>\n  </tr>\n<tr>\n    <td>PANTOTENIC ACID</td>\n    <td>2.5 mg</td>\n    <td>42%</td>\n</tr>\n<tr>\n    <td>VITAMIN B6</td>\n    <td>0.85 mg</td>\n    <td>61%</td>\n</tr>\n<tr>\n    <td>RIBOFLAVIN</td>\n    <td>0.65 mg</td>\n    <td>46%</td>\n</tr>\n<tr>\n    <td>THIAMIN</td>\n    <td>0.60 mg</td>\n    <td>55%</td>\n</tr>\n<tr>\n    <td>COPPER</td>\n    <td>0.45 mg</td>\n    <td>45%</td>\n</tr>\n<tr>\n    <td>FOLIC ACID</td>\n    <td>200 µg</td>\n    <td>100%</td>\n</tr>\n<tr>\n    <td>VITAMIN A</td>\n    <td>450 µg RE</td>\n    <td>56%</td>\n</tr>\n<tr>\n    <td>SELENIUM</td>\n    <td>28 µg</td>\n    <td>50%</td>\n</tr>\n<tr>\n    <td>BIOTIN</td>\n    <td>15 µg</td>\n    <td>30%</td>\n</tr>\n<tr>\n    <td>VITAMIN B12</td>\n    <td>1.2 µg</td>\n    <td>48%</td>\n</tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Serving size: 1 soft gel capsule of 380 mg</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Anti-caking Agents: Magnesium Salts Of Fat Acids, Capsule: Tapioca Gelatin, Magnesium Oxide, Ascorbic Acid, Zinc Gluconate, Dl-alpha-tocopherol Acetate, Niacin, Beta-carotene, Selenium Yeast, Pantothenic Acid, Pyridoxine Hydrochloride, Thiamin Hydrochloride, Copper Gluconate, Folic Acid, Biotin, Cyanocobalamin. <br><b>DIRECTIONS:</b> Take 1 capsule daily, with food. <br><b>STORAGE:</b> Store in a dry place, below 25°C, away from direct sunlight. <br><b>WARNINGS:</b> Do not exceed the recommended daily dose. The supplements are not intended as a substitute for a varied diet. keep out of reach of children.</p>\n\n<hr class=\"my-8\">\n\n<h4 class=\"my-2\"><b>TOMATO SOUP MIX</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1378 KJ <br>328 Kcal</td>\n    <td>455 KJ <br>108 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>6 g <br>0.9 g</td>\n    <td>2 g <br>0.3 g</td>\n    <td>3% <br>1%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>50 g <br>11 g</td>\n    <td>17 g <br>3.7 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>20 g</td>\n    <td>4 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>7.8 g</td>\n    <td>2.6 g</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>5.7 g</td>\n    <td>1.9 g</td>\n    <td>31%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n<p class=\"my-2\"><b>INGREDIENTS:</b> Rice Flour, Tomato*, Inulin, Onion*, Sea Salt, Olive Oil* (Olive Oil, Potato Starch, Rosemary Extract), Whole Grain Brown Rice, Yeast Extract, Basil*, Parsley*. *dried. <br><b>STORAGE:</b> Store in a cool, dry place.</p>\n\n<a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/ProLon_ReSet_-_Nutrition_Information.pdf?v=1682089035\" target=\"_blank\" class=\"btn text-white mt-8\">Download the Nutritional Fact Information</a>",
+            "page": ""
+          }
+        },
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/reset.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/reset_copia.png",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "3249540d-84c9-4229-877c-a0d4369db659": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/reset-pdp-3_ba5320ae-31d5-463f-9202-c4741113ab34.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/reset-pdp-4_a0f17b73-d8dc-4198-bf20-d778ac860f5c.webp",
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "a1130c1d-ef09-4b50-868d-90efd691e541": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/reset-pdp-5_d5496a09-284e-4614-bd2f-7579a319392a.webp",
+            "media_type": "video",
+            "video_url": "https://player.vimeo.com/video/815706031?h=f9c78bf0a1&badge=0&autopause=0&player_id=0&app_id=58479"
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "7de5af29-f9f6-4e2e-8059-675fa3a5a512",
+        "9344d915-e31e-4901-8182-46abdde8b6ab",
+        "6cee8099-ee16-49c1-91f4-c39c52611c9b",
+        "019141fb-ae69-4220-bf9e-3922df2cb5f5",
+        "d3b84d0a-7024-4bbd-bf14-1cd7364e4fe3",
+        "3249540d-84c9-4229-877c-a0d4369db659",
+        "ee79be28-f8d9-4c9a-bf18-91dc5a2d82ff",
+        "a1130c1d-ef09-4b50-868d-90efd691e541"
+      ],
+      "custom_css": [
+        ".nutrition-declaration table,.nutrition-declaration th,.nutrition-declaration td {border-width: 0px 0px 1px; border-style: solid; border-color: #0f0a0a; margin: 0px; padding: 0px;}"
+      ],
+      "settings": {
+        "custom_css_class": "md:!mb-[200px]",
+        "product": "reset-variety-2-esp",
+        "theme_option": "theme_green",
+        "show_description": true,
+        "show_reviews": true,
+        "custom_product_title": true,
+        "sub_title": "Expiring Soon Products",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option2",
+        "option_1_name": "Choose {option}",
+        "option_1": "button",
+        "option_2_name": "Select {option}",
+        "option_2": "button",
+        "option_3_name": "Select {option}",
+        "option_3": "subscription-widget-new-v2"
+      }
+    },
+    "86c1387c-eda4-4439-a281-8bcbfdf5aa3b": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "template--16323203530910__86c1387c-eda4-4439-a281-8bcbfdf5aa3b-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section\" style=\"background-color: #f4f7f1; color: black; text-align: center; padding: 30px; margin-bottom: 40px; margin-top: 40px;\"><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Prolon_HSA_FSA_Eligable.svg?v=1702685554\" style=\"max-width: 300px; margin:auto;\"><p style=\"padding-top: 1%;\">Prolon is eligible for purchase and reimbursement with HSA/FSA — partnered with TrueMed. Questions?  <a href=\"https://prolonlife.com/pages/fsa-hsa-faqs\" alt=\"FAQs on FSA/HSA\" style=\"font-weight: 600;\">Learn more</a></p></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16323203530910__86c1387c-eda4-4439-a281-8bcbfdf5aa3b-liquid-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a": {
+      "type": "pl-you-may-like",
+      "blocks": {
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1": {
+          "type": "boxes",
+          "settings": {
+            "title": "Performance Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2": {
+          "type": "boxes",
+          "settings": {
+            "title": "Intermittent Fasting Bundle",
+            "Products": ""
+          }
+        },
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3": {
+          "type": "boxes",
+          "settings": {
+            "title": "Longevity Essentials Bundle",
+            "Products": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-1",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-2",
+        "template--15646559174703__a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a-boxes-3"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "The only scientifically backed 1-day nutrition kit that keeps your body in a fasting state, helping you take the time to reset and recharge.",
+        "subtitle": "WHY RESET",
+        "description": "<div>\n        Use it during any day of the week whenever you feel that you had a few days of overindulgence or unhealthy lifestyle. Or adopt it as a fasting nutrition lifestyle program by consuming it once or twice a week (for example, use it as the 5:2 diet - two days of fasting nutrition, 5 days of traditional food).\n        <br><br> \n        It is also the perfect companion if you want to transition to an easier Intermittent Fasting experience during which you eat carb- controlled food and recoup some of the benefits of fasting!\n        </div>",
+        "image": "shopify://shop_images/Image_2x_b3c0b95c-1a67-45fa-959d-ee4c532063e3.webp",
+        "image_on_left": false,
+        "image_contain": true
+      }
+    },
+    "151dd957-c577-4c56-a299-49b055fb668a": {
+      "type": "pl-image-with-text",
+      "settings": {
+        "title": "20+ years of science packed into a 1-day Reset",
+        "subtitle": "HOW IT WORKS",
+        "description": "<div>\n    Prolon Reset provides you a day of innovative nutrition formula that was scientifically tested and patented to feed your body while keeping it in a physiological fasting state. This Nutrition Program induces your body to breakdown fat and use it as fuel, similar to what happens when you water fast.*\n<br>\n<br>\nEnjoy a day free of artificial foods and food preparation while inspiring your new journey of longevity lifestyle!\n<br>\n<br>\n*Based on the fasting mimicking technology of Prolon.\n</div>",
+        "image": "shopify://shop_images/assets_539e4c6b549049fdb80b37c4b87772db_81276779d9904e04b9b892a86a21c7f9_2f0d42ff-12bc-4f33-b3ce-81e5becff72b.webp",
+        "image_on_left": true,
+        "image_contain": true
+      }
+    },
+    "6b87c188-5e3d-4485-82e3-54b55007d095": {
+      "type": "pl-reset-hero",
+      "disabled": true,
+      "settings": {
+        "description": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/menu-removebg.png?v=1653993397\" class=\"mobile-only\">",
+        "image_desktop": "shopify://shop_images/diet_card_reset.png",
+        "image_mobile": "shopify://shop_images/ReSet_-_What_s_Inside_Mobile-VNR3_900x_25cc2c52-3910-4668-a141-e32b65d012d4.webp"
+      }
+    },
+    "image_banner_YMydbB": {
+      "type": "image-banner",
+      "name": "Image Banner",
+      "settings": {
+        "banner_url": "",
+        "desktop_image": "shopify://shop_images/diet_card_reset.png"
+      }
+    },
+    "ae4317b1-5640-4365-acf9-72e4b15c46d1": {
+      "type": "pl-faqs",
+      "blocks": {
+        "c89833c7-062c-4926-8ea8-048949a22e8d": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is ProLon Reset and how do I use it?",
+            "answer": "<p>ProLon ReSet is a 1-day fasting nutrition program that uses a patented, precise blend of plant-based nutrients to provide you essential nutrition and fuel without activating your body’s food sensing system. ProLon ReSet is for people who are interested in amping up their Intermittent Fasting, or simply giving their body a much-needed break from mindless eating and high-calorie sugar and carb diets with a nutrition program that can give you the benefits of a full day fast. </p><p>In short, ProLon ReSet introduces you to the world of fasting by giving your body a break and chance to ReSet. ProLon ReSet can help manage your hunger with this 1 day fasting kit and experience a full day fast without starving yourself. </p><p><strong>How does ProLon ReSet support fasting?</strong> </p><p>ProLon ReSet helps you enter the transformational fasting lifestyle of <em>fasting with food</em>*. When you do a ProLon ReSet, you eat while your body thinks it’s fasting because the scientifically designed combination of nutrients does not trigger nutrient sensing pathways. During this 1-day fast, your body’s ketone levels will rise as your body starts to break down fat stores for fuel, and your glucose levels will remain steady – similar to what happens when you’re fasting. </p><p><em>*Based on the fasting mimicking technology of ProLon.</em> </p>"
+          }
+        },
+        "7e88369e-9ad2-4ad9-89a3-1bc0824e9706": {
+          "type": "faqs",
+          "settings": {
+            "question": "Who can use Prolon Reset?",
+            "answer": "<p>ProLon ReSet is for people who are interested in amping up their Intermittent Fasting, or simply giving their body a much-needed break from mindless eating and high-calorie sugar and carb diets with a nutrition program that can give you the benefits of a full day fast. This reset is for you if you want to: </p><p>• Give your body a 1-day break from mindless eating and a high-calorie sugar and carb diet and allow the body to recover through active fasting. <br>• Break the cycle and balance out over-indulgence with a 1-day ReSet intervention <br>• Amp up your cleanse and Intermittent Fasting routines <br>• Start your journey into healthy aging through an Intermittent Fasting Longevity lifestyle </p><p> <em>*If you have diabetes or are taking any medication that affects blood sugar please consult with a healthcare provider prior to attempting fasting or a low-calorie diet.</em> <em>Consult with a healthcare professional before starting any diet, supplement or exercise program.</em> </p>"
+          }
+        },
+        "e6882ae8-748a-46e2-82fc-87b1dad5da6c": {
+          "type": "faqs",
+          "settings": {
+            "question": "How do I use Prolon Reset?",
+            "answer": "<p>ProLon ReSet makes it easier to fast for a full day by giving you nourishment, fuel, and curbing hunger while keeping your body fasting!</p><ul>\n                <li>Use as a full day fasting break for your body whenever you need a reset from unhealthy eating </li>\n                <li>Use to amp up your cleanse routine. You can choose to use it twice per week to optimize the benefits of the reset.</li>\n                <li>Use as part of your Intermittent Fasting (5:2 Diet) routine.<ul>\n                <li>Intermittent fasting (IF) can be defined as fasting for less than 2 days and has become the number one diet in the United States. While there are a variety of fasting methods within the category of IF, such as the 5:2 Diet, they are all based on eating patterns that alternate between intervals of eating and fasting. </li>\n                <li>ProLon ReSet is ideal to use within the 5:2 Diet: this type of IF entails fasting during specific days of the week. For this approach, individuals either eliminate or severely restrict their calories for two (non-consecutive) days of the week and then resume their normal diet for the other five days. You can use ProLon ReSet on your 2 fasting days per week and eat your regular diet for the other 5 days of the week. </li>\n                </ul>\n                </li>\n                </ul>"
+          }
+        },
+        "6555fd45-102a-47de-a0cb-eb390bd1be2b": {
+          "type": "faqs",
+          "disabled": true,
+          "settings": {
+            "question": "How often can I do Reset?",
+            "answer": "<p>With ProLon ReSet, you can experience a 1-day fast to see if fasting is right for you or use it whenever you feel you need a reset from overindulgence. You can use ProLon ReSet to either:  \n \n                </p><ol>\n                <li>Amp up your cleanse routine by using it twice per week to optimize the benefits of the reset. </li>\n                 \n                <li>Incorporate into your intermittent fasting 5:2 Diet routine. Consistent with the duration of your 5:2 Diet routine, you can use ProLon ReSet on your 2 fasting days per week and eat your regular diet for the other 5 days of the week. For example, if you choose to follow a 5:2 routine for 3 weeks every month, you would use 6 resets within that month. \n                </li>\n                 \n                </ol>\n                If you seek the benefits of Prolonged Fasting including autophagy and rejuvenation, our 5-Day ProLon Fasting Mimicking Diet (FMD) has been extensively tested, has been safely used by hundreds of thousands of generally healthy consumers, and has been clinically tested to provide many benefits including the support overall metabolic health when used in multiple consecutive cycles. As with any diet, you should talk to your healthcare provider, who may recommend doing monthly cycles until you reach your individual goals, and then every 3-6 months thereafter to maintain benefits. For more info on ProLon, go to <a href=\"https://prolonfmd.com\">www.prolonfmd.com</a>. <p></p>"
+          }
+        },
+        "442a4b15-5917-4f3c-8bab-10f7130eaf52": {
+          "type": "faqs",
+          "disabled": true,
+          "settings": {
+            "question": "How often can I do Reset?",
+            "answer": "<p>With ProLon ReSet, you can experience a 1-day fast to see if fasting is right for you or use it whenever you feel you need a reset from overindulgence. You can use ProLon ReSet to either:  \n \n                </p><ol>\n                <li>Amp up your cleanse routine by using it twice per week to optimize the benefits of the reset. </li>\n                 \n                <li>Incorporate into your intermittent fasting 5:2 Diet routine. Consistent with the duration of your 5:2 Diet routine, you can use ProLon ReSet on your 2 fasting days per week and eat your regular diet for the other 5 days of the week. For example, if you choose to follow a 5:2 routine for 3 weeks every month, you would use 6 resets within that month. \n                </li>\n                 \n                </ol>\n                If you seek the benefits of Prolonged Fasting including autophagy and rejuvenation, our 5-Day ProLon Fasting Mimicking Diet (FMD) has been extensively tested, has been safely used by hundreds of thousands of generally healthy consumers, and has been clinically tested to provide many benefits including the support overall metabolic health when used in multiple consecutive cycles. As with any diet, you should talk to your healthcare provider, who may recommend doing monthly cycles until you reach your individual goals, and then every 3-6 months thereafter to maintain benefits. For more info on ProLon, go to <a href=\"https://prolonfmd.com\">www.prolonfmd.com</a>. <p></p>"
+          }
+        },
+        "c7ffae26-00cd-4664-8f9b-2bc241d1219a": {
+          "type": "faqs",
+          "settings": {
+            "question": "How often can I do Reset?",
+            "answer": "<p>With ProLon ReSet, you can experience a 1-day fast to see if fasting is right for you or use it whenever you feel you need a reset from overindulgence. You can use ProLon ReSet to either:  \n \n                </p><ol>\n                <li>Amp up your cleanse routine by using it twice per week to optimize the benefits of the reset. </li>\n                 \n                <li>Incorporate into your intermittent fasting 5:2 Diet routine. Consistent with the duration of your 5:2 Diet routine, you can use ProLon ReSet on your 2 fasting days per week and eat your regular diet for the other 5 days of the week. For example, if you choose to follow a 5:2 routine for 3 weeks every month, you would use 6 resets within that month. \n                </li>\n                 \n                </ol>\n                If you seek the benefits of Prolonged Fasting including autophagy and rejuvenation, our 5-Day ProLon Fasting Mimicking Diet (FMD) has been extensively tested, has been safely used by hundreds of thousands of generally healthy consumers, and has been clinically tested to provide many benefits including the support overall metabolic health when used in multiple consecutive cycles. As with any diet, you should talk to your healthcare provider, who may recommend doing monthly cycles until you reach your individual goals, and then every 3-6 months thereafter to maintain benefits. For more info on ProLon, go to <a href=\"https://prolonfmd.com\">www.prolonfmd.com</a>. <p></p>"
+          }
+        },
+        "7a7df258-71b2-4438-b6f1-95694664bae1": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is the research behind Reset?",
+            "answer": "<p>ProLon ReSet is designed with the same technology as the ProLon Fasting Mimicking Diet®. Our technology is the result of over 20 years of preclinical and clinical testing, inspired by Nobel Prize winning science and awarded over 36 million US dollars in research and development funding from institutions including the National Institutes of Health and the European Union.</p>"
+          }
+        },
+        "a6c57748-cf1a-4732-8434-e9b8971f9437": {
+          "type": "faqs",
+          "settings": {
+            "question": "What foods or drinks can I add to Reset?",
+            "answer": "<p>Although additions are discouraged to minimize the risk of breaking the fast, you can choose to add:</p><p>• Unlimited herbal teas (unsweetened and caffeine free)<br>• All types of sparkling water are fine (no sweeteners of any kind)<br>• Caffeine up to 140 mg per day:</p><p>--1 cup (8-12fl oz) of coffee (no cream or sweetener)<br>---or- 2 cups (16fl oz) of black or green tea (traditionally steeped), no matcha<br>---or- 6 cups (48fl oz) of decaf coffee (no cream of sweetener)</p><p>• Up to 1 tablespoon of dried herbs or spices per day to your soups or other foods in the diet to enhance the flavor (preferably unprocessed, e.g., red pepper flakes)<br>• Up to 1 teaspoon of sea salt (as long as there are no health contraindications)<br>• Up to 2 slices of lemon per day (squeezed, not eaten), whether you use it in your soups, herbal teas, or water.<br>• Up to 2 pieces of sugar-free gum per day while on ProLon.</p><p>You should add food to the program only as a last resort if you are so incredibly hungry that you feel like you are going to break the fast. In such an instance, you may have a slice or two of apple, 1 stalk of celery, or 1 small Persian (“baby”) cucumber of 5-6 inches in length per day.</p>"
+          }
+        },
+        "4f575ef9-bd64-491d-b178-72e77102a7a4": {
+          "type": "faqs",
+          "settings": {
+            "question": "Can Reset be used for prolonged periodic fasting?",
+            "answer": "<p>ProLon ReSet is designed to support intermittent fasting (overnight fasts, and fasts lasting less than two days) as part of an everyday healthy lifestyle. If you’re looking for the benefits of prolonged periodic fasting (longer than 2 days) including support of weight loss and fat loss, metabolic health, or a jumpstart to lifestyle transformation, we recommend that you try the 5-Day ProLon Fasting Mimicking Diet.</p>"
+          }
+        },
+        "bb414938-07da-426e-a85c-80e11b6931e8": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is the difference between Reset and Prolon FMD?",
+            "answer": "<p>ProLon ReSet is a 1-day fast that is derived from the science behind the 5-day ProLon Fasting Mimicking Diet. ProLon ReSet is designed to support intermittent fasting (overnight fasts, and fasts lasting less than two days) as part of an everyday healthy lifestyle.</p><p>If you’re looking for the benefits of prolonged periodic fasting (PF) (longer than 2 days), including support of weight loss and fat loss, cellular rejuvenation, metabolic health, or a jumpstart to lifestyle transformation, we recommend that you try the 5-Day ProLon Fasting Mimicking Diet. Due to its extended duration, PF goes beyond providing weight loss and fat reduction to promote biological fasting and a process known as <em>autophagy</em>, the clean-up of aging and worn-out intracellular components. These cellular cleansing and rejuvenating effects can only be attained through cellular stress such as a prolonged fast like the 5-day ProLon FMD.</p>"
+          }
+        },
+        "808b7c77-afd4-4f7d-aec5-65d652544345": {
+          "type": "faqs",
+          "settings": {
+            "question": "Can I use Reset to extend my Prolon FMD 5-day fast?",
+            "answer": "<p>ProLon ReSet is designed to use as a full day fasting break when you need a reset, want to amp up your cleansing routine, or are practicing intermittent fasting as part of a 5:2 Diet routine (fast 2 days per week, eat regular diet for other 5 days of the week). We do not recommend adding a ProLon ReSet day before or after completing 5 days of ProLon, as this has not been tested in any of our studies and may be unsafe in certain people.  </p>"
+          }
+        },
+        "2ebccc27-d123-4443-bf8c-a997269bc2c9": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is the difference between Prolon Fast Pack and Reset?",
+            "answer": "<p>Prolon Reset is our newest version of a 1-day fast with ProLon. While ProLon Fast Pack offered a way to ease yourself into fasting, ProLon ReSet offers a 1-day fast that has been shown to keep your body in a fasted state*. This newer formulation along with fewer calories, is derived from the science behind the 5-day ProLon Fasting Mimicking Diet and is specifically designed to support intermittent fasting (IF) routines. We have designed ProLon ReSet to fit a 5:2 Diet which is an intermittent fasting diet that allows people to eat their regular diet 5 days a week and then limit calories on the other 2 (non-consecutive) days. You can use ProLon ReSet on your fasting days for IF up to a day or as part of your 5:2 diet routine, depending on your needs and lifestyle. </p><p><em>*Based on the fasting mimicking technology of ProLon.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "c89833c7-062c-4926-8ea8-048949a22e8d",
+        "7e88369e-9ad2-4ad9-89a3-1bc0824e9706",
+        "e6882ae8-748a-46e2-82fc-87b1dad5da6c",
+        "6555fd45-102a-47de-a0cb-eb390bd1be2b",
+        "442a4b15-5917-4f3c-8bab-10f7130eaf52",
+        "c7ffae26-00cd-4664-8f9b-2bc241d1219a",
+        "7a7df258-71b2-4438-b6f1-95694664bae1",
+        "a6c57748-cf1a-4732-8434-e9b8971f9437",
+        "4f575ef9-bd64-491d-b178-72e77102a7a4",
+        "bb414938-07da-426e-a85c-80e11b6931e8",
+        "808b7c77-afd4-4f7d-aec5-65d652544345",
+        "2ebccc27-d123-4443-bf8c-a997269bc2c9"
+      ],
+      "settings": {
+        "main_title": "Faqs",
+        "main_description": "Fasting and Prolon Reset – General Information",
+        "title": "What is it & how is it used?"
+      }
+    },
+    "5cbfdae3-f762-4c84-8d2e-561f0fb64193": {
+      "type": "pl-faqs",
+      "blocks": {
+        "f1d55b9d-597c-480f-af62-9b3002ad0cb8": {
+          "type": "faqs",
+          "settings": {
+            "question": "Soups",
+            "answer": "<div class=\"row\">\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>TOMATO SOUP MIX</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1378 KJ <br>328 Kcal</td>\n    <td>455 KJ <br>108 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>6 g <br>0.9 g</td>\n    <td>2 g <br>0.3 g</td>\n    <td>3% <br>1%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>50 g <br>11 g</td>\n    <td>17 g <br>3.7 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>20 g</td>\n    <td>4 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>7.8 g</td>\n    <td>2.6 g</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>5.7 g</td>\n    <td>1.9 g</td>\n    <td>31%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n<p class=\"my-2\"><b>INGREDIENTS:</b> Rice Flour, Tomato*, Inulin, Onion*, Sea Salt, Olive Oil* (Olive Oil, Potato Starch, Rosemary Extract), Whole Grain Brown Rice, Yeast Extract, Basil*, Parsley*. *dried. <br><b>STORAGE:</b> Store in a cool, dry place.</p>\n</div>\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>BUTTERNUT SQUASH SOUP MIX</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1350 KJ <br>321 Kcal</td>\n    <td>446 KJ <br>106 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>4.5 g <br>0.7 g</td>\n    <td>1.5 g <br>0.2 g</td>\n    <td>2% <br>1%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>56 g <br>10 g</td>\n    <td>18 g <br>3.4 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>17 g</td>\n    <td>5.8 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>6 g</td>\n    <td>2 g</td>\n    <td>4%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>6 g</td>\n    <td>2 g</td>\n    <td>33%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Butternut Squash*, Rice Flour, Whole Grain Brown Rice, Inulin, Sea Salt, Carrots*, Olive Oil* (Olive Oil, Potato Starch, Rosemary Extract), Onion*, Yeast Extract. *dried. <br><b>STORAGE:</b> Store in a cool, dry place</p>\n</div>\n</div>"
+          }
+        },
+        "765e484d-af77-4277-914d-fde3fb1e3508": {
+          "type": "faqs",
+          "settings": {
+            "question": "Bars",
+            "answer": "<div class=\"row\">\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>L-BAR CHOCO CRISP</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>23 g</th>\n    <th>%CR†: 23 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>1693 KJ <br>407 Kcal</td>\n    <td>389 KJ <br>94 Kcal</td>\n    <td>5%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>20 g <br>3.2 g</td>\n    <td>4.6 g <br>0.7 g</td>\n    <td>7% <br>4%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>35 g <br>14 g</td>\n    <td>8.1 g <br>2.7 g</td>\n    <td>3% <br>4%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>23 g</td>\n    <td>5.2 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>9.7 g</td>\n    <td>2.2 g</td>\n    <td>4%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>0.24 g</td>\n    <td>0.06 g</td>\n    <td>1%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Inulin, <b>Almond</b> Butter, Brown Rice Crispy, Cocoa Powder , Chopped <b>Almonds</b>, Chocolate Chips (Cane Sugar, Unsweetened Chocolate, Cocoa Butter), Rolled Oats, Brown Rice Syrup, Flaxseed Oil, Rice Dextrin, Grape Juice, Salt. <br><b>ALLERGENS:</b> For allergens, see ingredients in bold. <b>MAY CONTAIN FRAGMENTS OF NUT SHELLS</b> <br><b>STORAGE:</b> Store in a cool, dry place</p>\n</div>\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>L-BAR NUT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>46 g</th>\n    <th>%CR†: 46 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>2377 KJ <br>575 Kcal</td>\n    <td>1094 KJ <br>264 Kcal</td>\n    <td>13%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>48 g <br>9.1 g</td>\n    <td>2 g <br>4.2 g</td>\n    <td>32% <br>21%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>19 g <br>19 g</td>\n    <td>8.9 g <br>8.9 g</td>\n    <td>3% <br>10%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>5.3 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>10 g</td>\n    <td>4.8 g</td>\n    <td>10%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>0.38 g</td>\n    <td>0.18 g</td>\n    <td>3%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> <b>Macadamia Nuts</b>, Honey, <b>Pecan Nuts</b>, Chopped <b>Almonds</b>, <b>Almond</b> Butter, Desiccated Coconut, Inulin, Flaxseed, Coconut Oil, Coconut Flour, Sea Salt, Natural Flavour, Anti-oxidant: Tocopherol-rich-extract, Acid: Citric Acid, Anti-oxidant: Ascorbic Acid. <br><b>ALLERGENS:</b> For allergens, see ingredients in bold. <b>MAY CONTAIN FRAGMENTS OF NUT SHELLS</b> <br><b>STORAGE:</b> Store in a cool, dry place</p>\n</div>\n</div>"
+          }
+        },
+        "e30face4-4e5c-49a8-8d6e-0fa2fb7b4309": {
+          "type": "faqs",
+          "settings": {
+            "question": "Snacks",
+            "answer": "<div class=\"row\">\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>ALMONDS & KALE CRACKER</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>33 g</th>\n    <th>%CR†: 33 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>2249 KJ <br>542 Kcal</td>\n    <td>742 KJ <br>179 Kcal</td>\n    <td>9%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>39 g <br>4 g</td>\n    <td>13 g <br>1.3 g</td>\n    <td>19% <br>7%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>26 g <br>3.6 g</td>\n    <td>19 g <br>3 g</td>\n    <td>7% <br>3%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>3.8 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>16 g</td>\n    <td>5.2 g</td>\n    <td>10%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>1.4 g</td>\n    <td>0.5 g</td>\n    <td>8%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> <b>Almonds</b>, <b>Sesame</b> Tapioca Flour, Chia Seeds, Flax Seeds, Sunflower Oil, Kale, Sea Salt, Coconut Sugar, Coconut Vinegar, Onion, Cumin Seeds, Black Pepper, Tocopherols (Antioxidant), Garlic, Oregano, Citric Acid (Acidity Regulator). <br><b>ALLERGENS:</b> For allergens, see ingredients in bold <br><b>STORAGE:</b> Store in a cool, dry place</p>\n</div>\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>OLIVES GREEN PITTED, SEA SALT FLAVOURED</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>100 g</th>\n    <th>20 g</th>\n    <th>%CR†: 20 g</th>\n  </tr>\n  <tr>\n    <td>Energy</td>\n    <td>703 KJ <br>170 Kcal</td>\n    <td>140 KJ <br>34 Kcal</td>\n    <td>2%</td>\n  </tr>\n<tr>\n    <td>Fat <br>of which satures:</td>\n    <td>17 g <br>3.2 g</td>\n    <td>3.3 g <br>0.6 g</td>\n    <td>5% <br>3%</td>\n  </tr>\n<tr>\n    <td>Carbohydrates <br>of which sugar: </td>\n    <td>18 g <br>0.2 g</td>\n    <td>0.4 g <br>0 g</td>\n    <td>0% <br>0%</td>\n  </tr>\n<tr>\n    <td>Fibre</td>\n    <td>11 g</td>\n    <td>0.5 g</td>\n    <td></td>\n  </tr>\n<tr>\n    <td>Protein</td>\n    <td>16 g</td>\n    <td>0.4 g</td>\n    <td>1%</td>\n  </tr>\n<tr>\n    <td>Salt</td>\n    <td>1.4 g</td>\n    <td>0.4 g</td>\n    <td>6%</td>\n  </tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Reference Intake of an average adult (8400 kJ / 2000 kcal).</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Olives, Extra Virgin Olive Oil, Sea Salt. <b>MAY CONTAINS PITS OR PITS FRAGMENTS</b> <br><b>STORAGE:</b> Store in a cool, dry place. Refrigerate after opening.</p>\n</div>\n</div>"
+          }
+        },
+        "14556b69-faa5-4895-9642-8de044c20277": {
+          "type": "faqs",
+          "settings": {
+            "question": "Supplements",
+            "answer": "<div class=\"row\">\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>ALGAL OIL DHA 200 mg FOOD SUPPLEMENT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>per softgel</th>\n</tr>\n<tr>\n    <td>Algae oil <br>providing DHA (Docosahexaenoic Acid)</td>\n    <td>500 mg <br>200 mg</td>\n</tr>\n</tbody>\n</table>\n\n<p class=\"mt-2\">Serving size: 1 soft gel capsule</p>\n\n<p class=\"my-2\"><b>INGREDIENTS:</b> Aurantiochytrium Sp., Algal Oil, Hypromellose (Emulsifer), Silicon Dioxide (Anticaking Agent), Water. <br><b>STORAGE:</b> Store in a cool, dry place, below 25°C, away from direct sunlight. <br><b>WARNINGS:</b> Do not exceed the recommended daily dose. The supplements are not intended as a substitute for a varied diet. <br><b>KEEP OUT OF THE REACH OF CHILDREN.</b></p>\n</div>\n<div class=\"column501\">\n<h4 class=\"my-2\"><b>NR-3 MULTIVITAMIN AND MINERALS FOOD SUPPLEMENT</b></h4>\n\n<table class=\"nutrition-declaration\">\n<tbody>\n<tr>\n    <th>Typical values</th>\n    <th>per softgel</th>\n    <th>%VNR*</th>\n  </tr>\n  <tr>\n    <td>MAGNESIUM OXIDE</td>\n    <td>60.0 mg</td>\n    <td>16%</td>\n  </tr>\n<tr>\n    <td>VITAMIN C</td>\n    <td>45 mg</td>\n    <td>56%</td>\n  </tr>\n<tr>\n    <td>NIACIN:</td>\n    <td>8.0 mg NE</td>\n    <td>50%</td>\n  </tr>\n<tr>\n    <td>VITAMIN E</td>\n    <td>7.5 mg</td>\n    <td>63%</td>\n  </tr>\n<tr>\n    <td>ZINC</td>\n    <td>5.3 mg</td>\n    <td>53%</td>\n  </tr>\n<tr>\n    <td>PANTOTENIC ACID</td>\n    <td>2.5 mg</td>\n    <td>42%</td>\n</tr>\n<tr>\n    <td>VITAMIN B6</td>\n    <td>0.85 mg</td>\n    <td>61%</td>\n</tr>\n<tr>\n    <td>RIBOFLAVIN</td>\n    <td>0.65 mg</td>\n    <td>46%</td>\n</tr>\n<tr>\n    <td>THIAMIN</td>\n    <td>0.60 mg</td>\n    <td>55%</td>\n</tr>\n<tr>\n    <td>COPPER</td>\n    <td>0.45 mg</td>\n    <td>45%</td>\n</tr>\n<tr>\n    <td>FOLIC ACID</td>\n    <td>200 µg</td>\n    <td>100%</td>\n</tr>\n<tr>\n    <td>VITAMIN A</td>\n    <td>450 µg RE</td>\n    <td>56%</td>\n</tr>\n<tr>\n    <td>SELENIUM</td>\n    <td>28 µg</td>\n    <td>50%</td>\n</tr>\n<tr>\n    <td>BIOTIN</td>\n    <td>15 µg</td>\n    <td>30%</td>\n</tr>\n<tr>\n    <td>VITAMIN B12</td>\n    <td>1.2 µg</td>\n    <td>48%</td>\n</tr>\n</tbody>\n</table>\n<p class=\"mt-2\">Serving size: 1 soft gel capsule of 380 mg</p>\n\n    <p class=\"my-2\"><b>INGREDIENTS:</b> Anti-caking Agents: Magnesium Salts Of Fat Acids, Capsule: Tapioca Gelatin, Magnesium Oxide, Ascorbic Acid, Zinc Gluconate, Dl-alpha-tocopherol Acetate, Niacin, Beta-carotene, Selenium Yeast, Pantothenic Acid, Pyridoxine Hydrochloride, Thiamin Hydrochloride, Copper Gluconate, Folic Acid, Biotin, Cyanocobalamin. <br><b>DIRECTIONS:</b> Take 1 capsule daily, with food. <br><b>STORAGE:</b> Store in a dry place, below 25°C, away from direct sunlight. <br><b>WARNINGS:</b> Do not exceed the recommended daily dose. The supplements are not intended as a substitute for a varied diet. keep out of reach of children.</p>\n</div>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "f1d55b9d-597c-480f-af62-9b3002ad0cb8",
+        "765e484d-af77-4277-914d-fde3fb1e3508",
+        "e30face4-4e5c-49a8-8d6e-0fa2fb7b4309",
+        "14556b69-faa5-4895-9642-8de044c20277"
+      ],
+      "custom_css": [
+        ".nutrition-declaration table,.nutrition-declaration th,.nutrition-declaration td {border-width: 0px 0px 1px; border-style: solid; border-color: #0f0a0a; margin: 0px; padding: 0px;}"
+      ],
+      "settings": {
+        "main_title": "",
+        "main_description": "",
+        "title": "Nutritional Facts"
+      }
+    },
+    "51b8b462-f121-48dc-b106-64204f430310": {
+      "type": "pl-faqs",
+      "blocks": {
+        "01a6eb36-c301-4125-b344-aac1305440bb": {
+          "type": "faqs",
+          "settings": {
+            "question": "What does the Reset kit contain?",
+            "answer": "<p>ProLon ReSet consists of plant-based soups, bars, snacks, herbal teas, and supplements designed to help support your fasting. The menu suggests which items to eat for breakfast, lunch, and dinner, but the order in which you consume your food is up to you. Eat and drink only what is in the kit except for water and herbal teas. </p>"
+          }
+        },
+        "33db7740-8f60-4ce4-a3e6-7948692b0195": {
+          "type": "faqs",
+          "settings": {
+            "question": "Is Reset vegan?",
+            "answer": "<p>ProLon ReSet is vegetarian, not vegan. Our bars contain plant-based protein and are made with honey.</p>"
+          }
+        },
+        "45c552f3-7549-4052-bbd0-6472a81e88ac": {
+          "type": "faqs",
+          "settings": {
+            "question": "Does Reset contain gluten?",
+            "answer": "<p>ProLon ReSet is gluten-free. However, they are produced in facilities that also process wheat, so we recommend you review the list of ingredients here: <a href=\"/pages/ingredients-supplement-facts\"> nutritional information</a> </p><p>L-Nutra is concerned about cross-contamination, and we take the quality of our products seriously. As such, we meet or exceed current Good Manufacturing Practices (cGMPs) as well as applicable regulatory standards. Please read our <a href=\"/pages/ingredients-supplement-facts\"> nutritional information</a> for more on potential food allergens.</p>"
+          }
+        },
+        "89e2c727-99e2-4e9a-aa99-20d9ecf7faf8": {
+          "type": "faqs",
+          "disabled": true,
+          "settings": {
+            "question": "Does Reset contain dairy?",
+            "answer": "<p>ProLon ReSet contents are dairy-free. However, they are produced in facilities that also process milk or products containing milk, so we recommend you review the list of ingredients here: <a href=\"#nutritional-facts\"> nutritional information</a>.</p>"
+          }
+        },
+        "4b38eb10-7096-435f-971a-e4f513a28ce8": {
+          "type": "faqs",
+          "settings": {
+            "question": "Does Reset contain dairy?",
+            "answer": "<p>ProLon ReSet contents are dairy-free. However, they are produced in facilities that also process milk or products containing milk, so we recommend you review the list of ingredients here: <a href=\"#nutritional-facts\"> nutritional information</a>.</p>"
+          }
+        },
+        "4e3e4216-e8bf-4e8b-bbc2-72359b0800ff": {
+          "type": "faqs",
+          "settings": {
+            "question": "How many calories are in Reset?",
+            "answer": "<p>Each kit contains 765 total calories. For additional information on caloric content from each item in ReSet, please read <a href=\"#nutritional-facts\"> nutritional information</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "01a6eb36-c301-4125-b344-aac1305440bb",
+        "33db7740-8f60-4ce4-a3e6-7948692b0195",
+        "45c552f3-7549-4052-bbd0-6472a81e88ac",
+        "89e2c727-99e2-4e9a-aa99-20d9ecf7faf8",
+        "4b38eb10-7096-435f-971a-e4f513a28ce8",
+        "4e3e4216-e8bf-4e8b-bbc2-72359b0800ff"
+      ],
+      "settings": {
+        "main_title": "",
+        "main_description": "",
+        "title": "Ingredients"
+      }
+    },
+    "db15a453-811a-4994-b3a3-93b7284fa42b": {
+      "type": "pl-faqs",
+      "blocks": {
+        "57b8d639-a9b1-4ee1-bbf7-a7bb85546a5d": {
+          "type": "faqs",
+          "settings": {
+            "question": "What is Intermittent Fasting (IF)?",
+            "answer": "<p>Intermittent fasting (IF) can be defined as fasting for less than 2 days. Time-restricted eating (e.g.: overnight fasting for 12-16 hours), the 5:2 diet, and alternate day fasting are all included under the umbrella term of IF. While there are a variety of fasting methods within the category of IF, they are all based on eating patterns that alternate between intervals of eating and fasting.</p>"
+          }
+        },
+        "e6861e75-6de9-4fde-bf15-ed701d9d0d39": {
+          "type": "faqs",
+          "settings": {
+            "question": "What are the benefits of Intermittent Fasting?",
+            "answer": "<p>People practice intermittent fasting for many reasons, including for weight loss and other potential health benefits. In terms of weight loss, by shortening the window of time during which food is consumed, generally fewer calories are consumed overall which can result in weight loss which varies by individual. There are also other potential health benefits associated with synchronizing the fasting window to the sleep cycle (i.e.: not eating after dinner). Benefits you may receive using ReSet vary between individuals, and depend on your overall lifestyle, including exercise, dietary intake on non-fasting days, and other lifestyle choices.</p>"
+          }
+        },
+        "47e1f66b-ae94-4101-9b1b-4b32178309a7": {
+          "type": "faqs",
+          "settings": {
+            "question": "What’s the difference between Intermittent Fasting (IF) and Prolonged Fasting (PF)?",
+            "answer": "<p>Intermittent fasting (IF) can be defined as fasting for less than 2 days. While there are a variety of fasting methods within the category of IF, they are all based on eating patterns that alternate between intervals of eating and fasting. One popular IF routine is the 5:2 Diet, which entails fasting during specific days of the week. For this approach, individuals either eliminate or severely restrict their calories for two (non-consecutive) days of the week and then resume their normal diet for the other five days. </p><p>Periodic fasting (PF) is fasting for more than two days, usually anywhere from three to seven consecutive days. Due to its extended duration, PF goes beyond providing weight loss and fat reduction to promote biological fasting and a process known as <em>autophagy</em>, the clean-up of aging and worn-out intracellular components. These cellular cleansing, renewing and rejuvenating effects can only be attained through a prolonged fast like the 5-day ProLon FMD. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "57b8d639-a9b1-4ee1-bbf7-a7bb85546a5d",
+        "e6861e75-6de9-4fde-bf15-ed701d9d0d39",
+        "47e1f66b-ae94-4101-9b1b-4b32178309a7"
+      ],
+      "settings": {
+        "main_title": "",
+        "main_description": "",
+        "title": "Intermittent Fasting (IF)"
+      }
+    },
+    "077734e6-2d0e-40f5-a18a-622040215d91": {
+      "type": "pl-faqs",
+      "blocks": {
+        "4eab21b2-1ea3-4e8a-ba4c-09680cbac80c": {
+          "type": "faqs",
+          "settings": {
+            "question": "Is fasting healthy and safe?",
+            "answer": "<p>Due to nature of fasting, there are common complaints associated with it including fatigue, headache, dizziness / lightheadedness, musculoskeletal pain, nausea, and difficulty with concentration during the fasting period. Complaints are mild and tolerated for most people.   </p><p>ProLon ReSet is a food-based program. Any significant change in diet (including fiber intake) can contribute to changes in your gut such as bloating, cramping and gassiness, constipation or diarrhea.  </p><p>Although ProLon ReSet is designed to reduce many of these risks of fasting by providing specific macro and micronutrients, because it is still a low-calorie diet, we encourage you to discuss with your healthcare provider whether the practice of fasting or the use of fasting mimicking diet is right for you. Please avoid the following during the 1-day program:   </p><p>• Any strenuous exercising or activities that may consume a high level of calories. <br>• Extreme temperature environments like hot tubs and saunas, or driving long distances under strong sun or heat exposure. </p><p>Since ProLon ReSet is a food-based program, please stop the product should you experience any symptom of an allergic reaction such as a rash, change in voice, swelling or fever. </p><p>If you feel light-headed or faint, you should eat something, drink juice, or consume a beverage with sugar. If your symptoms do not subside, please contact your physician, or if you feel this is a life- threatening emergency, call 911. </p>"
+          }
+        },
+        "56c3bc3d-6891-4f97-94e9-27984fa38803": {
+          "type": "faqs",
+          "settings": {
+            "question": "I am on Reset and have a medical emergency",
+            "answer": "<p>We're so sorry to hear about your experience. If at any time you're unsure of your well-being or have concerns regarding anything you are experiencing, stop your fast by consuming food. If you feel that at any time your health is a concern or you have a condition in which you need immediate medical attention, please seek the appropriate medical attention.</p>"
+          }
+        },
+        "6ca4a841-4cf4-4d8a-a4c7-371c553e994d": {
+          "type": "faqs",
+          "settings": {
+            "question": "I am experiencing adverse effects (headache, fatigue etc.) what should I do?",
+            "answer": "<p>Individuals experience fasting differently, which may be based on several contributing factors. If you’re unable to tolerate the side effects and you feel that your health is a concern at any time, we recommend consulting with your primary care physician. If they have any questions, they can contact us directly via e-mail (<a href=\"mailto:Med.Ed@l-nutra.com\" target=\"_blank\"><span style=\"text-decoration:underline\">Med.Ed@l-nutra.com</span></a><span style=\"text-decoration:underline\">).</span></p>"
+          }
+        },
+        "7cad1d59-7341-4272-8ac8-8fc371611d51": {
+          "type": "faqs",
+          "settings": {
+            "question": "If I have a health condition, can I still do Reset?",
+            "answer": "<p>If you have diabetes or are taking any medication that affects blood sugar, please consult with a healthcare provider prior to attempting fasting, including use of with ReSet, or a low-calorie diet. </p><p>Although fasting for short periods is safe for most generally healthy people, you should talk to your healthcare provider before beginning any diet or diet program to ensure it is safe and right for you.  Anyone with a pre-existing condition or taking any prescription medications should consult with a healthcare professional before fasting. </p><p>Do not fast or use any products for fasting purposes if: </p><p>• You have a fever, cough, diarrhea, signs of an active infection, or are at risk for recurrent infection, <br>• You are underweight, breastfeeding, or pregnant, <br>•You have dietary restrictions, <br>• You have a known, suspected, or diagnosed eating disorder, or <br>• You are under the age of 18 or over the age of 70 unless you are under the supervision of a healthcare provider. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "4eab21b2-1ea3-4e8a-ba4c-09680cbac80c",
+        "56c3bc3d-6891-4f97-94e9-27984fa38803",
+        "6ca4a841-4cf4-4d8a-a4c7-371c553e994d",
+        "7cad1d59-7341-4272-8ac8-8fc371611d51"
+      ],
+      "settings": {
+        "main_title": "",
+        "main_description": "",
+        "title": "Medically Related"
+      }
+    },
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0": {
+      "type": "pl-newsletter",
+      "settings": {
+        "description": "<div class=\"lg:flex justify-around items-center w-full\">\n<p class=\"text-[30px] 2xl:text-[40px] text-white font-normal\">Join the Prolon community</p>\n<p class=\"text-white font-normal text-[18px] md:text-[22px]\">Education, Community, Resources</p>\n<div class=\"klaviyo-form-V42Upy max-w-[450px]\"></div>\n</div>",
+        "descriptionWidth": "",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "86c1387c-eda4-4439-a281-8bcbfdf5aa3b",
+    "a6c6a1f3-7cc5-455e-b576-9a6d0bc7997a",
+    "865d7fb0-dabd-426b-a3a0-0fc7708a37ed",
+    "151dd957-c577-4c56-a299-49b055fb668a",
+    "6b87c188-5e3d-4485-82e3-54b55007d095",
+    "image_banner_YMydbB",
+    "ae4317b1-5640-4365-acf9-72e4b15c46d1",
+    "5cbfdae3-f762-4c84-8d2e-561f0fb64193",
+    "51b8b462-f121-48dc-b106-64204f430310",
+    "db15a453-811a-4994-b3a3-93b7284fa42b",
+    "077734e6-2d0e-40f5-a18a-622040215d91",
+    "ce279fcc-df6a-4d80-9371-d32e40baedd0"
+  ]
+}

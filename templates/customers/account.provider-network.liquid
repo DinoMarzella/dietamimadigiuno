@@ -1,0 +1,57 @@
+<style>
+  
+   .announcement-bar {
+    display: none;}
+  
+</style>
+<div class="page-width page-content">
+  <header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+    <h1 class="section-header__title">{{ 'customer.account.title' | t }} - Provider Locator</h1>
+<a href="/account" class="btn btn--secondary btn--small section-header__link">Back To Account Overview</a>
+
+  </header>
+  
+ 
+  <div class="grid">
+
+    <div class="grid__item medium-up--two-thirds">
+     <h2>Join Our Provider Network</h2>
+
+      <p>To add your location to our Provider Location Network, please complete this registration form. We recommend adding all possible information as it provides value to your listing. <br>
+        <br><strong>Submissions should be submitted once and will be directed to our team for approval. Listings are updated weekly on Monday's, you can look for your new or updated listing then. 
+        </strong><br>
+       <br><i>If you are needing to make a change to an existing location, please complete the form with complete information and we will process your requests weekly.
+      </i>  </p> 
+<div class="typeform-widget" data-url="https://form.typeform.com/to/rfedOP17?typeform-medium=embed-snippet" data-transparency="0" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    
+    
+    </div>
+
+    <div class="grid__item medium-up--one-third" style="display:none">
+      <h3>{{ 'customer.account.details' | t }}</h3>
+
+      <p class="h5">{{ customer.name }}</p>
+<p class="h5">Default Address</p>
+      {{ customer.default_address | format_address }}
+
+      <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+    </div>
+
+  </div>
+
+  
+</div>
+
+    {% if customer.metafields.adv_reg.token and shop.metafields.adv_reg.showProfile == 'on' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.1/iframeResizer.min.js"></script>
+    
+    <iframe id="advancedRegForm" onload="iFrameResize({log:false}, '#advancedRegForm')" 
+    src="https://taloncommerce.com/advanced_registration/api/registration_form/?id=3355&form=profile&token={{customer.metafields.adv_reg.token}}" 
+
+     style="min-width: 100%; 
+    margin: 0 auto;padding-top:30px;border:none;  min-height:500px;overflow:hidden;" width="100%" height="100%" allowtransparency="true">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+    {% endif %} 
+<!-- 
+    <div class="aaa-success-msg-account"></div><div class="aaa-error-msg-account"></div><div class="aaa_customer_all_plan_listing" data-customer-email="{{ customer.email }}" data-customer-id="{{ customer.id }}"> </div> -->

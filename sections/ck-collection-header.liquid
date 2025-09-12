@@ -1,0 +1,153 @@
+<section class="relative mx-auto py-28 bg-prolon_secondary overflow-hidden lg:max-w-[95%]  prolon-container w-full 2xl:max-w-container">
+  <img
+    class="absolute bottom-0 lg:w-full h-full m:max-w-7xl object-cover right-0"
+    src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/banner2.jpg?v=1666898560"
+    alt=""
+  >
+  <div class="max-w-7xl mx-auto px-4 relative z-10 ">
+    <div class="flex flex-wrap items-center ">
+      <div class="w-full md:w-1/2 p-8">
+        <h2 class="mb-5 text-3xl md:text-4xl text-white font-bold tracking-px-n leading-tight">
+          Ready to get started?
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection Header",
+
+  "settings": [
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Centered"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "Narrow column",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Show section divider",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Rich text"
+        },
+        {
+          "id": "heading_class",
+          "type": "text",
+          "label": "Class"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enlarge_text",
+          "label": "Enlarge text",
+          "default": true
+        },
+        {
+          "id": "text_class",
+          "type": "text",
+          "label": "Text Class"
+        },
+        {
+          "id": "text",
+          "type": "html",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Button text",
+          "default": "Button"
+        },
+        {
+          "id": "button_class",
+          "type": "text",
+          "label": "Button Class"
+        },
+
+        {
+          "id": "show_svg_icon",
+          "type": "checkbox",
+          "label": "Svg Right Arrow"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color"
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "name": "Page",
+      "settings": [
+        {
+          "id": "page_text",
+          "type": "page",
+          "label": "Page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-best-seller-banner": {
+      "type": "collection-best-seller-banner",
+      "settings": {
+        "banner_image_desktop": "shopify://shop_images/testest.png",
+        "banner_image_mobile": "shopify://shop_images/Frame_14_a249a96e-b3af-4ef7-9d2e-a76b0b40cd5c.png",
+        "banner_title": "Best Sellers",
+        "banner_description": "<strong>Slow Down Bioage &amp; Age Gracefully</strong><br>Prolon Everyday Nutrition",
+        "banner_button_title": "SHOP NOW",
+        "banner_button_url": "/products/prolon-offer"
+      }
+    },
+    "collection-best-seller-products": {
+      "type": "collection-best-seller-products",
+      "blocks": {
+        "e2abd906-ef9c-4e01-a019-f6dad55591c5": {
+          "type": "product",
+          "settings": {
+            "product_item": "prolon-offer",
+            "product_image": "shopify://shop_images/image_8.png",
+            "product_image_hover": "shopify://shop_images/image_8_9b33aaa7-4e83-47a9-bedd-15447843e0e1.png",
+            "product_title": "Prolon 5-Day Program",
+            "product_subtitle": "REJUVENATION FROM WITHIN",
+            "product_price": "170",
+            "product_price_discount": "190",
+            "product_price_no_sub": "190",
+            "product_description": "Nourish your body while reaping the metabolic benefits of prolonged fasting."
+          }
+        },
+        "3e6d7857-2cf4-4c6a-abbf-5c8189f87aa4": {
+          "type": "product",
+          "settings": {
+            "product_item": "reset",
+            "product_image": "shopify://shop_images/image_8_1.png",
+            "product_image_hover": "shopify://shop_images/image_8_5.png",
+            "product_title": "Reset 1-Day Kit",
+            "product_subtitle": "24 Hour mind and body reset",
+            "product_price": "34.99",
+            "product_price_discount": "39.99",
+            "product_price_no_sub": "39.99",
+            "product_description": "A complete day of nutrition that keeps your body in a fasting state."
+          }
+        },
+        "07ce3b32-19c3-40c8-be93-9ab57c67979d": {
+          "type": "product",
+          "settings": {
+            "product_item": "fasting-bar",
+            "product_image": "shopify://shop_images/image_8_2.png",
+            "product_image_hover": "shopify://shop_images/image_8_6.png",
+            "product_title": "Fasting Bars",
+            "product_subtitle": "INTERMITTENT FASTING BARS",
+            "product_price": "30.60",
+            "product_price_discount": "33.60",
+            "product_price_no_sub": "33.60",
+            "product_description": "Stay in your fasting state with keto-friendly plant based protein."
+          }
+        },
+        "e9ad4466-8cdf-477a-a194-2b0cf8199b65": {
+          "type": "product",
+          "settings": {
+            "product_item": "fasting-shake-14-sachets",
+            "product_image": "shopify://shop_images/image_8_3.png",
+            "product_image_hover": "shopify://shop_images/Frame_173_1.png",
+            "product_title": "Fasting Shake",
+            "product_subtitle": "CHOCOLATE OR VANILLA",
+            "product_price": "59.99",
+            "product_price_discount": "69.99",
+            "product_price_no_sub": "69.99",
+            "product_description": "Fuel your body with prebiotic fiber and still stay in a fat-burning state."
+          }
+        }
+      },
+      "block_order": [
+        "e2abd906-ef9c-4e01-a019-f6dad55591c5",
+        "3e6d7857-2cf4-4c6a-abbf-5c8189f87aa4",
+        "07ce3b32-19c3-40c8-be93-9ab57c67979d",
+        "e9ad4466-8cdf-477a-a194-2b0cf8199b65"
+      ],
+      "settings": {
+        "product_button": "Shop now"
+      }
+    },
+    "collection-best-seller-footer": {
+      "type": "collection-best-seller-footer",
+      "settings": {
+        "footer_testimonial_1": "<p><strong>Eat differently.</strong> Stay younger than your age. </p>",
+        "footer_testimonial_2": "<p>Prolon is the only nutrition program patented for promoting </p><p>longevity through <em><strong>cellular rejuvenation</strong></em></p>",
+        "footer_button_text": "SHOP ALL",
+        "footer_button_url": "shopify://collections/all"
+      }
+    }
+  },
+  "order": [
+    "collection-best-seller-banner",
+    "collection-best-seller-products",
+    "collection-best-seller-footer"
+  ]
+}

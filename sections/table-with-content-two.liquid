@@ -1,0 +1,230 @@
+<style>
+    *{
+  margin:0px;
+  padding:0px;
+}
+._body_banner{
+  background:#d8d8d8;
+  display:grid;
+  grid-template-columns:3fr 1fr;
+}
+._pl_timetable{
+  background:#73984A;
+  display:grid;
+  grid-template-columns:1fr 0fr;
+}
+._table_left_icons{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center; 
+  width:100%;
+  border-right:1px solid white;
+}
+._table_right_content{
+  display:flex;
+  flex-direction:column;
+}
+._child_box_wrap{
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+  width:100%;
+  height:130px;
+  border-bottom:1px solid white;
+}
+
+._child_box_wrap img{
+  width:100px;
+}
+._child_content__wrap{
+  border-bottom:1px solid white;
+  height:130px;
+  padding-left:50px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+  gap:5px;
+  width:0px;
+}
+@media(max-width:850px){
+  ._child_content__wrap{
+    padding-left:80px;
+  }
+}
+.___left_parent_wrap{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  padding:50px;
+}
+.___child_content h1{
+  font-size:50px;
+  color:#73984A;
+}
+.__para_row_one_wrap{
+  display:flex;
+  gap:60px;
+}
+.__para_row_one_wrap p{
+  font-size:18px;
+  width:100%;
+  max-width:80%;
+}
+@media(max-width:1070px){
+  .___left_parent_wrap{
+    padding:0px 20px 0px 20px;
+  }
+}
+@media(max-width:1000px){
+  ._body_banner{
+    display:flex;
+    flex-direction:column;
+  }
+  .__para_row_one_wrap{
+    flex-direction:column;
+  }
+  .___left_parent_wrap{
+    padding:30px;
+  }
+  .___child_content p{
+    max-width:100%;
+     font-size:20px;
+  }
+  .___child_content h1{
+   font-size:35px 
+  }}
+</style>
+
+<div class="_body_banner" style="background:{{section.settings.wrapper_color}}">
+    <div class="___left_parent_wrap">
+      <div class="___child_content">
+        <h1 style="color:{{section.settings.header_color}}">{{section.settings.header__pro}}</h1>
+        <br>
+        <br>
+        <div class="__para_row_one_wrap">
+           <p>{{section.settings.content__pro}}
+  </p>
+           <p>{{section.settings.content__pro_two}}
+  </p>
+          </div>
+      </div>
+    </div>
+    <div class="___right_parent_wrap">
+      <div class="_pl_timetable" style="background:{{section.settings.table_color}}">
+        <div class="_table_left_icons">
+            <div class="_child_box_wrap">
+              <img src="{{section.settings.icon_label_1 | img_url: 'medium'}}">
+            </div>
+            <div class="_child_box_wrap">
+              <img style="width:60px" src="{{section.settings.icon_label_2 | img_url: 'medium'}}">
+            </div>
+            <div class="_child_box_wrap">
+              <img src="{{section.settings.icon_label_3 | img_url: 'medium'}}">
+            </div>
+            <div class="_child_box_wrap">
+              <img src="{{section.settings.icon_label_4 | img_url: 'medium'}}">
+            </div>
+          </div>
+    <div class="_table_right_content">
+        <div class="_child_content__wrap">
+          {{section.settings.content_label_1}}
+        </div>
+         <div class="_child_content__wrap">
+          {{section.settings.content_label_2}}
+        </div>
+         <div class="_child_content__wrap">
+          {{section.settings.content_label_3}}
+        </div>
+         <div class="_child_content__wrap">
+          {{section.settings.content_label_4}}
+        </div>
+      </div>
+  </div>
+    </div>
+  </div>
+
+
+  {% schema %}
+  {
+    "name": "Table with content",
+    "presets": [{ 
+        "name": "Table with content"
+    }],
+    "settings": [
+    {
+        "type": "color",
+        "id": "wrapper_color",
+        "label": "Section Background Color"
+      },
+      {
+        "type": "color",
+        "id": "table_color",
+        "label": "Table Background Color"
+      },
+      {
+        "type": "text",
+        "id": "header__pro",
+        "label": "Add heading Text"
+      },
+      {
+        "type": "color",
+        "id": "header_color",
+        "label": "Heading Text Color"
+      },
+      {
+        "type": "text",
+        "id": "content__pro",
+        "label": "Add Paragraph"
+      },
+      {
+        "type": "text",
+        "id": "content__pro_two",
+        "label": "Add Paragraph Second"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_label_1",
+        "label": "Add Icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_label_2",
+        "label": "Add Icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_label_3",
+        "label": "Add Icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_label_4",
+        "label": "Add Icon"
+      },
+      {
+        "type": "html",
+        "id": "content_label_1",
+        "label": "Table Content"
+      },
+      {
+        "type": "html",
+        "id": "content_label_2",
+        "label": "Table Content"
+      },
+      {
+        "type": "html",
+        "id": "content_label_3",
+        "label": "Table Content"
+      },
+      {
+        "type": "html",
+        "id": "content_label_4",
+        "label": "Table Content"
+      }
+    ]
+  }
+  {% endschema %}

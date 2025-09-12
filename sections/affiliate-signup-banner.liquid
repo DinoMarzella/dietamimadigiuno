@@ -1,0 +1,70 @@
+<style>
+  a.site-nav__link.site-nav__link--underline[href="/products/buy-prolon"] {
+    display: none;
+}
+
+.header-item.header-item--icons {
+    display: none;
+}    
+.desktop-banner{
+  display: block;
+}
+.mobile-banner{ 
+  display: none;
+}
+  .desktop-banner-img{
+    width: 100%;
+    height: auto;
+  }
+  .mobile-banner-img{
+    width: 100%;
+    height: auto;
+  }
+  @media(max-width:1000px){
+    .desktop-banner{
+  display: none;
+}
+.mobile-banner{
+  display: block;
+}
+  }
+
+</style>
+
+<div>
+  <div class="desktop-banner">
+    <a href="#signuppartner">
+      <img class="desktop-banner-img" src="{{section.settings.desktop_image | img_url: '1500x'}}" alt="" />
+    </a>
+  </div>
+  <div class="mobile-banner">
+    <a href="#signuppartner">
+    <img class="mobile-banner-img" src="{{section.settings.mobile_image | img_url: '800x'}}" alt="" />
+    </a>
+  </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Affiliate Signup Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "desktop_image",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Affiliate Signup Banner",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

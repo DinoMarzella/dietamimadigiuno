@@ -1,0 +1,192 @@
+{%- liquid
+  if section.settings.theme_option == 'theme_orange'
+    assign bgColorDark = 'bg-[#73984a]'
+    assign lgBgColor = 'bg-orange-50'
+    assign darkBorder = 'border-orange-200'
+    assign titleColor = 'text-gray-900'
+    assign color_name = 'prolon_secondary'
+  elsif section.settings.theme_option == 'theme_brown'
+    assign bgColorDark = 'bg-prolon_brown'
+    assign lgBgColor = 'bg-prolon_light_brown'
+    assign darkBorder = 'border-prolon_brown'
+    assign titleColor = 'text-gray-900'
+    assign color_name = 'prolon_brown'
+  else
+    assign bgColorDark = 'bg-prolon_dark_primary'
+    assign lgBgColor = 'bg-[#f9fff2]'
+    assign darkBorder = 'border-prolon_dark_primary'
+    assign titleColor = 'text-prolon_dark_primary'
+    assign color_name = 'prolon_dark_primary'
+  endif
+-%}
+{%- assign language_code = shop.locale -%}
+ 
+{%- if language_code == 'ar' -%}
+  {% assign addTextAr = 'أضف إلى السلة' %}
+{%- else -%}
+  {% assign addTextAr = 'Aggiungi al carrello' %}
+{%- endif -%}
+
+{% assign addtoCartText = section.settings.add_to_cart_text | default: addTextAr %}
+{% if product.tags contains 'preorder' %}
+  {%- if language_code == 'ar' -%}
+    {% assign addtoCartText = 'أطلب مسبقًا الآن' %}
+  {%- else -%}
+    {% assign addtoCartText = 'Pre-Order' %}
+  {%- endif -%}
+{% endif %}
+{% assign addtoCartTextAdding = 'Adding...' %}
+
+{% if direct_checkout == true %}
+  {% assign addtoCartText = 'Back In Stock Soon' %}
+  {% assign addtoCartTextAdding = 'Redirecting...' %}
+{% endif %}
+
+
+{% capture productForm %}
+  
+  <div>
+    {% render 'ck-product-option-subscription-widget-new-life-opt', settings: settings %}  
+   
+    <noscript>
+      <select name="id">
+        {% for variant in product.variants %}
+          <option
+            {% if variant == current_variant %}
+              selected="selected"
+            {% endif %}
+            {% unless variant.available %}
+              disabled="disabled"
+            {% endunless %}
+            value="{{ variant.id }}"
+          >
+            {{ variant.title }}
+          </option>
+        {% endfor %}
+      </select>
+    </noscript>
+
+    <label class="sr-only" for="Quantity">{{ 'products.product.quantity' | t }}</label>
+    <input type="hidden" id="Quantity" name="quantity" value="1" min="1">
+    {% if section.settings.show_subscription %}
+      {%
+        render 'ck-product-option-subscription-widget-new-v2', product: product, option_title_class: option_title_class, bgColorSelected: bgColorSelected,
+      %}
+    {% endif %} 
+    {% if order_bump =='no' %}
+    <br><br>
+    {%else %}
+    {% render 'add-bottle-bump'  %} 
+    {% endif  %} 
+ 
+
+    <div class="grid items-stretch gap-4 mx-auto cart-button-wrapper mt-[25px] add-to-cart-sale-wrapper" data-sale='{{ product.tags }}'> 
+     
+      <button
+        :disabled="addingtoCart || !availableVariant"
+        type="button"
+        id="buy-now"
+        class="bg-[#56A511] hover:bg-[#56A511] w-full rounded-full"
+        :class="
+        {  
+
+        '!cursor-not-allowed opacity-50':!availableVariant,
+
+        }
+  "
+                 @click.prevent="isPreOrder ? openPopup() : addToCart()"
+
+        {% comment %} @click="addToCart()" {% endcomment %}
+      >
+        <span class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-"
+          ><span class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy">
+            <svg
+              v-if="addingtoCart"
+              class="inline w-4 h-4 ml-2 text-white animate-spin "
+              viewBox="0 0 100 101"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"></path><path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"></path>
+            </svg>
+            <svg
+              v-if="!addingtoCart"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              width="18"
+            >
+              <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z" clip-rule="evenodd"></path>
+            </svg> 
+            
+            <span v-if="availableVariant" class="mr-2 font-bold " v-text="addingtoCart ? '{{addtoCartTextAdding}}':'{{addtoCartText}}'"> </span>
+            <span v-if="!availableVariant" class="hidden font-bold"
+              :class="
+              {
+                '!block':!availableVariant,
+              }
+              "
+
+            > SOLD OUT</span>
+            {% unless direct_checkout %}
+              <div v-if="!addingtoCart"> 
+                <span class="mr-2 -ml-2 text-[16px]">.</span><span  class="font-semibold text-[16px]" v-text="money(discountedPrice(currentVariant))"></span>
+                <s class="ml-1  text-left text-[#D0D0D0] font-semibold text-[16px]" v-text="money(oneTimePrice)" v-if="currentVariant?.price < oneTimePrice"></s>
+              </div> 
+            {% endunless %} </span
+        ></span>
+      </button>
+  
+    </div>
+   {% if product.handle contains 'prolon-5-day' %}
+      {% assign isBundleInCart= false %}  
+      {% for item in cart.items %}
+      {% if item.product.handle == 'l-protein-biome-upsell' %}
+      {% assign isBundleInCart = true %}
+      {%endif %}
+      {% endfor %}
+        
+     {% comment %}  <div class="hidden quick-upsell-offer" 
+      data-isLongevityBundleInCart="{{isBundleInCart}}"
+      data-show-upsell-offer="true"
+      > 
+        <quick-shop-upsell handle="l-protein-biome-upsell">
+        </quick-shop-upsell>
+      </div> {% endcomment %} 
+      
+      {% endif %} 
+    <div class="!hidden mt-6 text-center">
+      <a href="#" class="inline-flex text-base font-medium group">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="flex-shrink-0 w-6 h-6 mr-2 text-gray-400 group-hover:text-gray-500"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
+        </svg>
+        <span class="text-gray-500 hover:text-gray-700">Secure Checkout</span></a
+      >
+    </div>
+    </div>
+    <sticky-product-form class="fixed left-0 z-20 flex flex-col items-center justify-center w-full gap-2 p-1 px-5 py-2 bg-white shadow-2xl md:flex-row md:justify-between product--sticky-form product--sticky-form__inactive">
+      <span class="text-xl font-semibold md:text-2xl" v-text="getProductTitle(`{{product.title}}`)"></span>
+      <button id="go-form" class="inline-block {{bgColorDark}} md:w-90 w-full px-6 py-3 font-medium text-center rounded text-contrast bg-[#F7931D]"><span
+          class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy">
+    
+          <span  class="font-bold"
+           >Select option</span>
+          {% unless direct_checkout %}  
+          <div>
+            <span class="mr-2">·</span><span  class="font-bold" v-text="money(currentVariant?.price)"></span>
+            <s class="ml-1  text-left text-[#D0D0D0] font-bold text-[13.5spx]" v-text="money(oneTimePrice)" v-if="currentVariant?.price < oneTimePrice"></s>
+          </div>
+          {% endunless %}
+        </span></button>
+    </sticky-product-form>
+{% endcapture %} 
+{{ productForm | replace: 'action="/cart/add"', '' }}

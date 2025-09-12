@@ -1,0 +1,57 @@
+{%- assign data = section.settings -%}
+  
+<div class="pl-wrapper relative bg-white overflow-hidden max-w-[1600px] mx-auto pl-wrapper-simple-image {{data.max-width-section}} {{data.padding-section}} mx-auto">
+    <div class="relative md:py-[20px] w-full">
+      <img
+        src="{{ data.image | img_url: '1800x' }}"
+        class="hidden md:block w-full object-cover hero__animation-contents"
+        alt="Featured Image"
+      /> 
+      <img
+        src="{{ data.image_mobile | img_url: '700x' }}"
+        class="block md:hidden w-full object-cover hero__animation-contents"
+        alt="Featured Image"
+      /> 
+    </div>
+  </div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-simple-image');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Simple Image",
+  "settings": [ 
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "text",
+      "id": "max-width-section",
+      "label": "Section Max Width"
+    },
+    {
+      "type": "text",
+      "id": "padding-section",
+      "label": "Section Padding",
+      "default": "px-0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Simple Image",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

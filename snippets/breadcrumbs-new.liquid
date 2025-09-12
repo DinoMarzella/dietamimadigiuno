@@ -1,0 +1,87 @@
+
+{% capture divider %}
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 mx-2 text-gray-500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 12">
+    <defs>
+      <path
+        d="M12.112 4.58a.553.553 0 01.559-.15c.195.059.342.22.39.42a.593.593 0 01-.148.546l-4.952 5.146a.553.553 0 01-.802 0L2.206 5.396a.593.593 0 01-.146-.547c.047-.2.194-.36.39-.42.2-.06.414-.001.559.15L7.56 9.307l4.552-4.729zM7.56 10.038l-.059.06a.085.085 0 01.118 0l-.059-.06z"
+        id="a"></path>
+    </defs>
+    <use fill="currentColor" fill-rule="nonzero" transform="rotate(-90 5.25 8.75)" xlink:href="#a"></use>
+  </svg>
+{% endcapture %}
+
+{% unless template.name == 'index' or template.name == 'cart' %}
+  <nav class="flex items-center breadcrumb" role="navigation" aria-label="breadcrumbs">
+    <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
+
+    {% if template.name == 'product' %}
+
+      {% if collection %}
+        <span class="divider" aria-hidden="true">{{divider}}</span>
+        {% if collection.handle %}
+          {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
+          {{ collection.title | link_to: url }}
+        {% endif %}
+      {% endif %} 
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+
+    {% elsif template.name == 'collection' and collection.handle %}
+
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+
+      {% if current_tags %}
+
+        {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
+        {{ collection.title | link_to: url }}
+
+        <span class="divider" aria-hidden="true">{{divider}}</span>
+
+        {% for tag in current_tags %}
+          {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+
+          {%- assign tag_name = tag | strip -%}
+          {%- assign tag_text = tag_name | capitalize -%}
+          <span>{{ tag_text }}</span>
+
+          {% unless forloop.last %}
+            <span>+</span>
+          {% endunless %}
+
+        {% endfor %}
+      {% endif %}
+
+    {% elsif template.name == 'blog' %}
+
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+      {% if current_tags %}
+        {{ blog.title | link_to: blog.url }}
+        <span class="divider" aria-hidden="true">{{divider}}</span>
+        <span>{{ current_tags | join: " + " }}</span>
+      {% endif %}
+
+    {% elsif template.name == 'article' %}
+ 
+      <span class="divider 2" aria-hidden="true">{{divider}}</span>
+      {{ blog.title | link_to: blog.url }}
+      <span class="divider 1" aria-hidden="true">{{divider}}</span>
+
+    {% elsif template.name == 'page' %}
+
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+      <span>{{ page.title }}</span>
+
+    {% elsif template.name == 'search' %}
+
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+      <span>{{ page_title | replace: '*', '' }}</span>
+
+    {% else %}
+
+      <span class="divider" aria-hidden="true">{{divider}}</span>
+      <span>{{ page_title }}</span>
+
+    {% endif %}
+  </nav>
+{% endunless %}
+
+

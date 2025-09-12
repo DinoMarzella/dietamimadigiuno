@@ -1,0 +1,258 @@
+{% assign data = section.settings %}
+  
+{%liquid 
+
+  assign option_button_class = 'bg-[#f9fff2] bg-white block border border-gray-300 cursor-pointer flex-1 focus:outline-none font-interCondensed  p-2 relative  single-product-option text-center text-sm text-prolon_dark_primary'
+
+  assign option_button_selected_class = 'ring-prolon_green z-10 border-prolon_green ring-1 bg-[#f9fff2] opacity-100'
+
+%} 
+{% render 'ck-product-option-1-css',
+  option_button_class: option_button_class,
+  option_button_selected_class: option_button_selected_class
+%}
+<!-- TWProductGrid -->
+<div class="w-full py-12 bg-white font-avenir product-grid-section ">
+  <div class="w-full px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+    <div class="flex " > 
+      <div class="relative gap-y-5 m:gap-5 items-stretch justify-center w-full !grid grid-cols-{{data.mobile_columns}} md:grid-cols-{{data.desktop_columns}}  {% if data.container_class and data.container_class !='' %} {{data.container_class}} {%else %} mx-auto max-w-5xl {% endif %}">
+        {% assign cards = section.blocks | where: 'type', 'cards' %}
+        {% for cardMain in cards %}
+          {% assign card = cardMain.settings %}
+          <div class="w-full p-2 grid-product ">
+            <div class="top-0 right-0 grid-product__actions" >
+              {%- comment -%} <button 
+                class="hidden btn btn--circle btn--icon quick-product__btn-vue small--hide"
+                title="Quick shop"
+                data-handle="{{card.handle}}" 
+                data-variant="{{card.variant_id}}"
+              > 
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  class="icon icon-search"
+                  viewBox="0 0 64 64"
+                >
+                  <defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                </svg>
+                <span class="icon__fallback-text">Quick shop</span>
+              </button> {%- endcomment -%}
+                
+            </div>     
+            <div class="relative flex flex-col  items-center justify-center w-full h-full px-4 py-8 rounded-md cursor-pointer bg-[{{data.grid_background_color}}]" > 
+              <div class="absolute z-20 left-5 top-12">
+                {{ card.award_html }}
+              </div>
+              <a href="{{card.url}}" class="flex items-center justify-center">
+                <img
+                  class="relative z-10 object-contain object-center w-full h-full p-5 mx-auto"
+                  width="100px"
+                  height="100px"
+                  src="{{ card.image | img_url: '600x' }}"
+                >
+              </a>
+              <a href="{{card.url}}" class="flex flex-col items-center justify-center px-4">
+                <h4 class="my-2 text-2xl tracking-normal text-center uppercase text-space  text-[{{data.grid_text_color}}] font-bold font-avant">
+                  {{ card.title }} 
+                </h4>
+                <p class="mb-3 text-base text-center  text-[{{data.grid_text_color}}] font-bold">{{ card.description }}</p>
+              </a> 
+ 
+              {% if data.show_add_to_cart %}
+                {% assign variant_id = card.variant_id %}
+                {% if variant_id and variant_id != '' %}
+             
+                  <add-to-cart-single
+                    variant-id="{{variant_id}}"
+                    handle="{{card.handle}}" 
+                    subscription-variant-id="{{card.subscription_variant_id}}"
+                    product-handle="{{card.handle}}"
+                    data-option-index="{{card.quantity_option_index}}"
+                    data-flavor-option-index="{{card.flavor_option_index}}"
+                    data-option="{{ card.option2 }}"
+
+
+
+                  ></add-to-cart-single>
+
+                 <div>   
+                   {%- comment -%} <product-quick-view 
+                  variant-id="{{variant_id}}"
+                  handle="{{card.handle}}"
+                  iframe_src="/products/{{card.handle}}?view=prolon-quick-view" 
+                > </product-quick-view> 
+   {%- endcomment -%} 
+              </div>
+
+                {% else %}
+                  Please add a variant id
+                {% endif %}
+              {% else %}
+                <a
+                  href="{{card.url}}"
+                  class="flex items-center justify-center px-5 py-3 text-base font-bold text-center text-white rounded font-avenir group w-max bg-prolon_orange hover:bg-prolon_orange"
+                >
+                  <span class="w-full">Shop Now</span>
+                  <div class="pl-2">
+                    <svg
+                      class="fill-white stroke-white group-hover:fill-black group-hover:stroke-black"
+                      width="14"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fillRule="evenodd" clipRule="evenodd" d="M8.354.646a.5.5 0 1 0-.708.708l4.146 4.145H1a.5.5 0 1 0 0 1h10.794l-4.148 4.147a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5Z" fill="#fff"></path>
+                    </svg>
+                  </div>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+ <script>
+
+  $(document).ready(function(){
+
+
+    // 
+    $(document).on('click','.quick-product__btn-vue', function(){
+
+        let ProductHandle = $(this).data('handle'); 
+        let ProductVariant = $(this).data('variant');  
+        $(this).closest('.grid-product').find('.quick-view-btn').click();
+
+        {%- comment -%} let productData = await axios.get(`/products/${ProductHandle}?variant=${ProductVariant}&sections=ck-prolon-product-section-v1`);  
+         productData = productData.data; 
+        let productSection = productData["ck-prolon-product-section-v1"];
+      
+        console.log({ 
+          productData,
+          productSection
+         
+        })  {%- endcomment -%}
+
+    })
+    
+
+
+
+  })
+
+
+ </script>
+ {% if handle contains 'bfcm-new' %}
+  <script src="{{'ck-product-grid-view-new.js' | asset_url }}" defer></script>
+  {% else %}  
+  <script src="{{'ck-product-grid-view.js' | asset_url }}" defer></script>
+{% endif %} 
+         
+
+{% schema %}
+{
+  "name": "Shuffle | Product Grid ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "container_class",
+      "label": "Container Class"
+    },
+    {
+      "type": "color",
+      "id": "grid_text_color", 
+      "label": "Grid Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "grid_background_color",
+      "label": "Grid BackGround Color",
+      "default": "#f5f7f2"
+    }, 
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "label": "Grid Size (Desktop)",
+      "default": 3,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "type": "range",
+      "id": "mobile_columns",
+      "label": "Grid Size (Mobile)",
+      "default": 1,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quick_view",
+      "label": "Show Quick View"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_add_to_cart",
+      "label": "Add to Cart Button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Cards",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "award_html",
+          "label": "Award Html"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Product Url"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Product Handle"
+        },
+        {
+          "type": "text",
+          "id": "product_id",
+          "label": "Product Id"
+        },
+        {
+          "type": "text",
+          "id": "variant_id",
+          "label": "Variant Id"
+        },
+        
+        {
+          "type": "text", 
+          "id": "subscription_variant_id",
+          "label": "Subscription Variant Id"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

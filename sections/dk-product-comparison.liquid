@@ -1,0 +1,68 @@
+{% schema %}
+{
+"name": "dk Product Comparison",
+"tag": "section",
+"class": "product-comparison-section",
+"settings": [],
+"presets": [
+{
+"name": "dk Product Comparison"
+}
+]
+}
+{% endschema %}
+
+<section class="px-4 py-4 md:py-12">
+   
+    <div class="max-w-6xl mx-auto">
+        <div class="mb-8 text-center md:mb-16">
+            <h2 class=" mb-2 md:mb-4 w-full text-center text-[30px] leading-[1.2] font-[500] text-[#1F4139] md:text-[34px] xl:text-[40px] my-2">
+                Mangiare bene, restare giovani
+            </h2>
+            <p class="max-w-2xl mx-auto ">
+                Mangiare proteine è fondamentale per mantenersi in salute. Ma molti prodotti proteici popolari potrebbero in realtà accelerare l'invecchiamento. Ecco i  principali benefici di L-Protein Bar.
+            </p>
+        </div>
+
+        <div>
+            <div class="overflow-x-auto">
+                <div class="rounded-xl shadow-xl overflow-hidden">
+                    <div class="!grid grid-cols-[56%_22%_22%] md:grid-cols-3">
+                        <div></div>
+                        <div
+                            class="bg-[#56A511] rounded-t-3xl text-center border-black px-8 pt-8 pb-4 h-24 flex items-center justify-center">
+                            <h3 class="text-base md:text-xl tracking-wider text-white xl:text-2xl">PROLON</h3>
+                        </div>
+                        <div class="flex items-center justify-center h-24 px-8 py-4 text-center">
+                            <h3 class="text-base md:text-xl tracking-wider text-gray-900 xl:text-2xl">ALTRI MARCHI</h3>
+                        </div>
+                    </div>
+
+                    {% assign rows = "Senza soia, Senza glutine, Senza latticini, Senza OGM, Senza polioli, senza dolcificanti artificiali,
+                    Senza coloranti artificiali, Senza ingredienti nascosti, Profilo aminoacidico completo, Non stimola i fattori dell’invecchiamento,
+                    Cioccolato autentico" | split: "," %}
+
+                    {% for row in rows %}
+                    <div class="!grid grid-cols-[56%_22%_22%] md:grid-cols-3 border-t border-black">
+                        <div class="flex items-center p-4 border-black">
+                            <h4 class="text-sm font-bold leading-tight tracking-wide uppercase md:text-base">{{ row }}
+                            </h4>
+                        </div>
+                        <div
+                            class="bg-[#56A511] {% if forloop.last %}rounded-b-3xl{% endif %} border-black p-4 text-white flex items-center justify-center">
+                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/tick_-_white_1.png?v=1753180087"
+                                alt="Yes" class="w-4 h-4 md:w-6 md:h-6" />
+                        </div>
+                        <div class="flex items-center justify-center p-4">
+                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/X.png?v=1753180087"
+                                alt="No" class="w-4 h-4 md:w-6 md:h-6" />
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    

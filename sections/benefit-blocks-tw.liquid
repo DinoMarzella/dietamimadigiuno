@@ -1,0 +1,200 @@
+{% assign data = section.settings %}
+<!-- TWProlonBenefits -->
+<div class="w-full py-12" style="background-color: {{data.background_color}}">
+  <div class="px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-black sm:text-4xl font-harmonia">{{ data.title }}</p>
+    </div>
+
+    <div class="mt-10">
+      <div class="flex flex-col flex-wrap items-start justify-center md:flex-row">
+        {% assign cards_block = section.blocks | where: 'type', 'cards' %}
+        {% for card in cards_block %}
+          <div class="md:max-w-[350px] relative flex flex-col justify-center w-full p-6 md:p-10 md:{{data.card_width}} {{data.content_alignment}}">
+            <div
+              class="flex items-center justify-center w-20 h-20 text-white bg-transparent rounded-md"
+              style="width: {{data.image_width}}; height: {{data.image_width}};"
+            >
+              <!-- card.settings.image_overide_url {{card.settings.image_overide_url}} -->
+              {% if card.settings.image_overide_url and card.settings.image_overide_url != '' %}
+                <img
+                  src="{{card.settings.image_overide_url}}"
+                  class="object-contain object-center w-full h-full"
+                  width="100%"
+                  height="100%"
+                  alt="{{card.settings.title}}"
+                >
+              {% else %}
+                <img
+                  class="object-contain object-center w-full h-full"
+                  width="100%"
+                  height="100%"
+                  src="{{ card.settings.image | img_url: '300x' }}"
+                >
+              {% endif %}
+            </div>
+            <p class="mt-2 text-2xl font-bold leading-9 text-black font-avant {{data.text_alignment}} font-harmonia">
+              {{ card.settings.title }}
+            </p>
+            <p class="mt-4 text-base text-black {{data.text_alignment}} font-harmonia">
+              {{ card.settings.description }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="justify-center max-w-sm mx-auto mt-4 sm:flex sm:max-w-none md:justify-center">
+        {% assign buttons_block = section.blocks | where: 'type', 'buttons' %}
+
+        {%- if buttons_block.size > 0 -%}
+          {% for button in buttons_block %}
+            <div class="text-center">
+              {%- render 'TWButtons', button: button -%}
+            </div>
+          {% endfor %}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "Prolon Benefits TW",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "image_width",
+        "label": "Image width",
+        "default": "80px"
+      },
+      {
+        "type": "textarea",
+        "id": "card_width",
+        "label": "Card width",
+        "default": "w-1/3"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text Position",
+        "default": "text-center",
+        "options": [
+          {
+            "label": "Center",
+            "value": "text-center"
+          },
+          {
+            "label": "Left",
+            "value": "text-left"
+          },
+          {
+            "label": "Right",
+            "value": "text-right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "label": "Content Alignment ",
+        "default": "items-center",
+        "options": [
+          {
+            "label": "Center",
+            "value": "items-center"
+          },
+          {
+            "label": "Left",
+            "value": "items-left"
+          },
+          {
+            "label": "Right",
+            "value": "items-right"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "buttons",
+        "name": "Buttons",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Url"
+          },
+          {
+            "type": "select",
+            "id": "button_type",
+            "label": "Button Type",
+            "default": "primary",
+            "options": [
+              {
+                "label": "primary",
+                "value": "primary"
+              },
+              {
+                "label": "secondary",
+                "value": "secondary"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "image_overide_url",
+            "label": "Image Overide"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Prolon Benefits TW",
+        "blocks": [
+          {
+            "type": "cards"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,848 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.speed",
+  "sections": {
+    "advanced_content_mYhDcF": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_TfPJPq": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width:800px;\"><h1 class=\"h1\">\n<br>Percorso verso la salute: la scienza rivoluzionaria dietro <b> il ringiovanimento cellulare\n </b>\n</h1></div><hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_TfPJPq"
+      ],
+      "custom_css": [
+        "h1 {font-weight: normal;}",
+        "@media (max-width: 768px) {h1 {font-size: 30px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_zVfr3L": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_hDJwmr": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "<p>Sostenere una salute duratura attraverso il ringiovanimento cellulare. </p>",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/93353703bec6427884b1d2a93edb30c8.mp4",
+            "width": "100",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-right",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_hDJwmr"
+      ],
+      "custom_css": [
+        "p {color: white;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_iXWTgE": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_tCj6fK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/research-partners-clipped_1600x_04733f94-03e4-40d0-ba33-beb08a768184.webp",
+            "link": "",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_niHHrr": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "code": "<p><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/LNH-UNIVERSITY_LOGOS_LOGOS_LNH_2024_V-FINAL.png?v=1731794280\" alt=\"research partners\"></p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "html_hF8eWG": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" max-width:=\"\"><p> Il nostro impegno costante per prolungare la durata della salute attraverso una ricerca rigorosa ci spinge a esplorare metodi innovativi e clinicamente comprovati per supportare la salute e la longevità. Al centro dei prodotti Prolon si trova la scienza della Tecnologia Nutrizionale Mima Digiuno, un'innovazione progettata per offrire i vasti benefici per la salute del digiuno, continuando a nutrire il corpo con alimenti scientificamente formulati.\n<br><br>\nSviluppata in oltre 25 anni di collaborazione con il Longevity Institute dell'Università della California del Sud e L-Nutra Inc., la Dieta Mima Digiuno (FMD) di 5 Giorni di Prolon ha trasformato il digiuno in un approccio alla longevità basato sull'alimentazione e scientificamente comprovato.</p></div>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_mhdYKp": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" max-width:=\"\"><p> Questo protocollo nutrizionale pulito e a base vegetale supporta il metabolismo e le cellule del corpo in modalità digiuno, sfruttando l'autofagia e favorendo il ringiovanimento cellulare. Con 48 milioni di dollari di finanziamenti e rigorosi test attraverso 32 studi clinici presso 18 istituzioni di fama mondiale, tra cui Stanford, Mayo Clinic, Università di Miami e Università di Genova, tra le altre, il programma di nutrizione che imita il digiuno di Prolon ha ottenuto riconoscimenti per il suo contributo al campo del cibo come medicina.\n <br><br>\nIn particolare, questi studi hanno dimostrato che completare da tre a sei cicli di Prolon FMD ogni anno può portare a profondi benefici per la salute, tra cui una riduzione del punteggio di età biologica, una perdita di peso incentrata sul grasso con preservazione della massa muscolare, marcatori metabolici sani e altro ancora.\n <br><a href=\"https://prolon.it/pages/tutti-i-benefici\" class=\"btn2\">I benefici di ProLon</a>\n</p></div>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "image_tCj6fK",
+        "html_niHHrr",
+        "html_hF8eWG",
+        "html_mhdYKp"
+      ],
+      "custom_css": [
+        "h1 {font-weight: normal;}",
+        ".btn2 {margin-top: 20px; background-color: #1f4036; padding: 8px 15px; color: white; text-decoration: none; border: 1px solid #1f4036; border-radius: 50px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "text_columns_y6xNYV": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_PLq9Ni": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/numbers-1_1080x_c1bf1429-7dc0-471c-bdeb-ebc09a11520e.webp",
+            "image_width": 650,
+            "title": "Ricerca sulla Juventologia",
+            "text": "<p><br> Questo studio sui giovani inizia con una ricerca preclinica su modelli animali per esaminare il potenziale della dieta nel prolungare la longevità.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Dn3PFd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_2_1080x_6a310c97-2ba6-4b5f-8599-7361bbc550e9.webp",
+            "image_width": 650,
+            "title": "Ricerca epidemiologica",
+            "text": "<p><br> Grazie alla comprensione dei fattori di rischio delle malattie all'interno delle popolazioni, possiamo ulteriormente testare e convalidare le ipotesi emerse dalla nostra ricerca.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Hj4UjE": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_3_1080x_ef00d2de-1288-4a94-b32e-f2499d12fa47.webp",
+            "image_width": 650,
+            "title": "Studi clinici",
+            "text": "<p><br> Attraverso studi randomizzati e controllati, valutiamo l'efficacia e la sicurezza delle nostre strategie su soggetti umani.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_mFRziM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_4_1080x_976f0153-93da-4bad-95ae-dcc903bbb842.webp",
+            "image_width": 650,
+            "title": "Studi centenari",
+            "text": "<p><br> La ricerca sui centenari ci aiuta a valutare i benefici a lungo termine delle strategie nutrizionali basate sul digiunoLa ricerca sui centenari ci aiuta a valutare i benefici a lungo termine delle strategie nutrizionali basate sul digiuno.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_d3d7pA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_5_900x_3f589c22-f8a9-4b30-b730-69a1ee3cb190.webp",
+            "image_width": 650,
+            "title": "Analisi dei sistemi complessi",
+            "text": "<p><br> Modellando le complesse interazioni tra cibo, danni cellulari e invecchiamento, puntiamo a svelare i complessi meccanismi della longevità e della salute metabolica.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_atB3jy": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/reasons3_900x_5ea5f827-be09-491b-b59c-455615a4d5dd.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p> Grazie a questi pilastri e alle sperimentazioni cliniche in corso, <b>la tecnologia di imitazione del digiuno di Prolon rimane all'avanguardia nei settori della nutrizione e della longevità</b>, dimostrando come un'alimentazione strategica basata sul digiuno possa favorire una vita più sana e lunga.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_PLq9Ni",
+        "text_block_Dn3PFd",
+        "text_block_Hj4UjE",
+        "text_block_mFRziM",
+        "text_block_d3d7pA",
+        "text_block_atB3jy"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 500; text-align: left;}",
+        ".section-header {text-align: left;}",
+        ".rte-setting a:not(.rte__image),.rte a:not(.rte__image) {text-decoration: none; color: #73914a; font-weight: 600;}",
+        "p {text-align: left;}",
+        ".medium-up--one-third {background-color: #fff; padding: 30px 30px; border-radius: 20px; margin-right: 10px;}",
+        "@media only screen and (min-width: 769px) {.medium-up--one-third {width: 31%; margin-left: 1%; margin-right: 1%; }}",
+        ".index-section {background-color: #fcfcf7; padding: 40px 0; margin-top: 70px;}"
+      ],
+      "settings": {
+        "title": "<div class=\"row\" style=\"max-width: 600px;\">\n<span style=\"font-weight: 500; text-align: left;\">Fondato sulla scienza\n</span><p style=\"color: #333;\"> La scienza di Prolon si basa su cinque pilastri fondamentali, come definiti dal Dott. Valter Longo, uno dei massimi esperti mondiali di longevità:<br></p>\n</div><hr>",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_JPU4Qc": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_dqacRK": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>Most Read Articles & Studies</h2><hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_dqacRK"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_BtgYqn": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_XEJVk8": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "NATURE",
+            "heading": "<h3>The New Champion of Health Programs: How the Fasting Mimicking Diet Surpasses the Mediterranean Diet</h3>",
+            "textarea": "A groundbreakign study in Nature compares the benefits of Prolon vs the Mediterranean Diet for over 120 days.",
+            "cta_text1": "Blog",
+            "cta_link1": "https://prolonlife.com/blogs/stories/how-the-fasting-mimicking-diet-surpasses-the-mediterranean-diet",
+            "cta_text2": "Article",
+            "cta_link2": "https://www.nature.com/articles/s44324-023-00002-1?_kx=Ejga-vG6ImKKgsFBkEltlQ.XqzShz",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#1f4036",
+            "boxed": true,
+            "framed": false
+          }
+        },
+        "advanced_CrAYqw": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "NATURE",
+            "heading": "<h3>Could You Live Longer and Healthier by Reducing Your Biological Age</h3>",
+            "textarea": "The harsh truth? Aging is inevitable. The prospect of wrinkles, fading energy, and the gradual decline of physical and mental abilities is enough to make anyone wish for a pause button on the relentless ticking clock.",
+            "cta_text1": "Blog",
+            "cta_link1": "https://prolonlife.com/blogs/stories/could-you-live-longer-and-healthier-by-reducing-your-biological-age",
+            "cta_text2": "Article",
+            "cta_link2": "https://www.nature.com/articles/s41467-024-45260-9",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#1f4036",
+            "boxed": true,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_XEJVk8",
+        "advanced_CrAYqw"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".btn {border-radius: 50px; font-weight: 600; color: white !important;}",
+        ".promo-grid__text {background-color: white; padding: 50px 30px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    },
+    "advanced_content_cU89fi": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_axxNU8": {
+          "type": "html",
+          "settings": {
+            "code": "<h2> Di seguito, puoi consultare una selezione di pubblicazioni scientifiche e mediche sulla FMD e sulla tecnologia che imita il digiuno:</h2><hr>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_axxNU8"
+      ],
+      "custom_css": [
+        "{background-color: #fcfcf7; padding-top: 30px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "b93b5fe2-5d94-4289-baf5-010de5dc25b6": {
+      "type": "pl-science-blogs",
+      "blocks": {
+        "blogs_T3t67G": {
+          "type": "blogs",
+          "settings": {
+            "description": "A kidney-specific fasting-mimicking diet induces podocyte reprogramming and restores renal function in glomerulopathy",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/39475573/"
+          }
+        },
+        "blogs_YkEFHq": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk",
+            "button_url": "https://www.nature.com/articles/s41467-024-45260-9"
+          }
+        },
+        "55ef0e43-a111-4961-9811-adc2a921c857": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-mimicking diet and markers/risk factors for aging, diabetes, cancer, and cardiovascular disease: controlled trial",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/28202779/"
+          }
+        },
+        "9bb72e14-22f8-467e-92ee-205ffad17afe": {
+          "type": "blogs",
+          "settings": {
+            "description": "A Periodic Diet that Mimics Fasting Promotes Multi-System Regeneration, Enhanced Cognitive Performance, and Healthspan",
+            "button_url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(15)00224-7"
+          }
+        },
+        "2f65bb1f-6d70-494a-9d57-0c5fec17e5a3": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-Mimicking-Diet does not reduce skeletal muscle function in healthy young adults: a randomized control trial",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/35034194/"
+          }
+        },
+        "blogs_3URrVH": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting Mimicking Diet Cycles vs a Mediterranean Diet and Cardiometabolic Risk in Overweight and Obese Hypertensive Subjects: A Randomized Clinical Trial",
+            "button_url": "https://www.nature.com/articles/s44324-023-00002-1?_kx=Ejga-vG6ImKKgsFBkEltlQ.XqzShz"
+          }
+        },
+        "820b76ce-5dde-4cb4-b02d-4500ea51f794": {
+          "type": "blogs",
+          "settings": {
+            "description": "The Effects of a Fasting Mimicking Diet on Skin Hydration, Skin Texture, and Skin Assessment: A Randomized Controlled Trial",
+            "button_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10003066/"
+          }
+        },
+        "8f8fad14-2820-43bd-8262-216594156637": {
+          "type": "blogs",
+          "settings": {
+            "description": "Six-Month Periodic Fasting in Patients With Type 2 Diabetes and Diabetic Nephropathy: A Proof-of-Concept Study",
+            "button_url": "https://academic.oup.com/jcem/article/107/8/2167/6576281?login=false"
+          }
+        },
+        "4e028fc1-e3a0-46d2-8392-e308e79143c6": {
+          "type": "blogs",
+          "settings": {
+            "description": "Efficacy of a fasting-mimicking diet in functional therapy for depression: A randomised controlled pilot trial",
+            "button_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jclp.22971"
+          }
+        },
+        "60debd4c-4b9e-4d25-8c05-6d568a0ae654": {
+          "type": "blogs",
+          "settings": {
+            "description": "Association of Animal and Plant Protein Intake With All-Cause and Cause-Specific Mortality",
+            "button_url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2540540"
+          }
+        },
+        "351a68f2-b1a0-435c-bbb4-4ba104880d5c": {
+          "type": "blogs",
+          "settings": {
+            "description": "An Intermittent Fasting Mimicking Nutrition Bar Extends Physiologic Ketosis in Time Restricted Eating: A Randomized, Controlled, Parallel-Arm Study",
+            "button_url": "https://www.mdpi.com/2072-6643/13/5/1523/htm"
+          }
+        },
+        "6617d4b3-713a-453b-b89a-2baece0a3ba4": {
+          "type": "blogs",
+          "settings": {
+            "description": "Association between IGF-1 levels ranges and all-cause mortality: A meta-analysis",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/35048526/#:~:text=Both%20high%20and%20low%20levels,associated%20with%20the%20lowest%20mortality."
+          }
+        },
+        "e1eb548f-5ffc-48d1-bfe2-453f29708aa5": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-mimicking diet prevents high-fat diet effect on cardiometabolic risk and lifespan",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/34650272/"
+          }
+        },
+        "558894c1-fc61-4b65-ae6c-b0341e952055": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting and cancer treatment in humans: A case series report",
+            "button_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2815756/"
+          }
+        },
+        "7647c2b2-5705-46cb-87ed-1e90f2a73e34": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-mimicking diet and hormone therapy induce breast cancer regression",
+            "button_url": "https://www.nature.com/articles/s41586-020-2502-7"
+          }
+        },
+        "66fb6c39-97af-4c8d-8254-2d70d2305607": {
+          "type": "blogs",
+          "settings": {
+            "description": "Nutrition and fasting mimicking diets in the prevention and treatment of autoimmune diseases and immunosenescence",
+            "button_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862044/"
+          }
+        },
+        "6b4315b5-7cae-4ada-a70e-ced5e3078cb9": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-Mimicking Diet Modulates Microbiota and Promotes Intestinal Regeneration to Reduce Inflammatory Bowel Disease Pathology",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/30840892/"
+          }
+        },
+        "3c713ff5-6d62-47c6-a673-5ea6213ded56": {
+          "type": "blogs",
+          "settings": {
+            "description": "Fasting-Mimicking Diet Reduces HO-1 to Promote T Cell-Mediated Tumor Cytotoxicity",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/27411588/"
+          }
+        },
+        "be9be642-a6e5-4d62-8dcc-f0320c7108c1": {
+          "type": "blogs",
+          "settings": {
+            "description": "Prolonged Fasting reduces IGF-1/PKA to promote hematopoietic stem cell-based regeneration and reverse immunosuppression",
+            "button_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4102383/"
+          }
+        },
+        "af76fb54-740a-4ca5-9fcc-015673d3f289": {
+          "type": "blogs",
+          "settings": {
+            "description": "A Diet Mimicking Fasting Promotes Regeneration and Reduces Autoimmunity and Multiple Sclerosis Symptoms",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/27239035/"
+          }
+        },
+        "d84d0386-c1f1-453d-b38f-1ffc88113e66": {
+          "type": "blogs",
+          "disabled": true,
+          "settings": {
+            "description": "Fasting-Mimicking Diet Promotes Ngn3-Driven β-Cell Regeneration to Reverse Diabetes",
+            "button_url": "https://www.cell.com/fulltext/S0092-8674(17)30130-7"
+          }
+        },
+        "478a64cc-d1a2-4e8e-94c5-80587628e649": {
+          "type": "blogs",
+          "disabled": true,
+          "settings": {
+            "description": "Fasting in diabetes treatment (FIT) trial: study protocol for a randomized, controlled, assessor-blinded intervention trial on the effects of intermittent use of a fasting-mimicking diet in patients with type 2 diabetes",
+            "button_url": "https://pubmed.ncbi.nlm.nih.gov/32580710/"
+          }
+        },
+        "blogs_hQNpGM": {
+          "type": "blogs",
+          "settings": {
+            "description": "Integration of a fasting-mimicking diet programme in primary care for type 2 diabetes reduces the need for medication and improves glycaemic control.",
+            "button_url": "https://link.springer.com/article/10.1007/s00125-024-06137-0"
+          }
+        }
+      },
+      "block_order": [
+        "blogs_T3t67G",
+        "blogs_YkEFHq",
+        "55ef0e43-a111-4961-9811-adc2a921c857",
+        "9bb72e14-22f8-467e-92ee-205ffad17afe",
+        "2f65bb1f-6d70-494a-9d57-0c5fec17e5a3",
+        "blogs_3URrVH",
+        "820b76ce-5dde-4cb4-b02d-4500ea51f794",
+        "8f8fad14-2820-43bd-8262-216594156637",
+        "4e028fc1-e3a0-46d2-8392-e308e79143c6",
+        "60debd4c-4b9e-4d25-8c05-6d568a0ae654",
+        "351a68f2-b1a0-435c-bbb4-4ba104880d5c",
+        "6617d4b3-713a-453b-b89a-2baece0a3ba4",
+        "e1eb548f-5ffc-48d1-bfe2-453f29708aa5",
+        "558894c1-fc61-4b65-ae6c-b0341e952055",
+        "7647c2b2-5705-46cb-87ed-1e90f2a73e34",
+        "66fb6c39-97af-4c8d-8254-2d70d2305607",
+        "6b4315b5-7cae-4ada-a70e-ced5e3078cb9",
+        "3c713ff5-6d62-47c6-a673-5ea6213ded56",
+        "be9be642-a6e5-4d62-8dcc-f0320c7108c1",
+        "af76fb54-740a-4ca5-9fcc-015673d3f289",
+        "d84d0386-c1f1-453d-b38f-1ffc88113e66",
+        "478a64cc-d1a2-4e8e-94c5-80587628e649",
+        "blogs_hQNpGM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-white {color: #212b36; font-size: 15px; font-weight: normal !important;}",
+        ".shadow-md {box-shadow: none;}",
+        ".bg-gray-50 {--tw-bg-opacity: 1; background-color: #ffffff; padding: 30px;}",
+        "@media (min-width: 48em) {.md\\:text-\\[18px\\] {font-size: 16px; }}",
+        "@media (min-width: 48em) {.md\\:py-\\[40px\\] {padding-top: 40px; padding-bottom: 40px; max-width: 1500px; }}",
+        ".bg-\\[\\#77A117\\] {--tw-bg-opacity: 1; background-color: #ffffff; border-radius: 50px; border: 1px solid #73994a; max-width: 200px; padding-top: 8px; padding-bottom: 8px;}"
+      ],
+      "settings": {}
+    },
+    "text_columns_DPaNzH": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_DAVHbn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo1_700x_4b7f781a-90e7-4d19-baa3-86446933db6c.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Dieta mima digiuno e marcatori/fattori di rischio per l'invecchiamento, il diabete, il cancro e le malattie cardiovascolari: studio controllato.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/28202779/"
+          }
+        },
+        "text_block_dhf6Fe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo2_700x_c0e6ad6c-90fc-4bcf-8611-7abade53826f.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Una dieta periodica che imita il digiuno promuove la rigenerazione multisistemica, il miglioramento delle prestazioni cognitive e la durata della salute.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(15)00224-7"
+          }
+        },
+        "text_block_tYPR6h": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo3_700x_a66ea3c3-06d7-4538-92e6-18908f7d07fa.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno non riduce la funzione muscolare scheletrica in giovani adulti sani: uno studio di controllo randomizzato.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/35034194/"
+          }
+        },
+        "text_block_QiEfLA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-Med_700x_12ae25b1-9a33-4227-8f48-db8eaf0c3c12.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Cicli di dieta mima digiuno vs dieta mediterranea e rischio cardiometabolico in soggetti ipertesi sovrappeso e obesi: Uno studio clinico randomizzato.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.nature.com/articles/s41586-020-2502-7"
+          }
+        },
+        "text_block_wCYjDG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo4_700x_814f9c3e-25cd-4563-901c-db3b1b4e9c09.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Gli effetti di una dieta mima digiuno sull'idratazione, la consistenza e la valutazione della pelle: Uno studio controllato randomizzato.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10003066/"
+          }
+        },
+        "text_block_q4MnTD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_Logo5_700x_0514067b-0e56-47ad-8ab4-7fa74abd28ae.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Digiuno periodico di sei mesi in pazienti con diabete di tipo 2 e nefropatia diabetica: Uno studio di prova di concetto.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://academic.oup.com/jcem/article/107/8/2167/6576281?login=false"
+          }
+        },
+        "text_block_DjCK7N": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_Logo6_700x_6d05d017-bbf4-4c01-9f45-3a2afe608d90.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>L'efficacia della dieta mima digiuno nella terapia funzionale della depressione: Uno studio pilota randomizzato e controllato.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jclp.22971"
+          }
+        },
+        "text_block_aAPpLE": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo7_700x_db0edf13-d091-4f14-b724-ca5415256932.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Associazione dell'assunzione di proteine animali e vegetali con la mortalità per tutte le cause e per cause specifiche.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2540540"
+          }
+        },
+        "text_block_NpWRcN": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo8_700x_741a7268-4d3a-46ac-84ef-f75028f223bd.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Una barretta nutrizionale che simula il digiuno intermittente e prolunga la chetosi fisiologica con l'alimentazione: Uno studio randomizzato, controllato, a bracci paralleli.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.mdpi.com/2072-6643/13/5/1523/htm"
+          }
+        },
+        "text_block_QWCnzG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo9_700x_d70a5b79-75eb-47fd-aeaf-767287d559e5.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Correlazione tra gli intervalli dei livelli di IGF-1 e la mortalità per tutte le cause: Una meta-analisi.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/35048526/#:~:text=Both%20high%20and%20low%20levels,associated%20with%20the%20lowest%20mortality."
+          }
+        },
+        "text_block_hB7BTY": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo10_700x_5277405e-ad79-4851-87d3-406aaeb05260.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno previene l'effetto della dieta ad alto contenuto di grassi sul rischio cardiometabolico e sulla durata della vita.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/34650272/"
+          }
+        },
+        "text_block_Jfm4rB": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo11_700x_443e4a71-140f-4c7f-8892-905ebaab449b.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Digiuno e trattamento del cancro nell'uomo: Una serie di casi.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/34650272/"
+          }
+        },
+        "text_block_z6mJQp": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo12_700x_30a9babc-c90f-4134-8eab-078fc195b6ed.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno e la terapia ormonale inducono la regressione del cancro al seno.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.nature.com/articles/s41586-020-2502-7"
+          }
+        },
+        "text_block_jNhQnh": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo13_700x_1735ccf3-65a6-4aef-8c9d-805f5f574619.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Alimentazione e dieta mima digiuno nella prevenzione e nel trattamento delle malattie autoimmuni e dell'immunosenescenza.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862044/"
+          }
+        },
+        "text_block_zq98We": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo14_700x_f9b17780-710d-4f54-907b-ccb1c04747c5.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno modula il microbiota e promuove la rigenerazione intestinale per ridurre la patologia delle malattie infiammatorie intestinali.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/30840892/"
+          }
+        },
+        "text_block_JREYjz": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo15_700x_5e85e404-90ff-4bd2-be9e-e698c018bdca.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno riduce l'HO-1 per promuovere la citotossicità tumorale mediata dalle cellule T.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/27411588/"
+          }
+        },
+        "text_block_XqgqnC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo16_700x_298d3274-14f1-4369-8963-c8b02a9c169f.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Il digiuno prolungato riduce l'IGF-1/PKA per promuovere la rigenerazione basata sulle cellule staminali ematopoietiche e invertire l'immunosoppressione.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4102383/"
+          }
+        },
+        "text_block_fyQRWM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo17_700x_8e2b3cfd-a911-4c44-ac09-402035406c59.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno favorisce la rigenerazione e riduce l'autoimmunità e i sintomi della sclerosi multipla.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/27239035/"
+          }
+        },
+        "text_block_ccjQeJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Science_Articles_-_logo18_700x_29807858-fa37-4845-86cc-868ec23f9c30.webp",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>La dieta mima digiuno promuove la rigenerazione delle cellule β guidata da Ngn3 per invertire il diabete.</p>",
+            "button_label": "Continua a leggere",
+            "button_link": "https://www.cell.com/fulltext/S0092-8674(17)30130-7"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_DAVHbn",
+        "text_block_dhf6Fe",
+        "text_block_tYPR6h",
+        "text_block_QiEfLA",
+        "text_block_wCYjDG",
+        "text_block_q4MnTD",
+        "text_block_DjCK7N",
+        "text_block_aAPpLE",
+        "text_block_NpWRcN",
+        "text_block_QWCnzG",
+        "text_block_hB7BTY",
+        "text_block_Jfm4rB",
+        "text_block_z6mJQp",
+        "text_block_jNhQnh",
+        "text_block_zq98We",
+        "text_block_JREYjz",
+        "text_block_XqgqnC",
+        "text_block_fyQRWM",
+        "text_block_ccjQeJ"
+      ],
+      "custom_css": [
+        "{background-color: #fcfcf7; padding-top: 30px;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359": {
+      "type": "pl-newsletter",
+      "disabled": true,
+      "settings": {
+        "description": "<div class=\"flex justify-center items-center w-full\">\n      <div class=\"w-full\" q:id=\"1b\">\n        <div class=\"\n            flex\n            justify-center\n            items-center\n            flex-col\n            md:flex-row\n            max-w-[1500px]\n            mx-auto\n          \">\n          <div class=\"\n              text-center text-[30px]\n              lg:text-[2.3vw]\n              xl:text-[36px]\n              text-white\n              font-normal\n              text-left\n              md:pl-2\n              mr-[20px]\n            \">\n            Free <b>The Longevity Diet</b> eBook download\n          </div>\n          <div class=\"flex justify-center items-center m:w-full\">\n            <div class=\"klaviyo-form-VGQpAC\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n<script src=\"https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XqzShz\"></script>",
+        "descriptionWidth": "w-full",
+        "sectionWidth": "max-w-[1600px]"
+      }
+    },
+    "advanced_content_DD6Nxp": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_9KAdHW": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media (min-width: 769px) {\nh3 {font-weight: normal;\nfont-size: 25px;}\nh2 {color: #73914a;\nfont-size: 34px;\nfont-weight: normal;}\np {font-size: 16px;}\n}\n\n@media (max-width: 768px) {\nh3 {\nfont-size: 18px !important;}\nh2 {font-size: 26px !important; \ncolor: #73914a; font-weight: normal;}\np {font-size: 14px; text-align: left;}\n}\n\n\n#shopify-section-template--17933339885726__b93b5fe2-5d94-4289-baf5-010de5dc25b6, #shopify-section-template--17933339885726__advanced_content_cU89fi {background-color: #fcfcf7;}\n\n.drk-grn {color: #1e4136;}\n\nhr{ border: none;\n  border-top: 2px dotted #999;\n  color: #999;\n  background-color: #fff;\n  height: 1px;\n  margin: 10px 0;}\n\n#shopify-section-template--17933339885726__text_columns_y6xNYV > div > div.flex.flex-nowrap.md\\:flex-wrap.overflow-auto.md\\:justify-center.\\!md\\:flex-col.md\\:flex-row.grid--uniform.grid--flush-bottom > div:nth-child(6) {\nbackground-color: #1f4035;\n    color: white;\n    border-radius: 0px;}\n\n</style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_9KAdHW"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "advanced_content_mYhDcF",
+    "promo_grid_zVfr3L",
+    "advanced_content_iXWTgE",
+    "text_columns_y6xNYV",
+    "advanced_content_JPU4Qc",
+    "promo_grid_BtgYqn",
+    "advanced_content_cU89fi",
+    "b93b5fe2-5d94-4289-baf5-010de5dc25b6",
+    "text_columns_DPaNzH",
+    "b1907ea1-22d9-4555-89a5-c5de9b7ba359",
+    "advanced_content_DD6Nxp"
+  ]
+}

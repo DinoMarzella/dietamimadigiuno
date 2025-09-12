@@ -1,0 +1,171 @@
+<style>
+    .__app_mobile_fb{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin-top:80px;
+}
+.__content_left_col_fb{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex:1;
+  width:100%;
+}
+.__content_right_col_fb{
+  display:flex;
+  flex:1;
+  width:100%;
+}
+.__image_multi_wrap{
+  position:relative;
+  width:100%;
+  overflow:visible;
+}
+.__image_multi_wrap img{
+  width:95%;
+  object-fit:cover;
+  padding:10px;
+}
+.__child_center_fb{
+  width:100%;
+  max-width:450px;
+  color:white;
+}
+.__child_center_fb a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.__image_multi_wrap:before{
+  content:"";
+  position:absolute;
+  display:block;
+  background-image:url('https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Fastination.png?v=1634625175');
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  width:100%;
+  max-width:60%;
+  height:70vh;
+  z-index:9;
+  left:15%;
+  top:-10%;
+}
+@media(max-width:767px){
+  .__app_mobile_fb{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .__child_center_fb{
+    padding:50px 20px;
+  }
+}
+
+@media(min-width:900px) and (max-width:1200px){
+  .__image_multi_wrap:before{
+    max-width:70%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:60vh;
+  top:-20%;
+    left:25%;
+  }  }
+
+@media(min-width:600px) and (max-width:900px){
+  .__image_multi_wrap:before{
+    max-width:70%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:50vh;
+  top:-20%;
+    left:25%;
+  }  }
+
+
+@media(min-width:375px) and (max-width:600px){
+  .__app_mobile_fb{
+    margin-top:0px;
+  }
+  .__image_multi_wrap:before{
+    max-width:70%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:50vh;
+  top:-20%;
+    left:20%;
+  }  }
+
+</style>
+
+<div class="__app_mobile_fb" style="background-color:{{section.settings.right_bg_color}}">
+    <div class="__content_left_col_fb">
+      <div class="__child_center_fb">
+        <span>{{section.settings.mini_title}}</span>
+        <h1>{{section.settings.text_main_title}}</h1>
+        <p>{{section.settings.main_para_app}}</p>
+        <a href="{{section.settings.link_url_app}}">{{section.settings.btn_text_app}}</a>
+      </div>
+      </div>
+    <div class="__content_right_col_fb" style="background-color:{{section.settings.image_bg_color}};">
+      <div class="__image_multi_wrap">
+      <img src="{{section.settings.app_image | img_url: '1200x'}}">
+        </div>
+    </div>
+    </div>
+
+    {% schema %}
+  {
+    "name": "Nutrition app",
+    "settings": [
+      {
+        "type": "text",
+        "id": "mini_title",
+        "label": "Add Sub title"
+      },
+      {
+        "type": "color",
+        "id": "right_bg_color",
+        "label": "Left Block Background",
+        "default": "#A75248"
+      },
+      {
+        "type": "text",
+        "id": "text_main_title",
+        "label": "Add Title"
+      },
+      {
+        "type": "text",
+        "id": "main_para_app",
+        "label": "Add Paragraph"
+      },
+      {
+        "type": "text",
+        "id": "link_url_app",
+        "label": "Add app link"
+      },
+      {
+        "type": "text",
+        "id": "btn_text_app",
+        "label": "Add Button Text"
+      },
+      {
+        "type": "color",
+        "id": "image_bg_color",
+        "label": "Right Block Text",
+        "default": "#d8d8d8"
+      },
+      {
+        "type": "image_picker",
+        "id": "app_image",
+        "label": "Add Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nutrition app"
+      }
+    ]
+  }
+{% endschema %}

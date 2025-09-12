@@ -1,0 +1,90 @@
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+<script>
+    {% if page.handle == 'lhp-register' %}
+  {% assign listID="QYT3XX" %}
+  {% elsif page.handle == 'hcc-register' %}
+  {% assign listID="XyL3tY" %}
+
+  {% elsif page.handle == 'hcr-register' %}
+  {% assign listID="XqG2RU"  %}
+
+  {% endif %}
+
+  function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+    $(document).ready(function () {
+      window.leadSavingUrl= 'https://prolon-pro.herokuapp.com/leads/save-2023';
+      if(localStorage.doLocal=='1'){
+         window.leadSavingUrl= 'http://localhost:1337/leads/save-2023'; 
+      }
+      $('.header').parent().addClass('stick-top');
+      var register_type = getParameterByName('register_type'); // "lorem"
+
+      if(register_type=='a4m')
+      {
+        $('.how-did-you-hear select').html(`<option value="A4M">A4M</option>`).val('A4M');
+      }
+
+
+    });
+
+  $(".registration-form").validate({
+    submitHandler:  async function(form,e) {
+          e.preventDefault();
+          console.log('Sumitting form...')
+          $('.btn-registration-submit').text('...').attr('disabled', 'disabled');
+    //       var data = $(this).serializeArray();
+      let email =$('[name="Email"]').val()
+      let phone_number=$('[name="Mobile"]').val()
+
+  let listID= "{{listID}}";
+          if(listID && listID!=''){ 
+          try{
+          await $.getJSON(`https://prolon-pro.herokuapp.com/leads/add-member-to-list?email=${email}&phone_number=${phone_number}&list_id=${listID}`).catch(ex=>{
+          console.log(ex);
+          }); 
+          }
+          catch(ex){
+          console.log(ex) 
+          }
+          }  
+          var data = new FormData($('.registration-form')[0]);
+          $.ajax({
+            url: leadSavingUrl,
+            // url: 'http://localhost:1337/leads/save',
+            method: 'POST',
+            data,
+            success: function (data) {
+
+              if(data.details && data.details.output && data.details.output.includes('Received')){
+
+                window.location = 'https://prolonfmd.com/pages/thankyou'
+
+              
+              }
+              else{
+                alert(data?.details?.output);
+                $('.btn-registration-submit').text('Submit').removeAttr('disabled'); 
+              }   
+             
+
+            },
+            error: function (error) {
+              console.log(error)
+              alert('Error. Please try again.');
+              $('.btn-registration-submit').text('Submit').removeAttr('disabled');
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+          })
+      }
+  });
+</script>

@@ -1,0 +1,312 @@
+<style>
+  /*! CSS Used from: https://tailwindui.com/css/components-v2.css?id=9425511055fa0bb40880 */
+
+  *, 
+  ::after,
+  ::before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x))
+      translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+      scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+    --tw-shadow: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty);
+    --tw-brightness: var(--tw-empty);
+    --tw-contrast: var(--tw-empty);
+    --tw-grayscale: var(--tw-empty);
+    --tw-hue-rotate: var(--tw-empty);
+    --tw-invert: var(--tw-empty);
+    --tw-saturate: var(--tw-empty);
+    --tw-sepia: var(--tw-empty);
+    --tw-drop-shadow: var(--tw-empty);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-backdrop-blur: var(--tw-empty);
+    --tw-backdrop-brightness: var(--tw-empty);
+    --tw-backdrop-contrast: var(--tw-empty);
+    --tw-backdrop-grayscale: var(--tw-empty);
+    --tw-backdrop-hue-rotate: var(--tw-empty);
+    --tw-backdrop-invert: var(--tw-empty);
+    --tw-backdrop-opacity: var(--tw-empty);
+    --tw-backdrop-saturate: var(--tw-empty);
+    --tw-backdrop-sepia: var(--tw-empty);
+    --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+      var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+      var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+      var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+      var(--tw-backdrop-sepia);
+  }
+  {% unless status%}
+  .stripe-connected-alert{
+      display:none
+  } 
+  {% endunless %}
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  .-mx-2 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  .-my-1\.5 {
+    margin-top: -0.375rem;
+    margin-bottom: -0.375rem;
+  }
+  .ml-3 {
+    margin-left: 0.75rem;
+  }
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .h-5 {
+    height: 1.25rem;
+  }
+  .w-5 {
+    width: 1.25rem;
+  }
+  .max-w-4xl {
+    max-width: 56rem;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  .bg-green-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+  .p-4 {
+    padding: 1rem;
+  }
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .py-1\.5 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .text-green-400 {
+    --tw-text-opacity: 1;
+    color: rgba(52, 211, 153, var(--tw-text-opacity));
+  }
+  .text-green-800 {
+    --tw-text-opacity: 1;
+    color: rgba(6, 95, 70, var(--tw-text-opacity));
+  }
+  .text-green-700 {
+    --tw-text-opacity: 1;
+    color: rgba(4, 120, 87, var(--tw-text-opacity));
+  }
+  .hover\:bg-green-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+  .focus\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .focus\:ring-2:focus {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+      var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+      calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+      var(--tw-shadow, 0 0 #0000);
+  }
+  .focus\:ring-green-600:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(5, 150, 105, var(--tw-ring-opacity));
+  }
+  .focus\:ring-offset-2:focus {
+    --tw-ring-offset-width: 2px;
+  }
+  .focus\:ring-offset-green-50:focus {
+    --tw-ring-offset-color: #ecfdf5;
+  }
+    .text-green-400 {
+    --tw-text-opacity: 1;
+    color: rgba(52, 211, 153, var(--tw-text-opacity));
+  }
+      
+  .text-red-800 {
+    --tw-text-opacity: 1;
+    color: rgba(153, 27, 27, var(--tw-text-opacity));
+  }
+  .text-red-700 {
+    --tw-text-opacity: 1;
+    color: rgba(185, 28, 28, var(--tw-text-opacity));
+  }
+  .hover\:bg-red-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+</style>
+<div class="max-w-4xl mx-auto stripe-connected-alert">
+  <div class="p-4 rounded-md ">
+    <div class="flex"> 
+     
+      <div class="ml-3" id="stripe-connect-alert-content">
+        <h3 class="text-sm font-medium text-green-800">Loading...</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  
+  jQuery( document ).ready(function() {
+    let email = "{{customer.email}}";
+    loadStatus(email)
+    
+});
+//   window.API_URL = "http://localhost:1337/";
+  window.API_URL = "https://prolon-pro.herokuapp.com/";
+  function loginToStripe(email){
+    console.log(email)
+    console.log(Shopify.shop)
+
+    fetch(`${API_URL}stores/stripe/generate-account-login-link?email=${email}&shop=${Shopify.shop}`)
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        window.location = data.url
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+  
+  } 
+  
+  
+  function loadStatus(email){
+    jQuery.ajax({ 
+      type: "GET",
+      url: `${window.API_URL}stores/stripe/account-status?email=${email}&shop=${Shopify.shop}`,
+//       url: `http://localhost:1337/stores/stripe/account-status?email=zeeshanjamshed786@gmail.com&shop=${Shopify.shop}`,
+      cache: !1,
+      dataType: "json",
+      success: function(data) {
+        if(data && data.verified){
+          jQuery('#stripe-connect-alert-content').html(`
+        <h3 class="text-sm font-medium text-green-800">Stripe Connected</h3>
+        <div class="mt-2 text-sm text-green-700">
+          <p>
+          View your payout directly on stripe.
+          </p>
+        </div> 
+        <div class="mt-4">
+          <div class="-mx-2 -my-1.5 flex">
+            <a
+onclick="loginToStripe('${email}')"
+              target="_blank"
+              rel="noopener"
+              type="button"
+              class="
+                bg-green-50
+                px-2
+                py-1.5
+                rounded-md
+                text-sm
+                font-medium
+                text-green-800
+                hover:bg-green-100
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-offset-green-50
+                focus:ring-green-600
+                cursor-pointer
+              "
+               style="cursor: pointer"
+            >
+            View Payouts
+            </a> 
+          </div>
+        </div>`)
+        }else{
+          jQuery('#stripe-connect-alert-content').html(`
+        <h3 class="text-sm font-medium text-red-800">Stripe Account not verified.</h3>
+        <div class="mt-2 text-sm text-red-700">
+          <p>
+          Please verify your account first.
+          </p>
+        </div> 
+        <div class="mt-4">
+          <div class="-mx-2 -my-1.5 flex">
+            <a
+onclick="loginToStripe('${email}')"
+              target="_blank"
+              rel="noopener"
+              type="button"
+              class="
+                bg-red-50
+                px-2
+                py-1.5
+                rounded-md
+                text-sm
+                font-medium
+                text-red-800
+                hover:bg-red-100
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-offset-green-50
+                focus:ring-green-600
+                cursor-pointer
+              "
+               style="cursor: pointer"
+            >
+            Verify Account
+            </a> 
+          </div>
+        </div>`)
+        }
+      },
+      error: function(err) {
+        jQuery('#stripe-connect-alert-content').html(`
+        <h3 class="text-sm font-medium text-red-800">Account not found.</h3>`)
+      }
+    })
+  }
+</script>

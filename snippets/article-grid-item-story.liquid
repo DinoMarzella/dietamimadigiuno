@@ -1,0 +1,87 @@
+{%- assign fixed_aspect_ratio = false -%}
+{% unless image_size == 'natural' %}
+  {%- assign fixed_aspect_ratio = true -%}
+{% endunless %}
+
+<div class="overflow-hidden bg-white border border-gray-300 border-solid rounded-lg" data-aos="row-of-{{ per_row }}">
+  <div class="!grid ">
+    <div class="">
+      {% if article.image %}
+        <a href="{{ article.url }}" class="article__grid-image">
+          {% if fixed_aspect_ratio %}
+            <div class="image-wrap">
+              <div
+                class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--{{ image_size }} lazyload"
+                data-bgset="{% render 'bgset', image: article.image %}"
+                data-sizes="auto">
+              </div>
+              <noscript>
+                <img class="lazyloaded" src="{{ article.image | img_url: '400x' }}" alt="{{ article.title | escape }}">
+              </noscript>
+            </div>
+          {% else %}
+            <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: article.image.aspect_ratio }}%;">
+              {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ article.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ article.image.alt | escape }}">
+              <noscript>
+                <img class="lazyloaded" src="{{ article.image | img_url: '400x' }}" alt="{{ article.title | escape }}">
+              </noscript>
+            </div>
+          {% endif %}
+        </a>
+      {% else %}
+        <div class="article__grid-image">
+          {% if fixed_aspect_ratio %}
+            <div class="image-wrap">
+              <div
+                class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--{{ image_size }} lazyload">
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="md:!pt-[47px] md:!pr-[46px] md:!pb-[42px] md:!pl-[46px] p-[10px] md:p-[25px] ">
+      <div class="">
+        {% if section.settings.blog_show_date or article.tags.size > 0 or articles.comments_count > 0 %}
+          <div class=" !text-left !font-semibold ">
+            {% for tag in article.tags %}
+            {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count
+            %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+            <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a> 
+            {% endfor %} 
+          </div>
+        {% endif %}
+<div class="!mt-[10px]  ">
+        <a href="{{ article.url }}" class="  font-bold   !text-left">{{ article.title }}</a></div>
+<p class="py-3">
+  {{ article.content | strip_html | truncatewords: 16 }}
+</p>
+        
+<div class="py-1 md:w-auto" q:key="1">
+  <a href="{{ article.url }}"
+    class="inline-flex h-[50px]  justify-center items-center py-[10px] px-7  text-base md:text-lg leading-4 font-medium text-center rounded-md shadow-sm hover:bg-[#F7F9FB] hover:bg-[#F7F9FB] whitespace-nowrap bg-[#F7F9FB] hover:bg-[#F7F9FB]  text-black border border-gray-300 ">
+    Read More </a>
+</div>
+        {% if section.settings.blog_show_author %}
+          <div class="">by {{ article.author }}</div>
+        {% endif %}
+
+        {% if section.settings.blog_show_excerpt %}
+          <div class="rte article__excerpt">
+            {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+            {% else %}
+              {{ article.content | strip_html | truncatewords: 40 }}
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

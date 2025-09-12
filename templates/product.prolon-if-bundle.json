@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-pl-bundle",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "Intermittent Fasting Bundle",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "check_items": "<b>Ecco cosa è incluso:</b>\n<ul class=\"mt-2\">\n<li>Kit Dieta Mima Digiuno (x1)</li>\n<li>Nutrition Bar (x12)</li>\n<li>ProLon ReSet - kit 1 giorno (x2)</li>\n<li>L-Biome (x30)</li>\n</ul>",
+            "custom_name": "",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "images_nziDxV": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/INTERMITTENT_FASTING_BUNDLE_copia.jpg",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_6TExGB": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/5-Day_Food.png",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_AWFUpU": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/nutrition-bar-asset-1600x1600.webp",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_KAJDMJ": {
+          "type": "images",
+          "settings": {
+            "image": "shopify://shop_images/c6a8afdcfbc9019aafecc5fa72e1946736fc2df0_2000x_82d80482-6bb1-4112-8680-b7196b7379ca.webp",
+            "full_width": false,
+            "media_type": "image",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "images_nziDxV",
+        "images_6TExGB",
+        "images_AWFUpU",
+        "images_KAJDMJ"
+      ],
+      "custom_css": [
+        ".cbb-frequently-bought-container {display: none;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "intermittent-fasting-bundle",
+        "theme_option": "theme_orange",
+        "show_description": false,
+        "show_reviews": true,
+        "custom_product_title": false,
+        "sub_title": "",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option1",
+        "option_1_name": "Scegli il gusto del {option}",
+        "option_1": "button",
+        "option_2_name": "Scegli il gusto delle {option}",
+        "option_2": "button",
+        "option_3_name": "{option}",
+        "option_3": "button"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cosa c'è nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p><p><strong>Gusto originale:</strong> Verdure, Minestrone, Minestrone Quinoa, Funghi, Pomodoro <strong>— oppure —</strong></p><p><strong>Gusto nuovo sapore:</strong> Zucca violina, Fagioli neri, Fagioli bianchi e spinaci, Zucca violina e quinoa, Pomodoro.</p><p><strong>Zuppe:</strong> Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p><p><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p><p><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p><p><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p><p><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p><p><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "content_html": "",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p><p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong><a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>.</strong></p><p>Il digiuno prolungato (&gt;2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina.</p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità.</p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule.</p>",
+            "content_html": "",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Valori e informazioni nutrizionali",
+            "content": "",
+            "content_html": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c": {
+      "type": "promo-grid",
+      "blocks": {
+        "5e857927-5599-4277-b57e-0e2cdf6246b9": {
+          "type": "banner",
+          "settings": {
+            "heading": "Coaching Gratuito",
+            "text": "Continua il tuo percorso di Mantenimento!   ",
+            "link": "https://calendly.com/prolonitalia/prenotazione-consulenza-prolon",
+            "label": "Prenota ora",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "5e857927-5599-4277-b57e-0e2cdf6246b9"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "code": "<div class=\"section\" style=\" max-width: 1100px; margin: auto;padding: 20px;\">\n\t<h3 style=\"font-weight: 500;\">Ecco come implementare il programma:</h3>\n\t<div class=\"my-4\">\n\t\t<h2 class=\"text-lg font-bold text-muted-foreground\">SETTIMANA 1</h2>\n\t\t<div class=\"grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7\">\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 1</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Kit Dieta Mima Digiuno<br> (Giorno 1)\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 2</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Kit Dieta Mima Digiuno<br> (Giorno 2)\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 3</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Kit Dieta Mima Digiuno<br> (Giorno 3)\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 4</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Kit Dieta Mima Digiuno<br> (Giorno 4)\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 5</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Kit Dieta Mima Digiuno<br> (Giorno 5)\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-stone-400 text-white\">Giorno 6</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Rest Day</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-stone-400 text-white\">Giorno 7</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Alimentazione Abituale</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<h2 class=\"text-lg font-bold text-muted-foreground\">SETTIMANE 2 - 4</h2>\n\t\t<div class=\"grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7\">\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 1</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 2</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 3</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-stone-400 text-white\">Giorno 4</div>\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center\">Alimentazione Abituale</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-[#739949] text-white\">Giorno 5</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Nutrition Bar (x1)</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"p-2 text-center bg-[#739949] text-white\">Giorno 6</div>\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center\"> ProLon ReSet - kit 1 giorno</div>\n\t\t\t</div>\n\t\t\t<div class=\"border\">\n\t\t\t\t<div class=\"text-primary-foreground p-2 text-center bg-stone-400 text-white\">Giorno 7</div>\n\t\t\t\t<div class=\"bg-primary text-primary-foreground p-2 text-center\">Alimentazione Abituale</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t\t<p class=\"py-4\"><b>Note:</b> Dopo il periodo iniziale di 3 mesi con Prolon 5-Day, suggeriamo di utilizzare\n\t\t\tquesto programma 3 volte all'anno per il mantenimento della longevità. Quando si passa da un ciclo Prolon\n\t\t\tall'altro, utilizzare il Reset di 1 giorno almeno un giorno alla settimana come digiuno di 24 ore e le\n\t\t\tBarrette del Digiuno negli altri giorni della settimana per allungare il periodo di digiuno.\n\t\t\t<br><br>\n\t\t\tMangiare la Barretta del Digiuno non significa interrompere il digiuno! La tecnologia nutrizionale\n\t\t\tutilizzata per creare la Barretta del Digiuno è la stessa delle formulazioni utilizzate nel Programma Prolon\n\t\t\t5 Giorni. L'uso della Barretta del Digiuno come colazione, sostituto della cena o spuntino dopo cena nei\n\t\t\tgiorni in cui non si segue il Programma Prolon 5 Giorni o il Reset di 1 Giorno vi aiuterà a prolungare il\n\t\t\tdigiuno notturno o a iniziare il digiuno di notte.\n\t\t\t<br><br>\n\t\t\t<span style=\"border-left: 4px solid orange; padding-left: 20px;\">Avrete una quantità di prodotto sufficiente\n\t\t\t\tper 4 settimane.</span>\n\t\t</p>\n\t</div>"
+      }
+    },
+    "text_columns_GWFzMT": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_NG3zTr": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-5-day-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Kit Dieta Mima Digiuno",
+            "text": "<p>Prolon è stato progettato e testato clinicamente da 18 università di tutto il mondo per nutrire il vostro corpo inducendo i benefici cellulari, metabolici ed emotivi del digiuno prolungato. Con tre cicli di 5 giorni di ProLon, potrete alimentare il vostro corpo verso il ringiovanimento, la longevità e una vita sana.</p>\n<ul>\n<li>· Ringiovanimento cellulare</li>\n<li>· Benessere metabolico</li>\n<li>· Perdita di peso focalizzata sui grassi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-5-day"
+          }
+        },
+        "text_block_F7EiBC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon_Life_PDP_Square_Images_-_ReSet.png",
+            "image_width": 650,
+            "title": "ReSet - kit 1 giorno",
+            "text": "<p>ProLon Reset offre un giorno completo di una formula nutrizionale innovativa, scientificamente testata e brevettata per nutrire il corpo mantenendolo in uno stato di digiuno fisiologico. Questo programma nutrizionale induce l'organismo a scomporre i grassi e a utilizzarli come combustibile, in modo simile a quando si pratica il digiuno idrico.</p>\n<ul>\n<li>· Prenditi una pausa</li>\n<li>· Fai un reset</li>\n<li>· Riduci gli eccessi</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/reset"
+          }
+        },
+        "text_block_cUJzBC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-nutrition-bars-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Nutrition Bars",
+            "text": "<p>Intermittent Fasting Bar è l'unica barretta nutrizionale che si può mangiare durante la finestra di digiuno senza interrompere lo stato di digiuno. Basandosi sulla tecnologia nutrizionale del Fasting Mimicking Nutrition e su oltre 20 anni di ricerca, gli scienziati hanno studiato come miscele uniche di macronutrienti e micronutrienti possano essere consumate senza far uscire il corpo dallo stato di digiuno.</p>\n<ul>\n<li>· Testato e sviluppato clinicamente</li>\n<li>· Proteine di origine vegetale</li>\n<li>· Senza glutine, senza soia e senza latticini</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-nutrition-bar"
+          }
+        },
+        "text_block_qRWa7g": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ProLon-sprean-crema-spalmabile-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "Crema Spalmabile",
+            "text": "<p>La prima crema spalmabile al cioccolato per la longevità. Una crema spalmabile deliziosa e salutare! L-Spread contiene il 74% di mandorle pugliesi - mandorle provenienti da zone di longevità in Italia. </p>\n<ul>\n<li>· Contiene il 74% di mandorle pugliesi</li>\n<li>· Senza glutine, senza latticini, senza soia, vegano</li>\n<li>· A base vegetale, grassi sani, fibre prebiotiche</li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/prolon-longevity-spread"
+          }
+        },
+        "text_block_9nEiyG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/l-biome-PDP-Square-Images-x1500.jpg",
+            "image_width": 650,
+            "title": "L-Biome",
+            "text": "<p>Sviluppato da scienziati e medici leader nel campo della longevità in collaborazione con il Longevity Institute della University of Southern California. L-Biome è un integratore studiato per il mantenimento del microbioma sano della Longevità.</p>\n<ul>\n<li>· Ricco di Pre e Probiotici</li>\n<li>· Supporta una sana digestione</li>\n<li>· Promuove una barriera intestinale sana </li>\n</ul>",
+            "button_label": "Acquista Ora",
+            "button_link": "shopify://products/l-biome"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NG3zTr",
+        "text_block_F7EiBC",
+        "text_block_cUJzBC",
+        "text_block_qRWa7g",
+        "text_block_9nEiyG"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "47dd2ac1-f97e-428f-8e74-71eb3162a04c",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "text_columns_GWFzMT",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "recommendations",
+    "collection-return"
+  ]
+}

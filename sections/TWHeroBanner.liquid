@@ -1,0 +1,248 @@
+{% assign data = section.settings %}
+<!-- TWHEROBANNER -->
+<div class="relative {% if data.under_header %} md:pt-32 md:-mt-40{% endif %} ">
+  <div class="absolute inset-0 w-full sm:overflow-hidden">
+    <div class="object-cover w-full h-full">
+      {% if data.use_video_html %}
+        {{data.overide_image}}
+      {% else %} 
+        <img
+          class="hidden object-cover object-center w-full h-full md:block {{section.settings.image_position}}"
+          width="100%"
+          height="100%"
+          src="{{ data.desktop_image | img_url: '1800x' }}"
+        >
+        <img
+          class="block object-cover object-bottom w-full h-full md:hidden"
+          src="{{ data.mobile_image | img_url: '700x' }}" 
+        >
+    {% endif %}
+    </div>
+  </div>
+  <div class="mx-auto max-w-screen-2xl sm:px-6 lg:px-8 font-harmonia">
+    <div class="relative flex sm:overflow-hidden h-200 md:h-160 justify-end {{section.settings.content_position_mobile}} {{section.settings.text_position_hero}}">
+      <div class="relative flex flex-col items-start justify-center max-w-3xl px-4 sm:px-6 md:px-8 md:pl-20">
+        {% if data.tag%}
+        <h3 class="w-full pt-20 text-xl text-black text-start md:text-3xl md:pt-0 font-harmonia" style="color:{{data.text_color}}">{{ data.tag }}</h3>
+        {% endif %} 
+        <h1 class="py-3 text-3xl font-extrabold tracking-tight text-black text-start md:text-5xl font-harmonia">
+          <span class="block text-black font-harmonia" style="color:{{data.text_color}}">{{ data.title }}</span>
+        </h1>
+        {%- if data.description -%}
+          <div class="text-xl text-black font-harmonia" style="color:{{data.text_color}}">
+            {{ data.description }}
+          </div>
+        {%- endif -%}
+        <div class="w-full max-w-lg mt-5 mb-5 md:mt-5 md:mb-0 flex {{section.settings.button_position}}">
+          {%- if section.blocks.size > 0 -%}
+            {% for button in section.blocks %}
+              <div>
+                {%- render 'TWButtons', button: button - %}
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "tag",
+      "label": "Tag",
+      "default": "Tag"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Descreption",
+      "default": "Descreption"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "textarea",
+      "id": "overide_image",
+      "label": "Background Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_video_html",
+      "label": "Use Video / Html"
+    },
+    {
+      "type": "select",
+      "id": "text_position_hero",
+      "label": "Text Position",
+      "default": "md:items-center md:justify-center",
+      "options": [
+        {
+          "label": "right_bottom",
+          "value": "md:items-end md:justify-end"
+        },
+        {
+          "label": "left_bottom",
+          "value": "md:items-end md:justify-start"
+        },
+        {
+          "label": "left_center",
+          "value": "md:items-center md:justify-start"
+        },
+        {
+          "label": "right_top",
+          "value": "md:items-start md:justify-end"
+        },
+        {
+          "label": "right_center",
+          "value": "md:items-center md:justify-end"
+        },
+        {
+          "label": "left_top",
+          "value": "md:items-start md:justify-start"
+        },
+        {
+          "label": "center",
+          "value": "md:items-center md:justify-center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_position_mobile",
+      "label": "Text Position Mobile",
+      "default": "items-end",
+      "options": [
+        {
+          "label": "top",
+          "value": "items-start"
+        },
+        {
+          "label": "center",
+          "value": "items-center"
+        },
+        {
+          "label": "bottm",
+          "value": "items-end"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "default": "md:object-right",
+      "options": [
+        {
+          "label": "left",
+          "value": "md:object-left"
+        },
+        {
+          "label": "right",
+          "value": "md:object-right"
+        },
+        {
+          "label": "top",
+          "value": "md:object-top"
+        },
+        {
+          "label": "bottom",
+          "value": "md:object-bottom"
+        },
+        {
+          "label": "center",
+          "value": "md:object-center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_position",
+      "label": "Button Position",
+      "default": "justify-start md:justify-start",
+      "options": [
+        {
+          "label": "left",
+          "value": "justify-start md:justify-start"
+        },
+        {
+          "label": "right",
+          "value": "justify-end md:justify-end"
+        },
+        {
+          "label": "center",
+          "value": "justify-center md:justify-center"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "under_header",
+      "label": "Under Header",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "TextColor",
+      "default":"#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Button Type",
+          "default": "primary",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Secondary",
+              "value": "secondary"
+            },
+            {
+              "label": "Green",
+              "value": "green"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

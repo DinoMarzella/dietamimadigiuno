@@ -1,0 +1,181 @@
+{% liquid
+  assign product_handle = section.settings.product
+  if product_handle and product_handle != ''
+    assign product = all_products[product_handle]
+  endif 
+%} 
+{% assign current_variant = product.selected_or_first_available_variant  %}
+{% assign variantPrice = product.selected_or_first_available_variant.price %}
+{% assign compare_at_price = product.selected_or_first_available_variant.compare_at_price %}
+
+{% assign productImage = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
+<!-- product {{product.handle }} -> {{product_handle}} -->
+{%- assign settings = section.settings -%}
+<style>
+#tp-custom-box iframe {
+    width: min-content !important;
+    margin-left: -10px;
+}
+</style>
+<section id="product-description" class="{{ section.settings.custom_css_class }} md:block max-w-[1600px] mx-auto px-4 md:px-6 mt-2">
+
+        <div class="relative tab-img-content md:block border-l-2 border-[#1F4139] lg:border-0">
+          <div class="flex flex-col items-center justify-between mx-auto lg:flex-row ">
+        
+            <div
+              class="relative flex items-center justify-center mt-0 lg:border-r-2 lg:border-[#1F4139] lg:w-[calc(50%+1px)] lg:mt-0 ">
+             
+              <img src="{{ section.settings.hero_image | img_url: '2000x' }}"
+                alt="{{ section.settings.heading_text | strip_html }}"
+                class=" w-full  object-cover lg:my-[20px] lg:mr-12 px-4">
+        
+        
+            </div>
+        
+            
+           
+            <div class="w-full px-4 text-left lg:w-[calc(50%-1px)]">
+              <div class="mx-auto space-y-4 md:max-w-[500px] ">
+                <!-- TrustBox widget - Micro Star -->
+<div id="tp-custom-box" class="trustpilot-widget" data-locale="it-IT" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="5c46dc3e20d18f000126579a" data-style-height="24px" data-style-width="100%" data-token="89ffbd1f-fd10-4d3c-8aa8-42c158e49a0f" data-font-family="Open Sans">
+  <a href="https://it.trustpilot.com/review/prolon.it" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+<h4 class="text-[14px] text-start font-[700] text-[#56A511] ">
+                  {{ section.settings.subheading_text }}
+                </h4>
+                <h1 class="text-[25px] font-[500] font-semibold text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full text-[#1F4139]">
+                  {% if section.settings.heading_text == '' %} {{ product.title }} {% else %} {{ section.settings.heading_text }} {% endif %}
+                </h1>
+                <div class="flex items-end justify-start gap-3 ">
+            {% if compare_at_price > variantPrice %}
+  <span class="text-[20px] font-[500]  text-start md:text-[28px] xl:text-[30px] leading-[1.2]mt-2 block text-left font-semibold text-gray-900">
+    {{ variantPrice | money }}
+  </span>
+  <s class="text-[20px] font-[500]  text-start md:text-[28px] xl:text-[30px] leading-[1.2]mt-2 block text-left font-semibold text-gray-400">
+    {{ compare_at_price | money }}
+  </s>
+{% else %}
+  <span class="text-[20px] font-[500]  text-start md:text-[28px] xl:text-[30px] leading-[1.2]mt-2 block text-left font-semibold text-gray-900">
+    {{ variantPrice | money }}
+  </span>
+{% endif %}
+
+            </div>
+          <div class="flex pay-for-installments items-center gap-2">
+  <p class="text-[14px] text-gray-700">
+    o 3 rate da 
+    <strong>{{ current_variant.price | divided_by: 3 | money }}</strong>
+    senza interessi con 
+  </p>
+  <span class="inline-block">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100" height="18.4" baseProfile="tiny" overflow="visible"><path d="M0 6.9c.1-.4.3-.7.6-1l2.1-2.1c.5-.5 1.4-.5 1.9 0l1.8 1.8c.4.4 1 .4 1.4 0 .7-.5 1.2-1.1 1.8-1.7.5-.5 1.4-.5 1.9 0 .8.7 1.5 1.5 2.2 2.2.6.6.6 1.3 0 1.9L11 11c-1.1 1.2-2.1 2.4-3.2 3.6-.5.5-1.1.5-1.5 0L.3 8c-.1-.2-.2-.5-.3-.7v-.4zm69 11.5h-2.5v-14h2.4v.7s0-.1.1-.1c1.3-.9 2.7-1.1 4.2-.6 1.6.6 2.6 1.9 2.9 3.5.3 1.4.1 2.7-.7 3.9-.9 1.4-2.3 2.1-4 2.1-.8 0-1.6-.2-2.3-.7 0 0-.1-.1-.2-.1.1 1.8.1 3.5.1 5.3zm0-9.3v1.3c0 .1 0 .2.1.3.3.4.8.7 1.3.9 1 .3 1.9.2 2.6-.5.7-.6.9-1.4.8-2.3-.1-.8-.5-1.5-1.2-1.9-1.1-.6-2.6-.2-3.4.8-.2-.1-.2 0-.2.1v1.3zm16.2-4v-.7h2.4v9.4h-2.4v-.7h-.1c-1.1.8-2.3 1.1-3.6.8-1.9-.4-3.4-2-3.6-3.9-.2-1.4.1-2.7.9-3.9 1.4-1.8 3.9-2.4 5.8-1.2.2-.1.4.1.6.2zm-.1 4V7.8c0-.1 0-.2-.1-.2-.2-.2-.4-.4-.7-.6-.8-.5-1.7-.7-2.6-.3-1.7.8-1.8 3.1-.6 4.2 1.1 1.1 3.1.9 3.9-.4 0-.1.1-.1.1-.2V9.1zm-21.6 4.7h-2.4v-.7c-.3.2-.6.4-.8.5-1.3.6-2.7.5-3.9-.1-1.6-.8-2.4-2.2-2.6-4-.1-1.3.2-2.5 1-3.5 1.4-1.8 3.8-2.3 5.8-1.2.2.1.3.2.5.3v-.7h2.4v9.4zM61 9.1V7.8c0-.1 0-.2-.1-.3-.3-.4-.8-.7-1.3-.9-.9-.3-1.8-.3-2.5.4-.7.6-1 1.4-.9 2.3.1.6.3 1.2.8 1.6 1.1 1 2.9.8 3.9-.3.1-.1.1-.2.1-.4V9.1zm-17.3-4v-.7h2.4v9.4h-2.4v-.7c-.2.1-.4.3-.6.4-.8.5-1.8.6-2.7.5-2.3-.4-3.9-2.2-4.1-4.5-.1-1.4.3-2.7 1.2-3.7.9-1 2.1-1.5 3.4-1.5 1 0 1.8.3 2.6.8.1-.1.1 0 .2 0zm-.1 4V7.8c0-.1 0-.2-.1-.2-.3-.3-.6-.6-1-.8-.8-.4-1.6-.4-2.3 0-1 .5-1.4 1.4-1.3 2.6 0 .6.3 1.2.8 1.7 1.1 1 3 .8 3.9-.4 0-.1.1-.1.1-.2-.1-.6-.1-1-.1-1.4zm45.7-4.7h2.6c.1 0 .2 0 .3.2.8 1.7 1.6 3.4 2.5 5.2 0 .1.1.1.1.2 0-.1.1-.1.1-.2.8-1.8 1.6-3.5 2.4-5.3.1-.1.1-.2.3-.2h2.5c0 .1 0 .1-.1.2-2.1 4.6-4.2 9.2-6.3 13.7-.1.1-.1.2-.2.2H91c0-.1.1-.1.1-.2.8-1.7 1.6-3.5 2.4-5.2.1-.1 0-.2 0-.3-1.3-2.7-2.7-5.4-4-8.1-.2-.1-.2-.2-.2-.2zm-56.1 6c.6.5 1.3 1 1.9 1.5-.3.4-.7.8-1.1 1.1-1.1.8-2.3 1.1-3.7 1-1.2-.1-2.2-.5-3.1-1.3-1.2-1.4-1.7-3-1.2-4.8.4-1.8 1.6-3 3.4-3.5 1.6-.5 3.1-.2 4.5.7.4.3.7.6 1 .9-.6.5-1.2 1-1.8 1.6 0-.1-.1-.1-.1-.1-.9-1-2.3-1.3-3.4-.6-.8.5-1.1 1.2-1.2 2.1 0 1.3.8 2.3 2 2.5 1.1.2 2-.1 2.7-1 0 .1 0 0 .1-.1 0 .1 0 0 0 0zm-15.3.5c.6.5 1.4.8 2.2.9.3 0 .7 0 1-.1.1 0 .1-.1.2-.1.5-.3.5-.8.1-1.1-.3-.2-.6-.3-.9-.4-.6-.3-1.3-.5-1.9-.7-.5-.2-1-.6-1.2-1.1-.5-.9-.3-2.1.4-2.9.6-.6 1.4-1 2.3-1.1 1.3-.2 2.6.1 3.7.8l.1.1L22.7 7c-.4-.2-.7-.4-1-.5-.6-.2-1.2-.2-1.7.1-.5.3-.5.8 0 1 .4.2.8.3 1.2.5.7.2 1.3.5 1.9.8 1.4.9 1.5 2.9.3 4-.7.6-1.4.9-2.3 1-1.6.2-3-.3-4.4-1.2l1.2-1.8zM49.1 0h2.5v13.7h-2.5V0z"></path></svg>
+  </span>
+</div>
+                <div class="text-start">
+                {{ section.settings.paragraph }}
+                </div>
+              </div>
+            </div> 
+        
+           
+           
+          </div>
+        
+        </div>
+</section>
+{% schema %}
+{
+  "name": "pl product first section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_css_class",
+      "label": "Custom Css Class"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Select a product to display. Default will be the page product"
+    },
+    {
+     "type": "image_picker",
+      "id": "hero_image",
+      "label": "Product hero Image "
+    },
+    {
+      "type": "text",
+      "id": "subheading_text",
+      "label": "Product Subheading",
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Product heading",
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Product description",
+    },
+  ],
+  "presets": [
+    {
+      "name": "pl product first section"
+    }
+  ]
+}
+{% endschema %}
+
+{%- comment -%}
+{%- endcomment -%}
+
+
+{%- assign days_price_valid_until = 10 | times: 86400 -%}
+{%- assign gtin_option = 'gtin' -%}
+{%- assign is_barcode_available = false -%}
+{%- if current_variant.barcode != blank -%}
+{%- assign is_barcode_available = true -%}
+{%- assign gtin_string_length = current_variant.barcode | size -%}
+{%- if gtin_string_length == 8 or gtin_string_length == 12 or gtin_string_length == 13 or gtin_string_length == 14 -%}
+{%- assign is_valid_gtin_length = true -%}
+{%- assign gtin_option = gtin_option | append: gtin_string_length -%}
+{%- endif -%}
+{%- endif -%}
+ 
+<script type="application/ld+json" data-new1>
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "offers": {
+      "@type": "Offer",
+      "availability":"https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+      "price": "{{ current_variant.price | divided_by: 100.00 }}",
+      "priceCurrency": "{{ cart.currency.iso_code }}",
+      "priceValidUntil": "{{ 'now' | date: '%s' | plus: days_price_valid_until | date: '%Y-%m-%d'}}",
+      "url": "{{ shop.url }}{{ product.url }}"
+    },
+    "brand": {{ product.vendor | json }},
+    "sku": {{ current_variant.sku | json }},
+    "name": {{ product.title | json }},
+    "description": {{ product.description | strip_html | json }},
+    "category": "",
+    "url": "{{ shop.url }}{{ product.url }}",
+    {%- if is_barcode_available and is_valid_gtin_length %}
+      "{{gtin_option}}": {{ current_variant.barcode | json }},
+      "productId": {{ current_variant.barcode | json }},
+    {%- elsif is_barcode_available %}
+      "mpn": {{ current_variant.barcode | json }},
+      "productId": {{ current_variant.barcode | json }},
+    {%- endif -%}
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:{{ product.featured_media.preview_image | img_url: '740x' }}",
+      "image": "https:{{ product.featured_media.preview_image | img_url: '740x' }}",
+      "name": {{ product.title | json }},
+      "width": 740,
+      "height": 585
+    }
+  }
+</script> 

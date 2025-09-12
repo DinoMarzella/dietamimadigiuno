@@ -1,0 +1,128 @@
+
+
+
+
+
+
+<section class="bg-[#F3F3F2] ">
+    <div
+        class="max-w-[1600px] md:py-[64px] py-[10px] flex  flex-col items-center justify-center mx-auto px-4">
+        <h1 class=" md:text-[35px] text-center font-light py-[20px] md:pb-[4rem] text-[25px]">{{ section.settings.section_title }}</h1>
+        <div class="relative flex items-center justify-center w-full ">
+
+            <div id="recently-viewed-products" class="flex flex-wrap justify-center gap-2 slider-container-v1">
+              
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+{% schema %}
+{
+"name": "dk Recently Viewed",
+"settings": [
+{
+"type": "text",
+"id": "section_title",
+"label": "Section Title",
+"default": "Recently Viewed"
+}
+],
+"blocks": [
+{
+"type": "product",
+"name": "Product",
+"settings": [
+    {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+    },
+{
+"type": "product",
+"id": "product",
+"label": "Select product"
+}
+]
+}
+],
+"presets": [
+{
+"name": "dk Recently Viewed",
+"category": "Custom"
+}
+]
+}
+{% endschema %}
+
+
+<script>
+
+
+    function addRecentlyViewedProduct(product) {
+        let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+
+
+        recentlyViewed = recentlyViewed.filter(function (item) {
+            return item.id !== product.id;
+        });
+
+
+        recentlyViewed.unshift(product);
+
+
+        if (recentlyViewed.length > 4) {
+            recentlyViewed.pop();
+        }
+
+
+        localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+    }
+
+    let product = {
+        id: '{{ product.id }}',
+        name: '{{ product.title }}',
+        image: '{{ product.featured_image | img_url: "400x400" }}',
+        price: '{{ product.price |  money    }}'
+
+    };
+    addRecentlyViewedProduct(product);
+
+    $(document).ready(function () {
+       
+      
+
+        function displayRecentlyViewedProducts() {
+            let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+            let productsToDisplay = recentlyViewed.slice(0, 4); 
+            let html = '';
+
+            productsToDisplay.forEach(function (product) {
+               
+ 
+                html += `
+                    <div class="">
+                        <div class="mx-auto !mb-4 bg-white rounded-lg min-h-[300px] min-w-[300px]  card shadow-lg">
+                            <img src="${product.image}" alt="${product.name}" class="object-cover w-full min-h-[210px] max-h-[210px] mb-4">
+                            <h3 class="text-[16px]  font-semibold pb-1 text-center">${product.name}</h3>
+                            <p class="text-[16px] text-gray-700 pt-1 mb-4 text-center">${product.price}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            $('#recently-viewed-products').html(html);
+        }
+
+
+     
+        displayRecentlyViewedProducts();
+    });
+</script>

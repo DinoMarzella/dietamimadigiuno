@@ -1,0 +1,16 @@
+<script>
+
+    // window.CART_TYPE = "PAGE";
+    window.CART_TYPE='DRAWER';
+    
+    window.SuperCart = {
+        ShowCartfn: function () {
+            if (window.CART_TYPE == "PAGE") {
+                location.href = "/cart";
+            }
+            else{
+            toggleCart.showCart();
+            } 
+        } 
+    } 
+</script> 

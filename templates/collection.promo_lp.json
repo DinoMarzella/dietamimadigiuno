@@ -1,0 +1,843 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme",
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "2f359ad2-0da7-47e9-9ed2-e8e447a23720": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "dk_image_banner_KAt3Hk": {
+      "type": "dk-image-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "heading_text": "<span class=\"block mb-0 md:mb-4\">BLACK FRIDAY</span>",
+        "html": "const strings = [\n\"Vivere in modo più sano\",\n\"Sostenere la longevità\",\n\"Perdere grasso viscerale\",\n\"Bilanciare l'energia\",\n\"Ringiovanire le cellule\",\n\"Ridurre l'età biologica\",\n\"Proteggere la massa magra muscolare\"\n  ];",
+        "sub_text": "<p class=\"text-white\">Fino al <span class=\"text-red-600 text-9xl\">30%</span> di sconto su tutti i prodotti.</p>",
+        "button_link": "",
+        "button_text": "",
+        "quiz_button_link": "",
+        "quiz_button_text": ""
+      }
+    },
+    "slideshow_EpQ4Cr": {
+      "type": "slideshow",
+      "blocks": {
+        "hero_Mkfijy": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<b>Hello, Summer!</b>",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p><b>Up to 30% off your order</b>: <b>Get 20% off sitewide</b>, <b>25% from €199</b>, and <b>30% when you spend at least €249</b><br>\nThe more you spend, the more you save!</p>\n\n<style>\n/* NON ELIMINARE - Style for Mobile  */\n.horizontal-left .hero__text-shadow {\nmax-width: 750px;\n}\n\n\n@media only screen and (max-width: 768px) { .slideshow__slide--hero_Mkfijy .hero__text-shadow {\nmargin-top: 60%;\nmax-width: 100%;\nwidth: 100%;\ntext-align: center;\n}\n}\n.hero__link .btn {\n    color: #ffffff !important;\n}\n</style>",
+            "link": "#products",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#56a511",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/desktop_summer_promo_en.jpg",
+            "image_mobile": "shopify://shop_images/mobile_summer_promo_en.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_dtcket": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "<p class=\"text-white uppercase\">APPROFITTA DEL</p>",
+            "title": "<p class=\"text-white uppercase\">Black Friday!</p>",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p class=\"text-white\">Fino al <span class=\"text-red-600 text-9xl\">30%</span> di sconto su tutti i prodotti.</p>\n\n<style>\n/* NON ELIMINARE - Style for Mobile  */\n.horizontal-left .hero__text-shadow {\n    max-width: 750px;}\n\n.horizontal-left .hero__text-shadow .hero__subtitle {\nmax-width: 400px\n\n}\n@media only screen and (max-width: 768px) { .slideshow__slide--hero_dtcket .hero__text-shadow {\nmargin-top: 80%;\nmax-width: 100%;\n}\n}\n.hero__link .btn {\n    color: #ffffff !important;\n}\n</style><p></p>",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "hero_Mkfijy",
+        "hero_dtcket"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "countdown_xY8FHx": {
+      "type": "countdown",
+      "blocks": {
+        "content_tTicPB": {
+          "type": "content",
+          "settings": {
+            "heading": "Increase the value of your basket and increase your discount!",
+            "heading_size": "h2",
+            "text": "<p><strong>+5% EXTRA</strong> on a minimum spend of €199, <strong>+10% EXTRA</strong> on a minimum spend of €249</p>",
+            "content_alignment": "left"
+          }
+        },
+        "timer_gxfAjj": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "11",
+            "day": "30",
+            "hour": "23",
+            "minute": "59",
+            "hide_timer": true,
+            "text": "<p>Purtroppo la promo è terminata. Iscriviti alla nostra newsletter per rimanere aggiornato sulle prossime iniziative.</p>"
+          }
+        },
+        "button_XY3MGx": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_link": "",
+            "button": "Approfittane Ora!",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "content_tTicPB",
+        "timer_gxfAjj",
+        "button_XY3MGx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 0px; padding: 0px;}",
+        ".btn {background-color: #f7931d;}"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": false,
+        "color_scheme": "none",
+        "blur_image": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
+    "fd8b5800-458f-4e1d-896d-776f17599cda": {
+      "type": "pl-product-grid",
+      "blocks": {
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-next-gen-sv",
+            "title": "ProLon \"Next Gen\" 5-Day",
+            "subtitle": "RINGIOVANISCI DALL'INTERNO",
+            "description": "Scopri il sapore autentico delle nostre zuppe fresche, realizzate con ingredienti biologici coltivati in Italia, che non solo deliziano il palato, ma aiutano anche a ringiovanire le cellule e il metabolismo, proteggendo la massa magra e promuovendo il benessere generale.",
+            "price": "279 €",
+            "compare_at_price": "299€",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "prolon-next-gen",
+            "show_direct_prices": false
+          }
+        },
+        "products_t9ADCR": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-5-day",
+            "title": "ProLon 5-Day \"Variety Pack\"",
+            "subtitle": "RINGIOVANISCI DALL'INTERNO",
+            "description": "Un'alimentazione che migliora la tua vita, supportando il ringiovanimento cellulare e metabolico, e proteggendo la massa magra.\n<br><br><br><br>",
+            "price": "179 €",
+            "compare_at_price": "<del>199€</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "prolon-5-day",
+            "show_direct_prices": false
+          }
+        },
+        "products_cTJwRp": {
+          "type": "products",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "title": "<b>Slow Down Bioage & Age Gracefully</b><br> ProLon Everyday Nutrition",
+            "subtitle": "REJUVENATION FROM WITHIN",
+            "description": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass.",
+            "price": "<b>$190</b>",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Add to Cart",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]",
+            "handle": "#",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2": {
+          "type": "products",
+          "settings": {
+            "product": "reset",
+            "title": "Reset Kit 1 giorno",
+            "subtitle": "UN RESET DI UN GIORNO PER MENTE E CORPO",
+            "description": "Prenditi un giorno per resettare e disintossicazione il tuo corpo con un'alimentazione che simula il digiuno.<br><br><br><br>",
+            "price": "39 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "reset",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-nutrition-bar",
+            "title": "Nutrition Bars",
+            "subtitle": "BARRETTE PER PROLUNGARE IL DIGIUNO",
+            "description": "Ottima a colazione per nutrire l'organismo mantenendolo in uno stato di digiuno fisiologico.",
+            "price": "39 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/0001.jpg",
+            "handle": "prolon-nutrition-bar",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-l-protein",
+            "title": "ProLon L-Protein",
+            "subtitle": "BEVANDA PROTEICA COMPLETA",
+            "description": "Sintesi muscolare ottimale con proteine vegetali complete per sostenere le prestazioni e l'invecchiamento sano.",
+            "price": "69 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista Ora",
+            "btn_url": "/products/prolon-l-protein",
+            "btn_color": "text-white hover:text-black bg-[#73994a] hover:bg-[#78A117]",
+            "image": "shopify://shop_images/02.jpg",
+            "handle": "prolon-l-protein",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5": {
+          "type": "products",
+          "settings": {
+            "product": "prolon-longevity-spread",
+            "title": "Crema spalmabile",
+            "subtitle": "MANDORLE PUGLIESI E CACAO",
+            "description": "Made with 74% Apulian Almonds, plant-based proteins, healthy fats, and low carbs.",
+            "price": "11,90 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "prolon-longevity-spread",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6": {
+          "type": "products",
+          "settings": {
+            "product": "l-pill",
+            "title": "L-Pill",
+            "subtitle": "PER UN INVECCHIAMENTO SANO",
+            "description": "Tecnologia a doppia capsula con ingredienti di origine naturale che favoriscono un invecchiamento sano di cellule e organi.",
+            "price": "59 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "l-pill",
+            "show_direct_prices": false
+          }
+        },
+        "products_TPfABk": {
+          "type": "products",
+          "settings": {
+            "product": "",
+            "title": "<b>Slow Down Bioage & Age Gracefully</b><br> ProLon Everyday Nutrition",
+            "subtitle": "REJUVENATION FROM WITHIN",
+            "description": "Life changing nutrition that rejuvenates cells & metabolism while protecting lean body mass.",
+            "price": "$190",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#73994a]",
+            "handle": "#",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-8": {
+          "type": "products",
+          "settings": {
+            "product": "l-biome",
+            "title": "L-Biome",
+            "subtitle": "PER LA SALUTE INTESTINALE",
+            "description": "Ricco di pre e probiotici, con DHA vegano favorisce la crescita dei microbi benefici e la salute intestinale",
+            "price": "69 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "l-biome",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9": {
+          "type": "products",
+          "settings": {
+            "product": "l-biome-l-pill-bundle",
+            "title": "L-Pill & L-Biome",
+            "subtitle": "PER UN INVECCHIAMENTO SANO",
+            "description": "Kit per 30 giorni di L-Pill e L-Biome per favorire la salute e il benessere generale.",
+            "price": "99 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "l-biome-l-pill-bundle",
+            "show_direct_prices": false
+          }
+        },
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-4": {
+          "type": "products",
+          "settings": {
+            "product": "",
+            "title": "ProLon Fasting Shake",
+            "subtitle": "GUSTO VANILLA",
+            "description": "Ottimo frullato per la colazione che nutre l'organismo mantenendo uno stato di digiuno fisiologico.",
+            "price": "59,90 €",
+            "compare_at_price": "<del>$190</del>",
+            "btn_text": "Acquista ora",
+            "btn_url": "#",
+            "btn_color": "text-white hover:text-white bg-[#73994a] hover:bg-[#78A117]",
+            "handle": "prolon-fasting-shake",
+            "show_direct_prices": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-1",
+        "products_t9ADCR",
+        "products_cTJwRp",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-2",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-3",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-7",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-5",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-6",
+        "products_TPfABk",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-8",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-9",
+        "template--15644371386415__fd8b5800-458f-4e1d-896d-776f17599cda-products-4"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "id": "shop-products",
+        "title": "<span style=\"font-weight: 600;\">Rallenta la tua età biologica ed invecchia in salute\n</span>Programma Longevità e Benessere",
+        "subtitle": "Prodotti ProLon"
+      }
+    },
+    "7372cee1-d623-4613-8599-d62f659ac166": {
+      "type": "TWImageWithTextV2",
+      "disabled": true,
+      "settings": {
+        "tag": "Final Hours",
+        "title": "Cyber Savings",
+        "description": "<p style=\"margin-left: 20px; text-align:left;\">\n• ProLon - $150 or $175/box<br>\n• ReSet - $25 or $35/box<br>\n• New Fasting Shake<br>\n• New Bundles<br>\n</p>\n<br>\n<p style=\"text-align:left;\"><b>Use code <u>BFCM</u> at checkout</b>.</p>"
+      }
+    },
+    "d6493d46-f7ea-4dca-868f-6457d1e3f3d4": {
+      "type": "promo-grid",
+      "blocks": {
+        "62b99f0b-aa4f-44e9-8600-80b0ada58c11": {
+          "type": "banner",
+          "settings": {
+            "heading": "FREE Fast Bar with orders $100+",
+            "text": "This weekend only - Cyber Weekend Savings",
+            "link": "",
+            "label": "",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-0": {
+          "type": "simple",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-1": {
+          "type": "simple",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "62b99f0b-aa4f-44e9-8600-80b0ada58c11",
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-0",
+        "template--16045366280350__d6493d46-f7ea-4dca-868f-6457d1e3f3d4-16694823065d4e0616-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "a1b70797-2f50-4085-af8d-646224f00410": {
+      "type": "TWProductGrid",
+      "blocks": {
+        "cards_jPbVkH": {
+          "type": "cards",
+          "settings": {
+            "title": "",
+            "description": "",
+            "award_html": "",
+            "url": "",
+            "handle": "",
+            "product_id": "",
+            "variant_id": "",
+            "subscription_variant_id": ""
+          }
+        },
+        "cards_jxEXWK": {
+          "type": "cards",
+          "settings": {
+            "title": "",
+            "description": "",
+            "award_html": "",
+            "url": "",
+            "handle": "",
+            "product_id": "",
+            "variant_id": "",
+            "subscription_variant_id": ""
+          }
+        },
+        "cbcf7a69-69da-4fe3-aac7-74b9fca3306c": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>GEN3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1.rem !important;\">Red Bell Pepper & Onion,  Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$169 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "42252150472862",
+            "subscription_variant_id": "42252150505630"
+          }
+        },
+        "7ef3f6a0-15f9-4c6c-9dad-f1cf31bfaed2": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>Original Soups<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$150 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "41951788564638",
+            "subscription_variant_id": "41951788597406"
+          }
+        },
+        "prolon-5-day-new-flavor": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon 5-Day",
+            "description": "<small>Soup Variety 2<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Black Bean, Tomato, Spinach & White Bean, Butternut Squash Quinoa, Butternut Squash</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$150 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/pages/prolon-core-offer",
+            "handle": "prolon-fasting-nutrition-extra",
+            "product_id": "7300587946142",
+            "variant_id": "41951788662942",
+            "subscription_variant_id": "41951788695710"
+          }
+        },
+        "reset-gen3": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Gen3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Soup: Green Pea & Chives, Chickpea & Leeks<br>Tea: Hibiscus</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$105 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=42255515844766",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "42255515844766",
+            "subscription_variant_id": "42255515877534"
+          }
+        },
+        "aa5a94a5-cd30-4c13-80bd-d1f959502cda": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Original Soups<br>\n<span style=\"font-weight: 400; line-height: 1rem;\">Soup: Tomato, Butternut Squash<br>Tea: Lemon Spearmint</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=41454724251806",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "41454724251806",
+            "subscription_variant_id": "41703468826782"
+          }
+        },
+        "reset-new": {
+          "type": "cards",
+          "settings": {
+            "title": "(3x) ReSet 1-Day Kits",
+            "description": "<small>Soup Variety 2<br>\n<span style=\"font-weight:400; line-height: 1rem;\">Soup: Vegetable, Black Bean<br>Tea: Hibiscus</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset?variant=41793571848350",
+            "handle": "reset",
+            "product_id": "7117742014622",
+            "variant_id": "41793571848350",
+            "subscription_variant_id": "41793571881118"
+          }
+        },
+        "b01534ae-8e43-456a-8b80-1e7ca2eca2e4": {
+          "type": "cards",
+          "settings": {
+            "title": "ProLon + Fasting Shake",
+            "description": "<small>GEN3 Soups - NEW<br>\n<span style=\"font-weight: 400; line-height: 1.rem !important;\">Red Bell Pepper & Onion,  Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$199 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/prolon-fasting-shake",
+            "handle": "prolon-fasting-shake",
+            "product_id": "7393693532318",
+            "variant_id": "42256905699486",
+            "subscription_variant_id": ""
+          }
+        },
+        "prolon-5-day-gen3": {
+          "type": "cards",
+          "settings": {
+            "title": "Fasting Shake + ReSet",
+            "description": "<small>(3x) Gen3 ReSets + New Fasting Shake<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Soup: Green Pea & Chives, Chickpea & Leeks<br>Shake Mix: Vanilla</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$164 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/reset-fasting-shake",
+            "handle": "reset-fasting-shake",
+            "product_id": "7393747435678",
+            "variant_id": "42257032347806",
+            "subscription_variant_id": ""
+          }
+        },
+        "42428f13-b84d-463a-b6f3-6a17a972dbc9": {
+          "type": "cards",
+          "settings": {
+            "title": "Fasting Shake + ReSet",
+            "description": "<small>(1) ReSet + New Fasting Shake<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Soup: Tomato, Butternut Squash<br>Shake Mix: Vanilla</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$75 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/fasting-shake-reset",
+            "handle": "fasting-shake-reset",
+            "product_id": "7395342024862",
+            "variant_id": "42264434442398",
+            "subscription_variant_id": ""
+          }
+        },
+        "d8452caa-db56-41b7-bb3b-31d4f7acf78b": {
+          "type": "cards",
+          "settings": {
+            "title": "NEW - Fasting Shake",
+            "description": "<small>(1) Pouch = 14 Sachet<br>\n<span style=\"font-weight: 200; line-height: 1rem;\">Latest breakthrough in nutrition and <br>healthy aging science. Vanilla Flavor.</span></small>",
+            "award_html": "<span style=\"background-color: white; padding: 5px 10px; color: black;\">$55 with code: <b>BFCM</b> @checkout</span>",
+            "url": "https://prolonfmd.com/products/fasting-shake",
+            "handle": "fasting-shake",
+            "product_id": "7393863106718",
+            "variant_id": "42257287512222",
+            "subscription_variant_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "cards_jPbVkH",
+        "cards_jxEXWK",
+        "cbcf7a69-69da-4fe3-aac7-74b9fca3306c",
+        "7ef3f6a0-15f9-4c6c-9dad-f1cf31bfaed2",
+        "prolon-5-day-new-flavor",
+        "reset-gen3",
+        "aa5a94a5-cd30-4c13-80bd-d1f959502cda",
+        "reset-new",
+        "b01534ae-8e43-456a-8b80-1e7ca2eca2e4",
+        "prolon-5-day-gen3",
+        "42428f13-b84d-463a-b6f3-6a17a972dbc9",
+        "d8452caa-db56-41b7-bb3b-31d4f7acf78b"
+      ],
+      "disabled": true,
+      "settings": {
+        "container_class": "",
+        "grid_text_color": "#000000",
+        "grid_background_color": "#f5f7f2",
+        "desktop_columns": 5,
+        "mobile_columns": 2,
+        "show_quick_view": false,
+        "show_add_to_cart": true
+      }
+    },
+    "9f72f53c-d51a-4dd1-a309-21e7f3c2f8b2": {
+      "type": "TWImageWithTextV1",
+      "disabled": true,
+      "settings": {
+        "title": "New Soup Flavors",
+        "description": "<b>Lentil Curry<br>\nCarrot Ginger<br>\nChickpea & Leeks <br>\nGreen Pea & Chives<br>\nRed Bell Pepper & Onion<br>\n</b>"
+      }
+    },
+    "88d5f465-eb19-4f4d-be50-9543638b634c": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16045366280350__88d5f465-eb19-4f4d-be50-9543638b634c-166904596621ee7255-0": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "<blank></blank>",
+            "width": "50",
+            "height": 460,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "11783840-c60d-49fe-b5a3-516b1e3414e1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "New Soup Flavors",
+            "textarea": "<b>Lentil Curry\nCarrot Ginger\nChickpea & Leeks \nGreen Pea & Chives\nRed Bell Pepper & Onion\n</b>",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 380,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16045366280350__88d5f465-eb19-4f4d-be50-9543638b634c-166904596621ee7255-0",
+        "11783840-c60d-49fe-b5a3-516b1e3414e1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "7d4e9982-095c-46ed-9ac8-3c5bd98cd06e": {
+      "type": "faq-about",
+      "disabled": true,
+      "settings": {
+        "title": ""
+      }
+    },
+    "modern_custom_html_GN3pK9": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<div class=\"countdown-section\">\n<div>\n<p class=\"h3\">Increase the value of your basket and increase your discount!<br> <span class=\"text-red-600 \">+5% EXTRA</span> on a minimum spend of €199, <span class=\"text-red-600 \">+10% EXTRA</span> on a minimum spend of €249 </p>\n</div>\n<div class=\"md:flex font-bold mt-5\">\n<div class=\"countdown md:mx-2 gap-x-8\">\n    <div class=\"container-day\">\n        <h3 class=\"day font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Day</p>\n    </div>\n    <div class=\"container-hour\">\n        <h3 class=\"hour font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Hour</p>\n    </div>\n    <div class=\"container-minute\">\n        <h3 class=\"minute font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Minute</p>\n    </div>\n    <div class=\"container-second\">\n        <h3 class=\"second font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Second</p>\n    </div>\n</div>\n</div>\n\n<style>\n@media only screen and (min-width: 769px) {\n.countdown-section {\ndisplay: inline-flex;\nwidth: 100%;\njustify-content: space-between;\njustify-items: center\n}\n}\n.countdown {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  color:black;\n  max-width: 300px;\n}\n.day, .hour, .minute, .second {\nfont-size: 1.5rem;\n}\n.cd-title {\nfont-size: 0.75rem;\n}\n.countdown h3, .no-margin h2 {\nmargin-top:0px;\nmargin-bottom: 0px;\n}\n.slick-track {\nmargin-bottom: 0px !important;\n}\n</style>\n\n<script>\nconst countdown = () => {\n  const countDate = new Date(\"Jun 30, 2025 23:59:59\").getTime ();\n  const now = new Date().getTime ();\n  const gap = countDate - now;\n  \n  //How the fuck does time work?\n  const second = 1000;\n  const minute = second * 60;\n  const hour = minute * 60;\n  const day = hour * 24;\n\n  //Calculate the shit\n  const textDay = Math.floor(gap / day);\n  const textHour = Math.floor((gap % day) / hour);\n  const textMinute = Math.floor((gap % hour) / minute);\n  const textSecond = Math.floor((gap % minute) / second);\n\n  document.querySelector(\".day\").innerText = textDay;\n  document.querySelector(\".hour\").innerText = textHour;\n  document.querySelector(\".minute\").innerText = textMinute;\n  document.querySelector(\".second\").innerText = textSecond;\n};\n\nsetInterval(countdown, 1000);\n</script>\n\n<div></div>\n</div>"
+      }
+    },
+    "modern_custom_html_m99zhc": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<h2 id=\"products\" class=\"h2\">Choose your Fasting Mimicking Diet Kit</h2>\n\n<!-- Aggiungi questi nella sezione <head> -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css\">\n\n<!-- Aggiungi questi prima del tag di chiusura </body> -->\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js\"></script>\n\n<div class=\"product-carousel\">\n  <div class=\"!hidden carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <span class=\"p-tag\">-20%</span><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-2.webp?v=1729260756\" alt=\"Prolon 5-Day Program Variety 2\">\n    <h4 class=\"text-xl\">Prolon 5-Day Program<br>\"Variety 2\"</h4>\n    <p>Soup flavor: \nBlack Bean, Tomato, Spinach & White Bean, Butternut Squash Quinoa, Butternut Squash.<br></p>\n    <p class=\"p-price font-bold\">€ 149.00 <del>€ 209.00</del></p>\n<a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=53524585775485\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <span class=\"p-tag\">-20%</span><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-rte-next-gen-asset-4.webp?v=1728998622\" alt=\"ProLon Next Gen\">\n    <h4 class=\"text-xl\">ProLon Fasting Mimicking Diet<br>\"Next Gen\"</h4>\n    <p>New soups from Italian organic farming: Minestrone, Tomato, Broccoli and Quinoa, Artichoke and Yellow Tomato, Vegetable.</p>\n    <p class=\"p-price font-bold\">€ 175.20 <del>€ 249.00</del></p>\n<a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=56127254528381\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <span class=\"p-tag\">-20%</span><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-original.webp?v=1729260755\" alt=\"Prolon 5-Day Program Original\">\n    <h4 class=\"text-xl\">Prolon 5-Day Program<br>\"Original\"</h4>\n    <p>Soup flavor: Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa.<br><br></p>\n   <p class=\"p-price font-bold\">€ 149.00 <del>€ 209.00</del></p>\n    <a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=53524585742717\" class=\"btn\">Shop Now</a>  </div>\n\n   <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <span class=\"p-tag\">-20%</span><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-3.webp?v=1729260756\" alt=\"Prolon 5-Day Program Variety 3\">\n    <h4 class=\"text-xl\">Prolon 5-Day Program<br>\"Variety 3\"</h4>\n    <p>Soup flavor: Ginger and carrot, lentils and curry, peas and chives, peppers and onion, chickpeas and leeks.<br></p>\n    <p class=\"p-price font-bold\">€ 149.00 <del>€ 209.00</del></p>\n  <a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=53524585808253\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <span class=\"p-tag\">-20%</span><img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-4.webp?v=1729260755\" alt=\"Prolon 5-Day Program Expanded variety\">\n    <h4 class=\"text-xl\">Prolon 5-Day Program<br>\"Expanded Variety\"</h4>    <p>New variety selection! Our best soups, fasting bars, fasting shakes and extra virgin oil.<br><br></p>\n    <p class=\"p-price font-bold\">€ 159.00 <del>€ 219.00</del></p>\n   <a href=\"https://prolon.co.uk/products/prolon-5-day-kit?variant=53524585709949\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <!-- Puoi aggiungere più prodotti in questo modo -->\n</div>\n\n<style>\n.product-carousel {\n  width: 100%;\n  margin: 0 auto;\n}\n\n.carousel-item {\n  text-align: center;\n  padding: 20px;\nbackground-color: #fff;\ncolor: #000;\n}\n\n.carousel-item img {\n  width: 100%;\n  max-width: 300px;\n  height: auto;\n  display: block;\n  margin: 0 auto;\n}\n.carousel-item h4,.carousel-item img  {\n  margin: 10px auto 5px;\n}\n.carousel-item .p-price {\n  margin: 10px auto 15px;\n}\n.carousel-item p {\n  margin: 0;\n}\n.btn {\n  display: inline-block;\n  padding: 10px 20px;\n  background-color: #56A511 !important;\n  color: #fff;\n  text-decoration: none;\n  margin-top: 10px;\n  border-radius: calc(infinity * 1px) !important;\n}\n@media only screen and (max-width: 768px) {\n.slick-prev, .slick-next {\n  display: none !important;\n}\n}\n.slick-prev:before, .slick-next:before {\n  color: #000;\n}\ndel {\ncolor: red;\n}\n.slick-track {\nmargin-bottom: 25px;\n}\n.page-width {\n    max-width: 1920px !important;\n}\n.footer__section--border {\ndisplay: none;\n}\n.product-carousel .slick-dots li button:before {\ncolor: #000 !important;\n}\n.p-tag {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  background-color: red;\n  color: white;\n  padding: 5px 10px;\n  border-radius: 5px;\n  font-size: 0.9em;\n  font-weight: bold;\n  z-index: 10;\n}\n\n.carousel-item {\n  position: relative;\n}\n</style>\n<script>\n$(document).ready(function(){\n  $('.product-carousel').slick({\n    dots: true,\n    infinite: true,\n    speed: 300,\n    slidesToShow: 4,  // Mostra 4 prodotti alla volta\n    slidesToScroll: 1,\n    responsive: [\n      {\n        breakpoint: 1024,\n        settings: {\n          slidesToShow: 3,\n          slidesToScroll: 1,\n          infinite: true,\n          dots: true\n        }\n      },\n      {\n        breakpoint: 600,\n        settings: {\n          slidesToShow: 2,\n          slidesToScroll: 1\n        }\n      },\n      {\n        breakpoint: 480,\n        settings: {\n          slidesToShow: 1,\n          slidesToScroll: 1\n        }\n      }\n    ],\n    prevArrow: '<button type=\"button\" class=\"slick-prev\">Previous</button>',\n    nextArrow: '<button type=\"button\" class=\"slick-next\">Next</button>'\n  });\n});\n</script>"
+      }
+    },
+    "modern_custom_html_hPfBDa": {
+      "type": "modern-custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<p class=\"h3\">Increase the value of your basket and increase your discount!<br> <span class=\"text-red-600 \">+5% EXTRA</span> on a minimum spend of €199, <span class=\"text-new-prolon \">+10% EXTRA</span> on a minimum spend of €249 </p>\n\n<div class=\"promo-section\">\n    <div class=\"promo-title\">\n<p class=\"h2 text-center\">REDUCE YOUR BIOLOGICAL AGE BY <br><span class=\"text-4xl\">2.5 YEARS</span></p>\n        <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolopn-kit-su-piedistallo-bianco-asset.webp?v=1730995001\" alt=\"Bioage bundle\" class=\"promo-img\">\n<p class=\"text-4xl md:text-7xl text-new-prolon text-center\">30% OFF</p>\n    </div>\n    <div class=\"carousel-container\">\n        <div class=\"product-carousel-bundle\">\n            <!-- Slide 1 -->\n            <div class=\"slide active\">\n                <p class=\"slide-title\">Choose the first variety</p>\n<div class=\"products-group\">\n                <div class=\"product\" data-id=\"53524585742717\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-original.webp?v=1729260755\" alt=\"ProLon 5 Giorni Gusto Originale\">\n                    <p>ProLon 5-Day Program \"Original\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585775485\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-2.webp?v=1729260756\" alt=\"ProLon 5 Giorni Varietà 2\">\n                    <p>ProLon 5-Day \"Variety 2\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585808253\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-3.webp?v=1729260756\" alt=\"ProLon 5-Day Variety 3\">\n                    <p>ProLon 5-Day \"Variety 3\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n</div>\n            </div>\n            <!-- Slide 2 -->\n            <div class=\"slide active\">\n                <p class=\"slide-title\">Choose the second variety</p>\n<div class=\"products-group\">\n                <div class=\"product\" data-id=\"53524585742717\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-original.webp?v=1729260755\" alt=\"ProLon 5 Giorni Gusto Originale\">\n                    <p>ProLon 5-Day Program \"Original\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585775485\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-2.webp?v=1729260756\" alt=\"ProLon 5 Giorni Varietà 2\">\n                    <p>ProLon 5-Day \"Variety 2\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585808253\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-3.webp?v=1729260756\" alt=\"ProLon 5-Day Variety 3\">\n                    <p>ProLon 5-Day \"Variety 3\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n</div>\n            </div>\n            <!-- Slide 3 -->\n            <div class=\"slide active\">\n                <p class=\"slide-title\">Choose the third variety</p>\n<div class=\"products-group\">\n                <div class=\"product\" data-id=\"53524585742717\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-original.webp?v=1729260755\" alt=\"ProLon 5 Giorni Gusto Originale\">\n                    <p>ProLon 5-Day Program \"Original\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585775485\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-2.webp?v=1729260756\" alt=\"ProLon 5 Giorni Varietà 2\">\n                    <p>ProLon 5-Day \"Variety 2\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n                <div class=\"product\" data-id=\"53524585808253\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-5-day-variety-3.webp?v=1729260756\" alt=\"ProLon 5-Day Variety 3\">\n                    <p>ProLon 5-Day \"Variety 3\"</p>\n                    <button class=\"select-product\">Select</button>\n                </div>\n</div>\n            </div>\n</div>\n\n        <div class=\"selection-progress\">\n            Selected: <span id=\"selected-count\">0</span> / 3\n        </div>\n\n        <a href=\"#\" class=\"btn disabled\" id=\"dynamic-link\">Please select 3 products to buy</a>\n    </div>\n</div>\n\n<style>\n#shopify-section-template--24352356335997__modern_custom_html_hPfBDa {\nbackground-size: cover;\n    background-color: #ff;\n}\n.promo-section {\n    display: flex;\n    align-items: flex-start;\n    border-radius: 15px;\n    color: #000;\npadding: 30px 20px;\nborder: 1px solid black;\nbackdrop-filter: blur(10px);\n-webkit-backdrop-filter: blur(10px);\n}\n/*.promo-img {\nfilter: drop-shadow(2px 2px 15px #fff);\n} */\n.promo-title {\n    flex: 1;\n    text-align: left;\n}\n\n.carousel-container {\n    flex: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n}\n\n.product-carousel-bundle {\n    width: 100%;\n    margin: 20px 0;\n    position: relative;\n}\n\n.slide {\n    display: none;\n    justify-content: space-around;\n}\n\n.slide.active {\n    display: block;\n}\n.products-group {\ndisplay: flex;\n}\n\n.product {\n    width: 33%;\n    text-align: center;\npadding: 5px;\n}\n\n.product img {\n    width: 100%;\n    height: auto;\n}\n\n.selected {\n    background-color: #d3d3d3;\n    border: 2px solid #000;\n}\n\n.selection-progress {\n    margin: 15px 0;\n    font-weight: bold;\n    font-size: 1.2em;\n}\n\n.promo-section .btn, .promo-section .btn:hover {\ncolor: #fff;\nbackground-color: #306253 !important;\nborder-radius: 5px;\n}\n.promo-section .btn.disabled {\n    background-color: #ccc;\n    pointer-events: none;\n}\n.select-product{\nborder: 1px solid #000;\nborder-radius: 5px;\npadding: 5px 10px;\n}\n.select-product:hover {\nbackground-color: #306253;\ncolor: #fff;\n}\n/* Layout mobile */\n@media (max-width: 768px) {\n    .promo-section {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .slide {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .product {\n        width: 80%;\n        margin-bottom: 15px;\n    }\n}\n.text-new-prolon {\ncolor: #306253;\n}\n</style>\n\n\n<script>\n$(document).ready(function () {\n    const slides = $(\".slide\");\n    let currentSlide = 0;\n\n    // Funzione per aggiornare la visibilità delle slide\n    function showSlide(index) {\n        slides.removeClass(\"active\");\n        slides.eq(index).addClass(\"active\");\n    }\n\n    // Mostra la prima slide\n    showSlide(currentSlide);\n\n    // Mappa per tracciare la selezione di un prodotto per ciascuna slide\n    const selectedProducts = new Map();\n    const maxSelection = 3;\n    const dynamicLink = document.getElementById(\"dynamic-link\");\n    const selectedCountDisplay = document.getElementById(\"selected-count\");\n\n    function updateLink() {\n        // Attiva il pulsante di acquisto solo se sono stati selezionati 3 prodotti\n        if (selectedProducts.size === maxSelection) {\n            const productIds = Array.from(selectedProducts.values());\n            const url = `https://prolon.co.uk/cart/${productIds.map(id => `${id}:1`).join(\",\")}`;\n            dynamicLink.href = url;\n            dynamicLink.classList.remove(\"disabled\");\n            dynamicLink.textContent = \"Buy your kit\";\n        } else {\n            dynamicLink.href = \"#\";\n            dynamicLink.classList.add(\"disabled\");\n            dynamicLink.textContent = `Please select ${maxSelection - selectedProducts.size} products to buy`;\n        }\n\n        // Aggiorna il contatore di selezione\n        selectedCountDisplay.textContent = selectedProducts.size;\n    }\n\n    $(\".select-product\").on(\"click\", function () {\n        const productId = $(this).closest(\".product\").data(\"id\");\n\n        // Limita a un solo prodotto selezionato per ogni slide\n        if (selectedProducts.has(currentSlide)) {\n            // Deseleziona il prodotto precedente nella stessa slide\n            slides.eq(currentSlide).find(\".select-product\").removeClass(\"selected\");\n        }\n        \n        // Aggiungi il nuovo prodotto selezionato per la slide corrente\n        selectedProducts.set(currentSlide, productId);\n        $(this).addClass(\"selected\");\n\n        // Passa automaticamente alla slide successiva se non è l'ultima\n        if (currentSlide < slides.length - 1) {\n            currentSlide++;\n            showSlide(currentSlide);\n        }\n\n        updateLink();\n    });\n\n    updateLink();\n});\n\n</script>"
+      }
+    },
+    "modern_custom_html_VXrzWf": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<h2 class=\"h2\">Other L-Nutra products. Extend the benefits of the Fasting Mimicking Diet</h2>\n\n<div class=\"product-carousel\">\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-reset.webp?v=1729260756\" alt=\"Reset 1-Day Kit\">\n    <h4 class=\"text-xl\">Reset 1-Day Kit <br>\"Original\"</h4>\n    <p class=\"p-price font-bold\">€ 31.99 <del>€ 39.99</del></p>\n    <a href=\"https://prolon.co.uk/products/reset\" class=\"btn\">Shop Now</a>\n\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-nutrition-bar-variety-pack.webp?v=1729260756\" alt=\"Nutrition Bar Variety Pack\">\n    <h4 class=\"text-xl\"> Nutrition Bar <br>\"Variety Pack\"</h4>\n    <p class=\"p-price font-bold\">€ 31.20 <del>€ 44.99</del></p>\n    <a href=\"https://prolon.co.uk/products/prolon-fasting-bar\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-fasting-shake.webp?v=1729260756\" alt=\"Fasting Shake\">\n    <h4 class=\"text-xl\"> Fasting Shake <br>\"Vanilla flavor\"</h4>\n   <p class=\"p-price font-bold\">€ 41.32 <del>€ 52.90</del></p>\n    <a href=\"https://prolon.co.uk/products/fasting-shake\" class=\"btn\">Shop Now</a>\n  </div>\n\n   <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-l-protein.webp?v=1729279651\" alt=\"L-Protein\">\n    <h4 class=\"text-xl\">L-Protein<br><br>\n</h4>\n    <p class=\"p-price font-bold\">€ 44.20 <del>€ 59.00</del></p>\n    <a href=\"https://prolon.co.uk/products/prolon-l-protein\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-longevity-spread.webp?v=1729260756\" alt=\"Longevity Spread\n\">\n    <h4 class=\"text-xl\">Longevity Spread<br>4 Jar pack</h4>\n    <p class=\"p-price font-bold\">€ 39.92 <del>€ 49.90</del></p>\n    <a href=\"https://prolon.co.uk/products/longevity-spread?variant=41448887025799\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-l-pill.webp?v=1729260756\" alt=\"L-Pill\n\">\n    <h4 class=\"text-xl\">L-Pill<br><br>\n</h4>\n    <p class=\"p-price font-bold\">€ 47.20 <del>€ 59.00</del></p>\n    <a href=\"https://prolon.co.uk/products/l-pill\" class=\"btn\">Shop Now</a>\n  </div>\n\n  <div class=\"carousel-item pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden mr-4\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/product-asset-l-biome.webp?v=1729260756\" alt=\"L-Biome\n\">\n    <h4 class=\"text-xl\">L-Biome<br><br>\n</h4>\n    <p class=\"p-price font-bold\">€ 55.20 <del>€ 69.00</del></p>\n    <a href=\"https://prolon.co.uk/products/l-biome\" class=\"btn\">Shop Now</a>\n  </div>\n</div>"
+      }
+    },
+    "modern_custom_html_fnNUPB": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<div class=\"md:flex\">\n  <a href=\"https://prolon.co.uk/pages/nutritional-coaching\" target: class=\"flex-1 help-box bkg-hb-1 pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden m-2 md:max-w-[27%]\">\n<p class=\"text-sm\">FREE COACHING</p>\n<h4 class=\"text-xl\">Discover the benefits of the Fasting Mimicking Diet</h4>\n  </a>\n <a href=\"https://prolon.co.uk/pages/faq\" target: class=\"flex-1 help-box bkg-hb-2 pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden m-2 md:max-w-[27%]\">\n<p class=\"text-sm\">MORE INFORMATION</p>\n<h4 class=\"text-xl\">FAQ on ProLon, Fasting Mimicking Diet and Longevity Diet</h4>\n  </a>\n\n<a href=\"\" target: class=\"flex-1 help-box bkg-hb-4 pb-8 bg-gray-50 shadow-md rounded-[15px] overflow-hidden m-2 md:max-w-[27%]\">\n<p class=\"text-sm\"></p>\n<h4 class=\"text-xl\">Pay for instalments WITHOUT INTEREST!</h4>\n  </a>\n</div>\n<style>\n.help-box {\n  text-align: left;\n  padding: 20px;\nmin-height: 430px;\ndisplay: block;\n}\n.help-box p, .help-box h4 {\nmargin: 0px;\ntext-decoration: none;\n}\n.rte a:not(.rte__image):not(.btn):not(.spr-summary-actions-newreview) {\n   text-decoration: none;\n}\n.bkg-hb-1 {\nbackground-image: url(' https://cdn.shopify.com/s/files/1/0613/8069/0174/files/coaching-gratuito-prolon-asset-712x849.webp?v=1729271636');\nbackground-size: 80%;\nbackground-repeat: no-repeat;\nbackground-position:bottom right;\n}\n.bkg-hb-2 {\nbackground-image: url(' https://cdn.shopify.com/s/files/1/0613/8069/0174/files/faq-prolon-asset-712x849.webp?v=1729272374');\nbackground-size: 60%;\nbackground-repeat: no-repeat;\nbackground-position:center 70%;\n}\n.bkg-hb-3 {\nbackground-color: #739949;\nbackground-image: url('https://cdn.shopify.com/s/files/1/0613/8069/0174/files/plasticfree_white-logo.webp?v=1729272951');\nbackground-size: 60%;\nbackground-repeat: no-repeat;\nbackground-position:center center\n}\n.bkg-hb-4 {\nbackground-color: #fff;\nbackground-image: url('https://cdn.shopify.com/s/files/1/0613/8069/0174/files/paga-a-rate-asset.webp?v=1730987904');\nbackground-size: 100%;\nbackground-repeat: no-repeat;\nbackground-position:center center\n}\n</style>"
+      }
+    },
+    "tw_animated_review_i8jUCU": {
+      "type": "tw-animated-review",
+      "blocks": {
+        "rowf_kzpGLt": {
+          "type": "rowf",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        },
+        "rows_amaJDn": {
+          "type": "rows",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        },
+        "rowt_kmK4PL": {
+          "type": "rowt",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        },
+        "rowf_PpiErY": {
+          "type": "rowf",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        },
+        "rows_WKQqrV": {
+          "type": "rows",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        },
+        "rowt_JYyFXr": {
+          "type": "rowt",
+          "settings": {
+            "title": "",
+            "details": "Give your body a 1-day breather and allow it to get back on track through active fasting.",
+            "name": ""
+          }
+        }
+      },
+      "block_order": [
+        "rowf_kzpGLt",
+        "rows_amaJDn",
+        "rowt_kmK4PL",
+        "rowf_PpiErY",
+        "rows_WKQqrV",
+        "rowt_JYyFXr"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Cambia la tua vita con kit ProLon",
+        "detail": "",
+        "color": ""
+      }
+    },
+    "029d20bb-38fd-4e9f-aa13-f246ff5c209b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16045366280350__029d20bb-38fd-4e9f-aa13-f246ff5c209b-16690456052324829b-1": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (max-width: 768px){\nh3, .h3 {\n    font-size: calc(var(--typeHeaderSize)*0.5)}\n}\n.type-advanced .promo-grid__content:after {\n  background: none;\n}\n  .type-advanced .rte--block {\n    color: black;\n    text-shadow:none; }\n#shopify-section-footer-promotions > div > div {display: none;\n}\ndiv.relative.flex.flex-col.items-center.justify-start.w-full.h-full.px-4.py-4.pt-6.rounded-md.cursor-pointer.bg-\\[\\#f5f7f2\\].font-avenir > a.flex.flex-col.items-center.justify-center.px-4 > h4 {\ntext-transform: none !important; font-weight: 300 !important;\n}\n.top-12 {\n    top: 1rem;}\n.px-4 {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n}\n.py-8 {\n    padding-top: 2rem;\n    padding-bottom: 1rem;\n}\ndiv.relative.flex.flex-col.items-center.justify-center.w-full.h-full.px-4.py-8.rounded-md.cursor-pointer.bg-\\[\\#f5f7f2\\] > button {\nmargin-top: 8px;\n}\n.bg-\\[\\#f5f7f2\\] {\n background-color: #f8f8f8;}\n.left-5 {\n    left: auto;\n}\n@media only screen and (max-width: 1000px){\nh2 {\n    font-size: 1.6rem;}\n}\n.py-12 {\n    padding-top: 0rem;\n} \n@media only screen and (max-width: 1000px) {\n#shopify-section-template--16045366280350__7372cee1-d623-4613-8599-d62f659ac166 {padding: 0 20px;\n}\n@media (min-width: 96em) .\\32xl\\:text-base {\n  font-size: 12px !important;\n}\n}\n.bg-prolon_secondary { \nbackground-color: #000 !important;\n}\n.btn {\nbackground-color: #fff !important;\ncolor: #000;\n}\n\n#shopify-section-template--24023600955741__dk_image_banner_KAt3Hk > section.relative.w-full.h-\\[422\\.5px\\].md\\:h-\\[650px\\].bg-black > div.relative.z-10.flex-col.items-start.justify-center.hidden.h-full.px-6.md\\:flex.md\\:px-20.lg\\:px-32.max-w-\\[1600px\\].mx-auto > div > div.flex.md\\:max-w-\\[80\\%\\].lg\\:max-w-\\[80\\%\\].gap-4.flex-wrap.md\\:flex-nowrap {\ndisplay: none;\n}\n</style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16045366280350__029d20bb-38fd-4e9f-aa13-f246ff5c209b-16690456052324829b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "2f359ad2-0da7-47e9-9ed2-e8e447a23720",
+    "dk_image_banner_KAt3Hk",
+    "slideshow_EpQ4Cr",
+    "countdown_xY8FHx",
+    "fd8b5800-458f-4e1d-896d-776f17599cda",
+    "7372cee1-d623-4613-8599-d62f659ac166",
+    "d6493d46-f7ea-4dca-868f-6457d1e3f3d4",
+    "a1b70797-2f50-4085-af8d-646224f00410",
+    "9f72f53c-d51a-4dd1-a309-21e7f3c2f8b2",
+    "88d5f465-eb19-4f4d-be50-9543638b634c",
+    "7d4e9982-095c-46ed-9ac8-3c5bd98cd06e",
+    "modern_custom_html_GN3pK9",
+    "modern_custom_html_m99zhc",
+    "modern_custom_html_hPfBDa",
+    "modern_custom_html_VXrzWf",
+    "modern_custom_html_fnNUPB",
+    "tw_animated_review_i8jUCU",
+    "029d20bb-38fd-4e9f-aa13-f246ff5c209b"
+  ]
+}

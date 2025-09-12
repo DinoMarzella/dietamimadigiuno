@@ -1,0 +1,838 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "advanced_content_aYpfCB": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_e3LARD": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 1300px; padding: 50px 20px 0; margin: auto; text-align: center;\">\n<h1 style=\"color: black; font-weight: 500;\">Che cos'è <span style=\"font-weight: 600;\">DIETA MIMA DIGIUNO (DMD) ?</span>\n</h1>\n<p> Il primo e unico programma nutrizionale brevettato per supportare un invecchiamento sano attraverso il ringiovanimento cellulare.</p>\n<hr>\n</div>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "image_qbMwNK": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/What_is_FMD_Tabs_-_benefits.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_e3LARD",
+        "image_qbMwNK"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "promo_grid_iNVBpJ": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_LpWWjb": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/What_is_FMD_Tabs_-_benefits.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 620,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_LpWWjb"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "advanced_content_zMTtiY": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_WNLyXp": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 style=\"color: black;\">La dieta che imita il digiuno (FMD) è un rivoluzionario programma nutrizionale di cinque giorni scientificamente formulato per <b>imitare gli effetti di un digiuno prolungato a base di sola acqua, pur consentendo l'assunzione di nutrimento</b>, sostenendo i benefici del digiuno senza le difficoltà e i rischi derivanti dai digiuni a base di sola acqua.</h2>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "image_w4iWJn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5-Day_Food.png",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "html_gMx4DW": {
+          "type": "html",
+          "settings": {
+            "code": "<hr>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_WNLyXp",
+        "image_w4iWJn",
+        "html_gMx4DW"
+      ],
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; margin-bottom: 0px; padding: 40px 20px;}",
+        "hr {border: none; border-top: 2px dotted #999; color: #999; background-color: #fff; height: 1px; margin: 10px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_ayF6K7": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_Kck4Dm": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">32</span><p>Clinical trials on the use of fasting mimicking nutrition.</p>\n</div>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "html_eUBKNP": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">200</span><p>Issued or pending patents globally on fasting mimicking nutrition.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_Wr3cKF": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">18</span><p>Prestigious University partners in the testing and research of FMD.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_pkrYmE": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row-highlight\">\n<span class=\"titlebg\">100M</span><p>In funding received to support research and development.</p>\n</div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_Kck4Dm",
+        "html_eUBKNP",
+        "html_Wr3cKF",
+        "html_pkrYmE"
+      ],
+      "custom_css": [
+        ".index-section {background-color: #fcfcf7; padding: 40px 20px 50px; margin-top: 0px; margin-bottom: 0px;}",
+        ".titlebg {font-size: 55px; color: #67c908;}",
+        ".row-highlight {background-color: #ffff; padding: 30px; border-radius: 20px; text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "advanced_content_eBbBea": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_b78xpC": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "html_BeFpUR": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>\"Autophagy ends with a full reprogramming of new cells. When you reprogram, you are impacting the DNA. We are reprogramming the cells to behave younger.\" </h2><p>- L-Nutra’s CEO, Dr Joseph Antoun MD, PhD.</p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_b78xpC",
+        "html_BeFpUR"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02": {
+      "type": "text-and-image",
+      "custom_css": [
+        "li {margin-left: 30px; text-align: left;}",
+        "ul {list-style-type: disc;}"
+      ],
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h2>+ How Does FMD Work?</h2><p>Each day of the Prolon fast is carefully formulated to activate your body's natural cell-rejuvenating processes. The five days build upon one another to trigger the various stages of fasting that contribute to cellular renewal, so each day has its own unique and important role in that process.</p><p>Typically by day 2 the body enters ketosis, burning fat for fuel, and by day 3, autophagy kicks in. As your body's natural process of recycling or removing damaged cells, autophagy is like a deep, internal spring cleaning - and will continue working throughout the rest of your fast (even going until two days after it’s completed).. However, the FMD’s effects may go beyond autophagy to support complete cellular reprogramming.</p>",
+        "button_label": "",
+        "button_link": "shopify://products/prolon-fasting-nutrition-extra",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f3497522-49ea-41b4-a24a-f5def5a9b144": {
+      "type": "text-and-image",
+      "custom_css": [
+        "li {margin-left: 30px; text-align: left;}",
+        "ul {list-style-type: disc;}"
+      ],
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3>Phase 1: Autophagy (Rejuvenation)</h3><p>Autophagy, the first phase of rejuvenation, begins around day 3 of the FMD. During this process, the body clears out damaged cellular components, recycling essential materials and preparing for renewal.</p><h3>Phase 2: Cellular Reprogramming</h3><p>Following autophagy, new, healthier cells emerge, reprogrammed to function more efficiently. This cellular reset impacts DNA, promoting a youthful cellular profile that can support healthy aging and a healthy immune system.</p><p>Learn more about this process <a href=\"https://prolonlife.com/blogs/stories/reprogram-reset-rewind-the-science-of-cellular-rejuvenation-and-reprogramming\"><span style=\"text-decoration:underline\">HERE</span></a></p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "advanced_content_BCrqaT": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_BKHyka": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>+ The benefits of FMD<hr>\n</h2>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_tzf3nT": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "code": "<p>While even a single cycle of Prolon 5-Day offers numerous benefits, each builds upon the last. We recommend an initial three-month cycle for optimal impact, followed by three to four yearly to maximize results (about once each quarter). Discover the potential of science-backed cellular renewal to support <b>radiant skin. </b></p><a href=\"/products/prolon-offer\" class=\"btn\" style=\"text-transform: none; letter-spacing: 0; font-size: 16px; font-weight: normal;border-radius: 8px; min-width: 220px; color: white;\">Order Prolon</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "image_w6jg8n": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_BKHyka",
+        "html_tzf3nT",
+        "image_w6jg8n"
+      ],
+      "custom_css": [
+        ".index-section {max-width: 1400px; margin: auto;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "facts_accordion_7AyXHd": {
+      "type": "facts-accordion",
+      "blocks": {
+        "text_FphmxQ": {
+          "type": "text",
+          "settings": {
+            "title": "Fasting With Food™",
+            "description": "<p>FMD offers the benefits of a water-only fast, but with carefully formulated food. Additionally, unlike water-only fasting, which can lead to muscle loss, FMD is designed to target fat loss while protecting muscle mass.</p>",
+            "show_image": true,
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_VLd9AA": {
+          "type": "text",
+          "settings": {
+            "title": "Clinically Validated",
+            "description": "<p>The program is backed by over 18 human clinical trials with leading institutions, including USC, Stanford, and Mayo Clinic.</p>",
+            "show_image": true,
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_7qTHVC": {
+          "type": "text",
+          "settings": {
+            "title": "Scientifically-Backed Benefits",
+            "description": "<p>FMD has been shown to provide significant benefits that keep on giving, including:</p><h4></h4><ul><li>Fat-Focused Weight Loss with Muscle Protection</li><li>Healthy Aging</li><li>Healthy Metabolic Markers</li><li>Enhanced Skin Health</li><li>Mental Clarity and Energy</li></ul><h4></h4><p><a href=\"/pages/benefits-of-fasting-mimicking-diet\" title=\"Benefits Of Fasting Mimicking Diet (FMD)\">Explore all the benefits <strong>here.</strong></a></p>",
+            "show_image": false,
+            "image": "shopify://shop_images/What_is_FMD_Tabs_-_benefits-1.jpg",
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        },
+        "text_eXtTXP": {
+          "type": "text",
+          "settings": {
+            "title": "Easy and Convenient",
+            "description": "<p>Since you only need to follow the FMD for 15–20 days a year total, it’s easy to work into your lifestyle. Plus, all the food you need is pre-packaged with instructions clearly laid out for you, making it convenient to fit into your schedule.</p>",
+            "show_image": true,
+            "show_stats": false,
+            "stat_1": "1.4",
+            "stat_1_label": "IHBA1C Reduction",
+            "stat_2": "22 lbs",
+            "stat_2_label": "Average weight loss",
+            "stat_3": "67%",
+            "stat_3_label": "Medication reliance reduction",
+            "stat_4": "95%",
+            "stat_4_label": "Insulin resistance reduction",
+            "stat_5": "",
+            "stat_5_label": "",
+            "stat_6": "",
+            "stat_6_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_FphmxQ",
+        "text_VLd9AA",
+        "text_7qTHVC",
+        "text_eXtTXP"
+      ],
+      "custom_css": [
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-container {max-width: 1500px; margin: auto;}",
+        ".tvg_facts_accordion_luWxJq_FactsAccordion-item__title span {display: none;}",
+        "h3 {font-size: 25px;}",
+        "ul {list-style: disc;}",
+        "li {margin-left: 20px; line-height: 1.8rem;}",
+        "h6 {font-size: 12px; letter-spacing: 0; text-transform: none;}",
+        "h5 {font-size: 12px; letter-spacing: 0; text-transform: none; border-top: 1px dashed gray; padding-top: 10px;}",
+        "h4 {color: #73914a; padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 10,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 3,
+        "header": "",
+        "cta_text": "Learn More",
+        "cta_url": "",
+        "mobile_copy": ""
+      }
+    },
+    "text_columns_8dbaCM": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_9JRXrF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "<h2>+ How to Use Prolon FMD</h2><hr>",
+            "text": "<p>Everything you need for each day of the fast is included in your kit. Each day’s nutrition is scientifically formulated to stay below nutrient sensing pathways, and should be followed precisely to ensure the body enters and remains in a fasting state. <br><br>\nWhile even a single cycle of Prolon 5-Day offers numerous benefits, each builds upon the last. We recommend an initial three-month cycle for optimal impact (15 days over 90), followed by three to four cycles yearly to maximize results (about once each quarter). \n</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_PhhPd9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "<h2>+ What's Inside the Prolon Kit</h2><hr>",
+            "text": "<p>Inside your kit, you receive individual boxes for each day of the fast with everything you need, including bars, soups, supplements, snacks, and teas. All these foods are scientifically formulated to provide essential nutrients while staying below nutrient-sensing thresholds, helping your body to enter a fasting state and activate beneficial processes like ketosis and autophagy.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_9JRXrF",
+        "text_block_PhhPd9"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_WQ6iKd": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_6mU3b6": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_tQLVtH": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 90%; margin-left: 0px;\">\n<h2>How to use Prolon FMD</h2>\n<hr>\n<p>Everything you need for each day of the fast is included in your kit. Each day’s nutrition is scientifically formulated to stay below nutrient sensing pathways, and should be followed precisely to ensure the body enters and remains in a fasting state. While even a single cycle of Prolon 5-Day offers numerous benefits, each builds upon the last. We recommend an initial three-month cycle for optimal impact (15 days over 90), followed by three to four cycles yearly to maximize results (about once each quarter). </p>\n</div>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "image_XfW7n6": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_xFAL9N": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 90%; margin-left: 0px;\">\n<h2>What's Inside the Prolon FMD Kit?</h2>\n<hr>\n<p>Inside your kit, you receive individual boxes for each day of the fast with everything you need, including bars, soups, supplements, snacks, and teas. All these foods are scientifically formulated to provide essential nutrients while staying below nutrient-sensing thresholds, helping your body to enter a fasting state and activate beneficial processes like ketosis and autophagy.</p>\n</div>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_6mU3b6",
+        "html_tQLVtH",
+        "image_XfW7n6",
+        "html_xFAL9N"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "custom_class": ""
+      }
+    },
+    "slideshow_9Eg78G": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FKgc43": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h2 style=\"color: white; border-bottom: 1px dashed white; padding-bottom: 10px;;\">Start Your Journey with Prolon Today!</h2>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p>Experience the scientifically proven way to receive the rejuvenating effects of fasting while receiving essential nutrition. Thousands have already discovered the power of Prolon’s FMD—science-backed and designed for real results. </p>",
+            "link": "",
+            "link_text": "<span style=\"color: white;\">Shop Prolon</span>",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#73984a",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FKgc43"
+      ],
+      "custom_css": [
+        "p {color: white !important;}",
+        ".btn {border-radius: 50px; letter-spacing: 1px; font-weight: 500;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "73029347-7b90-4f29-a683-7c5a54b61381": {
+      "type": "TWProlonBenefits",
+      "blocks": {
+        "6ef85315-de2e-45a0-a5c6-afa465a89099": {
+          "type": "cards",
+          "settings": {
+            "title": "Promote Cellular Renewal",
+            "description": "Trigger autophagy, (the clean-up of old and worn out cellular components), and help your body rejuvenate.",
+            "image_overide_url": ""
+          }
+        },
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501": {
+          "type": "cards",
+          "settings": {
+            "title": "Support Metabolic Health",
+            "description": "Helps you maintain healthy systolic blood pressure. *Results based on 3 consecutive monthly cycles.",
+            "image_overide_url": ""
+          }
+        },
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92": {
+          "type": "cards",
+          "settings": {
+            "title": "Enhance Clarity & Performance",
+            "description": "Customers report feeling greater focus, clarity and energy toward the end and after completing the fast.",
+            "image_overide_url": ""
+          }
+        },
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156": {
+          "type": "cards",
+          "settings": {
+            "title": "Fat Focused Weight Loss*",
+            "description": "Kickstart weight loss (on average 5 pounds), especially belly fat, while protecting lean body mass.",
+            "image_overide_url": ""
+          }
+        },
+        "5575b93e-0325-42c1-bf02-c988c1ff138f": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "https://prolonlife.com/products/prolon-offer",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "6ef85315-de2e-45a0-a5c6-afa465a89099",
+        "3d6d110c-0b4a-41a0-b8d1-2dfb49010501",
+        "462567c5-6cc6-4e34-ba2f-e7a5079cae92",
+        "bc378bba-ec92-4de6-849f-c2e7ad8ea156",
+        "5575b93e-0325-42c1-bf02-c988c1ff138f"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<h3>Key Benefits Fasting Mimicking Technology</h3>",
+        "image_width": "100px",
+        "card_width": "w-1/4",
+        "background_color": "#ffffff",
+        "text_alignment": "text-center",
+        "content_alignment": "items-center",
+        "background_shadow": "bg-transparent"
+      }
+    },
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<div style=\"max-width: 1280px; margin: auto; padding: 30px 0px;\">\n    <h3 style=\"font-size: 34px; text-align: center; font-weight:700;\">\n        Join the health trend of fasting with food™.\n    </h3>\n    <br>\n    <p style=\"font-size: 20px; text-align: center;\">The ProLon Fasting Mimicking Diet is the first and only meal program that has gone through clinical trials at\n        the University of Southern California and been patented for its healthy-aging effects!  This 5-day meal\n        program provides scientifically researched micro- and macro-nutrients in precise quantities and combinations\n        that nourish you, but are not recognized as food by your body and therefore mimics a fasting state! \n    </p>\n</div>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "c7cf97de-37a9-41ff-b006-2950c67f795c": {
+      "type": "TWPageHeroBanner",
+      "disabled": true,
+      "settings": {
+        "title": "The ProLon Fasting Mimicking Diet is your secret to fasting",
+        "description": "",
+        "text_position": "md:items-end md:justify-start",
+        "content_position": "justify-center text-center",
+        "background_shadow": "backdrop-blur-sm bg-white/25",
+        "text_color": "#ffffff",
+        "under_header": false
+      }
+    },
+    "2e036f94-feea-4a01-8025-982c50a5306d": {
+      "type": "TWImageWithBoxText",
+      "disabled": true,
+      "settings": {
+        "tag": "MEET THE CREATOR OF THE FMD",
+        "title": "Dr. Valter Longo, Ph.D",
+        "description": "<p>Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.</p>\n<br>\n<p>For the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).<br><br>It is derived from these findings that we are able to bring you ProLon and </p>",
+        "box_position": "md:justify-start",
+        "add_padding": false
+      }
+    },
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5": {
+      "type": "TWPageHeroBanner",
+      "blocks": {
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0": {
+          "type": "buttons",
+          "settings": {
+            "text": "Order Now",
+            "url": "https://prolonlife.com/products/prolon-offer",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "14ac8657-1fb9-42fc-bb00-27be24a01dd0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Healthy Convenience",
+        "description": "Get many of the benefits of a 5-day fast without giving up food with ProLon, the first and only patented 5-Day Fasting Mimicking Diet. ProLon gently guides your body into a fasting state to get many of the health benefits that come from long fasts while enjoying delicious meals and tasty snacks.",
+        "text_position": "md:items-center md:justify-center",
+        "content_position": "justify-center text-center",
+        "background_shadow": "bg-transparent",
+        "text_color": "#000000",
+        "under_header": false
+      }
+    },
+    "6e1a61d6-00f1-4980-b176-025e881e5d99": {
+      "type": "TWCustomHTML",
+      "disabled": true,
+      "settings": {
+        "html": "<p style=\"text-align:center; font-weight:700; font-size: 34px;\">What the Experts have to Say</p>",
+        "bg_color": "#ffffff",
+        "add_spacing": false
+      }
+    },
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Amy Savagian, MD",
+        "description": "“I love the science supporting ProLon, and I love that the science has been published in multiple peer reviewed journals. It allows me to suggest ProLon with confidence. I have used fasting and time restricted eating in my practice for years; ProLon augments this and takes it to the next level.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "TRIPLE BOARDED IN INTERNAL, INTEGRATIVE AND OBESITY MEDICINE"
+      }
+    },
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. William Hsu, M.D",
+        "description": "“ProLon carries so many weight, metabolic and cellular benefits that not only do I recommend it, but I decided to join the company’s mission full time as Chief Medical Officer”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": false,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "CHIEF MEDICAL OFFICER, L-NUTRA, INC  <br>FORMER PROFESSOR OF MEDICINE, HARVARD"
+      }
+    },
+    "835ab035-03ee-444e-9227-8bd33197aa9f": {
+      "type": "TWImageWithText",
+      "disabled": true,
+      "settings": {
+        "pretitle": "",
+        "title": "Dr. Maria Tulpan, M.D.",
+        "description": "“Not only do I recommend ProLon as a frequent nutritional intervention, I’ve done it myself numerous times. I love this product so much, I invested in the company.”",
+        "use_video_html": false,
+        "overide_image": "",
+        "image_on_left": true,
+        "remove_padding": false,
+        "background_color": "#ffffff",
+        "image_max_width": "500px",
+        "tag": "ENDOCRINOLOGY, DIABETES & METABOLISM <br>L-NUTRA AMBASSADOR"
+      }
+    },
+    "2169fcb5-9999-4349-90cc-cc5639da5e55": {
+      "type": "TWOnlyImage",
+      "disabled": true,
+      "settings": {
+        "max_height": "450px",
+        "under_header": false
+      }
+    },
+    "text_columns_Ga4mXt": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_KXFn9y": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "The Surprising Potential of Fasting Mimicking Diets (FMD) on Depression",
+            "text": "<p><br>While psychotherapy and medication are mainstream treatments for depression, they don't always work for everyone. This...<br><br><a href=\"https://prolonlife.com/blogs/stories/the-surprising-potential-of-fasting-mimicking-diets-fmd-on-depression\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/the-surprising-potential-of-fasting-mimicking-diets-fmd-on-depression"
+          }
+        },
+        "text_block_qfY8Hn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "The Untapped Power of the FMD: Igniting an Exercise Motivation Revolution",
+            "text": "<p><br>When it comes to improving metabolic health, sustaining an active lifestyle is essential. But for many...<br><br><a href=\"https://prolonlife.com/blogs/stories/the-untapped-power-of-the-fmd-igniting-an-exercise-motivation-revolution\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/the-untapped-power-of-the-fmd-igniting-an-exercise-motivation-revolution"
+          }
+        },
+        "text_block_UzKMJM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Reprogram, Reset, Rewind: The Science of Cellular Rejuvenation",
+            "text": "<p><br>When we talk about the deep cellular renewal benefits of the Fasting Mimicking Diet (FMD), much...<br><br><a href=\"https://prolonlife.com/blogs/stories/reprogram-reset-rewind-the-science-of-cellular-rejuvenation-and-reprogramming\">Read The Article →</a></p>",
+            "button_label": "",
+            "button_link": "https://prolonlife.com/blogs/stories/reprogram-reset-rewind-the-science-of-cellular-rejuvenation-and-reprogramming"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_KXFn9y",
+        "text_block_qfY8Hn",
+        "text_block_UzKMJM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-weight: 500; text-align: left;}",
+        ".section-header {text-align: left;}",
+        ".rte-setting a:not(.rte__image),.rte a:not(.rte__image) {text-decoration: none; color: #73914a; font-weight: 600;}",
+        "p {text-align: left;}",
+        ".medium-up--one-third {background-color: #fcfcf7; padding: 20px 30px; border-radius: 20px;}",
+        "@media only screen and (min-width: 769px) {.medium-up--one-third {width: 31%; margin-left: 1%; margin-right: 1%; }}",
+        ".index-section {background-color: #fcfcf7; padding: 40px 0; margin-top: 0px; margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "title": "<span style=\"font-weight: 500; text-align: left;\">Want to dig deeper into the benefits? </span><p style=\"color: #333;\">Latest blog, articles, and tips on well-being, and longevity.<br><br></p><hr>",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "advanced_content_6nCejY": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_L6kcc6": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "html_TcC47B": {
+          "type": "html",
+          "settings": {
+            "code": "<h2>The creator of Fasting Mimicking Technology - Dr. Valter Longo, Ph.D</h2><hr><p>\nDr. Valter Longo, Director of the Longevity Institute at the University of Southern California, was recognized by TIME as one of the top 50 most influential people in health. As the pioneering mind behind the Fasting Mimicking Diet, Dr. Longo was awarded the first-ever patent for Healthspan. His groundbreaking work revealed how cells sense nutrients, leading him to develop the FMD formulation. Through extensive mouse and human trials, he demonstrated the powerful benefits of this approach. These discoveries are the foundation of our Prolon product line, designed to bring the science of healthy aging to you.\n</p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "html_B9P3wz": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n@media only screen and (min-width: 769px) {\nh3 {font-weight: normal;\nfont-size: 25px;}\nh2 {color: #73914a;\nfont-size: 34px;\nfont-weight: normal;}\np {font-size: 16px;}\n}\n\n@media only screen and (max-width: 768px) {\nh3 {\nfont-size: 18px !important;}\nh2 {font-size: 28px !important; \ncolor: #73914a;\ntext-align: left;\nfont-weight: normal;}\np {font-size: 14px;\ntext-align: left;}\nh1 {font-size: 35px !important;}\n\n}\n\n\n#shopify-section-template--17812500185246__advanced_content_zMTtiY {background-color: #fcfcf7;}\n\n\n\n.drk-grn {color: #1e4136;}\n\nhr{ border: none;\n  border-top: 2px dotted #999;\n  color: #999;\n  background-color: #fff;\n  height: 1px;\n  margin: 10px 0;}\n\n\n\n#shopify-section-template--17930986586270__advanced_content_eBbBea {\nbackground-color: #1F4036;\npadding-top: 30px; padding-bottom: 30px; color: white;}\n\n@media print, screen and (min-width: 64em) {\n.tvg_facts_accordion_luWxJq_FactsAccordion-image.large img {\nheight: 20rem;}\n}\n\n#shopify-section-template--17930986586270__advanced_content_BCrqaT  {background-color: #fcfcf7; padding-top: 30px;}\n\n#shopify-section-template--17930986586270__facts_accordion_7AyXHd {\nbackground-color: #fcfcf7; padding-bottom: 30px;}\n\n#shopify-section-template--17930986586270__facts_accordion_7AyXHd > div > div.tvg_facts_accordion_luWxJq_FactsAccordion-grid > div > div:nth-child(3) > div > div.tvg_facts_accordion_luWxJq_FactsAccordion-description.js-accordion-facts-description.--is-active {background-color: white; padding: 30px;}\n\n/*valter secion*/\n#shopify-section-template--17930986586270__advanced_content_6nCejY {background-color: #fcfcf7; padding-top: 50px; padding-bottom: 50px;}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_L6kcc6",
+        "html_TcC47B",
+        "html_B9P3wz"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "advanced_content_aYpfCB",
+    "promo_grid_iNVBpJ",
+    "advanced_content_zMTtiY",
+    "advanced_content_ayF6K7",
+    "advanced_content_eBbBea",
+    "e5d84626-a4ad-426d-97c7-14a17ef7ad02",
+    "f3497522-49ea-41b4-a24a-f5def5a9b144",
+    "advanced_content_BCrqaT",
+    "facts_accordion_7AyXHd",
+    "text_columns_8dbaCM",
+    "advanced_content_WQ6iKd",
+    "slideshow_9Eg78G",
+    "73029347-7b90-4f29-a683-7c5a54b61381",
+    "a406c4a1-2938-4933-b4e6-4ae5e46f5778",
+    "c7cf97de-37a9-41ff-b006-2950c67f795c",
+    "2e036f94-feea-4a01-8025-982c50a5306d",
+    "13f82015-ea1a-48d9-9ae6-bb1fb519fad5",
+    "6e1a61d6-00f1-4980-b176-025e881e5d99",
+    "f30eef68-4bb7-4423-919b-c617f0d8dcaa",
+    "01b3e3f1-c964-44de-82f1-eb1a02dbba6b",
+    "835ab035-03ee-444e-9227-8bd33197aa9f",
+    "2169fcb5-9999-4349-90cc-cc5639da5e55",
+    "text_columns_Ga4mXt",
+    "advanced_content_6nCejY"
+  ]
+}

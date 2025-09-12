@@ -1,0 +1,53 @@
+{% assign data = section.settings %}
+<!-- TWVideoWithTextV1 -->
+<div class="py-6 bg-white md:py-12 lg:overflow-hidden">
+  <div class="mx-auto lg:px-8" style="max-width: 1440px;">
+    <div class="flex flex-col justify-center items-strech md:flex-row">
+      <div class="relative w-full px-2 md:w-1/2">
+        <div class="z-10 overflow-hidden rounded-lg bg-champagneLight">
+          <img
+            class="object-cover  w-full h-full cursor-pointer md:min-h-[520px] object-center "
+            width="100%"
+            height="100%"
+            src="{{ data.image | img_url: '600x' }}"
+          >
+        </div>
+      </div>
+      <div class="w-full px-2 overflow-hidden md:w-1/2">
+        <div class="w-full h-full px-4 rounded-lg mx-auto max-w-2xl sm:px-6 flex items-center justify-center lg:px-0" style="background: #e5e7eb">
+          <div class="px-4 py-4 md:px-8">
+            <h1 class="mb-4 text-2xl text-center md:text-4xl sm:mb-5 lg:mb-6 font-avant font-medium">
+              <span class="block text-black" style="text-transform: none; color:#73984a;">{{ data.title }}</span>
+            </h1>
+            <div class="p-1 text-center text-md md:text-lg text-black font-avenir">
+              {{ data.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image Text V1 TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ]
+}
+{% endschema %}

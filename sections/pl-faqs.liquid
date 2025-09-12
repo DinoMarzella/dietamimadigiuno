@@ -1,0 +1,105 @@
+{%- assign data = section.settings -%}
+<div class="w-full py-[50px] bg-white px-[20px] max-w-[1600px] mx-auto loaded_animation" >
+  <div class="w-full flex justify-center items-center flex-col max-w-[800px] mx-auto">
+    {%- if data.main_title.size > 0-%}
+      <div class="w-full pb-[30px] px-[20px]">
+        <h2
+        class="mb-[10px] text-[30px] md:text-[40px] leading-[1.2] hero__animation-contents 
+            !delay-200 text-center w-full font-semibold">{{data.main_title}}</h2>
+      <p
+        class="mb-[30px] md:mb-[50px] text-[16px] md:text-[18px] leading-[1.2] font-normal hero__animation-contents 
+            !delay-200 text-center w-full"
+      >{{data.main_description}}</p>
+      </div>
+    {%- endif -%}
+    <h2
+      class="mb-[20px] text-[30px] md:text-[40px] leading-[1.2] font-semibold hero__animation-contents 
+          !delay-200"
+    >{{data.title}}</h2>
+      <div class="w-full mt-[20px] hero__animation-contents !delay-[1.3s]">
+        {%- for tab in section.blocks -%}
+          <div key={index} class="w-full py-[10px]">
+            <div
+              class="w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-{{ section.id }}">
+              <p class="text-black text-[16px] font-semibold">
+                {{tab.settings.question}}
+              </p>
+              <img
+                class="relative w-[15px] object-contain h-[15px] faqs-close-btn"
+                src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524"
+                alt={tab.question}
+              />
+            </div>
+            <div
+              class="w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden"
+            >{{tab.settings.answer}}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-faqs');
+    var sectionId = "{{ section.id }}";
+
+    $(`.accordion-faqs-title-${sectionId}`).click(function() {
+      $(this).next('.accordion-faqs-content').toggleClass('hidden');
+      $(this).next('.accordion-faqs-content').toggleClass('active');
+      $(this).find('.faqs-close-btn').toggleClass('rotate-180');
+
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL FAQs",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "main_title",
+      "label": "Main Title"
+    },
+    {
+      "type": "textarea",
+      "id": "main_description",
+      "label": "Main Description"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "FAQs"
+    }
+    
+  ],
+  "blocks": [
+    {
+      "type": "faqs",
+      "name": "FAQs",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "question",
+          "label": "Question",
+          "default": "What is Prolon ReSet and how do I use it?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>ProLon ReSet is a 1-day fasting nutrition program that uses a patented, precise blend of plant-based nutrients to provide you essential nutrition and fuel without activating your body’s food sensing system. ProLon ReSet is for people who are interested in amping up their Intermittent Fasting, or simply giving their body a much-needed break from mindless eating and high-calorie sugar and carb diets with a nutrition program that can give you the benefits of a full day fast. </p><p>In short, ProLon ReSet introduces you to the world of fasting by giving your body a break and chance to ReSet. ProLon ReSet can help manage your hunger with this 1 day fasting kit and experience a full day fast without starving yourself. </p><p><strong>How does ProLon ReSet support fasting?</strong> </p><p>ProLon ReSet helps you enter the transformational fasting lifestyle of <em>fasting with food</em>*. When you do a ProLon ReSet, you eat while your body thinks it’s fasting because the scientifically designed combination of nutrients does not trigger nutrient sensing pathways. During this 1-day fast, your body’s ketone levels will rise as your body starts to break down fat stores for fuel, and your glucose levels will remain steady – similar to what happens when you’re fasting. </p><p><em>*Based on the fasting-mimicking technology of ProLon.</em> </p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL FAQs",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,471 @@
+<div class="{{ section.settings.bg-color }}">
+  {% comment %}
+    <h2 class="text-start text-[16px] font-[600]">
+      {{ section.settings.heading_text }}
+    </h2>
+  {% endcomment %}
+  <section class="max-w-[1800px] mx-auto relative tab-img-content md:block">
+    <div class="flex justify-start gap-2 px-4 md:block">
+      <div class="flex items-center justify-center md:hidden ">
+        <div class="w-[2px] h-full  {% if section.settings.mobile_line_color == 'black' %} bg-black {% else %} bg-white {% endif %}"></div>
+      </div>
+      <div class="flex flex-col  {{ section.settings.flex-reverse }} items-center justify-between mx-auto lg:flex-row ">
+        <div class="relative flex items-center justify-center md:pt-0 pt-4 lg:py-44 {{ section.settings.line_change }}  lg:border-r-2 {% if section.settings.line_color == 'dark' %} lg:border-[#1F4139] {% else %} lg:border-white {% endif %} lg:w-1/2 lg:mt-0 {{ section.settings.html_line }}">
+          {% if section.settings.enable_images %}
+            <div class="overflow-hidden relative md:pb-0 pb-4 w-[330px] sm:w-[400px] md:w-[510px] lg:my-[135px] mx-auto">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'slide' %}
+                      <div class="pb-4 text-center swiper-slide  rounded-lg bg-white md:bg-[#F1EAE5]">
+                        <img
+                          src="{{ block.settings.day_image | img_url: '800x' }}"
+                          alt="Day Image"
+                          class="mb-4 rounded-lg "
+                        >
+                        <div class="max-w-[300px] mx-auto text-center p-3 ">
+                          <p class="text-[12px] py-1 font-semibold uppercase text-[#1F4139]">
+                            {{ block.settings.day_number }}
+                          </p>
+                          <h3 class="text-[16] md:text-[20px] py-1 font-semibold text-[#1F4139] leading-tight mt-2">
+                            {{ block.settings.day_title }}
+                          </h3>
+                          <p class="text-[14px] py-1 text-[#1F4139] mt-1">{{ block.settings.day_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="mt-4 swiper-pagination !relative z-10"></div>
+            </div>
+          {% else %}
+            <div class="mx-auto space-y-4 md:pt-4 lg:pt-0 md:max-w-[500px] md:space-y-0">
+              {% if section.settings.subheading_text_tab_1 %}
+                <h2 class="text-[14px] pb-2 text-start font-bold  text-[#56A511] ">
+                  {{ section.settings.subheading_text_tab_1 }}
+                </h2>
+              {% endif %}
+              {% if section.settings.heading_text %}
+                <h1 class="text-[30px] font-[500]  text-start md:text-[34px] xl:text-[40px] leading-[1.2] w-full {% if section.settings.title_color == 'dark_green' %} text-[#1F4139] {% else %} text-white {% endif %}">
+                  {{ section.settings.heading_text }}
+                </h1>
+              {% endif %}
+
+              {{ section.settings.paragraph_1 }}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if section.settings.enable_section %}
+          <div class="w-full text-left md:pt-0 lg:w-1/2">
+            <div class="">
+              <div class="relative px-6 mx-auto rounded-lg md:px-4 lg:max-w-xl">
+                <div class="absolute top-0 left-0 flex flex-col items-center h-full">
+                  <div>
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Background.png?v=1733996222"
+                      alt="Background Image"
+                    >
+                  </div>
+                  <div class="w-[2px] bg-gray-200 flex-grow"></div>
+                </div>
+                {% for block in section.blocks %}
+                  {% if block.type == 'FAQ' %}
+                    <div class="relative pl-2 md:pl-5 {% unless forloop.last %} pb-4{% endunless %} mt-2">
+                      <button class="flex justify-between w-full text-left new-faq-toggle {% if forloop.first %}active{% endif %}">
+                        <div>
+                          <span class="text-[#73984A] font-semibold text-[16px] md:text-[18px]">
+                            {{- block.settings.section_title -}}
+                          </span>
+                          <p class="font-[600] py-1 text-[15px] md:text-[17px]">{{ block.settings.sub_title }}</p>
+                        </div>
+                        <div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="10"
+                            viewBox="0 0 17 10"
+                            fill="none"
+                            class="new-faq-icon {% if forloop.first %}rotate{% else %}no-rotate{% endif %}"
+                          >
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M8.35008 2.87895L14.6886 9.21753L16.0675 7.83867L9.03951 0.810689L8.35008 0.121289L7.66065 0.810689L0.632624 7.83867L2.01157 9.21753L8.35008 2.87895Z"
+                              fill="#1A1A1A" />
+                          </svg>
+                        </div>
+                      </button>
+                      <div
+                        class="overflow-hidden new-content"
+                        style="max-height: {% if forloop.first %}1000px{% else %}0{% endif %};"
+                      >
+                        <div class="text-[12px] md:text-[14px]">{{ block.settings.section_content }}</div>
+                        {% if block.settings.section_image %}
+                          <div class="relative w-full mt-4">
+                            <img
+                              src="{{ block.settings.section_image | img_url: '2000x' }}"
+                              alt="Section Image"
+                              class="lg:w-[508px] mx-auto"
+                            >
+                          </div>
+                        {% endif %}
+
+                        <a
+                          href="{{ block.settings.button_url }}"
+                          class="flex {% if block.settings.hide_button %} hidden {% endif %} items-center  mt-2 justify-between max-w-[200px] ml-auto border-t border-black   pt-2  mb-4"
+                        >
+                          <span class="font-medium text-black">{{ block.settings.button_text }} </span>
+                          <span class="pl-2 text-black">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="18"
+                              height="19"
+                              viewBox="0 0 18 19"
+                              fill="none"
+                            >
+                              <path d="M2.76392 9.53027H14.9256" stroke="#272724" stroke-width="0.737069" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M9.95044 14.5051L14.9257 9.5299L9.95044 4.55469" stroke="#272724" stroke-width="0.737069"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </a>
+
+                        <div class="">
+                          {{ block.settings.custom_content }}
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% else %}
+          <div class="w-full px-4 text-left lg:w-1/2">
+          <a
+              href="{{section.settings.video_url}}"
+              class=""
+              aria-hidden="true"
+              aria-label="Watch The Video"
+            ></a>
+            <img
+              src="{{ section.settings.hero_image | img_url: '2000x' }}"
+              alt="{{ section.settings.heading_text | strip_html }}"
+              class=" md:w-[60%]  object-cover   {{ section.settings.html_v }}"
+            >
+            
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "dk home image with text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section Id"
+    },
+
+    {
+      "type": "checkbox",
+      "id": "enable_section",
+      "label": "Enable FAQ"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_images",
+      "label": "Enable images"
+    },
+    {
+      "type": "textarea",
+      "id": "flex-reverse",
+      "label": " Flex Reverse"
+    },
+    {
+     "type": "textarea",
+     "id": "line_change",
+     "label": "Line change"
+    },
+    {
+      "type": "select",
+      "id": "line_color",
+      "label": "Line color",
+      "default": "dark",
+      "options": [
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_line_color",
+      "label": "Mobile Line color",
+      "default": "black",
+      "options": [
+        {
+          "label": "Black",
+          "value": "black"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "bg-color",
+      "label": "background color "
+    },
+    {
+      "type": "select",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "dark_green",
+      "options": [
+        {
+          "label": "Dark green",
+          "value": "dark_green"
+        },
+        {
+          "label": "White",
+          "value": "white"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "subheading_text_tab_1",
+      "label": "Subheading Text "
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Learn About the Science Behind Prolon Nutrition"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "Paragraph 1 Text",
+      "default": "Understanding Cellular Protection and Rejuvenation and What That Means For You"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video Url"
+    },
+    {
+      "type": "html",
+      "id": "html_v",
+      "label": "Padding Image "
+    },
+    {
+      "type": "html",
+      "id": "html_line",
+      "label": "Center line hide "
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Day Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "day_image",
+          "label": "Day Image"
+        },
+        {
+          "type": "text",
+          "id": "day_number",
+          "label": "Day Number",
+          "default": "DAY 01"
+        },
+        {
+          "type": "textarea",
+          "id": "day_title",
+          "label": "Day Title",
+          "default": "Transforming to a fasting state"
+        },
+        {
+          "type": "textarea",
+          "id": "day_description",
+          "label": "Day Description",
+          "default": "The body transitions to a fasting state and fat-burning mode as it begins preparation for cellular clean-up."
+        }
+      ]
+    },
+
+    {
+      "name": "FAQ ",
+      "type": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title",
+          "default": "Section Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub Title",
+          "default": "Rejuvenative Defense"
+        },
+        {
+          "type": "textarea",
+          "id": "section_content",
+          "label": "Section Content",
+          "default": "This is the content for the section. You can add more information here."
+        },
+        {
+          "type": "image_picker",
+          "id": "section_image",
+          "label": "Optional Image"
+        },
+
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Url"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_button",
+          "label": "Hide Button"
+        },
+        {
+          "type": "textarea",
+          "id": "custom_content",
+          "label": "Custom Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "dk home image with text",
+      "category": "Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.new-faq-toggle').on('click', function () {
+      const $toggle = $(this);
+      const $content = $toggle.next('.new-content');
+      const $icon = $toggle.find('.new-faq-icon');
+
+      // Close other open FAQs
+      $('.new-content').not($content).css('max-height', '0');
+      $('.new-faq-icon').not($icon).removeClass('rotate').addClass('no-rotate');
+
+      // Toggle current FAQ
+      if ($content.css('max-height') !== '0px') {
+        $content.css('max-height', '0');
+        $icon.removeClass('rotate').addClass('no-rotate');
+      } else {
+        $content.css('max-height', $content.prop('scrollHeight') + 'px');
+        $icon.addClass('rotate').removeClass('no-rotate');
+      }
+    });
+  });
+</script>
+
+<style>
+  .rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .no-rotate {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .new-content {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #73984a;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #1f4139;
+    opacity: 1;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: false,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+{% comment %}
+  <script>
+  $(document).ready(function() {
+
+    $('.tab-img-header').click(function() {
+      // Toggle the visibility of the content section
+      $('.tab-img-content').toggleClass('hidden');
+
+      // Find the span element to change the text
+      var $span = $(this).find('span');
+      var $chevron = $(this).find('svg path');
+
+      // Check if the content is visible
+      if ($span.text() == "Open") {
+        // Change the text to 'Close' and rotate the chevron to point up
+        $span.text('Close');
+        $chevron.attr('d', 'M1 12L6 7L11 12'); // Change chevron to up
+      } else {
+        // Change the text back to 'Open' and rotate the chevron to point down
+        $span.text('Open');
+        $chevron.attr('d', 'M1 7L6 12L11 7'); // Change chevron to down
+      }
+    });
+  });
+
+  </script>
+{% endcomment %}

@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: auto;
+    
+  } 
+  .ochatbot-container {
+    z-index: 900!important;
+}
+.btn.btn{
+  background-color: var(--colorBtnPrimary);
+  background-color: #f7931d; 
+} 
+.acsb-trigger.acsb-trigger-size-medium {
+    z-index: 900!important;
+}   
+body.slide-cart-open  div#botmanWidgetRoot {
+  display: none;
+}
+
+body.slide-cart-open  .acsb-trigger {
+  display: none!important;
+} 
+@layer utilities {
+
+
+  .theme-grid{
+    @apply block;
+  }
+}
+
+
+  @layer components {
+    .container{
+      
+      @apply max-w-full px-4 mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-container ;   
+    }
+    .single-nav-item .nav__submenu {
+      @apply hidden;
+    }
+    .single-nav-item:hover .nav__submenu {
+      @apply block;
+    } 
+    .spinner-loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid green;
+      width: 25px; 
+      height: 25px;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-top: 6px;
+  }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+ 
+
+  .single-nav-slide {
+    @apply px-5 text-sm md:px-0 md:text-xl whitespace-nowrap;
+  }
+
+  .single-nav-slide.s-active {
+    font-weight: bold;
+  }
+
+  [v-cloak] {
+    opacity: 0.1;
+  }
+  [v-cloak][v-cloak-hide] {
+   display:none;
+ }
+   .video-foreground,
+   .video-background iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* pointer-events: none; */
+   }
+   .video-foreground {
+     height: 215%;
+     top: -57%;
+     width: 235%;
+     left: -64%;
+   }
+  @layer components {
+    .product-option-input + .single-product-option {
+      @apply opacity-50;
+    }
+    .product-option-input:hover + .single-product-option {
+      @apply opacity-100;
+    }
+    .product-option-input:checked + .single-product-option {
+      @apply  z-10 border-orange-300 opacity-100 ring-prolon_secondary ring-2 bg-orange-50;
+    }
+    .button-plan-option{
+     @apply text-[12px] md:text-sm font-avenir;    
+    }  
+  }  

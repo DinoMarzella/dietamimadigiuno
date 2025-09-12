@@ -1,0 +1,321 @@
+
+
+<nav class="megamenu__container--master">
+  <div>
+    {% render 'header-logo-block', section: section %}
+  </div>
+  {% if template == "product.tryprolon-fasting-new-v7" %}
+  <div class="megamenu__navigation">
+    <a href="#order" class="megamenu__link--linked hover:text-[#73994a] hover:underline" > Shop Prolon</a>
+    <a href="#longevity" class="megamenu__link--linked hover:text-[#73994a] hover:underline">Longevity Everyday Products </a>
+  </div>
+  {% else %}
+  <ul class="megamenu__navigation">
+    {% for links in section.settings.mega_menu_link_list.links %}
+    {% assign fullTitle = links.title | split: '|' %}
+    {% assign title = fullTitle | first %}
+    {% assign typeLink = fullTitle | last %}
+    {% assign type = '' %}
+
+    {% if typeLink contains ':' %}
+    {% assign type = typeLink | split: ':' | last %}
+    {% endif %}
+   
+    <li class="megamenu__link megamenu__link--alt">
+      <a href="{{links.url}}" class="megamenu__link--linked"> {{ title }}
+
+        {% if type != blank %}
+        {% render 'icon-chevron-down' %}
+        {% endif %}
+      </a>
+      {% if links.child_current or links.levels > 0 %}
+      <div class="megamenu__container  !p-4 xl:!px-[8rem] xl:!py-[2rem]">
+        <div class="{% if type != 'v11' %}megamenu__list-links{% endif %}">
+          {% if type == 'v1' %}
+          <div class="megamenu__list-items">
+            {% for sublinkFather in links.links %}
+            <div class="megamenu__list-subitem">
+              <span class="megamenu__submenu--title">{{ sublinkFather.title | upcase }}</span>
+
+              {% for sublinkChild in sublinkFather.links %}
+              <div class="megamenu__submenu--url">
+                <a href="{{ sublinkChild.url }}">{{ sublinkChild.title }}</a>
+              </div>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if type == 'v11' %}
+          <div class="!grid grid-cols-1 gap-4 xl:gap-10 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {% for sublinkFather in links.links %}
+            <div class="p-1 ">
+              <!-- Parent Title -->
+              <div class="flex pb-2 mb-2 border-b-2">
+                <span class="font-semibold text-gray-800 whitespace-nowrap text-md md:text-lg ">{{ sublinkFather.title |
+                  upcase }}</span>
+              </div>
+             
+              {% for sublinkChild in sublinkFather.links %}
+               
+              <div class="!grid grid-cols-4 !gap-2 py-2  ">
+
+                <div class="col-span-1 ">
+                  {% assign hasBanner = false %}
+                  {% for block in section.blocks %}
+                  {% if block.type == 'Megamenu' %}
+                  {% assign titleFormat = sublinkChild.title | downcase | strip %}
+                  {% assign typeFormat = block.settings.megamenu_type | downcase | strip %}
+
+                  {% if titleFormat == typeFormat %}
+                  {% assign hasBanner = true %}
+                  <a href="{{ block.settings.megamenu_url }}">
+                    <div class="flex justify-center megamenu__banner ">
+                      <div class="megamenu__banner--image megamenu__banner--image--{{ type }}"
+                        style="background-image: url('{{ block.settings.megamenu_image | image_url: width:400 }}'); background-size: cover; background-position: center; width: 65px; height: 65px;">
+                      </div> 
+                    </div>  
+                  </a>
+                  {% endif %} 
+                  {% endif %}
+                  {% endfor %}
+
+                  {% if hasBanner == false %}
+
+                  <div class="megamenu__placeholder"></div>
+                  {% endif %}
+                </div>
+
+
+                <div class="col-span-3">
+
+                  <a class="font-semibold whitespace-nowrap" href="{{ sublinkChild.url }}">
+                  {% if sublinkChild.title == "5:2 Fasting Simplified" or sublinkChild.title == "L-Protein Bar" or sublinkChild.title == "Prolon 5-Day BOGO" %}
+                    <span class="pl-[6px] pr-[5px] text-[14px] py-[2px] mr-[3px]  text-white rounded-sm bg-[#56A512]">NEW</span>
+                    {% endif %}
+                    {{ sublinkChild.title }}
+                  </a>
+
+
+                  <div>
+                    {% assign hasDescription = false %}
+                    {% for block in section.blocks %}
+                    {% if block.type == 'Megamenu' %}
+                    {% assign titleFormat = sublinkChild.title | downcase | strip %}
+                    {% assign typeFormat = block.settings.megamenu_type | downcase | strip %}
+
+                    {% if titleFormat == typeFormat %}
+                    {% assign hasDescription = true %}
+                    <p class="text-[12px] text-gray-600 megamenu__description">
+                      {{ block.settings.megamenu_description }}
+                    </p>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+
+
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+
+
+          {% if type == 'v2' %}
+          <div class="megamenu__list-items--secondary">
+            {% for sublinkFather in links.links %}
+            {% assign sublinkSplit = sublinkFather.title | split: '|' %}
+            {% assign sublinkTitle = sublinkSplit | first %}
+            {% assign sublinkImage = sublinkSplit[1] | split: ':' | last %}
+            {% assign sublinkDescription = sublinkSplit | last | split: ':' | last %}
+            <div class="megamenu__list-secondary__container">
+              <div class="megamenu__list-item">
+                <img src="{{sublinkImage  }}" alt="image product" class="megamenu__list-image" width="auto"
+                  height="auto">
+                <a href="{{sublinkFather.url}}" class="megamenu__list-title">{{ sublinkTitle }}</a>
+              </div>
+              <p class="megamenu__list-description">{{ sublinkDescription }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          {% if type == 'v3' %}
+          <div class="megamenu__list-items--secondary">
+            {% for sublinkFather in links.links %}
+            {% assign sublinkSplit = sublinkFather.title | split: '|' %}
+            {% assign sublinkTitle = sublinkSplit | first %}
+            {% assign sublinkImage = sublinkSplit[1] | split: ':' | last %}
+            {% assign sublinkDescription = sublinkSplit | last | split: ':' | last %}
+
+            <div class="megamenu__list-secondary__container">
+              <div class="megamenu__list-item">
+                <img src="{{sublinkImage}}" alt="image product" class="megamenu__list-image" width="auto" height="auto">
+                <a href="{{sublinkFather.url}}" class="megamenu__list-title">{{ sublinkTitle }}</a>
+              </div>
+              <p class="megamenu__list-description">{{ sublinkDescription }}</p>
+              <a href="{{sublinkFather.url}}" class="megamenu__list-button">
+                {{- 'general.header.megamenu.learn_more' | t -}}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="{% if type != 'v11' %}megamenu__list-items-banner{% endif %}">
+          {% for block in section.blocks %}
+          {% if block.type == 'Megamenu' %}
+          {% assign titleFormat = title | downcase | strip %}
+          {% assign typeFormat = block.settings.megamenu_type | downcase | strip %}
+
+          {% if titleFormat == typeFormat %}
+          <a href="{{ block.settings.megamenu_url }}"> 
+            <div class="megamenu__banner">
+              <img class="megamenu__banner--image megamenu__banner--image--{{type}}"
+                src="{{ block.settings.megamenu_image | image_url : width:400 }}" alt="image product" width="50px" height="auto">
+              {% comment %} <a class="megamenu__banner--button" href="{{ block.settings.megamenu_url }}">
+                {{- block.settings.megamenu_text_url | upcase -}}
+              </a> {% endcomment %} 
+            </div>
+          </a>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </li>
+
+
+    {% endfor %}
+
+    <li>
+      <a href="{{ section.settings.mega_menu_url_shop_prolon.url }}" class="megamenu__link--button " hyy>Prolon 5-Day </a>
+    </li>
+  </ul>
+  <a href="{{ section.settings.mega_menu_url_shop_prolon.url }}" class="megamenu-shop__button" hyyyy> Prolon 5-Day</a>
+  {% endif %}
+  <div class="megamenu__icons">
+    {% render 'header-icons-megamenu', section: section %}
+    {% comment %} <a href="/products/prolon-offer" class="megamenu__link--button">Prolon 5-Day </a>
+    <a href="/products/prolon-offer" class="megamenu-shop__button"> Prolon 5-Day</a> {% endcomment %}
+    
+  <div class="hidden custom-sidebar-header">
+    {% render "sidebar-header" %}
+  </div>
+  
+  <style>
+    @media (max-width: 1229px) {
+      .custom-sidebar-header {
+        display: block !important;
+      }
+    }
+  </style>
+  </div>
+</nav>
+
+<nav class="megamenu__container--mobile" id="megamenuMobile">
+  <span class="megamenu_mobile__title">
+    {{ 'general.header.megamenu.minititle' | t | upcase }}
+  </span>
+
+  {% for block in section.blocks %}
+  {% if block.type == 'megamenu-mobile' %}
+  <a href="{{ block.settings.megamenu_url }}">
+    <div class="megamenu_mobile__banner_container">
+      <img class="megamenu_mobile__banner_image" src="{{ block.settings.megamenu_image |  image_url }}" alt=""
+        width="auto" height="auto">
+      <a href="{{ block.settings.megamenu_url }}" class="megamenu_mobile__banner_button">
+        {{- block.settings.megamenu_text_url | upcase -}}
+      </a>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+  <div class="megamenu__close">
+    {% render 'icon-close' %}
+  </div>
+
+  <div>
+    {% for links in section.settings.mega_menu_link_list_mobile.links %}
+    {% assign fullTitle = links.title | split: '|' %}
+    {% assign title = fullTitle | first %}
+    {% assign typeLink = fullTitle | last %}
+    {% assign type = '' %}
+
+    {% if typeLink contains ':' %}
+    {% assign type = typeLink | split: ':' | last %}
+    {% endif %}
+
+    {% if type == 'v1' %}
+    <div>
+      <span class="megamenu__link--open-submenu">
+        <span class="megamenu__open-submenu megamenu__open-submenu--title">{{ title }}</span>
+        {% render 'icon-enter' %}
+      </span>
+      <div class="megamenu__submenu">
+        <span class="megamenu__close">
+          {% render 'icon-close' %}
+        </span>
+        <div class="megamenu_mobil__submenu_container">
+          <span class="megamenu__close-submenu">
+            {% render 'icon-back' %}
+          </span>
+          <h3 class="megamenu__close-submenu--subtitle">{{ title }}</h3>
+        </div>
+
+        <div>
+          {% for sublinkFather in links.links %}
+          <a href="{{ sublinkFather.url }}" class="megamenu__close-submenu--link">{{ sublinkFather.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% elsif type == 'v2' %}
+    <div>
+      <span class="megamenu__link--open-submenu">
+        <span class="megamenu__open-submenu megamenu__open-submenu--title">{{ title }}</span>
+        {% render 'icon-enter' %}
+      </span>
+      <div class="megamenu__submenu">
+        <span class="megamenu__close">
+          {% render 'icon-close' %}
+        </span>
+        <div class="megamenu_mobil__submenu_container">
+          <span class="megamenu__close-submenu">
+            {% render 'icon-back' %}
+          </span>
+          <h3 class="megamenu__close-submenu--subtitle">{{ title }}</h3>
+        </div>
+
+        <div>
+          {% for sublinkFather in links.links %}
+          {% assign sublinkSplit = sublinkFather.title | split: '|' %}
+          {% assign sublinkTitle = sublinkSplit | first %}
+          {% assign sublinkImage = sublinkSplit[1] | split: ':' | last %}
+          {% assign sublinkDescription = sublinkSplit | last | split: ':' | last %}
+
+          <div class="megamenu__list-item--container">
+            <div class="megamenu__list-item">
+              <img class="megamenu__list-image" src="{{ sublinkImage }}" alt="" width="auto" height="auto">
+              <a href="{{ sublinkFather.url }}" class="megamenu__list-title">{{ sublinkTitle }}</a>
+            </div>
+            <p class="megamenu__list-description">{{ sublinkDescription }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% else %}
+    <a href="{{ links.url }}" class="megamenu_mobile__link--simple">{{ title }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</nav> 

@@ -1,0 +1,152 @@
+{% assign data = section.settings %}
+<!-- TWPotentialGrowth -->
+<div class="w-full py-12 bg-white font-avenir">
+  <div class="w-full px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center justify-center py-8 text-center rounded-xl bg-champagneLight">
+      <p class="max-w-2xl mx-auto my-2 text-2xl font-normal leading-10 tracking-tight text-darkGunMetal sm:text-4xl font-avenir">
+        {{ data.title }}
+      </p>
+      <a href="/" class="flex items-center justify-center mx-auto border-b border-tealGreenDark">
+        <span class=" font-dinamoRegular text-tealGreenDark">View All Results</span>
+        <div class="flex items-center justify-center pl-4 mx-auto">
+          <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" clipRule="evenodd" d="M7.154.646a.5.5 0 0 0-.707.708l3.145 3.145H1.2a.5.5 0 1 0 0 1h8.394L6.447 8.646a.5.5 0 1 0 .707.708l4-4a.5.5 0 0 0 0-.708l-4-4Z" fill="#008078"></path>
+          </svg>
+        </div>
+      </a>
+      <div class="flex items-center justify-center">
+        {% assign cards = section.blocks | where: 'type', 'cards' %}
+        {% for cardMain in cards %}
+          {% assign card = cardMain.settings %}
+          <div class="relative flex flex-col items-center justify-center w-full h-full px-2 py-8 rounded-md cursor-pointer ">
+            <div class="flex items-center justify-center cursor-pointer">
+              <img
+                class="relative z-10 object-contain object-center mx-auto rounded-full  w-14 h-14 opacity-50 {% if forloop.index == 1 %} opacity-100{% endif %}"
+                width="100%"
+                height="100%"
+                src=""
+                {{ card.small_image | img_url: 'master' }}
+              >
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="relative flex mt-5">
+      <div class="absolute z-50 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer w-14 h-14 -left-5 top-48">
+        {%- comment -%} <MdOutlineNavigateBefore class="w-8 h-8" /> {%- endcomment -%}
+      </div>
+      <div class="relative flex flex-col items-stretch justify-center w-full">
+        {% assign cards = section.blocks | where: 'type', 'cards' %}
+        {% for cardMain in cards %}
+          {% assign card = cardMain.settings %}
+          <div class="flex flex-col items-stretch w-full md:flex-row {% if forloop.index != 1 %} hidden{% endif %}">
+            <div class="flex w-full rounded-lg md:w-1/2">
+              <div class="relative w-1/2">
+                <img
+                  class="relative object-cover object-center px-1 mx-auto overflow-hidden rounded-lg md:px-3"
+                  width="100%"
+                  height="100%"
+                  src=""
+                  {{ card.image_1 | img_url: 'master' }}
+                  style="height:100%"
+                >
+                <div class="absolute bg-white rounded-md w-max left-5 bottom-2"><p class="px-4 py-1">Before</p></div>
+              </div>
+              <div class="relative w-1/2">
+                <img
+                  class="relative object-cover object-center px-1 mx-auto overflow-hidden rounded-lg md:px-3"
+                  width="100%"
+                  height="100%"
+                  src=""
+                  {{ card.image_2 | img_url: 'master' }}
+                  style="height:100%"
+                >
+                <div class="absolute text-sm bg-white rounded-md w-max left-5 bottom-2">
+                  <p class="px-4 py-1">{{ card.after_months }} months growing</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full p-4 rounded-lg md:p-24 md:w-1/2 bg-champagneLight">
+              <h4 class="my-2 text-3xl text-left font-avenirItalic" style="color: #22202F">{{ card.title }}</h4>
+              <p class="mb-3 text-base text-left font-dinamoRegular" style="color: #22202F">{{ card.description }}</p>
+              {%- if card.detail_description -%}
+                <div class="pt-10">
+                  {{ card.detail_description }}
+                </div>
+              {%- endif -%}
+              <p class="pt-5 text-sm font-dinamoRegular">
+                Taking <b class="text-tealGreenDark">{{ card.med_taking }}</b>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="absolute z-50 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer w-14 h-14 -right-6 top-48">
+        {%- comment -%} <MdOutlineNavigateNext class="w-8 h-8" /> {%- endcomment -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Potential Growth TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Cards",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "textarea",
+          "id": "detail_description",
+          "label": "detail Description"
+        },
+        {
+          "type": "textarea",
+          "id": "med_taking",
+          "label": "Med Taking"
+        },
+        {
+          "type": "text",
+          "id": "after_months",
+          "label": "Months Taking"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image Before"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image After"
+        },
+        {
+          "type": "image_picker",
+          "id": "small_image",
+          "label": "Small Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

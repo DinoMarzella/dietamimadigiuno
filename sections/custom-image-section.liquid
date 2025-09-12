@@ -1,0 +1,54 @@
+{% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+  <div class="relative">
+    <div class="absolute inset-0 w-full h-full">
+      <picture>
+        {% if section.settings.desktop_image != blank %}
+          <source media="(min-width: 768px)" srcset="{{ section.settings.desktop_image | img_url: '1000x' }}">
+        {% endif %}
+        {% if section.settings.mobile_image != blank %}
+          <img class="object-cover w-full h-full" src="{{ section.settings.mobile_image | img_url: '600x' }}" alt="{{ section.settings.title }}">
+        {% else %}
+          <img class="object-cover w-full h-full" src="{{ section.settings.desktop_image | img_url: '600x' }}" alt="{{ section.settings.title }}">
+        {% endif %}
+      </picture>
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center px-4 py-8 mx-auto text-white h-120" style="
+    background: #00000070;
+    backdrop-filter: blur(0px);
+">
+      <h2 class="mb-4 text-2xl font-bold md:text-4xl">{{ section.settings.title }}</h2>
+      <div class="prose">
+        {{ section.settings.content }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+    {
+      "name": "Custom Image Section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Your Title Here"
+        },
+        {
+          "type": "html",
+          "id": "content",
+          "label": "Content Description",
+          "default": "Your content description goes here."
+        }
+      ]
+    }
+    {% endschema %}

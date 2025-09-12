@@ -1,0 +1,10 @@
+{%- assign _meta = product.metafields.global -%} 
+{%- if text contains 'metafield-' -%} 
+{%- assign key  = text | replace:'metafield-' -%}
+{%- assign text = _meta[key]  -%}
+{%- if _meta[key] -%} 
+{{ _meta[key] }} 
+{%- endif -%}
+{%- else -%} 
+{{ text }} 
+{%- endif -%} 

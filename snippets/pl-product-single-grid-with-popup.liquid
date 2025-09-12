@@ -1,0 +1,63 @@
+{%- assign transDelay = index | times: 0.5 | plus: 1.0 -%}
+
+<div
+  class="w-full  p-[20px] h-full hero__animation-contents single-product-card"
+  style={{transDelay}}
+  
+>
+  <div class="flex flex-col pb-8 bg-gray-50 shadow-md hover:scale-100 transition duration-500 rounded-[15px] overflow-hidden">
+    <a class="relative w-full h-[280px] cursor-pointer product-image-view-button">
+      <img
+        src="{{image | img_url: '467x'}}"
+        class="w-[100%] mx-auto object-cover object-center h-full max-h-[280px] "
+        alt="{{title}}"
+        width="467"
+        height="280"
+        loading="lazy"
+      />
+      <img
+        src="https://prolon.eu/cdn/shop/files/Magnify_cropped.webp?v=1719562852"
+        class="absolute top-[20px] left-[20px] z-[20] w-[40px] mx-auto object-cover object-center"
+        alt="magnify"
+        width="40"
+        height="40"
+      />
+    </a>
+    <div class="flex flex-row items-start justify-between px-[20px] pt-[25px] pb-[20px]">
+      <a  class="cursor-pointer product-image-view-button">
+        <h3 class="text-[20px]  lg:text-[1.8vw] 2xl:text-[26px] text-black font-semibold text-left">
+          {{title}}
+        </h3> 
+        <p class="text-black font-normal text-[12px] text-left lg:whitespace-nowrap md:text-[1.1vw] 2xl:text-base">
+          {{subtitle}}
+        </p>
+      </a>
+      <div class="w-max ">
+        <p
+          class="w-full text-[18px] md:text-[26px] text-black  text-center font-semibold"
+        >{{price}}</p>
+      </div>
+    </div>
+    <div class="w-full h-[1px] border-b border-gray-500"></div>
+ 
+    <div class="w-full flex flex-col md:flex-row justify-center items-center py-[15px]">
+      <div
+        class="w-full text-[16px] md:text-[18px] text-black font-normal px-[20px] text-center
+        md:min-h-[110px]
+        xl:min-h-[81px]
+
+        "
+      >{{description}}</div>
+    </div>
+ 
+    <div class="pt-8 w-full px-[20px] flex justify-between items-center flex-col gap-3 ">
+      <script>
+        window.all_products = window.all_products || [];
+        window.all_products.push({{ settings | json}});
+ 
+      </script> 
+      <quick-shop-now-with-product handle="{{handle}}" :settings='{{settings  | json |  escape}}'></quick-shop-now-with-product>
+
+    </div>
+  </div>
+</div> 

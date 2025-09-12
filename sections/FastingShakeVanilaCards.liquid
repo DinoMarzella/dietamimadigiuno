@@ -1,0 +1,64 @@
+{% assign data = section.settings %}
+
+
+<div class="relative w-full bg-tarnspatrent flex flex-col md:flex-row justify-center items-center md:items-end overflow-hidden bg-no-repeat bg-cover bg-center md:bg-top bg-[url('{{ data.mobile_image | img_url: '600x' }}')] md:bg-[url('{{ data.desktop_image | img_url: '1600x' }}')]">
+  <div class="relative w-full flex justify-center md:justify-start items-center z-10 md:min-h-[360px] ">
+    <div class="w-full md:max-w-[1024px] flex justify-center md:justify-end items-center">
+    <div class="w-full md:max-w-[880px]">
+      <div class="w-full pt-[20px] px-[20px] md:px-[20px] pb-[20px] md:pt-[50px] md:pb-[50px] flex justify-start items-start flex-wrap gap-[20px]">
+        {%- for block in section.blocks -%}
+          <div class="flex justify-start items-start flex-row w-full max-w-[300px] md:max-w-[260px]">
+            <img class="w-[34px] object-contain mr-[16px]" src="{{ block.settings.image | img_url: '100x' }}" alt="image" />
+            <p class="text-[#fff] font-[400] text-[18px] md:text-[21px] leading-[1.2] font-avenir">
+              {{ block.settings.description }}
+            </p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Fasting Vanila Cards",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cards",
+      "name": "Cards",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fasting Vanila Cards",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

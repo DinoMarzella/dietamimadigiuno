@@ -1,0 +1,242 @@
+
+
+
+<div class="{% if mobile %}block lg:hidden {% else %}hidden lg:block {% endif %}">
+  {%- comment -%}
+     <div class="max-w-full lg:max-w-[70%] mx-auto">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Fastbar_Smart_Way.png?v=1666353353"
+        class="rounded-lg "
+      >
+    </div>
+  {%- endcomment -%}
+  <div class="!grid grid-cols-1 lg:grid-cols-2  lg:gap-4 mt-4 m:max-w-[90%] m:mx-auto">
+    <img
+      loading="lazy"
+      src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/HerrBarten_Nice_Healthy_white_smoothie_Drink_with_milk_stands_o_d0bee3b5-2c96-403c-bb1a-a0dfc206d8b8_400x500_crop_center.png?v=1681938383"
+      class="rounded-lg" 
+    >
+
+    <div class="relative overflow-hidden rounded-lg bg-prolon_primary">
+      <div class="video-background">
+        <div class="video-foreground1"> 
+          <video src="https://cdn.shopify.com/videos/c/o/v/46a3eedd708f49b2b09e6d3927cc3384.mp4" autoplay muted loop ></video>
+          {% comment %} <iframe
+            class="m:min-h-500" 
+            src="https://player.vimeo.com/video/815706031?h=f9c78bf0a1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allowfullscreen=""
+            data-dashlane-frameid="19690"
+          ></iframe> {% endcomment %}
+        </div>
+      </div>
+    </div>
+
+    <img
+      loading="lazy"
+      src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Grid_Images_-_Shake2_900x.png?v=1668529717"
+      class="rounded-lg "
+    > 
+    <img
+      loading="lazy"
+      src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Shake_grid_image_1_900x.png?v=1668529528"
+      class="rounded-lg "
+    >
+  </div>
+
+  <div class="flex flex-wrap {%if mobile  %} only-mobile {% endif %}" v-cloak>
+    <div class="w-full py-8">
+      <div class="ml-auto md:max-w-2xl">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full single-accordion"
+            :class="
+              {
+                 'is-open': isAccordionOpen.includes(1)
+              }
+            "
+          >
+            <div class="pb-5 border-b border-gray-300">
+              <div class="flex flex-wrap -m-1.5">
+                <div class="w-auto p-1.5">
+                  <svg
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="flex-1 p-1.5">
+                  <h3
+                    class=" font-avenir font-semibold leading-normal cursor-pointer text-[17px]"
+                    @click="toggleAccordion(1)"
+                    :class=" 
+                      {
+                         'mb-4': isAccordionOpen.includes(1)
+                      }
+                    "
+                  >
+                  Nutritional Information  
+                  </h3>
+                  <div
+                    class="mb-5 font-medium leading-relaxed text-gray-600"
+                    :class="
+                      {
+                          'block': isAccordionOpen.includes(1),
+                          'hidden': !isAccordionOpen.includes(1)
+                      }
+                    "
+                  >
+
+                      {{ pages['fasting-shake-nutrition-facts'].content }}
+                 
+                  </div> 
+                </div>
+                <div class="w-auto p-1.5">
+                  <a>
+                    <svg
+                      class="relative top-1"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="
+                        {
+                            'block': isAccordionOpen.includes(1),
+                            'hidden': !isAccordionOpen.includes(1)
+                        }
+                      "
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z" fill="black"></path>
+                    </svg>
+                    <svg
+                      :class="
+                        {
+                            'block': !isAccordionOpen.includes(1),
+                            'hidden': isAccordionOpen.includes(1)
+                        }
+                      "
+                      class="relative top-1"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z" fill="black"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full single-accordion"
+            :class="
+              {
+                 'is-open': isAccordionOpen.includes(2)
+              }
+            "
+          >
+            <div class="block border-b border-gray-300">
+              <div class="flex flex-wrap justify-between py-7 -m-1.5">
+                <div class="flex-1 p-1.5">
+                  <div class="flex flex-wrap -m-1.5">
+                    <div class="w-auto p-1.5">
+                      <svg
+                        class="relative top-1"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1 p-1.5">
+                      <h3 
+                        class="font-avenir font-semibold leading-normal cursor-pointer text-[17px]"
+                        @click="toggleAccordion(2)"
+                        :class="
+                          {
+                             'mb-4': isAccordionOpen.includes(2)
+                          }
+                        "
+                      >
+                        
+                      Suggestions for use
+                      </h3>
+                      <div
+                        class="w-full"
+                        :class="
+                          {
+                              'block': isAccordionOpen.includes(2),
+                              'hidden': !isAccordionOpen.includes(2)
+                          }
+                        "
+                      >
+                        <div class="collapsible-content__inner rte">
+        
+                        <div class="collapsible-content__inner rte">
+        
+                        <p><em><strong>For the intermittent faster: </strong></em>Use it after your first 12 hours of overnight fasting in order to eat in the morning while extending your physiological fast to 16 or more hours. Most centenarians (people living 100 and beyond) eat an early dinner and then abstain from food until the next day, a practice called circadian fasting or a 12-hours fast. In recent years, a longer intermittent fasting period of 16 or 18 or longer hours has been suggested to help people with weight, performance and cellular autophagy/rejuvenation. The main downside of longer intermittent fasting is that it is difficult to reach longer hours and autophagy and can induce fatigue and headache for some.</p><p>• Add fasting shake to your morning coffee or tea<br>• Start your day with positive energy, a vibrant mood, and premium nourishment!</p><p></p><p><em><strong>For the health-minded: </strong></em>Use it daily as a source of healthy premium nutrients that provide fasting and longevity signals to your cells.</p><p></p><p><strong>To support a busy lifestyle: </strong>Use it at home or on the go when you don't have time or access to healthy food. Keep the fasting shake in your purse, office, luggage or wherever you go! One great sachet will keep you nourished and satisfied until your next meal!</p>
+                        
+                      
+                </div>
+                          
+                        
+                  </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-auto p-1.5">
+                  <svg
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    :class="
+                      {
+                          'block': isAccordionOpen.includes(2),
+                          'hidden': !isAccordionOpen.includes(2)
+                      }
+                    "
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z" fill="black"></path>
+                  </svg>
+                  <svg
+                    :class="
+                      {
+                          'block': !isAccordionOpen.includes(2),
+                          'hidden': isAccordionOpen.includes(2)
+                      }
+                    "
+                    class="relative top-1"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z" fill="black"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

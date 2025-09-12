@@ -1,0 +1,223 @@
+<style>
+.___main-banner-prolon-wrapper-new{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ShopPay-Header-noText_1.jpg?v=1633939549');
+    background-position:bottom;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 40vw;
+  }
+  .___main-banner-prolon-wrapper-inner-new{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height: 40vw;
+  }
+  .__left-col-prolon-wrap{
+    display:flex;
+    align-items:center;
+    flex:1;
+  }
+  .__left-col-prolon-wrap img{
+    display:none;
+  }
+  .__right-col-prolon-wrap-new{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 43%;
+  }
+  section.hero-text-banner {
+      width: 100%;
+      text-align: center;
+      font-family: "Harmonia Sans"
+  }
+  section.hero-text-banner {
+      z-index: 2;
+      position: relative
+  }
+  .hero-text-banner-new{
+    padding: 0px 60px;
+}
+.inner-shop-pay{
+    width: 415px; 
+    /* height: 325px;  */
+    background-color: rgba(256, 256, 256, 0.7);; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+  }
+  .main-title-shop-pay-new{
+    font-family: "Harmonia Sans", sans-serif;
+    font-size: 50px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 57px;
+    text-align: center;
+    text-transform: unset;
+  }
+  .main-title-shop-pay-new-sub{
+    font-family: "Harmonia Sans", sans-serif;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 47px;
+    text-align: center;
+    text-transform: unset;
+  }
+
+  .affirm-section .installment-text {
+      display: block;
+      width: 100%;
+      font-family: Avenir-Medium;
+      font-size: 14px;
+      color: #000;
+      letter-spacing: 0;
+      margin: 10px 0;
+      margin-bottom: 50px
+  }
+  img.shop-pay-svg {
+      max-width: 80px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 20px
+  }
+  .affirm-section .installment-text {
+      display: block;
+      width: 100%;
+      font-family: Avenir-Medium;
+      font-size: 14px;
+      color: #000;
+      letter-spacing: 0;
+      margin: 10px 0;
+      margin-bottom: 50px
+  }
+  
+  .afirm-inline-logo {
+      width: 50px;
+      display: inline-block;
+      position: relative;
+      top: -8px
+  }
+  .shop-pay-notice-new {
+    font-family: "Harmonia Sans", sans-serif;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: center
+}
+.only-desktop {
+      display: none
+  }
+  @media (min-width:768px) {
+      .only-desktop {
+          display: block
+      }
+  }
+  
+
+  @media(max-width:1000px){
+    .inner-shop-pay{
+        width: 90%; 
+        height: auto; 
+        border-radius: 15px;
+        margin-bottom: 50px;
+        padding: 30px 10px;
+      }
+      .main-title-shop-pay-new{
+        font-family: "Harmonia Sans", sans-serif;
+        font-size: 36px;
+        color: #000;
+        letter-spacing: 0;
+        line-height: 37px;
+        text-align: center;
+      }
+      .main-title-shop-pay-new-sub{
+        font-family: "Harmonia Sans", sans-serif;
+        font-size: 18px;
+        color: #000;
+        letter-spacing: 0;
+        line-height: 32px;
+        text-align: center;
+      }
+      .hero-text-banner-new{
+          padding: 0px 10px;
+      }
+
+    .___main-banner-prolon-wrapper-new{
+        display:flex;
+        flex-direction:column;
+        height: unset;
+      }
+      .___main-banner-prolon-wrapper-inner-new{
+        display:flex;
+        flex-direction:column;
+        height: unset;
+      }
+      .__left-col-prolon-wrap img{
+      display:block;
+    }
+    .__right-col-prolon-wrap-new{
+        background:#f5faeb;
+        width:100%;
+        padding: 40px 10px;
+        max-width: 100%;
+      }
+      .hero-text-banner-new{
+          padding: 0px 10px;
+      }
+  }
+
+</style>
+
+<div class="___main-banner-prolon-wrapper-new">
+    <div class="___main-banner-prolon-wrapper-inner-new" style="max-width: 1600px;">
+      <div class="__left-col-prolon-wrap">
+        <img src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/bg-mob.png?v=1633942315">
+      </div>
+         
+        <div class="__right-col-prolon-wrap-new">
+         <section class="hero-text-banner hero-text-banner-new">
+         <div class="shop-now-atc-snip" style="display: flex; justify-content: center;">
+           <div class="inner-shop-pay">
+             <h5 class="main-title-shop-pay-new">
+               Start ProLon <br />for {{priceToShow}}
+             </h5>
+             <h5 class="main-title-shop-pay-new-sub">
+                {{fastbar}}
+              </h5>
+             <a href="#product-choice" class="w-20 h-8 bg-red-100 orange-atc">ORDER NOW</a>
+             <div class="shop-pay affirm-section">
+               <img src="{{ "shop-pay-logo.png" | asset_url }}" alt=""
+               class="shop-pay-svg">
+     
+               <span class="installment-text" style="margin-bottom: 0px;">
+                 installments in partnership with <img src="{{
+                   "affirm-logo.png" | asset_url
+                 }}" class="inline-block afirm-inline-logo"/> <br />
+                 with 4 interest-free payments of {{priceToShow}}
+               </span>
+             </div>
+           </div>
+         </div>
+         <div class="shop-pay-notice-new">
+           With Shop Pay Installments, you split your purchases into four equal,
+           <br class="only-desktop" />
+           interest-free payments — with no additional, hidden, or late fees, and
+           no <br class="only-desktop" />
+           impact to your credit score.
+         </div>
+       </section>
+       </div>
+    </div>
+ 
+   </div>
+   

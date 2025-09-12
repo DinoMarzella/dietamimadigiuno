@@ -1,0 +1,172 @@
+{% if section.settings.space_around %}
+  <section class="my-16 {{section.settings.custom_class}}">
+{% endif %}
+{% if section.settings.full_width %}
+  <div class="page-width {{section.settings.custom_class}}">
+{% endif %}
+<div class="text-center">
+  <h3 class="text-center text-[40px] w-full">{{ section.settings.box_heading }}</h3>
+  <p class="text-center w-full md:w-2/3 m-auto pt-2">{{ section.settings.box_description }}</p>
+  <div class="flex flex-wrap gap-[30px] justify-left md:justify-center md:items-baseline pt-11">
+    {% for block in section.blocks %}
+      <div
+        class="flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show"
+        data-image="{{ block.settings.image_modal |  image_url: width: 500 }}"
+      >
+        <div class="flex-initial">
+          {% if block.settings.image_icon != blank %}
+            <button class="open--modal-box relative w-[70px] h-[71px]">
+              {{ block.settings.image_icon | image_url: width: 70 | image_tag }}
+              {{ block.settings.image_icon_hover | image_url: width: 70 | image_tag: class: 'hover-img hidden' }}
+            </button>
+          {% endif %}
+        </div>
+        <div class="flex-1 text-left">
+          <h6 class="font-semibold text-[#73984A] text-xl tracking-tighter capitalize">
+            {{ block.settings.item_heading }}
+          </h6>
+          <div class="text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1">
+            {{ block.settings.item_description }}
+          </div>
+        </div>
+        <div
+          class="hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75"
+          data-image="{{ block.settings.image_modal }}"
+        >
+          <div class="w-fit px-6">
+            <div class="flex justify-between items-center py-2">
+              <h6 class="font-semibold text-white text-[32px] tracking-tighter capitalize">
+                {{ block.settings.item_heading }}
+              </h6>
+              <button class=" w-8 h-8 rounded-full bg-white close--modal text-lg">x</button>
+            </div>
+            {{
+              block.settings.image_modal
+              | image_url: width: 800
+              | image_tag: width: 800, class: 'drawer-item__image'
+            }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div
+    class="hidden fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-3 z-10"
+  ></div>
+  {% if section.blocks.size == 0 %}
+    <div class="page-width">
+      <div class="grid">
+        <div class="grid__item">
+          <div class="rte">
+            {{ 'home_page.onboarding.no_content' | t }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+{% if section.settings.full_width %}
+  </div>
+{% endif %}
+{% if section.settings.space_around %}
+  </section>
+{% endif %}
+
+<script>
+  const itemContainers = document.querySelectorAll('.modal--item-show');
+  itemContainers.forEach((modalItem) => {
+    let openModalButton = modalItem.querySelector('.open--modal-box');
+    openModalButton.addEventListener('click', () => {
+      let showModal = modalItem.querySelector('.modal--container');
+      showModal.classList.remove('hidden');
+      let closeModalButton = modalItem.querySelector('.close--modal');
+      closeModalButton.addEventListener('click', () => {
+        showModal.classList.add('hidden');
+      });
+    });
+  });
+</script>
+{% style %}
+  .open--modal-box:hover img {
+    display: none;
+  }
+  .open--modal-box:hover .hover-img {
+    display: block;
+  }
+{% endstyle %}
+{% schema %}
+{
+  "name": "What's inside the Box",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "box_heading",
+      "default": "What's inside the box?",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "box_description",
+      "default": "With ProLon, you get everything you need pre-packaged and ready to go. Each kit comes with five boxes which are labeled by day so you know what to eat each day.",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full page width",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "space_around",
+      "label": "Add spacing above and below",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item_box",
+      "name": "Box Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_icon",
+          "label": "Image Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_icon_hover",
+          "label": "Image Icon Hover"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_modal",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "item_heading",
+          "label": "item Box Heading"
+        },
+        {
+          "type": "text",
+          "id": "item_description",
+          "label": "item Box Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "What's inside the Box Section"
+    }
+  ]
+}
+{% endschema %}

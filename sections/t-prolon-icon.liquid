@@ -1,0 +1,52 @@
+{{page.metafields.custom.new_section}}
+
+<div class=" gap-[30px] py-[42px] !grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2  max-w-[1220px] items-center justify-center mx-auto px-[20px]">
+    {% for block in section.blocks %}
+    <div class="max-w-[250px] flex items-center justify-center gap-3 "
+       >
+        <img class="object-cover md:w-[39px] w-[31px]" src="{{ block.settings.img |  img_url: '800x' }}">
+        <div class="flex-1 text-left">
+            <h6 class="text-[11px] sm:text-[12px] md:text-[18px] sm:font-semibold capitalize tracking-tighter text-black">{{ block.settings.heading }}</h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+"name": "Icon Section",
+"settings": [
+],
+"blocks": [
+{
+"type": "icons",
+"name": "Icons",
+"settings": [
+
+{
+"type": "image_picker",
+"id": "img",
+"label": "Image"
+}, 
+{
+"type": "textarea",
+"id": "heading",
+"label": "Text",
+"default": "Reviews & Testimonials"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Icon Section", 
+"category": "Custom Sections"
+}
+]
+}
+{% endschema %}
+ 
+
+
+
+

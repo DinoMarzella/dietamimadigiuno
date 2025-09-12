@@ -1,0 +1,92 @@
+{{ 'stripe-styles.scss.css' | asset_url | stylesheet_tag }} 
+
+<div class="text-center stripe-connect-wrapper">
+ 
+<p>
+    ⚠️ You are not connected with Stripe Connect. You need to connect before split payment can be sent to you on referrals.
+</p>   
+    <a id="stripe-submit" href="#" class="stripe-connect"><span>Connect with</span></a>
+</div>
+
+<script>
+   
+//   let API_URL = "http://localhost:1337/";
+ window.API_URL = "https://prolon-pro.herokuapp.com/";
+ 
+
+function getParam(param){
+  return new URLSearchParams(window.location.search).get(param);
+}
+
+    let elmButton = document.querySelector("#stripe-submit");
+
+if (elmButton) {
+    elmButton.addEventListener(
+        "click",
+        e => {
+            
+            if($("#stripe-submit").hasClass("connecting")){
+                console.log("Already Processing");
+                return;
+            } 
+
+            elmButton.setAttribute("disabled", "disabled");
+            $("#stripe-submit").addClass("connecting");
+            // elmButton.textContent = "Connecting..."; 
+            elmButton.innerHTML = "<span>Connecting...</span>";
+
+            fetch(`${window.API_URL}stores/stripe/onboard-user?email={{customer.email}}&shop={{shop.permanent_domain}}`, {
+                method: "POST", 
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }) 
+            .then(response => response.json())
+            .then(data => {
+             
+                    // console.log('data: ', data);
+                    if (data.url) {
+                        window.location = data.url;
+                    } else { 
+                        elmButton.removeAttribute("disabled");
+                        elmButton.textContent = "Connecting...";
+                        $("#stripe-submit").removeClass("connecting"); 
+                        alert(data.status);
+                        location.reload(); 
+                        elmButton.innerHTML = "<span>Connect with</span>";
+                        console.log("data", data); 
+                    } 
+                })
+                .catch(ex=>{
+
+                    elmButton.removeAttribute("disabled");
+                     
+                        $("#stripe-submit").removeClass("connecting"); 
+                       
+                       
+                        elmButton.innerHTML = "<span>Connect with</span>";
+                        console.log("error", ex); 
+                });
+        },
+        false
+    );
+}
+
+
+$(document).ready(function(){
+
+
+    let connected= getParam('connected')
+
+    if(connected){
+
+        $('.stripe-connected-alert').show();
+ 
+        $('.connect-stripe-account').hide();
+    }
+    else{
+        
+    }
+})
+
+</script>

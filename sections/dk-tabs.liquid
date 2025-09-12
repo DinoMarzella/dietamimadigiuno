@@ -1,0 +1,163 @@
+<div class="max-w-[1400px] mx-auto md:py-[50px] border-b-2 border-gray-400 p-4 ">
+
+    <div class="p-4 text-xs text-gray-500 md:text-sm">
+        <a href="#">{{ section.settings.breadcrumb_home }}</a> / <a href="#">{{ section.settings.breadcrumb_products
+            }}</a> /
+        <span>{{ section.settings.breadcrumb_active }}</span>
+    </div>
+
+    <div class="!grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
+
+        <button class="px-6 py-2 text-sm font-bold text-white bg-black md:text-base">{{ section.settings.longevity_title
+            }}</button>
+
+        <div class="border !border-black text-center">
+            <button class="px-4 py-2 mx-2 font-bold bg-white !border !border-black text-sm md:text-base">
+                {{ section.settings.disease_reversal }}
+            </button>
+        </div>
+        <div class="border !border-black text-center">
+            <button class="px-4 py-2 mx-2 font-bold bg-white !border !border-black text-sm md:text-base">
+                {{ section.settings.fasting_mimicking }}
+            </button>
+        </div>
+        <div class="border !border-black text-center">
+            <button class="px-4 py-2 mx-2 font-bold bg-white !border !border-black text-sm md:text-base">
+                {{ section.settings.intermittent_fasting }}
+            </button>
+        </div> 
+    </div>
+
+    <div class="px-4 py-10 mx-auto">
+        <div class="!grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <div class="order-2 lg:order-1">
+                <h1 class="mb-4 text-3xl font-bold md:text-4xl">{{ section.settings.longevity_title }}</h1>
+                <p class="mb-6 text-sm md:text-base">{{ section.settings.longevity_description_1 }}</p>
+                <p class="mb-6 text-sm md:text-base">{{ section.settings.longevity_description_2 }}</p>
+
+                <div class="!grid gap-4 grid-cols-2">
+                    {% for block in section.blocks %}
+                    <div class="flex items-center gap-2">
+                        <img src="{{ block.settings.benefit_image |  img_url: '900x' }}" class="w-10 h-10" alt="">
+                        <span class="text-sm md:text-base">{{ block.settings.benefit_text }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="relative order-1 lg:order-2">
+                <div class="flex items-center justify-center w-full h-64 bg-gray-200 lg:h-auto">
+                    <img src="{{ section.settings.longevity_image |  img_url: '900x'  }}" alt="Longevity Image"
+                        class="object-cover w-full h-full">
+                </div>
+                <div class="absolute bottom-4 right-4">
+                    <button class="px-6 py-3 text-sm font-bold bg-white border border-black md:text-base">
+                        {{ section.settings.button_text }}
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+{% schema %}
+{
+"name": "dk Tabs",
+"settings": [
+{
+"type": "text",
+"id": "breadcrumb_home",
+"label": "Breadcrumb Home",
+"default": "Home"
+},
+{
+"type": "text",
+"id": "breadcrumb_products",
+"label": "Breadcrumb Products",
+"default": "Products"
+},
+{
+"type": "text",
+"id": "breadcrumb_active",
+"label": "Breadcrumb Active",
+"default": "Longevity"
+},
+{
+"type": "text",
+"id": "longevity_title",
+"label": "Longevity Title",
+"default": "Longevity"
+},
+{
+"type": "textarea",
+"id": "longevity_description_1",
+"label": "Longevity Description Part 1",
+"default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+},
+{
+"type": "textarea",
+"id": "longevity_description_2",
+"label": "Longevity Description Part 2",
+"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum, ante nec volutpat vulputate, nulla orci convallis risus, eu condimentum eros mauris vitae turpis."
+},
+{
+"type": "text",
+"id": "disease_reversal",
+"label": "Disease Reversal Button",
+"default": "DISEASE REVERSAL"
+},
+{
+"type": "text",
+"id": "fasting_mimicking", 
+"label": "Fasting Mimicking Button",
+"default": "FASTING MIMICKING"
+},
+{
+"type": "text",
+"id": "intermittent_fasting",
+"label": "Intermittent Fasting Button",
+"default": "INTERMITTENT FASTING"
+},
+{
+"type": "image_picker",
+"id": "longevity_image",
+"label": "Longevity Image"
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "Button Text",
+"default": "FIVE-DAY FAST"
+}
+],
+"blocks": [
+{
+"type": "benefit_stat",
+"name": "Benefit/Statistic",
+"settings": [
+{
+"type": "image_picker",
+"id": "benefit_image",
+"label": "Benefit Image"
+},
+{
+"type": "text",
+"id": "benefit_text",
+"label": "Benefit Text",
+"default": "Benefit/Statistic"
+}
+]
+}
+],
+"presets": [
+{
+"name": "dk Tabs",
+"category": "Custom"
+}
+]
+}
+{% endschema %} 

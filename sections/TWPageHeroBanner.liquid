@@ -1,0 +1,176 @@
+{% assign data = section.settings %}
+<!-- TWPageHeroBanner -->
+<div class="relative {% if data.under_header %} md:pt-32 md:-mt-40{% endif %}">
+  <div class="absolute inset-0 w-full sm:overflow-hidden">
+    <div class="object-cover w-full h-full">
+      <img 
+        class="object-cover object-right w-full h-full md:object-center"
+        width="100%"
+        height="100%"
+        src="{{ data.image | img_url: '1800x' }}"
+      >
+    </div>
+  </div>
+  <div class="flex mx-auto max-w-screen-2xl sm:px-6 lg:px-8 font-harmonia {{section.settings.text_position}} h-96 md:h-140">
+    <div class="relative flex flex-col justify-center items-center max-w-xl px-4 py-8 my-12 rounded-3xl sm:px-6 {{section.settings.background_shadow}}">
+      <h1 class="w-full py-3 text-3xl font-light tracking-tight md:text-40 {{section.settings.content_position}} leading-snug">
+        <span class="block font-bold font-harmonia" style="color:{{data.text_color}}">{{ data.title }}</span>
+      </h1>
+      {%- if data.description -%}
+        <div class="text-xl text-black font-harmonia {{section.settings.content_position}}">
+          {{ data.description }}
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="max-w-sm mx-auto mt-4 sm:flex sm:max-w-none {{section.settings.content_position}}">
+          {% for button in section.blocks %}
+            <div>
+              {%- render 'TWButtons', button: button -%}
+            </div>
+          {% endfor %}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page Hero Banner TW",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text Position",
+      "default": "md:items-center md:justify-center",
+      "options": [
+        {
+          "label": "right_bottom",
+          "value": "md:items-end md:justify-end"
+        },
+        {
+          "label": "left_bottom",
+          "value": "md:items-end md:justify-start"
+        },
+        {
+          "label": "left_center",
+          "value": "md:items-center md:justify-start"
+        },
+        {
+          "label": "right_top",
+          "value": "md:items-start md:justify-end"
+        },
+        {
+          "label": "right_center",
+          "value": "md:items-center md:justify-end"
+        },
+        {
+          "label": "left_top",
+          "value": "md:items-start md:justify-start"
+        },
+        {
+          "label": "center",
+          "value": "md:items-center md:justify-center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content Position",
+      "default": "justify-center text-center",
+      "options": [
+        {
+          "label": "left",
+          "value": "justify-start text-left"
+        },
+        {
+          "label": "center",
+          "value": "justify-center text-center"
+        },
+        {
+          "label": "right",
+          "value": "justify-end text-right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "background_shadow",
+      "label": "Show Shadow",
+      "default": "bg-transparent",
+      "options": [
+        {
+          "label": "Show",
+          "value": "backdrop-blur-sm bg-white/25"
+        },
+        {
+          "label": "Hide",
+          "value": "bg-transparent"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "TextColor"
+    },
+    {
+      "type": "checkbox",
+      "id": "under_header",
+      "label": "Under Header"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Button Type",
+          "default": "primary",
+          "options": [
+            {
+              "label": "primary",
+              "value": "primary"
+            },
+            {
+              "label": "secondary",
+              "value": "secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

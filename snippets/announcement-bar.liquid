@@ -1,0 +1,93 @@
+
+
+{%- assign show_announcement = true -%}
+{%- assign announcement_block_count = 0 -%}
+{% for block in section.blocks %}
+  {% if block.type == 'announcement' %}
+    {%- assign show_announcement = true -%}
+    {%- assign announcement_block_count = announcement_block_count | plus: 1 -%}
+  {% endif %}
+{% endfor %} 
+
+{% if show_announcement %}
+  <div class="announcement-bar">
+    <div class="page-width">
+      <div
+        id="AnnouncementSlider"
+        class="announcement-slider{% if section.settings.announcement_compact %} announcement-slider--compact{% endif %}"
+        data-compact-style="{{ section.settings.announcement_compact }}"
+        data-block-count="{{ announcement_block_count }}">
+        
+        {% if isProvider  %}
+
+        {%- assign slide_index = 0 -%}
+
+
+        
+        {% for block in section.blocks %}
+          {% if block.type == 'announcement' %}
+              {% if block.settings.show_on == 'provider-only' %}
+            <div
+              id="AnnouncementSlide-{{ block.id }}"
+              class="announcement-slider__slide"
+              data-index="{{ slide_index }}"
+              {{ block.shopify_attributes }}>
+              {% if block.settings.link != blank %}
+                <a class="announcement-link" href="{{ block.settings.link }}">
+              {% endif %}
+                {% if block.settings.text != blank %}
+                  <span class="font-bold announcement-text">{{ block.settings.text }}</span>
+                {% endif %}
+                {% if block.settings.link_text != blank %}
+                  <span class="announcement-link-text">{{ block.settings.link_text }}</span>
+                {% endif %}
+              {% if block.settings.link != blank %}
+                </a>
+              {% endif %}
+            </div>
+            {% endif  %}
+            {%- assign slide_index = slide_index | plus: 1 -%}
+          {% endif %}
+        {% endfor %}
+
+
+        {% else%}
+
+
+        {%- assign slide_index = 0 -%}
+
+
+        
+        {% for block in section.blocks %}
+          {% if block.type == 'announcement' %}
+          {% if block.settings.show_on == 'provider-only' %}
+          {% else  %} 
+            <div 
+              id="AnnouncementSlide-{{ block.id }}"
+              class="announcement-slider__slide"
+              data-index="{{ slide_index }}"
+              {{ block.shopify_attributes }}>
+              {% if block.settings.link != blank %}
+                <a class="announcement-link" href="{{ block.settings.link }}">
+              {% endif %}
+                {% if block.settings.text != blank %}
+                  <span class="announcement-text">{{ block.settings.text }}</span>
+                {% endif %}
+                {% if block.settings.link_text != blank %}
+                  <span class="announcement-link-text">{{ block.settings.link_text }}</span>
+                {% endif %}
+              {% if block.settings.link != blank %}
+                </a>
+              {% endif %}
+            </div>
+            {% endif  %}
+            {%- assign slide_index = slide_index | plus: 1 -%}
+          {% endif %}
+        {% endfor %}
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+{% endif %}

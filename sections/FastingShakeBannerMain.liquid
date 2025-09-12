@@ -1,0 +1,55 @@
+{% assign data = section.settings %}
+
+<div class="relative w-full bg-[{{data.bg_color}}] md:bg-tarnspatrent flex flex-col md:flex-row justify-center items-center md:items-start overflow-hidden">
+  <div class="relative block md:absolute h-full w-full z-0">
+    <img class="relative w-full hidden md:block object-cover h-full" src="{{ data.desktop_image | img_url: '1800x'}}" alt="image">
+    <img class="relative w-full block md:hidden object-cover" src="{{ data.mobile_image | img_url: '700x'}}" alt="image">
+  </div>
+
+  <div class="relative w-full flex justify-center items-center !z-10 md:min-h-[500px]">
+    <div class="w-full md:max-w-[80%]">
+      <div class="w-full max-w-[640px] pt-[20px] px-[20px] md:px-[0px] pb-[20px] md:pt-[50px] md:pb-[100px]">
+        <h1 class="text-[#fff] font-[400] text-[36px] md:text-[64px] leading-[1.2] font-avant text-center md:text-left">
+          {{ data.title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Fasting Shake Main Banner",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fasting Shake Main Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

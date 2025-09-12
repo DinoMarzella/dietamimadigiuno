@@ -1,0 +1,95 @@
+{% assign data = section.settings %}
+
+<div class="w-full bg-tarnspatrent flex flex-col justify-center items-center">
+  <div class="relative w-full bg-no-repeat bg-cover bg-center bg-[url('{{ data.bar_image | img_url: '1800x' }}')] h-auto md:h-[124px] text-center px-[20px] md:px-0 py-[20px] md:py-0 block flex justify-center items-center">
+    <h1 class="text-[{{data.text_color}}] font-[400] text-[26px] md:text-[58px] leading-[1.2] font-avant">
+      {{ data.title }}
+    </h1>
+  </div>
+
+  <div class="relative w-full flex flex-col md:flex-row justify-center md:justify-start items-center md:min-h-[236px] overflow-hidden">
+    <div class="w-full relative block md:absolute z-0">
+      <img class="w-full hidden md:block object-bottom object-cover" src="{{ data.desktop_image | img_url: '1880x'}}" alt="image">
+      <img class="w-full block md:hidden object-cover" src="{{ data.mobile_image | img_url: '700x'}}" alt="image">
+    </div>
+    <div class="relative w-full md:max-w-[1440px] z-10 mx-auto  flex justify-center items-center {% if data.align_text == 'right' %} md:justify-end{% else %} md:justify-start{% endif  %}">
+
+    <div class="relative block w-full md:max-w-[35%] z-10 flex justify-center md:justify-start items-center">
+      <div class="w-full max-w-[470px] pt-[20px] px-[20px] md:px-[20px] pb-[20px] md:pt-[50px] md:pb-[50px]">
+        <p class="mt-[25px] text-[{{data.text_color_description}}] font-[400] text-[18px] md:text-[21px] leading-[1.2] font-avenir">
+          {{ data.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Fasting Vanila Banner",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bar_image",
+      "label": "Bar Image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#754c28"
+    },
+    {
+      "type": "color",
+      "id": "text_color_description",
+      "label": "Description Color",
+      "default": "#754c28"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fasting Vanila Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,199 @@
+<style>
+  @media (min-width: 768px) {
+    .slider-container-video {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      justify-content: center;
+    }
+
+    .slider-container-video::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .slider-container-video::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .slider-container-video-main .slick-arrow {
+      display: none !important;
+    }
+  }
+</style>
+
+<div class="w-[2px] mr-[50%] mx-auto hidden md:block h-[80px] bg-[#1F4139]"></div>
+<div class="flex justify-start gap-2 px-4 md:block">
+  <div class="flex items-center justify-center md:hidden ">
+    <div class="w-[2px] h-full  bg-black"> </div>
+  </div>
+
+<div class="w-full">
+
+
+
+<section class="block tab-video-content md:block">
+ 
+  <div class="max-w-[1560px] mx-auto   md:px-6 text-black py-4 md:py-[80px] slider-container-video-main">
+    <div class="pl-3 text-left md:text-center md:pl-0">
+      <h1 class="text-[30px] md:text-[34px] xl:text-[40px] leading-[1.2] text-[#263F36] font-normal">
+        {{ section.settings.title }}
+      </h1>
+      <p class="text-[#323D12] leading-[1.2] md:text-[20px] text-[15px] pt-[4px]">
+        {{ section.settings.subtitle }}
+      </p>
+    </div>
+
+   
+    <div class="md:pt-[58px] pt-[30px] overflow-x-auto">
+      <div class="flex gap-5 slider-container-video flex-nowrap">
+        {% for block in section.blocks %}
+        <div class="relative w-[300px] flex-shrink-0 text-center">
+          <a href="{{ block.settings.video_url }}" class="absolute inset-0 z-50 promo-grid__slide-link js-no-transition"
+            aria-hidden="true" aria-label="Watch The Video"></a>
+          <div class="relative">
+            <img class="w-full h-auto max-h-[410px] object-contain cursor-pointer rounded-[7px] overflow-hidden"
+              src="{{ block.settings.image | img_url: '2000x' }}" alt="{{ block.settings.alt_text }}">
+            <div class="absolute inset-0 z-20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <circle cx="35" cy="35" r="34.5" stroke="white" />
+                <path d="M26.5672 20.63L52.6672 35.6988L26.5672 50.7677L26.5672 20.63Z" stroke="white" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="pt-4 pb-4">
+            <h3 class="text-[16px] pb-4 text-[#263F36] leading-tight">{{ block.settings.video_title }}</h3>
+            <p class="text-[12px] font-bold text-[#263F36] leading-snug">{{ block.settings.video_author }}</p>
+            <p class="text-[12px] text-[#263F36] leading-snug">{{ block.settings.video_role }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex md:pt-[40px] pl-3 md:pl-0 pt-[20px] gap-4 sm:flex-nowrap flex-wrap md:mx-auto md:max-w-[440px]">
+      <a href="{{ section.settings.first_button_link }}" class="w-full">
+        <span
+          class="uppercase px-[30px] flex tracking-[0.03em] justify-center py-2 rounded-full text-white bg-[#56A511] font-[700] text-[14px]">
+          {{ section.settings.first_button_text }}
+        </span>
+      </a>
+      <a href="{{ section.settings.second_button_link }}" class="w-full">
+        <span
+          class="uppercase px-[30px] flex tracking-[0.03em] justify-center py-2 rounded-full border-[#263F36] border-2 text-[#263F36] font-[700] text-[14px]">
+          {{ section.settings.second_button_text }}
+        </span>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+
+</div>
+</div>
+{% if section.settings.show_bottom_line %}<div class="w-[2px] mr-[50%] mx-auto hidden md:block h-[80px] bg-[#1F4139]"></div>{% endif %}
+
+{% schema %}
+{
+"name": "Video Section",
+"settings": [
+{
+"type": "text",
+"id": "section_id",
+"label": "Section Id"
+},
+{
+  "type": "checkbox",
+  "id": "show_bottom_line",
+  "label": "Show bottom line"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Section Title",
+"default": "Watch Videos to Learn More"
+},
+{
+"type": "text",
+"id": "subtitle",
+"label": "Section Subtitle",
+"default": "Watch Videos From the Professionals and People Just Like You"
+},
+{
+"type": "url",
+"id": "first_button_link",
+"label": "First Button Link"
+},
+{
+"type": "text",
+"id": "first_button_text",
+"label": "First Button Text",
+"default": "Shop All Products"
+},
+{
+"type": "url",
+"id": "second_button_link",
+"label": "Second Button Link"
+},
+{
+"type": "text",
+"id": "second_button_text",
+"label": "Second Button Text",
+"default": "Unlocking Vitality"
+}
+],
+"blocks": [
+{
+"type": "image_block",
+"name": "Image",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "alt_text",
+"label": "Alt Text",
+"default": "Video Image"
+},
+{
+"type": "text",
+"id": "video_url",
+"label": "Video Url"
+},
+{
+"type": "text",
+"id": "video_title",
+"label": "Video Title",
+"default": "Unlocking Vitality"
+},
+{
+"type": "text",
+"id": "video_author",
+"label": "Video Author",
+"default": "Dr. David Sinclair"
+},
+{
+"type": "text",
+"id": "video_role",
+"label": "Video Role",
+"default": "Harvard Medical School"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Default",
+"category": "Custom"
+}
+]
+}
+{% endschema %}

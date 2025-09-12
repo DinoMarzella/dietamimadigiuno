@@ -1,0 +1,1386 @@
+{% assign product = all_products['prolon-offer'] %}
+{% assign show_upsell = true %}
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
+{{ section.settings.upsell_settings }}
+
+{%- assign margin_class = "md:!mb-[280px]" -%}
+{%- if template == "page.shop-pay-lp" -%}
+{%- assign margin_class = "md:!mb-[500px]" -%}
+{%- endif -%}
+
+<div id="app-2"
+    class="pl-wrapper pl-wrapper-product-section relative mb-[50px] pt-[20px] md:pt-[30px] font-avenir {{ margin_class }} loaded_animation">
+    <div class=" mx-auto !pt-0 lg:py-[40px] lg:max-w-[1400px]  px-[20px] md:px-[0px] ">
+      
+        <div
+            class="md:grid md:grid-cols-6  lg:grid-cols-6 lg:grid-rows-1 lg:gap-x-2 md:gap-[30px] lg:gap-[50px] xl:gap-[50px] !mt-0 ">
+
+            <div class="md:px-4 md:col-span-3 xl:col-span-4 lg:row-end-1 lg:px-8 2xl:px-0">
+                <div class="flex flex-col">
+                    <div
+                        class="flex w-full gap-2 overflow-x-scroll overflow-y-hidden aspect-w-1 aspect-h-1 flex-nowrap md:grid md:grid-cols-2 md:justify-center md:items-center md:overflow-hidden">
+                        {% assign images_block = section.blocks | where: 'type', 'images' %}
+                
+                        {%- if images_block.size > 0 -%}
+                        {%- for media in images_block -%}
+                        <div class="shrink-0 media-{{forloop.index}} 
+                          {%- if template == " product.prolon-rte-v3" -%} {% if forloop.index==1 %} col-span-2 md:!max-w-full {% endif
+                            %} {% if forloop.index==4 %} col-span-2 md:!max-w-full {% endif %} {%- else -%} {% if forloop.index==3 %}
+                            col-span-2 md:!max-w-full {% endif %} {% endif %} hero__animation-contents relative"
+                            style="transition-delay: {{forloop.index | times: 0.4}}s">
+                            {%- if media.settings.media_type == 'video' -%}
+                            {% assign isMp4= false %}
+                            {% if media.settings.video_url contains '.mp4' %}
+                            {% assign isMp4= true %}
+                
+                            {% endif %}
+                
+                
+                
+                
+                            <a href="{{ media.settings.video_url }}" class="promo-grid__slide-link js-no-transition
+                                    {% if isMp4  %}  product-video-trigger product-video-trigger--mp4 {% endif  %}
+                                      " aria-hidden="true" aria-label="Watch The Video"></a>
+                            {% if isMp4 %}
+                            <video playsinline loop controls controlsList="nodownload"
+                                poster="{{ media.settings.image | img_url: '600x' }}" class="hide product-video-mp4-sound"
+                                src="{{  media.settings.video_url }}">
+                
+                
+                            </video>
+                            {% endif %}
+                
+                            {%- endif -%}
+                            <img src="{{ media.settings.image | img_url: '1600x' }}"
+                                class="!w-auto md:!w-full md:!max-w-full min-h-[350px] m:!max-h-[350px] md:!h-full !object-cover"
+                                alt="Product image" loading="eager">
+                        </div>
+                        {%- endfor -%}
+                
+                        {% else %}
+                        <div class="col-span-2 !max-w-full">
+                            {%- for media in product.media -%}
+                            <div class="pb-[15px] px-[10px] w-full md:w-1/2" key="{i}">
+                                <img alt="Product image" loading="eager" class="!w-full object-cover !h-full"
+                                    src="{{ media | img_url: '1600x' }}">
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                        {%- endif -%}
+                        {% if product.handle contains 'prolon-offer' %}
+                        <img class="col-span-2 hidden md:block !max-w-full !h-auto !object-contain"
+                            src="https://cdn.shopify.com/s/files/1/0126/2921/3243/files/pl-Featured.png?v=1690546584&width=2754&height=129">
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="w-full  max-w-[504px]  mt-4 z-[1]  md:col-span-3 xl:col-span-5 lg:row-span-2 lg:row-end-2 xl:mt-0  product-details lg:sticky lg:top-[100px]   lg:max-h-[890px]   mh900:top-[100px] px-0 md:pr-[15px] lg:pr-[30px] lg:pl-0  2xl:pr-[40px]">
+
+                <div class="flex flex-col-reverse">
+                    <div class="mt-2 mb-2">
+                       
+                        <h1
+                            class="w-full text-left text-[16px] !font-semibold  text-gray-900 sm:text-[24px] mt-0 md:mt-[10px]">
+                            {{ section.settings.title }}</h1>
+
+
+
+
+                        <div class="w-full flex gap-3 text-left text-[18px] !font-bold    sm:text-[24px] mt-[10px] text-[#6C7055] "
+                            v-cloak v-cloak-hide> <span>${calculatedPrice}</span>
+                            <span class="line-through text-[#9E9E9E] ml-2">
+                                ${compare_at_price} </span>
+                            <span class=" !block  text-left font-semibold text-[14px] md:text-[16px]"
+                                v-html="saleMessage">
+                            </span>
+                        </div>
+                        <div class="text-[15px]">{{ section.settings.description }}
+                            {% comment %} <span class="underline cursor-pointer" @click="showModal = true">Learn
+                                More</span> {% endcomment %}
+                        </div>
+                        <div v-cloak v-cloak-hide v-if="showModal"
+                            class="fixed inset-0 flex items-center justify-center mt-24 bg-gray-700 bg-opacity-50 z-[170]">
+                            <div
+                                class="bg-white p-6 rounded-lg w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%] shadow-lg relative">
+
+
+                                <button @click="showModal = false" class="absolute text-gray-600 top-2 right-2">
+                                    &times;
+                                </button>
+
+
+                                <div class="w-full mb-4">
+                                    <img src="https://crba5awc75zwh5ig-50806259870.shopifypreview.com/cdn/shop/files/proloncopy1_2_1200x.png?v=1724646418"
+                                        alt="Product Image" class="object-cover w-full h-[350px]">
+                                </div>
+
+
+                                <div class=" text-[16px]">
+                                    <div class="py-2"><span class="block pb-1">Enjoy an easier, safer fasting experience
+                                            that supports your health and
+                                            wellness.</span> <span class="block pb-1">Experience the benefits of fasting
+                                            while still nourishing your body
+                                            with plant-based foods. This unique approach allows you to achieve a fasting
+                                            state without the challenges and
+                                            risks of water-only fasting.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div v-cloak v-cloak-hide class="">
+
+                    <div class="gap-2 my-1 md:my-5 inter"
+                        style="display: flex; flex-direction: {{ section.settings.reverse_layout | default: false | downcase | replace: 'true', 'column-reverse' | replace: 'false', 'column' }};">
+                <div class="" v-for="option in options">
+                    <div v-if="option.name.toLowerCase() === 'soup flavor'">
+                        <div class="flex items-center mb-3 md:mb-6">
+                            <h1 class="font-bold text-[16px]">Choose your soup flavors:</h1>
+                            <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                        </div>
+                
+                        <div class="flavor-dropdown md:max-w-[450px] md:mx-auto relative">
+                            <!-- Dropdown Trigger -->
+                            <div @click="toggleFlavorDropdown()"
+                                class="overflow-hidden text-black border border-gray-300 cursor-pointer rounded-xl"
+                                :class="{'border-prolon_green': selected_options['option_' + option.position]}">
+                                <div class="flex justify-end gap-2 px-4 py-[5px]">
+                                    <span
+                                        class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">MORE
+                                        OPTIONS</span>
+                                    <div class="">
+                                        <svg :class="{'transform rotate-180': isFlavorDropdownOpen}"
+                                            class="w-5 h-5 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                
+                                <!-- Selected Option Display -->
+                                <div class="flex items-center justify-between w-full px-4 py-4 hover:border-prolon_green"
+                                    :class="{' bg-[#f1eae5]': selected_options['option_' + option.position]}">
+                                    <div class="flex items-center gap-1 md:gap-4">
+                                        <div class="flex items-center">
+                                            <span v-if="selected_options['option_' + option.position]"
+                                                class="inset-0 min-h-[20px] min-w-[20px]"
+                                                style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain;">
+                                            </span>
+                                            <span v-else class="inset-0">
+                                                <div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+                                            </span>
+                                        </div>
+                
+                                        <div class="flex flex-col max-w-[310px]">
+                                            <!-- Dynamic Selected Option Display -->
+                                            <div v-if="selected_options['option_' + option.position]" class="flex flex-col">
+                                                <template v-for="(flavorInfo, flavorKey) in flavorOptions">
+                                                    <div v-if="selected_options['option_' + option.position] === flavorKey"
+                                                        class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">
+                                                        <span class="block" v-if="flavorInfo.isNew">
+                                                            <span
+                                                                class="px-[6px] py-[3px] mr-[2px] text-[10px] text-white rounded-full bg-[#1d4037]">NEW</span>
+                                                            <span class="">Ready-to-eat, certified organic soups</span>
+                                                        </span>
+                                                        <span>${ flavorInfo.name }</span>
+                                                    </div>
+                                                </template>
+                
+                                                <!-- Fallback for unknown flavor -->
+                                                <div v-if="!flavorOptions[selected_options['option_' + option.position]]"
+                                                    class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">
+                                                    ${ selected_options['option_' + option.position] }
+                                                </div>
+                                            </div>
+                                            <div v-else
+                                                class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">
+                                                Select a soup flavor
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- USDA Organic Badge -->
+                                    <div class="" v-if="selected_options['option_' + option.position] && 
+                                              flavorOptions[selected_options['option_' + option.position]]?.isOrganic">
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Organic4colorsealGIF.gif?v=1747319970"
+                                            class="w-[40px]" alt="USDA Organic">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Dropdown Menu -->
+                            <div v-if="isFlavorDropdownOpen"
+                                class="absolute z-50 w-full mt-1 overflow-auto bg-white border border-gray-300 shadow-lg rounded-xl max-h-96">
+                                <div  v-for="value in option.values" :key="value" @click="selectFlavorOption(option.position, value)"
+                                    class="px-4 py-4 border-t cursor-pointer hover:bg-gray-100"
+                                    :class="{'bg-[#f1eae5]': selected_options['option_' + option.position] == value}"
+                                    
+                                    >
+                                    <div class="flex justify-between w-full font-semibold">
+                                        <div class="flex items-center gap-1 md:gap-4">
+                                            <div class="flex items-center">
+                                                <span v-if="selected_options['option_' + option.position] == value"
+                                                    class="inset-0 min-h-[20px] min-w-[20px]"
+                                                    style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain;">
+                                                </span>
+                                                <span v-else class="inset-0">
+                                                    <div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+                                                </span>
+                                            </div>
+                
+                                            <div class="flex justify-between max-w-[310px]">
+                                                <div class="flex justify-between w-full gap-1">
+                                                    <!-- Dynamic Flavor Options -->
+                                                    <template v-for="(flavorInfo, flavorKey) in flavorOptions">
+                                                        <div v-if="value === flavorKey"
+                                                            class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">
+                                                            <span class="block" v-if="flavorInfo.isNew">
+                                                                <span
+                                                                    class="px-[6px] py-[3px] mr-[2px] text-[10px] text-white rounded-full bg-[#1d4037]">NEW</span>
+                                                                <span class="">Ready-to-eat, certified organic soups</span>
+                                                            </span>
+                                                            <span>${ flavorInfo.name }</span>
+                                                        </div>
+                                                    </template>
+                
+                                                    <!-- Fallback for unknown flavor -->
+                                                    <div v-if="!flavorOptions[value]"
+                                                        class="name-value inter text-[12px] sm:text-[14px] font-semibold text-left whitespace-nowrap">
+                                                        ${ value }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- USDA Organic Badge -->
+                                        <div class="" v-if="flavorOptions[value]?.isOrganic">
+                                            <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Organic4colorsealGIF.gif?v=1747319970"
+                                                class="w-[40px]" alt="USDA Organic">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                        <div class="" v-for="option in options">
+                            <div v-if="option.name.toLowerCase() === 'type'">
+                                <div class="flex items-center mb-3 md:mb-6">
+                                    <h1 class="font-bold text-[16px]">Choose your ordering option
+                                    </h1>
+                                    <div class="flex-grow ml-2 border-t border-gray-300"></div>
+                                </div>
+                                <div class="flex flex-col gap-2 md:max-w-[450px] mx-auto">
+                                    <div v-for="value in option.values" :key="value"
+                                        @click="selectOption(option.position, value)" :class="{
+            'relative w-full border !cursor-pointer text-black  rounded-xl overflow-hidden border-prolon_green bg-[#f1eae5] ': selected_options['option_' + option.position] === value,
+            'relative w-full border !cursor-pointer border-gray  rounded-xl overflow-hidden border-gray-300 ': selected_options['option_' + option.position] !== value
+        }">
+                                       
+                                        <div class="flex flex-col" >
+                                            <div v-if="value?.toLowerCase()?.includes('subscri')" class="flex md:text-[14px] text-[12px] justify-end px-4 py-1 font-bold text-white rounded-t-sm bg-[#1d9283] ">
+                                                MOST POPULAR
+                                            </div>
+                                          
+                                            <div v-if="value?.toLowerCase()?.includes('3x')"
+                                                class="flex md:text-[14px] text-[12px] justify-end px-4 py-1 font-bold text-white rounded-t-sm bg-[#034638] ">BEST VALUE
+                                            </div>
+                                        <div   class="flex items-center justify-center w-full px-3 py-2">
+                                            
+                                            <div class="flex flex-grow gap-4"
+                                                :class="value?.toLowerCase()?.includes('subscri') ? 'items-start' : 'items-center'">
+
+                                                <div class="flex items-center justify-center"
+                                                    :class="value?.toLowerCase()?.includes('subscri') ? 'items-start mt-3' : 'items-center'">
+                                                    <span v-if="selected_options['option_' + option.position] === value"
+                                                        class="inset-0"
+                                                        style="background: url('https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Frame_623.svg?v=1706549844') no-repeat center; background-size: contain; width: 20px; height: 20px;">
+                                                    </span>
+                                                    <span v-else class="inset-0">
+                                                        <div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+                                                    </span>
+                                                </div>
+                                                <div class="flex flex-col justify-center flex-grow py-[10px]">
+                                                    <div
+                                                        class="name-value inter my-auto font-semibold text-[15px] px-1 text-left">
+                                                        ${ value }
+                                                    </div>
+                                                    <div v-if="value?.toLowerCase()?.includes('3x')" class="">
+                                                        <p class="font-thin text-[12px] text-left">
+                                                        Bundle & save. One-time purchase.
+                                                        </p>
+                                                    </div>
+                                                    <div v-if="value && value.toLowerCase().includes('subscri')"
+                                                        class="flex flex-col">
+                                                        {% if handle =='prolon-offer' %}
+                                                        <p class="font-thin text-[12px] text-left">
+                                                            14% Off all orders. Cancel anytime.
+                                                        </p>
+                                                        {% else %}
+                                                        <p class="font-thin text-[12px] text-left">
+                                                            10% Off all orders. Cancel anytime.
+                                                        </p>
+                                                        {% endif %}
+                                                        <div class="flex items-center ml-2">
+                                                            <span
+                                                                class="!block text-left font-semibold !text-[#73984A] text-[12px]">
+                                                                Delivers every
+                                                            </span>
+                                                            <div
+                                                                class="font-normal z-10 h-min max-w-[200px] text-[12px] flex items-center ml-2 bg-white">
+                                                                <select
+                                                                    class="style-select pl-1 md:pl-2 min-w-20 font-semibold !border-0 bg-transparent focus:!outline-none !text-[12px] text-black"
+                                                                    @change="change_subscription_plan($event)"
+                                                                    :value="selected_plan?.id">
+                                                                    <option v-for="plan in selling_plans" :key="plan.id"
+                                                                        :value="plan.id"
+                                                                        :selected="plan.id === selected_plan?.id">
+                                                                        ${ plan.name.replace('Deliver every ',
+                                                                        '').replace('Delivery every ', '') }
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    {%- if template == "product.prolon-v12" or template ==
+                                                    "product.prolon-v3" or template == "product.prolon-v8" -%}
+                                                    <div class="pt-3 pb-2 "
+                                                        v-if="value && value.toLowerCase().includes('subscri')">
+                                                        <div class="flex justify-between">
+                                                            <div
+                                                                class="name-value inter text-[12px] sm:text-[14px] text-left font-semibold whitespace-nowrap">
+                                                                Gift with subscription </div>
+                                                            <div class="flex gap-3 ">
+                                                                <del
+                                                                    class="text-gray-500 text-[12px] sm:text-[14px] ">$35</del>
+                                                                <span
+                                                                    class="font-semibold text-[12px] sm:text-[14px] ">FREE</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-[12px] pt-1">
+                                                            Extend your benefits with these post-fast essentials for
+                                                            optimal results. Includes water bottle, fasting bars,
+                                                            fasting and protein shake.
+                                                        </div>
+                                                    </div>
+
+                                                    <img v-if="value && value.toLowerCase().includes('subscri')"
+                                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/welcome_kit_horizontal_fc0f408f-70c7-4921-a09d-e8357d7b8477.png?v=1735650701"
+                                                        class="max-w-[87%]" />
+                                                    {% else %}
+
+                                                    {% comment %} <img
+                                                        v-if="value && value.toLowerCase().includes('subscri')"
+                                                        src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/BFCM_Free_Gift.png?v=1733265986"
+                                                        class="" /> {% endcomment %}
+                                                    {% endif %}
+                                                    {%- if template == "product.prolon-v2" or template ==
+                                                    "product.prolon-v3" or template == "product.prolon-v8" -%}
+                                                    <div v-if="value && value.toLowerCase().includes('subscri')">
+                                                        <span
+                                                            class="show--percentage z-10  px-[6px] lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[10px] absolute !top-0 !right-0 font-bold">
+                                                            FREE GIFT 🎉
+                                                        </span>
+                                                    </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                            <div class="absolute right-2  text-[15px] font-semibold text-right" :data-value="value"
+                                               >
+                                                ${ getOptionPrice(option.position, value) }
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="holiday-order-bump" style="display:none">
+                    <div
+                        class="flex relative items-center p-3 mx-0 md:mx-2 mb-3 md:mt-0 mt-3 md:mb-5 bg-[#f2f3ee] rounded-md shadow-sm ">
+
+
+                        <label for="new_year_bundle_checkbox" class="wps_upsell_bump_checkbox_container">
+                            <input type="checkbox" name="new_year_bundle_checkbox" id="new_year_bundle_checkbox"
+                                class="add_offer_in_cart extra-prolon-add-to-cart"><span class="checkmark"></span>
+                        </label>
+
+
+                        <div class="flex-grow py-2 ml-4">
+
+                            <span class="text-[12px] md:text-[14px] block">
+                                <span class="font-semibold text-prolon_green">Yes, add $125 </span> <b>New Year
+                                    Bundle</b> Post-fast nutrition for continued support and longevity-minded eating
+                                habits.
+                            </span>
+
+                            <span class="underline text-[12px] md:text-[14px] cursor-pointer"
+                                @click="newYearModal = true">Learn
+                                More</span>
+                            <div v-cloak v-cloak-hide v-if="newYearModal"
+                                class="fixed inset-0 flex items-center justify-center mt-28 bg-gray-700 bg-opacity-50 z-[170]">
+                                <div class=" relative rounded-lg w-[90%] sm:w-[50%] md:w-[40%] lg:w-[25%]  ">
+
+
+                                    <button @click="newYearModal = false"
+                                        class="absolute  font-bold text-[28px] top-0 text-white right-2 z-[200]">
+                                        &times;
+                                    </button>
+
+
+                                    <div class="w-full mb-4 ">
+                                        <img src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Healthy_Habits_-_New_Year_Bundle.png?v=1735577903"
+                                            alt="Product Image" class="object-cover w-full h-auto">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <span
+                            class=" z-10  px-[10px]  lg:block bg-[#73984A] text-white rounded-tr rounded-bl !text-[12px] absolute !top-0 !right-0 font-bold">
+                            48% OFF
+                        </span>
+
+
+                    </div>
+                </div>
+
+
+                <div class="md:max-w-[450px] mx-auto mt-2">
+                    <button type="button" :disabled="!calculatedPrice || isOutOfStock || addingtoCart"
+                        @click="addToCart(selected_variant)"
+                        :class="['w-full rounded-md', isOutOfStock ? 'bg-gray-400 !cursor-not-allowed' : 'bg-prolon_green', 'text-white']">
+                        <span
+                            class="inline-block w-full px-6 py-3 font-medium text-center rounded text-contrast testedHere-">
+                            <span
+                                class="flex items-center justify-center gap-2 mx-auto text-white max-w-prose inherit text-copy">
+                                <svg v-if="addingtoCart" class="inline w-8 h-8 ml-2 text-white animate-spin "
+                                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                        fill="#E5E7EB"></path>
+                                    <path
+                                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <svg v-if="!addingtoCart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true" width="18">
+                                    <path fill-rule="evenodd"
+                                        d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-bold " v-if="!addingtoCart">
+                                    ${ isOutOfStock ? 'Sold Out' : 'Aggiungi al carrello' }
+                                </span>
+                                {% comment %} <div v-if="!isOutOfStock">
+                                    <span class="mr-2 -ml-2 text-[16px]">.</span>
+                                    <span class="font-semibold text-[16px]">$${calculatedPrice} </span>
+                                </div> {% endcomment %}
+                            </span>
+                        </span>
+                    </button>
+
+                </div>
+
+             
+
+
+                {% for item in cart.items %}
+
+                {% if item.product.handle == upsell_product %}
+                {% assign show_upsell = false %}
+                {%endif %}
+
+                {% endfor %}
+
+                {% comment %} <div class="hidden quick-upsell-offer" data-show-upsell-offer="{{show_upsell}}">
+                    <quick-shop-upsell :handle="upsell_data.product_handle" :data="upsell_data">
+                    </quick-shop-upsell>
+                </div> {% endcomment %}
+
+
+
+                <div class="flex justify-center gap-2 mt-5 md:hidden md:mt-11 md:gap-4 ">
+                    {% for block in section.blocks %}
+                    {% if block.type == 'logo' %}
+                    <div class="">
+                        <img src="{{ block.settings.logo_image | img_url: '1200x' }}" class="md:w-[115px] w-[70px]"
+                            alt="">
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "dk-product",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title",
+"default": "Prolon 5-Day Fasting Mimicking Diet (FMD)"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "liquid",
+"id": "upsell_settings",
+"label": "Upsell Settings"
+},
+{
+"type": "checkbox",
+"id": "reverse_layout",
+"label": "Reverse Layout"
+}
+
+],
+"blocks": [
+{
+"type": "images",
+"name": "Image",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "select",
+"id": "media_type",
+"label": "Media Type",
+"default": "image",
+"options": [
+{
+"label": "Image",
+"value": "image"
+},
+{
+"label": "Video",
+"value": "video"
+}
+]
+},
+{
+"type": "text",
+"id": "video_url",
+"label": "Video Url"
+}
+]
+},
+{
+"type": "logo",
+"name": "Logo",
+"settings": [
+{
+"type": "image_picker",
+"id": "logo_image",
+"label": "Logo Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "dk-product"
+}
+]
+}
+{% endschema %}
+
+{% render 'single-product-section-shop-now-upsell' %}
+<script>
+    window.finalProductPrice = []
+    let blockImages = []
+    {% for block in section.blocks %}
+    {% if block.type == 'image-item' %}
+    blockImages.push("{{ block.settings.image | img_url: '1200x' }}")
+    {% endif %}
+    {% endfor %}
+
+
+    const { createApp, ref } = Vue
+
+
+
+
+
+
+
+    Vue.createApp({
+        delimiters: ['${', '}'],
+
+        data() {
+
+            let upsell_data = {
+                product_handle: 'longevity-nutrition-bundle',
+                main_title: `<h1 class="font-avant my-[10px] md:my-[40px] text-[16px] md:text-[28px] text-center text-black"><span class="text-[#263F36] font-semibold inline-block leading-8 md:leading-10 mt-2 md:px-2 md:py-1 text-left text-white">Recommendation:</span> Add the Longevity Nutrition Bundle <br class="m:hidden"> to enhance your results and <b>fuel your body</b> after your fast.</h1> 
+                    `,
+                subtitle: `<h2  class="w-full text-left text-[15px]  font-bold  text-prolon sm:text-[17px] mt-[10px] text-[#263F36]">A monthly nutrition plan to nourish your body and slow down biological aging between Prolon 5-Day fasts.</h2>`,
+                saving_percentage: '48% OFF',
+                description: `
+                            <ul class="my-4">  
+
+
+
+
+                            <li> <b>L-Protein:</b> (chocolate) for muscle protection and IGF-1 balancing.</li>  
+                            <li> <b>Fasting Bar:</b> (variety) to maximize the metabolic benefits of intermittent fasting.</li>  
+                            <li> <b>L-Biome:</b> to support healthy gut microbiome with prebiotics, probiotics, and DHA.</li>  
+                            <li> <b>L-Spread:</b> to support cardiovascular health with longevity almonds.</li>  
+
+
+                            <br>
+                            <br> 
+                            </ul>
+
+                    `,
+                image: 'https://prolonlife.com/cdn/shop/files/LongevityNutritionBundle_1600x.jpg?v=1739648888',
+
+            }
+
+            if (window.over_ride_upsell_data) {
+                upsell_data = window.over_ride_upsell_data || null
+            }
+
+            return {
+
+            flavorOptions: {
+                    "Variety 1": {
+                        name: "Green Peas & Chives, Chickpea & Leeks",
+                        isNew: false,
+                        isOrganic: false
+                    },
+                    "Variety 2": {
+                        name: "Tomato, Minestrone & Quinoa",
+                        isNew: false,
+                        isOrganic: false
+                    },
+                    "Variety 3": {
+                        name: "Vegetable, Red Bell Pepper & Onion",
+                        isNew: false,
+                        isOrganic: false
+                    },
+                    "Variety 4": {
+                        name: "Carrot Ginger, Lentil Curry",
+                        isNew: false,
+                        isOrganic: false
+                    },
+                    "Variety 5": {
+                        name: "Minestrone, Artichoke & Yellow Tomato",
+                        isNew: true,
+                        isOrganic: true
+                    },
+                    "Variety 6": {
+                        name: "Minestrone, Broccoli & Quinoa",
+                        isNew: true,
+                        isOrganic: true
+                    }
+                },
+
+                addingtoCart: false,
+                slides: blockImages,
+                upsell_data,
+                showModal: false,
+                newYearModal: false,
+                product: {},
+                slideCartOpen: false,
+                cart: {},
+                isFlavorDropdownOpen: false,
+                isModalOpen: false,
+                currentVideoUrl: '',
+                videoUrls: [
+                    {% for block in section.blocks %}
+            {% if block.settings.video_url %}
+            "{{ block.settings.video_url }}",
+                {% endif %}
+                {% endfor %}
+            ],
+        currentSlide: 0,
+        thumbnailStartIndex: 0,
+        selected_plan: {},
+        maxVisibleThumbnails: 5,
+        selected_options: { option_1: "Variety 6", option_2: "Subscribe & Save" },
+        FlavorsDescriptionBYSKUS: {
+        "Gen3": "Bolder soup flavors: Red Bell Pepper & Onion, Green Pea & Chives, Lentil Curry, Chickpea & Leeks, Carrot Ginger.",
+        "Original": "The original mix-and-eat soups in classic flavor:  Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+        PR038: "Green Pea & Chives, Chickpea & Leeks - All new flavors!",
+        "Expanded Variety": `<span class="text-black ">A mix of classic & bold soup flavors, combined with Fasting Bars & a shake to give variety from our classic kits. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Expanded_Variety_-_Learn_More.png?v=1743089623">Learn More</a></span>`,
+        "PR039Boxbundle-4": `<span class="text-black ">Our best soups, Fasting Bars, Fasting Shake, and Extra Virgin Olive Oil. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/89bc0ff87b0fd993.jpg?v=1713891885">Learn More</a></span>`,
+        "PR039Boxbundle-3": `<span class="text-black ">Our best soups, Fasting Bars, Fasting Shake, and Extra Virgin Olive Oil. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/89bc0ff87b0fd993.jpg?v=1713891885">Learn More</a></span>`,
+        "Next Gen": `
+        <span class="text-black ">Certified organic, ready-to-eat soups—for enhanced taste and a seamless fasting experience. <a class="underline cursor-pointer show-image-popup" data-image="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Next_Gen_-_More_Info.png?v=1743108959">Learn More</a></span>
+        `,
+        PR020: "Tomato, Butternut Squash",
+        PR055: "Tomato, Minestrone & Quinoa",
+        PR056: "Vegetable, Red Bell Pepper & Onion",
+        PR057: "Carrot Ginger, Lentil Curry",
+        "4boxbulk": "Minestrone, Tomato, Mushroom, Vegetable, Minestrone Quinoa",
+    },
+
+                }
+            },
+
+        methods: {
+
+         toggleFlavorDropdown() {
+                this.isFlavorDropdownOpen = !this.isFlavorDropdownOpen;
+            },
+
+            selectFlavorOption(position, value) {
+                this.selectOption(position, value);
+                this.isFlavorDropdownOpen = false;
+            },
+
+        doUpsell() {
+
+            $(".quick-upsell-offer .open-quick-view")[0].click()
+        },
+
+        showVideoModal(index) {
+            if (this.videoUrls[index]) {
+                this.currentVideoUrl = this.videoUrls[index]
+                this.isModalOpen = true
+            }
+        },
+        closeModal() {
+            this.isModalOpen = false
+            this.currentVideoUrl = ''
+        },
+
+        change_subscription_plan(event) {
+            const plan_id = event.target.value
+            this.selected_plan = this.selling_plans.find(plan => plan.id == plan_id)
+        },
+
+        openSlideCart() {
+            console.log('openSlideCart')
+            this.slideCartOpen = true
+        },
+        closeSlideCart() {
+            console.log('closeSlideCart')
+            this.slideCartOpen = false
+        },
+        prevSlide() {
+            this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length
+        },
+
+        nextSlide() {
+            this.currentSlide = (this.currentSlide + 1) % this.slides.length
+        },
+
+        showSlide(index) {
+            this.currentSlide = index
+        },
+
+        prevThumbnail() {
+            if (this.thumbnailStartIndex > 0) {
+                this.thumbnailStartIndex--
+            }
+        },
+        nextThumbnail() {
+            if (this.thumbnailStartIndex + this.maxVisibleThumbnails < this.slides.length) {
+                this.thumbnailStartIndex++
+            }
+        },
+
+
+
+        get_sku_flavor(sku) {
+            console.log('get_sku_flavor', sku)
+            let flavor = sku.split('-')[0]
+            console.log('get_sku_flavor', flavor)
+            return flavor
+        },
+
+        get_sku_flavor_description(sku, title) {
+
+
+            let flavor = this.get_sku_flavor(sku)
+
+            let description = this.FlavorsDescriptionBYSKUS[sku]
+            console.log('get_sku_flavor_description', description)
+            if (description) {
+                return description
+            } else {
+                return title
+            }
+        },
+
+
+
+        async updateCart(variantId, quantity) {
+            console.log('updateCart', variantId, quantity)
+            let data = {
+                "id": `${variantId}`,
+                "quantity": quantity
+            }
+            let response = await fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            let result = await response.json()
+            console.log('updateCart', result)
+            this.getCart()
+        },
+        async removeFromCart(variantId) {
+            console.log('removeFromCart', variantId)
+            let data = {
+                "id": `${variantId}`,
+                "quantity": 0
+            }
+
+            let response = await fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            let result = await response.json()
+            console.log('removeFromCart', result)
+            this.getCart()
+        },
+        async addToCart(selectedVariant) {
+            this.addingtoCart = true
+            if (!selectedVariant) {
+                alert('Please select a variant')
+                return false
+            }
+            // console.log('addToCart', selectedVariant)
+            let variant_id = selectedVariant.id
+
+            let isSubscription = this.selected_options.option_2?.toLowerCase()?.includes('subscri')
+            let selected_plan = this.selected_plan
+            let quantity = 1
+            let selling_plan = isSubscription ? selected_plan.id : null
+            let lineItem = {
+                "id": variant_id,
+                "quantity": quantity
+            }
+
+
+            let showUpsellOffer = $(".quick-upsell-offer").attr(
+                "data-show-upsell-offer"
+            )
+
+            if (showUpsellOffer == 'true') {
+                showUpsellOffer = true
+            }
+            else {
+                showUpsellOffer = false
+            }
+
+            if (window.show_upsell_offer === false) {
+                showUpsellOffer = false
+            }
+
+
+            store.addToCart(variant_id, 1, selling_plan, () => {
+                this.addingtoCart = false
+
+                let new_year_bundle_checkbox = document.getElementById('new_year_bundle_checkbox')
+
+                if (new_year_bundle_checkbox && new_year_bundle_checkbox.checked) {
+
+
+                    store.addToCartWithProperties({
+                        id: "44734466097310",
+                        quantity: 1,
+                        properties: { upsell: true },
+                        cb: (response) => {
+
+                        },
+                    })
+
+                }
+
+
+                if (
+                    showUpsellOffer
+                ) {
+                    this.doUpsell()
+                } else {
+                    window.SuperCart.ShowCartfn()
+                }
+
+
+
+            })
+
+
+        },
+
+        selectOption(position, value) {
+
+            this.selected_options["option_" + position] = value
+
+        },
+        getVariantImage(position, value) {
+
+            let variant = this.variants.find(variant => {
+                let options = {
+                    option1: this.selected_options.option_1,
+                    option2: this.selected_options.option_2,
+                    ["option" + position]: value
+                }
+
+                return variant.option1 == options.option1 && variant.option2 == options.option2
+
+            })
+
+            if (variant) {
+                let image = variant?.image?.src || variant?.featured_image?.src
+                return image
+            }
+            else {
+                return this.product?.images[0]?.src
+            }
+        },
+        getCompareAtPrice(position, value) {
+
+
+
+
+            let variant = this.variants.find(variant => {
+
+
+                let options = {
+                    option1: this.selected_options.option_1,
+                    option2: this.selected_options.option_2,
+                    ["option" + position]: value
+                }
+
+                return variant.option1 == options.option1 && variant.option2 == options.option2
+
+            })
+
+            if (this.isSubscription) {
+
+                let OneTimeVariant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('one time'))
+                let subscriptionVariant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('subscri'))
+
+                //WITHOUT SALE CODe 
+                if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                    return "$" + OneTimeVariant?.price / 100
+                }
+                else {
+                    return ""
+                }
+
+                // if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                //     return "$" + subscriptionVariant?.price / 100
+                // }
+                // else {
+                //     return "$" + OneTimeVariant?.price / 100
+                // }
+            }
+
+
+
+            if (variant && variant.compare_at_price > 0 && variant.compare_at_price > variant.price) {
+                return "$" + variant?.compare_at_price / 100
+            }
+            else {
+                // without sale 
+                // return ""
+                return "$" + variant?.price / 100
+            }
+
+        },
+        getOptionPrice(position, value) {
+
+
+            let variant = this.variants.find(variant => {
+
+
+                let options = {
+                    option1: this.selected_options.option_1,
+                    option2: this.selected_options.option_2,
+                    ["option" + position]: value
+                }
+
+                return variant.option1 == options.option1 && variant.option2 == options.option2
+
+            })
+
+
+            let percentageOff = 0
+            if (this.product.tags.includes("15-percent-discount")) {
+                percentageOff = 15
+            }
+            if (this.product.tags.includes("25-off-sitewide")) {
+                percentageOff = 25
+            }
+            if (this.product.tags.includes("20-off-sitewide")) {
+                percentageOff = 20
+            }
+
+            // if (this.isSubscription) {
+
+            //     let variant = this.variants.find(variant => variant["option" + position] == value && variant.option2?.toLowerCase()?.includes('one time'));
+
+            //     if (variant) {
+            //         return "$" + variant?.price / 100
+            //     }
+            // }  
+
+
+            if (percentageOff > 0) {
+                let price = variant?.price / 100
+                let discount = price * (percentageOff / 100)
+                let discountedPrice = price - discount
+                return "$" + (discountedPrice).toFixed(2)
+            }
+
+
+            return "$" + (variant?.price / 100).toFixed(2)
+        },
+        async getCart() {
+
+            let cartResponse = await fetch('/cart.json')
+            this.cart = await cartResponse.json()
+            this.openSlideCart()
+
+        },
+        async getProductByHandle(handle) {
+            const product = await fetch(`/products/${handle}.js`).then(response => response.json())
+            this.product = product
+            let selling_plan = product?.selling_plan_groups?.[0]?.selling_plans || []
+            this.selected_plan = selling_plan[0]
+            console.log({ product })
+        },
+    },
+        computed: {
+
+
+
+        isSubscription() {
+            return this.selected_options?.option_2?.toLowerCase()?.includes('subscri')
+        },
+
+        isOutOfStock() {
+            return this.selected_variant?.available === false
+        },
+
+        selling_plans() {
+            console.log(`products`, this.product)
+            return this.product?.selling_plan_groups?.[0]?.selling_plans || []
+
+        },
+
+
+        isAwayFreeShipping() {
+            return this.total_percentage < 100
+        },
+
+        isFreeShipping() {
+            return this.total_percentage >= 100
+        },
+        total_percentage() {
+
+            let freeshippingValue = 1000
+            let subtotal = this.totalCartPrice
+            let percentage = (subtotal / freeshippingValue) * 100
+
+            return percentage
+
+
+
+        },
+        totalCartPrice() {
+            return this.cart?.total_price / 100
+        },
+
+        compare_at_price() {
+
+
+            if (!this.variants) {
+                return ""
+            }
+
+            let variant = this.selected_variant
+
+            if (this.isSubscription) {
+
+                let OneTimeVariant = this.variants.find(variant => variant.option2?.toLowerCase()?.includes('one time') && variant.option1 == this.selected_options.option_1)
+                let subscriptionVariant = this.variants.find(variant => variant.option2?.toLowerCase()?.includes('subscri') && variant.option1 == this.selected_options.option_1)
+
+                if (OneTimeVariant && OneTimeVariant.price > 0 && OneTimeVariant.price > subscriptionVariant.price) {
+                    return "$" + OneTimeVariant?.price / 100
+                }
+                else {
+                    return ""
+                }
+
+
+
+
+            }
+            if (variant && variant.compare_at_price > 0 && variant.compare_at_price > variant.price) {
+                return "$" + variant?.compare_at_price / 100
+            }
+
+
+
+            else {
+                return ""
+            }
+        },
+        calculatedPrice() {
+            if (!this.variants) {
+                return ""
+            }
+            if (!this.selected_variant) {
+                return ""
+            }
+
+            let variant = this.selected_variant
+            let percentageOff = 0
+            if (this.product.tags.includes("15-percent-discount")) {
+                percentageOff = 15
+            }
+            if (this.product.tags.includes("20-off-sitewide")) {
+                percentageOff = `20`
+            }
+            if (this.product.tags.includes("25-off-sitewide")) {
+                percentageOff = 25
+            }
+
+             if (percentageOff > 0) {
+                let price = variant?.price / 100
+                let discount = price * (percentageOff / 100)
+                let discountedPrice = price - discount
+                return "$" + discountedPrice.toFixed(2)
+            }
+
+            return "$" + (variant?.price / 100).toFixed(2)
+        },
+        variants() {
+            console.log('variants', this.product.variants)
+            return this.product.variants
+
+        },
+        selected_variant() {
+
+            if (this.variants) {
+                let option1 = this.selected_options.option_1
+                let option2 = this.selected_options.option_2
+                let option3 = this.selected_options.option_3
+
+                let variant = this.variants.find(variant => variant.option1 == option1 && variant.option2 == option2 && variant.option3 == option3)
+
+                return variant
+            }
+            else {
+                return {}
+            }
+        },
+        options() {
+            console.log('options', this.product.options)
+            return this.product.options
+        },
+        slides() {
+            return blockImages
+        },
+        visibleThumbnails() {
+            return this.slides.slice(this.thumbnailStartIndex, this.thumbnailStartIndex + this.maxVisibleThumbnails)
+        },
+        remainingThumbnails() {
+            return this.slides.length - (this.thumbnailStartIndex + this.maxVisibleThumbnails)
+        },
+
+        saleMessage() {
+            if (!this.product || !this.product.tags) {
+                console.log('Product or tags not available')
+                return ``
+            }
+
+            console.log('Evaluating saleMessage, product tags:', this.product.tags)
+
+            let totalOff = ``
+            if (this.product.tags.includes("10-sale-off")) {
+                totalOff = `10`
+            }
+            if (this.product.tags.includes("15-percent-discount")) {
+                totalOff = `15`
+            }
+            if (this.product.tags.includes("25-off-sitewide")) {
+                totalOff = `25`
+            }
+            if (this.product.tags.includes("20-off-sitewide")) {
+                totalOff = `20`
+            }
+
+            if (!totalOff) {
+                return ``
+            }
+
+            return `<span class="bg-[#98ca3c] block font-semibold md:text-[16px]  px-4 py-1 text-[14px] text-white text-left">${totalOff}% OFF</span>`
+        }
+
+
+
+    },
+
+        components: {
+        "quick-shop-upsell": SingleProductSectionShopNowUpsell
+    },
+        mounted() {
+
+        console.log('onMounted', this.variants)
+                this.getProductByHandle('reset');
+
+                 document.addEventListener('click', (e) => {
+                const dropdown = document.querySelector('.flavor-dropdown');
+                if (dropdown && !dropdown.contains(e.target) && this.isFlavorDropdownOpen) {
+                    this.isFlavorDropdownOpen = false;
+                }
+            });
+        // this.getCart();
+        // document.querySelectorAll('[v-cloak]').forEach(element => {
+        // element.removeAttribute('v-cloak');
+        // }); 
+
+    },
+
+        }).mount('#app-2')
+
+
+</script>
+
+
+<style>
+    .checkmark {
+        position: absolute;
+        cursor: pointer;
+        top: 32px;
+        margin: 3px;
+        left: 7px;
+        height: 25px;
+        width: 25px;
+        background-color: #eeeeee;
+        animation: shadow-pulse 1.5s infinite;
+        border: 2px solid #73994a;
+        border-radius: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .checkmark {
+            top: 30px;
+            left: 3px;
+        }
+    }
+
+    .wps_upsell_bump_checkbox_container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    .wps_upsell_bump_checkbox_container input:checked~.checkmark {
+        background-color: #73994a;
+    }
+
+    .checkmark:after {
+        content: "✓";
+
+        position: absolute;
+        display: none;
+    }
+
+    .wps_upsell_bump_checkbox_container input:checked~.checkmark:after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        border-radius: 100%;
+        line-height: 0.7;
+        color: green;
+        font-size: 18px;
+        top: 10px;
+
+
+
+    }
+
+    /* .wps_upsell_bump_checkbox_container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid #333;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } */
+
+    .wps_upsell_offer_image {
+        margin-right: 10px;
+    }
+
+    .wps_upsell_offer_img {
+        width: 80px;
+        height: 80px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+
+
+    /*! CSS Used keyframes */
+    @keyframes shadow-pulse {
+        0% {
+            box-shadow: 0 0 0 1px #73984a;
+        }
+
+        100% {
+            box-shadow: 0 0 0 7px transparent;
+        }
+    }
+
+    @keyframes leftright {
+        0% {
+            transform: translateX(-5px)scaleX(-1);
+        }
+
+        60% {
+            transform: translateX(-2px)scaleX(-1);
+        }
+
+        100% {
+            transform: translateX(-5px)scaleX(-1);
+        }
+    }
+</style>

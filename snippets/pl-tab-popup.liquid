@@ -1,0 +1,42 @@
+<div
+  class='relative z-[99999] hidden tabs-container'
+  aria-labelledby='slide-over-title'
+  role='dialog'
+  aria-modal='true'
+>
+  <div class='fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75 filter-close-btn'></div>
+
+  <div class='fixed inset-0 overflow-hidden'>
+    <div class="flex items-start justify-end w-full h-screen overflow-y-scroll bg-transparent">
+      {% comment %} <div
+        class="fixed top-0 left-0 w-full h-screen opacity-[30%] bg-black "
+        onclick='closetabsPopUp()'
+      ></div> {% endcomment %}
+      <div
+        onclick='closetabsPopUp()'        
+        id='slideover-bg'
+        class='absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-500 opacity-0 md:block tabs-bg'
+      ></div> 
+      <div
+        class="relative max-w-[575px] w-full bg-[#F4F4F4] h-min px-[30px] py-[20px]"
+        style="min-height: 100vh"
+      >
+        <div class="relative h-[56px] w-full flex justify-center items-center flex-col border-b border-[#E4E4E4]">
+          <p class="w-full leading-[21px] text-[16px] text-left text-black font-semibold tracking-wider tabs-title">
+          </p>
+          <button
+            class="absolute top-0 right-0 flex items-center justify-center w-[56px] h-full cursor-pointer"
+            onclick='closetabsPopUp()'
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO308L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMTIuMjU3LDEzLDEzLDEyLjI1Nyw5Ljc0Myw5LDEzLDUuNzQzLDEyLjI1Nyw1LDksOC4yNTcsNS43NDMsNSw1LDUuNzQzLDguMjU3LDksNSwxMi4yNTcsNS43NDMsMTMsOSw5Ljc0M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yLjI5NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTAsMEgxNFYxNEgwWiIvPjwvc3ZnPg=="
+              alt="cross-pop"
+            />
+          </button>
+        </div>
+        <div class="w-full pt-[30px] tabs-detail"></div>
+      </div>
+    </div>
+  </div>
+</div>

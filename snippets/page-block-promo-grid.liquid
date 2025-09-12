@@ -1,0 +1,23 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="promo-grid">
+  {% unless section.settings.full_width %}
+    <div class="page-width">
+  {% endunless %}
+
+  {% render 'promo-grid', section: section %}
+
+  {% if section.blocks.size == 0 %}
+    <div class="page-width text-center">
+      <div class="rte">
+        <p>
+          {{ 'home_page.onboarding.no_content' | t }}
+        </p>
+      </div>
+    </div>
+  {% endif %}
+
+  {% unless section.settings.full_width %}
+    </div>
+  {% endunless %}
+</div>

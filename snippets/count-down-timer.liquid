@@ -1,0 +1,72 @@
+<!-- <style>
+.timer-container {
+    padding: 20px 0;
+}
+.timer-container .container {
+    padding: 0 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 92.25rem;
+    position: relative;
+    width: 100%;
+} 
+#clock {
+    height: 100%;
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+}
+.timer-container .timer-box {
+    margin: 0 40px;
+    text-align: center;
+    line-height: 1;
+}
+.timer-container .timer-box div:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media(max-width:767px){
+    .timer-container .container {
+    padding: 0 10px!important;
+}
+#clock {
+    font-size: 30px;
+}
+.timer-container .timer-box {
+    margin: 0 20px;
+}
+}
+</style> -->
+   
+{%- assign show_countdowntimer = false -%} 
+{%- assign end_date = "05-07-2022" -%}  
+{% if end_date != blank  and show_countdowntimer == true %}  
+<div class="timer-container" >
+    <div class="container">    
+        <div id="clock" class="fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+            <div class="timer-box">
+                <div class="timer-days">00</div>
+                <div>Days</div>
+            </div>
+            <div class="timer-box ">
+                <div class="timer-hours">00</div>
+                <div>Hours</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-minutes">00</div>
+                <div>Minutes</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-seconds">00</div>
+                <div>Seconds</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endif %} 

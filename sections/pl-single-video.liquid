@@ -1,0 +1,87 @@
+{%- assign data = section.settings -%}
+<style>
+  .grid {
+    display: grid !important;
+  }
+</style>
+<div class="w-full py-[20px] md:py-[40px] pl-wrapper-singe-video ">
+  <div class="w-full max-w-[1600px] mx-auto px-[20px] md:px-[0px]">
+    {%- if data.title.size > 0-%}
+      <div class="w-full max-w-[1440px] mx-auto">
+        <h2
+          class="mt-[20px] mb-[50px] md:mb-[100px] text-[34px] md:text-[46px] text-black font-[600] max-w-[1280px] mx-auto text-center md:px-[40px]"
+        >{{data.title}}</h2>
+      </div>
+    {%- endif -%}
+    {%- if data.video.size > 0 -%}
+      <a
+        href="{{data.video}}"
+        class="promo-grid__slide-link js-no-transition"
+        aria-hidden="true"
+        aria-label="Watch The Video"
+      ></a>
+      <div class="relative w-full max-h-[700px] overflow-hidden md:px-[40px]">
+        <a
+          href="{{data.video}}"
+          aria-label="Play Video"
+          class="promo-grid__slide-link js-no-transition  absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center w-16 h-16 bg-[#78A117] hover:bg-[#73994a] rounded-full"
+        >
+          <svg
+            class="ml-1"
+            width="17"
+            height="20"
+            viewBox="0 0 17 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.5 9.13001L1.50001 1.05001C1.34799 0.962237 1.17554 0.916031 1.00001 0.916031C0.824471 0.916031 0.652027 0.962237 0.500008 1.05001C0.347404 1.13811 0.220789 1.26497 0.132986 1.41775C0.0451825 1.57053 -0.000691684 1.7438 7.88292e-06 1.92001V18.08C-0.000691684 18.2562 0.0451825 18.4295 0.132986 18.5823C0.220789 18.735 0.347404 18.8619 0.500008 18.95C0.652027 19.0378 0.824471 19.084 1.00001 19.084C1.17554 19.084 1.34799 19.0378 1.50001 18.95L15.5 10.87C15.6539 10.7828 15.7819 10.6563 15.871 10.5035C15.96 10.3506 16.007 10.1769 16.007 10C16.007 9.82311 15.96 9.64938 15.871 9.49654C15.7819 9.3437 15.6539 9.21722 15.5 9.13001ZM2.00001 16.35V3.65001L13 10L2.00001 16.35Z"
+              fill="white"
+            ></path>
+          </svg>
+        </a>
+        <img
+          src="{{ data.image | img_url: '1800x' }}"
+          class="w-full !object-contain !max-h-[700px]"
+          alt="{{data.title}}"
+        >
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    addClassInViewSequentially('pl-wrapper-singe-video');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "PL Single Video",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "ProLon is  <span class='text-[#92B141] font-semibold'>the only nutrition program patented</span> for <span class='text-[#92B141] font-semibold'>promoting longevity, healthspan</span> & <span class='text-[#92B141] font-semibold'>protecting lean body mass.</span>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "textarea",
+      "id": "video",
+      "label": "Video Url",
+      "default": "https://www.youtube.com/embed/gaY8g0m2I8s?autoplay=1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PL Single Video",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

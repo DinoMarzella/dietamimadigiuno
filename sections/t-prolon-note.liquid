@@ -1,0 +1,77 @@
+<section
+    class="bg-[{{ section.settings.background_color }}] text-black max-w-[{{ section.settings.max_width }}] mx-auto px-[{{ section.settings.padding_x }}px] sm:rounded-[8px]">
+    <div
+        class="max-w-[860px] mx-auto md:py-[{{ section.settings.padding_y }}px] md:px-[{{ section.settings.padding_x }}px] py-[{{ section.settings.m-padding_y }}px] px-[{{ section.settings.m-padding_x }}px]">
+         {{page.metafields.custom.results_description}} 
+        
+    </div>
+</section>
+
+
+{% schema %}
+{
+"name": "Note Section",
+"settings": [
+
+{
+"type": "color",
+"id": "background_color",
+"label": "Background Color",
+"default": "#F1EAE5"
+},
+{
+"type": "text",
+"id": "max_width",
+"label": "Max Width",
+"default": "1400px"
+},
+{
+"type": "range",
+"id": "padding_y",
+"label": "Vertical Padding",
+"default": 20,
+"min": 0,
+"max": 100,
+"step": 1,
+"unit": "px"
+},
+{
+"type": "range",
+"id": "padding_x",
+"label": "Horizontal Padding",
+"default": 20,
+"min": 0,
+"max": 100,
+"step": 1,
+"unit": "px"
+},
+{
+"type": "range",
+"id": "m-padding_y",
+"label": "Mobile Vertical Padding",
+"default": 20,
+"min": 0,
+"max": 100,
+"step": 1,
+"unit": "px"
+},
+{
+"type": "range",
+"id": "m-padding_x",
+"label": "Mobile Horizontal Padding",
+"default": 20,
+"min": 0,
+"max": 100,
+"step": 1,
+"unit": "px"
+}
+
+],
+"presets": [  
+{
+"name": "Note Section",
+"category": "Custom"
+}
+]
+}
+{% endschema %}

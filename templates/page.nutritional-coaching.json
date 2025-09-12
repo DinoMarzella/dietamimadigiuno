@@ -1,0 +1,219 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "19c888e6-27a1-49dc-957d-3fe54ea44c72": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18524440068445__19c888e6-27a1-49dc-957d-3fe54ea44c72-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/57335_1080x_1.webp",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--18524440068445__19c888e6-27a1-49dc-957d-3fe54ea44c72-liquid-1": {
+          "type": "html",
+          "settings": {
+            "code": "<h1>Coaching nutrizionale gratuito sulla Dieta Mima Digiuno</h1>\n<p>Le nostre nutrizioniste sono qui per assisterti prima, dopo e durante la tua esperienza con ProLon Mima Digiuno.</p>\n<a href=\"#prenota-consulenza\" class=\"btn js-no-transition\">\n            PRENOTA QUI\n          </a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18524440068445__19c888e6-27a1-49dc-957d-3fe54ea44c72-image-1",
+        "template--18524440068445__19c888e6-27a1-49dc-957d-3fe54ea44c72-liquid-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "3e13667b-c7cf-4615-9c12-ee91d7223c1e": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/57335_1080x_1.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Consulenza nutrizionale gratuita",
+        "text": "<p>Dì addio alle tue insicurezze e paure.</p>\n<p>Le nostre nutrizioniste sono qui per assisterti prima, dopo e durante la tua esperienza con ProLon.</p>",
+        "button_label": "PRENOTA QUI",
+        "button_link": "#prenota-consulenza",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "77d16db1-e234-4d41-9a04-bea34adae29b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15734124609717__77d16db1-e234-4d41-9a04-bea34adae29b-1676876637f712e211-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Perché approfittare di questo servizio?"
+          }
+        }
+      },
+      "block_order": [
+        "template--15734124609717__77d16db1-e234-4d41-9a04-bea34adae29b-1676876637f712e211-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "111f51e6-df6e-4c0f-8786-d75e284adda3": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "template--15734124609717__111f51e6-df6e-4c0f-8786-d75e284adda3-1676876578611ffac6-1": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/pr-online-support-512x.jpg?v=1676877221\" width=\"90px\">\n<h4 class=\"text-center small-margin\">Assistenza online da esperti della nutrizione umana e della mima digiuno</h4>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "1984246f-a483-4776-8b0e-a24728b03967": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/pr-qualified-personnel-512x.jpg?v=1676877221\" width=\"90px\">\n<h4 class=\"text-center small-margin\">Personale qualificato con diversi anni di esperienza</h4>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "6aecc983-5734-41e9-996b-d8dca1e1193a": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/pr-like-free-service-512x.jpg?v=1676877221\" width=\"90px\">\n<h4 class=\"text-center small-margin\">Servizio 100% gratuito</h4>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "7e8e3071-b558-4cb1-afd6-1832e0bbf04d": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/pr-daily-tips-512x.jpg?v=1676877221\" width=\"90px\">\n<h4 class=\"text-center small-margin\">Consigli e supporto sulla Dieta Mima Digiuno</h4>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--15734124609717__111f51e6-df6e-4c0f-8786-d75e284adda3-1676876578611ffac6-1",
+        "1984246f-a483-4776-8b0e-a24728b03967",
+        "6aecc983-5734-41e9-996b-d8dca1e1193a",
+        "7e8e3071-b558-4cb1-afd6-1832e0bbf04d"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": "custom-boxed-small"
+      }
+    },
+    "rich_text_GXTQgX": {
+      "type": "rich-text",
+      "blocks": {
+        "text_npWeGc": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p class=\"accent-subtitle text-center no-margin\">Esperti di Mima Digiuno</p>\n<p class=\"h3 text-center no-margin\">Chi sono i nostri nutrizionisti?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_npWeGc"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "0768b74c-3366-4ae7-ade7-81d527d1daa1": {
+      "type": "advanced-content-impulse",
+      "blocks": {
+        "4a6715ee-0ab0-4c85-aa52-df2a9ffa00d8": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0001_Carmen_Loverso_1d0b06b1-1db1-496d-a366-fc0cb45acd7c.jpg?v=1676879198\" title=\"Carmen Loverso\">\n<h4 class=\"small-margin\"><b>Carmen Loverso</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p><p>Laureata magistrale dal 2017 in Alimentazione e Nutrizione Umana, ama praticare sport e ed è appassionata di cucina salutare. Longevità significa amare l’unico posto in cui vivrai per sempre: il tuo corpo.</p>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "9fad16b3-8c0b-476f-94da-9c807d0295d2": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/Nutritionists_Photo__0003_Benedetta_Zenobi_d470f2c8-a6ad-4799-9d8c-c22b56c93312.jpg?v=1676879198\" title=\"Benedetta Zenobi\">\n<h4 class=\"small-margin\"><b>Benedetta Zenobi</b></h4>\n<p><b>Biologia Nutrizionista</b>\n</p><p>Laureata magistrale dal 2018 in Alimentazione e Nutrizione Umana, appassionata di cucina naturale. Per Benedetta, Longevità significa mangiare salutare, pensare positivo a vivere in salute.</p>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_gjEKn4": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0077/9023/1634/files/Nutritionists_Photo_0006_giulia_trevisan_750x.webp?v=1725276249\" title=\"Giulia Trevisan\">\n<h4 class=\"small-margin\"><b>Giulia Trevisan</b></h4>\n<p><b> Biologia Nutrizionista</b>\n</p><p>Biologa nutrizionista dal 2022, con esperienza nel campo del diabete e un forte interesse per l'alimentazione sana e il movimento. Crede che la longevità sia il risultato di scelte quotidiane consapevoli che ci permettono di vivere a lungo, preservando vitalità, benessere e qualità della vitaweek</p>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "html_R8FLqN": {
+          "type": "html",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/Nutrizionista03.jpg?v=1740147127\" title=\"Giulia Trevisan\">\n<h4 class=\"small-margin\"><b>Alessia Migliore</b></h4>\n<p><b> Biologia Nutrizionista</b>\n</p><p>Laureata magistrale dal 2021 in biologia applicata alle scienze della nutrizione e futura naturopata. Appassionata di nutrizione e benessere a 360 gradi. Per Alessia longevità significa avanzare con l’età in salute e rallentare l’invecchiamento biologico naturale invertendo l’orologio biologico.</p>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "4a6715ee-0ab0-4c85-aa52-df2a9ffa00d8",
+        "9fad16b3-8c0b-476f-94da-9c807d0295d2",
+        "html_gjEKn4",
+        "html_R8FLqN"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "custom_class": "custom-boxed our-nutritionists"
+      }
+    },
+    "8bbf8068-c187-4860-aa60-3757f288a28c": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<style>\n#shopify-section-template--15734124609717__0768b74c-3366-4ae7-ade7-81d527d1daa1 {\nbackground-color: #fffcf7;\n}\n.custom-boxed-small {\n    padding: 0 40px;\n    padding: 0 var(--pageWidthPadding);\n    max-width: 1200px;\n    margin: 0 auto;\n}\n.custom-boxed {\n    padding: 0 40px;\n    padding: 0 var(--pageWidthPadding);\n    max-width: 1500px;\n    margin: 0 auto;\n}\n#shopify-section-template--18524440068445__19c888e6-27a1-49dc-957d-3fe54ea44c72 {background-color:#FEF3E4}\n</style>\n<!-- Calendly inline widget begin -->\n<div id=\"prenota-consulenza\" class=\"calendly-inline-widget\" data-url=\"https://calendly.com/prolonitalia/prenotazione-consulenza-prolon?primary_color=739a4b\" style=\"min-width:320px;height:630px;\"></div>\n<script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\" async></script>\n<!-- Calendly inline widget end -->"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "19c888e6-27a1-49dc-957d-3fe54ea44c72",
+    "3e13667b-c7cf-4615-9c12-ee91d7223c1e",
+    "77d16db1-e234-4d41-9a04-bea34adae29b",
+    "111f51e6-df6e-4c0f-8786-d75e284adda3",
+    "rich_text_GXTQgX",
+    "0768b74c-3366-4ae7-ade7-81d527d1daa1",
+    "8bbf8068-c187-4860-aa60-3757f288a28c"
+  ]
+}

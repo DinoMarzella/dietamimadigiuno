@@ -1,0 +1,285 @@
+{% if section.settings.space_around %}
+  <section class="index-section {{section.settings.custom_class}}">
+{% endif %}
+
+{% if section.settings.full_width %}
+  <div class="px-10 {{section.settings.custom_class}}">
+{% endif %}
+
+<div class="px-6 bg-[#F4F7F2] text-center py-5  loaded_animation">
+  <h4 class="text-center text-28 md:text-[40px] tracking-tight capitalize font-semibold">
+    {{ section.settings.nutrition_title }}
+  </h4>
+
+  <div class="flex flex-wrap gap-[30px] justify-center md:items-center hero__animation-contents !delay-200 pt-3">
+    {% assign blockSize = section.blocks.size %}
+    {% for block in section.blocks %}
+    <button class="flex w-full justify-center items-center md:h-1/2 {% if blockSize <= 2 %}md:w-[40%] {% else %} md:w-[20%] {% endif %} {{ blockSize }} gap-2 modal--item cx border-2 border-solid border-[#73984A] bg-[#73984A] hover:bg-[#F9FFF2] rounded-[10px] p-2 px-3" data-title="{{ block.settings.item_heading }}">
+        <div class="flex-initial">
+          {% if block.settings.image_icon != blank %}
+            <div class="relative w-[30px] h-[27px]">
+              {{ block.settings.image_icon | image_url: width: 70 | image_tag: class: 'w-[29px] h-[27px]' }}
+              {{ block.settings.image_icon_hover | image_url: width: 70 | image_tag: class: 'w-[29px] h-[27px] hidden' }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="font-medium text-white text-base tracking-tighter capitalize">
+          {{ block.settings.item_heading }}
+        </span>
+      </button>
+    {% endfor %}
+  </div>
+
+  {% if section.blocks.size == 0 %}
+    <div class="page-width">
+      <div class="grid">
+        <div class="grid__item">
+          <div class="rte">
+            {{ 'home_page.onboarding.no_content' | t }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% if section.settings.full_width %}
+  </div>
+{% endif %}
+{% if section.settings.space_around %}
+  </section>
+{% endif %}
+<div class=" modal--overlay z-20"></div>
+{% for block in section.blocks %}
+  {% if block.settings.image_modal != blank %}
+    <div class="flex flex-col w-full translate-y-full fixed bottom-0 z-30 modal--container" data-title="{{ block.settings.item_heading }}">
+
+      <div class="flex justify-between z-20 px-2">
+        <span class="font-semibold text-white text-[28px] md:text-[32px] tracking-tighter capitalize pl-1">
+          {{ block.settings.item_heading }}
+        </span>
+        <button class="rounded-full bg-white flex items-center justify-center w-8 h-8 close--modal text-xl font-semibold">x</button>
+      </div>
+  <div class="grab--cursor cursor-grab overflow-auto w-full z-20 flex gap-6 bg-white {% if forloop.index0 == 2 or forloop.index0 == 3 %}justify-left md:justify-center {% else %} justify-left {% endif %} items-start h-full py-5 px-7">
+    {% if product.handle == 'prolon-5-day' %}
+        {% if block.settings.item_heading == 'Soups' %}
+          {% for i in (1..9) %}
+            <div class="img--modal-slide max-w-48">
+              <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/soup{{ i }}.png?v=1709318416">
+            </div>
+          {% endfor %}
+        {% elsif block.settings.item_heading == 'Snacks' %}
+          {% for i in (1..6) %}
+            <div class="img--modal-slide max-w-48">
+              <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/snacks{{ i }}.png?v=1709152315">
+            </div>
+          {% endfor %}
+        {% elsif block.settings.item_heading == 'Drinks' %}
+          {% for i in (1..3) %}
+            <div class="img--modal-slide max-w-48">
+              <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/drinks{{ i }}.png?v=1709152540">
+            </div>
+          {% endfor %}
+        {% elsif block.settings.item_heading == 'Supplements' %}
+          <div class="img--modal-slide max-w-56">
+            <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/sup1.png?v=1709152541">
+          </div>
+          <div class="img--modal-slide max-w-56">
+            <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/sup2.png?v=1709152540">
+          </div>
+          <div class="img--modal-slide max-w-56">
+            <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0508/0625/9870/files/sup3_6e2dcdc5-5cc7-41f1-aebf-2b2cbeff7f0d.png?v=1709155616">
+          </div>
+        {% endif %}
+        {% else %}
+        <div class="overflow-x-auto md:overflow-visible min-h-[220px] w-full">
+          {{ block.settings.image_modal |  image_url: height: 400 | image_tag: class: 'min-w-[420px] h-full md:mx-auto  md:min-w-inherit' }}
+        </div>
+      {% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% style %}
+  .modal--container {
+    transition: transform 0.6s ease
+  }
+  .modal--container.open {
+    transform: translateY(0)
+  }
+
+  .img--modal-slide {
+    min-width: 160px;
+  }
+  .modal--item:hover .text-white {
+    color: #73984A;
+  }
+
+  .modal--item:hover img {
+    display: none;
+  }
+  .modal--item:hover img.hidden {
+    display:block;
+  }
+  
+  .modal--overlay.open {
+    transition: .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+{% endstyle %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const buttonModal = document.querySelectorAll('.modal--item');
+  const ModalToShow = document.querySelectorAll('.modal--container');
+  let modalOverlay = document.querySelector('.modal--overlay');
+
+  const scrollableElements = document.querySelectorAll('.grab--cursor');
+  scrollableElements.forEach(function(scrollableElement) {
+    let isScrolling = false;
+    let startX;
+    let startY;
+    let scrollLeft;
+    let scrollTop;
+
+    scrollableElement.addEventListener('mousedown', function(e) {
+      isScrolling = true;
+      startX = e.clientX - scrollableElement.offsetLeft;
+      startY = e.clientY - scrollableElement.offsetTop;
+      scrollLeft = scrollableElement.scrollLeft;
+      scrollTop = scrollableElement.scrollTop;
+    });
+
+    scrollableElement.addEventListener('mouseleave', function() {
+      isScrolling = false;
+    });
+
+    scrollableElement.addEventListener('mouseup', function() {
+      isScrolling = false;
+    });
+
+    scrollableElement.addEventListener('mousemove', function(e) {
+      if (!isScrolling) return;
+      e.preventDefault();
+      const x = e.clientX - scrollableElement.offsetLeft;
+      const y = e.clientY - scrollableElement.offsetTop;
+      const walkX = x - startX;
+      const walkY = y - startY;
+      scrollableElement.scrollLeft = scrollLeft - walkX;
+      scrollableElement.scrollTop = scrollTop - walkY;
+    });
+  });
+
+  buttonModal.forEach(button => {
+    button.addEventListener('click', function () {
+      let titleButton = button.getAttribute('data-title');
+      ModalToShow.forEach(modal => {
+        let titleModal = modal.getAttribute('data-title');
+        if (titleButton === titleModal) {
+          modal.classList.add('open');
+          modalOverlay.classList.add('open');
+          if (modalOverlay.classList.contains('open')) {
+            modalOverlay.addEventListener('click', function () {
+              modal.classList.remove('open');
+              modalOverlay.classList.remove('open');
+            })
+          }
+        }
+        let modalClose = modal.querySelector('.close--modal');
+        modalClose.addEventListener('click', function () {
+          modal.classList.remove('open');
+          modalOverlay.classList.remove('open');
+        })
+      });
+    });
+  });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Nutrition Faq Section",
+
+    "max_blocks": 8,
+
+    "settings": [
+      {
+        "type": "checkbox",
+
+        "id": "full_width",
+
+        "label": "Full page width",
+
+        "default": false
+      }, {
+        "type": "checkbox",
+
+        "id": "space_around",
+
+        "label": "Add spacing above and below",
+
+        "default": true
+      }, {
+        "type": "textarea",
+
+        "id": "custom_class",
+
+        "label": "Custom Class"
+      }, {
+        "type": "textarea",
+        "id": "nutrition_title",
+        "label": "Nutrition Facts Title",
+        "default": "Nutrition Fact Information"
+      }
+    ],
+
+    "blocks": [
+      {
+        "type": "item_box",
+
+        "name": "Box Item",
+
+        "settings": [
+          {
+            "type": "image_picker",
+
+            "id": "image_icon",
+
+            "label": "Image Icon"
+          }, 
+          {
+            "type": "image_picker",
+
+            "id": "image_icon_hover",
+
+            "label": "Image Icon hover"
+          },
+          {
+            "type": "image_picker",
+
+            "id": "image_modal",
+
+            "label": "Image Modal"
+          }, {
+            "type": "text",
+
+            "id": "item_heading",
+
+            "label": "item Box Heading"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Nutrition Faq Section"
+      }
+    ]
+  }
+{% endschema %}

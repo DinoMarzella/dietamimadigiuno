@@ -1,0 +1,219 @@
+<link rel="stylesheet" href="{{ 'product-style.scss.css' | asset_url }}" />
+{% if product.handle contains 'prolon' %}
+<style>
+  a.site-nav__link[href="/products/buy-prolon"] {
+    display: none; 
+  }
+  {% if product.handle contains 'prolon-special' or product.handle contains 'prolon-michael' %}
+  .announcement-bar {
+    display: none; 
+    
+}
+{% endif %} 
+.block-1600351337843 .column2x {
+    float: right;
+    background-color: #f4f9e9;
+    width: calc(50% - 40px);
+    padding: 3%;
+    border: 1px solid #9bc93c;
+ 
+}
+.block-1600351337843 .page-width {width: 100%;padding: 0px;}
+ @media  (min-width:767px) {
+   
+ 
+.block-1600351337843 .column2y {
+    min-height: 500px;
+} 
+ 
+.block-1600351337843 .column2x {
+    min-height: 500px;
+}
+}
+@media(max-width:767px){
+  .block-1600351337843 .column2x {
+  width:100%;
+  }
+  #ProductSection-6595092774958 .grid__item {
+    padding: 0px;
+} 
+
+.block-1600351337843 {
+    margin-top: -50px;
+}
+span.announcement-text {
+    font-size: 12px;
+    line-height: 1;
+}
+}
+
+@media (min-width:767px){
+  .block-1600351337843 {
+    margin-top: -90px;
+}   
+}
+
+
+.header-item.header-item--navigation.text-center {
+    display: none;
+} 
+.description-left-placeholder {
+    display: none;
+} 
+</style>
+{% endif %} {% section 'product-template-narrow' %} {% section
+'product-story-sections' %} {% section 'recently-viewed' %} {% if collection %}
+<div class="text-center page-content page-content--bottom">
+  <a
+    href="{% if collection.handle == 'frontpage' %}/{% else %}{{
+      collection.url
+    }}{% endif %}"
+    class="btn btn--small return-link"
+  >    
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      role="presentation"
+      class="icon icon--wide icon-arrow-left"
+      viewBox="0 0 50 15"
+    >
+      <path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z" />
+    </svg>
+    {{ "products.general.collection_return" | t: collection:collection.title }}
+  </a>
+</div>
+{% endif %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    $(".variant__input-32593125703726").trigger("click");
+    let orignalTrustImage = $(".trust-image").data("original-image");
+    let secndImage =
+      "https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Single_Box_-_50_off.png?v=1609968321";
+    $('input[name="Quantity"][value*="Subscribe & Save"]').click();
+    $("input[type=radio][name=Quantity]").change(function () {
+      $('shopify-payment-terms').addClass('active');
+      $(".trust-image img")
+        .show()
+        .attr("src", orignalTrustImage)
+        .removeAttr("srcset");
+      if (this.value.includes("Single Prolon Order")) {
+        //$('.trust-image').hide();
+        $(".trust-image img") 
+          .show()
+          .attr("src", secndImage)
+          .removeAttr("srcset");
+      }
+
+      if (this.value.includes("Subscribe & Save")) {
+        $('shopify-payment-terms').removeClass('active'); 
+        addSubscriptionOptions();
+      } else { 
+        //$( "#subscription_plans").remove();
+        $("input,select", ".simple-sub-plan").attr("name", "");
+      }
+    });
+    $("input[type=radio][name=Quantity]").each(function () {
+      if (this.value.includes("Subscribe & Save")) {
+        if ($(this).prop("checked")) {
+          addSubscriptionOptions();
+        }
+      } else {
+        $("input,select", ".simple-sub-plan").attr("name", "");
+        //$( "#subscription_plans" ).remove();
+      } 
+    });
+  });
+
+  function addSubscriptionOptions() {
+    $(".simple-sub-plan").remove();
+    $(`form fieldset[name=Quantity] [data-value*="Subscribe"]`).append(
+      '<div id="subscription_plans" class="simple-sub-plan" style="margin-left: 4px;">' +
+        '<input type="hidden" name="properties[shipping_interval_unit_type]" value="Months">' +
+        '<input type="hidden" name="properties[number_charges_until_expiration]" value="">' +
+        '<select name="properties[shipping_interval_frequency]">' +
+        '  <option data-charge_interval_frequency="1" value="1" data-end="0">Deliver every month</option>' +
+        '  <option data-charge_interval_frequency="3" value="3" data-end="0">Deliver every 3 months</option>' +
+        "</select>" +
+        "</div>"
+    );
+  }
+
+  setTimeout(function () {
+    $('.variant__input-4634645430318[value*="Subscribe"]').click();
+    addSubscriptionOptions();
+  }, 50);
+
+  $(window).load(function () {
+    $('input[name="Quantity"][value*="Subscribe & Save"]').click();
+    setTimeout(function () {
+      $('.variant__input-4634645430318[value*="Subscribe"]').click();
+      addSubscriptionOptions();
+    }, 50);
+  });
+</script>
+{% render 'product_infox' %} {% if handle == 'buy-prolon' %}
+<script>
+  $(document).ready(function () {
+    $(
+      ".product-single__meta"
+    ).prepend(`<p class="major-banner-coaching" style="white-space:nowrap;">ProLon purchases include a 20 minute health coach consultation<b style="
+    color: red;
+"> — $74 Value!</b></p>`);
+  }); 
+</script>
+{% endif %} {% if handle =='buy-prolon-now' %}
+<style>
+  .aos-animate.trust-image {
+    display: none !important;
+  }
+  
+</style>
+{% endif %}
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+  
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('.block-1600351337843').insertBefore('.faq__item');
+
+  $('.announcement-link').html(`
+
+                
+              <span class="announcement-text"><span style="color: #222222"><b>You asked, we listened!</b></span> <span style="font-weight: 800; color:"> — LIMITED TIME OFFER — </span>Free Bonus pack with your ProLon purchase</span>
+            
+             
+              <span class="announcement-link-text">Automatic gift in cart</span>
+            `)
+}) 
+</script>

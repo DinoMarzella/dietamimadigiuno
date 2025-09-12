@@ -1,0 +1,83 @@
+
+<link rel="stylesheet" href="{{"shop-pay.css" | asset_url }} " /> 
+<style>
+  .shop-pay-fqas{
+    padding: 50px 0px;
+  }
+  .shop-pay-fqas .prolon_faq-title-faq-sec h2 {
+    color:#2F6645 !important;
+    font-family: "interstate", sans-serif !important;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .shop-pay-fqas .___prolon-faqs-main-wrapper .faq-drawer .faq-drawer__title{
+    font-family: Avenir Next, sans-serif !important;
+  }
+  .shop-pay-fqas .___prolon-faqs-main-wrapper .faq-drawer__content-wrapper p {
+    font-family: Avenir Next, sans-serif !important;
+  }
+  @media  (max-width: 767px) {
+    
+    .shop-pay-fqas .prolon_faq-title-faq-sec h2 {
+    font-size: 28px;
+  }
+    
+  } 
+</style>
+<!-- FAQS --> 
+<div class="prolon-main-container-wrap shop-pay-fqas">
+  <div class="prolon_faq-title-faq-sec" >
+    <h2>{{section.settings.title}}</h2>
+  </div>
+
+  <div class="___prolon-faqs-main-wrapper">
+    {%- for block in section.blocks -%}
+      <div class="faq-drawer">
+        <input class="faq-drawer__trigger" id="faq-drawer-{{forloop.index}}" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-{{forloop.index}}">{{block.settings.question}}</label>
+        <div class="faq-drawer__content-wrapper">
+          <div class="faq-drawer__content">
+            <p>{{block.settings.answer}}</p>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Shop Pay FAQS",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "quaestion",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Shop Pay FAQS"
+      }
+    ]
+  }
+{% endschema %} 
+  

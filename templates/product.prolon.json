@@ -1,0 +1,1275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "ck-prolon-product-section-new-life",
+      "blocks": {
+        "98237e12-cee8-44e8-a734-825e44793aee": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon 5-Day Originale",
+            "hide_option": false,
+            "option_1": "Originale",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/p1copia.jpg?v=1716277062\" width=\"60\" height=\"60\" class=\"mr-2 w-[60px] h-[60px]\">\n<div>\n<b>Original</b><br>\nVerdure, Minestrone Verdure, Minestrone Quinoa, Funghi, Pomodoro.\n</div>\n</div>",
+            "custom_image": "shopify://shop_images/p1copia.jpg",
+            "custom_description": "",
+            "product_description": "Everything you need for your 5-day fast with food. ProLon is designed and clinically tested by 14 global universities to nourish your body with premium quality plant-based food, while inducing the cellular, metabolic, and emotional benefits of prolonged fasting."
+          }
+        },
+        "f288be84-69f7-4373-992e-d96662476937": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon 5-Day Varietà 2",
+            "hide_option": false,
+            "option_1": "Varietà 2",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/p2copia.jpg?v=1716277061\" width=\"60\" height=\"60\" class=\"mr-2 w-[60px] h-[60px]\">\n<div>\n<b>Varietà 2</b><br>\nPomodoro, Zucca Violina, Fagioli Neri, Zucca Violina e Quinoa, Spinaci e Fagioli Bianchi.\n</div>\n</div>",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "7acd6e0d-9d79-4f46-a299-1550d1edf80a": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon 5-Day Varietà 3",
+            "hide_option": false,
+            "option_1": "Varietà 3",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/p3copia.jpg?v=1716277063\" width=\"60\" height=\"60\" class=\"mr-2 w-[60px] h-[60px]\">\n<div>\n<b>Varietà 3</b><br>\nZenzero e Carota, Lenticchie e Curry, Piselli ed Erba Cipollina, Peperoni e Cipolla, Ceci e Porri.\n</div>\n</div>",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "html_YREwj9": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon 5-Day Varietà 4",
+            "hide_option": false,
+            "option_1": "Varietà 4",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/p4copia.jpg?v=1716277062\" width=\"60\" height=\"60\" class=\"mr-2 w-[60px] h-[60px]\">\n<div>\n<b>Varietà 4</b><br>\n<b>Nuova selezione di varietà! Le nostre migliori zuppe, le barrette per il digiuno, il frullato per il digiuno e l'olio extravergine.</b>\n\n<button type=\"button\" class=\"txt underline\" onclick=\"openForm()\">Scopri il contenuto</button>\n<div class=\"form-popup\" id=\"variety4content\">\n    <div class=\"modal modal--square modal--mobile-friendly modal--is-active\">\n        <div class=\"modal__inner max-w-screen-md\">\n            <div class=\"modal__centered\">\n                <div class=\"modal__centered-content modal__centered-content--padded  text-center\">\n                    <img class=\"full\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolon_kit_image.webp?v=1718210577\">\n                    <h3 class=\"font-light text-xl my-8\">Prolon Expanded Variety</h3>\n                    <div class=\"flex my-4\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolon_kit_image_0000.png?v=1718210577\" class=\"w-14 h-14 \n m-2\">\n                        <p class=\"text-left\"><b>Olio Extravergine di oliva</b> - Questo olio proviene dalla regione Calabria e contiene un alto contenuto di polifenoli. Ottimo in aggiunta a tutte le zuppe preparate per migliorare il gusto e la consistenza.</p>\n                    </div>\n                    <div class=\"flex my-4\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolon_kit_image_0001.png?v=1718210577\" class=\"w-14 h-14 \n m-2 \">\n                        <p class=\"text-left\"><b>Nutrition Bar</b> - Al posto della L-Bar mattutina, ora è disponibile una varietà di gusti di barrette del digiuno: Noci e Miele, Scaglie di Cioccolato, Noci di Macadamia e cocco.</p>\n                    </div>\n                    <div class=\"flex my-4\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolon_kit_image_0002.png?v=1718210577\" class=\"w-16 h-14 \n m-2\">\n                        <p class=\"text-left\"><b>Zuppe</b> - Le zuppe preferite dai nostri fan sono riunite per la prima volta in un'unica confezione: Minestrone, Pomodoro, Ceci e Porri, Carota e Zenzero, Peperoni Rossi e Cipolla, Lenticchie al Curry e Piselli Verdi ed Erba Cipollina.</p>\n                    </div>\n                    <div class=\"flex my-4\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/prolon_kit_image_0003.png?v=1718210577\" class=\"w-14 h-14 \n m-2 \">\n                        <p class=\"text-left\"><b>Fasting Shake</b> - Potenziato con vitamine e minerali che soddisfano la formulazione nutrizionale della DMD, il delizioso frullato a digiuno è ora disponibile al posto della seconda L-Bar nel pomeriggio del 1° giorno.</p>\n                    </div>\n                    <button type=\"button\" class=\"cancel\" onclick=\"closeForm()\">x</button>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<br>\nMinestrone, Zuppa di piselli verdi ed erba cipollina, Zuppa di ceci e porri, Zuppa di lenticchie al curry, Zuppa di peperoni rossi e cipollotti, Zuppa di pomodoro, Zuppa di carote e zenzero.</div>\n</div>",
+            "custom_description": "",
+            "product_description": ""
+          }
+        },
+        "html_HypciN": {
+          "type": "html",
+          "settings": {
+            "title": "ProLon 5-Day Next Gen",
+            "hide_option": false,
+            "option_1": "Next Gen",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<div class=\"flex\">\n<img src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/next-gen-asset_10102.webp?v=1747823050\" width=\"60\" height=\"60\" class=\"mr-2 w-[60px] h-[60px]\">\n<div>\n<b><span class=\"text-red-600 font-bold pulse-b\">NEW!</span> Next Gen</b><br>\n<b>Scopri la nuova versione BIO della Dieta Mima Digiuno. ProLon NEXT GEN utilizza ingredienti biologici provenienti da coltivazioni italiane a filiera corta.</b>\n<br>\nRealizzate con una tecnologia avanzata che preserva macro e micronutrienti, le nostre zuppe esaltano le qualità organolettiche degli ingredienti di partenza, mantenendone intatto il gusto genuino e le proprietà nutritive.</div>\n</div>",
+            "custom_description": "",
+            "product_description": "<p>Scopri la nuova versione <strong>BIO</strong> della <span style=\"text-decoration: underline;\">Dieta Mima Digiuno</span>. <strong>ProLon <b>NEXT GEN</b></strong> utilizza<strong><b><span> ingredienti biologici </span></b></strong>provenienti da coltivazioni<strong><b><span> italiane </span></b></strong>a filiera corta.<br></p>\n<p>Realizzate con una tecnologia avanzata che <b>preserva macro e micronutrienti</b>, le nostre zuppe esaltano le qualità organolettiche degli ingredienti di partenza, <b>mantenendone intatto il gusto genuino e le proprietà nutritive</b>.</p>\n<ul class=\"benefit-checked\">\n<li>Salute metabolica</li>\n<li>Ringiovanimento cellulare</li>\n<li>Perdita di peso focalizzata sui grassi</li>\n<li>Cambiamento del rapporto con il cibo</li>\n<li>Migliori risultati e migliori risultati trasformazioni di successo</li>\n</ul>\n<div class=\"mt-4 n-info\">\n<details>\n<summary>Informazioni nutrizionali</summary>\n<a class=\"underline\" href=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/tab_nextgen_ita.pdf?v=1728913883\" target=\"_blank\">Visualizza le informazioni nutrizionali</a></details>\n</div>"
+          }
+        },
+        "22903c48-7945-410a-9351-333e0e886e8b": {
+          "type": "faq",
+          "settings": {
+            "title": "Cosa trovi nel kit?",
+            "description": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p>\n<p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN1.webp?v=1718232916\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><span class=\"\" font-semibold text-><strong>Zuppe:</strong></span><br>Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-lbar.png?v=1667838709%20\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Barrette alle noci:</strong> Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-snacks.png?v=1667838709\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Snacks:</strong> Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine ​​vegetali.</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images-Supplements.png?v=1667837500\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Integratori:</strong> Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Ldrink.png?v=1667837499\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>L-Drink:</strong> Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno</p>\n        <p><img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_-_In_The_Kit_Images_-_Tea.png?v=1667837499\" class=\"inside-img\" alt=\"\" style=\"float: left;\" width=\"58\" height=\"46\"><strong>Tisane:</strong> Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "98237e12-cee8-44e8-a734-825e44793aee",
+        "f288be84-69f7-4373-992e-d96662476937",
+        "7acd6e0d-9d79-4f46-a299-1550d1edf80a",
+        "html_YREwj9",
+        "html_HypciN",
+        "22903c48-7945-410a-9351-333e0e886e8b"
+      ],
+      "custom_css": [
+        "#product_form_8361753936221 > div:nth-child(4) > div > div.justify-between.w-full.gap-3 {display: flex;}",
+        "#product_form_8361753936221 > div:nth-child(4) > div > div.justify-between.w-full.gap-3 > div > label > div {font-weight: 700;}",
+        ".border-prolon_secondary {color: #000; font-weight: bold;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "prolon-5-day",
+        "theme_option": "theme_orange",
+        "show_description": true,
+        "show_reviews": true,
+        "show_whatsapp": false,
+        "custom_product_title": false,
+        "product_sub_line": "Dieta Mima Digiuno",
+        "show_subscription": true,
+        "below_image": "{% render \"tw-extra-prolon-fast\" \n %}",
+        "coupon_code": "",
+        "coupon_text": "<b>Ottieni fino a 20€ di sconto al checkout</b>",
+        "option_1_name": "Scegli i {option}",
+        "option_1": "button",
+        "option_2_name": "Seleziona la {option}",
+        "option_2": "button",
+        "option_3_name": "Seleziona la {option}",
+        "option_3": "subscription-widget"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "d37b88a3-4828-41e8-8b64-62757faaa318": {
+          "type": "tab",
+          "settings": {
+            "title": "Cosa trovi nel kit?",
+            "content": "<p><strong>Con ProLon, ottieni tutto ciò di cui hai bisogno confezionato e pronto all'uso. Ogni kit viene fornito con cinque scatole etichettate per giorno in modo da sapere cosa mangiare ogni giorno.</strong></p>\n        <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN1.webp?v=1718232916&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN1.webp?v=1718232916&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">Zuppe</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Una varietà di zuppe facili da preparare realizzate con un mix esclusivo di ingredienti vegetali completamente naturali.\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN2.webp?v=1718232917&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN2.webp?v=1718232917&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">Barrette alle noci</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Deliziose barrette di noci spremute a freddo con ingredienti interi come mandorle, noci di macadamia e noci pecans.\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN3.webp?v=1718232917&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN3.webp?v=1718232917&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">Snacks</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Snacks come le olive del Mediterraneo, dove il consumo di olive è associato alla longevità, e i cracker di cavolo riccio arricchiti con proteine vegetali.\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN4.webp?v=1718232916&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN4.webp?v=1718232917&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">Integratori</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Integratore alimentare ricco di multivitaminici, aminoacidi, minerali e acidi grassi omega-3 per fornire nutrimento all'organismo.\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN5.webp?v=1718232916&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN5.webp?v=1718232917&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">L-Drink</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Miscela di glicerolo brevettata al gusto di frutta progettata per alimentare e proteggere la massa muscolare durante il digiuno.\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"flex justify-center items-stretch gap-3\">\n                        <div class=\"flex-initial\">\n                          <img class=\"relative w-[70px] h-[71px]\" src=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN6.png?v=1718232917&amp;width=70\" alt=\"\" srcset=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/BTN6.png?v=1718232917&amp;width=70 70w\" width=\"70\" height=\"69\">\n                        </div>\n                        <div class=\"flex-1 text-left\">\n                          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize !mb-0\">Tisane</h6>\n                          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n                            Tisane senza caffeina ricche di antiossidanti sani per mantersi idratati durante la settimana.\n                          </div>\n                        </div>\n                      </div>",
+            "page": "cosa-trovi-nel-kit"
+          }
+        },
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a": {
+          "type": "tab",
+          "settings": {
+            "title": "Perchè aggiungere ProLon alla tua vita?",
+            "content": "<p>ProLon è un programma nutrizionale di soli 5 giorni progettato e testato da 14 università in tutto il mondo per nutrirti con alimenti vegetali di alta qualità, inducendo allo stesso tempo i benefici cellulari e metabolici del digiuno prolungato.</p>\n\n<p><strong>È una svolta scientifica che ha richiesto 2 decenni, 34 milioni di dollari di ricerca. e ha ottenuto oltre 40 brevetti —</strong>\n<a href=\"https://www.businesswire.com/news/home/20180731005885/en/Fasting-Mimicking-Diet%C2%AE-Is-Awarded-First-Ever-Patent-for-Optimizing-Human-Healthspan\"><strong>compreso l'unico brevetto nella storia su un programma nutrizionale per migliorare la longevità e la durata della salute</strong></a><strong>. </strong></p><p>Il digiuno prolungato (>2-3 giorni) ha benefici unici come l'autofagia o il rinnovamento cellulare che è stato insignito del premio Nobel 2016 per la medicina. </p><p>In effetti, i primi 2-3 giorni di digiuno, il corpo brucia i grassi per compensare il primo stadio di deficit calorico, ma successivamente il digiuno diventa uno \"stress positivo\" per ciascuna delle cellule del tuo corpo che poi passa attraverso il ringiovanimento e l'autofagia , un miracolo della nostra biologia umana che è fondamentale per un sano invecchiamento e longevità. </p><p>Sei sano (corpo, mente e anima) e vitale quanto lo sono le tue cellule. Aggiungi ProLon al tuo stile di vita quotidiano e rinnova le tue cellule. </p>",
+            "page": ""
+          }
+        },
+        "49e80713-96e7-41b7-84d0-34acd1041ffd": {
+          "type": "tab",
+          "settings": {
+            "title": "Informazioni nutrizionali",
+            "content": "<a href=\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/nutrizionali_ita_web.pdf?v=1703260860\" target=\"_blank\" Download=\"Informazioni Nutrizionali ITA\">Informazioni nutrizionali</a>",
+            "page": "ingredients-supplement-facts"
+          }
+        }
+      },
+      "block_order": [
+        "d37b88a3-4828-41e8-8b64-62757faaa318",
+        "5eb0497b-6f74-48de-aee6-c67e8d96821a",
+        "49e80713-96e7-41b7-84d0-34acd1041ffd"
+      ],
+      "settings": {
+        "max_width": true,
+        "custom_class": "lg:hidden"
+      }
+    },
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8": {
+      "type": "modern-custom-html",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "code": "<div class=\"lg:hidden\">         \n <iframe style=\"width: 100%; padding: 0px; margin: 0px\" src=\"https://player.vimeo.com/video/799071452?h=7c18ea9b73&badge=0&autopause=0&player_id=0&app_id=58479%22\" frameborder=\"0\" allowfullscreen=\"\" data-dashlane-frameid=\"19690\"></iframe>\n          <script src=\"https://player.vimeo.com/api/player.js\"></script>\n</div>"
+      }
+    },
+    "1741963870289d9f06": {
+      "type": "apps",
+      "blocks": {
+        "quinn_shoppable_reel_app_cards_block_Xfebdi": {
+          "type": "shopify://apps/quinn-shoppable-reel/blocks/app-cards-block/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
+          "settings": {
+            "custom_metaobject_handle": "null",
+            "background_color": "#1f4036",
+            "margin_desktop": "10px 0px 0px 0px",
+            "margin_mobile": "5px 0px 0px 0px",
+            "padding_desktop": "10px 10px 10px 10px",
+            "padding_mobile": "10px 5px 10px 5px"
+          }
+        }
+      },
+      "block_order": [
+        "quinn_shoppable_reel_app_cards_block_Xfebdi"
+      ],
+      "custom_css": [
+        "{background-color: #1e4036; padding: 50px 20px; color: white;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "8f8b2da7-19da-4abf-aad7-5e108cd9df78": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clean_Up.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Rinnovamento Cellulare\n(Autofagìa)</h3>\n<p style=\"padding-top: 20px;\">Un miracolo della biologia, indotto dalle più recenti scoperte sul digiuno, fra cui l'autofagia (dal premio Nobel per la medicina nel 2016). Il rinnovamento cellulare è fondamentale per migliorare il tuo stato di salute, la tua energia, la lucidità mentale e la longevità.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Weight_Loss.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Perdita di <br>Massa Grassa</h3>\n<p style=\"padding-top: 20px;\">Perdi peso, soprattutto il grasso viscerale, mentre proteggi la massa muscolare magra (particolarmente apprezzata dagli atleti). Il principio fondamentale è l'illusione del corpo di essere a digiuno mentre il corpo continua ad alimentarsi.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Precise_Nutrition.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Cambia la tua<br>relazione col Cibo</h3>\n<p style=\"padding-top: 20px;\">In questo percorso di 5 giorni, ProLon ti aiuta a comprendere, evolvere e modificare il tuo rapporto con il cibo. Il tuo corpo può funzionare benissimo anche senza tutti gli eccessi e le calorie di troppo.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "c1105747-1a2a-41b3-92c1-ee6ec3bf8403": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Energy.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Migliora il senso<br>di benessere</h3>\n<p style=\"padding-top: 20px;\">Il tuo benessere mentale è un grande beneficio poiché la maggior parte delle persone dopo ProLon affermano di sentirsi meglio rispetto alle altre diete a lungo termine, difficili da seguire. Ritrova la tua vitalità e la lucidità mentale.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "03ac6837-dfb8-4a48-93e2-a036b46f4ec5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Clarity.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Pelle più giovane<br>e più brillante</h3>\n<p style=\"padding-top: 20px;\">Recenti studi hanno dimostrato che dopo 3 cicli di ProLon (15 giorni in totale in un anno), riducono le rughe e gli inestetismi. La pelle si rigenera dall'interno, un aspetto che i nostri clienti apprezzano tantissimo.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3aa8ce6f-0f6e-4fa4-b1da-0b29a0ff00ba": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<div class=\"row\" style=\"background-color: #f5f7f3; text-align: center; padding: 50px; border-radius: 15px; min-height: 420px;\"><center>\n<img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Convenient.svg?v=1664301738\" style=\"width: 70px; margin-bottom: 8px; background-color: white; border-radius: 50px;\"><h3>Conveniente, adatta ad ogni stile di vita</h3>\n<p style=\"padding-top: 20px;\">Il bello della Dieta Mima Digiuno è che si basa su clici di 5 giorni. Consigliamo di fare 3 cicli all'anno (solo 15 giorni). Puoi facilmente includere ProLon nella tua routine, anche se hai già uno stile di alimentazione sano.</p>\n</center></div>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-0",
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-1",
+        "template--14460584165422__8f8b2da7-19da-4abf-aad7-5e108cd9df78-166855337068fc7aa1-2",
+        "c1105747-1a2a-41b3-92c1-ee6ec3bf8403",
+        "03ac6837-dfb8-4a48-93e2-a036b46f4ec5",
+        "3aa8ce6f-0f6e-4fa4-b1da-0b29a0ff00ba"
+      ],
+      "settings": {
+        "title": "Benefici di ProLon",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "3a9ea0cf-ecd4-4af0-a323-ce84a248bf96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14460584165422__3a9ea0cf-ecd4-4af0-a323-ce84a248bf96-1668554224e6fe2f75-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Vitalità dentro e fuori attraverso il rinnovo cellulare.",
+            "title_tag": "h2",
+            "title_class": ""
+          }
+        },
+        "template--14460584165422__3a9ea0cf-ecd4-4af0-a323-ce84a248bf96-1668554224e6fe2f75-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Attraverso il programma di nutrizione mima digiuno ProLon di 5 giorni il tuo corpo entrerà in diverse fasi di rinnovamento e ringiovanimento.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__3a9ea0cf-ecd4-4af0-a323-ce84a248bf96-1668554224e6fe2f75-0",
+        "template--14460584165422__3a9ea0cf-ecd4-4af0-a323-ce84a248bf96-1668554224e6fe2f75-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068": {
+      "type": "promo-grid",
+      "blocks": {
+        "ca549adc-9925-48b5-8520-241b6c7e7307": {
+          "type": "banner",
+          "settings": {
+            "heading": "Ottieni supporto",
+            "text": "Il digiuno è più facile insieme! Non dimenticare di unirti al nostro gruppo Facebook privato.",
+            "link": "https://www.facebook.com/groups/853604435897380",
+            "label": "Entra nel gruppo",
+            "color_scheme": "3"
+          }
+        },
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "https://vimeo.com/580741789",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/NUTRIZIONE_DI_PRECISIONE_SCIENTIFICAMENTE_TESTATA.png",
+            "video_url": "",
+            "width": "33",
+            "height": 340,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "b79aa57d-0384-499d-bea7-947d5ba8d126": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NUTRIZIONE_DI_PRECISIONE_SCIENTIFICAMENTE_TESTATA_1.png",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "73426572-f5f3-4a13-8dbc-38f13f145846": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ProLon_Dieta_Mima_Digiuno_Zuppa.png",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "e89a779f-a279-4469-b0be-269db64f2de0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "▸",
+            "cta_link1": "https://www.youtube.com/watch?v=r0dtw44rpao",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https://www.youtube.com/watch?v=r0dtw44rpao",
+            "width": "100",
+            "height": 400,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "ca549adc-9925-48b5-8520-241b6c7e7307",
+        "template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1",
+        "b79aa57d-0384-499d-bea7-947d5ba8d126",
+        "73426572-f5f3-4a13-8dbc-38f13f145846",
+        "e89a779f-a279-4469-b0be-269db64f2de0"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "cd370779-5537-4669-bbe4-c028bbbfc571": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/ProLon_vita_in_salute.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "ProLon 5 giorni mima il Digiuno in modo semplice e sicuro",
+        "text": "<p>Ogni giorno stressiamo e intossichiamo il nostro corpo e la mente con il nostro attuale stile di vita, nutrizione e ambiente in cui viviamo. Con l'età, la capacità naturale delle nostre cellule di disintossicarsi, recuperare e guarire diminuisce e le cellule senescenti più vecchie superano quelle giovani e vivaci.\n<br><br>\nI nostri antenati avevano un segreto naturale per difendersi dall'invecchiamento accelerato e per rigenerare le cellule più giovani: il digiuno prolungato (>3 giorni). Quando si digiuna, il corpo utilizza le sue riserve (grassi e glicogeno) per i primi 2 giorni (periodo di digiuno intermittente) ma quando il digiuno supera i 3 giorni o più (periodo di digiuno prolungato), il corpo attiva un livello successivo di difesa \"protettiva e rigenerativa\" chiamato autofagia.\n<br><br>\nNel mondo moderno, tendiamo ad accelerare i danni cellulari e l'invecchiamento invece di attivare autofagia, recupero e ringiovanimento. In soli 5 giorni, ProLon consente al tuo corpo di entrare in uno stato rigenerativo, mentre si consumano macro e micronutrienti per mantenere il tuo corpo nutrito.\n</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "title_tag": "h2",
+        "title_class": "h3",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "12275132-9fbc-4053-8beb-e03935eb075d": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Invecchiamento in salute</b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Rigenerazione cellulare </b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Riattivazione del metabolismo</b><br><br><hr>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Riduzione grasso viscerale</b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Protezione della massa magra</b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Cambia il rapporto con il cibo</b><br><br><hr>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "",
+            "text": "<b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Aumento dell'energia</b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\"> Lucidità Mentale</b><br><br><hr><br><b><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/done-mini_2.png?v=1667761816\" style=\"width: 30px; margin-right: 10px;float: left;\">Ringiovanimento della pelle</b><br><br><hr>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-0",
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-1",
+        "template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d-166819280708e05af2-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "2af03405-2868-4348-ad7e-527b7b588c42": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Backed by & continually advancing through science.",
+        "text": "<p> After two decades and tens of millions in Research & Development, L-Nutra (a leading Nutri-tech company) and The University of Southern California, led by Dr. Valter Longo were able to identify cellular radars that detect nutrition, called Nutrient Sensing Pathways, and to develop a 5 day Nutrition Program that nourishes the body while the food sensing pathways are not triggered and therefore providing the prolonged fasting benefits.  <br><br>ProLon provides the body with healthy, plant-based ingredients that have been scientifically demonstrated to proved the body with optimal nourishment while not activating the key pro-aging pathways, or food sensing pathways — pathways which are activated by normal diets. <br><br></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "title_tag": "h2",
+        "title_class": "h3",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "0c4884b7-5bb7-4ed7-85ee-fe38887f82bc": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc-16677520107c3afd1c-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc-16677520107c3afd1c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"row\" style=\"max-width: 600px; margin: auto; padding: 0 15px;\"><h2>How does ProLon work?</h2><p>ProLon provides the body with <b>healthy, plant-based ingredients</b> that have been scientifically demonstrated to proved the body with optimal nourishment while not activating the key pro-aging pathways, or food sensing pathways — pathways which are activated by normal diets.\n<br><br>\nThis allows the body over the course of 5-days to transform into a fasting state and stay there, even though you are consuming food. You receive the benefits of a prolonged (>72 hour) water fast without the danger and exhaustion from a water only fast.\n<br><br>\nThis nutritional breakthrough was scientifically developed, clinically tested at the Longevity Institute at the University of Southern California, led by Dr. Valter Longo. It has now been tested by over 16 major publications & Universities and has over 40 patents across the world.</p></div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc-16677520107c3afd1c-0",
+        "template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc-16677520107c3afd1c-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {}
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h3>Fai sport? Ottieni i benefici del digiuno senza grandi rinunce...</h3>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Ottieni i benefici del digiuno senza stancarti e bruciare tutti i muscoli. Ho ripreso a sollevare pesi pesanti subito dopo il digiuno. Questo è davvero un punto di svolta.",
+            "link": "https://www.youtube.com/watch?v=ypMSDKKLbak&t=1s",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Testimonial_ProLon.png",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<h3>I can’t recommend ProLon enough...</h3>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "I discovered ProLon last January and I have been doing it consistently ever since then. It is a really great reset for your body, especially after holidays. It has so many different benefits, it curbs sugar cravings and helps me manage portion control.",
+            "link": "https://www.youtube.com/watch?v=QWPL4o47Zg0",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<h3>I'm 50 years old with 2 small children...</h3>",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "I started ProLon and I'm telling you, it worked! I lost 6 pounds, I have no brain fog, I absolutely do not crave sugar right now which is insane and I actually feel amazing, I'm full of energy! I am so proud of myself, my husband did it with me, he lost 5 pounds, says he has never felt better.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-0",
+        "template--14456155045934__d39bb033-a0e0-42ff-afdf-58cd42617d31-166775554049dfc2a8-1",
+        "22934b88-cd3e-4c8b-b566-bf9b87fd8dfb"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": 560,
+        "height_mobile": 470,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "89a9fb4b-6df6-4855-9f5a-d78873047246": {
+      "type": "tw-animated-review",
+      "blocks": {
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0": {
+          "type": "rowf",
+          "settings": {
+            "title": "E' la terza volta che faccio Prolon...",
+            "details": "E' la terza volta che faccio Prolon e sono sempre molto soddisfatta del risultato. La fatica si sente durante il percorso ma al 5 giorno si è pienamente appagati da energia, lucidità leggerrezza e un corpo sicuramente più in forma e asciutto. Io perdo sempre 2 chili e ritrovo regolarità nella digestione. Inoltre in seguito è più semplice ritornare ad uno stile di vita sano e mangiare pasti meno abbondanti.",
+            "name": "Silvia"
+          }
+        },
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379": {
+          "type": "rowf",
+          "settings": {
+            "title": "E' la seconda volta...",
+            "details": "E la seconda volta che la eseguo e devo dire che quest’ultima è stato un vero e proprio percorso detox non solo perché ho perso circa 3 kg ma sopratutto perché ho avuto finalmente la sensazione di essere “ pulita “ dentro!Ora ho acquistato il kit di 1 giorno, ne ho fatto una scorta per avere la possibilità di resettare con facilità anche in un giorno il mio organiamo, grazie PROLON 🙏",
+            "name": "Claudia"
+          }
+        },
+        "bf7faaa0-3def-4913-85a6-ee22223514c3": {
+          "type": "rowf",
+          "settings": {
+            "title": "Ideale sempre",
+            "details": "Ideale Sempre, soprattutto dopo le feste! Ho seguito questo protocollo alimentare già altre volte, l’esperienza è stata sempre positiva. Dopo le feste è l’ideale per resettare l’organismo stressato da pranzi e dolci. Da’ nuovo vigore.",
+            "name": "Rossella"
+          }
+        },
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8": {
+          "type": "rowf",
+          "settings": {
+            "title": "È stata un esperienza dura ma...",
+            "details": "È stata un esperienza dura ma mi sono sentita benissimo,mi sento benissimo.oggi è il 5 giorno. Io l'ho fatto principalmente per una pulizia cellulare ma credo di aver perso peso non ho ancora controllatoo, lo farò domattina. Volevo anche dirvi che mi è piaciuto tutto tutto, veramente buonissimo, prossima volta proverò il 2° programma con crema di fagioli visto che adoro i legumi. Grazie",
+            "name": "Annalisa"
+          }
+        },
+        "96aec021-7814-4796-a2ef-f43d15c01303": {
+          "type": "rowf",
+          "settings": {
+            "title": "È già la quinta volta...",
+            "details": "È già la quinta volta che pratico la DMD e ogni volta è come se fosse la prima; nel senso che mi fa sentire meglio e tonico, in più, soffrendo di pressione alta( la minima), quando concludo il ciclo di 5 giorni la mia pressione torna ai livelli perfetti.Non deve essere intesa non come dieta dimagrante, questa è una conseguenza così come il grasso adipo che diminuisce, ma come stimolo a perseguire una dieta sana ed equilibrata quotidianamente.",
+            "name": "Mattia"
+          }
+        },
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e": {
+          "type": "rows",
+          "settings": {
+            "title": "Sono molto soddisfatta...",
+            "details": "Sono molto soddidfatta, mi sento con più energia, senza fame nervosa e con -2.5kg in meno. È stato facile seguire il protocollo e non ho mai avuto senso di fame o tentazione di cibo, pur cucinando alimenti per altre persone. Decisamente consigliata, la rifarò prima dell’estate ☺️",
+            "name": "Lara"
+          }
+        },
+        "c9a436a2-f630-4eba-a893-49bceda69d36": {
+          "type": "rows",
+          "settings": {
+            "title": "Grazie ProLon",
+            "details": "E' la seconda volta che provo ed è stato nuovamente tutto molto positivo. Ho sospeso le attività sportive durante i 5 gg. Non ho sofferto la fame salvo mal di testa leggero nei pomeriggi del secondo e terzo giorno. Ho ridotto il mio peso, già abbastanza asciutto di 2,8 kg in 5 giorni potendo vantare una pancia piatta che non vedevo da un bel pezzo data anche l'età. Oggi, primo giorno successivo alla dieta ho sofferto molta sete ma per il resto stò bene. Credo che questa esperienza vada ripetuta periodicamente.",
+            "name": "Stefano"
+          }
+        },
+        "42a3821c-f70c-4262-b664-7b52c203fd46": {
+          "type": "rows",
+          "settings": {
+            "title": "Perfetta per me",
+            "details": "E' la seconda volta che seguo la dieta mima digiuno Prolon. Sono una persona che ama moltissimo mangiare e se salto un pasto, ho subito mal di stomaco. Invece con la Prolon mi sono trovata benissimo. Nessun problema, nessun dolore o altro. Ho seguito tutti i giorni perfettamente e mi sono anche sentita più energica.",
+            "name": "Elisa"
+          }
+        },
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f": {
+          "type": "rows",
+          "settings": {
+            "title": "Sensazione di leggerezza",
+            "details": "Si,devo dire che è stata una bella esperienza,certo non è una vacanza ma la sensazione di sentirti bene,leggero,senti che il corpo cambia e comunque ho perso 3 kg.\nLa consiglio vivamente.",
+            "name": "Elda"
+          }
+        },
+        "33e95cf9-fbb9-4a12-8078-cb700a252159": {
+          "type": "rows",
+          "settings": {
+            "title": "La consiglio ma non è per tutti...",
+            "details": "Al quinto giorno posso dire che mi sento benissimo, piena di energia leggera e con molte meno voglia di mangiare in maniera nervosa come mi capitava prima.\n\nRipeterò sicuramente tra qualche mese come suggerito.\n\nCredo però non sia per tutti, la fame si sente e bisogna avere una buona motivazione a volersi sentire bene come obiettivo finale.\n\nUnica nota dolente i tempi di preparazione su alcune zuppe erano scritti male e ho cotto meno del previsto le zuppe che andavano cotte più a lungo inficiandone il sapore.",
+            "name": "Michela"
+          }
+        },
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b": {
+          "type": "rowt",
+          "settings": {
+            "title": "La consiglio spesso",
+            "details": "Sono ormai più di tre anni che periodicamente ogni 3-4 mesi faccio questa dieta. Mi fa sentire bene, la tollero bene e non mi fa avere fame anche continuando la mia attività lavorativa di medico. Unica cosa, ho apprezzato la nuova linea ma, le barrette del mattino non mi sono mai piaciute molto e ultimamente ne ho quasi la nausea. Mi piacerebbe che ne fossero preparare altre con gusto diverso.",
+            "name": "Dr Canero"
+          }
+        },
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8": {
+          "type": "rowt",
+          "settings": {
+            "title": "ProLon salvavita",
+            "details": "La filosofia ProLon dovrebbe essere abbracciata da tutti, ne guadagnerebbe ogni singolo individuo e tutto il SSN. Non è magia o volgarmente chiamata “omeopatia”, è semplicemente uno stile di vita sano, un salva vita che dovrebbe essere diffuso prima di tutto da medici e strutture ospedaliere. Chissà quando lo capirà il nostro paese.",
+            "name": "Jor"
+          }
+        },
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69": {
+          "type": "rowt",
+          "settings": {
+            "title": "Ottima esperienza",
+            "details": "Buon giorno sono stato molto soddisfatto di aver provato il kit mima digiuno. Posso dire con certezza che è stata una settimana dura ma senza perdermi d'animo l'ho finita e sicuramente ne ho tratto i benefici. La consiglio a tutti e tranquilli che alla fine della settimana vi sentirete come non mai pieni di energie. Sicuramente la rifarò",
+            "name": "Andrea"
+          }
+        },
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5": {
+          "type": "rowt",
+          "disabled": true,
+          "settings": {
+            "title": "A well deserved investment in \"Me\"",
+            "details": "A friend recommended ProLon fasting program to me. This was my first fast. My goal\nwas to reduce stomach inflammation and improve overall gut health. The program is\nwell laid out & easy to follow. I viewed it as a well deserved investment in \"me\"\nProLon did not disappoint, I have more energy, feel great & plan to continue down the\npath of healthier eating behavior for years to come.",
+            "name": "R. Howard"
+          }
+        },
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7": {
+          "type": "rowt",
+          "disabled": true,
+          "settings": {
+            "title": "Success after a long journey!!",
+            "details": "I received the Prolon kit right away after ordering. I'm on my 5th day of the fast and I\nfeel great. I never really experienced any hunger, and I've already ordered another kit\nto use in a few months. I feel like after years of being unsuccessful with yo-yo\nDIETING I am now on my way to achieving not only the weight loss I've been longing\nfor, but I'm on my way to much better health via great nutrition and exercise. Thank\nyou, Dr. Longo and your team for all your hard work!!! What a wonderful product! I\nbought the Longevity Diet book and the recipe book is on its way to me!! Thank you\nso much!!",
+            "name": "Sharon Wilson"
+          }
+        },
+        "307c1ffa-72ec-406c-b256-e8d662848b0c": {
+          "type": "rowf",
+          "disabled": true,
+          "settings": {
+            "title": "it is a hard program but it works",
+            "details": "it is a hard program but it works. I would not lie, I cannot believe I completed it. I lost\n6 pounds and feel really amazing. I will continue with a modified Keto program\nmoving forward",
+            "name": "Veronica Diaz"
+          }
+        },
+        "869f275d-bf22-438e-a1de-6de73df7cb8b": {
+          "type": "rowf",
+          "disabled": true,
+          "settings": {
+            "title": "My first 5 day Fast",
+            "details": "This was a great experience! I feel amazing, and have so much energy and focus. The\nfood tastes great! I've already recommended to all my friends.",
+            "name": "Julie S"
+          }
+        },
+        "4ab38dac-8804-47b4-b82f-957968381619": {
+          "type": "rows",
+          "disabled": true,
+          "settings": {
+            "title": "This was an amazing experience for me",
+            "details": "This was an amazing experience for me. During the \"fast\" I felt energized and was\nrarely hungry. I was so excited to increase my deep sleep each night reaching 2h53m,\nwhen my typical deep sleep clocks in at 45m. I would highly recommend this\nprogram!",
+            "name": "Kristy Snyder"
+          }
+        },
+        "47e2aba4-f011-484a-86f8-fa4f637153e1": {
+          "type": "rowt",
+          "disabled": true,
+          "settings": {
+            "title": "Amazing",
+            "details": "The easiest way to drop 4 kilos. Was never hungry. Of course you have not signed up\nto a gourmet week but with the weight loss in mind fine it's very palatable\nWell done prolon! Go go go",
+            "name": "carl michaelsen"
+          }
+        }
+      },
+      "block_order": [
+        "template--14451138494510__89a9fb4b-6df6-4855-9f5a-d78873047246-166637615155f6d256-0",
+        "e48fd0a4-2e2d-46a7-856a-9d5e2ab32379",
+        "bf7faaa0-3def-4913-85a6-ee22223514c3",
+        "53664840-48b4-4c35-88bd-5d1bc79a15b8",
+        "96aec021-7814-4796-a2ef-f43d15c01303",
+        "25492ca7-c02c-41e3-91b2-9eda9ee0129e",
+        "c9a436a2-f630-4eba-a893-49bceda69d36",
+        "42a3821c-f70c-4262-b664-7b52c203fd46",
+        "ddbb53c9-c84c-4b84-bf22-3a126c89115f",
+        "33e95cf9-fbb9-4a12-8078-cb700a252159",
+        "4f595c76-6c26-44e6-8b3c-14b4a94fd27b",
+        "75007286-90f0-4cf4-be47-c6f3ebdfeda8",
+        "d27b8848-b7dd-4c66-8e13-f78e186bee69",
+        "bdd459c4-ad82-46e1-9d21-829b2b90e5a5",
+        "8371d23a-9c93-4b99-82d9-229fc31d7df7",
+        "307c1ffa-72ec-406c-b256-e8d662848b0c",
+        "869f275d-bf22-438e-a1de-6de73df7cb8b",
+        "4ab38dac-8804-47b4-b82f-957968381619",
+        "47e2aba4-f011-484a-86f8-fa4f637153e1"
+      ],
+      "settings": {
+        "title": "Dicono di noi",
+        "detail": "",
+        "color": "#f5f7f2"
+      }
+    },
+    "34d1c0e6-5248-4627-9e1d-c99b5990a219": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "GIORNO 1",
+            "title": "Transizione stato di mima digiuno",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Transizione del corpo in uno stato di digiuno; in questa fase il corpo brucia i grassi e può cominciare il processo di pulizia cellulare.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_1.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 2",
+            "title": "Combustione grassi e chetosi",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "La combustione dei grassi aumenta, contribuendo all'inizio della chetogenesi (produzione di chetoni). Alla fine del secondo giorno (48 ore dall'inizio), può verificarsi la chetosi.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_2.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "a6885bad-68a8-463b-80be-9a222e334076": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 3",
+            "title": "Autofagià / Pulizia Cellulare",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Inizia la pulizia cellulare (autofagia). Aumenta la combustione dei grassi e la produzione/utilizzo dei chetoni.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_3.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "dcba6557-5ea2-4947-9642-1ba6c2ac1c71": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "GIORNO 4",
+            "title": "Rinnovamento Cellulare",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Pulizia/rinnovo cellulare; la combustione dei grassi continua. Le cellule si trasformano in versioni più giovani di se stesse. Sei nel tratto finale.You're in the final stretch.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno_4.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "2e378088-65e1-4db9-8913-b0a586089b09": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Giorno 5",
+            "title": "Rinnovamento &amp; Cambiamento",
+            "title_size": 40,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "Digiuno Completato, il rinnovamento cellulare continua anche oltre il giorno 5. Può verificarsi il fenomeno della chetosi prolungato.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify://shop_images/Dieta_Mima_Digiuno_Giorno5.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-0",
+        "template--14460584165422__34d1c0e6-5248-4627-9e1d-c99b5990a219-166855394499319455-1",
+        "a6885bad-68a8-463b-80be-9a222e334076",
+        "dcba6557-5ea2-4947-9642-1ba6c2ac1c71",
+        "2e378088-65e1-4db9-8913-b0a586089b09"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": 610,
+        "height_mobile": 490,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "233404af-9ae8-408b-9c7a-001cf3500aeb": {
+      "type": "slideshow",
+      "blocks": {
+        "bed7f6c1-514f-4dbb-8a64-b7762bf02b47": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "98e91911-33c5-4cdb-abfb-4e968f5dbc91": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "93183ebb-8430-4ff1-a8d2-dfe1b390ef3e": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "bed7f6c1-514f-4dbb-8a64-b7762bf02b47",
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-0",
+        "template--14456155045934__233404af-9ae8-408b-9c7a-001cf3500aeb-16677521038a48ef9e-1",
+        "98e91911-33c5-4cdb-abfb-4e968f5dbc91",
+        "93183ebb-8430-4ff1-a8d2-dfe1b390ef3e"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 10
+      }
+    },
+    "787e268e-295e-4395-9408-e7363c394d77": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14460584165422__787e268e-295e-4395-9408-e7363c394d77-16678468542abf7243-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__787e268e-295e-4395-9408-e7363c394d77-16678468542abf7243-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16801324-f6c3-48a2-a4a3-48d411e744df": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>This is my third time trying the fast mimicking diet, and I have learned to go back to it whenever I need a reset. I tend to do great at watching what I eat for a period of time, but then start slipping back into old habits over time. At that point, I find that if I do the fast mimicking diet again, it really does reset my thinking about how much I need to eat. </p>",
+            "author": "bfherrmann",
+            "author_info": "- Verified User"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>This was my 10th Prolon fast. I used this one to reset myself due to having long COVID. I can't begin to describe how much better I feel after doing a prolon fast</p>",
+            "author": "Robin Laabs",
+            "author_info": "- Verified User"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>This is my second time using Prolon. It is so easy to follow and stay on the fasting plan for better health. I lost 6 pounds at the end of five days. I feel great. My bpm dropped 5 points and My anxiety level is nonexistent.</p>",
+            "author": "Marie",
+            "author_info": "- Verified User"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>This was a great experience! I feel amazing, and have so much energy and focus. The food tastes great! I've already recommended to all my friends.</p>",
+            "author": "Julie S.",
+            "author_info": "- Verified User"
+          }
+        },
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Prolon leaves the guesswork out of fasting! The system is super easy to follow and even includes a transition day diet. I always feel great during day and have high energy. I sleep so deep! I love that Prolon makes it so simple to take care of my body on a cellular level... thank you Prolon! </p>",
+            "author": "Kimberly",
+            "author_info": "- Verified User"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-0",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-1",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-2",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-3",
+        "template--14456155045934__16801324-f6c3-48a2-a4a3-48d411e744df-1667755500f073a18e-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "More from fellow ProLoners",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "1"
+      }
+    },
+    "944efbb9-81da-41ff-b131-722adde5d9d2": {
+      "type": "faq",
+      "blocks": {
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0": {
+          "type": "question",
+          "settings": {
+            "title": "Quante volte devo assumere ProLon® in un anno?",
+            "text": "<p>Dipende dal peso corporeo del paziente, dai marcatori di riferimento e dai controlli periodici sulla salute. Questo può stabilirsi dopo la valutazione ed il parere del proprio medico o nutrizionista:\n<br><br>• Soggetti con rischio elevato: da 3 a 12 volte all’anno (dipende dalle condizioni);\n<br><br>• Soggetti a basso rischio o in un buono stato di salute: da 2 a 3 volte all’anno.\n<br><br>\nSe pensi che ProLon® sia adatto a te, contatta il tuo medico o il tuo nutrizionista, il quale potrà consigliarti ed autorizzarti all’uso di ProLon®; oppure contatta il nostro Staff che risponderà a tutte le tue domande e potrà aiutarti a trovare un medico o un nutrizionista più vicino a Te.</p>"
+          }
+        },
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1": {
+          "type": "question",
+          "settings": {
+            "title": "Come si assume ProLon",
+            "text": "<p>L’utente ProLon® utilizza i prodotti del programma per 5 giorni consecutivi seguendo l’ordine di assunzione riportato nella brochure. L’ordine con il quale i prodotti possono essere assunti all’interno della stessa giornata può variare ma NON è possibile invertire gli alimenti di giorni diversi.</p>"
+          }
+        },
+        "910be383-f543-43a2-be67-fb6e7ddf7a75": {
+          "type": "question",
+          "settings": {
+            "title": "Può essere usato da pazienti con malattie croniche?",
+            "text": "<p>A seconda della patologia, della storia medica pregressa e dei farmaci attuali, il programma dietetico ProLon® potrebbe essere combinato con lo standard di trattamento di cura; tuttavia, ProLon®non può essere prescritto per prevenire o curare le malattie.</p>"
+          }
+        },
+        "48c96854-2f13-4edc-af9a-d41158e8a33c": {
+          "type": "question",
+          "settings": {
+            "title": "Cos'è l'L-drink?",
+            "text": "<p>L'L-Drink è una bevanda che si assume dal 2 al quinto giorno; la quantità da assumere dipende dal peso corporeo e va preparato seguendo i passaggi riportati nelle istruzioni contenute all'interno del kit. Questa componente, correttamente preparata, aiuta il transito intestinale in quanto è un blando lassativo.</p>"
+          }
+        },
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369": {
+          "type": "question",
+          "settings": {
+            "title": "Quanto peso perderò?",
+            "text": "<p>La quantità di peso perso varia da individuo ad individuo. Un professionista sarà capace di approfondire questo argomento e lavorare con il paziente per raggiungere il goal personalizzato.</p>"
+          }
+        },
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1": {
+          "type": "question",
+          "settings": {
+            "title": "Il Kit ProLon ha scadenza?",
+            "text": "<p>La scadenza dei prodotti del kit ProLon® è di 6 mesi.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-0",
+        "template--14456155045934__944efbb9-81da-41ff-b131-722adde5d9d2-166773708950f227d1-1",
+        "910be383-f543-43a2-be67-fb6e7ddf7a75",
+        "48c96854-2f13-4edc-af9a-d41158e8a33c",
+        "e3472ee3-ccc8-4941-9cb8-1b1705642369",
+        "11b377a8-d777-449d-908b-b9ae3f4c13b1"
+      ],
+      "settings": {
+        "title": "Domande?"
+      }
+    },
+    "43b398f3-e362-4b34-8be8-1100326e4021": {
+      "type": "slideshow-image",
+      "blocks": {
+        "template--14460584165422__43b398f3-e362-4b34-8be8-1100326e4021-16678469783149cf40-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/ProLon_Insta_Web_-_FMD_1728x_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14460584165422__43b398f3-e362-4b34-8be8-1100326e4021-16678469783149cf40-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!-- Font Awesome Icon Library -->\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n<style>\n#trustpilot-widget-trustbox-0-wrapper iframe {\n    width: min-content !important;\n    margin-left: -10px;\n}\n\n@media only screen and (max-width: 768px) {\n.benefits-title {font-size: 20px;}\ndiv.flex-grid__item.flex-grid__item--33.flex-grid__item--template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068-1667747374458af220-1.type-advanced{ display: none;}\n}\n@media only screen and (min-width: 769px){\ndiv.flex-grid__item.flex-grid__item--100.flex-grid__item--e89a779f-a279-4469-b0be-269db64f2de0.type-advanced  {display: none;}\n}\n#shopify-section-template--14460584165422__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc, #shopify-section-template--14456155045934__0c4884b7-5bb7-4ed7-85ee-fe38887f82bc {background-color: #f6f7f3; padding: 5% 0 5%;}\n@media only screen and (max-width: 768px) {\nh2, h3, .h3 {\n    font-size: calc(var(--typeHeaderSize)*0.57);\n}\n#shopify-section-template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--b79aa57d-0384-499d-bea7-947d5ba8d126.type-image, #shopify-section-template--14456155045934__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--73426572-f5f3-4a13-8dbc-38f13f145846.type-image, #shopify-section-template--14460584165422__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--73426572-f5f3-4a13-8dbc-38f13f145846.type-image, #shopify-section-template--14460584165422__a8a71f71-c647-4b0d-91b0-c55cfc090068 > div > div > div > div > div.flex-grid__item.flex-grid__item--33.flex-grid__item--b79aa57d-0384-499d-bea7-947d5ba8d126.type-image {flex: 0 1 50%}\n}\n.checked {\n  color: #facc14;\n}\ndiv.product__thumbs.product__thumbs--below.product__thumbs-placement--left.small--hide{display: none;}\n.text-with-icons__block-icon { display: none;}\n#shopify-section-template--14460584165422__2af03405-2868-4348-ad7e-527b7b588c42 > div > div.scheme-minimal-wave {background-image: none;}\n#shopify-section-template--14460584165422__12275132-9fbc-4053-8beb-e03935eb075d {max-width: 85%; margin: auto;}\n#shopify-section-template--14460584165422__89a9fb4b-6df6-4855-9f5a-d78873047246 {background-color: #f6f7f3;}\n.fill-\\[\\#00b77a\\] {\n    fill: #f6931d;}\n.benefits-title {font-size: 25px;}\n\n#nutrition-declaration table, #nutrition-declaration th, #nutrition-declaration td {\nborder-width: 0px 0px 1px;\nborder-style: solid;\nborder-color: #0f0a0a;\nmargin: 0px;\n}\n\n.accent-pulse {\n    position: relative;\n    display: inline-block;\n    padding: 13px 5px;\n    background-color: #ffd201;\n    border-radius: 100px;\n    color: white;\n    top: -85%;\n    left: 80%;\n    z-index: 40;\n    animation: pulse 1s infinite;\nfont-weight: 600;\n    font-size: smaller;\n}\n.pulse-b {\n  padding: 5px;\n  background-color: #ffd201;\n  border-radius: 5px;\n  color: white;\n  animation: pulse 1s infinite;\n  font-size: smaller;\n  font-weight: 600;\n  display: inline-block;\n  position: relative;\n}\n/* Stile per la modale */\n.form-popup {\n  display: none; /* Nascondi la modale di default */\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  background-color: rgba(0,0,0,0.4); /* Sfondo semitrasparente */\n}\n\n.modal__inner {\n  background-color: #fefefe;\n  margin: 15% auto;\n  padding: 20px;\n  border: 1px solid #888;\n  width: 80%;\n}\n\n.cancel {\n  color: #aaa;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.cancel:hover,\n.cancel:focus {\n  color: black;\n  text-decoration: none;\n  cursor: pointer;\n}\n</style>\n\n<script type=\"text/javascript\">\nfunction openForm() {\n  document.getElementById(\"variety4content\").style.display = \"block\";\n}\n\nfunction closeForm() {\n  document.getElementById(\"variety4content\").style.display = \"none\";\n}\n</script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14456155045934__3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e-166773708936ce199b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "563fe539-ca55-45aa-a2c7-a14e9b0cd7f8",
+    "1741963870289d9f06",
+    "8f8b2da7-19da-4abf-aad7-5e108cd9df78",
+    "3a9ea0cf-ecd4-4af0-a323-ce84a248bf96",
+    "a8a71f71-c647-4b0d-91b0-c55cfc090068",
+    "cd370779-5537-4669-bbe4-c028bbbfc571",
+    "12275132-9fbc-4053-8beb-e03935eb075d",
+    "2af03405-2868-4348-ad7e-527b7b588c42",
+    "0c4884b7-5bb7-4ed7-85ee-fe38887f82bc",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "d39bb033-a0e0-42ff-afdf-58cd42617d31",
+    "89a9fb4b-6df6-4855-9f5a-d78873047246",
+    "34d1c0e6-5248-4627-9e1d-c99b5990a219",
+    "233404af-9ae8-408b-9c7a-001cf3500aeb",
+    "787e268e-295e-4395-9408-e7363c394d77",
+    "16801324-f6c3-48a2-a4a3-48d411e744df",
+    "944efbb9-81da-41ff-b131-722adde5d9d2",
+    "43b398f3-e362-4b34-8be8-1100326e4021",
+    "3d13cc2f-acd8-4c6e-bb8f-8c7ca450ea1e",
+    "recommendations",
+    "collection-return"
+  ]
+}

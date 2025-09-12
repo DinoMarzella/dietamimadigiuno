@@ -1,0 +1,889 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.speed",
+  "sections": {
+    "pl_product_first_section_P8jd8r": {
+      "type": "pl-product-first-section",
+      "name": "pl product first section",
+      "settings": {
+        "custom_css_class": "",
+        "product": "l-pill",
+        "hero_image": "shopify://shop_images/asset-l-pill-life-0001-2000x.webp",
+        "subheading_text": "",
+        "heading_text": "",
+        "paragraph": "<br>\nLa L-Pill è stata sviluppata dai principali scienziati e medici specializzati nella longevità in collaborazione con il Longevity Institute dell'Università della California del Sud.\n<br><br>\nSi tratta di una tecnologia a doppia capsula che include un'alta concentrazione di ingredienti naturali accuratamente selezionati per garantire la sicurezza e l'efficacia nel sostenere il sano invecchiamento delle cellule e degli organi del corpo.\n<br><br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"#acquista-ora\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511]  font-[700]  text-[14px] \">\n                        ACQUISTA ORA                    </span>\n                </a>\n            </div>\n<br>"
+      }
+    },
+    "174611979935c72ead": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "dk_video_banner_RP3rTH": {
+      "type": "dk-video-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 48em) {.md\\:text-5xl {font-size: 4rem; line-height: 1; font-weight: 600; } .italic {font-style: none !important; font-size: 3rem; font-weight: 800; }}"
+      ],
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ebf67f169b764fa5bc01a200f251e8ad.mp4",
+        "heading_text": "<span class=\"block mb-0 md:mb-4\">Nutrition Science to help you\n</span>",
+        "html": "Live Healthier, Promote Healthy Aging, Lose fat, Improve Energy, Rejuvenate your cells, Protect Lean Muscle Mass",
+        "sub_text": "Experience the many benefits of fasting while you eat<br><br>",
+        "button_link": "#prolon-programs",
+        "button_text": "Shop Prolon Nutrition",
+        "quiz_button_link": "/pages/quiz",
+        "quiz_button_text": "Getting Started Quiz"
+      }
+    },
+    "slideshow_QCLcbR": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ApLqYM": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<h4 style=\"color: #1E4036; margin-bottom: 10px;\">— SUMMER SALE —</h4><h1>\n<b>SAVE UP TO 30%</b> </h1>",
+            "title_size": 57,
+            "title_tag": "h2",
+            "title_class": "h1",
+            "subheading": "<p>Celebrate the longest days with smarter habits and a summer sale that helps you <b>lose fat, protect muscle, and add years to your life!</b> Up to 30% off all our favorite Prolon products — this week only.</p>",
+            "link": "/products/prolon-offer",
+            "link_text": "SHOP PROLON 5-DAY",
+            "link_2": "/collections/all",
+            "link_text_2": "SHOP ALL",
+            "color_accent": "#1e4036",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_ApLqYM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero__text-shadow:after {display: none;}",
+        ".btn {letter-spacing: 1px;}",
+        "h1,h4,p {color: white;}",
+        "h4 {font-size: 20px;}",
+        "p {font-size: 18px; max-width: 600px;}",
+        "h1 {font-size: 65px;}",
+        "@media (max-width: 768px) {h1 {font-size: 40px; max-width: 200px; } p {font-size: 16px; max-width: 250px; margin-bottom: 10px; } h4 {font-size: 16px; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "aug_t_slider_prolon_AhLy6K": {
+      "type": "dk-aug-t-slider-prolon",
+      "blocks": {
+        "list_item_U76pVn": {
+          "type": "list_item",
+          "settings": {
+            "img": "shopify://shop_images/Forbes_2000x_821b170e-fdda-4083-8b79-c634d17e5f2d_1.png"
+          }
+        },
+        "list_item_nidfec": {
+          "type": "list_item",
+          "settings": {
+            "img": "shopify://shop_images/Time_2000x_984cb42b-7b4a-4ba8-9b3f-4c0aea53738b_1.png"
+          }
+        },
+        "list_item_hhW8UC": {
+          "type": "list_item",
+          "settings": {
+            "img": "shopify://shop_images/national-geographic-slide-logo-270x69_1.webp"
+          }
+        },
+        "list_item_WEkcQH": {
+          "type": "list_item",
+          "settings": {
+            "img": "shopify://shop_images/News_Week_2000x_c1544cd9-c38d-4a53-8b7b-5ad0c4f4827a_1.png"
+          }
+        },
+        "list_item_xWbwqp": {
+          "type": "list_item",
+          "settings": {
+            "img": "shopify://shop_images/arte-slide-logo-270x69_1.webp"
+          }
+        },
+        "list_item_UGcT3n": {
+          "type": "list_item",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "list_item_U76pVn",
+        "list_item_nidfec",
+        "list_item_hhW8UC",
+        "list_item_WEkcQH",
+        "list_item_xWbwqp",
+        "list_item_UGcT3n"
+      ],
+      "custom_css": [
+        "section.bg-\\[\\#F3F3F2\\].slider-container-main {background: #f1eae5; /* border-left: 4px; */}"
+      ],
+      "settings": {}
+    },
+    "reviews-widget_AhLy6K": {
+      "type": "reviews-widget",
+      "disabled": true,
+      "settings": {
+        "widget_type": "grid"
+      }
+    },
+    "dk_image_with_text_yVcW8g": {
+      "type": "dk-image-with-text-home-page",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "white",
+        "mobile_line_color": "white",
+        "bg-color": "bg-[#263F36]",
+        "title_color": "white",
+        "subheading_text_tab_1": "",
+        "heading_text": "The creator of Fasting Mimicking Technology - Dr. Valter Longo, Ph.D",
+        "paragraph_1": "<div class=\"text-start  md:pb-0 text-white\">\n<p class=\"my-4\">Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.\n<br><br>\nFor the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).\n<br><br>\nIt is derived from these findings that we are able to bring you ProLon line of products. </p>\n</div>\n<br>",
+        "video_url": "",
+        "html_v": "lg:!my-[135px]",
+        "html_line": ""
+      }
+    },
+    "pl_image_with_text_reverse_yVcW8g": {
+      "type": "pl-image-with-text-reverse",
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {div > section > div > div.flex.flex-col.items-center.justify-between.mx-auto.lg\\:flex-row > div.relative.flex.items-center.justify-center.md\\:pt-0.pt-4.lg\\:py-44.lg\\:py-\\[135px\\].lg\\:border-r-2.lg\\:border-\\[\\#1F4139\\].lg\\:w-1\\/2.lg\\:mt-0 {padding: 260px 0; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "lg:py-[135px]",
+        "line_color": "dark",
+        "mobile_line_color": "black",
+        "bg-color": "",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "",
+        "heading_text": "L-PILL per un invecchiamento sano",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\"> La qualità e la velocità del nostro invecchiamento biologico sono i principali fattori determinanti per una vita lunga e sana. La forza di L-Pill risiede nella sua combinazione unica di quattro ingredienti naturali che sono stati studiati per i loro potenziali benefici nell'invecchiamento sano, con funzioni energizzanti e antiossidanti.</p>\n</div>\n<br>",
+        "hero_image": "shopify://shop_images/asset-l-pill-life-0003-2000x.webp",
+        "video_url": "",
+        "html_v": "lg:!mx-[135px] py-[50px]",
+        "html_line": ""
+      }
+    },
+    "dk_aug_t_tabs_prolon_i3wmPN": {
+      "type": "dk-aug-t-tabs-prolon",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "title": "Shop Prolon and everyday nutrition",
+        "subtitle": "",
+        "tab1_title": "FASTING MIMICKING NUTRITION",
+        "price_prefix_product_1_1": "A partire da",
+        "product_1_1": "",
+        "video_url_tab_1": "",
+        "subheading_text_tab_1": "REJUVENATION FROM WITHIN",
+        "heading_text_tab_1": "Prolon 5-Day Program",
+        "paragraph_1_tab_1": "<span>\n  Life-changing nutrition that rejuvenates cell and <br> metabolism while protecting lean body mass. \n</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511]  font-[700]  text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_1_2": "A partire da",
+        "product_1_2": "",
+        "video_url_tab_1_product_2": "",
+        "subheading_text_tab_1_product_2": "",
+        "heading_text_tab_1_product_2": "ReSet 1-day kit",
+        "paragraph_1_tab_1_product_2": "<span>A one-day all-inclusive offset, detox, and reset with fasting-mimicking nutrition.</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/longevity-nutrition-program\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab2_title": "Intermittent Fasting",
+        "price_prefix_product_2_1": "A partire da",
+        "product_2_1": "",
+        "video_url_tab_2": "",
+        "subheading_text_tab_2": "EXTEND YOUR FASTING WINDOW",
+        "heading_text_tab_2": "Nutrition Bar - 12 Pack",
+        "paragraph_1_tab_2": "<span>\n Enhance fat burning by using Fasting Bar— Our nutrition technology proves that it will not break your fast or decrease your ketones.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/fasting-bar\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_2_2": "A partire da",
+        "product_2_2": "",
+        "video_url_tab_2_product_2": "",
+        "subheading_text_tab_2_product_2": "EXTEND YOUR FASTING WINDOW",
+        "heading_text_tab_2_product_2": "Fasting Shakes",
+        "paragraph_1_tab_2_product_2": "<span>\nElongate your fast without impacting your level of ketosis. Enjoy as a meal replacement during your fasting window.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/fasting-shake\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab3_title": "Everyday Longevity",
+        "price_prefix_product_3_1": "A partire da",
+        "product_3_1": "",
+        "video_url_tab_3": "",
+        "subheading_text_tab_3": "PERFORMANCE & HEALTHY AGING",
+        "heading_text_tab_3": "L-Protein",
+        "paragraph_1_tab_3": "<span>\nNourish your body and muscles with clean and complete 25g plant-based proteins that won’t spike pro-aging pathways!\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/l-protein\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_3_2": "A partire da",
+        "product_3_2": "",
+        "video_url_tab_3_product_2": "",
+        "subheading_text_tab_3_product_2": "APULIAN ALMOND SPREAD",
+        "heading_text_tab_3_product_2": "L-Spread",
+        "paragraph_1_tab_3_product_2": "<span>\nFilled with antioxidants, healthy fats and supreme plant-based proteins from Apulian almonds in Italy, longevity never tasted so delicious.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/longevity-spread\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab4_title": "Tab 4",
+        "price_prefix_product_4_1": "A partire da",
+        "product_4_1": "",
+        "video_url_tab_4": "",
+        "subheading_text_tab_4": "Tab 4 Subheading",
+        "heading_text_tab_4": "Tab 4 Heading",
+        "paragraph_1_tab_4": "Tab 4 Description",
+        "price_prefix_product_4_2": "A partire da",
+        "product_4_2": "",
+        "video_url_tab_4_product_2": "",
+        "subheading_text_tab_4_product_2": "Tab 4 product 2 Subheading",
+        "heading_text_tab_4_product_2": "Tab 4 product 2 Heading",
+        "paragraph_1_tab_4_product_2": "Tab 4 product 2 Description"
+      }
+    },
+    "dk_bg_image_text_bRqbW7": {
+      "type": "dk-bg-image-text",
+      "custom_css": [
+        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/asset-l-pill-life-0004-2000x.webp",
+        "heading": "<span class=\"font-semibold\">L'innovazione incontra la natura.</span>",
+        "subheading_above": "",
+        "subheading": "La nostra L-Pill, dotata di tecnologia dual-cap, garantisce un dosaggio ottimale di questi ingredienti in modo sicuro ed efficace. Il DHA è contenuto nella parte esterna della capsula per un assorbimento immediato, mentre gli altri ingredienti sono racchiusi al suo interno in modo sicuro, rilasciando gradualmente i loro potenziali benefici nel tempo.",
+        "paragraph": "",
+        "show_form": false,
+        "show_paragraph_after_form": false,
+        "paragraph_after_form": "",
+        "show_html": false,
+        "content_html": "",
+        "button_link": "#acquista-ora",
+        "button_text": "Acquista ora",
+        "button_link_v2": "",
+        "button_text_2": ""
+      }
+    },
+    "pl_products_showcase_de7HnB": {
+      "type": "pl-products-showcase",
+      "disabled": true,
+      "name": "PL products tabs Section",
+      "settings": {
+        "section_id": "",
+        "title": "Shop Prolon and everyday nutrition",
+        "subtitle": "",
+        "show_products": "core",
+        "tab0_title": "All",
+        "tab1_title": "FASTING MIMICKING NUTRITION",
+        "price_prefix_product_1_1": "A partire da",
+        "product_1_1": "",
+        "video_url_tab_1": "",
+        "subheading_text_tab_1": "REJUVENATION FROM WITHIN",
+        "heading_text_tab_1": "Prolon 5-Day Program",
+        "paragraph_1_tab_1": "<span>\n  Life-changing nutrition that rejuvenates cell and <br> metabolism while protecting lean body mass. \n</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-5-day-kit\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511]  font-[700]  text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_1_2": "A partire da",
+        "product_1_2": "",
+        "video_url_tab_1_product_2": "",
+        "subheading_text_tab_1_product_2": "",
+        "heading_text_tab_1_product_2": "ReSet 1-day kit",
+        "paragraph_1_tab_1_product_2": "<span>A one-day all-inclusive offset, detox, and reset with fasting-mimicking nutrition.</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/reset\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab2_title": "Intermittent Fasting",
+        "price_prefix_product_2_1": "A partire da",
+        "product_2_1": "",
+        "video_url_tab_2": "",
+        "subheading_text_tab_2": "EXTEND YOUR FASTING WINDOW",
+        "heading_text_tab_2": "Nutrition Bar - 12 Pack",
+        "paragraph_1_tab_2": "<span>\n Enhance fat burning by using Fasting Bar— Our nutrition technology proves that it will not break your fast or decrease your ketones.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-fasting-bar\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_2_2": "A partire da",
+        "product_2_2": "",
+        "video_url_tab_2_product_2": "",
+        "subheading_text_tab_2_product_2": "",
+        "heading_text_tab_2_product_2": "Fasting Shake",
+        "paragraph_1_tab_2_product_2": "<span>\nElongate your fast without impacting your level of ketosis. Enjoy as a meal replacement during your fasting window.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-fasting\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab3_title": "Everyday Longevity",
+        "price_prefix_product_3_1": "A partire da",
+        "product_3_1": "",
+        "video_url_tab_3": "",
+        "subheading_text_tab_3": "PERFORMANCE & HEALTHY AGING",
+        "heading_text_tab_3": "L-Protein",
+        "paragraph_1_tab_3": "<span>\nNourish your body and muscles with clean and complete 25g plant-based proteins that won’t spike pro-aging pathways!\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-l-protein\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_3_2": "A partire da",
+        "product_3_2": "",
+        "video_url_tab_3_product_2": "",
+        "subheading_text_tab_3_product_2": "APULIAN ALMOND SPREAD",
+        "heading_text_tab_3_product_2": "L-Spread",
+        "paragraph_1_tab_3_product_2": "<span>\nFilled with antioxidants, healthy fats and supreme plant-based proteins from Apulian almonds in Italy, longevity never tasted so delicious.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/longevity-spread\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "price_prefix_product_3_3": "A partire da",
+        "product_3_3": "",
+        "video_url_tab_3_product_3": "",
+        "subheading_text_tab_3_product_3": "GUT HEALTH",
+        "heading_text_tab_3_product_3": "L-Biome",
+        "paragraph_1_tab_3_product_3": "<span>\nDual-cap technology with fasting nutrition pre and probiotics, wrapped with vegan DHA.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/l-biome\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
+        "tab4_title": "Tab 4",
+        "price_prefix_product_4_1": "A partire da",
+        "product_4_1": "",
+        "video_url_tab_4": "",
+        "subheading_text_tab_4": "Tab 4 Subheading",
+        "heading_text_tab_4": "Tab 4 Heading",
+        "paragraph_1_tab_4": "Tab 4 Description",
+        "price_prefix_product_4_2": "A partire da",
+        "product_4_2": "",
+        "video_url_tab_4_product_2": "",
+        "subheading_text_tab_4_product_2": "Tab 4 product 2 Subheading",
+        "heading_text_tab_4_product_2": "Tab 4 product 2 Heading",
+        "paragraph_1_tab_4_product_2": "Tab 4 product 2 Description"
+      }
+    },
+    "pl_image_with_faq_yRjTtb": {
+      "type": "pl-image-with-faq",
+      "blocks": {
+        "questions_block_MxWVqX": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Ingredienti",
+            "headingtext": "Ingredienti",
+            "content": "<div class=\"w-full px-[20px] mb-[40px] md:mb-0 max-w-[1000px] mx-auto\">\n  <p class=\"text-[16px] md:text-[18px] text-black font-normal leading-[1.6]\"> Sale di acidi grassi omega-3-lisina (Omega 3 da olio derivato dalla microalga Schyzochitrium sp., L-lisina); capsula: Idrossi-propil-metil cellulosa; Wasabi (Wasabia japonica (Miq.) matsum., radice) estratto secco 2% in isocatechine calcolate come glucosinolati, Zucchero di canna (Saccharum officinarum L, linfa (succo)) estratto secco 15% in poliphenoli e 5% in flavonoidi; agente antiagglomerante: Dicalcio fosfato; Caffeina,Tè verde (Camellia sinensis (L.) Kuntze,foglie) estratto secco 20% catechine (epigallocatechina gallato 4%);agenti antiagglomeranti:Sali di magnesio degli acidi grassi,Talco;Carbonato di calcio.</p>\n</div>",
+            "text": ""
+          }
+        },
+        "questions_block_zEy8rW": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Informazioni nutrizionali",
+            "headingtext": "Informazioni nutrizionali",
+            "content": "<table id=\"nutrition-declaration\" style=\"width: 99.9309%;\">\n<tbody>\n<tr>\n<th style=\"width: 58.2143%;\">Contenuti medi</th>\n<th style=\"width: 20.5357%;\">per 2 capsule</th>\n<th style=\"width: 20.5357%;\">per 3 capsule</th>\n</tr>\n<tr>\n<td style=\"width: 58.2143%;\">SALE DI ACIDI GRASSI OMEGA-3-LISINA <br>di cui DHA acido dodecoesanoico <br>di cui L-lisina</td>\n<td style=\"width: 20.5357%;\">400 mg <br>200 mg <br>132 mg</td>\n<td style=\"width: 20.5357%;\">600 mg <br>300 mg <br>198 mg</td>\n</tr>\n<tr>\n<td style=\"width: 58.2143%;\">WASABI E.S</td>\n<td style=\"width: 20.5357%;\">185 mg</td>\n<td style=\"width: 20.5357%;\">277,5 mg</td>\n</tr>\n<tr>\n<td style=\"width: 58.2143%;\">ESTRATTO DI CANNA DA ZUCCHERO <br>di cui 15% polifenoli e 5% flavoinoidi</td>\n<td style=\"width: 20.5357%;\">100 mg</td>\n<td style=\"width: 20.5357%;\">150 mg</td>\n</tr>\n<tr>\n<td style=\"width: 58.2143%;\">CAFFEINA</td>\n<td style=\"width: 20.5357%;\">69 mg</td>\n<td style=\"width: 20.5357%;\">103,5 mg</td>\n</tr>\n<tr>\n<td style=\"width: 58.2143%;\">TÈ VERDE (20% CATECHINE) <br>di cui Epigallocatechina gallato</td>\n<td style=\"width: 20.5357%;\">57,5 mg <br>2,30 mg</td>\n<td style=\"width: 20.5357%;\">86,3 mg <br>3,45 mg</td>\n</tr>\n</tbody>\n</table>",
+            "text": ""
+          }
+        },
+        "questions_block_GMzyXg": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Avvertenze",
+            "headingtext": "Avvertenze",
+            "content": "<div class=\"w-full px-[20px] mb-[40px] md:mb-0 max-w-[1000px] mx-auto\">\n  <p class=\"text-[16px] md:text-[18px] text-black font-normal leading-[1.6]\"> Gli integratori non vanno intesi come sostituti di una dieta variata ed equilibrata e uno stile di vita sano. Non superare la dose giornaliera consigliata.TENERE FUORI DALLA PORTATA DEI BAMBINI SOTTO I TRE ANNI. Non assumere in caso di allergie o ipersensibilità a uno o più componenti. Contiene caffeina.Non raccomandato per i bambini e durante la gravidanza (70 mg). Non consumare un quantitativo giornaliero pari o superiore a 800 mg di Epigallocatechina gallato. Non deve essere consumato se nello stesso giorno si consumano altri prodotti contenenti tè verde. Non deve essere consumato dalle donne in gravidanza o in allattamento e dai minori di 18 anni. Non deve essere consumato a stomaco vuoto.</p>\n</div>",
+            "text": ""
+          }
+        },
+        "questions_block_pJA3WJ": {
+          "type": "questions_block",
+          "disabled": true,
+          "settings": {
+            "question": "FAQ",
+            "headingtext": "FAQ",
+            "content": "<div class=\"w-full\">\n  <!-- FAQ 1 -->\n  <div class=\"w-full py-[10px]\">\n    <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title\">\n      <p class=\"text-black text-[16px] font-semibold\">Con quale frequenza devo assumere Fasting Shake?</p>\n      <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"Con quale frequenza devo assumere Fasting Shake?\">\n    </div>\n    <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n      <p>Si consiglia di consumare Fasting Shake una volta al giorno, poiché vogliamo che le persone seguano una dieta sana ed equilibrata che preveda pasti regolari durante il giorno.</p>\n\n<p>Si può consumare al mattino dopo il digiuno notturno o come spuntino sano in qualsiasi momento della giornata, in aggiunta ai pasti, per aiutare a frenare la fame.</p>\n<p>L'impatto e la sicurezza del consumo di un Fasting Shake al giorno non sono stati studiati, si consiglia pertanto di consumare solo un Fasting Shake al mattino o alla sera, insieme a una dieta sana ed equilibrata durante gli altri pasti.</p>\n\n<p>Fasting Shake è ideale per supportare l'alimentazione per un tempo limitato e altri digiuni brevi. Se cercate i benefici del digiuno prolungato, la nostra Dieta Mima Digiuno ProLon 5-day è stata ampiamente testata, e utilizzata in modo sicuro da centinaia di migliaia di consumatori complessivamente sani ed è stata clinicamente testata per fornire molti benefici e supportare la salute metabolica generale, se utilizzata in diversi cicli. Per maggiori informazioni su ProLon, visitate il sito www.prolon.it.</p>\n    </div>\n  </div>\n\n  <!-- FAQ 2 -->\n  <div class=\"w-full py-[10px]\">\n    <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title\">\n      <p class=\"text-black text-[16px] font-semibold\">Quali sono i risultati del primo studio sul Fasting Shake?</p>\n      <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"Quali sono i risultati del primo studio sul Fasting Shake?\">\n    </div>\n    <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n      <p>Lo studio su Fasting Shake ha testato gli effetti del consumo a colazione (dopo un digiuno notturno di 15 ore), rispetto al salto della colazione o al consumo di un Fasting Shake per colazione. Lo studio ha analizzato i livelli di glucosio e chetoni nel sangue nelle 4 ore successive alla colazione e ha dimostrato che i livelli di glucosio nel sangue dei pazienti che mangiavano Fasting Shake erano quasi identici a quelli dei pazienti che saltavano la colazione.</p>\n\n<p>Anche i livelli di chetoni durante le 4 ore erano molto simili in entrambi i gruppi. Questi risultati hanno dimostrato che il consumo di un Fasting Shake non interferisce con i principali marcatori fisiologici del digiuno. Lo studio ha anche dimostrato che Fasting Shake da una sensazione di sazietà e frenava il desiderio di mangiare fino a 3 ore dopo il consumo. In altre parole, è possibile consumare Fasting Shake per rendere il digiuno più facile e piacevole, mantenendo livelli di chetoni e di glucosio nel sangue simili a quelli di un digiuno di sola acqua.</p>\n    </div>\n  </div>\n\n  <!-- FAQ 3 -->\n  <div class=\"w-full py-[10px]\">\n    <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title\">\n      <p class=\"text-black text-[16px] font-semibold\">Esistono ulteriori ricerche alla base del Fasting Shake?</p>\n      <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"Esistono ulteriori ricerche alla base del Fasting Shake?\">\n    </div>\n    <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n      <p>Sì! Fasting Shake è stata progettato con la stessa tecnologia della Dieta Mima Digiuno di ProLon®. La nostra tecnologia è il risultato di oltre 20 anni di test preclinici e clinici, con oltre 36 milioni di dollari di finanziamenti per la ricerca e lo sviluppo da parte dei National Institutes of Health e dell'Unione Europea.</p>\n    </div>\n  </div>\n\n  <!-- FAQ 4 -->\n  <div class=\"w-full py-[10px]\">\n    <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title\">\n      <p class=\"text-black text-[16px] font-semibold\">Come può Fasting Shake sostenere il digiuno se contiene calorie?</p>\n      <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"Come può Fasting Shake sostenere il digiuno se contiene calorie?\">\n    </div>\n    <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n      <p>Un tempo gli scienziati ritenevano che il bilancio calorico (cioè le calorie consumate meno le calorie bruciate) fosse il fattore più importante per la perdita di peso. Ma oggi gli scienziati hanno ampiamente concordato sul fatto che non tutte le calorie sono uguali. Fattori come i rapporti tra i macronutrienti, le quantità totali, il modo in cui i nutrienti vengono digeriti e assorbiti e la composizione molecolare hanno tutti un impatto sul modo in cui l'organismo elabora il cibo.\n\nLa Dieta Mima Digiuno (FMD) e Fasting Shake sono stati accuratamente progettati, ampiamente studiate e clinicamente testate per consentire il giusto consumo di nutrienti e calorie, pur mantenendo le cellule in uno stato di digiuno. La nostra speciale formula brevettata si nasconde efficacemente ai sensori dei nutrienti del corpo, impedendo loro di inviare il segnale ormonale che di solito viene inviato dopo aver mangiato. Le cellule rispondono alla diminuzione di questo segnale ormonale entrando in uno stato di digiuno. Per saperne di più sulla scienza mima digiuno, visitate la pagina <a href=\"https://prolon.it/pages/scienza-e-ricerca\">Scienza e Ricerca</a>.</p>\n    </div>\n  </div>\n\n</div>",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "questions_block_MxWVqX",
+        "questions_block_zEy8rW",
+        "questions_block_GMzyXg",
+        "questions_block_pJA3WJ"
+      ],
+      "custom_css": [
+        "#nutrition-declaration table {width: 100%; border-spacing: 1px; position: relative; border: 0 none; background: #f5f7f2;}",
+        "#nutrition-declaration table, #nutrition-declaration th, #nutrition-declaration tdSpecificità: (1,0,1) {border-width: 0px 0px 1px; border-style: solid; border-color: #0f0a0a; margin: 0px;}",
+        "#nutrition-declaration td,#nutrition-declaration th {border: 0 none; text-align: left; padding: 10px 15px; background: #ffffff;}"
+      ],
+      "name": "pl image with faq",
+      "settings": {
+        "section_id": "",
+        "flex-reverse": "observe",
+        "line_change": "",
+        "line_color": "dark",
+        "mobile_line_color": "black",
+        "bg-color": "",
+        "title_color": "dark_green",
+        "subheading_below": "Integratore quotidiano per un invecchiamento sano",
+        "heading": "ProLon® L-Pill",
+        "hero_image": "shopify://shop_images/asset-l-pill-life-0002-2000x.webp",
+        "video_url": "",
+        "html_v": "",
+        "html_line": ""
+      }
+    },
+    "dk_bg_image_text_QMJd4d": {
+      "type": "dk-bg-image-text",
+      "disabled": true,
+      "settings": {
+        "heading": "<span class=\"font-semibold\">Nutrition that induces cellular rejuvenation & multiple metabolic changes within the body.</span>",
+        "subheading_above": "",
+        "subheading": "Dr. Valter Longo, top 50 most influential people in health, uncovered a nutritional formulation that induce cellular rejuvenation and multiple unique metabolic changes within the body. In addition to the fasting-like nutrition, called the Prolon 5-Day and to be done three times per year for most, the complete Longevity Program includes as well Prolon Everyday products that are precision nutrition sourced from around the world and tailored to not spike aging factors and to help cells and organs age gracefully.",
+        "paragraph": "",
+        "show_form": false,
+        "show_paragraph_after_form": false,
+        "paragraph_after_form": "",
+        "show_html": false,
+        "content_html": "",
+        "button_link": "#shop-now",
+        "button_text": "Shop Now",
+        "button_link_v2": "",
+        "button_text_2": ""
+      }
+    },
+    "aug_t_video_wQJVLN": {
+      "type": "dk-aug-t-video",
+      "blocks": {
+        "image_block_kpJBcE": {
+          "type": "image_block",
+          "settings": {
+            "alt_text": "Video Image",
+            "video_url": "https://www.youtube.com/watch?v=QiKcfzDu7Rg",
+            "video_title": "What is Prolon?  ",
+            "video_author": " Joseph Antoun MD, PhD",
+            "video_role": "CEO, Prolon"
+          }
+        },
+        "image_block_AQXReL": {
+          "type": "image_block",
+          "settings": {
+            "alt_text": "Video Image",
+            "video_url": "https://www.youtube.com/watch?v=qy9xwR31XMw",
+            "video_title": "Learn from a dietitian ",
+            "video_author": " Kristin Kirkpatrick",
+            "video_role": "Dietitian, Cleveland Clinic"
+          }
+        },
+        "image_block_L4a7NF": {
+          "type": "image_block",
+          "settings": {
+            "alt_text": "Video Image",
+            "video_url": "https://www.youtube.com/watch?v=i6v0FhfzGws",
+            "video_title": "Game changer for fasting ",
+            "video_author": " Sky C.",
+            "video_role": "Olympic cyclist & entrepreneur"
+          }
+        },
+        "image_block_8iBkcQ": {
+          "type": "image_block",
+          "settings": {
+            "alt_text": "Video Image",
+            "video_url": "https://www.youtube.com/watch?v=TRGu1JehI2w",
+            "video_title": "Fasting is essential ",
+            "video_author": " Renee Fitton MS, RD",
+            "video_role": "Director of Education, Prolon"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_kpJBcE",
+        "image_block_AQXReL",
+        "image_block_L4a7NF",
+        "image_block_8iBkcQ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 769px) {.text-\\[24px\\] {font-size: 30px; font-weight: 500; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "show_bottom_line": true,
+        "title": "Learn more about Prolon from longevity experts",
+        "subtitle": "",
+        "first_button_link": "/collections/all-products",
+        "first_button_text": "SHOP PROLON",
+        "second_button_link": "/pages/what-is-prolon",
+        "second_button_text": "ABOUT PROLON"
+      }
+    },
+    "advanced_content_TARTkH": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_Tg7kKf": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "code": "<style>\ndiv#shopify-section-template--18574910750878__advanced_content_TARTkH {\n    padding-top: 0;\n    padding-bottom: 0;\n   padding-left: 0;\n        padding-right: 0;\n    max-width: 1600px;\n    margin: 0 auto;\n}\n\n\n.custom__item.one-whole.align--center {\n    margin-bottom: 0;\n     padding-left: 0;\npadding-right: 0;\n}\n\n@media (min-width: 768px) {\n  .custom__item.one-whole.align--center  {\n   margin-bottom: 0;\npadding-left: 22px;\n\n    }\n}\n\n.lyvecom_carousel--component-new {padding-top: 20px;}\n\n.lyvecom-swiper--component .carousel-wrapper .swiper-button-next {\n    right: 24px !important;\n}\n  margin: 0 auto;\n    max-width: 1600px;\n</style>\n<div class=\"flex justify-start gap-4 px-4 md:block\">\n            <div class=\"flex items-center justify-center md:hidden \">\n                <div class=\"w-[2px] h-full  bg-white\"> </div>\n            </div>\n<div class=\"w-[2px] mx-auto h-[106px]  bg-white  md:block hidden\"></div>\n<script data-lyvecom async src=\"https://dashboard.lyvecom.com/widget/widget.js\"></script>\n      <div class=\"lyvecom_carousel--component-new\" data-lyvecom-id=\"67c79ca805e742d15c38779c\"></div>\n      <script>\n          (() => {\n                  const scriptElement = document.querySelector('script[data-lyvecom]');\n                  const mountCarousel = () => {\n                      LyveComWidget.mountCarouselComponentV2({\n                        carouselID: '67c79ca805e742d15c38779c',\n                        carousel: true,\n                        lng: 'en'\n                    });\n                  }\n                      \n                  if (window.LyveComWidget) {\n                        mountCarousel();\n                    } else {\n                        scriptElement.addEventListener('load', mountCarousel);\n                    }\n          })()\n      </script>\n<div class=\"w-[2px] mx-auto h-[106px]  bg-white  md:block hidden\"></div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "html_Tg7kKf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{background-color: #1e4036; padding: 50px 20px; color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "custom_class": ""
+      }
+    },
+    "dk_image_with_text_3cAkPt": {
+      "type": "dk-image-with-text-home-page",
+      "blocks": {
+        "slide_BfkTqn": {
+          "type": "slide",
+          "settings": {
+            "day_number": "DAY 01",
+            "day_title": "Transition to a fasting state",
+            "day_description": "The body transitions to a fasting state and fat-burning mode as it begins preparation for cellular clean-up."
+          }
+        },
+        "slide_3VcNCe": {
+          "type": "slide",
+          "settings": {
+            "day_number": "DAY 02",
+            "day_title": "Fat burning begins",
+            "day_description": "For most people, fat burning (ketosis) begins between 24–48 hours of their fast."
+          }
+        },
+        "slide_zYMdKi": {
+          "type": "slide",
+          "settings": {
+            "day_number": "DAY 03",
+            "day_title": "Cellular clean-up begins",
+            "day_description": "Autophagy, our body’s natural cellular clean-up system, ignites after 72 hours. Fat burning continues and increases."
+          }
+        },
+        "slide_GQdN6M": {
+          "type": "slide",
+          "settings": {
+            "day_number": "DAY 04",
+            "day_title": "Rejuvenation in progress",
+            "day_description": "Autophagy is fully activated, and cellular rejuvenation is in full effect."
+          }
+        },
+        "slide_qC6y8y": {
+          "type": "slide",
+          "settings": {
+            "day_number": "DAY 05",
+            "day_title": "Cellular renewal peaks",
+            "day_description": "On the last day of your fast, cellular renewal is at its peak, and you may experience an increase in energy."
+          }
+        }
+      },
+      "block_order": [
+        "slide_BfkTqn",
+        "slide_3VcNCe",
+        "slide_zYMdKi",
+        "slide_GQdN6M",
+        "slide_qC6y8y"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": true,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "dark",
+        "mobile_line_color": "black",
+        "bg-color": "bg-[#F1EAE5] md:bg-white",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "REDUCE BIOAGE BY 2.5 YEARS",
+        "heading_text": "Defy aging by reversing your biological age",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\n\nThree cycles of Prolon may decrease your bioage by 2.5 years in as few as 3 cycles over 3 months. Prolon 5-Day provides everything you need for a complete five day cellular rejuvenating fast, with food to nourish your body.\n<br>\n<br>\nDon’t wait, start reversing your biological age today.\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/products/prolon-offer\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full text-white bg-[#56A511] font-[700] text-[14px]\">\n                        SHOP Prolon\n                    </span>\n                </a>\n                 <a href=\"/pages/the-science\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full  border-[#263F36] border-2 text-[#263F36] font-[700] text-[14px]\">\n                      Learn More\n                    </span>\n                </a>\n            </div>\n<br>\n</div>",
+        "video_url": "",
+        "html_v": "lg:!my-[130px]",
+        "html_line": ""
+      }
+    },
+    "dk_faq_dnnNc8": {
+      "type": "dk-faq",
+      "blocks": {
+        "questions_block_n8ewQD": {
+          "type": "questions_block",
+          "settings": {
+            "question": "What’s Inside the Box?",
+            "headingtext": "What’s Inside the Box?",
+            "content": "<div class=\"text-center\">\n  \n  <p class=\" text-left w-full md:w-2/3 m-auto pt-2\" style=\"text-align: center;\">With Prolon, you get everything you need pre-packaged and ready to go. Each kit comes with five boxes which are labeled by day so you know what to eat each day.</p>\n  <div class=\"flex flex-wrap gap-[30px] justify-left md:justify-center md:items-baseline pt-11\">\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/Soups.png?v=1708641808&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN1.png?v=1708629137&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN1.png?v=1708629137&amp;width=70 70w\" width=\"70\" height=\"69\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_1_Default.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_1_Default.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"69\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            Soups\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            A variety of easy-to-prepare soups made with a proprietary mix of all-natural, plant-based ingredients\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/Soups.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                Soups\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/Soups.png?v=1708641808&amp;width=800\" alt=\"Prolon's Mushroom Soup, Menestrone Blend, Minestrone &amp; Quinoa Blend &amp; Tomat Soup Blend shown with their ingredients\" srcset=\"//prolonlife.com/cdn/shop/files/Soups.png?v=1708641808&amp;width=352 352w, //prolonlife.com/cdn/shop/files/Soups.png?v=1708641808&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/Nut_Bars.png?v=1708641808&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN2.png?v=1708629137&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN2.png?v=1708629137&amp;width=70 70w\" width=\"70\" height=\"69\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_2_Default_1.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_2_Default_1.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"69\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            Nut Bars\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            Cold-pressed, delicious nut bars with whole ingredients like almonds, macadamia nuts, and pecans\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/Nut_Bars.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                Nut Bars\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/Nut_Bars.png?v=1708641808&amp;width=800\" alt=\"Prolon's Honey &amp; Nut Fast Bars displayed on a table with honey &amp; almonds, pecans and other nuts\" srcset=\"//prolonlife.com/cdn/shop/files/Nut_Bars.png?v=1708641808&amp;width=352 352w, //prolonlife.com/cdn/shop/files/Nut_Bars.png?v=1708641808&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/Snacks.png?v=1708641808&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN3.png?v=1708629136&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN3.png?v=1708629136&amp;width=70 70w\" width=\"70\" height=\"69\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_3_Default_1.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_3_Default_1.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"70\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            Snacks\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            Snacks like olives from the South of Spain where olive consumption is associated with longevity, and kale crackers enriched with plant-based protein.\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/Snacks.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                Snacks\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/Snacks.png?v=1708641808&amp;width=800\" alt=\"A healthy &amp; light meal with kale crackers, olives, hibiscus herbal tea, and other snacks \" srcset=\"//prolonlife.com/cdn/shop/files/Snacks.png?v=1708641808&amp;width=352 352w, //prolonlife.com/cdn/shop/files/Snacks.png?v=1708641808&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/Supplements.png?v=1708641808&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN4.png?v=1708629136&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN4.png?v=1708629136&amp;width=70 70w\" width=\"70\" height=\"70\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_4_Default_1.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_4_Default_1.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"70\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            Supplements\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            Dietary supplement packed with multivitamins, amino-acids, minerals and omega-3 fatty acid to provide the body with nourishment\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/Supplements.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                Supplements\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/Supplements.png?v=1708641808&amp;width=800\" alt=\"Two women each holding up a single L-Pill capsule from Prolon\" srcset=\"//prolonlife.com/cdn/shop/files/Supplements.png?v=1708641808&amp;width=352 352w, //prolonlife.com/cdn/shop/files/Supplements.png?v=1708641808&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/L-drink.png?v=1708641807&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN5.png?v=1708629137&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN5.png?v=1708629137&amp;width=70 70w\" width=\"70\" height=\"69\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_5_Default_1.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_5_Default_1.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"69\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            L-Drink\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            Fruit-flavored, proprietary glycerol mix designed to fuel and protect muscles throughout the fast\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/L-drink.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                L-Drink\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/L-drink.png?v=1708641807&amp;width=800\" alt=\"Two 4 ounce bottles of Prolon's L-Drink\" srcset=\"//prolonlife.com/cdn/shop/files/L-drink.png?v=1708641807&amp;width=352 352w, //prolonlife.com/cdn/shop/files/L-drink.png?v=1708641807&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n      <div class=\"flex justify-center items-stretch md:h-1/2 md:w-[30%] gap-3 modal--item-show\" data-image=\"//prolonlife.com/cdn/shop/files/Herbal_Teas.png?v=1708641807&amp;width=500\">\n        <div class=\"flex-initial\">\n          \n            <button class=\"open--modal-box relative w-[70px] h-[71px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/BTN6.png?v=1708629137&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/BTN6.png?v=1708629137&amp;width=70 70w\" width=\"70\" height=\"69\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Property_6_Default_1.png?v=1708710397&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Property_6_Default_1.png?v=1708710397&amp;width=70 70w\" width=\"70\" height=\"70\" class=\"hover-img hidden\">\n            </button>\n          \n        </div>\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-[#73984A] text-xl tracking-tighter capitalize\">\n            Herbal Teas\n          </h6>\n          <div class=\"text-xs md:font-normal text-[#4B5563] md:text-sm tracking-tighter pt-1\">\n            Caffeine-free herbal teas loaded with healthy antioxidants, and will keep you hydrated during your week.\n          </div>\n        </div>\n        <div class=\"hidden modal--container z-20 fixed top-0 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-75\" data-image=\"files/Herbal_Teas.png\">\n          <div class=\"w-fit px-6\">\n            <div class=\"flex justify-between items-center py-2\">\n              <h6 class=\"font-semibold text-white text-[32px] tracking-tighter capitalize\">\n                Herbal Teas\n              </h6>\n              <button class=\" w-8 h-8 rounded-full bg-white close--modal text-lg\">x</button>\n            </div>\n            <img src=\"//prolonlife.com/cdn/shop/files/Herbal_Teas.png?v=1708641807&amp;width=800\" alt=\"One tea bag of Prolon's Hibiscus Tea on top of dried hibiscus leaves\" srcset=\"//prolonlife.com/cdn/shop/files/Herbal_Teas.png?v=1708641807&amp;width=352 352w, //prolonlife.com/cdn/shop/files/Herbal_Teas.png?v=1708641807&amp;width=800 800w\" width=\"800\" class=\"drawer-item__image\">\n          </div>\n        </div>\n      </div>\n    \n  </div>\n\n  <div class=\"hidden fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-3 z-10\"></div>\n  \n</div>",
+            "text": ""
+          }
+        },
+        "questions_block_erpqkp": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Prolon Fasting Benefits",
+            "headingtext": "Prolon Fasting Benefits",
+            "content": "<div class=\"flex items-center  flex-col-reverse md:flex-row \">\n    <div class=\"w-full md:w-[50%] px-[20px]\">\n      <div class=\"!w-full relative\">\n        <img class=\"relative !h-full !w-full max-h-[585px]  !delay-300   !object-contain \" src=\"https://prolonlife.com/cdn/shop/files/assets_539e4c6b549049fdb80b37c4b87772db_7e86c327bad445c788548c6abe8f1150_1400x.jpg?v=1694086767\" alt=\"Feature Image 1\"> \n      </div>\n    </div>\n    <div class=\"w-full md:w-[50%] px-[20px] mb-[40px] md:mb-0\">\n<h2 class=\"\n          mb-[20px] text-[30px]  leading-[1.2] font-normal \n          !delay-200\n        \">\n        Prolon, essential to vibrant life!\n      </h2>\n      <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">\n        </p>\n<div>\n\n  Everyday we stress and intoxicate our body and mind with our current lifestyle, nutrition, environment we live under. As we age, our cellular capability to detox, recover and heal decrease and older senescent cells outnumber young vibrant cells.\n        <br><br> \nOur ancestors had a natural secret to defend against accelerated aging and to rejuvenate younger cells: proLonged fasting (&gt; 3 days). When fasting, the body uses its reserves (fat and glycogen) for the first 2 days (Intermittent Fasting period) but when fasting crosses 3 days or more (the prolonged fasting period), the body undergoes a next level of ‘protective and rejuvenative defense called autophagy.\n        <br><br> \nIn modern days, we accelerate cellular damage and aging vs going into periods of autophagy, recovery and rejuvenation.In 5 short days ProLon allows your body to go into a rejuvenating state, while consuming macro and micro nutrients to keep your body nourished.\n\n        </div>\n      <p></p>\n      <div class=\"flex flex-wrap pt-[20px] hero__animation-contents !delay-700\"></div>\n    </div>\n  </div> <section class=\"my-6 \">\n\n\n\n\n<div class=\"text-center py-5  loaded_animation\">\n  \n  <div class=\"flex flex-wrap gap-[30px]  justify-center md:items-center hero__animation-contents !delay-200\">\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_1.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_1.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Healthy Aging\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_2.png?v=1708982336&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_2.png?v=1708982336&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Metabolic Support\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_3.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_3.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Mental Clarity\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_4.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_4.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Changed Relationship with Food\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_5.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_5.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Cellular Rejuvenation\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_6.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_6.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Protect Lean Muscle\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_7.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_7.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            Rejuvenated Skin\n          </h6>\n        </div>\n      </div>\n    \n    <div class=\"flex  md:w-[20%]   w-[40%] justify-center items-center md:h-1/2  gap-2\">\n        <div class=\"flex-initial\">\n          \n            <div class=\"relative w-[50px] h-[50px]\">\n              <img src=\"//prolonlife.com/cdn/shop/files/Iconpdp_8.png?v=1708982335&amp;width=70\" alt=\"\" srcset=\"//prolonlife.com/cdn/shop/files/Iconpdp_8.png?v=1708982335&amp;width=70 70w\" width=\"70\" height=\"69\" loading=\"lazy\">\n            </div>\n          \n        </div>\n\n        <div class=\"flex-1 text-left\">\n          <h6 class=\"font-semibold text-black text-xs md:text-base tracking-tighter capitalize\">\n            More Energy\n          </h6>\n        </div>\n      </div>\n    \n  </div>\n\n  \n</div>\n\n\n\n  </section>",
+            "text": ""
+          }
+        },
+        "questions_block_Nyzm6F": {
+          "type": "questions_block",
+          "disabled": true,
+          "settings": {
+            "question": "Reviews & Testimonials",
+            "headingtext": "Reviews & Testimonials",
+            "content": "<div id=\"shopify-section-template--17776880058526__1710268055fed08603\" class=\"shopify-section\">\n  \n    <div id=\"shopify-block-okendo_reviews_widget_MbBEpN\" class=\"shopify-block shopify-app-block\">\n\n\n\n\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/okendo-widget.6aeb18ae.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/widget.4b824729.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/shared-components.73b0798d.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/review-list/default.f346f6a0.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/header-modules/rating-average.13705827.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/header-modules/rating-breakdown.a108ab46.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/okendo-reviews-lib.21667540.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/review-templates/default.1ccdf461.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/reviewer.05892934.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/review-basic-content.5c777105.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/attributes.9f024671.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/helpful-voting.62c034e4.css\"></style>\n<style type=\"text/css\" data-href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus/css/modules/flag.143bbb7e.css\"></style>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://d3hw6dc1ow8pp2.cloudfront.net/reviews-widget-plus-css-bundles/0-70-15/reviews-widget.6c16a0139248e79cb4db8dc618c3b4b0.css\">\n<div data-oke-widget=\"\" data-oke-reviews-product-id=\"shopify-7518063427742\" data-oke-rendered=\"\"><div data-oke-reviews-version=\"0.70.22\" data-oke-container=\"\" class=\"okeReviews !bg-white !p-0 \">\n<div class=\"js-oke-widgetSize oke-is-large\">\n<div class=\"oke-w-header\"><div class=\"oke-w-header-content oke-w-header-content--verticalAlignTop oke-w-header-content--spaceBetween\"><div role=\"region\" class=\"oke-w-header-content-block oke-w-header-content-block--full oke-w-header-content-block--center\">\n<div class=\"oke-w-header-content-module oke-w-header-content-module--center\">\n<div class=\"oke-w-ratingAverageModule oke-w-ratingAverageModule--oneLine oke-w-ratingAverageModule--center\">\n<div class=\"oke-w-ratingAverageModule-rating\">\n<span class=\"oke-w-ratingAverageModule-rating-average\"> 4.4 </span><span class=\"oke-w-ratingAverageModule-rating-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 88.9425%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 4.4 out of 5 stars</span>\n</div></span>\n</div>\n<div class=\"oke-w-ratingAverageModule-count\"> Based on 6,119 reviews </div>\n</div>\n<!----><!----><!----><!----><!----><!---->\n</div>\n<div class=\"oke-w-header-content-module oke-w-header-content-module--center\">\n<!----><div class=\"oke-w-breakdownModule oke-w-breakdownModule--contain\"><div class=\"oke-w-breakdownModule-distribution\">\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-label\">\n<span class=\"oke-w-breakdownModule-distribution-label-number\"> 5 </span><span class=\"oke-w-breakdownModule-distribution-label-star\"><div class=\"oke-stars\">\n<svg height=\"14\" viewbox=\"0 0 14.6 14\" aria-hidden=\"true\" style=\"overflow: visible;\"><use href=\"#oke-star-filled\"></use></svg><!----><span class=\"oke-a11yText\">Rated  out of 5 stars</span>\n</div></span>\n</div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-bar\" style=\"background-color: rgb(217, 217, 217);\"><div class=\"oke-w-breakdownModule-distribution-bar-fill\" style=\"width: 68.8838%; background-color: rgb(115, 152, 74);\"></div></div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-count\"> 4.2k </div>\n<span class=\"oke-a11yText\"> Total 5 star reviews: 4.2k </span><div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-label\">\n<span class=\"oke-w-breakdownModule-distribution-label-number\"> 4 </span><span class=\"oke-w-breakdownModule-distribution-label-star\"><div class=\"oke-stars\">\n<svg height=\"14\" viewbox=\"0 0 14.6 14\" aria-hidden=\"true\" style=\"overflow: visible;\"><use href=\"#oke-star-filled\"></use></svg><!----><span class=\"oke-a11yText\">Rated  out of 5 stars</span>\n</div></span>\n</div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-bar\" style=\"background-color: rgb(217, 217, 217);\"><div class=\"oke-w-breakdownModule-distribution-bar-fill\" style=\"width: 13.9402%; background-color: rgb(115, 152, 74);\"></div></div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-count\"> 853 </div>\n<span class=\"oke-a11yText\"> Total 4 star reviews: 853 </span><div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-label\">\n<span class=\"oke-w-breakdownModule-distribution-label-number\"> 3 </span><span class=\"oke-w-breakdownModule-distribution-label-star\"><div class=\"oke-stars\">\n<svg height=\"14\" viewbox=\"0 0 14.6 14\" aria-hidden=\"true\" style=\"overflow: visible;\"><use href=\"#oke-star-filled\"></use></svg><!----><span class=\"oke-a11yText\">Rated  out of 5 stars</span>\n</div></span>\n</div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-bar\" style=\"background-color: rgb(217, 217, 217);\"><div class=\"oke-w-breakdownModule-distribution-bar-fill\" style=\"width: 7.53391%; background-color: rgb(115, 152, 74);\"></div></div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-count\"> 461 </div>\n<span class=\"oke-a11yText\"> Total 3 star reviews: 461 </span><div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-label\">\n<span class=\"oke-w-breakdownModule-distribution-label-number\"> 2 </span><span class=\"oke-w-breakdownModule-distribution-label-star\"><div class=\"oke-stars\">\n<svg height=\"14\" viewbox=\"0 0 14.6 14\" aria-hidden=\"true\" style=\"overflow: visible;\"><use href=\"#oke-star-filled\"></use></svg><!----><span class=\"oke-a11yText\">Rated  out of 5 stars</span>\n</div></span>\n</div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-bar\" style=\"background-color: rgb(217, 217, 217);\"><div class=\"oke-w-breakdownModule-distribution-bar-fill\" style=\"width: 3.95489%; background-color: rgb(115, 152, 74);\"></div></div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-count\"> 242 </div>\n<span class=\"oke-a11yText\"> Total 2 star reviews: 242 </span><div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-label\">\n<span class=\"oke-w-breakdownModule-distribution-label-number\"> 1 </span><span class=\"oke-w-breakdownModule-distribution-label-star\"><div class=\"oke-stars\">\n<svg height=\"14\" viewbox=\"0 0 14.6 14\" aria-hidden=\"true\" style=\"overflow: visible;\"><use href=\"#oke-star-filled\"></use></svg><!----><span class=\"oke-a11yText\">Rated  out of 5 stars</span>\n</div></span>\n</div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-bar\" style=\"background-color: rgb(217, 217, 217);\"><div class=\"oke-w-breakdownModule-distribution-bar-fill\" style=\"width: 5.6872%; background-color: rgb(115, 152, 74);\"></div></div>\n<div aria-hidden=\"true\" class=\"oke-w-breakdownModule-distribution-count\"> 348 </div>\n<span class=\"oke-a11yText\"> Total 1 star reviews: 348 </span>\n</div></div>\n<!----><!----><!----><!----><!---->\n</div>\n</div></div></div>\n<!----><div class=\"oke-w-main\"><div id=\"reviews-panel-ea7e32e3-e7e1-4fda-92b4-f1c1a24a84cb\" role=\"tabpanel\" class=\"oke-w-panel\">\n<div class=\"oke-w-reviewsTab\"><div class=\"oke-w-reviews\">\n<div class=\"oke-w-reviews-head\">\n<!----><!----><div class=\"oke-w-reviews-writeReview\"><a href=\"https://okendo.reviews/?subscriberId=c05db6fc-7546-4a43-bce4-026a2cc48637&amp;productId=shopify-7518063427742&amp;locale=en\" target=\"_blank\" rel=\"noopener\" class=\"oke-w-writeReview oke-button\"> Write a Review <span class=\"oke-a11yText\">(Opens in a new window)</span></a></div>\n</div>\n<div class=\"oke-w-reviews-controls\">\n<div class=\"oke-w-reviews-count\"> 6,119 reviews </div>\n<div class=\"oke-w-reviews-sort\"><div class=\"oke-sortSelect\" medialayout=\"hidden\">\n<label for=\"oke-sortSelect--reviews\" class=\"oke-sortSelect-label\"> Sort </label><select id=\"oke-sortSelect--reviews\" class=\"oke-sortSelect-sort oke-select\"><!----><option value=\"date desc\">Most Recent</option>\n<option value=\"date asc\">Oldest</option>\n<option value=\"helpful desc\">Most Helpful</option>\n<!----><option value=\"rating desc\" selected>Highest Rating</option>\n<option value=\"rating asc\">Lowest Rating</option>\n<option value=\"unhelpful desc\">Least Helpful</option></select>\n</div></div>\n</div>\n<div class=\"oke-w-reviews-main oke-w-reviews-main--nav-divider\">\n<ul class=\"oke-w-reviews-list\" widgetwidth=\"1745\" canloadmore=\"true\">\n<li class=\"oke-w-reviews-list-item\"><div class=\"oke-w-review oke-w-review--minimalBorders\">\n<div class=\"oke-w-review-side\">\n<div role=\"region\" tabindex=\"0\" class=\"oke-w-review-reviewer\">\n<div class=\"oke-w-reviewer\">\n<!----><div>\n<div class=\"oke-w-reviewer-identity\">\n<strong class=\"oke-w-reviewer-name\"> Melissa T. </strong><!---->\n</div>\n<div class=\"oke-w-reviewer-verified\"> Verified Buyer <span class=\"oke-w-reviewer-verified-icon\"></span>\n</div>\n<!---->\n</div>\n</div>\n<!---->\n</div>\n<!----><div class=\"oke-w-review-side-expandContent\">\n<!----><div class=\"oke-w-review-recommendation\"><div class=\"oke-w-reviewerRecommendation oke-w-reviewerRecommendation--yes\"><span class=\"oke-w-reviewerRecommendation-text\">I recommend this product</span></div></div>\n<!---->\n</div>\n</div>\n<div class=\"oke-w-review-main\">\n<div class=\"oke-w-review-content\"><div class=\"oke-reviewContainer\">\n<div class=\"oke-reviewContent oke-reviewContent--left\">\n<div class=\"oke-reviewContent-top\">\n<div class=\"oke-reviewContent-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 100%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 5 out of 5 stars</span>\n</div></div>\n<div class=\"oke-reviewContent-date\"><span>1 month ago</span></div>\n</div>\n<div role=\"heading\" aria-level=\"3\" class=\"oke-reviewContent-title oke-title\">Will do this again! </div>\n<div class=\"oke-reviewContent-body oke-bodyText\"><p>It took 4 days but it worked!</p></div>\n<!----><button type=\"button\" class=\"oke-reviewContent-readMore oke-readMore\"><span class=\"oke-reviewContent-readMore-text oke-bodyText\">Read More</span><!----></button>\n</div>\n<!---->\n</div></div>\n<!----><!----><div class=\"oke-w-review-footer\">\n<div class=\"oke-footerBadges\">\n<!----><!----><!---->\n</div>\n<div class=\"oke-w-review-helpful\"><div class=\"oke-helpful\">\n<span class=\"oke-helpful-label\">Was this helpful?</span><div class=\"oke-helpful-vote\">\n<button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--positive\"><span id=\"oke-helpful-vote-counter-positive-3be854a1-c861-49ac-920b-357e547cd3cd\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">Yes, this review was helpful</span> 0 <span class=\"oke-a11yText\">people voted yes</span></span></button><button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--negative\"><span id=\"oke-helpful-vote-counter-negative-3be854a1-c861-49ac-920b-357e547cd3cd\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">No, this review was not helpful</span> 0 <span class=\"oke-a11yText\">people voted no</span></span></button>\n</div>\n</div></div>\n</div>\n<!---->\n</div>\n</div></li>\n<li class=\"oke-w-reviews-list-item\"><div class=\"oke-w-review oke-w-review--minimalBorders\">\n<div class=\"oke-w-review-side\">\n<div role=\"region\" tabindex=\"0\" class=\"oke-w-review-reviewer\">\n<div class=\"oke-w-reviewer\">\n<!----><div>\n<div class=\"oke-w-reviewer-identity\">\n<strong class=\"oke-w-reviewer-name\"> MaryBeth Z. </strong><!---->\n</div>\n<div class=\"oke-w-reviewer-verified\"> Verified Buyer <span class=\"oke-w-reviewer-verified-icon\"></span>\n</div>\n<!---->\n</div>\n</div>\n<!---->\n</div>\n<!----><div class=\"oke-w-review-side-expandContent\">\n<!----><div class=\"oke-w-review-recommendation\"><div class=\"oke-w-reviewerRecommendation oke-w-reviewerRecommendation--yes\"><span class=\"oke-w-reviewerRecommendation-text\">I recommend this product</span></div></div>\n<!---->\n</div>\n</div>\n<div class=\"oke-w-review-main\">\n<div class=\"oke-w-review-content\"><div class=\"oke-reviewContainer\">\n<div class=\"oke-reviewContent oke-reviewContent--left\">\n<div class=\"oke-reviewContent-top\">\n<div class=\"oke-reviewContent-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 100%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 5 out of 5 stars</span>\n</div></div>\n<div class=\"oke-reviewContent-date\"><span>1 month ago</span></div>\n</div>\n<div role=\"heading\" aria-level=\"3\" class=\"oke-reviewContent-title oke-title\">Great stuff!</div>\n<div class=\"oke-reviewContent-body oke-bodyText\"><p>Since I have been doing IF, getting thru this was not bad. Did not suffer from headaches or great hunger. </p></div>\n<!----><button type=\"button\" class=\"oke-reviewContent-readMore oke-readMore\"><span class=\"oke-reviewContent-readMore-text oke-bodyText\">Read More</span><!----></button>\n</div>\n<!---->\n</div></div>\n<!----><!----><div class=\"oke-w-review-footer\">\n<div class=\"oke-footerBadges\">\n<!----><!----><!---->\n</div>\n<div class=\"oke-w-review-helpful\"><div class=\"oke-helpful\">\n<span class=\"oke-helpful-label\">Was this helpful?</span><div class=\"oke-helpful-vote\">\n<button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--positive\"><span id=\"oke-helpful-vote-counter-positive-506b4515-7e58-449e-8850-6eeb9e8747a6\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">Yes, this review was helpful</span> 0 <span class=\"oke-a11yText\">people voted yes</span></span></button><button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--negative\"><span id=\"oke-helpful-vote-counter-negative-506b4515-7e58-449e-8850-6eeb9e8747a6\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">No, this review was not helpful</span> 0 <span class=\"oke-a11yText\">people voted no</span></span></button>\n</div>\n</div></div>\n</div>\n<!---->\n</div>\n</div></li>\n<li class=\"oke-w-reviews-list-item\"><div class=\"oke-w-review oke-w-review--minimalBorders\">\n<div class=\"oke-w-review-side\">\n<div role=\"region\" tabindex=\"0\" class=\"oke-w-review-reviewer\">\n<div class=\"oke-w-reviewer\">\n<!----><div>\n<div class=\"oke-w-reviewer-identity\">\n<strong class=\"oke-w-reviewer-name\"> roxanne y. </strong><!---->\n</div>\n<div class=\"oke-w-reviewer-verified\"> Verified Buyer <span class=\"oke-w-reviewer-verified-icon\"></span>\n</div>\n<!---->\n</div>\n</div>\n<!---->\n</div>\n<!----><div class=\"oke-w-review-side-expandContent\">\n<!----><div class=\"oke-w-review-recommendation\"><div class=\"oke-w-reviewerRecommendation oke-w-reviewerRecommendation--yes\"><span class=\"oke-w-reviewerRecommendation-text\">I recommend this product</span></div></div>\n<!---->\n</div>\n</div>\n<div class=\"oke-w-review-main\">\n<div class=\"oke-w-review-content\"><div class=\"oke-reviewContainer\">\n<div class=\"oke-reviewContent oke-reviewContent--left\">\n<div class=\"oke-reviewContent-top\">\n<div class=\"oke-reviewContent-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 100%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 5 out of 5 stars</span>\n</div></div>\n<div class=\"oke-reviewContent-date\"><span>1 month ago</span></div>\n</div>\n<div role=\"heading\" aria-level=\"3\" class=\"oke-reviewContent-title oke-title\">love the support!</div>\n<div class=\"oke-reviewContent-body oke-bodyText\"><p>I love the support that is given with the proton fast</p></div>\n<!----><button type=\"button\" class=\"oke-reviewContent-readMore oke-readMore\"><span class=\"oke-reviewContent-readMore-text oke-bodyText\">Read More</span><!----></button>\n</div>\n<!---->\n</div></div>\n<!----><!----><div class=\"oke-w-review-footer\">\n<div class=\"oke-footerBadges\">\n<!----><!----><!---->\n</div>\n<div class=\"oke-w-review-helpful\"><div class=\"oke-helpful\">\n<span class=\"oke-helpful-label\">Was this helpful?</span><div class=\"oke-helpful-vote\">\n<button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--positive\"><span id=\"oke-helpful-vote-counter-positive-4669ec42-a250-49d1-8b0d-40a361cbc307\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">Yes, this review was helpful</span> 0 <span class=\"oke-a11yText\">people voted yes</span></span></button><button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--negative\"><span id=\"oke-helpful-vote-counter-negative-4669ec42-a250-49d1-8b0d-40a361cbc307\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">No, this review was not helpful</span> 0 <span class=\"oke-a11yText\">people voted no</span></span></button>\n</div>\n</div></div>\n</div>\n<!---->\n</div>\n</div></li>\n<li class=\"oke-w-reviews-list-item\"><div class=\"oke-w-review oke-w-review--minimalBorders\">\n<div class=\"oke-w-review-side\">\n<div role=\"region\" tabindex=\"0\" class=\"oke-w-review-reviewer\">\n<div class=\"oke-w-reviewer\">\n<!----><div>\n<div class=\"oke-w-reviewer-identity\">\n<strong class=\"oke-w-reviewer-name\"> Brianna C. </strong><!---->\n</div>\n<div class=\"oke-w-reviewer-verified\"> Verified Buyer <span class=\"oke-w-reviewer-verified-icon\"></span>\n</div>\n<!---->\n</div>\n</div>\n<!---->\n</div>\n<!----><div class=\"oke-w-review-side-expandContent\">\n<!----><div class=\"oke-w-review-recommendation\"><div class=\"oke-w-reviewerRecommendation oke-w-reviewerRecommendation--yes\"><span class=\"oke-w-reviewerRecommendation-text\">I recommend this product</span></div></div>\n<!---->\n</div>\n</div>\n<div class=\"oke-w-review-main\">\n<div class=\"oke-w-review-content\"><div class=\"oke-reviewContainer\">\n<div class=\"oke-reviewContent oke-reviewContent--left\">\n<div class=\"oke-reviewContent-top\">\n<div class=\"oke-reviewContent-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 100%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 5 out of 5 stars</span>\n</div></div>\n<div class=\"oke-reviewContent-date\"><span>1 month ago</span></div>\n</div>\n<div role=\"heading\" aria-level=\"3\" class=\"oke-reviewContent-title oke-title\">Honest Review</div>\n<div class=\"oke-reviewContent-body oke-bodyText\"><p>I’ll be honest, the only soup I truly liked was the green pea and chive soup, the rest were kinda bad. I did finish the entire 5 days and that’s when I really felt the results of the FDM diet, I lost a total of  7 lbs which felt amazing but I was able to break some of my bad food habits (which I didn’t think was possible after 5 days!) but my vices were sugar and snacks. I always had to have a little bit of chocolate after lunch and dinner, I don’t have the craving anymore and I was snacking too much. Now I’m more mindful of what I am eating and when and the fast made me realize that hunger pains are not bad, I can ignore them and not immediately reach for food, I won’t die or start binging if I don’t eat. I’m excited to see where these new revelations take me and already thinking ahead to my fast. I also found that I have a ton of energy after the fast, which I wasn’t expecting. Overall it was a positive experience, I mean it was hard and some of the food wasn’t great but it was so easy because I knew what I could eat that day and it was worth it in the end. </p></div>\n<!----><button type=\"button\" class=\"oke-reviewContent-readMore oke-readMore\"><span class=\"oke-reviewContent-readMore-text oke-bodyText\">Read More</span><!----></button>\n</div>\n<!---->\n</div></div>\n<!----><!----><div class=\"oke-w-review-footer\">\n<div class=\"oke-footerBadges\">\n<!----><!----><!---->\n</div>\n<div class=\"oke-w-review-helpful\"><div class=\"oke-helpful\">\n<span class=\"oke-helpful-label\">Was this helpful?</span><div class=\"oke-helpful-vote\">\n<button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--positive\"><span id=\"oke-helpful-vote-counter-positive-c3272e43-1191-4281-b6de-02e336011ac9\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">Yes, this review was helpful</span> 0 <span class=\"oke-a11yText\">people voted yes</span></span></button><button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--negative\"><span id=\"oke-helpful-vote-counter-negative-c3272e43-1191-4281-b6de-02e336011ac9\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">No, this review was not helpful</span> 0 <span class=\"oke-a11yText\">people voted no</span></span></button>\n</div>\n</div></div>\n</div>\n<!---->\n</div>\n</div></li>\n<li class=\"oke-w-reviews-list-item\"><div class=\"oke-w-review oke-w-review--minimalBorders\">\n<div class=\"oke-w-review-side\">\n<div role=\"region\" tabindex=\"0\" class=\"oke-w-review-reviewer\">\n<div class=\"oke-w-reviewer\">\n<!----><div>\n<div class=\"oke-w-reviewer-identity\">\n<strong class=\"oke-w-reviewer-name\"> Emelina E. </strong><!---->\n</div>\n<div class=\"oke-w-reviewer-verified\"> Verified Buyer <span class=\"oke-w-reviewer-verified-icon\"></span>\n</div>\n<!---->\n</div>\n</div>\n<!---->\n</div>\n<!----><div class=\"oke-w-review-side-expandContent\">\n<!----><div class=\"oke-w-review-recommendation\"><div class=\"oke-w-reviewerRecommendation oke-w-reviewerRecommendation--yes\"><span class=\"oke-w-reviewerRecommendation-text\">I recommend this product</span></div></div>\n<!---->\n</div>\n</div>\n<div class=\"oke-w-review-main\">\n<div class=\"oke-w-review-content\"><div class=\"oke-reviewContainer\">\n<div class=\"oke-reviewContent oke-reviewContent--left\">\n<div class=\"oke-reviewContent-top\">\n<div class=\"oke-reviewContent-stars\"><div class=\"oke-stars\">\n<!----><div class=\"oke-stars-background\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-empty\"></use><use x=\"16.155555555555555\" href=\"#oke-star-empty\"></use><use x=\"32.31111111111111\" href=\"#oke-star-empty\"></use><use x=\"48.46666666666667\" href=\"#oke-star-empty\"></use><use x=\"64.62222222222222\" href=\"#oke-star-empty\"></use></svg></div>\n<div class=\"oke-stars-foreground\" style=\"width: 100%;\"><svg height=\"18\" viewbox=\"0 0 79.22222222222221 14\" aria-hidden=\"true\" role=\"none\"><use x=\"0\" href=\"#oke-star-filled\"></use><use x=\"16.155555555555555\" href=\"#oke-star-filled\"></use><use x=\"32.31111111111111\" href=\"#oke-star-filled\"></use><use x=\"48.46666666666667\" href=\"#oke-star-filled\"></use><use x=\"64.62222222222222\" href=\"#oke-star-filled\"></use></svg></div>\n<span class=\"oke-a11yText\">Rated 5 out of 5 stars</span>\n</div></div>\n<div class=\"oke-reviewContent-date\"><span>1 month ago</span></div>\n</div>\n<div role=\"heading\" aria-level=\"3\" class=\"oke-reviewContent-title oke-title\">Prolon changed me</div>\n<div class=\"oke-reviewContent-body oke-bodyText\"><p>My attitude towards foods changed, my habits and routine changed, too, I feel like a new person, I’ll do it again to maintain my well being </p></div>\n<!----><button type=\"button\" class=\"oke-reviewContent-readMore oke-readMore\"><span class=\"oke-reviewContent-readMore-text oke-bodyText\">Read More</span><!----></button>\n</div>\n<!---->\n</div></div>\n<!----><!----><div class=\"oke-w-review-footer\">\n<div class=\"oke-footerBadges\">\n<!----><!----><!---->\n</div>\n<div class=\"oke-w-review-helpful\"><div class=\"oke-helpful\">\n<span class=\"oke-helpful-label\">Was this helpful?</span><div class=\"oke-helpful-vote\">\n<button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--positive\"><span id=\"oke-helpful-vote-counter-positive-58f11eb5-8118-416e-8424-9851fb4e36c5\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">Yes, this review was helpful</span> 0 <span class=\"oke-a11yText\">people voted yes</span></span></button><button type=\"button\" tabindex=\"0\" class=\"oke-helpful-vote-button oke-helpful-vote-button--negative\"><span id=\"oke-helpful-vote-counter-negative-58f11eb5-8118-416e-8424-9851fb4e36c5\" class=\"oke-helpful-vote-counter\"><span class=\"oke-a11yText\">No, this review was not helpful</span> 0 <span class=\"oke-a11yText\">people voted no</span></span></button>\n</div>\n</div></div>\n</div>\n<!---->\n</div>\n</div></li>\n</ul>\n<!----><div class=\"oke-w-reviews-alerts\">\n<div aria-hidden=\"true\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\" class=\"oke-alert oke-alert--bottom\"><div class=\"oke-alert-inner\"> Loading... </div></div>\n<div aria-hidden=\"true\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\" class=\"oke-alert oke-alert--top\"><div class=\"oke-alert-inner\"> Loading... </div></div>\n</div>\n</div>\n<div class=\"oke-w-reviews-footer\"><div class=\"oke-showMore\"><a href=\"?okeReviewsNextUrl=https%253A%252F%252F5i27ysv3j8.execute-api.us-west-2.amazonaws.com%252Fprod%252Fstores%252Fc05db6fc-7546-4a43-bce4-026a2cc48637%252Fproducts%252Fshopify-7518063427742%252Freviews%253Flimit%253D5%2526orderBy%253Drating%252520desc%2526lastEvaluated%253D%25257B%252522subscriberId%252522%25253A%252522c05db6fc-7546-4a43-bce4-026a2cc48637%252522%25252C%252522subscriberId_productId%252522%25253A%252522c05db6fc-7546-4a43-bce4-026a2cc48637%25253Ashopify-7518063427742%252522%25252C%252522reviewId%252522%25253A%25252258f11eb5-8118-416e-8424-9851fb4e36c5%252522%25252C%252522_rating_dateCreated%252522%25253A%2525225%25253A2024-09-15T00%25253A36%25253A59.407Z%252522%25257D&amp;okeReviewsPageNum=2\" tabindex=\"0\" class=\"oke-showMore-button oke-button\"><span class=\"oke-showMore-button-text oke-button-text\"> Show More </span></a></div></div>\n<span role=\"status\" aria-live=\"polite\" class=\"oke-a11yText\">Reviews Loaded</span><span role=\"status\" aria-live=\"polite\" class=\"oke-a11yText\">Reviews Added</span>\n</div></div>\n<!---->\n</div></div>\n</div>\n<script type=\"application/json\" data-oke-metafield-data=\"\"> {\"reviews\":[{\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\",\"reviewId\":\"3be854a1-c861-49ac-920b-357e547cd3cd\",\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"productId\":\"shopify-7518063427742\",\"body\":\"It took 4 days but it worked!\",\"dateCreated\":\"2024-09-16T01:54:19.887Z\",\"dateUpdated\":\"2024-09-16T01:54:19.887Z\",\"helpfulCount\":0,\"isRecommended\":true,\"languageCode\":\"en\",\"productHandle\":\"prolon-offer\",\"productImageUrl\":\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPSquareImages-ProLon_31170d58-5801-4256-aa4d-6bfc99b114cf_x280.png?v=1706264659\",\"productName\":\"Prolon® Nutrition Program\",\"productUrl\":\"//prolonlife.com/products/prolon-offer\",\"productVariantName\":\"Original / One Time Order\",\"rating\":5,\"reviewer\":{\"displayName\":\"Melissa T.\",\"isVerified\":true},\"isIncentivized\":false,\"status\":\"approved\",\"title\":\"Will do this again! \",\"unhelpfulCount\":0,\"variantId\":\"42690698576030\"},{\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\",\"reviewId\":\"506b4515-7e58-449e-8850-6eeb9e8747a6\",\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"productId\":\"shopify-7518063427742\",\"body\":\"Since I have been doing IF, getting thru this was not bad. Did not suffer from headaches or great hunger. \",\"dateCreated\":\"2024-09-15T14:59:20.833Z\",\"dateUpdated\":\"2024-09-15T14:59:20.833Z\",\"helpfulCount\":0,\"isRecommended\":true,\"languageCode\":\"en\",\"productHandle\":\"prolon-offer\",\"productImageUrl\":\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPSquareImages-ProLon_31170d58-5801-4256-aa4d-6bfc99b114cf_x280.png?v=1706264659\",\"productName\":\"Prolon® Nutrition Program\",\"productUrl\":\"//prolonlife.com/products/prolon-offer\",\"productVariantName\":\"Original / Subscribe & Save\",\"rating\":5,\"reviewer\":{\"displayName\":\"MaryBeth Z.\",\"isVerified\":true},\"isIncentivized\":false,\"status\":\"approved\",\"title\":\"Great stuff!\",\"unhelpfulCount\":0,\"variantId\":\"42690698543262\"},{\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\",\"reviewId\":\"4669ec42-a250-49d1-8b0d-40a361cbc307\",\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"productId\":\"shopify-7518063427742\",\"body\":\"I love the support that is given with the proton fast\",\"dateCreated\":\"2024-09-15T07:00:27.177Z\",\"dateUpdated\":\"2024-09-15T07:00:27.177Z\",\"helpfulCount\":0,\"isRecommended\":true,\"languageCode\":\"en\",\"productHandle\":\"prolon-offer\",\"productImageUrl\":\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPSquareImages-ProLon_31170d58-5801-4256-aa4d-6bfc99b114cf_x280.png?v=1706264659\",\"productName\":\"Prolon® Nutrition Program\",\"productUrl\":\"//prolonlife.com/products/prolon-offer\",\"productVariantName\":\"Gen3 / One Time Order\",\"rating\":5,\"reviewer\":{\"displayName\":\"roxanne y.\",\"isVerified\":true},\"isIncentivized\":false,\"status\":\"approved\",\"title\":\"love the support!\",\"unhelpfulCount\":0,\"variantId\":\"42690698510494\"},{\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\",\"reviewId\":\"c3272e43-1191-4281-b6de-02e336011ac9\",\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"productId\":\"shopify-7518063427742\",\"body\":\"I’ll be honest, the only soup I truly liked was the green pea and chive soup, the rest were kinda bad. I did finish the entire 5 days and that’s when I really felt the results of the FDM diet, I lost a total of  7 lbs which felt amazing but I was able to break some of my bad food habits (which I didn’t think was possible after 5 days!) but my vices were sugar and snacks. I always had to have a little bit of chocolate after lunch and dinner, I don’t have the craving anymore and I was snacking too much. Now I’m more mindful of what I am eating and when and the fast made me realize that hunger pains are not bad, I can ignore them and not immediately reach for food, I won’t die or start binging if I don’t eat. I’m excited to see where these new revelations take me and already thinking ahead to my fast. I also found that I have a ton of energy after the fast, which I wasn’t expecting. Overall it was a positive experience, I mean it was hard and some of the food wasn’t great but it was so easy because I knew what I could eat that day and it was worth it in the end. \",\"dateCreated\":\"2024-09-15T02:52:23.960Z\",\"dateUpdated\":\"2024-09-15T02:52:23.960Z\",\"helpfulCount\":0,\"isRecommended\":true,\"languageCode\":\"en\",\"productHandle\":\"prolon-offer\",\"productImageUrl\":\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPSquareImages-ProLon_31170d58-5801-4256-aa4d-6bfc99b114cf_x280.png?v=1706264659\",\"productName\":\"Prolon® Nutrition Program\",\"productUrl\":\"//prolonlife.com/products/prolon-offer\",\"productVariantName\":\"Gen3 / One Time Order\",\"rating\":5,\"reviewer\":{\"displayName\":\"Brianna C.\",\"isVerified\":true},\"isIncentivized\":false,\"status\":\"approved\",\"title\":\"Honest Review\",\"unhelpfulCount\":0,\"variantId\":\"42690698510494\"},{\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\",\"reviewId\":\"58f11eb5-8118-416e-8424-9851fb4e36c5\",\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"productId\":\"shopify-7518063427742\",\"body\":\"My attitude towards foods changed, my habits and routine changed, too, I feel like a new person, I’ll do it again to maintain my well being \",\"dateCreated\":\"2024-09-15T00:36:59.407Z\",\"dateUpdated\":\"2024-09-15T00:36:59.407Z\",\"helpfulCount\":0,\"isRecommended\":true,\"languageCode\":\"en\",\"media\":[{\"largePortraitThumbnailUrl\":\"https://d4yxl4pe8dqlj.cloudfront.net/images/c05db6fc-7546-4a43-bce4-026a2cc48637/6bec256a-b282-43f4-b6d5-260ca390b006_thumbnail_portrait_large.jpg\",\"streamId\":\"6bec256a-b282-43f4-b6d5-260ca390b006\",\"fullSizeUrl\":\"https://d4yxl4pe8dqlj.cloudfront.net/images/c05db6fc-7546-4a43-bce4-026a2cc48637/6bec256a-b282-43f4-b6d5-260ca390b006_full_size.jpg\",\"largeUrl\":\"https://d4yxl4pe8dqlj.cloudfront.net/images/c05db6fc-7546-4a43-bce4-026a2cc48637/6bec256a-b282-43f4-b6d5-260ca390b006_large.jpg\",\"dynamicKey\":\"c05db6fc-7546-4a43-bce4-026a2cc48637/6bec256a-b282-43f4-b6d5-260ca390b006\",\"type\":\"image\",\"thumbnailUrl\":\"https://d4yxl4pe8dqlj.cloudfront.net/images/c05db6fc-7546-4a43-bce4-026a2cc48637/6bec256a-b282-43f4-b6d5-260ca390b006_thumbnail_120_120.jpg\"}],\"productHandle\":\"prolon-offer\",\"productImageUrl\":\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/ProLonLifePDPSquareImages-ProLon_31170d58-5801-4256-aa4d-6bfc99b114cf_x280.png?v=1706264659\",\"productName\":\"Prolon® Nutrition Program\",\"productUrl\":\"//prolonlife.com/products/prolon-offer\",\"productVariantName\":\"Gen3 / One Time Order\",\"rating\":5,\"reviewer\":{\"displayName\":\"Emelina E.\",\"isVerified\":true},\"isIncentivized\":false,\"status\":\"approved\",\"title\":\"Prolon changed me\",\"unhelpfulCount\":0,\"variantId\":\"42690698510494\"}],\"reviewsNextUrl\":\"https://5i27ysv3j8.execute-api.us-west-2.amazonaws.com/prod/stores/c05db6fc-7546-4a43-bce4-026a2cc48637/products/shopify-7518063427742/reviews?limit=5&orderBy=rating%20desc&lastEvaluated=%7B%22subscriberId%22%3A%22c05db6fc-7546-4a43-bce4-026a2cc48637%22%2C%22subscriberId_productId%22%3A%22c05db6fc-7546-4a43-bce4-026a2cc48637%3Ashopify-7518063427742%22%2C%22reviewId%22%3A%2258f11eb5-8118-416e-8424-9851fb4e36c5%22%2C%22_rating_dateCreated%22%3A%225%3A2024-09-15T00%3A36%3A59.407Z%22%7D\",\"areReviewsGrouped\":false,\"media\":[],\"reviewAggregate\":{\"dateUpdated\":\"2024-09-16T17:41:10.404Z\",\"mediaCount\":10,\"productId\":\"shopify-7518063427742\",\"productName\":\"Prolon® Nutrition Program\",\"ratingAndReviewCount\":6119,\"ratingAndReviewCountByLevel\":{\"level1Count\":348,\"level2Count\":242,\"level3Count\":461,\"level4Count\":853,\"level5Count\":4215},\"ratingAndReviewValuesTotal\":26702,\"ratingCount\":0,\"ratingCountByLevel\":{},\"ratingValuesTotal\":0,\"recommendationCount\":5068,\"replyCount\":3751,\"replyWordsTotal\":119651,\"reviewCount\":6119,\"reviewCountByLevel\":{\"level1Count\":348,\"level2Count\":242,\"level3Count\":461,\"level4Count\":853,\"level5Count\":4215},\"reviewRatingValuesTotal\":26702,\"reviewWordsTotal\":281698,\"subscriberId_productId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637:shopify-7518063427742\",\"subscriberId\":\"c05db6fc-7546-4a43-bce4-026a2cc48637\"},\"questionCount\":0,\"productAttributes\":[]} </script>\n</div></div>\n\n\n</div>\n  \n\n\n\n\n</div>",
+            "text": ""
+          }
+        },
+        "questions_block_wfPP6b": {
+          "type": "questions_block",
+          "settings": {
+            "question": "The Science of Prolon",
+            "headingtext": "The Science of Prolon",
+            "content": "<div class=\"flex items-center  flex-col-reverse md:flex-row-reverse\">\n    <div class=\"w-full md:w-[50%] px-[20px]\">\n      <div class=\"!w-full relative\">\n        <img class=\"relative !h-full !w-full max-h-[585px]  !delay-300   !object-contain \" src=\"https://prolonlife.com/cdn/shop/files/assets_539e4c6b549049fdb80b37c4b87772db_4f1f77f2758748dda169802fae03c5f9_1400x.jpg?v=1694087583\" alt=\"Feature Image 1\"> \n      </div>\n    </div>\n    <div class=\"w-full md:w-[50%] px-[20px] mb-[40px] md:mb-0\">\n<h2 class=\"\n          mb-[20px] text-[30px] leading-[1.2] font-normal \n          !delay-200\n        \">\n        Backed by &amp; continually advancing through science.\n      </h2>\n      <p class=\"mb-[20px] text-[16px] md:text-[18px] text-black font-normal hero__animation-contents !delay-500\">\n        </p>\n<div>\nAfter two decades and tens of millions in Research &amp; Development, L-Nutra (a leading Nutri-tech company) and The University of Southern California, led by Dr. Valter Longo were able to identify cellular radars that detect nutrition, called Nutrient Sensing Pathways, and to develop a 5 day Nutrition Program that nourishes the body while the food sensing pathways are not triggered and therefore providing the prolonged fasting benefits.\n        <br><br> \nProlon provides the body with healthy, plant-based ingredients that have been scientifically demonstrated to provide the body with optimal nourishment while not activating the key pro-aging pathways, or food sensing pathways — pathways which are activated by normal diets.\n        <br><br> \n        </div>\n      <p></p>\n      <div class=\"flex flex-wrap pt-[20px] hero__animation-contents !delay-700\"></div>\n    </div>\n  </div>",
+            "text": ""
+          }
+        },
+        "questions_block_d8JWMK": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Nutritional Facts",
+            "headingtext": "Nutritional Facts",
+            "content": "<div class=\"rte rte--nomargin w-full\">\n        <style><!--\n.acc-site-new{\n  position:relative;\n  margin-bottom:25px;\n}\n.accordion-site {\n  min-height: 0;\n  min-width: 220px;\n  width: 100%;\n  height: 100%;\n  margin: 0px!important;\n}\n.accordion-site .ac-label {\n  font-family: 'Harmonia sans';\n  padding: 20px 20px;\n  position: relative;\n  display: block;\n  height: auto;\n  cursor: pointer;\n  color: black;\n  line-height: 33px;\n  font-size: 19px;\n  background: #F6F6F6;\n  margin: 0px;\n  text-align: center;\n}\n\n.accordion-site input + .ac-label  {\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  -ms-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n.accordion-site input.ac-input {\n  display: none;\n}\n.accordion-site .article {\n  background: rgb(240, 240, 240);\n  overflow: hidden;\n  height: 0px;\n  max-height: auto;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  -ms-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n.accordion-site input:checked ~ .article i {\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\n.accordion-site input:checked ~ .article.ac-content {\n  height: auto;\n  background-color:white;\n  padding: 20px 0px;\n}\n.accordion-site input:checked ~ .ac-label:after{\n  content:\"-\"\n}\n\n@media (max-width: 550px) {\n  .accordion-site .ac-label {\n  font-family: 'Harmonia sans';\n  padding: 15px 20px;\n  position: relative;\n  display: block;\n  height: auto;\n  cursor: pointer;\n  color: black;\n  font-size: 12px;\n  background: #F6F6F6;\n}\n}\n\n.ac-label:after{\n      content: \"+\";\n      width: 1em;\n      height: 1em;\n      text-align: center;\n      transition: all .35s;\n      font-size: 20px;\n      font-weight: 400;\n      font-family: 'Brandon';\n      position:absolute;\n      right:10px;\n}\n\n.prolon-acc .accordion {\n    margin:0 auto;\n    max-width: 800px;\n}\n\n.prolon-acc .question {  \n    padding:10px 0px;\n    padding-bottom:20px;\n    text-transform: uppercase;\n    margin-bottom: 10px;\n    position:relative;\n    font-family:futura;\n    cursor: help;\n    border-bottom:1px solid #d3d3d3;\n    cursor:pointer;\n  text-align:center;\n}\n\n.prolon-acc .question:after {\n    content: \"+\";\n    color:black;\n  position:absolute;\n  right:20px;\n}\n\n.prolon-acc .question.active:after {\n    content: \"-\";\n    color:black;\n  position:absolute;\n  right:20px;\n}\n\n.prolon-acc .answer {\n    display: none;\n}\n\n.prolon-acc .answer p{\n  font-family:futura;\n  font-size:16px;\n  font-weight:500;\n}\n\n.prolon-acc .active+.answer {\n    display: block;\n}\n.prolon-acc .faqs-title{\n  display:flex;\n  justify-content:center;\n  align-items:center;\n  text-align:center;\n}\n.prolon-acc .faqs-title span{\n  font-family:futura;\n  font-size:30px;\n  padding:30px 0px;\n}\n.prolon-acc{\n  padding:10px;\n}\n.new__prolon_row{\ndisplay:grid;\ngrid-template-columns:1fr 1fr 1fr 1fr;\nwidth:100%;\n}\n.section .column6 {\n  width: 100%;\n  float: unset;\n  }.prolon-acc img:hover {\n    transform: scale(1.5);\n    transition: all .31s ease;\n    cursor: pointer;\n     background:white;\nz-index: 9;\n    position: relative;\n}\n@media(max-width:767px){\n.new__prolon_row{\ndisplay:grid;\ngrid-template-columns:1fr 1fr;\nwidth:100%;\n}\n}\n--></style>\n<div class=\"section\">\n<div class=\"row\">\n<div class=\"prolon-acc\">\n<div class=\"accordion\">\n<div class=\"question\" id=\"section1\">Soups</div>\n<div class=\"answer\">\n<div class=\"row new__prolon_row\">\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Vegetable_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Tomato_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Mushroom_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_MinQuinoa_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Soup_Minestrone_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/white_bean_soup_SV2.png?v=1626243158\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/black_bean_soup_SV2.png?v=1626243157\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squach_soup_SV2.png?v=1626243158\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/butternut_squash_quinoa_soup_SV2.png?v=1626243158\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/23_SOUPMIX_LENTILCURRY.jpg?v=1675885991\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/23_SOUPMIX_REDPEPPER-ONION.jpg?v=1675885991\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/23_SOUPMIX_Chickpea_leeks.jpg?v=1675885990\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/23_GreenPea_Chives.jpg?v=1675885990\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/23_SOUPMIX_carrot_ginger.jpg?v=1675885990\"></div>\n</div>\n</div>\n<div class=\"question\" id=\"section2\">Snacks</div>\n<div class=\"answer\">\n<div class=\"row new__prolon_row\">\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Nut-Based_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/kale_crackers_SV1.png?v=1626242794\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Bar_Choco_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/22_PL_Nutrition_Facts-AlmondKale-03.png?v=1641919104\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_Herbs_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Olives_SeaSalt_Nutrition_Facts.png?v=1641376531\"></div>\n</div>\n</div>\n<div class=\"question\" id=\"section3\">Drinks</div>\n<div class=\"answer\">\n<div class=\"row new__prolon_row\">\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Berry_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_L-Drink_Orange_Nutrition_Facts.png?v=1641376531\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/22_PL_Teas_Nutrition_Facts.png?v=1641376531\"></div>\n</div>\n</div>\n<div class=\"question\" id=\"section4\">Supplements</div>\n<div class=\"answer\">\n<div class=\"row new__prolon_row\">\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/ProLon_Ingredients_-_NR1.jpg?v=1650376162\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/NR1_DS1018_-_ProLon.png?v=1650376790\"></div>\n<div class=\"column6\"><img src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/Algal_Oil_DS1023_-_ProLon_fe7b7f62-c641-4811-9821-f3dff54ba68f.png?v=1680100543\"></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<script>// <![CDATA[\ntry{\n$(\".question\").click(toggle);\n\nfunction toggle() {\n    this.classList.toggle(\"active\")\n  \ndocument.querySelectorAll(\".question\").forEach(question => {\n        if (question != this) {\n            question.classList.remove(\"active\")\n        }\n    })\n}\n\n}\ncatch(ex){}\n// ]]></script>\n      </div>",
+            "text": ""
+          }
+        },
+        "questions_block_GUcfiW": {
+          "type": "questions_block",
+          "settings": {
+            "question": "HSA/FSA Eligible",
+            "headingtext": "HSA/FSA Eligible",
+            "content": "<div class=\"flex bg-[#204138] text-white py-6 px-4 justify-between md:flex-nowrap flex-wrap gap-4\">\n  \n<div class=\"flex flex-col gap-4 text-[15px] text-justify  md:max-w-[50%]\">\n  <h1 class=\"text-[18px]\">Pay for your Prolon purchase with qualifying <b class=\"text-[#57a411]\">HSA/FSA funds</b>\n</h1>\n<hr class=\"my-2\">\n  Prolon is eligible for purchase and reimbursement with HSA/FSA — partnered with TrueMed. <br><br>\n  Programs like health savings accounts (HSA) and flexible spending accounts (FSA) enable individuals to allocate pre-tax money for qualified healthcare expenses. Prolon has partnered with TrueMed, allowing customers to use their HSA/FSA funds to purchase our science backed products.\n  <a href=\"https://prolonlife.com/pages/fsa-hsa-faqs\" class=\"px-3 py-1 text-[12px] border-2 border-[#57a411] max-w-[120px] text-center  my-2   text-[#57a411] font-semibold rounded-full hover:bg-[#57a411] hover:text-white transition duration-300\">\n   LEARN MORE\n</a>\n\n</div>\n<div class=\"flex items-center md:max-w-[50%] mx-auto justify-center\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0508/0625/9870/files/Untitled.png?v=1749141982\" alt=\"border\" class=\"full md:p-0 pt-4 sm:max-w-[400px]  md:max-w-[300px]   mx-auto\">\n</div>\n</div>",
+            "text": ""
+          }
+        },
+        "questions_block_NePtFn": {
+          "type": "questions_block",
+          "settings": {
+            "question": "FAQs",
+            "headingtext": "FAQs",
+            "content": "<div class=\"w-full  \">\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n<!--           <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n            <p class=\"text-black text-[16px] font-semibold\">\n                How many times do I do Prolon each year?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n<p>The amazing part about ProLon is it can easily fit into your lifestylle and is  only a 5 day change to your normal life. </p>\n<p><em>Suggested consumption by Dr. Valter Longo, head of the Longevity Institute at University of Southern California and Author of the Longevity Diet.</em></p>\n<p>• If you have a health or metabolic objective in mind and want to achieve faster the metabolic and rejuvenative successes of ProLon, then you can do ProLon every month for 3 or 4 months and then do it once every 3 months to maintain the benefits. </p>\n<p>• 2 times only per year for Healthy Aging (10 days out of 365 days!)</p>\n<p>• 3 times per year for Healthy Aging and added Weight Loss (15 days out of 365 days!)</p>\n<p>Some people do ProLon once a month for reasons that are in line with therapeutic effects of fasting that we are also researching and will launch under a dietitian guided program in 2023. </p>\n</div> -->\n          </div>\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n            <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n              <p class=\"text-black text-[16px] font-semibold\">\n                How should the Prolon program be used?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\"><p>The diet should be used for five consecutive days, after which the individual will transition on the 6th day and then resume their normal diet. The program provides a meal card that recommends how to consume the items for each day, but each day’s items can be consumed in any order you wish, as long as you only eat each day’s items during that day (do not carry them over to the next).</p></div>\n          </div>\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n            <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n              <p class=\"text-black text-[16px] font-semibold\">\n                What are the food pathways affected by Prolon?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\"><p>While there are many different signaling factors in the “nutrient-sensing pathways” involved with cellular fasting, the 3 primary nutrient-sensing pathways that ProLon and fasting down-regulate are IGF-1, mTOR, and PKA. The process is complex, and each pathway can interact with other pathways, but in general, PKA responds primarily to sugar and carbohydrates, while IGF-1 is primarily responsive to protein (and more strongly triggered by animal protein), and mTOR is triggered by IGF-1 and amino acids. Sugar and carbohydrates (and to some extent caffeine) will activate PKA. These nutrient-sensing pathways all help regulate the cells’ growth cycles and stress-resistant “fasting” state.</p></div>\n          </div>\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n            <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n              <p class=\"text-black text-[16px] font-semibold\">\n                What happens to my body during the fasting mimicking program?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\">\n<p>ProLon provides the body with a scientifically developed, naturally occurring combination of macronutrients (fats, carbohydrates, proteins) and micronutrients (essential vitamins and minerals) designed to keep the body nourished while going through the rejuvenating process of the fasting state. </p>\n<p>WHAT HAPPENS ON DAYS 1 TO 5 ON MY PROLON FAST?</p>\n<p>Day 1: Transforming to a Fasting State: Your body is transitioning to a fasting state and fat- burning mode, and begins preparation for cellular clean-up.</p>\n<p>Day 2: Fat Burning &amp; Ketogenesis: Fast Burning &amp; Ketogenesis: Fat-Burning ramps up, contributing to the initiation of ketogenesis (ketone production). By the end of this day (48 hours), ketosis may occur.</p>\n<p>Day 3: Autophagy Clean Up State: Cellular clean-up (autophagy) Fat-burning and ketone production/utilization continues and increases.</p>\n<p>Day 4: Cellular Rejuvenation:Cellular cleaning/renewal &amp; fat-burning You’re in the final stretch.</p>\n<p>Day 5: Renewal &amp; Change: Fast completed, cellular renewal continues beyond Day 5.</p>\n</div>\n          </div>\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n            <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n              <p class=\"text-black text-[16px] font-semibold\">\n                How much weight am I expect to lose?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\"><p>While the purpose of the ProLon diet is to trigger rejuvenation, weight loss may occur. Everyone is different, and weight loss depends on a number of factors. In a clinical study of participants who completed a 5-day ProLon cycle once a month for three months, the average weight loss at the end of the study was about 5.7 pounds. This was primarily abdominal fat, while lean body mass was preserved.</p></div>\n          </div>\n<div key=\"{index}\" class=\"w-full py-[10px]\">\n            <div class=\"w-full flex justify-between items-center border-b border-gray-200 p-[10px] cursor-pointer accordion-faqs-title-template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\">\n              <p class=\"text-black text-[16px] font-semibold\">\n                What is the daily caloric intake during Prolon?\n              </p>\n              <img class=\"relative w-[15px] object-contain h-[15px] faqs-close-btn\" src=\"https://cdn.shopify.com/s/files/1/0126/2921/3243/files/download-arrow.png?v=1690898524\" alt=\"{tab.question}\">\n            </div>\n            <div class=\"w-full p-[20px] text-black text-[16px] accordion-faqs-content hidden\"><p>Day 1 has about 1100 calories (kcals), while Days 2-5 have between 700 and 800 calories (kcals) per day.</p></div>\n          </div>\n</div> <script>\n  $(document).ready(function () {\n    addClassInViewSequentially('pl-wrapper-faqs');\n    var sectionId = \"template--17520515252382__ae4317b1-5640-4365-acf9-72e4b15c46d1\";\n\n    $(`.accordion-faqs-title-${sectionId}`).click(function() {\n      $(this).next('.accordion-faqs-content').toggleClass('hidden');\n      $(this).next('.accordion-faqs-content').toggleClass('active');\n      $(this).find('.faqs-close-btn').toggleClass('rotate-180');\n\n    });\n  });\n</script>--&gt;",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "questions_block_n8ewQD",
+        "questions_block_erpqkp",
+        "questions_block_Nyzm6F",
+        "questions_block_wfPP6b",
+        "questions_block_d8JWMK",
+        "questions_block_GUcfiW",
+        "questions_block_NePtFn"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".flex-initial {display: none;}",
+        ".text-\\[\\#73984A\\] {--tw-text-opacity: 1; text-transform: uppercase; color: #56a511; font-size: 16px; letter-spacing: 0.02em; font-weight: bold;}"
+      ],
+      "settings": {
+        "heading": "Prolon 5-Day Fasting Mimicking Program"
+      }
+    },
+    "ck_prolon_product_section_pl_HtK8nm": {
+      "type": "ck-prolon-product-section-pl",
+      "disabled": true,
+      "name": "ProLon Product Section - Design 1",
+      "settings": {
+        "custom_css_class": "",
+        "product": "prolon-5-day-kit",
+        "theme_option": "theme_orange",
+        "show_description": false,
+        "show_reviews": false,
+        "custom_product_title": false,
+        "sub_title": "",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option2",
+        "option_1_name": "",
+        "option_1": "subscription-widget-new-v2",
+        "option_2_name": "",
+        "option_2": "subscription-widget-new-v2",
+        "option_3_name": "",
+        "option_3": "button"
+      }
+    },
+    "dk_product_v19_b3Vamm": {
+      "type": "dk-product-v19",
+      "disabled": true,
+      "name": "dk-product",
+      "settings": {
+        "title": "ProLon® 5-day",
+        "description": "",
+        "upsell_settings": "",
+        "reverse_layout": false
+      }
+    },
+    "ck_prolon_product_section_5_phase2_cxMtUK": {
+      "type": "ck-prolon-product-section-5-phase2-april",
+      "blocks": {
+        "html_yfyjTQ": {
+          "type": "html",
+          "settings": {
+            "title": "Prolon 5-Day Program",
+            "hide_option": false,
+            "option_1": "",
+            "option_2": "",
+            "option_3": "",
+            "for_option": "1",
+            "custom_name": "<h3 class=\"button-plan-option font-bold text-md\">5-Day Fasting Kit\n</h3><p class=\"bg-prolon_secondary bg-red font-normal inline-block prolon-flavor-text px-3 md:px-4 text-[10px] text-white\"><strong>MOST POPULAR</strong>\n</p>",
+            "custom_description": "<b>Cellular Rejuvenation</b>, Healthy Aging &amp; Longevity and Metabolic Health",
+            "product_description": "<p>Prolon was designed and clinically tested by 18 global universities to nourish your body while inducing the cellular, metabolic, and emotional benefits of prolonged fasting. In three 5-day cycles of ProLon, you can fuel your body into rejuvenation, longevity, and healthy living.</p><p><br></p><ul>\n<li>Metabolic health\n</li>\n<li>Cellular Rejuvenation</li>\n<li>Fat-focused weight loss</li>\n<li>Changed relationship with food</li>\n<li>Best results &amp; successful transformations</li>\n<li class=\"cancer !hidden\"> Limited Time — Free gift of L-Pill with purchase <a href=\"#show-cancer-awareness\" onclick=\"showCancerPopup()\" class=\"underline\" style=\"\n    display: none; color: #e383bd;\n\">Learn More</a>\n</li>\n</ul> <br>"
+          }
+        },
+        "images_KBWXWh": {
+          "type": "images",
+          "settings": {
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_mrAAa3": {
+          "type": "images",
+          "settings": {
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_9aUDnk": {
+          "type": "images",
+          "settings": {
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_MXiz8x": {
+          "type": "images",
+          "settings": {
+            "media_type": "image",
+            "video_url": ""
+          }
+        },
+        "images_jcJG8e": {
+          "type": "images",
+          "settings": {
+            "media_type": "video",
+            "video_url": "https://www.youtube.com/watch?v=4LTe32ofHDI"
+          }
+        },
+        "faq_FMrEma": {
+          "type": "faq",
+          "settings": {
+            "title": "Nutritional Information",
+            "description": "<a href=\"https://cdn.shopify.com/s/files/1/0524/9898/9237/files/nutrizionali_eu_web.pdf?v=1703261940\" target=\"_blank\" download=\"Nutrition Information\" class=\"js-no-transition\" rel=\"noreferrer noopener\">Nutrition Information</a>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "html_yfyjTQ",
+        "images_KBWXWh",
+        "images_mrAAa3",
+        "images_9aUDnk",
+        "images_MXiz8x",
+        "images_jcJG8e",
+        "faq_FMrEma"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "#resize-me > div:nth-child(2) > div.buttonsfloat.relative.em7gzp67.z-20.border-prolon_primary.block.true {float: inline-end;}"
+      ],
+      "settings": {
+        "custom_css_class": "",
+        "product": "prolon-5-day-kit",
+        "theme_option": "theme_green",
+        "show_description": false,
+        "show_reviews": false,
+        "custom_product_title": true,
+        "sub_title": "The clinically tested system for healthier, rejuvenating fasting",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option2",
+        "option_1_name": "Choose {option}",
+        "option_1": "button",
+        "option_2_name": "Choose {option}",
+        "option_2": "subscription-widget-new-v2",
+        "option_3_name": "Choose {option}",
+        "option_3": "subscription-widget-new-v2"
+      }
+    },
+    "pl_product_last_section_single_variant_tiJffK": {
+      "type": "pl-product-last-section-single-variant",
+      "custom_css": [
+        "{background-color: #f1eae5;}",
+        "#resize-me > div:nth-child(2) > div.buttonsfloat.relative.em7gzp67.z-20.border-prolon_green.block.true {float: inline-end;}"
+      ],
+      "name": "Pl product last section S",
+      "settings": {
+        "custom_css_class": "",
+        "product": "l-pill",
+        "theme_option": "theme_green",
+        "show_description": false,
+        "show_reviews": false,
+        "show_title": false,
+        "custom_product_title": false,
+        "sub_title": "",
+        "show_subscription": false,
+        "below_image": "",
+        "subscription_option": "option1",
+        "option_1_name": "",
+        "option_1": "subscription-widget-new-v2",
+        "option_2_name": "",
+        "option_2": "subscription-widget-new-v2",
+        "option_3_name": "",
+        "option_3": "button"
+      }
+    },
+    "dk_bg_image_text_CDAU6b": {
+      "type": "dk-bg-image-text",
+      "custom_css": [
+        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/f6cc9d57a1cb933b166042f0cb4059f6d9401278_2000x_9db443b7-3c9d-4e2c-97c2-8217e33e9253.webp",
+        "heading": "<span class=\"\"> Unisciti alla community  di L-Nutra! </span>",
+        "subheading_above": "",
+        "subheading": "<span class=\"font-thin\"> Rimani aggiornato sulle ultime scoperte scientifiche e innovazioni della Dieta Mima Digiuno di ProLon!</span>",
+        "paragraph": "",
+        "show_form": true,
+        "show_paragraph_after_form": true,
+        "paragraph_after_form": "<p class=\"text-center mt-4\">Puoi disiscriverti in qualsiasi momento</p>",
+        "show_html": false,
+        "content_html": "",
+        "button_link": "",
+        "button_text": "",
+        "button_link_v2": "",
+        "button_text_2": ""
+      }
+    }
+  },
+  "order": [
+    "pl_product_first_section_P8jd8r",
+    "174611979935c72ead",
+    "dk_video_banner_RP3rTH",
+    "slideshow_QCLcbR",
+    "aug_t_slider_prolon_AhLy6K",
+    "reviews-widget_AhLy6K",
+    "dk_image_with_text_yVcW8g",
+    "pl_image_with_text_reverse_yVcW8g",
+    "dk_aug_t_tabs_prolon_i3wmPN",
+    "dk_bg_image_text_bRqbW7",
+    "pl_products_showcase_de7HnB",
+    "pl_image_with_faq_yRjTtb",
+    "dk_bg_image_text_QMJd4d",
+    "aug_t_video_wQJVLN",
+    "advanced_content_TARTkH",
+    "dk_image_with_text_3cAkPt",
+    "dk_faq_dnnNc8",
+    "ck_prolon_product_section_pl_HtK8nm",
+    "dk_product_v19_b3Vamm",
+    "ck_prolon_product_section_5_phase2_cxMtUK",
+    "pl_product_last_section_single_variant_tiJffK",
+    "dk_bg_image_text_CDAU6b"
+  ]
+}
