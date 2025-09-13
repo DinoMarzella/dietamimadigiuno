@@ -81,7 +81,6 @@
         "flex-reverse": "",
         "line_change": "",
         "line_color": "green",
-        "mobile_line_color": "green",
         "bg-color": "bg-[#F1EAE5]",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
@@ -91,6 +90,28 @@
         "video_url": "",
         "enable_video_link": false,
         "html_v": "lg:!my-[135px]",
+        "html_line": ""
+      }
+    },
+    "pl_image_with_text_reverse_cMFx9q": {
+      "type": "pl-image-with-text-reverse",
+      "name": "dk home image with text",
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "dark",
+        "mobile_line_color": "black",
+        "bg-color": "bg-[#F1EAE5]",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "",
+        "heading_text": "I principi alla base della Dieta Mima Digiuno",
+        "paragraph_1": "<br>Il protocollo nasce da un concetto chiave: ingannare il corpo simulando il digiuno, pur continuando ad assumere nutrienti essenziali.\n<br><br>\nDurante i 5 giorni della dieta:\n<ul class=\"list-disc\">\n<li>l’apporto calorico viene ridotto del 40–50% rispetto al normale;</li>\n<li>le proteine vengono drasticamente limitate;</li>\n<li>la fonte energetica principale proviene da grassi insaturi e carboidrati complessi;</li>\n<li>i pasti sono esclusivamente di origine vegetale.</li>\n</ul>\n<br>\nIn questo modo, l’organismo entra in una condizione metabolica simile al digiuno totale, attivando processi come l’autofagia e la rigenerazione cellulare, ma senza gli stessi rischi e difficoltà di un digiuno completo.<br><br>",
+        "hero_image": "shopify://shop_images/dmd-asset-image-0001.webp",
+        "video_url": "",
+        "html_v": "lg:mx-[135px]",
         "html_line": ""
       }
     },
@@ -157,6 +178,7 @@
     },
     "pl_products_showcase_de7HnB": {
       "type": "pl-products-showcase",
+      "disabled": true,
       "name": "PL products tabs Section",
       "settings": {
         "section_id": "",
@@ -233,13 +255,12 @@
         "flex-reverse": "",
         "line_change": "",
         "line_color": "dark",
-        "mobile_line_color": "black",
         "bg-color": "",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
         "heading_text": "Ricerca & Sviluppo supportati dalla scienza",
         "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\nProLon è una tecnologia basata sulla nutrizione di precisione testata clinicamente per mantenerti in uno stato di digiuno mentre nutri il tuo corpo con il cibo. Resetta il tuo corpo e permettigli di rigenerarsi dall'interno in soli cinque giorni. Il programma alimentare brevettato è supportato da 20 anni di ricerca e €34 milioni in ricerca e sviluppo.\n<br><br>\nIl 96% dei nostri clienti completa ProLon al primo tentativo. Con oltre 1.000.000 di kit venduti in tutto il mondo, unisciti a noi e occupati già da adesso del tuo futuro in salute. I prodotti ProLon® sono Made in Italy e registrati presso il Ministero della Salute.\n\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/pages/scienza-e-ricerca\" class=\"sm:w-[260px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#263F36] font-[700] text-[14px] \">\n                       SCIENZA E RICERCA\n                    </span>\n                </a>\n                \n            </div>\n<br>\n</div>",
-        "video_url": "https://www.youtube.com/watch?v=h-EM-KkhXbY",
+        "video_url": "",
         "enable_video_link": true,
         "html_v": "lg:!my-[135px]",
         "html_line": ""
@@ -413,7 +434,6 @@
         "flex-reverse": "",
         "line_change": "",
         "line_color": "dark",
-        "mobile_line_color": "black",
         "bg-color": "bg-[#F1EAE5] md:bg-white",
         "title_color": "dark_green",
         "subheading_text_tab_1": "RIDUCE L'ETÀ BIOLOGICA DI 2,5 ANNI",
@@ -452,16 +472,6 @@
         "full_width": false,
         "space_around": true
       }
-    },
-    "modern_custom_html_NfjfYB": {
-      "type": "modern-custom-html",
-      "custom_css": [],
-      "name": "CUSTOM HTML 2.0",
-      "settings": {
-        "full_width": false,
-        "space_around": false,
-        "code": "@media screen and (max-width: 720px) {\n  .main-content {\n    margin-top: 0px !important;\n  }\n}"
-      }
     }
   },
   "order": [
@@ -470,6 +480,7 @@
     "advanced_content_new_6LzPx7",
     "reviews-widget_AhLy6K",
     "dk_image_with_text_yVcW8g",
+    "pl_image_with_text_reverse_cMFx9q",
     "dk_aug_t_tabs_prolon_i3wmPN",
     "pl_products_showcase_de7HnB",
     "dk_image_with_text_home_page_Et8NLg",
@@ -478,7 +489,6 @@
     "advanced_content_TARTkH",
     "dk_image_with_text_3cAkPt",
     "dk_bg_image_text_CDAU6b",
-    "17555143132e16a4e3",
-    "modern_custom_html_NfjfYB"
+    "17555143132e16a4e3"
   ]
 }
