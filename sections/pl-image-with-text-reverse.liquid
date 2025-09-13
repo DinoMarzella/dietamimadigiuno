@@ -10,7 +10,7 @@
         <div class="w-[2px] h-full  {% if section.settings.mobile_line_color == 'black' %} bg-black {% else %} bg-white {% endif %}"></div>
       </div>
       <div class="flex flex-col  {{ section.settings.flex-reverse }} items-center justify-between mx-auto lg:flex-row ">
-        <div class="relative flex items-center justify-center md:pt-0 pt-4 lg:py-44 {{ section.settings.line_change }}  lg:border-r-2 {% if section.settings.line_color == 'dark' %} lg:border-[#1F4139] {% else %} lg:border-white {% endif %} lg:w-1/2 lg:mt-0 {{ section.settings.html_line }}">
+        <div class="relative flex items-center justify-center md:pt-0 pt-4 lg:py-44 {{ section.settings.line_change }}  lg:border-r-2 {% if section.settings.line_color == 'dark' %} lg:border-[#1F4139] {% endif %} {% if section.settings.line_color == 'white' %} lg:border-white {% endif %} {% if section.settings.line_color == 'green' %} lg:border-[#56A511] {% endif %} lg:w-1/2 lg:mt-0 {{ section.settings.html_line }}">
           {% if section.settings.enable_images %}
             <div class="overflow-hidden relative md:pb-0 pb-4 w-[330px] sm:w-[400px] md:w-[510px] lg:my-[135px] mx-auto">
               <div class="swiper-container">
@@ -201,6 +201,10 @@
         {
           "label": "Dark",
           "value": "dark"
+        },
+        {
+          "label": "Green",
+          "value": "green"
         },
         {
           "label": "White",
