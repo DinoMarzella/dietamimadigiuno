@@ -79,7 +79,7 @@
         "image_tCj6fK": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/research-partners-clipped_1600x_04733f94-03e4-40d0-ba33-beb08a768184.webp",
+            "image": "shopify://shop_images/research-partners-clipped_1600x_1c2ecdb7-6d92-451c-9fd6-7720848ba454.webp",
             "link": "",
             "width": "100%",
             "alignment": "top-middle"
@@ -105,7 +105,7 @@
         "html_mhdYKp": {
           "type": "html",
           "settings": {
-            "code": "<div class=\"row\" max-width:=\"\"><p> Questo protocollo nutrizionale pulito e a base vegetale supporta il metabolismo e le cellule del corpo in modalità digiuno, sfruttando l'autofagia e favorendo il ringiovanimento cellulare. Con 48 milioni di dollari di finanziamenti e rigorosi test attraverso 32 studi clinici presso 18 istituzioni di fama mondiale, tra cui Stanford, Mayo Clinic, Università di Miami e Università di Genova, tra le altre, il programma di nutrizione che imita il digiuno di Prolon ha ottenuto riconoscimenti per il suo contributo al campo del cibo come medicina.\n <br><br>\nIn particolare, questi studi hanno dimostrato che completare da tre a sei cicli di Prolon FMD ogni anno può portare a profondi benefici per la salute, tra cui una riduzione del punteggio di età biologica, una perdita di peso incentrata sul grasso con preservazione della massa muscolare, marcatori metabolici sani e altro ancora.\n <br><a href=\"https://prolon.it/pages/tutti-i-benefici\" class=\"btn2\">I benefici di ProLon</a>\n</p></div>",
+            "code": "<div class=\"row\" max-width:=\"\"><p> Questo protocollo nutrizionale pulito e a base vegetale supporta il metabolismo e le cellule del corpo in modalità digiuno, sfruttando l'autofagia e favorendo il ringiovanimento cellulare. Con 48 milioni di dollari di finanziamenti e rigorosi test attraverso 32 studi clinici presso 18 istituzioni di fama mondiale, tra cui Stanford, Mayo Clinic, Università di Miami e Università di Genova, tra le altre, il programma di nutrizione che imita il digiuno di Prolon ha ottenuto riconoscimenti per il suo contributo al campo del cibo come medicina.\n <br><br>\nIn particolare, questi studi hanno dimostrato che completare da tre a sei cicli di Prolon FMD ogni anno può portare a profondi benefici per la salute, tra cui una riduzione del punteggio di età biologica, una perdita di peso incentrata sul grasso con preservazione della massa muscolare, marcatori metabolici sani e altro ancora.\n <br><a href=\"/pages/cose-la-dmd\" class=\"btn2\">I benefici della DMD</a>\n</p></div>",
             "width": "50%",
             "alignment": "top-middle"
           }
@@ -134,7 +134,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/numbers-1_1080x_c1bf1429-7dc0-471c-bdeb-ebc09a11520e.webp",
+            "image": "shopify://shop_images/numbers-1_1080x_d224f463-8e89-48db-b2ac-357e4fc02f07.webp",
             "image_width": 650,
             "title": "Ricerca sulla Juventologia",
             "text": "<p><br> Questo studio sui giovani inizia con una ricerca preclinica su modelli animali per esaminare il potenziale della dieta nel prolungare la longevità.</p>",
@@ -146,7 +146,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Prolon_Science_Numbers_-_2_1080x_6a310c97-2ba6-4b5f-8599-7361bbc550e9.webp",
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_2_1080x_bc1a1393-6d9f-4b9c-8e84-6687cbc3cb1b.webp",
             "image_width": 650,
             "title": "Ricerca epidemiologica",
             "text": "<p><br> Grazie alla comprensione dei fattori di rischio delle malattie all'interno delle popolazioni, possiamo ulteriormente testare e convalidare le ipotesi emerse dalla nostra ricerca.</p>",
@@ -158,7 +158,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Prolon_Science_Numbers_-_3_1080x_ef00d2de-1288-4a94-b32e-f2499d12fa47.webp",
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_3_1080x_40d36fb7-cca9-4c6a-af3d-d441e9040cd3.webp",
             "image_width": 650,
             "title": "Studi clinici",
             "text": "<p><br> Attraverso studi randomizzati e controllati, valutiamo l'efficacia e la sicurezza delle nostre strategie su soggetti umani.</p>",
@@ -170,7 +170,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Prolon_Science_Numbers_-_4_1080x_976f0153-93da-4bad-95ae-dcc903bbb842.webp",
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_4_1080x_72342468-d739-48d0-81e4-14393f2d627d.webp",
             "image_width": 650,
             "title": "Studi centenari",
             "text": "<p><br> La ricerca sui centenari ci aiuta a valutare i benefici a lungo termine delle strategie nutrizionali basate sul digiunoLa ricerca sui centenari ci aiuta a valutare i benefici a lungo termine delle strategie nutrizionali basate sul digiuno.</p>",
@@ -182,7 +182,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Prolon_Science_Numbers_-_5_900x_3f589c22-f8a9-4b30-b730-69a1ee3cb190.webp",
+            "image": "shopify://shop_images/Prolon_Science_Numbers_-_5_900x_8527623a-e864-4c58-8136-46c67f91b4a7.webp",
             "image_width": 650,
             "title": "Analisi dei sistemi complessi",
             "text": "<p><br> Modellando le complesse interazioni tra cibo, danni cellulari e invecchiamento, puntiamo a svelare i complessi meccanismi della longevità e della salute metabolica.</p>",
@@ -194,7 +194,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/reasons3_900x_5ea5f827-be09-491b-b59c-455615a4d5dd.webp",
+            "image": "shopify://shop_images/reasons3_900x_a75f6957-04a1-4df5-8c29-96e840de6ddb.webp",
             "image_width": 650,
             "title": "",
             "text": "<p> Grazie a questi pilastri e alle sperimentazioni cliniche in corso, <b>la tecnologia di imitazione del digiuno di Prolon rimane all'avanguardia nei settori della nutrizione e della longevità</b>, dimostrando come un'alimentazione strategica basata sul digiuno possa favorire una vita più sana e lunga.</p>",
@@ -545,7 +545,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo1_700x_4b7f781a-90e7-4d19-baa3-86446933db6c.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo1_700x_1080x_8b0a3d9a-8ca1-4311-9895-1170a409f3a8.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Dieta mima digiuno e marcatori/fattori di rischio per l'invecchiamento, il diabete, il cancro e le malattie cardiovascolari: studio controllato.</p>",
@@ -557,7 +557,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo2_700x_c0e6ad6c-90fc-4bcf-8611-7abade53826f.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo2_700x_1080x_4abf7dd7-f002-4e0d-ad97-4d1aa5c3fed4.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Una dieta periodica che imita il digiuno promuove la rigenerazione multisistemica, il miglioramento delle prestazioni cognitive e la durata della salute.</p>",
@@ -569,7 +569,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo3_700x_a66ea3c3-06d7-4538-92e6-18908f7d07fa.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo3_700x_1080x_e863079d-065d-4ee6-961c-d4120e999c17.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno non riduce la funzione muscolare scheletrica in giovani adulti sani: uno studio di controllo randomizzato.</p>",
@@ -581,7 +581,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-Med_700x_12ae25b1-9a33-4227-8f48-db8eaf0c3c12.webp",
+            "image": "shopify://shop_images/Science_Articles_-Med_700x_1080x_6e969999-80cf-427e-8c91-a4a3577f7764.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Cicli di dieta mima digiuno vs dieta mediterranea e rischio cardiometabolico in soggetti ipertesi sovrappeso e obesi: Uno studio clinico randomizzato.</p>",
@@ -593,7 +593,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo4_700x_814f9c3e-25cd-4563-901c-db3b1b4e9c09.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo4_700x_1080x_8e88cd48-eb2f-4c7e-ba1a-3800756e75b7.jpg",
             "image_width": 650,
             "title": "",
             "text": "<p>Gli effetti di una dieta mima digiuno sull'idratazione, la consistenza e la valutazione della pelle: Uno studio controllato randomizzato.</p>",
@@ -605,7 +605,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_Logo5_700x_0514067b-0e56-47ad-8ab4-7fa74abd28ae.webp",
+            "image": "shopify://shop_images/Science_Articles_-_Logo5_700x_1080x_8f4acdb0-a179-4126-af1e-1f704fe01a3a.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Digiuno periodico di sei mesi in pazienti con diabete di tipo 2 e nefropatia diabetica: Uno studio di prova di concetto.</p>",
@@ -617,7 +617,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_Logo6_700x_6d05d017-bbf4-4c01-9f45-3a2afe608d90.webp",
+            "image": "shopify://shop_images/Science_Articles_-_Logo6_700x_1080x_0541251f-2fee-47b2-999b-fa3abc18337b.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>L'efficacia della dieta mima digiuno nella terapia funzionale della depressione: Uno studio pilota randomizzato e controllato.</p>",
@@ -629,7 +629,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo7_700x_db0edf13-d091-4f14-b724-ca5415256932.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo7_700x_1080x_5c5c7d72-7821-417c-a607-e1fb1c6adaf4.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Associazione dell'assunzione di proteine animali e vegetali con la mortalità per tutte le cause e per cause specifiche.</p>",
@@ -641,7 +641,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo8_700x_741a7268-4d3a-46ac-84ef-f75028f223bd.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo8_700x_1080x_ed8f84da-f866-4d21-bc5d-4d8dc1536922.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Una barretta nutrizionale che simula il digiuno intermittente e prolunga la chetosi fisiologica con l'alimentazione: Uno studio randomizzato, controllato, a bracci paralleli.</p>",
@@ -653,7 +653,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo9_700x_d70a5b79-75eb-47fd-aeaf-767287d559e5.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo9_700x_1080x_1ca4a481-f5ef-4933-a690-5ad6a316ad40.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Correlazione tra gli intervalli dei livelli di IGF-1 e la mortalità per tutte le cause: Una meta-analisi.</p>",
@@ -665,7 +665,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo10_700x_5277405e-ad79-4851-87d3-406aaeb05260.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo10_700x_1080x_4dd20a6d-d09c-4b2c-a0e2-888d63b2f75f.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno previene l'effetto della dieta ad alto contenuto di grassi sul rischio cardiometabolico e sulla durata della vita.</p>",
@@ -677,7 +677,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo11_700x_443e4a71-140f-4c7f-8892-905ebaab449b.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo11_700x_1080x_b73bb40b-edcb-4983-9862-3c1aacd8eb72.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Digiuno e trattamento del cancro nell'uomo: Una serie di casi.</p>",
@@ -689,7 +689,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo12_700x_30a9babc-c90f-4134-8eab-078fc195b6ed.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo12_700x_1080x_cc6db749-f0cd-4aff-9425-6e299edc7ccf.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno e la terapia ormonale inducono la regressione del cancro al seno.</p>",
@@ -701,7 +701,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo13_700x_1735ccf3-65a6-4aef-8c9d-805f5f574619.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo13_700x_1080x_cca7beb1-c21c-48aa-a940-2d9ab41393a7.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Alimentazione e dieta mima digiuno nella prevenzione e nel trattamento delle malattie autoimmuni e dell'immunosenescenza.</p>",
@@ -713,7 +713,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo14_700x_f9b17780-710d-4f54-907b-ccb1c04747c5.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo14_700x_1080x_591ae4b6-1cdd-4456-b4fa-27aecfee103b.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno modula il microbiota e promuove la rigenerazione intestinale per ridurre la patologia delle malattie infiammatorie intestinali.</p>",
@@ -725,7 +725,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo15_700x_5e85e404-90ff-4bd2-be9e-e698c018bdca.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo15_700x_1080x_0470d6a9-b11e-4270-995c-2ba1dd13c264.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno riduce l'HO-1 per promuovere la citotossicità tumorale mediata dalle cellule T.</p>",
@@ -737,7 +737,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo16_700x_298d3274-14f1-4369-8963-c8b02a9c169f.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo16_700x_1080x_e1540df6-427f-499d-b26e-7512a4d2496f.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>Il digiuno prolungato riduce l'IGF-1/PKA per promuovere la rigenerazione basata sulle cellule staminali ematopoietiche e invertire l'immunosoppressione.</p>",
@@ -749,7 +749,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo17_700x_8e2b3cfd-a911-4c44-ac09-402035406c59.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo17_700x_1080x_213155d9-ebd7-4882-8cd3-7bac0aac815e.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno favorisce la rigenerazione e riduce l'autoimmunità e i sintomi della sclerosi multipla.</p>",
@@ -761,7 +761,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify://shop_images/Science_Articles_-_logo18_700x_29807858-fa37-4845-86cc-868ec23f9c30.webp",
+            "image": "shopify://shop_images/Science_Articles_-_logo18_700x_1080x_2c663065-2ad6-4336-957b-3bf17a7f4e37.webp",
             "image_width": 650,
             "title": "",
             "text": "<p>La dieta mima digiuno promuove la rigenerazione delle cellule β guidata da Ngn3 per invertire il diabete.</p>",
