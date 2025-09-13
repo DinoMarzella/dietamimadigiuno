@@ -75,6 +75,27 @@
         "space_around": true
       }
     },
+    "dk_bg_image_text_RepRkF": {
+      "type": "dk-bg-image-text",
+      "custom_css": [
+        ".my-bg-opacity {background-color: #f1eae5;}"
+      ],
+      "settings": {
+        "heading": "Studi scientifici di riferimento",
+        "subheading_above": "",
+        "subheading": "",
+        "paragraph": "<span class=\"uppercase text-[#56A511] font-semibold\">Studi preclinici</span>\n<br>\nI primi risultati provengono da studi su modelli animali. \n<br>\nNei topi, la Dieta Mima Digiuno ha mostrato:<br>\n•\nun aumento della durata media della vita,\n<br>•\nuna riduzione dell’incidenza di tumori,\n<br>•\n una rigenerazione potenziata del sistema immunitario.\n<br>Questi dati hanno aperto la strada a studi clinici sull’uomo.\n<br><br>\n<span class=\"uppercase text-[#56A511] font-semibold\">Studi clinici sull’uomo</span><br>",
+        "show_form": false,
+        "show_paragraph_after_form": false,
+        "paragraph_after_form": "",
+        "show_html": false,
+        "content_html": "",
+        "button_link": "shopify://pages/ricerche",
+        "button_text": "SCOPRI DI PIÙ",
+        "button_link_v2": "",
+        "button_text_2": ""
+      }
+    },
     "pl_image_with_text_reverse_cMFx9q": {
       "type": "pl-image-with-text-reverse",
       "custom_css": [
@@ -662,6 +683,7 @@
     "pl_home_hero_section_PEye93",
     "pl_home_hero_section_UKpi83",
     "advanced_content_new_6LzPx7",
+    "dk_bg_image_text_RepRkF",
     "pl_image_with_text_reverse_cMFx9q",
     "dk_image_with_text_yVcW8g",
     "dk_bg_image_text_bRqbW7",
