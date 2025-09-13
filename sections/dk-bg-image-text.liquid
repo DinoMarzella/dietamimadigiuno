@@ -11,10 +11,9 @@
 <section class="">
     <div class="my-bg-opacity w-full h-auto bg-[#fff] bg-center bg-cover bg-mobile-scroll" style="
          {% if section.settings.background_image %}
-           background-image: url('{{ section.settings.background_image | img_url: '2000x' }}');
+           background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), background-image: url('{{ section.settings.background_image | img_url: '2000x' }}');
          {% endif %}
          background-attachment: fixed;
-         opacity:0.8; 
        ">
 
         <div class="flex justify-start gap-4 px-4 md:block max-w-[1600px] mx-auto 

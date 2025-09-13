@@ -342,6 +342,7 @@
         "image_block_L4a7NF",
         "image_block_8iBkcQ"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 769px) {.text-\\[24px\\] {font-size: 30px; font-weight: 500; }}"
       ],
@@ -432,6 +433,7 @@
         "slide_GQdN6M",
         "slide_qC6y8y"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -452,6 +454,7 @@
     },
     "dk_bg_image_text_CDAU6b": {
       "type": "dk-bg-image-text",
+      "disabled": true,
       "custom_css": [
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
@@ -473,6 +476,7 @@
     },
     "17555143132e16a4e3": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
