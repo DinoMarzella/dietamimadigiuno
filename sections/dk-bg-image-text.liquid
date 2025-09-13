@@ -9,7 +9,7 @@
 
 </style>
 <section class="">
-    <div class="w-full h-auto bg-[#263F36] bg-center bg-cover bg-mobile-scroll" style="
+    <div class="w-full h-auto bg-[#fff] bg-center bg-cover bg-mobile-scroll" style="
          {% if section.settings.background_image %}
            background-image: url('{{ section.settings.background_image | img_url: '2000x' }}');
          {% endif %}
@@ -30,7 +30,7 @@
 
             <!-- content -->
             <div class="text-white md:pt-[35px] py-[45px] md:py-0">
-              <div class="max-w-[370px] md:max-w-[750px] mx-auto md:px-[25px]">
+              <div class="mx-auto md:px-[25px]">
               <h4
                     class="mx-auto md:text-center text-left text-[14px] md:text-[17px] leading-[1.2] font-bold text-[#56a511] pb-0 mb-[5px] mt-0 pt-0 uppercase">
                     {{ section.settings.subheading_above }}
@@ -54,7 +54,7 @@
               {% if section.settings.show_html %}
                  <div class="">{{ section.settings.content_html }}</div>
             {% endif %}
-              <div class="max-w-[370px] md:max-w-[750px] mx-auto md:px-[25px]">
+              <div class="mx-auto md:px-[25px]">
                 {% if section.settings.show_form %}
                 <div class="w-full max-w-md mx-auto">
                     <form class="flex overflow-hidden bg-transparent border border-white rounded-full">
