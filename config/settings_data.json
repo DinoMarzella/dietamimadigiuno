@@ -35,7 +35,8 @@
           "logo_GKUAPJ": {
             "type": "logo",
             "settings": {
-              "desktop_logo_width": 200,
+              "logo": "shopify://shop_images/LOGO-DIETA-MIMA-DIGIUNO.webp",
+              "desktop_logo_width": 280,
               "mobile_logo_width": 140
             }
           },
