@@ -273,15 +273,14 @@
     "dk_bg_image_text_bRqbW7": {
       "type": "dk-bg-image-text",
       "custom_css": [
-        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}",
-        ".my-bg-opacity {opacity: 0.8;}"
+        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
         "background_image": "shopify://shop_images/16ffd86499a70feaee0b3e99e41cc183f79307b1.jpg",
         "heading": "Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
         "subheading_above": "",
         "subheading": "",
-        "paragraph": "La Dieta Mima Digiuno non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n\nIl suo successo deriva dalla combinazione di tre elementi:\n\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
+        "paragraph": "La Dieta Mima Digiuno non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n<br><br>\nIl suo successo deriva dalla combinazione di tre elementi:\n<br><br>\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.<br>\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.<br>\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
         "show_form": false,
         "show_paragraph_after_form": false,
         "paragraph_after_form": "",
