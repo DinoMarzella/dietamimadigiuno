@@ -273,10 +273,12 @@
     "dk_bg_image_text_bRqbW7": {
       "type": "dk-bg-image-text",
       "custom_css": [
-        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
+        ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}",
+        ".my-bg-opacity {opacity: 0.8;}"
       ],
       "settings": {
-        "heading": "<span class=\"\">Prolon è l'unico programma di nutrizione basato sul digiuno scientificamente testato.</span>",
+        "background_image": "shopify://shop_images/16ffd86499a70feaee0b3e99e41cc183f79307b1.jpg",
+        "heading": "Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
         "subheading_above": "",
         "subheading": "",
         "paragraph": "",
