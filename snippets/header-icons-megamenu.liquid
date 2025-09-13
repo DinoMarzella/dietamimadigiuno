@@ -276,7 +276,7 @@
     {% endif %}
 
     <a href="{{ routes.cart_url }}"
-      class="flex items-center justify-center pt-2 site-nav__link site-nav__link--icon js-drawer-open-cart"
+      class="hidden flex items-center justify-center pt-2 site-nav__link site-nav__link--icon js-drawer-open-cart"
       aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
       <span class="cart-link hidden md:!block">
         {%- if settings.cart_icon == 'cart' -%}
