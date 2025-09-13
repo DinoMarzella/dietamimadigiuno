@@ -96,8 +96,28 @@
         "button_text_2": ""
       }
     },
+    "dk_bg_image_text_XhKaEq": {
+      "type": "dk-bg-image-text",
+      "settings": {
+        "background_image": "shopify://shop_images/bg-dmd-3-50-opacity.webp",
+        "heading": "Differenze rispetto ad altre diete",
+        "subheading_above": "",
+        "subheading": "",
+        "paragraph": "A differenza di molte diete che promettono dimagrimenti rapidi senza reali basi scientifiche, la Dieta Mima Digiuno si distingue per un approccio serio e validato dalla ricerca. Non è pensata come un regime da seguire per tutta la vita, ma come un ciclo breve e ripetibile, che può essere inserito più volte durante l’anno. A renderla diversa è anche la sua solidità scientifica: il protocollo è stato sviluppato e testato in laboratorio, con risultati pubblicati su riviste internazionali peer-reviewed. Inoltre, non si limita a puntare sulla semplice perdita di peso, ma ha come obiettivo più ampio il miglioramento della salute a lungo termine, con benefici legati alla longevità e alla prevenzione delle malattie croniche.",
+        "show_form": false,
+        "show_paragraph_after_form": false,
+        "paragraph_after_form": "",
+        "show_html": false,
+        "content_html": "",
+        "button_link": "",
+        "button_text": "",
+        "button_link_v2": "",
+        "button_text_2": ""
+      }
+    },
     "pl_image_with_text_reverse_cMFx9q": {
       "type": "pl-image-with-text-reverse",
+      "disabled": true,
       "custom_css": [
         "div > section > div > div.flex.flex-col.items-center.justify-between.mx-auto.lg\\:flex-row > div.relative.flex.items-center.justify-center.md\\:pt-0.pt-4.lg\\:py-44.lg\\:border-r-2.lg\\:border-\\[\\#56A511\\].lg\\:w-1\\/2.lg\\:mt-0 > div {padding-top: 50px; padding-bottom: 50px;}"
       ],
@@ -123,6 +143,7 @@
     },
     "dk_image_with_text_yVcW8g": {
       "type": "dk-image-with-text-home-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -144,6 +165,7 @@
     },
     "dk_bg_image_text_bRqbW7": {
       "type": "dk-bg-image-text",
+      "disabled": true,
       "custom_css": [
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
@@ -166,6 +188,7 @@
     },
     "pl_image_with_text_reverse_dGYVQH": {
       "type": "pl-image-with-text-reverse",
+      "disabled": true,
       "name": "dk home image with text",
       "settings": {
         "section_id": "",
@@ -188,6 +211,7 @@
     },
     "dk_image_with_text_home_page_F8Li3c": {
       "type": "dk-image-with-text-home-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -209,6 +233,7 @@
     },
     "pl_image_with_text_reverse_KPd8Xq": {
       "type": "pl-image-with-text-reverse",
+      "disabled": true,
       "name": "dk home image with text",
       "settings": {
         "section_id": "",
@@ -231,6 +256,7 @@
     },
     "dk_image_with_text_home_page_9RyFw7": {
       "type": "dk-image-with-text-home-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -252,6 +278,7 @@
     },
     "reviews-widget_AhLy6K": {
       "type": "reviews-widget",
+      "disabled": true,
       "settings": {
         "widget_type": "carousel"
       }
@@ -414,45 +441,45 @@
         "questions_block_eqADLp": {
           "type": "questions_block",
           "settings": {
-            "question": "Quanto dura la Dieta Mima Digiuno?",
-            "headingtext": "Quanto dura la Dieta Mima Digiuno?",
-            "content": "Un ciclo dura 5 giorni. La frequenza può variare da 2 a 6 volte all’anno.",
+            "question": "Quanto peso si perde con un ciclo?",
+            "headingtext": "Quanto peso si perde con un ciclo?",
+            "content": "La perdita media è di 2–3 kg, soprattutto di grasso viscerale, ma varia in base alle caratteristiche individuali.",
             "text": ""
           }
         },
         "questions_block_QN88D8": {
           "type": "questions_block",
           "settings": {
-            "question": "Si perde peso con la Dieta Mima Digiuno?",
-            "headingtext": "Si perde peso con la Dieta Mima Digiuno?",
-            "content": "Sì, in genere si registra una perdita di grasso viscerale senza riduzione significativa della massa magra.",
+            "question": "I benefici sono immediati o a lungo termine?",
+            "headingtext": "I benefici sono immediati o a lungo termine?",
+            "content": "Alcuni effetti si notano già alla fine dei 5 giorni (più energia, riduzione del gonfiore), \naltri si consolidano con più cicli annuali",
             "text": ""
           }
         },
         "questions_block_reAprX": {
           "type": "questions_block",
           "settings": {
-            "question": "È obbligatorio usare il kit ufficiale?",
-            "headingtext": "È obbligatorio usare il kit ufficiale?",
-            "content": "Il kit ProLon è stato sviluppato per fornire pasti già bilanciati. È lo strumento più pratico e sicuro, ma esistono anche varianti supervisionate da nutrizionisti.",
+            "question": "La dieta rafforza il sistema immunitario?",
+            "headingtext": "La dieta rafforza il sistema immunitario?",
+            "content": "Sì, gli studi hanno mostrato che stimola la rigenerazione delle cellule immunitarie grazie all’attivazione delle cellule staminali.",
             "text": ""
           }
         },
         "questions_block_dWrNAy": {
           "type": "questions_block",
           "settings": {
-            "question": "È adatta a tutti?",
-            "headingtext": "È adatta a tutti?",
-            "content": "No. È controindicata in gravidanza, allattamento, età pediatrica, anziani fragili e persone con gravi patologie croniche.",
+            "question": "È utile anche per chi non ha problemi di peso?",
+            "headingtext": "È utile anche per chi non ha problemi di peso?",
+            "content": "Assolutamente sì: non è pensata solo per dimagrire, ma per promuovere longevità e salute cellulare.",
             "text": ""
           }
         },
         "questions_block_aQ4rJg": {
           "type": "questions_block",
           "settings": {
-            "question": "È supportata da studi scientifici?",
-            "headingtext": "È supportata da studi scientifici?",
-            "content": "Sì, diversi studi pubblicati su riviste internazionali hanno confermato benefici su metabolismo, infiammazione e longevità.",
+            "question": "Gli studi sono conclusivi?",
+            "headingtext": "Gli studi sono conclusivi?",
+            "content": "I risultati attuali sono promettenti, ma la ricerca è ancora in corso per confermare tutti i potenziali terapeutici.",
             "text": ""
           }
         }
@@ -469,7 +496,7 @@
         "heading": "FAQ sulla Dieta Mima Digiuno"
       }
     },
-    "dk_bg_image_text_XhKaEq": {
+    "dk_bg_image_text_4dTpPB": {
       "type": "dk-bg-image-text",
       "settings": {
         "background_image": "shopify://shop_images/bg-dmd-50-opacity.webp",
@@ -482,8 +509,8 @@
         "paragraph_after_form": "",
         "show_html": false,
         "content_html": "",
-        "button_link": "shopify://pages/ricerche",
-        "button_text": "SCOPRI DI PIÙ",
+        "button_link": "https://form.typeform.com/to/rK6lwKpd?utm_medium=typeform&utm_content=quiz",
+        "button_text": "QUIZ PERSONALIZZATO",
         "button_link_v2": "",
         "button_text_2": ""
       }
@@ -684,6 +711,7 @@
     "pl_home_hero_section_UKpi83",
     "advanced_content_new_6LzPx7",
     "dk_bg_image_text_RepRkF",
+    "dk_bg_image_text_XhKaEq",
     "pl_image_with_text_reverse_cMFx9q",
     "dk_image_with_text_yVcW8g",
     "dk_bg_image_text_bRqbW7",
@@ -696,7 +724,7 @@
     "pl_products_showcase_de7HnB",
     "dk_image_with_text_home_page_Et8NLg",
     "dk_faq_HEBEEE",
-    "dk_bg_image_text_XhKaEq",
+    "dk_bg_image_text_4dTpPB",
     "aug_t_video_wQJVLN",
     "advanced_content_TARTkH",
     "dk_image_with_text_3cAkPt",
