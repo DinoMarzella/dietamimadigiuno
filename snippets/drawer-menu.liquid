@@ -63,10 +63,7 @@
                 {% endif %}
               </div>
             {% else %}
-              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level" {% if link.active %}data-active="true"{% endif %}>{{ link.title }}
-                {% if forloop.index0 == 0 %}
-                  <span class="bg-[#aac638] tag-ab inline-block px-1 relative text-[12px] text-white" style="background: #aac638;position: relative;top: -2px; ">Most Popular</span>
-                {% endif %}</a>
+              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level" {% if link.active %}data-active="true"{% endif %}>{{ link.title }}</a>
             {% endif %}
 
             {% if has_dropdown %}
