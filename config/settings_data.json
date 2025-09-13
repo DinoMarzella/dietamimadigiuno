@@ -42,6 +42,7 @@
           },
           "carousel_zFqCj7": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>ProLon<br/>5-Day</p>",
               "carousel_url": "shopify://products/prolon-5-day-kit"
@@ -149,6 +150,7 @@
           },
           "carousel_KBz4d4": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>Reset<br/>1-Day Kit </p>",
               "carousel_url": "shopify://products/reset"
@@ -156,6 +158,7 @@
           },
           "carousel_eNzPbK": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>Nutrition<br/>Bars</p>",
               "carousel_url": "shopify://products/prolon-fasting-bar"
@@ -163,6 +166,7 @@
           },
           "carousel_Krh9Vp": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>Longevity<br/>Spread</p>",
               "carousel_url": "shopify://products/longevity-spread"
@@ -170,6 +174,7 @@
           },
           "carousel_GmBThQ": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>L-Biome</p>",
               "carousel_url": "shopify://products/l-biome"
@@ -177,6 +182,7 @@
           },
           "carousel_VmGHK6": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>L-Pill</p>",
               "carousel_url": "shopify://products/l-pill"
@@ -184,6 +190,7 @@
           },
           "carousel_kN3G7g": {
             "type": "Carousel",
+            "disabled": true,
             "settings": {
               "carousel_title": "<p>L-Biome<br/>& L-Pill</p>",
               "carousel_url": "shopify://products/l-biome-l-pill"
