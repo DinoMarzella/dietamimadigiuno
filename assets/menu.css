@@ -8,11 +8,11 @@
   }
 
   .megamenu-abtest-a {
-    display: none;
+    display: block;
   }
 
   .megamenu-abtest-b {
-    display: block;
+    display: none;
   }
 
 
