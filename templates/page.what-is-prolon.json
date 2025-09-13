@@ -186,6 +186,49 @@
         "html_line": ""
       }
     },
+    "pl_image_with_text_reverse_KPd8Xq": {
+      "type": "pl-image-with-text-reverse",
+      "name": "dk home image with text",
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "green",
+        "mobile_line_color": "black",
+        "bg-color": "",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "",
+        "heading_text": "Per chi può essere utile",
+        "paragraph_1": "<br>La Dieta Mima Digiuno può essere utile a:\n<br><br>\n<ul class=\"disc pl-4\">\n<li>persone che desiderano migliorare i parametri metabolici (colesterolo, glicemia, pressione);</li>\n<li>chi è interessato a strategie anti-aging e di prevenzione;</li>\n<li> persone con sovrappeso o accumulo di grasso viscerale, che cercano un approccio strutturato;</li>\n<li>chi vuole integrare un programma di benessere o longevità.</li>\n</ul>\n<br>\n⚠️ Non è invece indicata per: donne in gravidanza o allattamento, minori, anziani fragili, persone con patologie croniche importanti o disturbi alimentari.<br><br><div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
+        "hero_image": "shopify://shop_images/dmd-asset-image-0001.webp",
+        "video_url": "",
+        "html_v": "lg:mx-[135px]",
+        "html_line": ""
+      }
+    },
+    "dk_image_with_text_home_page_9RyFw7": {
+      "type": "dk-image-with-text-home-page",
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "green",
+        "bg-color": "bg-[#F1EAE5]",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "",
+        "heading_text": "Quanto dura un ciclodi Dieta Mima Digiuno",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\">Un ciclo standard dura 5 giorni consecutivi.<br>\nLa frequenza varia da 2 a 6 volte l’anno, a seconda degli obiettivi personali e delle condizioni di salute. <br>\nAlcune persone scelgono di ripeterlo ogni 3–4 mesi\ncome “reset metabolico”, altre più raramente.</p>\n</div>\n\n<div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
+        "hero_image": "shopify://shop_images/dmd-asset-longo-0001.webp",
+        "video_url": "",
+        "enable_video_link": false,
+        "html_v": "lg:!my-[135px]",
+        "html_line": ""
+      }
+    },
     "reviews-widget_AhLy6K": {
       "type": "reviews-widget",
       "settings": {
@@ -344,14 +387,75 @@
         "html_line": ""
       }
     },
+    "dk_faq_HEBEEE": {
+      "type": "dk-faq",
+      "blocks": {
+        "questions_block_eqADLp": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Quanto dura la Dieta Mima Digiuno?",
+            "headingtext": "Quanto dura la Dieta Mima Digiuno?",
+            "content": "Un ciclo dura 5 giorni. La frequenza può variare da 2 a 6 volte all’anno.",
+            "text": ""
+          }
+        },
+        "questions_block_QN88D8": {
+          "type": "questions_block",
+          "settings": {
+            "question": "Si perde peso con la Dieta Mima Digiuno?",
+            "headingtext": "Si perde peso con la Dieta Mima Digiuno?",
+            "content": "Sì, in genere si registra una perdita di grasso viscerale senza riduzione significativa della massa magra.",
+            "text": ""
+          }
+        },
+        "questions_block_reAprX": {
+          "type": "questions_block",
+          "settings": {
+            "question": "È obbligatorio usare il kit ufficiale?",
+            "headingtext": "È obbligatorio usare il kit ufficiale?",
+            "content": "Il kit ProLon è stato sviluppato per fornire pasti già bilanciati. È lo strumento più pratico e sicuro, ma esistono anche varianti supervisionate da nutrizionisti.",
+            "text": ""
+          }
+        },
+        "questions_block_dWrNAy": {
+          "type": "questions_block",
+          "settings": {
+            "question": "È adatta a tutti?",
+            "headingtext": "È adatta a tutti?",
+            "content": "No. È controindicata in gravidanza, allattamento, età pediatrica, anziani fragili e persone con gravi patologie croniche.",
+            "text": ""
+          }
+        },
+        "questions_block_aQ4rJg": {
+          "type": "questions_block",
+          "settings": {
+            "question": "È supportata da studi scientifici?",
+            "headingtext": "È supportata da studi scientifici?",
+            "content": "Sì, diversi studi pubblicati su riviste internazionali hanno confermato benefici su metabolismo, infiammazione e longevità.",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "questions_block_eqADLp",
+        "questions_block_QN88D8",
+        "questions_block_reAprX",
+        "questions_block_dWrNAy",
+        "questions_block_aQ4rJg"
+      ],
+      "name": "dk faqs",
+      "settings": {
+        "heading": "FAQ sulla Dieta Mima Digiuno"
+      }
+    },
     "dk_bg_image_text_XhKaEq": {
       "type": "dk-bg-image-text",
       "settings": {
         "background_image": "shopify://shop_images/bg-dmd-50-opacity.webp",
-        "heading": "Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
+        "heading": "<b>Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?</b><br>\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
         "subheading_above": "",
         "subheading": "",
-        "paragraph": "La Dieta Mima Digiuno non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n<br><br>\nIl suo successo deriva dalla combinazione di tre elementi:\n<br><br>\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.<br>\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.<br>\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
+        "paragraph": "La <b>Dieta Mima Digiuno</b> non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n<br><br>\nIl suo successo deriva dalla combinazione di tre elementi:\n<br><br>\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.<br>\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.<br>\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
         "show_form": false,
         "show_paragraph_after_form": false,
         "paragraph_after_form": "",
@@ -563,10 +667,13 @@
     "dk_bg_image_text_bRqbW7",
     "pl_image_with_text_reverse_dGYVQH",
     "dk_image_with_text_home_page_F8Li3c",
+    "pl_image_with_text_reverse_KPd8Xq",
+    "dk_image_with_text_home_page_9RyFw7",
     "reviews-widget_AhLy6K",
     "dk_aug_t_tabs_prolon_i3wmPN",
     "pl_products_showcase_de7HnB",
     "dk_image_with_text_home_page_Et8NLg",
+    "dk_faq_HEBEEE",
     "dk_bg_image_text_XhKaEq",
     "aug_t_video_wQJVLN",
     "advanced_content_TARTkH",
