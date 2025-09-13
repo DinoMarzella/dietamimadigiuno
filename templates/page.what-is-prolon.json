@@ -12,190 +12,108 @@
   "sections": {
     "pl_home_hero_section_PEye93": {
       "type": "pl-home-hero-section",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "background_video": "",
+        "html": "rejuvenate your cells,lose fat,reset your body,slow aging,live healthier",
+        "heading": "Precision nutrition <br class=\"\">to help you<br>",
+        "subheading": "Experience the many benefits <br>\nof fasting with food",
+        "button_link": "/collections/all-products",
+        "button_text": "SHOP PROLON",
+        "button_link_v2": "https://form.typeform.com/to/hzQ8iMia?utm_medium=typeform&utm_content=quiz",
+        "button_text_2": "TAKE THE QUIZ"
+      }
+    },
+    "pl_home_hero_section_UKpi83": {
+      "type": "pl-home-hero-section",
       "custom_css": [
-        "#fadeTextDesktopUnique {display: none;}"
+        "#fadeTextDesktopUnique {display: none;}",
+        "@media only screen and (max-width: 768px) {.my-bg-position {background-position: 65%; opacity: 0.5; }}",
+        "@media only screen and (min-width: 769px) {.my-bg-position {background-position: 90%; opacity: 0.5; }}"
       ],
       "settings": {
         "background_video": "",
-        "background_image": "shopify://shop_images/b549e20911c9506a55c885152a0015f83e1e433d_2000x_854206f6-3c06-448b-87eb-72c08b2b5e8f.webp",
+        "background_image": "shopify://shop_images/c9a9112f5403b1ce8d72d01e55df3c822d39ff51.jpg",
         "html": "",
-        "heading": "<strong>Cosa dovresti sapere\n</strong><br>sul digiuno",
-        "subheading": "<hr style=\"color: white; border-color:white; border-width: 5px\">\n<br>\n<span class=\"text-center\">La pratica migliore è astenersi dal cibo per un certo periodo di tempo.</span>",
-        "button_link": "shopify://collections/tutti-i-prodotti",
-        "button_text": "ACQUISTA PROLON",
-        "button_link_v2": "",
-        "button_text_2": ""
+        "heading": "<span style=\"color: #263F36;\n\">Dieta Mima Digiuno</span>\n<hr style=\"border-width: 3px; max-width: 500px; margin: 0 auto\">",
+        "subheading": "<span style=\"color: #263F36;\n\">Scopri il protocollo scientifico del Prof. Valter Longo per la longevità e il benessere attraverso il digiuno intermittente mirato.</span>",
+        "button_link": "shopify://products/l-protein-bar",
+        "button_text": "QUIZ PERSONALIZZATO",
+        "button_link_v2": "shopify://collections/tutti-i-prodotti",
+        "button_text_2": "SCOPRI DI PIÙ"
       }
     },
-    "174611979935c72ead": {
-      "type": "apps",
-      "disabled": true,
+    "advanced_content_new_6LzPx7": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "liquid_zry8i3": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 class=\"text-center\"><b>Cos’è la Dieta Mima Digiuno</b>: guida completa al protocollo ideato da Valter Longo</h2><br><br>\n\n  <section class=\"three-boxes\">\n  <div class=\"box\">\n    <h3>Longevità Cellulare</h3>\n    <p>Attiva i meccanismi di rigenerazione cellulare e rallenta l'invecchiamento.</p>\n  </div>\n  <div class=\"box\">\n    <h3>Perdita di peso</h3>\n    <p>Riduce il grasso addominale mantenendo la massa muscolare.</p>\n  </div>\n  <div class=\"box\">\n    <h3>Salute Metabolica</h3>\n    <p>Migliora i livelli di glucosio, colesterolo\ne pressione sanguigna.</p>\n  </div>\n</section>\n<p class=\"mt-[50px] text-center\">Negli ultimi anni la Dieta Mima Digiuno è diventata uno dei temi più discussi nel mondo della nutrizione e della ricerca sulla longevità. Questo protocollo alimentare, ideato dal Professor Valter Longo, si propone di riprodurre i benefici del digiuno tradizionale senza richiedere la completa astensione dal cibo.</p>\n<div class=\"flex items-center gap-4 justify-center pt-[16px] md:pt-[22px]\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n\n\n<style>\n.three-boxes {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n\n.box {\n  flex: 1;\n  padding: 20px;\n  text-align: center;\n}\n\n/* bordo interno solo per le box esterne */\n.box:first-child {\n  border-right: 2px solid #56A511;\n}\n.box:last-child {\n  border-left: 2px solid #56A511;\n}\n\n/* responsive: su mobile i box vanno uno sotto l'altro */\n@media (max-width: 768px) {\n  .three-boxes {\n    flex-direction: column;\n  }\n  .box {\n    border: none;\n    border-bottom: 2px solid #56A511;\n  }\n  .box:last-child {\n    border-bottom: none;\n  }\n.box:first-child {\n  border-right: 0px solid #56A511;\n}\n.box:last-child {\n  border-left: 0px solid #56A511;\n}\n}\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_zry8i3"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
         "full_width": false,
         "space_around": true
       }
     },
-    "dk_video_banner_RP3rTH": {
-      "type": "dk-video-banner",
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 48em) {.md\\:text-5xl {font-size: 4rem; line-height: 1; font-weight: 600; } .italic {font-style: none !important; font-size: 3rem; font-weight: 800; }}"
-      ],
-      "settings": {
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/ebf67f169b764fa5bc01a200f251e8ad.mp4",
-        "heading_text": "<span class=\"block mb-0 md:mb-4\">Nutrition Science to help you\n</span>",
-        "html": "Live Healthier, Promote Healthy Aging, Lose fat, Improve Energy, Rejuvenate your cells, Protect Lean Muscle Mass",
-        "sub_text": "Experience the many benefits of fasting while you eat<br><br>",
-        "button_link": "#prolon-programs",
-        "button_text": "Shop Prolon Nutrition",
-        "quiz_button_link": "/pages/quiz",
-        "quiz_button_text": "Getting Started Quiz"
-      }
-    },
-    "slideshow_QCLcbR": {
-      "type": "slideshow",
-      "blocks": {
-        "image_ApLqYM": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<h4 style=\"color: #1E4036; margin-bottom: 10px;\">— SUMMER SALE —</h4><h1>\n<b>SAVE UP TO 30%</b> </h1>",
-            "title_size": 57,
-            "title_tag": "h2",
-            "title_class": "h1",
-            "subheading": "<p>Celebrate the longest days with smarter habits and a summer sale that helps you <b>lose fat, protect muscle, and add years to your life!</b> Up to 30% off all our favorite Prolon products — this week only.</p>",
-            "link": "/products/prolon-offer",
-            "link_text": "SHOP PROLON 5-DAY",
-            "link_2": "/collections/all",
-            "link_text_2": "SHOP ALL",
-            "color_accent": "#1e4036",
-            "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "image_ApLqYM"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".hero__text-shadow:after {display: none;}",
-        ".btn {letter-spacing: 1px;}",
-        "h1,h4,p {color: white;}",
-        "h4 {font-size: 20px;}",
-        "p {font-size: 18px; max-width: 600px;}",
-        "h1 {font-size: 65px;}",
-        "@media (max-width: 768px) {h1 {font-size: 40px; max-width: 200px; } p {font-size: 16px; max-width: 250px; margin-bottom: 10px; } h4 {font-size: 16px; }}"
-      ],
-      "name": "Slideshow",
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "minimal",
-        "autoplay": true,
-        "autoplay_speed": 5
-      }
-    },
-    "aug_t_slider_prolon_AhLy6K": {
-      "type": "dk-aug-t-slider-prolon",
-      "blocks": {
-        "list_item_U76pVn": {
-          "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/Forbes_2000x_821b170e-fdda-4083-8b79-c634d17e5f2d_1.png"
-          }
-        },
-        "list_item_nidfec": {
-          "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/Time_2000x_984cb42b-7b4a-4ba8-9b3f-4c0aea53738b_1.png"
-          }
-        },
-        "list_item_hhW8UC": {
-          "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/national-geographic-slide-logo-270x69_1.webp"
-          }
-        },
-        "list_item_WEkcQH": {
-          "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/News_Week_2000x_c1544cd9-c38d-4a53-8b7b-5ad0c4f4827a_1.png"
-          }
-        },
-        "list_item_xWbwqp": {
-          "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/arte-slide-logo-270x69_1.webp"
-          }
-        },
-        "list_item_UGcT3n": {
-          "type": "list_item",
-          "disabled": true,
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "list_item_U76pVn",
-        "list_item_nidfec",
-        "list_item_hhW8UC",
-        "list_item_WEkcQH",
-        "list_item_xWbwqp",
-        "list_item_UGcT3n"
-      ],
-      "custom_css": [
-        "section.bg-\\[\\#F3F3F2\\].slider-container-main {background: #f1eae5; /* border-left: 4px; */}"
-      ],
-      "settings": {}
-    },
-    "reviews-widget_AhLy6K": {
-      "type": "reviews-widget",
-      "disabled": true,
-      "settings": {
-        "widget_type": "grid"
-      }
-    },
     "dk_image_with_text_yVcW8g": {
       "type": "dk-image-with-text-home-page",
-      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
         "enable_images": false,
         "flex-reverse": "",
         "line_change": "",
-        "line_color": "white",
-        "mobile_line_color": "white",
-        "bg-color": "bg-[#263F36]",
-        "title_color": "white",
+        "line_color": "green",
+        "bg-color": "bg-[#F1EAE5]",
+        "title_color": "dark_green",
         "subheading_text_tab_1": "",
-        "heading_text": "The creator of Fasting Mimicking Technology - Dr. Valter Longo, Ph.D",
-        "paragraph_1": "<div class=\"text-start  md:pb-0 text-white\">\n<p class=\"my-4\">Dr. Valter Longo is the Director of the Longevity Institute at the University of Southern California. He is the grandfather of the science of fasting and was named by TIME among the top 50 most influential people in Health.\n<br><br>\nFor the Fasting Mimicking Diet® (FMD), Prof. Longo was awarded the first patent in history for Healthspan. He discovered first how cells sense food and then devised the fasting mimicking formulation, and finally conducted mouse and human trials to test the health benefits of the Fasting Mimicking Diet (FMD).\n<br><br>\nIt is derived from these findings that we are able to bring you ProLon line of products. </p>\n</div>\n<br>",
+        "heading_text": "L’ideatore:il Professor Valter Longo",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\"> Il protocollo è stato ideato dal Professor Valter Longo, biologo e gerontologo di fama internazionale, direttore dell’USC Longevity Institute di Los Angeles e dell’Istituto di Oncologia Molecolare IFOM di Milano.<br>\nIl suo lavoro scientifico, riconosciuto a livello globale, ha dimostrato come specifici regimi alimentari possano influenzare la longevità, la prevenzione e persino il trattamento di alcune malattie. La Dieta Mima Digiuno è il risultato di oltre 20 anni di ricerca sui meccanismi cellulari della restrizione calorica e sui suoi effetti positivi sull’organismo.\n</p>\n</div>\n<div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
+        "hero_image": "shopify://shop_images/dmd-asset-longo-0001.webp",
         "video_url": "",
+        "enable_video_link": false,
         "html_v": "lg:!my-[135px]",
         "html_line": ""
       }
     },
-    "pl_image_with_text_reverse_yVcW8g": {
+    "reviews-widget_AhLy6K": {
+      "type": "reviews-widget",
+      "settings": {
+        "widget_type": "carousel"
+      }
+    },
+    "pl_image_with_text_reverse_cMFx9q": {
       "type": "pl-image-with-text-reverse",
+      "custom_css": [
+        "div > section > div > div.flex.flex-col.items-center.justify-between.mx-auto.lg\\:flex-row > div.relative.flex.items-center.justify-center.md\\:pt-0.pt-4.lg\\:py-44.lg\\:border-r-2.lg\\:border-\\[\\#56A511\\].lg\\:w-1\\/2.lg\\:mt-0 > div {padding-top: 50px; padding-bottom: 50px;}"
+      ],
+      "name": "dk home image with text",
       "settings": {
         "section_id": "",
         "enable_section": false,
         "enable_images": false,
         "flex-reverse": "",
-        "line_change": "lg:py-[135px]",
-        "line_color": "dark",
+        "line_change": "",
+        "line_color": "green",
         "mobile_line_color": "black",
-        "bg-color": "",
+        "bg-color": "bg-[#F1EAE5]",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
-        "heading_text": "Cos'è il digiuno e cosa succede al tuo corpo mentre digiuni?",
-        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\"> In parole povere, il digiuno consiste nell'astenersi dal mangiare per un periodo di tempo prestabilito. I digiuni prolungati sbloccano il livello più profondo di digiuno e attivano il naturale processo di rigenerazione del corpo.\n<br><br>\nLe cellule puliscono e riciclano le parti vecchie e danneggiate, rinnovandosi.</p>\n</div>\n\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/collections/tutti-i-prodotti\" class=\"sm:w-[260px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">ACQUISTA PROLON\n                    </span>\n                </a>\n                \n            </div>\n<br>",
-        "hero_image": "shopify://shop_images/asset-about-prolon-fmd-0001_2000x_90fcc7f4-e03d-415f-9e9c-ce0cda00652f.webp",
+        "heading_text": "I principi alla base della Dieta Mima Digiuno",
+        "paragraph_1": "<br>Il protocollo nasce da un concetto chiave: ingannare il corpo simulando il digiuno, pur continuando ad assumere nutrienti essenziali.\n<br><br>\nDurante i 5 giorni della dieta:\n<ul class=\"list-disc\">\n<li>l’apporto calorico viene ridotto del 40–50% rispetto al normale;</li>\n<li>le proteine vengono drasticamente limitate;</li>\n<li>la fonte energetica principale proviene da grassi insaturi e carboidrati complessi;</li>\n<li>i pasti sono esclusivamente di origine vegetale.</li>\n</ul>\n<br>\nIn questo modo, l’organismo entra in una condizione metabolica simile al digiuno totale, attivando processi come l’autofagia e la rigenerazione cellulare, ma senza gli stessi rischi e difficoltà di un digiuno completo.<br><br><div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
+        "hero_image": "shopify://shop_images/dmd-asset-image-0001.webp",
         "video_url": "",
-        "html_v": "lg:!mx-[135px] py-[50px]",
+        "html_v": "lg:mx-[135px]",
         "html_line": ""
       }
     },
@@ -260,17 +178,108 @@
         "paragraph_1_tab_4_product_2": "Tab 4 product 2 Description"
       }
     },
+    "pl_products_showcase_de7HnB": {
+      "type": "pl-products-showcase",
+      "disabled": true,
+      "name": "PL products tabs Section",
+      "settings": {
+        "section_id": "",
+        "title": "SCOPRI TUTTI I PRODOTTI L-NUTRA",
+        "subtitle": "",
+        "show_products": "core",
+        "tab0_title": "Tutti",
+        "tab1_title": "DIETA MIMA DIGIUNO",
+        "price_prefix_product_1_1": "A partire da",
+        "product_1_1": "prolon-5-day",
+        "video_url_tab_1": "",
+        "subheading_text_tab_1": "RINGIOVANISCI DALL'INTERNO",
+        "heading_text_tab_1": "Prolon 5-Giorni",
+        "paragraph_1_tab_1": "<span>Un'alimentazione che migliora la tua vita, supportando il ringiovanimento cellulare e metabolico, e proteggendo la massa magra. </span>",
+        "price_prefix_product_1_2": "A partire da",
+        "product_1_2": "reset",
+        "video_url_tab_1_product_2": "",
+        "subheading_text_tab_1_product_2": "UN RESET DI UN GIORNO PER MENTE E CORPO",
+        "heading_text_tab_1_product_2": "Reset Kit 1 giorno",
+        "paragraph_1_tab_1_product_2": "<span> Prenditi un giorno per resettare e disintossicazione il tuo corpo con un'alimentazione che simula il digiuno.</span>",
+        "tab2_title": "DIGIUNO INTERMITTENTE",
+        "price_prefix_product_2_1": "A partire da",
+        "product_2_1": "prolon-nutrition-bar",
+        "video_url_tab_2": "",
+        "subheading_text_tab_2": "BARRETTE PER PROLUNGARE IL DIGIUNO",
+        "heading_text_tab_2": "Nutrition Bar",
+        "paragraph_1_tab_2": "<span> Ottima a colazione per nutrire l'organismo mantenendolo in uno stato di digiuno fisiologico.</span>",
+        "price_prefix_product_2_2": "A partire da",
+        "product_2_2": "prolon-fasting-shake",
+        "video_url_tab_2_product_2": "",
+        "subheading_text_tab_2_product_2": "GUSTO VANIGLIA",
+        "heading_text_tab_2_product_2": "Fasting Shake",
+        "paragraph_1_tab_2_product_2": "<span> Ottimo frullato per la colazione che nutre l'organismo mantenendo uno stato di digiuno fisiologico.</span>",
+        "tab3_title": "Longevity Everyday",
+        "price_prefix_product_3_1": "A partire da",
+        "product_3_1": "l-protein-bar",
+        "video_url_tab_3": "",
+        "subheading_text_tab_3": "BARRETTE PROTEICHE",
+        "heading_text_tab_3": "L-Protein Bar",
+        "paragraph_1_tab_3": "<span>L'unica barretta proteica creata da scienziati della longevità per nutrire i muscoli senza accelerare l'invecchiamento.\n</span>",
+        "price_prefix_product_3_2": "A partire da",
+        "product_3_2": "prolon-l-protein",
+        "video_url_tab_3_product_2": "",
+        "subheading_text_tab_3_product_2": "BEVANDA PROTEICA COMPLETA",
+        "heading_text_tab_3_product_2": "L-Protein",
+        "paragraph_1_tab_3_product_2": "<span> Sintesi muscolare ottimale con proteine vegetali complete per sostenere le prestazioni e l'invecchiamento sano.</span>",
+        "price_prefix_product_3_3": "A partire da",
+        "product_3_3": "prolon-longevity-spread",
+        "video_url_tab_3_product_3": "",
+        "subheading_text_tab_3_product_3": "MANDORLE PUGLIESI E CACAO",
+        "heading_text_tab_3_product_3": "Crema spalmabile",
+        "paragraph_1_tab_3_product_3": "<span>Ricca di antiossidanti, grassi sani e proteine vegetali di qualità superiore provenienti dalle mandorle pugliesi, la longevità non è mai stata così deliziosa.</span>",
+        "tab4_title": "INTEGRATORI PER LA LONGEVITÀ",
+        "price_prefix_product_4_1": "A partire da",
+        "product_4_1": "l-biome",
+        "video_url_tab_4": "",
+        "subheading_text_tab_4": "PER LA SALUTE INTESTINALE",
+        "heading_text_tab_4": "L-Biome",
+        "paragraph_1_tab_4": "Ricco di pre e probiotici, contribuisce al mantenimento di una sana una barriera intestinale.",
+        "price_prefix_product_4_2": "A partire da",
+        "product_4_2": "l-pill-upsell",
+        "video_url_tab_4_product_2": "",
+        "subheading_text_tab_4_product_2": "PER UN INVECCHIAMENTO SANO",
+        "heading_text_tab_4_product_2": "L-Pill",
+        "paragraph_1_tab_4_product_2": "Integratore a base di Antiossidanti natu- rali, DHA e lisina, contribuisce a conservare la fisiologica funzione cerebrale."
+      }
+    },
+    "dk_image_with_text_home_page_Et8NLg": {
+      "type": "dk-image-with-text-home-page",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "enable_section": false,
+        "enable_images": false,
+        "flex-reverse": "",
+        "line_change": "",
+        "line_color": "dark",
+        "bg-color": "",
+        "title_color": "dark_green",
+        "subheading_text_tab_1": "",
+        "heading_text": "Ricerca & Sviluppo supportati dalla scienza",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\nProLon è una tecnologia basata sulla nutrizione di precisione testata clinicamente per mantenerti in uno stato di digiuno mentre nutri il tuo corpo con il cibo. Resetta il tuo corpo e permettigli di rigenerarsi dall'interno in soli cinque giorni. Il programma alimentare brevettato è supportato da 20 anni di ricerca e €34 milioni in ricerca e sviluppo.\n<br><br>\nIl 96% dei nostri clienti completa ProLon al primo tentativo. Con oltre 1.000.000 di kit venduti in tutto il mondo, unisciti a noi e occupati già da adesso del tuo futuro in salute. I prodotti ProLon® sono Made in Italy e registrati presso il Ministero della Salute.\n\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/pages/scienza-e-ricerca\" class=\"sm:w-[260px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#263F36] font-[700] text-[14px] \">\n                       SCIENZA E RICERCA\n                    </span>\n                </a>\n                \n            </div>\n<br>\n</div>",
+        "video_url": "",
+        "enable_video_link": true,
+        "html_v": "lg:!my-[135px]",
+        "html_line": ""
+      }
+    },
     "dk_bg_image_text_bRqbW7": {
       "type": "dk-bg-image-text",
       "custom_css": [
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/894aa4c4460b4287f2fe83f338fa9f351939330a-inv_2000x_29f2e111-002b-49ba-9afa-07341f779e57.webp",
-        "heading": "<span class=\"font-semibold\">La svolta nutrizionale del secolo</span>",
+        "background_image": "shopify://shop_images/bg-dmd-50-opacity.webp",
+        "heading": "Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
         "subheading_above": "",
-        "subheading": "Scoperta e sviluppata presso il Longevity Institute dell'Università della California del Sud, la nostra tecnologia si basa su un'alimentazione a base vegetale che consente al corpo di entrare in uno stato di digiuno benefico senza attivare i sensori nutrizionali delle cellule. Come suggerisce il nome, imita effettivamente il digiuno... pur consentendo di mangiare. Questo digiuno nutriente perfeziona le cellule, favorisce un invecchiamento sano ed elimina la necessità di un digiuno a base di sola acqua, che può avere effetti collaterali negativi.",
-        "paragraph": "",
+        "subheading": "",
+        "paragraph": "La Dieta Mima Digiuno non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n<br><br>\nIl suo successo deriva dalla combinazione di tre elementi:\n<br><br>\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.<br>\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.<br>\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
         "show_form": false,
         "show_paragraph_after_form": false,
         "paragraph_after_form": "",
@@ -282,97 +291,6 @@
         "button_text_2": ""
       }
     },
-    "pl_products_showcase_de7HnB": {
-      "type": "pl-products-showcase",
-      "disabled": true,
-      "name": "PL products tabs Section",
-      "settings": {
-        "section_id": "",
-        "title": "Shop Prolon and everyday nutrition",
-        "subtitle": "",
-        "show_products": "core",
-        "tab0_title": "All",
-        "tab1_title": "FASTING MIMICKING NUTRITION",
-        "price_prefix_product_1_1": "A partire da",
-        "product_1_1": "",
-        "video_url_tab_1": "",
-        "subheading_text_tab_1": "REJUVENATION FROM WITHIN",
-        "heading_text_tab_1": "Prolon 5-Day Program",
-        "paragraph_1_tab_1": "<span>\n  Life-changing nutrition that rejuvenates cell and <br> metabolism while protecting lean body mass. \n</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-5-day-kit\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511]  font-[700]  text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "price_prefix_product_1_2": "A partire da",
-        "product_1_2": "",
-        "video_url_tab_1_product_2": "",
-        "subheading_text_tab_1_product_2": "",
-        "heading_text_tab_1_product_2": "ReSet 1-day kit",
-        "paragraph_1_tab_1_product_2": "<span>A one-day all-inclusive offset, detox, and reset with fasting-mimicking nutrition.</span>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/reset\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "tab2_title": "Intermittent Fasting",
-        "price_prefix_product_2_1": "A partire da",
-        "product_2_1": "",
-        "video_url_tab_2": "",
-        "subheading_text_tab_2": "EXTEND YOUR FASTING WINDOW",
-        "heading_text_tab_2": "Nutrition Bar - 12 Pack",
-        "paragraph_1_tab_2": "<span>\n Enhance fat burning by using Fasting Bar— Our nutrition technology proves that it will not break your fast or decrease your ketones.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-fasting-bar\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "price_prefix_product_2_2": "A partire da",
-        "product_2_2": "",
-        "video_url_tab_2_product_2": "",
-        "subheading_text_tab_2_product_2": "",
-        "heading_text_tab_2_product_2": "Fasting Shake",
-        "paragraph_1_tab_2_product_2": "<span>\nElongate your fast without impacting your level of ketosis. Enjoy as a meal replacement during your fasting window.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-fasting\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "tab3_title": "Everyday Longevity",
-        "price_prefix_product_3_1": "A partire da",
-        "product_3_1": "",
-        "video_url_tab_3": "",
-        "subheading_text_tab_3": "PERFORMANCE & HEALTHY AGING",
-        "heading_text_tab_3": "L-Protein",
-        "paragraph_1_tab_3": "<span>\nNourish your body and muscles with clean and complete 25g plant-based proteins that won’t spike pro-aging pathways!\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/prolon-l-protein\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "price_prefix_product_3_2": "A partire da",
-        "product_3_2": "",
-        "video_url_tab_3_product_2": "",
-        "subheading_text_tab_3_product_2": "APULIAN ALMOND SPREAD",
-        "heading_text_tab_3_product_2": "L-Spread",
-        "paragraph_1_tab_3_product_2": "<span>\nFilled with antioxidants, healthy fats and supreme plant-based proteins from Apulian almonds in Italy, longevity never tasted so delicious.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/longevity-spread\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "price_prefix_product_3_3": "A partire da",
-        "product_3_3": "",
-        "video_url_tab_3_product_3": "",
-        "subheading_text_tab_3_product_3": "GUT HEALTH",
-        "heading_text_tab_3_product_3": "L-Biome",
-        "paragraph_1_tab_3_product_3": "<span>\nDual-cap technology with fasting nutrition pre and probiotics, wrapped with vegan DHA.\n</span>\n<br>\n<br>\n<div class=\"flex lg:!justify-start   pt-[16px] \">\n                <a href=\"/products/l-biome\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#56A511] font-[700] text-[14px] \">\n                        SHOP NOW\n                    </span>\n                </a>\n            </div>\n<br>",
-        "tab4_title": "Tab 4",
-        "price_prefix_product_4_1": "A partire da",
-        "product_4_1": "",
-        "video_url_tab_4": "",
-        "subheading_text_tab_4": "Tab 4 Subheading",
-        "heading_text_tab_4": "Tab 4 Heading",
-        "paragraph_1_tab_4": "Tab 4 Description",
-        "price_prefix_product_4_2": "A partire da",
-        "product_4_2": "",
-        "video_url_tab_4_product_2": "",
-        "subheading_text_tab_4_product_2": "Tab 4 product 2 Subheading",
-        "heading_text_tab_4_product_2": "Tab 4 product 2 Heading",
-        "paragraph_1_tab_4_product_2": "Tab 4 product 2 Description"
-      }
-    },
-    "dk_image_with_text_home_page_Et8NLg": {
-      "type": "dk-image-with-text-home-page",
-      "settings": {
-        "section_id": "",
-        "enable_section": false,
-        "enable_images": false,
-        "flex-reverse": "",
-        "line_change": "",
-        "line_color": "dark",
-        "mobile_line_color": "black",
-        "bg-color": "",
-        "title_color": "dark_green",
-        "subheading_text_tab_1": "",
-        "heading_text": "Che cos'è ProLon?",
-        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\nProLon® è un programma Nutri-Technology di 5 giorni, attentamente studiato e sviluppato per favorire la transizione del corpo verso uno stato di digiuno e mantenerlo, nutrendolo con nutrienti specifici in modo da non attivare i percorsi sensoriali del cibo. Questa innovazione scientifica consente di raccogliere i benefici di un digiuno prolungato (>3 giorni) continuando a mangiare.\n<br>\n<br>\nIl programma di 5 giorni di ProLon è naturale, pulito, a base vegetale, senza glutine e a basso indice glicemico. Favorisce un invecchiamento sano, il ringiovanimento cellulare, l'equilibrio metabolico, la perdita di peso mantenendo la massa muscolare magra, un migliore rapporto con il cibo e molto altro.\n<br>\n<br>\nLa formula rivoluzionaria di Prolon ha ottenuto oltre 40 brevetti in tutto il mondo ed è stata testata in 16 studi clinici su esseri umani presso L-Nutra, University of Southern California, Stanford University, Mayo Clinic, Università di Genova, Università di Berlino, Università di Heidelberg, Università di Leida e molti altri.\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/collections/tutti-i-prodotti\" class=\"sm:w-[260px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#263F36] font-[700] text-[14px] \">\n                       ACQUISTA PROLON\n                    </span>\n                </a>\n                \n            </div>\n<br>\n</div>",
-        "hero_image": "shopify://shop_images/6d12756b2bad1c7fe3d42ce2c7e24888c5049ee5_2000x_847fc5ac-7fa4-4e72-851b-82baec4d2991.webp",
-        "video_url": "",
-        "html_v": "lg:!my-[135px]",
-        "html_line": ""
-      }
-    },
     "aug_t_video_wQJVLN": {
       "type": "dk-aug-t-video",
       "blocks": {
@@ -380,40 +298,40 @@
           "type": "image_block",
           "settings": {
             "alt_text": "Video Image",
-            "video_url": "https://www.youtube.com/watch?v=QiKcfzDu7Rg",
-            "video_title": "What is Prolon?  ",
+            "video_url": "https://www.youtube.com/watch?v=r0dtw44rpao",
+            "video_title": "Che cos'è ProLon?  ",
             "video_author": " Joseph Antoun MD, PhD",
-            "video_role": "CEO, Prolon"
+            "video_role": "CEO, ProLon"
           }
         },
         "image_block_AQXReL": {
           "type": "image_block",
           "settings": {
             "alt_text": "Video Image",
-            "video_url": "https://www.youtube.com/watch?v=qy9xwR31XMw",
-            "video_title": "Learn from a dietitian ",
+            "video_url": "https://www.youtube.com/watch?v=VUlX2rwdRlw",
+            "video_title": "Impara da un dietologo",
             "video_author": " Kristin Kirkpatrick",
-            "video_role": "Dietitian, Cleveland Clinic"
+            "video_role": "Dietista, Cleveland Clinic"
           }
         },
         "image_block_L4a7NF": {
           "type": "image_block",
           "settings": {
             "alt_text": "Video Image",
-            "video_url": "https://www.youtube.com/watch?v=i6v0FhfzGws",
-            "video_title": "Game changer for fasting ",
+            "video_url": "https://www.youtube.com/watch?v=ypMSDKKLbak",
+            "video_title": "Cambia rotta con il digiuno",
             "video_author": " Sky C.",
-            "video_role": "Olympic cyclist & entrepreneur"
+            "video_role": "Ciclista Olimpico & imprenditore"
           }
         },
         "image_block_8iBkcQ": {
           "type": "image_block",
           "settings": {
             "alt_text": "Video Image",
-            "video_url": "https://www.youtube.com/watch?v=TRGu1JehI2w",
-            "video_title": "Fasting is essential ",
+            "video_url": "https://www.youtube.com/watch?v=0Rc2DpCJ8bc",
+            "video_title": "Il digiuno è essenziale",
             "video_author": " Renee Fitton MS, RD",
-            "video_role": "Director of Education, Prolon"
+            "video_role": "Direttore dell'istruzione, Prolon"
           }
         }
       },
@@ -430,12 +348,12 @@
       "settings": {
         "section_id": "",
         "show_bottom_line": false,
-        "title": "Learn more about Prolon from longevity experts",
+        "title": "Scopri di più su ProLon dagli esperti di longevità",
         "subtitle": "",
-        "first_button_link": "/collections/all-products",
-        "first_button_text": "SHOP PROLON",
-        "second_button_link": "/pages/what-is-prolon",
-        "second_button_text": "ABOUT PROLON"
+        "first_button_link": "shopify://collections/tutti-i-prodotti",
+        "first_button_text": "ACQUISTA PROLON",
+        "second_button_link": "shopify://pages/cose-prolon",
+        "second_button_text": "COS'È PROLON"
       }
     },
     "advanced_content_TARTkH": {
@@ -443,7 +361,6 @@
       "blocks": {
         "html_Tg7kKf": {
           "type": "html",
-          "disabled": true,
           "settings": {
             "code": "<style>\ndiv#shopify-section-template--18574910750878__advanced_content_TARTkH {\n    padding-top: 0;\n    padding-bottom: 0;\n   padding-left: 0;\n        padding-right: 0;\n    max-width: 1600px;\n    margin: 0 auto;\n}\n\n\n.custom__item.one-whole.align--center {\n    margin-bottom: 0;\n     padding-left: 0;\npadding-right: 0;\n}\n\n@media (min-width: 768px) {\n  .custom__item.one-whole.align--center  {\n   margin-bottom: 0;\npadding-left: 22px;\n\n    }\n}\n\n.lyvecom_carousel--component-new {padding-top: 20px;}\n\n.lyvecom-swiper--component .carousel-wrapper .swiper-button-next {\n    right: 24px !important;\n}\n  margin: 0 auto;\n    max-width: 1600px;\n</style>\n<div class=\"flex justify-start gap-4 px-4 md:block\">\n            <div class=\"flex items-center justify-center md:hidden \">\n                <div class=\"w-[2px] h-full  bg-white\"> </div>\n            </div>\n<div class=\"w-[2px] mx-auto h-[106px]  bg-white  md:block hidden\"></div>\n<script data-lyvecom async src=\"https://dashboard.lyvecom.com/widget/widget.js\"></script>\n      <div class=\"lyvecom_carousel--component-new\" data-lyvecom-id=\"67c79ca805e742d15c38779c\"></div>\n      <script>\n          (() => {\n                  const scriptElement = document.querySelector('script[data-lyvecom]');\n                  const mountCarousel = () => {\n                      LyveComWidget.mountCarouselComponentV2({\n                        carouselID: '67c79ca805e742d15c38779c',\n                        carousel: true,\n                        lng: 'en'\n                    });\n                  }\n                      \n                  if (window.LyveComWidget) {\n                        mountCarousel();\n                    } else {\n                        scriptElement.addEventListener('load', mountCarousel);\n                    }\n          })()\n      </script>\n<div class=\"w-[2px] mx-auto h-[106px]  bg-white  md:block hidden\"></div>\n</div>",
             "width": "100%",
@@ -470,41 +387,41 @@
         "slide_BfkTqn": {
           "type": "slide",
           "settings": {
-            "day_number": "DAY 01",
-            "day_title": "Transition to a fasting state",
-            "day_description": "The body transitions to a fasting state and fat-burning mode as it begins preparation for cellular clean-up."
+            "day_number": "GIORNO 01",
+            "day_title": "Transizione stato di mima digiuno",
+            "day_description": "In questa fase il corpo brucia i grassi e può cominciare il processo di pulizia cellulare e rigenerazione cellulare."
           }
         },
         "slide_3VcNCe": {
           "type": "slide",
           "settings": {
-            "day_number": "DAY 02",
-            "day_title": "Fat burning begins",
-            "day_description": "For most people, fat burning (ketosis) begins between 24–48 hours of their fast."
+            "day_number": "GIORNO 02",
+            "day_title": "Combustione dei grassi e Chetosi",
+            "day_description": "La combustione dei grassi aumenta, contribuendo all'inizio della chetogenesi (produzione di chetoni). Alla fine del secondo giorno (48 ore), può verificarsi la chetosi."
           }
         },
         "slide_zYMdKi": {
           "type": "slide",
           "settings": {
-            "day_number": "DAY 03",
-            "day_title": "Cellular clean-up begins",
-            "day_description": "Autophagy, our body’s natural cellular clean-up system, ignites after 72 hours. Fat burning continues and increases."
+            "day_number": "GIORNO 03",
+            "day_title": "Autofagia - Pulizia Cellulare",
+            "day_description": "Aumenta la combustione dei grassi e la produzione/utilizzo dei chetoni, migliorando il processo di rigenerazione cellulare."
           }
         },
         "slide_GQdN6M": {
           "type": "slide",
           "settings": {
-            "day_number": "DAY 04",
-            "day_title": "Rejuvenation in progress",
-            "day_description": "Autophagy is fully activated, and cellular rejuvenation is in full effect."
+            "day_number": "GIORNO 04",
+            "day_title": "Rinnovamento Cellulare",
+            "day_description": "La combustione dei grassi continua. Le cellule                                                             si trasformano in versioni più giovani di se stesse. Sei in dirittura d'arrivo per completare il programma alimentare."
           }
         },
         "slide_qC6y8y": {
           "type": "slide",
           "settings": {
-            "day_number": "DAY 05",
-            "day_title": "Cellular renewal peaks",
-            "day_description": "On the last day of your fast, cellular renewal is at its peak, and you may experience an increase in energy."
+            "day_number": "GIORNO 05",
+            "day_title": "Rinnovamento & Cambiamento",
+            "day_description": "Digiuno Completato, il rinnovamento cellulare continua oltre il 5° giorno. Può verificarsi il fenomeno della chetosi prolungata, favorendo il mantenimento dell'equilibrio metabolico."
           }
         }
       },
@@ -523,27 +440,27 @@
         "flex-reverse": "",
         "line_change": "",
         "line_color": "dark",
-        "mobile_line_color": "black",
         "bg-color": "bg-[#F1EAE5] md:bg-white",
         "title_color": "dark_green",
-        "subheading_text_tab_1": "REDUCE BIOAGE BY 2.5 YEARS",
-        "heading_text": "Defy aging by reversing your biological age",
-        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\n\nThree cycles of Prolon may decrease your bioage by 2.5 years in as few as 3 cycles over 3 months. Prolon 5-Day provides everything you need for a complete five day cellular rejuvenating fast, with food to nourish your body.\n<br>\n<br>\nDon’t wait, start reversing your biological age today.\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/products/prolon-offer\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full text-white bg-[#56A511] font-[700] text-[14px]\">\n                        SHOP Prolon\n                    </span>\n                </a>\n                 <a href=\"/pages/the-science\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full  border-[#263F36] border-2 text-[#263F36] font-[700] text-[14px]\">\n                      Learn More\n                    </span>\n                </a>\n            </div>\n<br>\n</div>",
+        "subheading_text_tab_1": "RIDUCE L'ETÀ BIOLOGICA DI 2,5 ANNI",
+        "heading_text": "Contrasta l’invecchiamento invertendo la tua età biologica",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\nIl punteggio dell'età biologica (BAS) mostra che 3 cicli di ProLon 5-Giorni riducono l'età biologica di 2,5 anni.\n<br>\n<br>\nProLon 5-Giorni fornisce tutto il necessario per una dieta di 5 giorni in grado di stimolare un ringiovanimento cellulare veloce.\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/collections/tutti-i-prodotti\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full text-white bg-[#56A511] font-[700] text-[14px]\">\n                        Acquista ProLon\n                    </span>\n                </a>\n                 <a href=\"/pages/scienza-e-ricerca\" class=\"sm:w-[230px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-[8px]  rounded-full  border-[#263F36] border-2 text-[#263F36] font-[700] text-[14px]\">\n                      Scopri di Più\n                    </span>\n                </a>\n            </div>\n<br>\n</div>",
         "video_url": "",
+        "enable_video_link": false,
         "html_v": "lg:!my-[130px]",
         "html_line": ""
       }
     },
     "dk_bg_image_text_CDAU6b": {
       "type": "dk-bg-image-text",
+      "disabled": true,
       "custom_css": [
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/f6cc9d57a1cb933b166042f0cb4059f6d9401278_2000x_9db443b7-3c9d-4e2c-97c2-8217e33e9253.webp",
-        "heading": "<span class=\"\">Unisciti alla community di L-Nutra!</span>",
+        "heading": "<span class=\"\"> Unisciti alla community  di L-Nutra! </span>",
         "subheading_above": "",
-        "subheading": "<span class=\"font-thin\">Rimani aggiornato sulle ultime scoperte scientifiche e innovazioni della Dieta Mima Digiuno di ProLon!</span>\n\n<br>\n<br>",
+        "subheading": "<span class=\"font-thin\"> Rimani aggiornato sulle ultime scoperte scientifiche e innovazioni della Dieta Mima Digiuno di ProLon!</span>",
         "paragraph": "",
         "show_form": true,
         "show_paragraph_after_form": true,
@@ -551,28 +468,35 @@
         "show_html": false,
         "content_html": "",
         "button_link": "",
-        "button_text": "EXPLORE NOW",
+        "button_text": "",
         "button_link_v2": "",
         "button_text_2": ""
+      }
+    },
+    "17555143132e16a4e3": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     }
   },
   "order": [
     "pl_home_hero_section_PEye93",
-    "174611979935c72ead",
-    "dk_video_banner_RP3rTH",
-    "slideshow_QCLcbR",
-    "aug_t_slider_prolon_AhLy6K",
-    "reviews-widget_AhLy6K",
+    "pl_home_hero_section_UKpi83",
+    "advanced_content_new_6LzPx7",
     "dk_image_with_text_yVcW8g",
-    "pl_image_with_text_reverse_yVcW8g",
+    "reviews-widget_AhLy6K",
+    "pl_image_with_text_reverse_cMFx9q",
     "dk_aug_t_tabs_prolon_i3wmPN",
-    "dk_bg_image_text_bRqbW7",
     "pl_products_showcase_de7HnB",
     "dk_image_with_text_home_page_Et8NLg",
+    "dk_bg_image_text_bRqbW7",
     "aug_t_video_wQJVLN",
     "advanced_content_TARTkH",
     "dk_image_with_text_3cAkPt",
-    "dk_bg_image_text_CDAU6b"
+    "dk_bg_image_text_CDAU6b",
+    "17555143132e16a4e3"
   ]
 }
