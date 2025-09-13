@@ -44,198 +44,30 @@
         "button_text_2": "SCOPRI DI PIÙ"
       }
     },
-    "174611979935c72ead": {
-      "type": "apps",
-      "disabled": true,
+    "advanced_content_new_6LzPx7": {
+      "type": "advanced-content-new",
+      "blocks": {
+        "liquid_zry8i3": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 class=\"text-center\"><b>Cos’è la Dieta Mima Digiuno</b>: guida completa al protocollo ideato da Valter Longo</h2>\n<section class=\"flex flex-col md:flex-row\">\n  <!-- Box 1 -->\n  <div class=\"flex-1 p-6 text-center md:border-r-2 border-b-2 md:border-b-0 border-[#56A511]\">\n    <h3 class=\"text-xxl\">Longevità Cellulare</h3>\n    <p class=\"text-gray-700\">Attiva i meccanismi di rigenerazione cellulare e rallenta l'invecchiamento.</p>\n  </div>\n\n  <!-- Box 2 -->\n  <div class=\"flex-1 p-6 text-center border-b-2 md:border-b-0 border-[#56A511]\">\n    <h3 class=\"text-lg font-semibold mb-2\">Titolo 2</h3>\n    <p class=\"text-gray-700\">Questo è il testo del secondo box, descrizione breve.</p>\n  </div>\n\n  <!-- Box 3 -->\n  <div class=\"flex-1 p-6 text-center md:border-l-2 border-b-0 border-[#56A511]\">\n    <h3 class=\"text-lg font-semibold mb-2\">Titolo 3</h3>\n    <p class=\"text-gray-700\">Questo è il testo del terzo box, descrizione breve.</p>\n  </div>\n</section>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_zry8i3"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
         "full_width": false,
         "space_around": true
       }
     },
-    "dk_video_banner_RP3rTH": {
-      "type": "dk-video-banner",
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 48em) {.md\\:text-5xl {font-size: 4rem; line-height: 1; font-weight: 600; } .italic {font-style: none !important; font-size: 3rem; font-weight: 800; }}"
-      ],
-      "settings": {
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/ebf67f169b764fa5bc01a200f251e8ad.mp4",
-        "heading_text": "<span class=\"block mb-0 md:mb-4\">Nutrition Science to help you\n</span>",
-        "html": "Live Healthier, Promote Healthy Aging, Lose fat, Improve Energy, Rejuvenate your cells, Protect Lean Muscle Mass",
-        "sub_text": "Experience the many benefits of fasting while you eat<br><br>",
-        "button_link": "#prolon-programs",
-        "button_text": "Shop Prolon Nutrition",
-        "quiz_button_link": "/pages/quiz",
-        "quiz_button_text": "Getting Started Quiz"
-      }
-    },
-    "slideshow_QCLcbR": {
-      "type": "slideshow",
-      "blocks": {
-        "b0d6bc75-f91c-4344-a299-7c63667f6091": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "Solo per pochi giorni: è <strong>RESET WEEK!</strong>",
-            "title_size": 40,
-            "title_tag": "h3",
-            "title_class": "h1",
-            "subheading": "<p><b>Fino al 31 luglio</b>: 25% di sconto su tutti i prodotti</p>\n<p class=\"mt-2\">Inserisci il coupon <b>RESETWEEK</b></p>\n\n<div class=\"countdown-bf mx-auto md:mx-2 gap-x-2\">\n    <div class=\"container-day\">\n        <h3 class=\"day font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Giorni</p>\n    </div>\n    <div class=\"container-hour\">\n        <h3 class=\"hour font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Ore</p>\n    </div>\n    <div class=\"container-minute\">\n        <h3 class=\"minute font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Minuti</p>\n    </div>\n    <div class=\"container-second\">\n        <h3 class=\"second font-bold\">Time</h3>\n        <p class=\"cd-title font-bold\">Secondi</p>\n    </div>\n</div>\n\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n  .slideshow__slide--b0d6bc75-f91c-4344-a299-7c63667f6091 .hero__text-shadow {\n    margin-top: 65%;\n    max-width: 85%;\ntext-align: center;\n  }\n  .slideshow__slide--b0d6bc75-f91c-4344-a299-7c63667f6091 .hero__text-content {\ntext-align: center;\n  }\n}\n</style>\n<style>\n.countdown-bf {\n  display: flex;\n  justify-content: space-around;\n  text-align: center;\n  max-width: 300px;\n  color: black;\nmargin-top: 1rem;\n}\n\n@media only screen and (max-width: 768px) {\n  .countdown-bf {\n    flex-direction: row;\n    align-items: center;\n    max-width: 100%;\n    gap: 10px;\n    color: black;\n  }\n}\n\n.day, .hour, .minute, .second {\n  font-size: 1.5rem;\n}\n.cd-title {\n  font-size: 0.75rem;\n}\n.countdown-bf h3, .no-margin h2 {\n  margin-top: 0px;\n  margin-bottom: 0px;\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const countdown = () => {\n    const countDate = new Date(\"2025-07-31T23:59:59\");\n\n    const now = new Date().getTime();\n    const gap = countDate - now;\n\n    const second = 1000;\n    const minute = second * 60;\n    const hour = minute * 60;\n    const day = hour * 24;\n\n    const textDay = Math.floor(gap / day);\n    const textHour = Math.floor((gap % day) / hour);\n    const textMinute = Math.floor((gap % hour) / minute);\n    const textSecond = Math.floor((gap % minute) / second);\n\n    document.querySelector(\".day\").innerText = textDay;\n    document.querySelector(\".hour\").innerText = textHour;\n    document.querySelector(\".minute\").innerText = textMinute;\n    document.querySelector(\".second\").innerText = textSecond;\n  };\n\n  countdown(); // esegui subito\n  setInterval(countdown, 1000); // aggiorna ogni secondo\n});\n</script>",
-            "link": "shopify://collections/tutti-i-prodotti",
-            "link_text": "Ordina ora",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#1f4036",
-            "text_align": "vertical-center horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
-          }
-        },
-        "f43056e3-abac-4370-b8e9-822f4d7c7822": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "Ricominciare non è mai stato così facile!",
-            "title_size": 40,
-            "title_tag": "h2",
-            "title_class": "h1",
-            "subheading": "<p class=\"\">Con ProLon bastano 5 giorni per riattivare il corpo e supportare la tua routine</p>\n<style>\n/* NON ELIMINARE - Style for Mobile  */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--f43056e3-abac-4370-b8e9-822f4d7c7822 .horizontal-left .hero__text-shadow {\nmax-width: 600px;\nmargin-top: 60%;\nmax-width: 100%;\ntext-align: center;\n}\n}\n</style>",
-            "link": "shopify://products/prolon-5-day",
-            "link_text": "Acquista ProLon",
-            "link_2": "shopify://collections/tutti-i-prodotti",
-            "link_text_2": "TUTTI I PRODOTTI",
-            "color_accent": "#1f4036",
-            "text_align": "vertical-center horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "80% 0"
-          }
-        },
-        "dba8c427-4633-4ed0-9e6f-2eb59a2ead7c": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<span class=\"md:text-white\">Le proteine sono la chiave del tuo benessere quotidiano</span>",
-            "title_size": 40,
-            "title_tag": "h2",
-            "title_class": "h1",
-            "subheading": "<p class=\"md:text-white\">Scopri la nuova <strong>L-Protein Bar</strong>: 100% proteine vegane, formulata scientificamente per supportare forza e longevità.</p><b>\n\n<style>\n/* NON ELIMINARE */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--dba8c427-4633-4ed0-9e6f-2eb59a2ead7c .hero__text-shadow {\n    margin-top: 60%;\nmax-width: 100%;\ntext-align: center;\n}\n}\n.slideshow__slide--dba8c427-4633-4ed0-9e6f-2eb59a2ead7c .horizontal-left .hero__text-shadow {\n    max-width: 600px;\n}\n.slideshow__slide--hero_D6RqJM .hero__text-shadow {\ntext-align: center;\n}\n\n.p-subtitle {\nfont-weight: 700;\nfont-size: 2rem;\ncolor: #1F4036;\n}\n@media only screen and (min-width: 769px) { \n.text-shadow-hv {\n  text-shadow: 1px 1px black;\n}\n/*.slideshow__slide--dba8c427-4633-4ed0-9e6f-2eb59a2ead7c .hero__text-shadow {\n    border-radius: 15px;\n    color: #fff;\npadding: 30px 20px;\nbackdrop-filter: blur(10px);\n-webkit-backdrop-filter: blur(10px);\n}\n}*/\n</style></b>",
-            "link": "shopify://products/l-protein-bar",
-            "link_text": "Acquista L-Protein Bar",
-            "link_2": "shopify://collections/tutti-i-prodotti",
-            "link_text_2": "Scopri tutti i prodotti",
-            "color_accent": "#1f4036",
-            "text_align": "vertical-center horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "6c83ab16-4bb3-4cf1-931d-fced6e79524e": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<span class=\"\">La tua estate parte da dentro</span>",
-            "title_size": 40,
-            "title_tag": "h2",
-            "title_class": "h1",
-            "subheading": "<p class=\"\">Solo 5 giorni per ritrovare energia, equilibrio e benessere.</p>\n<p class=\"italic text-sm mt-4\"><b>ISCRIVITI ALLA NEWSLETTER E OTTIENI SUBITO UNO SCONTO DEL 15%</b></p>\n\n<style>\n/* NON ELIMINARE - Style for Mobile  */\n.horizontal-left .hero__text-shadow {\n    max-width: 650px;\n}\n\n.horizontal-left .hero__text-shadow .hero__subtitle {\nmax-width: 430px\n}\n@media only screen and (max-width: 768px) { .slideshow__slide--6c83ab16-4bb3-4cf1-931d-fced6e79524e .hero__text-shadow {\nmargin-top: 60%;\nmax-width: 100%;\ntext-align: center;\n}\n}\n@media only screen and (min-width: 768px) { \n.hero__link .btn {\n    color: #ffffff !important;\n}\n/*.slideshow__slide--6c83ab16-4bb3-4cf1-931d-fced6e79524e .hero__text-shadow {\n    border-radius: 15px;\n    color: #fff;\npadding: 30px 20px;\nbackdrop-filter: blur(10px);\n-webkit-backdrop-filter: blur(10px);\n}\n}*/\n</style>",
-            "link": "shopify://collections/tutti-i-prodotti",
-            "link_text": "Ordina Ora",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#1f4036",
-            "text_align": "vertical-center horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
-          }
-        },
-        "slideshow-0": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<span class=\"font-thin\">NON È UNA DIETA, È SCIENZA</span>",
-            "title_size": 40,
-            "title_tag": "h2",
-            "title_class": "h1",
-            "subheading": "<p>Scopri la tecnologia nutrizionale della Dieta Mima Digiuno per sostenere la salute metabolica, ridurre l'età biologica e cambiare il tuo rapporto con il cibo.</p>\n\n<style>\n/* NON ELIMINARE - Style for Mobile  */\n@media only screen and (max-width: 768px) {\n.slideshow__slide--slideshow-0 .hero__text-shadow {\nmargin-top: 70%;\nmax-width: 100%;\n}\n}\n</style>",
-            "link": "shopify://products/prolon-5-day",
-            "link_text": "Acquista ProLon Mima Digiuno",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#f7931d",
-            "text_align": "vertical-center horizontal-right",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
-          }
-        }
-      },
-      "block_order": [
-        "b0d6bc75-f91c-4344-a299-7c63667f6091",
-        "f43056e3-abac-4370-b8e9-822f4d7c7822",
-        "dba8c427-4633-4ed0-9e6f-2eb59a2ead7c",
-        "6c83ab16-4bb3-4cf1-931d-fced6e79524e",
-        "slideshow-0"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (min-width: 769px) {.svg-underline-1 {background-size: 75%; } #tp-custom-box iframe {width: min-content !important; margin-left: -10px; }}",
-        "@media only screen and (max-width: 768px) {.hero__text-content {vertical-align: top; } .svg-underline-1 {background-size: 90%; }}",
-        ".svg-underline-1 {background-image: url(\"https://cdn.shopify.com/s/files/1/0613/8069/0174/files/underline-1_79f9c021-c290-4606-bda0-7095367c1682.svg?v=1716393249\"); background-repeat: no-repeat; background-position: 0% 100%;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": 10,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 8
-      }
-    },
-    "aug_t_slider_prolon_AhLy6K": {
-      "type": "dk-aug-t-slider-prolon",
-      "blocks": {
-        "list_item_U76pVn": {
-          "type": "list_item",
-          "settings": {}
-        },
-        "list_item_nidfec": {
-          "type": "list_item",
-          "settings": {}
-        },
-        "list_item_hhW8UC": {
-          "type": "list_item",
-          "settings": {}
-        },
-        "list_item_WEkcQH": {
-          "type": "list_item",
-          "settings": {}
-        },
-        "list_item_xWbwqp": {
-          "type": "list_item",
-          "settings": {}
-        },
-        "list_item_UGcT3n": {
-          "type": "list_item",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "list_item_U76pVn",
-        "list_item_nidfec",
-        "list_item_hhW8UC",
-        "list_item_WEkcQH",
-        "list_item_xWbwqp",
-        "list_item_UGcT3n"
-      ],
-      "custom_css": [
-        "section.bg-\\[\\#F3F3F2\\].slider-container-main {background: #f1eae5; /* border-left: 4px; */}"
-      ],
-      "settings": {}
-    },
     "reviews-widget_AhLy6K": {
       "type": "reviews-widget",
+      "disabled": true,
       "settings": {
         "widget_type": "carousel"
       }
@@ -624,10 +456,7 @@
   "order": [
     "pl_home_hero_section_PEye93",
     "pl_home_hero_section_UKpi83",
-    "174611979935c72ead",
-    "dk_video_banner_RP3rTH",
-    "slideshow_QCLcbR",
-    "aug_t_slider_prolon_AhLy6K",
+    "advanced_content_new_6LzPx7",
     "reviews-widget_AhLy6K",
     "dk_image_with_text_yVcW8g",
     "dk_aug_t_tabs_prolon_i3wmPN",
