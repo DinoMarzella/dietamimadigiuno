@@ -50,6 +50,7 @@
           },
           "megamenu_tBdTnK": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "Scienza & Benefici",
               "megamenu_description": "",
@@ -60,6 +61,7 @@
           },
           "megamenu_GUmNPx": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "Chi siamo",
               "megamenu_description": "",
@@ -70,6 +72,7 @@
           },
           "megamenu_NwnR8P": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® Kit Dieta Mima Digiuno",
               "megamenu_description": "5 giorni per un benessere duraturo. L'unica DMD scientificamente testata.",
@@ -80,6 +83,7 @@
           },
           "megamenu_HcikhE": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® Next Gen",
               "megamenu_description": "Nuove zuppe biologiche pronte da gustare, per una maggiore praticità.",
@@ -90,6 +94,7 @@
           },
           "megamenu_WUY9Tb": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® ReSet - Kit 1 giorno",
               "megamenu_description": "Kit di 1 giorno per mantenere il tuo corpo in uno stato di digiuno.",
@@ -100,6 +105,7 @@
           },
           "megamenu_3t7qJT": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® Nutrition Bar",
               "megamenu_description": "Mantieni il tuo stato di digiuno con proteine vegetali adatte alla dieta",
@@ -110,6 +116,7 @@
           },
           "megamenu_URG8xq": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® Fasting Shake",
               "megamenu_description": "Fornisci energia al tuo corpo con fibre prebiotiche senza ingrassare.",
@@ -120,6 +127,7 @@
           },
           "megamenu_A7gxw4": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "Longevity Protein Bar (12 x 45gr)",
               "megamenu_description": "Una barretta proteica studiata per garantire forza e un invecchiamento sano",
@@ -130,6 +138,7 @@
           },
           "megamenu_PxPxkE": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon L-Protein",
               "megamenu_description": "Proteine vegetali di alta qualità per riparare i muscoli e migliorare le prestazioni.",
@@ -140,6 +149,7 @@
           },
           "megamenu_CdcU7z": {
             "type": "Megamenu",
+            "disabled": true,
             "settings": {
               "megamenu_type": "ProLon® Crema Spalmabile",
               "megamenu_description": "Ricca di proteine vegetali, grassi sani e pochi carboidrati.",
@@ -208,6 +218,7 @@
           },
           "announcement_Anqjmd": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Spedizione gratuita su ordini a partire da 99 €",
               "link_text": "",
@@ -217,6 +228,7 @@
           },
           "announcement_kgkDRU": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p class=\"flex justify-center\">Acquista ora e paga in 3 rate con Klarna, PayPal o Scalapay senza interessi</p>",
               "link_text": "",
@@ -226,6 +238,7 @@
           },
           "announcement_xAWzLq": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<div style=\"text-align: center; font-family: 'Open Sans', sans-serif;\">\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/signature/it-IT/4/5c46dc3e20d18f000126579a/text.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Punteggio Trustpilot Eccellente\">\n  </a>\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/signature/it-IT/4/5c46dc3e20d18f000126579a/stars.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Trustpilot 5 Stelle\">\n  </a>\n  <a href=\"https://it.trustpilot.com/review/prolon.it?utm_medium=Trustbox&utm_source=website-topbar\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: none; display: inline-block;\">\n    <img src=\"https://emailsignature.trustpilot.com/brand/s/4/logo.png\" border=\"0\" height=\"20\" style=\"max-height: 20px; border: none; vertical-align: middle;\" alt=\"Trustpilot Logo\">\n  </a>\n</div>",
               "link_text": "",
