@@ -65,12 +65,6 @@
         "space_around": true
       }
     },
-    "reviews-widget_AhLy6K": {
-      "type": "reviews-widget",
-      "settings": {
-        "widget_type": "carousel"
-      }
-    },
     "dk_image_with_text_yVcW8g": {
       "type": "dk-image-with-text-home-page",
       "settings": {
@@ -90,6 +84,12 @@
         "enable_video_link": false,
         "html_v": "lg:!my-[135px]",
         "html_line": ""
+      }
+    },
+    "reviews-widget_AhLy6K": {
+      "type": "reviews-widget",
+      "settings": {
+        "widget_type": "carousel"
       }
     },
     "pl_image_with_text_reverse_cMFx9q": {
@@ -286,7 +286,7 @@
         "show_html": false,
         "content_html": "",
         "button_link": "shopify://pages/scienza-e-ricerca",
-        "button_text": "La scienza",
+        "button_text": "SCOPRI DI PIÙ",
         "button_link_v2": "",
         "button_text_2": ""
       }
