@@ -336,6 +336,9 @@
           "footer-promotions-1",
           "footer-promotions-2"
         ],
+        "custom_css": [
+          "{display: none;}"
+        ],
         "settings": {
           "hide_homepage": false,
           "image_size": "wide"
@@ -376,7 +379,7 @@
           "custom_wxnM3G"
         ],
         "custom_css": [
-          "#FooterMenus {display: none;}"
+          "{display: none;}"
         ],
         "settings": {
           "show_locale_selector": false,

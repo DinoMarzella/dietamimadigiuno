@@ -67,7 +67,6 @@
     },
     "reviews-widget_AhLy6K": {
       "type": "reviews-widget",
-      "disabled": true,
       "settings": {
         "widget_type": "carousel"
       }
@@ -487,8 +486,8 @@
     "pl_home_hero_section_PEye93",
     "pl_home_hero_section_UKpi83",
     "advanced_content_new_6LzPx7",
-    "reviews-widget_AhLy6K",
     "dk_image_with_text_yVcW8g",
+    "reviews-widget_AhLy6K",
     "pl_image_with_text_reverse_cMFx9q",
     "dk_aug_t_tabs_prolon_i3wmPN",
     "pl_products_showcase_de7HnB",
