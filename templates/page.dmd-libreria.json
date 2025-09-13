@@ -34,13 +34,13 @@
       ],
       "settings": {
         "background_video": "",
-        "background_image": "shopify://shop_images/c9a9112f5403b1ce8d72d01e55df3c822d39ff51.jpg",
+        "background_image": "shopify://shop_images/4879765272a9e6f0e2f39effb41969f9afd65f10.jpg",
         "html": "",
-        "heading": "<span style=\"color: #263F36;\n\"><b>Cos’è la Dieta Mima Digiuno:</b><br>\nguida completa al protocollo\nideato da Valter Longo</span><br><br>\n<hr style=\"border-width: 3px; max-width: 500px; margin: 0 auto\">",
+        "heading": "<span style=\"color: #263F36;\n\"><b>Libri di Valter Longo:</b><br> dalle ricerche scientifiche a bestseller internazionali</span><br><br>\n<hr style=\"border-width: 3px; max-width: 500px; margin: 0 auto\">",
         "subheading": "",
-        "button_link": "shopify://products/l-protein-bar",
+        "button_link": "https://form.typeform.com/to/rK6lwKpd?utm_medium=typeform&utm_content=quiz",
         "button_text": "QUIZ PERSONALIZZATO",
-        "button_link_v2": "shopify://collections/tutti-i-prodotti",
+        "button_link_v2": "shopify://pages/ricerche",
         "button_text_2": "SCOPRI DI PIÙ"
       }
     },
@@ -59,7 +59,7 @@
         "liquid_JwLJkf": {
           "type": "liquid",
           "settings": {
-            "code": "<p class=\"text-center\">Negli ultimi anni la Dieta Mima Digiuno è diventata uno dei temi più discussi nel mondo della nutrizione e della ricerca sulla longevità.\nQuesto protocollo alimentare, ideato dal Professor Valter Longo, si propone di riprodurre i benefici del digiuno tradizionale\nsenza richiedere la completa astensione dal cibo.<br>\nL’interesse nasce dal fatto che numerosi studi hanno dimostrato come il digiuno, praticato in determinate condizioni,\npossa attivare processi di rigenerazione cellulare, migliorare parametri metabolici e contribuire alla prevenzione delle malattie croniche. \n<br><br>\nTuttavia, il digiuno totale è difficile da sostenere e può comportare rischi. La Dieta Mima Digiuno (o Fasting Mimicking Diet – FMD) rappresenta la soluzione:\nun approccio scientifico, bilanciato e più facilmente applicabile nella vita quotidiana.<br>\n<b>In questa guida scopriremo nel dettaglio cos’è la Dieta Mima Digiuno, perché è stata sviluppata, come funziona e per chi può essere utile.</b></p>",
+            "code": "<p class=\"text-center\">Oltre a essere uno dei più autorevoli ricercatori nel campo della longevità, Valter Longo è anche autore di libri che hanno saputo tradurre anni di studi scientifici il strumenti concreti e accessibili al grande pubblico. Le sue opere sono state tradotte in numerose lingue, hanno venduto milioni di copie e sono diventate veri e propri punti di riferimento per chi desidera migliorare la propria salute attraverso l'alimentazione e lo stile di vita.</p>",
             "width": "100%",
             "alignment": "center"
           }
@@ -92,9 +92,9 @@
         "bg-color": "bg-[#F1EAE5]",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
-        "heading_text": "Origini e definizione della Dieta Mima Digiuno",
-        "paragraph_1": "<br><p>La Dieta Mima Digiuno è un programma nutrizionale ipocalorico, ipoproteico e a base vegetale,\nconcepito per essere seguito in modo ciclico per periodi limitati di tempo (generalmente 5 giorni consecutivi).\n<br><br>\nIl termine “mima digiuno” nasce dal fatto che, pur fornendo all’organismo una quantità minima di nutrienti,\nil protocollo induce nel corpo una condizione metabolica simile a quella del digiuno totale. In pratica, l’organismo “crede” di trovarsi in stato di digiuno\ne attiva i processi cellulari tipici della restrizione calorica, ma senza privarsi completamente di cibo.</p>\n<br>\n<div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>",
-        "hero_image": "shopify://shop_images/dmd-asset-image-0002.webp",
+        "heading_text": "La dieta della longevità",
+        "paragraph_1": "<br><p>Il primo grande successo editoriale di Valter Longo è stato \"La dieta della longevità\". In questo volume, il Professore spiega in modo chiaro come nutrizione e scienza dell'invecchiamento possano dialogare per costruire un modello alimentare che non si limiti a prevenire le malattie, ma favorisca una vita più lunga e sana.<br><br>\nIl libro prende spunto da ricerche condotte in laboratori e centri clinici, ma anche dallo studio di popolazioni longeve sparse per il mondo, dalle comunità della Sardegna fino ai villaggi del\nGiappone.<br><br>\nNe emerge un approccio che mette al centro gli alimenti di origine vegetale, l'olio extravergine di oliva, i cereali integrali e un consumo limitato di pesce, con l'indicazione di ridurre drasticamente carne rossa, zuccheri e cibi processati. La \"dieta della longevità\" non è dunque una dieta dimagrante, ma un vero e proprio stile alimentare di prevenzione e benessere.</p>",
+        "hero_image": "shopify://shop_images/71101292b3b4cb696a0406acc0893b7872335b3e.jpg",
         "video_url": "",
         "html_v": "lg:mx-[135px]",
         "html_line": ""
@@ -112,9 +112,9 @@
         "bg-color": "",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
-        "heading_text": "L’ideatore:il Professor Valter Longo",
-        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\"> Il protocollo è stato ideato dal Professor Valter Longo, biologo e gerontologo di fama internazionale, direttore dell’USC Longevity Institute di Los Angeles e dell’Istituto di Oncologia Molecolare IFOM di Milano.<br>\nIl suo lavoro scientifico, riconosciuto a livello globale, ha dimostrato come specifici regimi alimentari possano influenzare la longevità, la prevenzione e persino il trattamento di alcune malattie. La Dieta Mima Digiuno è il risultato di oltre 20 anni di ricerca sui meccanismi cellulari della restrizione calorica e sui suoi effetti positivi sull’organismo.\n</p>\n</div>\n<div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
-        "hero_image": "shopify://shop_images/dmd-asset-longo-0001.webp",
+        "heading_text": "La longevità inizia da bambini",
+        "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<p class=\"my-4\"> Il secondo libro, \"La longevità inizia da bambini\", affronta invece un tema spesso sottovalutato: l'importanza dell'alimentazione nei primi anni di vita.\nIn queste pagine Longo si rivolge a genitori, educatori e professionisti della salute, spiegando come le scelte nutrizionali dell'infanzia possano influenzare in modo decisivo la salute dell'adulto.<br><br>\nCon un linguaggio semplice ma rigoroso, il Professore illustra come costruire un'alimentazione equilibrata per i più piccoli, riducendo il rischio di obesità e patologie croniche.<br><br>\nL'obiettivo è insegnare che la prevenzione inizia presto e che i buoni comportamenti alimentari sono il miglior investimento sul futuro.</p>\n</div>",
+        "hero_image": "shopify://shop_images/cffced8f21aab1fd520b5039712d4c1bb5aa4997.jpg",
         "video_url": "",
         "enable_video_link": false,
         "html_v": "lg:!my-[135px]",
@@ -123,6 +123,7 @@
     },
     "dk_bg_image_text_bRqbW7": {
       "type": "dk-bg-image-text",
+      "disabled": true,
       "custom_css": [
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
@@ -157,9 +158,9 @@
         "bg-color": "bg-[#F1EAE5]",
         "title_color": "dark_green",
         "subheading_text_tab_1": "",
-        "heading_text": "Principi scientifici alla base",
-        "paragraph_1": "<br>Il cuore della Dieta Mima Digiuno è rappresentato da una restrizione calorica mirata e controllata. Durante i cinque giorni in cui si segue il protocollo, l’organismo riceve un apporto energetico molto più basso rispetto al normale, pari a circa il 40–50% del fabbisogno quotidiano. Anche le proteine vengono ridotte al minimo, così da limitare l’attivazione di meccanismi biologici legati all’invecchiamento, come il pathway IGF-1.\n<br><br>\nL’energia necessaria al corpo arriva soprattutto da grassi “buoni”, come l’olio extravergine d’oliva, la frutta secca e i semi, insieme a carboidrati complessi che garantiscono un rilascio più graduale.\nQuesta combinazione non ha soltanto lo scopo di far “funzionare” il corpo con meno calorie, ma innesca veri e propri processi benefici.\n<br><br>\nLe cellule iniziano a eliminare componenti danneggiati attraverso l’autofagia, attivano meccanismi di rigenerazione cellulare grazie all’azione delle cellule staminali, e si osserva una generale riduzione dell’infiammazione. Anche il metabolismo trae vantaggio: migliora la sensibilità all’insulina e diminuisce il grasso viscerale, quello più pericoloso per la salute.\n<br><br><div class=\"flex items-center gap-4\">\n                    <a href=\"\">\n                        <span class=\"uppercase flex justify-center px-[30px] md:px-[30px] py-2 rounded-full bg-[#56A511] text-white font-[700] text-[14px]\">scopri di più</span>\n                    </a>\n                </div>\n<br>",
-        "hero_image": "shopify://shop_images/dmd-asset-image-0003.webp",
+        "heading_text": "Nuove pubblicazioni e divulgazione",
+        "paragraph_1": "<br>Accanto a questi titoli, Valter Longo è costantemente impegnato in nuovi progetti editoriali che approfondiscono ulteriormente il legame tra scienza, nutrizione e longevità.<br><br>\nI suoi testi si distinguono per la capacità di unire rigore scientifico e chiarezza divulgativa, offrendo al lettore consigli pratici senza rinunciare alla solidità dei dati.<br><br>\nOgni libro nasce con lo scopo di avvicinare il grande pubblico alle più recenti scoperte della ricerca biomedica, rendendo accessibili concetti complessi come autofagia, rigenerazione cellulare e metabolismo, e mostrando come questi meccanismi possano tradursi in scelte quotidiane.<br>",
+        "hero_image": "shopify://shop_images/dmd-asset-longo-0002.webp",
         "video_url": "",
         "html_v": "lg:mx-[135px]",
         "html_line": ""
@@ -167,6 +168,7 @@
     },
     "dk_image_with_text_home_page_F8Li3c": {
       "type": "dk-image-with-text-home-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -188,6 +190,7 @@
     },
     "pl_image_with_text_reverse_KPd8Xq": {
       "type": "pl-image-with-text-reverse",
+      "disabled": true,
       "name": "dk home image with text",
       "settings": {
         "section_id": "",
@@ -210,6 +213,7 @@
     },
     "dk_image_with_text_home_page_9RyFw7": {
       "type": "dk-image-with-text-home-page",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "enable_section": false,
@@ -231,6 +235,7 @@
     },
     "reviews-widget_AhLy6K": {
       "type": "reviews-widget",
+      "disabled": true,
       "settings": {
         "widget_type": "carousel"
       }
@@ -443,6 +448,7 @@
         "questions_block_dWrNAy",
         "questions_block_aQ4rJg"
       ],
+      "disabled": true,
       "name": "dk faqs",
       "settings": {
         "heading": "FAQ sulla Dieta Mima Digiuno"
@@ -451,17 +457,17 @@
     "dk_bg_image_text_XhKaEq": {
       "type": "dk-bg-image-text",
       "settings": {
-        "background_image": "shopify://shop_images/bg-dmd-50-opacity.webp",
-        "heading": "<b>Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?</b><br>\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
+        "background_image": "shopify://shop_images/bg-dmd-4-longo-50-opacity.webp",
+        "heading": "<b>Vuoi scoprire come applicare il Metodo Longo alla tua vita?</b><br>\nFai il nostro quiz interattivo e ricevi un profilo personalizzato con i consigli più adatti a te.",
         "subheading_above": "",
         "subheading": "",
-        "paragraph": "La <b>Dieta Mima Digiuno</b> non è semplicemente una dieta, ma un protocollo scientifico che unisce i vantaggi del digiuno tradizionale a un approccio più sicuro e accessibile. Ideata dal Professor Valter Longo, rappresenta oggi uno degli strumenti più promettenti per promuovere benessere, longevità e prevenzione delle malattie.\n<br><br>\nIl suo successo deriva dalla combinazione di tre elementi:\n<br><br>\n1.\n Solidità scientifica con pubblicazioni su riviste internazionali.<br>\n2.\n Applicabilità pratica grazie al kit ufficiale e alla supervisione medica.<br>\n3.\n Risultati concreti sia in termini di salute che di qualità della vita.",
+        "paragraph": "Valter Longo è oggi uno dei protagonisti della ricerca mondiale sulla nutrizione e l'invecchiamento. Con il suo lavoro ha unito scienza di laboratorio e applicazioni pratiche, offrendo a milioni di persone strumenti concreti per migliorare salute e qualità della vita. La sua figura rappresenta il ponte tra ricerca e quotidianità: dal laboratorio al piatto, con un obiettivo chiaro - vivere più a lungo e meglio.",
         "show_form": false,
         "show_paragraph_after_form": false,
         "paragraph_after_form": "",
         "show_html": false,
         "content_html": "",
-        "button_link": "shopify://pages/scienza-e-ricerca",
+        "button_link": "shopify://pages/cose-la-dmd",
         "button_text": "SCOPRI DI PIÙ",
         "button_link_v2": "",
         "button_text_2": ""
