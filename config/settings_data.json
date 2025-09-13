@@ -35,8 +35,6 @@
           "logo_GKUAPJ": {
             "type": "logo",
             "settings": {
-              "logo": "shopify://shop_images/prolon-logo-2025.webp",
-              "logo-inverted": "shopify://shop_images/prolon-logo-2025-white_200x_2x_4722de6d-665e-4287-a057-16a6b768f27a.avif",
               "desktop_logo_width": 200,
               "mobile_logo_width": 140
             }
@@ -52,7 +50,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "Scienza & Benefici",
-              "megamenu_image": "shopify://shop_images/Component_5.webp",
               "megamenu_description": "",
               "label_text": "",
               "megamenu_url": "",
@@ -63,7 +60,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "Chi siamo",
-              "megamenu_image": "shopify://shop_images/Nav_-_LBar.png",
               "megamenu_description": "",
               "label_text": "",
               "megamenu_url": "",
@@ -74,7 +70,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® Kit Dieta Mima Digiuno",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Prolon.png",
               "megamenu_description": "5 giorni per un benessere duraturo. L'unica DMD scientificamente testata.",
               "label_text": "",
               "megamenu_url": "",
@@ -85,7 +80,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® Next Gen",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-NextGen.png",
               "megamenu_description": "Nuove zuppe biologiche pronte da gustare, per una maggiore praticità.",
               "label_text": "",
               "megamenu_url": "",
@@ -96,7 +90,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® ReSet - Kit 1 giorno",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Reset.png",
               "megamenu_description": "Kit di 1 giorno per mantenere il tuo corpo in uno stato di digiuno.",
               "label_text": "",
               "megamenu_url": "",
@@ -107,7 +100,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® Nutrition Bar",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Nutrition-Bar.webp",
               "megamenu_description": "Mantieni il tuo stato di digiuno con proteine vegetali adatte alla dieta",
               "label_text": "",
               "megamenu_url": "",
@@ -118,7 +110,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® Fasting Shake",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-Fasting_Shake_copia.webp",
               "megamenu_description": "Fornisci energia al tuo corpo con fibre prebiotiche senza ingrassare.",
               "label_text": "",
               "megamenu_url": "",
@@ -129,7 +120,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "Longevity Protein Bar (12 x 45gr)",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-protein-bar.webp",
               "megamenu_description": "Una barretta proteica studiata per garantire forza e un invecchiamento sano",
               "label_text": "",
               "megamenu_url": "",
@@ -140,7 +130,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon L-Protein",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-protein.webp",
               "megamenu_description": "Proteine vegetali di alta qualità per riparare i muscoli e migliorare le prestazioni.",
               "label_text": "",
               "megamenu_url": "",
@@ -151,7 +140,6 @@
             "type": "Megamenu",
             "settings": {
               "megamenu_type": "ProLon® Crema Spalmabile",
-              "megamenu_image": "shopify://shop_images/Menu_Images_Square-l-spread.webp",
               "megamenu_description": "Ricca di proteine vegetali, grassi sani e pochi carboidrati.",
               "label_text": "",
               "megamenu_url": "",
@@ -275,9 +263,9 @@
         ],
         "custom_css": [],
         "settings": {
-          "main_menu_link_list": "",
+          "main_menu_link_list": "main-menu",
           "main_menu": "main-menu",
-          "mega_menu_link_list": "megamenu",
+          "mega_menu_link_list": "main-menu",
           "mega_menu_link_list_mobile": "",
           "mega_menu_url_shop_prolon": "shopify://products/prolon-5-day",
           "mega_menu_link_partners": "",
@@ -411,73 +399,6 @@
         }
       }
     },
-    "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "10605408327587305396": {
-        "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
-        "disabled": false,
-        "settings": {
-          "version": "v3"
-        }
-      },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {}
-      },
-      "14826766009936288847": {
-        "type": "shopify://apps/discounty/blocks/sdk/d65eb522-0d94-499f-9831-d4b3301f5340",
-        "disabled": false,
-        "settings": {}
-      },
-      "1877152918344802950": {
-        "type": "shopify://apps/intelligems-a-b-testing/blocks/intelligems-script/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19",
-        "disabled": false,
-        "settings": {}
-      },
-      "3025095097329806407": {
-        "type": "shopify://apps/accessibility-ada-eaa-wcag/blocks/accessibility-widget/c6a985d2-00b3-4b2b-9007-2ea254259712",
-        "disabled": false,
-        "settings": {
-          "widget_position": "bottom-right",
-          "branding_color": "#263f36",
-          "vertical_position": 20,
-          "horizontal_position": 20,
-          "widget_size": "medium",
-          "custom_widget_size": 60,
-          "icon_color": "#09875e"
-        }
-      },
-      "18387101310985349768": {
-        "type": "shopify://apps/progus-store-locator/blocks/app-embed/d7896016-8cc9-45e0-860e-ba85ba3d5be4",
-        "disabled": true,
-        "settings": {
-          "show_title": false,
-          "our_locations": "Our locations",
-          "text_color": "#ffffff",
-          "bg_color": "#000000",
-          "icon": "map-marker",
-          "icon_color": "#ffffff",
-          "size": "2",
-          "shape": "2",
-          "position": "2"
-        }
-      },
-      "2766656906679212237": {
-        "type": "shopify://apps/quinn-shoppable-reel/blocks/app-embed-legacy/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
-        "disabled": false,
-        "settings": {}
-      },
-      "14167655181940180261": {
-        "type": "shopify://apps/quinn-shoppable-reel/blocks/app-embed/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   }
 }
