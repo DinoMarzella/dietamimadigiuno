@@ -27,22 +27,21 @@
     },
     "pl_home_hero_section_UKpi83": {
       "type": "pl-home-hero-section",
-      "disabled": true,
       "custom_css": [
         "#fadeTextDesktopUnique {display: none;}",
-        "@media only screen and (max-width: 768px) {.my-bg-position {background-position: 65%; }}",
-        "@media only screen and (min-width: 769px) {.my-bg-position {background-position: 90%; }}"
+        "@media only screen and (max-width: 768px) {.my-bg-position {background-position: 65%; opacity: 0.5; }}",
+        "@media only screen and (min-width: 769px) {.my-bg-position {background-position: 90%; opacity: 0.5; }}"
       ],
       "settings": {
         "background_video": "",
-        "background_image": "shopify://shop_images/desk02_uk.png",
+        "background_image": "shopify://shop_images/c9a9112f5403b1ce8d72d01e55df3c822d39ff51.jpg",
         "html": "",
-        "heading": "Le proteine sono la chiave del tuo <b>benessere quotidiano</b>",
-        "subheading": "Scopri la nuova <strong>L-Protein Bar</strong>: 100% proteine vegane, formulata scientificamente per supportare forza e longevità.",
+        "heading": "<span style=\"color: #263F36;\n\">Dieta Mima Digiuno</span>\n<hr style=\"border-width: 3px; max-width: 500px; margin: 0 auto\">",
+        "subheading": "<span style=\"color: #263F36;\n\">Scopri il protocollo scientifico del Prof. Valter Longo per la longevità e il benessere attraverso il digiuno intermittente mirato.</span>",
         "button_link": "shopify://products/l-protein-bar",
-        "button_text": "L-PROTEIN BAR",
+        "button_text": "QUIZ PERSONALIZZATO",
         "button_link_v2": "shopify://collections/tutti-i-prodotti",
-        "button_text_2": "TUTTI I PRODOTTI"
+        "button_text_2": "SCOPRI DI PIÙ"
       }
     },
     "174611979935c72ead": {
@@ -89,8 +88,6 @@
             "link_text_2": "",
             "color_accent": "#1f4036",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/desk_benefici_ita.png",
-            "image_mobile": "shopify://shop_images/mobile_benefici_ita.png",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -110,8 +107,6 @@
             "link_text_2": "TUTTI I PRODOTTI",
             "color_accent": "#1f4036",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/desk_benefici_ita.png",
-            "image_mobile": "shopify://shop_images/mobile_benefici_ita.png",
             "overlay_opacity": 0,
             "focal_point": "80% 0"
           }
@@ -131,8 +126,6 @@
             "link_text_2": "Scopri tutti i prodotti",
             "color_accent": "#1f4036",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/desk02_uk_bbcf14fc-2c1e-42c2-9bf9-25d8e0e824f8.png",
-            "image_mobile": "shopify://shop_images/mobile_copia_6196d8cf-8b1a-4dad-af39-9037e9361059.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -153,8 +146,6 @@
             "link_text_2": "",
             "color_accent": "#1f4036",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/desk_benefici_ita.png",
-            "image_mobile": "shopify://shop_images/mobile_benefici_ita.png",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -175,8 +166,6 @@
             "link_text_2": "",
             "color_accent": "#f7931d",
             "text_align": "vertical-center horizontal-right",
-            "image": "shopify://shop_images/01_d_copia_v2_sx_858db196-1500-47a8-bdcb-2d294695f8f8.jpg",
-            "image_mobile": "shopify://shop_images/01_mv2_sx_38d68ae4-9a56-4db0-9532-06fff6f4783f.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -189,6 +178,7 @@
         "6c83ab16-4bb3-4cf1-931d-fced6e79524e",
         "slideshow-0"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (min-width: 769px) {.svg-underline-1 {background-size: 75%; } #tp-custom-box iframe {width: min-content !important; margin-left: -10px; }}",
         "@media only screen and (max-width: 768px) {.hero__text-content {vertical-align: top; } .svg-underline-1 {background-size: 90%; }}",
@@ -208,39 +198,27 @@
       "blocks": {
         "list_item_U76pVn": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/Forbes_2000x_821b170e-fdda-4083-8b79-c634d17e5f2d_1.png"
-          }
+          "settings": {}
         },
         "list_item_nidfec": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/Time_2000x_984cb42b-7b4a-4ba8-9b3f-4c0aea53738b_1.png"
-          }
+          "settings": {}
         },
         "list_item_hhW8UC": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/national-geographic-slide-logo-270x69_1.webp"
-          }
+          "settings": {}
         },
         "list_item_WEkcQH": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/News_Week_2000x_c1544cd9-c38d-4a53-8b7b-5ad0c4f4827a_1.png"
-          }
+          "settings": {}
         },
         "list_item_xWbwqp": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/arte-slide-logo-270x69_1.webp"
-          }
+          "settings": {}
         },
         "list_item_UGcT3n": {
           "type": "list_item",
-          "settings": {
-            "img": "shopify://shop_images/Corriere_della_Sera.svg"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -277,7 +255,6 @@
         "subheading_text_tab_1": "",
         "heading_text": "L'inventore della tecnologia mima digiuno, Valter Longo",
         "paragraph_1": "<div class=\"text-start  md:pb-0 text-white\">\n<p class=\"my-4\"> Il Prof. Valter Longo Ph.D, leader nel campo della nutrizione per la Longevità, ha fondato L-Nutra nel 2009 per tradurre più rapidamente le scoperte fatte in laboratorio su genetica, nutrizione, digiuno, e longevita in terapie per la prevenzione e cura delle malattie. \n<br><br>Valter Longo ha deciso di donare il 100% dei proventi del suo libro best seller \"La Dieta della Longevita\" e il 100% delle sue azioni e consulenze della societa L-Nutra in beneficenza alle Fondazioni Non-profit Create Cures negli USA e Fondazione Valter Longo in Italia. Le fondazioni del Prof. Longo offrono programmi di assistenza nutrizionale, che includono diete detox e dieta mima digiuno, e si estendono anche a scuole, famiglie, anziani e all’organizzazione di eventi e festival culturali. \n<br><br>Insieme al suo team di ricerca, ha sviluppato una serie di Diete Mima Digiuno (DMD), dei regimi alimentare che simulano i benefici del digiuno per il nostro corpo, con variazioni specifiche per la condizione o la malattia che intendono curare. I risultati del suo lavoro sono stati pubblicati sulle più prestigiose riviste scientifiche internazionali come Cell, Nature, Science, Science Translational Medicine e sono regolarmente coperti dai principali media globali come CNN, ABC, BBC, New York Times, Washington Post, Wall Street Journal, Time magazine, Guardian, ecc.\n<br><br>Nel 2018 Valter Longo è stato inserito dalla rivista TIME nella lista dei 50 personaggi più influenti nel campo della salute.\n</p>\n</div>\n<br>",
-        "hero_image": "shopify://shop_images/valter-longo_1_2000x_92e1b7d0-cda3-4c26-a6f3-33f4cfb6dca9.webp",
         "video_url": "",
         "enable_video_link": false,
         "html_v": "lg:!my-[135px]",
@@ -357,14 +334,12 @@
         "tab1_title": "DIETA MIMA DIGIUNO",
         "price_prefix_product_1_1": "A partire da",
         "product_1_1": "prolon-5-day",
-        "hero_image_tab_1": "shopify://shop_images/c591d9f626e6c90d3edbf6abb7b9b15e000c2d2a_2000x_68ecefab-dd77-4112-a914-bdd66c070755.webp",
         "video_url_tab_1": "",
         "subheading_text_tab_1": "RINGIOVANISCI DALL'INTERNO",
         "heading_text_tab_1": "Prolon 5-Giorni",
         "paragraph_1_tab_1": "<span>Un'alimentazione che migliora la tua vita, supportando il ringiovanimento cellulare e metabolico, e proteggendo la massa magra. </span>",
         "price_prefix_product_1_2": "A partire da",
         "product_1_2": "reset",
-        "hero_image_tab_1_product_2": "shopify://shop_images/9489850dbd89712dff6ba7387fb57d55e31ea8fb_2000x_0e6faa1c-428d-49bb-afa5-049f6adb9170.webp",
         "video_url_tab_1_product_2": "",
         "subheading_text_tab_1_product_2": "UN RESET DI UN GIORNO PER MENTE E CORPO",
         "heading_text_tab_1_product_2": "Reset Kit 1 giorno",
@@ -372,14 +347,12 @@
         "tab2_title": "DIGIUNO INTERMITTENTE",
         "price_prefix_product_2_1": "A partire da",
         "product_2_1": "prolon-nutrition-bar",
-        "hero_image_tab_2": "shopify://shop_images/58d11d33836d652b8e4076bd5b714901d1ede603_2000x_f0297a4c-e9da-402a-b613-45e1b0a3731b.webp",
         "video_url_tab_2": "",
         "subheading_text_tab_2": "BARRETTE PER PROLUNGARE IL DIGIUNO",
         "heading_text_tab_2": "Nutrition Bar",
         "paragraph_1_tab_2": "<span> Ottima a colazione per nutrire l'organismo mantenendolo in uno stato di digiuno fisiologico.</span>",
         "price_prefix_product_2_2": "A partire da",
         "product_2_2": "prolon-fasting-shake",
-        "hero_image_tab_2_product_2": "shopify://shop_images/fa0cba5611c0eb9b27ca3456f5f5774e4c0c8bdd_2000x_c95d2b74-b5a1-4139-8fe8-c5a85dec21c0.webp",
         "video_url_tab_2_product_2": "",
         "subheading_text_tab_2_product_2": "GUSTO VANIGLIA",
         "heading_text_tab_2_product_2": "Fasting Shake",
@@ -387,21 +360,18 @@
         "tab3_title": "Longevity Everyday",
         "price_prefix_product_3_1": "A partire da",
         "product_3_1": "l-protein-bar",
-        "hero_image_tab_3": "shopify://shop_images/l-protein-bar-image-v2.webp",
         "video_url_tab_3": "",
         "subheading_text_tab_3": "BARRETTE PROTEICHE",
         "heading_text_tab_3": "L-Protein Bar",
         "paragraph_1_tab_3": "<span>L'unica barretta proteica creata da scienziati della longevità per nutrire i muscoli senza accelerare l'invecchiamento.\n</span>",
         "price_prefix_product_3_2": "A partire da",
         "product_3_2": "prolon-l-protein",
-        "hero_image_tab_3_product_2": "shopify://shop_images/fae1fcda217da1c821ffb5791dc3f3e9c783088b_2000x_2247af74-294d-43a7-b692-54b4a8c62233.webp",
         "video_url_tab_3_product_2": "",
         "subheading_text_tab_3_product_2": "BEVANDA PROTEICA COMPLETA",
         "heading_text_tab_3_product_2": "L-Protein",
         "paragraph_1_tab_3_product_2": "<span> Sintesi muscolare ottimale con proteine vegetali complete per sostenere le prestazioni e l'invecchiamento sano.</span>",
         "price_prefix_product_3_3": "A partire da",
         "product_3_3": "prolon-longevity-spread",
-        "hero_image_tab_3_product_3": "shopify://shop_images/42ab3485623eeceaa7f937b454d22450a0b9793b_2000x_d21e3f09-0f60-43a2-8251-21ade0666c53.webp",
         "video_url_tab_3_product_3": "",
         "subheading_text_tab_3_product_3": "MANDORLE PUGLIESI E CACAO",
         "heading_text_tab_3_product_3": "Crema spalmabile",
@@ -409,14 +379,12 @@
         "tab4_title": "INTEGRATORI PER LA LONGEVITÀ",
         "price_prefix_product_4_1": "A partire da",
         "product_4_1": "l-biome",
-        "hero_image_tab_4": "shopify://shop_images/f5f19548672284c4f2ee42d132aaca3aec971cc9_2000x_86502dd3-0e76-43bf-9a5f-2ed2ad39e63a.webp",
         "video_url_tab_4": "",
         "subheading_text_tab_4": "PER LA SALUTE INTESTINALE",
         "heading_text_tab_4": "L-Biome",
         "paragraph_1_tab_4": "Ricco di pre e probiotici, contribuisce al mantenimento di una sana una barriera intestinale.",
         "price_prefix_product_4_2": "A partire da",
         "product_4_2": "l-pill-upsell",
-        "hero_image_tab_4_product_2": "shopify://shop_images/091ca7c31bcb610a09a7d5b55d370244e3354264_2000x_a255562a-0ce3-4aa5-96ec-d383dc166855.webp",
         "video_url_tab_4_product_2": "",
         "subheading_text_tab_4_product_2": "PER UN INVECCHIAMENTO SANO",
         "heading_text_tab_4_product_2": "L-Pill",
@@ -438,7 +406,6 @@
         "subheading_text_tab_1": "",
         "heading_text": "Ricerca & Sviluppo supportati dalla scienza",
         "paragraph_1": "<div class=\"text-start  md:pb-0\">\n<br>\nProLon è una tecnologia basata sulla nutrizione di precisione testata clinicamente per mantenerti in uno stato di digiuno mentre nutri il tuo corpo con il cibo. Resetta il tuo corpo e permettigli di rigenerarsi dall'interno in soli cinque giorni. Il programma alimentare brevettato è supportato da 20 anni di ricerca e €34 milioni in ricerca e sviluppo.\n<br><br>\nIl 96% dei nostri clienti completa ProLon al primo tentativo. Con oltre 1.000.000 di kit venduti in tutto il mondo, unisciti a noi e occupati già da adesso del tuo futuro in salute. I prodotti ProLon® sono Made in Italy e registrati presso il Ministero della Salute.\n\n<br>\n<br>\n\n<div class=\"flex  gap-4 sm:flex-nowrap flex-wrap  pt-[16px] md:pt-[22px]\">\n                <a href=\"/pages/scienza-e-ricerca\" class=\"sm:w-[260px] w-full\">\n                    <span class=\"uppercase px-[30px] flex justify-center  py-2  rounded-full text-white bg-[#263F36] font-[700] text-[14px] \">\n                       SCIENZA E RICERCA\n                    </span>\n                </a>\n                \n            </div>\n<br>\n</div>",
-        "hero_image": "shopify://shop_images/The_science_behind_Prolon-asset-image-0001_2000x_3d62832c-1f73-4592-b6f6-fc1219edd633.webp",
         "video_url": "https://www.youtube.com/watch?v=h-EM-KkhXbY",
         "enable_video_link": true,
         "html_v": "lg:!my-[135px]",
@@ -451,7 +418,6 @@
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/Prolon_-_Cells_Abstract-2000_2000x_2000x_49db6f69-7f08-4304-b0fd-c4dcdaba7f75.webp",
         "heading": "<span class=\"\">Prolon è l'unico programma di nutrizione basato sul digiuno scientificamente testato.</span>",
         "subheading_above": "",
         "subheading": "",
@@ -473,7 +439,6 @@
         "image_block_kpJBcE": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_2000x_2000x_75782de9-b4f1-40dc-92d0-4f9044334055.webp",
             "alt_text": "Video Image",
             "video_url": "https://www.youtube.com/watch?v=r0dtw44rpao",
             "video_title": "Che cos'è ProLon?  ",
@@ -484,7 +449,6 @@
         "image_block_AQXReL": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_1_2000x_2000x_a31a881d-38e4-48da-a280-74efd11c44b2.webp",
             "alt_text": "Video Image",
             "video_url": "https://www.youtube.com/watch?v=VUlX2rwdRlw",
             "video_title": "Impara da un dietologo",
@@ -495,7 +459,6 @@
         "image_block_L4a7NF": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_2_2000x_2000x_7bcc95a2-1c10-4bad-ad38-4ca5d4c271e3.webp",
             "alt_text": "Video Image",
             "video_url": "https://www.youtube.com/watch?v=ypMSDKKLbak",
             "video_title": "Cambia rotta con il digiuno",
@@ -506,7 +469,6 @@
         "image_block_8iBkcQ": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_3_2000x_2000x_756305d9-8ccd-45fe-91e8-902a738074c0.webp",
             "alt_text": "Video Image",
             "video_url": "https://www.youtube.com/watch?v=0Rc2DpCJ8bc",
             "video_title": "Il digiuno è essenziale",
@@ -566,7 +528,6 @@
         "slide_BfkTqn": {
           "type": "slide",
           "settings": {
-            "day_image": "shopify://shop_images/day01_800x_3881f751-abe5-4cea-8418-331f5b5f2fe7.webp",
             "day_number": "GIORNO 01",
             "day_title": "Transizione stato di mima digiuno",
             "day_description": "In questa fase il corpo brucia i grassi e può cominciare il processo di pulizia cellulare e rigenerazione cellulare."
@@ -575,7 +536,6 @@
         "slide_3VcNCe": {
           "type": "slide",
           "settings": {
-            "day_image": "shopify://shop_images/day02_800x_eed60eb3-4662-446c-9cd7-db27467e18aa.webp",
             "day_number": "GIORNO 02",
             "day_title": "Combustione dei grassi e Chetosi",
             "day_description": "La combustione dei grassi aumenta, contribuendo all'inizio della chetogenesi (produzione di chetoni). Alla fine del secondo giorno (48 ore), può verificarsi la chetosi."
@@ -584,7 +544,6 @@
         "slide_zYMdKi": {
           "type": "slide",
           "settings": {
-            "day_image": "shopify://shop_images/day03_800x_ef2289db-e8d8-4b91-b168-74caa6f16646.webp",
             "day_number": "GIORNO 03",
             "day_title": "Autofagia - Pulizia Cellulare",
             "day_description": "Aumenta la combustione dei grassi e la produzione/utilizzo dei chetoni, migliorando il processo di rigenerazione cellulare."
@@ -593,7 +552,6 @@
         "slide_GQdN6M": {
           "type": "slide",
           "settings": {
-            "day_image": "shopify://shop_images/day04_800x_fc83007d-1673-4d26-b3fa-24d55710a1bb.webp",
             "day_number": "GIORNO 04",
             "day_title": "Rinnovamento Cellulare",
             "day_description": "La combustione dei grassi continua. Le cellule                                                             si trasformano in versioni più giovani di se stesse. Sei in dirittura d'arrivo per completare il programma alimentare."
@@ -602,7 +560,6 @@
         "slide_qC6y8y": {
           "type": "slide",
           "settings": {
-            "day_image": "shopify://shop_images/day05_800x_43c220d5-e090-4fed-9a98-aed804fb023a.webp",
             "day_number": "GIORNO 05",
             "day_title": "Rinnovamento & Cambiamento",
             "day_description": "Digiuno Completato, il rinnovamento cellulare continua oltre il 5° giorno. Può verificarsi il fenomeno della chetosi prolungata, favorendo il mantenimento dell'equilibrio metabolico."
@@ -641,7 +598,6 @@
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/f6cc9d57a1cb933b166042f0cb4059f6d9401278_2000x_9db443b7-3c9d-4e2c-97c2-8217e33e9253.webp",
         "heading": "<span class=\"\"> Unisciti alla community  di L-Nutra! </span>",
         "subheading_above": "",
         "subheading": "<span class=\"font-thin\"> Rimani aggiornato sulle ultime scoperte scientifiche e innovazioni della Dieta Mima Digiuno di ProLon!</span>",
@@ -659,22 +615,6 @@
     },
     "17555143132e16a4e3": {
       "type": "apps",
-      "blocks": {
-        "quinn_shoppable_reel_app_cards_block_ceawG8": {
-          "type": "shopify://apps/quinn-shoppable-reel/blocks/app-cards-block/483fa771-9c4d-49e4-8c0d-0155f4b872d6",
-          "settings": {
-            "custom_metaobject_handle": "null",
-            "background_color": "#ffffff",
-            "margin_desktop": "10px 0px 0px 0px",
-            "margin_mobile": "5px 0px 0px 0px",
-            "padding_desktop": "10px 10px 10px 10px",
-            "padding_mobile": "10px 5px 10px 5px"
-          }
-        }
-      },
-      "block_order": [
-        "quinn_shoppable_reel_app_cards_block_ceawG8"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
