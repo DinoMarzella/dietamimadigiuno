@@ -276,7 +276,7 @@
         ".bg-cover {background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/16ffd86499a70feaee0b3e99e41cc183f79307b1.jpg",
+        "background_image": "shopify://shop_images/bg-dmd-50-opacity.webp",
         "heading": "Vuoi scoprire se la Dieta Mima Digiuno è adatta a te?\nProva il nostro quiz interattivo e ricevi indicazioni personalizzate",
         "subheading_above": "",
         "subheading": "",

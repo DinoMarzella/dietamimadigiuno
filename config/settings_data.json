@@ -375,13 +375,16 @@
           "menu_ftXNNi",
           "custom_wxnM3G"
         ],
+        "custom_css": [
+          "#FooterMenus {display: none;}"
+        ],
         "settings": {
           "show_locale_selector": false,
           "show_currency_selector": false,
           "show_currency_flags": false,
           "show_payment_icons": true,
           "show_copyright": true,
-          "copyright_text": "- Powered by L-Nutra Uk LTD<br>19 Leyden Street, London, England, E1 7LE<br>Company No: 15493283. VAT No:<br><a href=\"/pages/privacy-policy\">Privacy Policy</a> - <a href=\"/pages/terms-conditions\">Terms & Conditions</a> -"
+          "copyright_text": ""
         }
       },
       "newsletter-popup": {
